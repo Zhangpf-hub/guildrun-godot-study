@@ -1,0 +1,16 @@
+[gd_resource type="ShaderMaterial" format=3]
+
+[ext_resource type="Shader" path="res://materials/character_outline.gdshader" id="1"]
+[ext_resource type="Shader" path="res://materials/character_surface_redraw.gdshader" id="2"]
+
+[sub_resource type="ShaderMaterial" id="RedrawLayer10"]
+render_priority = 3
+shader = ExtResource("2")
+metadata/unity_renderer_feature = "globalgamemanagers.assets:6647"
+
+[resource]
+render_priority = 2
+next_pass = SubResource("RedrawLayer10")
+shader = ExtResource("1")
+shader_parameter/thickness = 0.0004
+metadata/unity_material = "globalgamemanagers.assets:3"

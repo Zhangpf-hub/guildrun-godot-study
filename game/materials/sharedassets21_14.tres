@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3]
+[ext_resource type="Texture2D" path="res://textures/sharedassets21_34.png" id="1"]
+
+[resource]
+resource_name = "M_Brick_Wall_01a"
+albedo_texture = ExtResource("1")
+transparency = 1
+cull_mode = 2
+albedo_color = Color(0.575471699, 0.565645456, 0.556470275, 1)
+metadata/unity_shader = "lilToon"

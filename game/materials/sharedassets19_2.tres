@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" format=3]
+[ext_resource type="Shader" path="res://materials/environment_plane_cutout.gdshader" id="2"]
+
+[resource]
+resource_name = "Arc01_Default_Mat_Tree_Evening"
+shader = ExtResource("2")
+shader_parameter/tint = Vector3(0.663979948, 0.628248453, 0.735849023)
+shader_parameter/alpha_threshold = 0.5
+metadata/unity_shader = "Shader Graphs/EnvironmentPlane_SG"

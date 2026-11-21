@@ -1,0 +1,782 @@
+[gd_scene format=3]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2943.obj" id="1"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_609.tres" id="2"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2985.obj" id="3"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_613.tres" id="4"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2944.obj" id="5"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2743.obj" id="6"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2834.obj" id="7"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_619.tres" id="8"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_620.tres" id="9"]
+
+[node name="Javryn" type="Node3D"]
+
+[node name="Javryn" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1.08000004, 1.08000004, 1.08000004)
+metadata/unity_id = 13247
+metadata/unity_name = "Javryn"
+
+[node name="Javryn_Model" type="Node3D" parent="Javryn"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14699
+metadata/unity_name = "Javryn_Model"
+
+[node name="Armature" type="Node3D" parent="Javryn/Javryn_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6109
+metadata/unity_name = "Armature"
+
+[node name="hips" type="Node3D" parent="Javryn/Javryn_Model/Armature"]
+position = Vector3(-0, 0.97198391, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6665
+metadata/unity_name = "hips"
+
+[node name="chain_Root" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13872
+metadata/unity_name = "chain_Root"
+
+[node name="chain_01" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/chain_Root"]
+position = Vector3(-0.0756465271, 0.0707528591, -0)
+quaternion = Quaternion(-0.615422368, 0.348217428, -0.615422368, -0.348217428)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25704
+metadata/unity_name = "chain_01"
+
+[node name="chane_end" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/chain_Root/chain_01"]
+position = Vector3(-5.47919045e-17, 0.137710437, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17039
+metadata/unity_name = "chane_end"
+
+[node name="spine" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips"]
+position = Vector3(-7.09550431e-33, 0.0906564519, -3.5527136e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13780
+metadata/unity_name = "spine"
+
+[node name="chest" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine"]
+position = Vector3(-0, 0.119035445, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13203
+metadata/unity_name = "chest"
+
+[node name="neck" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine/chest"]
+position = Vector3(-0, 0.237000003, 0.0299999993)
+quaternion = Quaternion(-0.104528464, 0, -0, 0.994521916)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23780
+metadata/unity_name = "neck"
+
+[node name="head" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine/chest/neck"]
+position = Vector3(-0, 0.0916112885, 0.00123257085)
+quaternion = Quaternion(0.104528464, -0, -0, 0.994521916)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23683
+metadata/unity_name = "head"
+
+[node name="hair_root" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(7.09550431e-33, 0.0700000003, -0.0109999999)
+quaternion = Quaternion(5.49401815e-17, -0.897241235, 0.441540688, -2.70365687e-17)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9315
+metadata/unity_name = "hair_root"
+
+[node name="hair_BT_01" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(-4.41057717e-19, -0.00300000003, -0.0810000002)
+quaternion = Quaternion(4.44163696e-17, -0.725374401, 0.688354552, -4.21495605e-17)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19963
+metadata/unity_name = "hair_BT_01"
+
+[node name="hair_BT_02" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_BT_01"]
+position = Vector3(4.03417929e-18, 0.0396655202, 0.0292235538)
+quaternion = Quaternion(-0.939692616, -0, 0, -0.342020154)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12397
+metadata/unity_name = "hair_BT_02"
+
+[node name="hair_BT_03" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_BT_01/hair_BT_02"]
+position = Vector3(-5.45130263e-18, 0.0693702921, -5.15559785e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23455
+metadata/unity_name = "hair_BT_03"
+
+[node name="hair_BT_04" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_BT_01/hair_BT_02/hair_BT_03"]
+position = Vector3(-3.15544355e-32, 0.0985744372, 1.7763568e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13790
+metadata/unity_name = "hair_BT_04"
+
+[node name="hair_BT_end" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_BT_01/hair_BT_02/hair_BT_03/hair_BT_04"]
+position = Vector3(4.53594999e-32, 0.0432573035, -1.48075997e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27083
+metadata/unity_name = "hair_BT_end"
+
+[node name="hair_L_01" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(0.0689999983, -0.063000001, -0.00499999989)
+quaternion = Quaternion(0.763293147, -0.0917893276, 0.0202851165, 0.639176667)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7674
+metadata/unity_name = "hair_L_01"
+
+[node name="hair_L_02" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_L_01"]
+position = Vector3(-1.02060978e-16, 0.0469999984, -1.23373525e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22389
+metadata/unity_name = "hair_L_02"
+
+[node name="hair_L_03" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_L_01/hair_L_02"]
+position = Vector3(-2.60921034e-18, 0.063000001, -3.45036489e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9825
+metadata/unity_name = "hair_L_03"
+
+[node name="hair_L_04" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_L_01/hair_L_02/hair_L_03"]
+position = Vector3(-6.78570005e-17, 0.0649999976, 3.77475832e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23966
+metadata/unity_name = "hair_L_04"
+
+[node name="hair_L_end" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_L_01/hair_L_02/hair_L_03/hair_L_04"]
+position = Vector3(5.13089976e-17, 0.0749999955, -1.37667656e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22871
+metadata/unity_name = "hair_L_end"
+
+[node name="hair_R_01" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(-0.0689999983, -0.0630000085, -0.00499998732)
+quaternion = Quaternion(0.763293147, 0.0917893276, -0.0202851165, 0.639176667)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10042
+metadata/unity_name = "hair_R_01"
+
+[node name="hair_R_02" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_R_01"]
+position = Vector3(-1.1982455e-16, 0.0469999984, -9.67281781e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10516
+metadata/unity_name = "hair_R_02"
+
+[node name="hair_R_03" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_R_01/hair_R_02"]
+position = Vector3(-3.81363449e-17, 0.063000001, -3.45036489e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12198
+metadata/unity_name = "hair_R_03"
+
+[node name="hair_R_04" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_R_01/hair_R_02/hair_R_03"]
+position = Vector3(-1.0338413e-16, 0.0649999976, 3.77475832e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21490
+metadata/unity_name = "hair_R_04"
+
+[node name="hair_R_end" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_R_01/hair_R_02/hair_R_03/hair_R_04"]
+position = Vector3(1.57818633e-17, 0.0749999955, -1.37667656e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13744
+metadata/unity_name = "hair_R_end"
+
+[node name="head_end" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(-0, 0.142999992, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20369
+metadata/unity_name = "head_end"
+
+[node name="jaw" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(-0, -0.027999999, -0.0129999993)
+quaternion = Quaternion(-1.78807849e-08, -0.51951915, 0.854458869, 7.33499235e-08)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26064
+metadata/unity_name = "jaw"
+
+[node name="jaw_end" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine/chest/neck/head/jaw"]
+position = Vector3(1.351845e-15, 0.0909999982, 2.02715267e-08)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14389
+metadata/unity_name = "jaw_end"
+
+[node name="Magica Capsule Collider (head)" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(0, 0.0218000002, 0.0046000001)
+quaternion = Quaternion(-0.317323804, 0, -0, 0.948317289)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21831
+metadata/unity_name = "Magica Capsule Collider (head)"
+
+[node name="Quiver_01" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine/chest"]
+position = Vector3(0.149999991, 0.140000001, 0.189999998)
+quaternion = Quaternion(-0.97139132, 0.229314372, -0.0141888727, 0.0601050258)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25550
+metadata/unity_name = "Quiver_01"
+
+[node name="Quiver_end" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine/chest/Quiver_01"]
+position = Vector3(3.5527136e-17, 0.409999996, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23040
+metadata/unity_name = "Quiver_end"
+
+[node name="shoulder_L" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine/chest"]
+position = Vector3(-0.0459999964, 0.170000002, 0.0399999991)
+quaternion = Quaternion(-0.54167521, 0.45451948, -0.54167521, -0.45451948)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4701
+metadata/unity_name = "shoulder_L"
+
+[node name="upper_arm_L" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine/chest/shoulder_L"]
+position = Vector3(-3.32038965e-08, 0.119999997, 1.70530253e-15)
+quaternion = Quaternion(0.173648193, 6.53884413e-09, -6.25458938e-08, 0.984807789)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18009
+metadata/unity_name = "upper_arm_L"
+
+[node name="lower_arm_L" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L"]
+position = Vector3(1.7763568e-17, 0.239999995, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20576
+metadata/unity_name = "lower_arm_L"
+
+[node name="hand_L" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L"]
+position = Vector3(7.94315369e-09, 0.239999995, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23149
+metadata/unity_name = "hand_L"
+
+[node name="hand_L_end" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L"]
+position = Vector3(-0, 0.149999991, 1.42108544e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8810
+metadata/unity_name = "hand_L_end"
+
+[node name="shoulder_R" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine/chest"]
+position = Vector3(0.0459999964, 0.170000002, 0.0399999991)
+quaternion = Quaternion(-0.54167521, -0.45451948, 0.54167521, -0.45451948)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9985
+metadata/unity_name = "shoulder_R"
+
+[node name="upper_arm_R" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine/chest/shoulder_R"]
+position = Vector3(1.3322676e-17, 0.119999997, -0)
+quaternion = Quaternion(0.173648193, -0, -0, 0.984807789)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19450
+metadata/unity_name = "upper_arm_R"
+
+[node name="lower_arm_R" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R"]
+position = Vector3(2.39749571e-08, 0.239999995, 1.75924254e-06)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10033
+metadata/unity_name = "lower_arm_R"
+
+[node name="hand_R" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R"]
+position = Vector3(2.46513636e-08, 0.239999995, 9.19892557e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11351
+metadata/unity_name = "hand_R"
+
+[node name="hand_R_end" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R"]
+position = Vector3(1.83031776e-08, 0.150000885, 8.74364389e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17682
+metadata/unity_name = "hand_R_end"
+
+[node name="Magica Capsule Collider (chest)" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/spine/chest"]
+position = Vector3(0, 0.155000001, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16730
+metadata/unity_name = "Magica Capsule Collider (chest)"
+
+[node name="upper_leg_L" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips"]
+position = Vector3(-0.109999999, -0.00600000564, -7.61880442e-32)
+quaternion = Quaternion(1.38968448e-09, 3.10818251e-08, 1, 2.65167426e-08)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13080
+metadata/unity_name = "upper_leg_L"
+
+[node name="lower_leg_L" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/upper_leg_L"]
+position = Vector3(1.08816167e-09, 0.399999976, 1.27549793e-09)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7220
+metadata/unity_name = "lower_leg_L"
+
+[node name="foot_L" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/upper_leg_L/lower_leg_L"]
+position = Vector3(3.47001783e-09, 0.360911846, 0.0127228834)
+quaternion = Quaternion(-0.362526625, -0, 4.4352122e-09, 0.931973398)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8310
+metadata/unity_name = "foot_L"
+
+[node name="toes_L" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/upper_leg_L/lower_leg_L/foot_L"]
+position = Vector3(-1.66727543e-09, 0.20167841, -1.7763568e-17)
+quaternion = Quaternion(-0.128680348, -0, 3.02083203e-09, 0.991686106)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12998
+metadata/unity_name = "toes_L"
+
+[node name="toes_L_end" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/upper_leg_L/lower_leg_L/foot_L/toes_L"]
+position = Vector3(-6.267592e-10, 0.104609214, -4.66293656e-17)
+quaternion = Quaternion(-0.0744873509, 0, -0, 0.997222006)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24415
+metadata/unity_name = "toes_L_end"
+
+[node name="Magica Capsule Collider (upper_leg_L)" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/upper_leg_L"]
+position = Vector3(-0.0560000017, 0.0909999982, -0)
+quaternion = Quaternion(0, 0, -4.3193929e-17, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27112
+metadata/unity_name = "Magica Capsule Collider (upper_leg_L)"
+
+[node name="Magica Capsule Collider (upper_leg_L) (1)" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/upper_leg_L"]
+position = Vector3(0.0309999995, 0.0909999982, 0.123999998)
+quaternion = Quaternion(0, 0, -4.3193929e-17, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12235
+metadata/unity_name = "Magica Capsule Collider (upper_leg_L) (1)"
+
+[node name="upper_leg_R" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips"]
+position = Vector3(0.109999999, -0.00600000005, -0)
+quaternion = Quaternion(-3.204653e-18, -3.46944695e-18, 1, -6.12323426e-17)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14613
+metadata/unity_name = "upper_leg_R"
+
+[node name="lower_leg_R" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/upper_leg_R"]
+position = Vector3(8.08429487e-17, 0.399999976, -3.37507795e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22168
+metadata/unity_name = "lower_leg_R"
+
+[node name="foot_R" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/upper_leg_R/lower_leg_R"]
+position = Vector3(3.75157113e-17, 0.360911846, 0.0127228796)
+quaternion = Quaternion(-0.362526596, -1.69288283e-30, 5.05669183e-14, 0.931973398)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12750
+metadata/unity_name = "foot_R"
+
+[node name="toes_R" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/upper_leg_R/lower_leg_R/foot_R"]
+position = Vector3(-1.90256915e-14, 0.20167841, 4.440892e-18)
+quaternion = Quaternion(-0.128680393, 2.42759512e-34, -4.39246099e-18, 0.991686106)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21057
+metadata/unity_name = "toes_R"
+
+[node name="toes_R_end" type="Node3D" parent="Javryn/Javryn_Model/Armature/hips/upper_leg_R/lower_leg_R/foot_R/toes_R"]
+position = Vector3(7.40608231e-34, 0.104609214, -4.440892e-18)
+quaternion = Quaternion(-0.074487336, 0, -0, 0.997222006)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23792
+metadata/unity_name = "toes_R_end"
+
+[node name="Javryn_geo" type="Node3D" parent="Javryn/Javryn_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14940
+metadata/unity_name = "Javryn_geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Javryn/Javryn_Model/Javryn_geo"]
+mesh = ExtResource("1")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="weapon_grp" type="Node3D" parent="Javryn/Javryn_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13061
+metadata/unity_name = "weapon_grp"
+
+[node name="allow_geo" type="Node3D" parent="Javryn/Javryn_Model/weapon_grp"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6059
+metadata/unity_name = "allow_geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Javryn/Javryn_Model/weapon_grp/allow_geo"]
+mesh = ExtResource("3")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="bow_geo" type="Node3D" parent="Javryn/Javryn_Model/weapon_grp"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6159
+metadata/unity_name = "bow_geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Javryn/Javryn_Model/weapon_grp/bow_geo"]
+mesh = ExtResource("5")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="quiver_geo" type="Node3D" parent="Javryn/Javryn_Model/weapon_grp"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4699
+metadata/unity_name = "quiver_geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Javryn/Javryn_Model/weapon_grp/quiver_geo"]
+mesh = ExtResource("6")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="weaponA_01" type="Node3D" parent="Javryn/Javryn_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(4.32978063e-17, -0.707106829, 0.707106829, -4.32978063e-17)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17298
+metadata/unity_name = "weaponA_01"
+
+[node name="weaponA_end" type="Node3D" parent="Javryn/Javryn_Model/weaponA_01"]
+position = Vector3(-0, 0.0399999991, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10376
+metadata/unity_name = "weaponA_end"
+
+[node name="weaponAD_01" type="Node3D" parent="Javryn/Javryn_Model/weaponA_01"]
+position = Vector3(3.59153352e-17, -0.199999988, 0.280000001)
+quaternion = Quaternion(0.707106829, -0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12723
+metadata/unity_name = "weaponAD_01"
+
+[node name="weaponAD_end" type="Node3D" parent="Javryn/Javryn_Model/weaponA_01/weaponAD_01"]
+position = Vector3(-5.01861165e-17, 0.399999976, 1.46460957e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24421
+metadata/unity_name = "weaponAD_end"
+
+[node name="weaponAstring_01" type="Node3D" parent="Javryn/Javryn_Model/weaponA_01"]
+position = Vector3(1.06581408e-16, -0.46384719, -5.3290704e-17)
+quaternion = Quaternion(-6.12323426e-17, 6.12323426e-17, 1, 6.12323426e-17)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15905
+metadata/unity_name = "weaponAstring_01"
+
+[node name="weaponAstring_end" type="Node3D" parent="Javryn/Javryn_Model/weaponA_01/weaponAstring_01"]
+position = Vector3(-0, 0.0399999991, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27113
+metadata/unity_name = "weaponAstring_end"
+
+[node name="weaponAU_01" type="Node3D" parent="Javryn/Javryn_Model/weaponA_01"]
+position = Vector3(-3.46923056e-17, -0.199999988, -0.280000001)
+quaternion = Quaternion(4.32978063e-17, -0.707106829, 0.707106829, -4.32978063e-17)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18127
+metadata/unity_name = "weaponAU_01"
+
+[node name="weaponAU_end" type="Node3D" parent="Javryn/Javryn_Model/weaponA_01/weaponAU_01"]
+position = Vector3(-5.28420942e-17, 0.399999976, -6.02825474e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7656
+metadata/unity_name = "weaponAU_end"
+
+[node name="weaponB_01" type="Node3D" parent="Javryn/Javryn_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, -0, 1, -6.12323426e-17)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19674
+metadata/unity_name = "weaponB_01"
+
+[node name="weaponB_02" type="Node3D" parent="Javryn/Javryn_Model/weaponB_01"]
+position = Vector3(2.97711143e-16, 0.0852441639, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19039
+metadata/unity_name = "weaponB_02"
+
+[node name="weaponB_03" type="Node3D" parent="Javryn/Javryn_Model/weaponB_01/weaponB_02"]
+position = Vector3(5.67979827e-31, 0.0817223787, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19925
+metadata/unity_name = "weaponB_03"
+
+[node name="weaponB_04" type="Node3D" parent="Javryn/Javryn_Model/weaponB_01/weaponB_02/weaponB_03"]
+position = Vector3(-0, 0.081543237, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12870
+metadata/unity_name = "weaponB_04"
+
+[node name="weaponB_05" type="Node3D" parent="Javryn/Javryn_Model/weaponB_01/weaponB_02/weaponB_03/weaponB_04"]
+position = Vector3(-1.89326613e-31, 0.0809276104, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4899
+metadata/unity_name = "weaponB_05"
+
+[node name="weaponB_06" type="Node3D" parent="Javryn/Javryn_Model/weaponB_01/weaponB_02/weaponB_03/weaponB_04/weaponB_05"]
+position = Vector3(-1.26217742e-31, 0.0797121227, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4920
+metadata/unity_name = "weaponB_06"
+
+[node name="weaponB_end" type="Node3D" parent="Javryn/Javryn_Model/weaponB_01/weaponB_02/weaponB_03/weaponB_04/weaponB_05/weaponB_06"]
+position = Vector3(3.1020977e-17, 0.0708504841, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16497
+metadata/unity_name = "weaponB_end"
+
+[node name="Magica Cloth (chain)" type="Node3D" parent="Javryn/Javryn_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19638
+metadata/unity_name = "Magica Cloth (chain)"
+
+[node name="Magica Cloth (hair)" type="Node3D" parent="Javryn/Javryn_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7885
+metadata/unity_name = "Magica Cloth (hair)"
+
+[node name="Magica Cloth (Quiver)" type="Node3D" parent="Javryn/Javryn_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15878
+metadata/unity_name = "Magica Cloth (Quiver)"
+
+[node name="OverheadSlot" type="Node3D" parent="Javryn"]
+position = Vector3(0, 1.5, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9399
+metadata/unity_name = "OverheadSlot"
+
+[node name="VFXParent" type="Node3D" parent="Javryn"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12357
+metadata/unity_name = "VFXParent"
+
+[node name="VFX_Javryn_SkillAttack_Base" type="Node3D" parent="Javryn/VFXParent"]
+position = Vector3(0, 1.14999998, -0.539999962)
+quaternion = Quaternion(0.454519451, 0.54167527, -0.454519451, 0.54167527)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15960
+metadata/unity_name = "VFX_Javryn_SkillAttack_Base"
+visible = false
+process_mode = 4
+
+[node name="VFX_JavrynBow" type="Node3D" parent="Javryn/VFXParent/VFX_Javryn_SkillAttack_Base"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0.707106829, 0, 0.707106829)
+scale = Vector3(3, 3, 3)
+metadata/unity_id = 15228
+metadata/unity_name = "VFX_JavrynBow"
+
+[node name="Armature" type="Node3D" parent="Javryn/VFXParent/VFX_Javryn_SkillAttack_Base/VFX_JavrynBow"]
+position = Vector3(0, 0, -0.0182951186)
+quaternion = Quaternion(0.706984699, -0, 0, 0.707228839)
+scale = Vector3(100, 100, 100)
+metadata/unity_id = 19929
+metadata/unity_name = "Armature"
+
+[node name="Bow_Mid" type="Node3D" parent="Javryn/VFXParent/VFX_Javryn_SkillAttack_Base/VFX_JavrynBow/Armature"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0.707106829, 9.41569596e-08, -0.707106709, -9.41569667e-08)
+scale = Vector3(0.99999994, 0.999999821, 0.99999994)
+metadata/unity_id = 14808
+metadata/unity_name = "Bow_Mid"
+
+[node name="L_Bow_01" type="Node3D" parent="Javryn/VFXParent/VFX_Javryn_SkillAttack_Base/VFX_JavrynBow/Armature/Bow_Mid"]
+position = Vector3(-1.93560677e-18, 0.000895388424, 1.93560574e-18)
+quaternion = Quaternion(-1.30324011e-07, -7.11805086e-08, -0.621860504, 0.783128023)
+scale = Vector3(1.00000012, 1.00000012, 1)
+metadata/unity_id = 11616
+metadata/unity_name = "L_Bow_01"
+
+[node name="L_Bow_02" type="Node3D" parent="Javryn/VFXParent/VFX_Javryn_SkillAttack_Base/VFX_JavrynBow/Armature/Bow_Mid/L_Bow_01"]
+position = Vector3(1.86264476e-11, 0.000928689726, 4.55191436e-17)
+quaternion = Quaternion(-1.54355504e-07, -1.86583819e-07, -0.339237154, 0.940700889)
+scale = Vector3(0.999999762, 1.00000012, 0.99999994)
+metadata/unity_id = 23492
+metadata/unity_name = "L_Bow_02"
+
+[node name="L_Bow_03" type="Node3D" parent="Javryn/VFXParent/VFX_Javryn_SkillAttack_Base/VFX_JavrynBow/Armature/Bow_Mid/L_Bow_01/L_Bow_02"]
+position = Vector3(-3.72528466e-11, 0.00100107479, 2.6645352e-17)
+quaternion = Quaternion(-1.02442932e-07, -1.87740298e-07, -0.113466196, 0.993541837)
+scale = Vector3(0.999997973, 0.999996781, 0.999999166)
+metadata/unity_id = 27186
+metadata/unity_name = "L_Bow_03"
+
+[node name="L_Bow_04" type="Node3D" parent="Javryn/VFXParent/VFX_Javryn_SkillAttack_Base/VFX_JavrynBow/Armature/Bow_Mid/L_Bow_01/L_Bow_02/L_Bow_03"]
+position = Vector3(2.04891173e-10, 0.00135890185, -3.37507795e-16)
+quaternion = Quaternion(-1.09983077e-07, -1.147557e-07, -0.140091911, 0.990138531)
+scale = Vector3(0.99999994, 1, 0.999999881)
+metadata/unity_id = 26526
+metadata/unity_name = "L_Bow_04"
+
+[node name="L_Bow_04_end" type="Node3D" parent="Javryn/VFXParent/VFX_Javryn_SkillAttack_Base/VFX_JavrynBow/Armature/Bow_Mid/L_Bow_01/L_Bow_02/L_Bow_03/L_Bow_04"]
+position = Vector3(-0, 0.000965691812, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13888
+metadata/unity_name = "L_Bow_04_end"
+
+[node name="R_Bow_01" type="Node3D" parent="Javryn/VFXParent/VFX_Javryn_SkillAttack_Base/VFX_JavrynBow/Armature/Bow_Mid"]
+position = Vector3(0.000153433153, 0.0008758927, -0.000104836123)
+quaternion = Quaternion(-9.3492055e-08, 1.61723349e-07, 0.621860445, 0.783128083)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11382
+metadata/unity_name = "R_Bow_01"
+
+[node name="R_Bow_02" type="Node3D" parent="Javryn/VFXParent/VFX_Javryn_SkillAttack_Base/VFX_JavrynBow/Armature/Bow_Mid/R_Bow_01"]
+position = Vector3(-3.51672198e-11, 0.000928689842, -2.52651003e-12)
+quaternion = Quaternion(6.22982412e-08, -4.67239062e-07, 0.339237154, 0.940700889)
+scale = Vector3(1, 0.999999702, 1)
+metadata/unity_id = 15390
+metadata/unity_name = "R_Bow_02"
+
+[node name="R_Bow_03" type="Node3D" parent="Javryn/VFXParent/VFX_Javryn_SkillAttack_Base/VFX_JavrynBow/Armature/Bow_Mid/R_Bow_01/R_Bow_02"]
+position = Vector3(-5.86848348e-11, 0.00100107468, 4.89404047e-12)
+quaternion = Quaternion(9.62539417e-08, -2.27030554e-07, 0.113466263, 0.993541837)
+scale = Vector3(0.999998033, 0.999996901, 0.999999166)
+metadata/unity_id = 17394
+metadata/unity_name = "R_Bow_03"
+
+[node name="R_Bow_04" type="Node3D" parent="Javryn/VFXParent/VFX_Javryn_SkillAttack_Base/VFX_JavrynBow/Armature/Bow_Mid/R_Bow_01/R_Bow_02/R_Bow_03"]
+position = Vector3(8.06399877e-11, 0.00135890197, 1.07660192e-11)
+quaternion = Quaternion(2.43413808e-07, -2.28361458e-07, 0.140091956, 0.990138471)
+scale = Vector3(0.999999821, 0.99999994, 0.999999821)
+metadata/unity_id = 7164
+metadata/unity_name = "R_Bow_04"
+
+[node name="R_Bow_04_end" type="Node3D" parent="Javryn/VFXParent/VFX_Javryn_SkillAttack_Base/VFX_JavrynBow/Armature/Bow_Mid/R_Bow_01/R_Bow_02/R_Bow_03/R_Bow_04"]
+position = Vector3(-0, 0.000965691812, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24250
+metadata/unity_name = "R_Bow_04_end"
+
+[node name="VFX_Bow" type="Node3D" parent="Javryn/VFXParent/VFX_Javryn_SkillAttack_Base/VFX_JavrynBow"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(0.707106829, -0, -0, 0.707106709)
+scale = Vector3(100, 100, 100)
+metadata/unity_id = 21684
+metadata/unity_name = "VFX_Bow"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Javryn/VFXParent/VFX_Javryn_SkillAttack_Base/VFX_JavrynBow/VFX_Bow"]
+mesh = ExtResource("7")
+visible = true
+surface_material_override/0 = ExtResource("8")
+surface_material_override/1 = ExtResource("9")
+
+[node name="Arrow_01" type="Node3D" parent="Javryn/VFXParent/VFX_Javryn_SkillAttack_Base"]
+position = Vector3(0.660000026, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5997
+metadata/unity_name = "Arrow_01"
+
+[node name="Glow_01" type="Node3D" parent="Javryn/VFXParent/VFX_Javryn_SkillAttack_Base/Arrow_01"]
+position = Vector3(0.319999993, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9323
+metadata/unity_name = "Glow_01"
+
+[node name="Glow_02" type="Node3D" parent="Javryn/VFXParent/VFX_Javryn_SkillAttack_Base/Arrow_01"]
+position = Vector3(5.09000015, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10833
+metadata/unity_name = "Glow_02"
+
+[node name="Trails" type="Node3D" parent="Javryn/VFXParent/VFX_Javryn_SkillAttack_Base"]
+position = Vector3(0.331, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16041
+metadata/unity_name = "Trails"
+
+[node name="Sparkle_01" type="Node3D" parent="Javryn/VFXParent/VFX_Javryn_SkillAttack_Base"]
+position = Vector3(0.400000006, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24775
+metadata/unity_name = "Sparkle_01"
+
+[node name="Spikes_01" type="Node3D" parent="Javryn/VFXParent/VFX_Javryn_SkillAttack_Base"]
+position = Vector3(0.400000006, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22034
+metadata/unity_name = "Spikes_01"
+
+[node name="Aura_01" type="Node3D" parent="Javryn/VFXParent/VFX_Javryn_SkillAttack_Base"]
+position = Vector3(0.331, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21381
+metadata/unity_name = "Aura_01"
+
+[node name="Dust_01" type="Node3D" parent="Javryn/VFXParent/VFX_Javryn_SkillAttack_Base"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21883
+metadata/unity_name = "Dust_01"
+
+[node name="Flare_01" type="Node3D" parent="Javryn/VFXParent/VFX_Javryn_SkillAttack_Base"]
+position = Vector3(0.400000006, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21458
+metadata/unity_name = "Flare_01"
+
+[node name="Glow_01" type="Node3D" parent="Javryn/VFXParent/VFX_Javryn_SkillAttack_Base"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14281
+metadata/unity_name = "Glow_01"

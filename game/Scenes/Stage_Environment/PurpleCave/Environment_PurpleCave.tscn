@@ -1,0 +1,1437 @@
+[gd_scene format=3]
+[ext_resource type="ArrayMesh" path="res://meshes/unity_default_resources_10202.obj" id="1"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_1167.tres" id="2"]
+[ext_resource type="ArrayMesh" path="res://meshes/unity_default_resources_10209.obj" id="3"]
+[ext_resource type="ShaderMaterial" path="res://materials/sharedassets7_10.tres" id="4"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets9_22.png" id="5"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets9_20.png" id="6"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets9_19.png" id="7"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets9_17.png" id="8"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets9_18.png" id="9"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets9_16.obj" id="10"]
+[ext_resource type="ShaderMaterial" path="res://materials/sharedassets9_2.tres" id="11"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets9_15.obj" id="12"]
+[ext_resource type="ShaderMaterial" path="res://materials/sharedassets9_4.tres" id="13"]
+[ext_resource type="ShaderMaterial" path="res://materials/sharedassets9_3.tres" id="14"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets7_23.obj" id="15"]
+[ext_resource type="ShaderMaterial" path="res://materials/rays/sharedassets7_8.tres" id="16"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets7_42.png" id="17"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets7_28.obj" id="18"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets7_5.tres" id="19"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets7_36.obj" id="20"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets7_4.tres" id="21"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets7_34.obj" id="22"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets7_6.tres" id="23"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets2_205.png" id="24"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets2_114.png" id="25"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets9_21.png" id="26"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets9_23.png" id="27"]
+
+[node name="Environment_PurpleCave" type="Node3D"]
+
+[node name="Directional Light" type="Node3D" parent="."]
+position = Vector3(0, 3, -0)
+quaternion = Quaternion(-0.39999947, 0.27805841, 0.766180456, 0.419108063)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 1
+metadata/unity_name = "Directional Light"
+
+[node name="UnityLight" type="DirectionalLight3D" parent="Directional Light"]
+light_color = Color(0.542452812, 0.636149346, 0.809189819, 1)
+light_energy = 4.0
+visible = true
+shadow_enabled = true
+directional_shadow_mode = 0
+directional_shadow_max_distance = 150.0
+shadow_opacity = 1
+metadata/unity_color_temperature = 5000
+
+[node name="IntroWaypoints" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 95
+metadata/unity_name = "IntroWaypoints"
+
+[node name="FirstTimeIntroWaypoint" type="Node3D" parent="IntroWaypoints"]
+position = Vector3(9.14000034, 0, 6.6960001)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 79
+metadata/unity_name = "FirstTimeIntroWaypoint"
+
+[node name="Cube" type="Node3D" parent="IntroWaypoints/FirstTimeIntroWaypoint"]
+position = Vector3(-2.00999999, 0, 0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 101
+metadata/unity_name = "Cube"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="IntroWaypoints/FirstTimeIntroWaypoint/Cube"]
+mesh = ExtResource("1")
+visible = false
+surface_material_override/0 = ExtResource("2")
+
+[node name="Cube_1" type="Node3D" parent="IntroWaypoints/FirstTimeIntroWaypoint"]
+position = Vector3(2.04999995, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25
+metadata/unity_name = "Cube_1"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="IntroWaypoints/FirstTimeIntroWaypoint/Cube_1"]
+mesh = ExtResource("1")
+visible = false
+surface_material_override/0 = ExtResource("2")
+
+[node name="RegularIntroWaypoint" type="Node3D" parent="IntroWaypoints"]
+position = Vector3(9.14000034, 0, 6.6960001)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 58
+metadata/unity_name = "RegularIntroWaypoint"
+
+[node name="Cube" type="Node3D" parent="IntroWaypoints/RegularIntroWaypoint"]
+position = Vector3(-2.00999999, 0, 0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 70
+metadata/unity_name = "Cube"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="IntroWaypoints/RegularIntroWaypoint/Cube"]
+mesh = ExtResource("1")
+visible = false
+surface_material_override/0 = ExtResource("2")
+
+[node name="Cube_1" type="Node3D" parent="IntroWaypoints/RegularIntroWaypoint"]
+position = Vector3(2.04999995, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 144
+metadata/unity_name = "Cube_1"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="IntroWaypoints/RegularIntroWaypoint/Cube_1"]
+mesh = ExtResource("1")
+visible = false
+surface_material_override/0 = ExtResource("2")
+
+[node name="ShadowPlane" type="Node3D" parent="."]
+position = Vector3(9.69999981, 0.100000001, -6.30000019)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(4, 4, 4)
+metadata/unity_id = 20
+metadata/unity_name = "ShadowPlane"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="ShadowPlane"]
+mesh = ExtResource("3")
+visible = true
+surface_material_override/0 = ExtResource("4")
+cast_shadow = 0
+
+[node name="PurpleCave_Default" type="Node3D" parent="."]
+position = Vector3(-0.5, 0, -1.10000002)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 76
+metadata/unity_name = "PurpleCave_Default"
+
+[node name="Foreground_1" type="Node3D" parent="PurpleCave_Default"]
+position = Vector3(17.3413868, 24.8175488, 30.1291847)
+quaternion = Quaternion(-0.295749128, 0.0832263827, 0.0258747097, 0.951281428)
+scale = Vector3(0.0799999908, 0.0799999982, 0.0799999982)
+metadata/unity_id = 33
+metadata/unity_name = "Foreground_1"
+
+[node name="UnitySprite" type="Sprite3D" parent="PurpleCave_Default/Foreground_1"]
+texture = ExtResource("5")
+pixel_size = 0.01
+visible = true
+flip_h = false
+flip_v = false
+modulate = Color(1, 1, 1, 1)
+offset = Vector2(2580.5, -1742.03809)
+
+[node name="GodRay" type="Node3D" parent="PurpleCave_Default"]
+position = Vector3(17.3413868, 24.8175488, 30.1291847)
+quaternion = Quaternion(-0.295749128, 0.0832263827, 0.0258747097, 0.951281428)
+scale = Vector3(0.0799999908, 0.0799999982, 0.0799999982)
+metadata/unity_id = 30
+metadata/unity_name = "GodRay"
+
+[node name="UnitySprite" type="Sprite3D" parent="PurpleCave_Default/GodRay"]
+texture = ExtResource("6")
+pixel_size = 0.01
+visible = true
+flip_h = false
+flip_v = false
+modulate = Color(1, 1, 1, 1)
+offset = Vector2(925.499878, 1316.0282)
+
+[node name="Foreground_2" type="Node3D" parent="PurpleCave_Default"]
+position = Vector3(16.8999996, 22, 27.1000004)
+quaternion = Quaternion(-0.295749128, 0.0832263827, 0.0258747097, 0.951281428)
+scale = Vector3(0.119999997, 0.119999997, 0.119999997)
+metadata/unity_id = 99
+metadata/unity_name = "Foreground_2"
+
+[node name="UnitySprite" type="Sprite3D" parent="PurpleCave_Default/Foreground_2"]
+texture = ExtResource("7")
+pixel_size = 0.01
+visible = true
+flip_h = false
+flip_v = false
+modulate = Color(1, 1, 1, 1)
+offset = Vector2(3449.03809, 1874.03809)
+
+[node name="Foreground_3" type="Node3D" parent="PurpleCave_Default"]
+position = Vector3(16.5, 22.3999996, 26.8999996)
+quaternion = Quaternion(-0.295749128, 0.0832263827, 0.0258747097, 0.951281428)
+scale = Vector3(0.119999997, 0.119999997, 0.119999997)
+metadata/unity_id = 65
+metadata/unity_name = "Foreground_3"
+
+[node name="UnitySprite" type="Sprite3D" parent="PurpleCave_Default/Foreground_3"]
+texture = ExtResource("8")
+pixel_size = 0.01
+visible = true
+flip_h = false
+flip_v = false
+modulate = Color(1, 1, 1, 1)
+offset = Vector2(-2802.53809, 1715.53809)
+
+[node name="Foreground_4" type="Node3D" parent="PurpleCave_Default"]
+position = Vector3(18, 21, 20.8999996)
+quaternion = Quaternion(-0.295749128, 0.0832263827, 0.0258747097, 0.951281428)
+scale = Vector3(0.119999997, 0.119999997, 0.119999997)
+metadata/unity_id = 118
+metadata/unity_name = "Foreground_4"
+
+[node name="UnitySprite" type="Sprite3D" parent="PurpleCave_Default/Foreground_4"]
+texture = ExtResource("9")
+pixel_size = 0.01
+visible = true
+flip_h = false
+flip_v = false
+modulate = Color(1, 1, 1, 1)
+offset = Vector2(2502.5, 0)
+
+[node name="PlayStage" type="Node3D" parent="PurpleCave_Default"]
+position = Vector3(14.3100004, -1.04999995, -3.36999989)
+quaternion = Quaternion(0, -1, -0, 0)
+scale = Vector3(0.850000024, 0.850000024, 0.850000024)
+metadata/unity_id = 93
+metadata/unity_name = "PlayStage"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="PurpleCave_Default/PlayStage"]
+mesh = ExtResource("10")
+visible = true
+surface_material_override/0 = ExtResource("11")
+cast_shadow = 0
+
+[node name="Lake_01" type="Node3D" parent="PurpleCave_Default"]
+position = Vector3(14.3100004, -1.05000007, -3.36999989)
+quaternion = Quaternion(0, -1, -0, 0)
+scale = Vector3(0.850000024, 0.850000024, 0.850000024)
+metadata/unity_id = 60
+metadata/unity_name = "Lake_01"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="PurpleCave_Default/Lake_01"]
+mesh = ExtResource("12")
+visible = true
+surface_material_override/0 = ExtResource("13")
+cast_shadow = 0
+
+[node name="Lake_02" type="Node3D" parent="PurpleCave_Default"]
+position = Vector3(14.3100004, -1.05000007, -3.36999941)
+quaternion = Quaternion(0, -1, -0, 0)
+scale = Vector3(0.850000024, 0.850000024, 0.850000024)
+metadata/unity_id = 26
+metadata/unity_name = "Lake_02"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="PurpleCave_Default/Lake_02"]
+mesh = ExtResource("12")
+visible = true
+surface_material_override/0 = ExtResource("14")
+cast_shadow = 0
+
+[node name="GateIcon" type="Node3D" parent="PurpleCave_Default"]
+position = Vector3(0.150000006, 1, -13.5799999)
+quaternion = Quaternion(-0, -0.965925813, 0, 0.258819103)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 71
+metadata/unity_name = "GateIcon"
+metadata/unity_crossroads_gate = true
+metadata/gate_hit_center = Vector3(0, 1.47000003, -0)
+metadata/gate_hit_radius = 1.46000004
+visible = false
+process_mode = 4
+
+[node name="VFX_Hover" type="Node3D" parent="PurpleCave_Default/GateIcon"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 111
+metadata/unity_name = "VFX_Hover"
+visible = false
+process_mode = 4
+
+[node name="Ray" type="Node3D" parent="PurpleCave_Default/GateIcon/VFX_Hover"]
+position = Vector3(0.5, -1.5, 0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9
+metadata/unity_name = "Ray"
+
+[node name="Ray_Infinite" type="Node3D" parent="PurpleCave_Default/GateIcon/VFX_Hover"]
+position = Vector3(0.5, -1.26999998, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 80
+metadata/unity_name = "Ray_Infinite"
+
+[node name="UnityRay" type="MeshInstance3D" parent="PurpleCave_Default/GateIcon/VFX_Hover/Ray_Infinite"]
+mesh = ExtResource("15")
+material_override = ExtResource("16")
+rotation = Vector3(-0, 1.57079625, 0)
+scale = Vector3(1, 2.29999995, 2.5999999)
+cast_shadow = 0
+instance_shader_parameters/beam_tint = Color(0.924528301, 0.890099466, 0.597454607, 0.290196091)
+
+[node name="Glow_1" type="Node3D" parent="PurpleCave_Default/GateIcon/VFX_Hover"]
+position = Vector3(0, -0.610000014, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 110
+metadata/unity_name = "Glow_1"
+
+[node name="Line_01" type="Node3D" parent="PurpleCave_Default/GateIcon/VFX_Hover"]
+position = Vector3(-0, 0, 0.5)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 119
+metadata/unity_name = "Line_01"
+
+[node name="Graphics" type="Node3D" parent="PurpleCave_Default/GateIcon"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 37
+metadata/unity_name = "Graphics"
+
+[node name="Title" type="Node3D" parent="PurpleCave_Default/GateIcon/Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(-1, 1, 1)
+metadata/unity_id = 148
+metadata/unity_name = "Title"
+
+[node name="Icon" type="Node3D" parent="PurpleCave_Default/GateIcon/Graphics"]
+position = Vector3(0, 1.61000001, -0.199999839)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(-0.300000012, 0.300000012, 0.300000012)
+metadata/unity_id = 66
+metadata/unity_name = "Icon"
+
+[node name="UnitySprite" type="Sprite3D" parent="PurpleCave_Default/GateIcon/Graphics/Icon"]
+texture = ExtResource("17")
+pixel_size = 0.01
+visible = true
+flip_h = false
+flip_v = false
+modulate = Color(1, 1, 1, 1)
+offset = Vector2(-0.999988556, 1.52468491)
+
+[node name="IconModel" type="Node3D" parent="PurpleCave_Default/GateIcon/Graphics"]
+position = Vector3(-0, 1.49800003, -0.0659999996)
+quaternion = Quaternion(-0.707106829, 0, -0, 0.707106829)
+scale = Vector3(0.700000048, 0.699999988, 0.699999928)
+metadata/unity_id = 52
+metadata/unity_name = "IconModel"
+visible = false
+process_mode = 4
+
+[node name="LifeShrine" type="Node3D" parent="PurpleCave_Default/GateIcon/Graphics/IconModel"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 72
+metadata/unity_name = "LifeShrine"
+
+[node name="LifeShrine_IconMesh" type="Node3D" parent="PurpleCave_Default/GateIcon/Graphics/IconModel/LifeShrine"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 36
+metadata/unity_name = "LifeShrine_IconMesh"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="PurpleCave_Default/GateIcon/Graphics/IconModel/LifeShrine/LifeShrine_IconMesh"]
+mesh = ExtResource("18")
+visible = true
+surface_material_override/0 = ExtResource("19")
+
+[node name="BasicTooltip" type="Node3D" parent="PurpleCave_Default/GateIcon/Graphics"]
+position = Vector3(0, 0, 14.4837265)
+quaternion = Quaternion(0, 0.921710908, -0, 0.387877643)
+scale = Vector3(0.278699964, 0.278699994, 0.278699964)
+metadata/unity_id = 137
+metadata/unity_name = "BasicTooltip"
+visible = false
+process_mode = 4
+
+[node name="VFX_Glow" type="Node3D" parent="PurpleCave_Default/GateIcon/Graphics"]
+position = Vector3(0, 1.42999995, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 124
+metadata/unity_name = "VFX_Glow"
+
+[node name="VFX_Flare" type="Node3D" parent="PurpleCave_Default/GateIcon/Graphics"]
+position = Vector3(0, 1.42999995, 0.465000272)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27
+metadata/unity_name = "VFX_Flare"
+visible = false
+process_mode = 4
+
+[node name="Background_1" type="Node3D" parent="PurpleCave_Default/GateIcon/Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1.60000002, 1.60000002, 1.60000002)
+metadata/unity_id = 84
+metadata/unity_name = "Background_1"
+
+[node name="IconBG_Mesh" type="Node3D" parent="PurpleCave_Default/GateIcon/Graphics/Background_1"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 117
+metadata/unity_name = "IconBG_Mesh"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="PurpleCave_Default/GateIcon/Graphics/Background_1/IconBG_Mesh"]
+mesh = ExtResource("20")
+visible = true
+surface_material_override/0 = ExtResource("21")
+
+[node name="Pointer" type="Node3D" parent="PurpleCave_Default/GateIcon/Graphics"]
+position = Vector3(0, 4.86999989, -0)
+quaternion = Quaternion(-0, -0.707106829, 0, 0.707106829)
+scale = Vector3(0.200000003, 0.200000003, 0.200000003)
+metadata/unity_id = 145
+metadata/unity_name = "Pointer"
+visible = false
+process_mode = 4
+
+[node name="Pointer_Mesh" type="Node3D" parent="PurpleCave_Default/GateIcon/Graphics/Pointer"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11
+metadata/unity_name = "Pointer_Mesh"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="PurpleCave_Default/GateIcon/Graphics/Pointer/Pointer_Mesh"]
+mesh = ExtResource("22")
+visible = true
+surface_material_override/0 = ExtResource("23")
+
+[node name="Tooltip" type="Node3D" parent="PurpleCave_Default/GateIcon"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 109
+metadata/unity_name = "Tooltip"
+visible = false
+process_mode = 4
+
+[node name="UnitySprite" type="Sprite3D" parent="PurpleCave_Default/GateIcon/Tooltip"]
+texture = ExtResource("24")
+pixel_size = 0.01
+visible = true
+flip_h = false
+flip_v = false
+modulate = Color(0.943396211, 0.943396211, 0.943396211, 1)
+
+[node name="Square_1" type="Node3D" parent="PurpleCave_Default/GateIcon/Tooltip"]
+position = Vector3(0, 0.5, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(-9, 0.0500000007, 1)
+metadata/unity_id = 2
+metadata/unity_name = "Square_1"
+visible = false
+process_mode = 4
+
+[node name="UnitySprite" type="Sprite3D" parent="PurpleCave_Default/GateIcon/Tooltip/Square_1"]
+texture = ExtResource("25")
+pixel_size = 0.0078125
+visible = true
+flip_h = false
+flip_v = false
+modulate = Color(1, 1, 1, 1)
+
+[node name="Description" type="Node3D" parent="PurpleCave_Default/GateIcon/Tooltip"]
+position = Vector3(0, 0, 0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(-1, 1, 1)
+metadata/unity_id = 129
+metadata/unity_name = "Description"
+
+[node name="Canvas" type="Node3D" parent="PurpleCave_Default/GateIcon"]
+position = Vector3(0, 0, -234.742905)
+quaternion = Quaternion(0, 0.921710908, -0, 0.387877643)
+scale = Vector3(0.999999762, 1, 0.999999762)
+metadata/unity_id = 21
+metadata/unity_name = "Canvas"
+visible = false
+process_mode = 4
+
+[node name="TooltipBox" type="Node3D" parent="PurpleCave_Default/GateIcon/Canvas"]
+position = Vector3(0, 0, 4.21839759e-05)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 49
+metadata/unity_name = "TooltipBox"
+
+[node name="Description" type="Node3D" parent="PurpleCave_Default/GateIcon/Canvas/TooltipBox"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 139
+metadata/unity_name = "Description"
+
+[node name="VFX_Gate_Break" type="Node3D" parent="PurpleCave_Default/GateIcon"]
+position = Vector3(0, 1.20000005, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 57
+metadata/unity_name = "VFX_Gate_Break"
+visible = false
+process_mode = 4
+
+[node name="Frames_01" type="Node3D" parent="PurpleCave_Default/GateIcon/VFX_Gate_Break"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 108
+metadata/unity_name = "Frames_01"
+
+[node name="Plane_01" type="Node3D" parent="PurpleCave_Default/GateIcon/VFX_Gate_Break"]
+position = Vector3(0, 0.239999995, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 32
+metadata/unity_name = "Plane_01"
+
+[node name="Fracture_01" type="Node3D" parent="PurpleCave_Default/GateIcon/VFX_Gate_Break"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 130
+metadata/unity_name = "Fracture_01"
+
+[node name="Fracture_02" type="Node3D" parent="PurpleCave_Default/GateIcon/VFX_Gate_Break"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 43
+metadata/unity_name = "Fracture_02"
+
+[node name="Explosion_01" type="Node3D" parent="PurpleCave_Default/GateIcon/VFX_Gate_Break"]
+position = Vector3(0, 0.5, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 98
+metadata/unity_name = "Explosion_01"
+
+[node name="Dust_01" type="Node3D" parent="PurpleCave_Default/GateIcon/VFX_Gate_Break"]
+position = Vector3(0, 0.5, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 59
+metadata/unity_name = "Dust_01"
+
+[node name="Line_01" type="Node3D" parent="PurpleCave_Default/GateIcon/VFX_Gate_Break"]
+position = Vector3(-0, 0, 0.5)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 63
+metadata/unity_name = "Line_01"
+
+[node name="GateWaypoint" type="Node3D" parent="PurpleCave_Default/GateIcon"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 103
+metadata/unity_name = "GateWaypoint"
+
+[node name="Cube" type="Node3D" parent="PurpleCave_Default/GateIcon/GateWaypoint"]
+position = Vector3(-2.00999999, 0, 0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 92
+metadata/unity_name = "Cube"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="PurpleCave_Default/GateIcon/GateWaypoint/Cube"]
+mesh = ExtResource("1")
+visible = false
+surface_material_override/0 = ExtResource("2")
+
+[node name="Cube_1" type="Node3D" parent="PurpleCave_Default/GateIcon/GateWaypoint"]
+position = Vector3(2.04999995, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16
+metadata/unity_name = "Cube_1"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="PurpleCave_Default/GateIcon/GateWaypoint/Cube_1"]
+mesh = ExtResource("1")
+visible = false
+surface_material_override/0 = ExtResource("2")
+
+[node name="WorldCanvas" type="Node3D" parent="PurpleCave_Default/GateIcon"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(0.0250000004, 0.0250000004, 0.0250000004)
+metadata/unity_id = 126
+metadata/unity_name = "WorldCanvas"
+
+[node name="HighlightUI" type="Node3D" parent="PurpleCave_Default/GateIcon/WorldCanvas"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 54
+metadata/unity_name = "HighlightUI"
+visible = false
+process_mode = 4
+
+[node name="Highlight_Rotating" type="Node3D" parent="PurpleCave_Default/GateIcon/WorldCanvas/HighlightUI"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 38
+metadata/unity_name = "Highlight_Rotating"
+
+[node name="ComplexTooltip_01" type="Node3D" parent="PurpleCave_Default/GateIcon/WorldCanvas"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -1, 0, 0)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 77
+metadata/unity_name = "ComplexTooltip_01"
+
+[node name="DescriptionWorldSpace" type="Node3D" parent="PurpleCave_Default/GateIcon/WorldCanvas/ComplexTooltip_01"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 88
+metadata/unity_name = "DescriptionWorldSpace"
+
+[node name="MainText" type="Node3D" parent="PurpleCave_Default/GateIcon/WorldCanvas/ComplexTooltip_01/DescriptionWorldSpace"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 90
+metadata/unity_name = "MainText"
+
+[node name="OuterFrame" type="Node3D" parent="PurpleCave_Default/GateIcon/WorldCanvas/ComplexTooltip_01"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 112
+metadata/unity_name = "OuterFrame"
+
+[node name="GateIcon_1" type="Node3D" parent="PurpleCave_Default"]
+position = Vector3(9.89999962, 1, -16.3999996)
+quaternion = Quaternion(0, -0.99976778, -0, 0.0215511899)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 69
+metadata/unity_name = "GateIcon_1"
+metadata/unity_crossroads_gate = true
+metadata/gate_hit_center = Vector3(0, 1.47000003, -0)
+metadata/gate_hit_radius = 1.46000004
+visible = false
+process_mode = 4
+
+[node name="VFX_Hover" type="Node3D" parent="PurpleCave_Default/GateIcon_1"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 122
+metadata/unity_name = "VFX_Hover"
+visible = false
+process_mode = 4
+
+[node name="Ray" type="Node3D" parent="PurpleCave_Default/GateIcon_1/VFX_Hover"]
+position = Vector3(0.300000012, -1.5, 0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15
+metadata/unity_name = "Ray"
+
+[node name="Ray_Infinite" type="Node3D" parent="PurpleCave_Default/GateIcon_1/VFX_Hover"]
+position = Vector3(0.300000012, -1.26999998, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 86
+metadata/unity_name = "Ray_Infinite"
+
+[node name="UnityRay" type="MeshInstance3D" parent="PurpleCave_Default/GateIcon_1/VFX_Hover/Ray_Infinite"]
+mesh = ExtResource("15")
+material_override = ExtResource("16")
+rotation = Vector3(-0, 1.57079625, 0)
+scale = Vector3(1, 2.29999995, 2.5999999)
+cast_shadow = 0
+instance_shader_parameters/beam_tint = Color(0.924528301, 0.890099466, 0.597454607, 0.290196091)
+
+[node name="Glow_1" type="Node3D" parent="PurpleCave_Default/GateIcon_1/VFX_Hover"]
+position = Vector3(0, -0.610000014, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 104
+metadata/unity_name = "Glow_1"
+
+[node name="Line_01" type="Node3D" parent="PurpleCave_Default/GateIcon_1/VFX_Hover"]
+position = Vector3(-0, 0, 0.5)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 114
+metadata/unity_name = "Line_01"
+
+[node name="Graphics" type="Node3D" parent="PurpleCave_Default/GateIcon_1"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 40
+metadata/unity_name = "Graphics"
+
+[node name="Title" type="Node3D" parent="PurpleCave_Default/GateIcon_1/Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(-1, 1, 1)
+metadata/unity_id = 147
+metadata/unity_name = "Title"
+
+[node name="Icon" type="Node3D" parent="PurpleCave_Default/GateIcon_1/Graphics"]
+position = Vector3(0, 1.61000001, -0.199999839)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(-0.300000012, 0.300000012, 0.300000012)
+metadata/unity_id = 64
+metadata/unity_name = "Icon"
+
+[node name="UnitySprite" type="Sprite3D" parent="PurpleCave_Default/GateIcon_1/Graphics/Icon"]
+texture = ExtResource("17")
+pixel_size = 0.01
+visible = true
+flip_h = false
+flip_v = false
+modulate = Color(1, 1, 1, 1)
+offset = Vector2(-0.999988556, 1.52468491)
+
+[node name="IconModel" type="Node3D" parent="PurpleCave_Default/GateIcon_1/Graphics"]
+position = Vector3(-0, 1.49800003, -0.0659999996)
+quaternion = Quaternion(-0.707106829, 0, -0, 0.707106829)
+scale = Vector3(0.700000048, 0.699999988, 0.699999928)
+metadata/unity_id = 47
+metadata/unity_name = "IconModel"
+visible = false
+process_mode = 4
+
+[node name="LifeShrine" type="Node3D" parent="PurpleCave_Default/GateIcon_1/Graphics/IconModel"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 75
+metadata/unity_name = "LifeShrine"
+
+[node name="LifeShrine_IconMesh" type="Node3D" parent="PurpleCave_Default/GateIcon_1/Graphics/IconModel/LifeShrine"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 41
+metadata/unity_name = "LifeShrine_IconMesh"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="PurpleCave_Default/GateIcon_1/Graphics/IconModel/LifeShrine/LifeShrine_IconMesh"]
+mesh = ExtResource("18")
+visible = true
+surface_material_override/0 = ExtResource("19")
+
+[node name="BasicTooltip" type="Node3D" parent="PurpleCave_Default/GateIcon_1/Graphics"]
+position = Vector3(0, 0, 14.4837265)
+quaternion = Quaternion(0, 0.921710908, -0, 0.387877643)
+scale = Vector3(0.278699964, 0.278699994, 0.278699964)
+metadata/unity_id = 141
+metadata/unity_name = "BasicTooltip"
+visible = false
+process_mode = 4
+
+[node name="VFX_Glow" type="Node3D" parent="PurpleCave_Default/GateIcon_1/Graphics"]
+position = Vector3(0, 1.42999995, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 116
+metadata/unity_name = "VFX_Glow"
+
+[node name="VFX_Flare" type="Node3D" parent="PurpleCave_Default/GateIcon_1/Graphics"]
+position = Vector3(0, 1.42999995, 0.465000272)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 28
+metadata/unity_name = "VFX_Flare"
+visible = false
+process_mode = 4
+
+[node name="Background_1" type="Node3D" parent="PurpleCave_Default/GateIcon_1/Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1.60000002, 1.60000002, 1.60000002)
+metadata/unity_id = 87
+metadata/unity_name = "Background_1"
+
+[node name="IconBG_Mesh" type="Node3D" parent="PurpleCave_Default/GateIcon_1/Graphics/Background_1"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 115
+metadata/unity_name = "IconBG_Mesh"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="PurpleCave_Default/GateIcon_1/Graphics/Background_1/IconBG_Mesh"]
+mesh = ExtResource("20")
+visible = true
+surface_material_override/0 = ExtResource("21")
+
+[node name="Pointer" type="Node3D" parent="PurpleCave_Default/GateIcon_1/Graphics"]
+position = Vector3(0, 4.86999989, -0)
+quaternion = Quaternion(-0, -0.707106829, 0, 0.707106829)
+scale = Vector3(0.200000003, 0.200000003, 0.200000003)
+metadata/unity_id = 142
+metadata/unity_name = "Pointer"
+visible = false
+process_mode = 4
+
+[node name="Pointer_Mesh" type="Node3D" parent="PurpleCave_Default/GateIcon_1/Graphics/Pointer"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14
+metadata/unity_name = "Pointer_Mesh"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="PurpleCave_Default/GateIcon_1/Graphics/Pointer/Pointer_Mesh"]
+mesh = ExtResource("22")
+visible = true
+surface_material_override/0 = ExtResource("23")
+
+[node name="Tooltip" type="Node3D" parent="PurpleCave_Default/GateIcon_1"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 105
+metadata/unity_name = "Tooltip"
+visible = false
+process_mode = 4
+
+[node name="UnitySprite" type="Sprite3D" parent="PurpleCave_Default/GateIcon_1/Tooltip"]
+texture = ExtResource("24")
+pixel_size = 0.01
+visible = true
+flip_h = false
+flip_v = false
+modulate = Color(0.943396211, 0.943396211, 0.943396211, 1)
+
+[node name="Square_1" type="Node3D" parent="PurpleCave_Default/GateIcon_1/Tooltip"]
+position = Vector3(0, 0.5, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(-9, 0.0500000007, 1)
+metadata/unity_id = 4
+metadata/unity_name = "Square_1"
+visible = false
+process_mode = 4
+
+[node name="UnitySprite" type="Sprite3D" parent="PurpleCave_Default/GateIcon_1/Tooltip/Square_1"]
+texture = ExtResource("25")
+pixel_size = 0.0078125
+visible = true
+flip_h = false
+flip_v = false
+modulate = Color(1, 1, 1, 1)
+
+[node name="Description" type="Node3D" parent="PurpleCave_Default/GateIcon_1/Tooltip"]
+position = Vector3(0, 0, 0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(-1, 1, 1)
+metadata/unity_id = 132
+metadata/unity_name = "Description"
+
+[node name="Canvas" type="Node3D" parent="PurpleCave_Default/GateIcon_1"]
+position = Vector3(0, 0, -234.742905)
+quaternion = Quaternion(0, 0.921710908, -0, 0.387877643)
+scale = Vector3(0.999999762, 1, 0.999999762)
+metadata/unity_id = 19
+metadata/unity_name = "Canvas"
+visible = false
+process_mode = 4
+
+[node name="TooltipBox" type="Node3D" parent="PurpleCave_Default/GateIcon_1/Canvas"]
+position = Vector3(0, 0, 4.21839759e-05)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 42
+metadata/unity_name = "TooltipBox"
+
+[node name="Description" type="Node3D" parent="PurpleCave_Default/GateIcon_1/Canvas/TooltipBox"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 140
+metadata/unity_name = "Description"
+
+[node name="VFX_Gate_Break" type="Node3D" parent="PurpleCave_Default/GateIcon_1"]
+position = Vector3(0, 1.20000005, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 55
+metadata/unity_name = "VFX_Gate_Break"
+visible = false
+process_mode = 4
+
+[node name="Frames_01" type="Node3D" parent="PurpleCave_Default/GateIcon_1/VFX_Gate_Break"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 102
+metadata/unity_name = "Frames_01"
+
+[node name="Plane_01" type="Node3D" parent="PurpleCave_Default/GateIcon_1/VFX_Gate_Break"]
+position = Vector3(0, 0.239999995, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 31
+metadata/unity_name = "Plane_01"
+
+[node name="Fracture_01" type="Node3D" parent="PurpleCave_Default/GateIcon_1/VFX_Gate_Break"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 131
+metadata/unity_name = "Fracture_01"
+
+[node name="Fracture_02" type="Node3D" parent="PurpleCave_Default/GateIcon_1/VFX_Gate_Break"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 50
+metadata/unity_name = "Fracture_02"
+
+[node name="Explosion_01" type="Node3D" parent="PurpleCave_Default/GateIcon_1/VFX_Gate_Break"]
+position = Vector3(0, 0.5, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 96
+metadata/unity_name = "Explosion_01"
+
+[node name="Dust_01" type="Node3D" parent="PurpleCave_Default/GateIcon_1/VFX_Gate_Break"]
+position = Vector3(0, 0.5, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 62
+metadata/unity_name = "Dust_01"
+
+[node name="Line_01" type="Node3D" parent="PurpleCave_Default/GateIcon_1/VFX_Gate_Break"]
+position = Vector3(-0, 0, 0.5)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 67
+metadata/unity_name = "Line_01"
+
+[node name="GateWaypoint" type="Node3D" parent="PurpleCave_Default/GateIcon_1"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 106
+metadata/unity_name = "GateWaypoint"
+
+[node name="Cube" type="Node3D" parent="PurpleCave_Default/GateIcon_1/GateWaypoint"]
+position = Vector3(-2.00999999, 0, 0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 94
+metadata/unity_name = "Cube"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="PurpleCave_Default/GateIcon_1/GateWaypoint/Cube"]
+mesh = ExtResource("1")
+visible = false
+surface_material_override/0 = ExtResource("2")
+
+[node name="Cube_1" type="Node3D" parent="PurpleCave_Default/GateIcon_1/GateWaypoint"]
+position = Vector3(2.04999995, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10
+metadata/unity_name = "Cube_1"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="PurpleCave_Default/GateIcon_1/GateWaypoint/Cube_1"]
+mesh = ExtResource("1")
+visible = false
+surface_material_override/0 = ExtResource("2")
+
+[node name="WorldCanvas" type="Node3D" parent="PurpleCave_Default/GateIcon_1"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(0.0250000004, 0.0250000004, 0.0250000004)
+metadata/unity_id = 128
+metadata/unity_name = "WorldCanvas"
+
+[node name="HighlightUI" type="Node3D" parent="PurpleCave_Default/GateIcon_1/WorldCanvas"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 46
+metadata/unity_name = "HighlightUI"
+visible = false
+process_mode = 4
+
+[node name="Highlight_Rotating" type="Node3D" parent="PurpleCave_Default/GateIcon_1/WorldCanvas/HighlightUI"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 39
+metadata/unity_name = "Highlight_Rotating"
+
+[node name="ComplexTooltip_01" type="Node3D" parent="PurpleCave_Default/GateIcon_1/WorldCanvas"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -1, 0, 0)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 78
+metadata/unity_name = "ComplexTooltip_01"
+
+[node name="DescriptionWorldSpace" type="Node3D" parent="PurpleCave_Default/GateIcon_1/WorldCanvas/ComplexTooltip_01"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 83
+metadata/unity_name = "DescriptionWorldSpace"
+
+[node name="MainText" type="Node3D" parent="PurpleCave_Default/GateIcon_1/WorldCanvas/ComplexTooltip_01/DescriptionWorldSpace"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 91
+metadata/unity_name = "MainText"
+
+[node name="OuterFrame" type="Node3D" parent="PurpleCave_Default/GateIcon_1/WorldCanvas/ComplexTooltip_01"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 121
+metadata/unity_name = "OuterFrame"
+
+[node name="GateIcon_2" type="Node3D" parent="PurpleCave_Default"]
+position = Vector3(20.5300007, 1, -14.3500004)
+quaternion = Quaternion(-0, 0.965925813, 0, 0.258819103)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 136
+metadata/unity_name = "GateIcon_2"
+metadata/unity_crossroads_gate = true
+metadata/gate_hit_center = Vector3(0, 1.47000003, -0)
+metadata/gate_hit_radius = 1.46000004
+visible = false
+process_mode = 4
+
+[node name="VFX_Hover" type="Node3D" parent="PurpleCave_Default/GateIcon_2"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 44
+metadata/unity_name = "VFX_Hover"
+visible = false
+process_mode = 4
+
+[node name="Ray" type="Node3D" parent="PurpleCave_Default/GateIcon_2/VFX_Hover"]
+position = Vector3(-0.200000003, -1.5, 0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 82
+metadata/unity_name = "Ray"
+
+[node name="Ray_Infinite" type="Node3D" parent="PurpleCave_Default/GateIcon_2/VFX_Hover"]
+position = Vector3(-0.200000003, -1.26999998, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12
+metadata/unity_name = "Ray_Infinite"
+
+[node name="UnityRay" type="MeshInstance3D" parent="PurpleCave_Default/GateIcon_2/VFX_Hover/Ray_Infinite"]
+mesh = ExtResource("15")
+material_override = ExtResource("16")
+rotation = Vector3(-0, 1.57079625, 0)
+scale = Vector3(1, 2.29999995, 2.5999999)
+cast_shadow = 0
+instance_shader_parameters/beam_tint = Color(0.924528301, 0.890099466, 0.597454607, 0.290196091)
+
+[node name="Glow_1" type="Node3D" parent="PurpleCave_Default/GateIcon_2/VFX_Hover"]
+position = Vector3(0, -0.610000014, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23
+metadata/unity_name = "Glow_1"
+
+[node name="Line_01" type="Node3D" parent="PurpleCave_Default/GateIcon_2/VFX_Hover"]
+position = Vector3(-0, 0, 0.5)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 48
+metadata/unity_name = "Line_01"
+
+[node name="Graphics" type="Node3D" parent="PurpleCave_Default/GateIcon_2"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 134
+metadata/unity_name = "Graphics"
+
+[node name="Title" type="Node3D" parent="PurpleCave_Default/GateIcon_2/Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(-1, 1, 1)
+metadata/unity_id = 68
+metadata/unity_name = "Title"
+
+[node name="Icon" type="Node3D" parent="PurpleCave_Default/GateIcon_2/Graphics"]
+position = Vector3(0, 1.61000001, -0.199999839)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(-0.300000012, 0.300000012, 0.300000012)
+metadata/unity_id = 149
+metadata/unity_name = "Icon"
+
+[node name="UnitySprite" type="Sprite3D" parent="PurpleCave_Default/GateIcon_2/Graphics/Icon"]
+texture = ExtResource("17")
+pixel_size = 0.01
+visible = true
+flip_h = false
+flip_v = false
+modulate = Color(1, 1, 1, 1)
+offset = Vector2(-0.999988556, 1.52468491)
+
+[node name="IconModel" type="Node3D" parent="PurpleCave_Default/GateIcon_2/Graphics"]
+position = Vector3(-0, 1.49800003, -0.0659999996)
+quaternion = Quaternion(-0.707106829, 0, -0, 0.707106829)
+scale = Vector3(0.700000048, 0.699999988, 0.699999928)
+metadata/unity_id = 125
+metadata/unity_name = "IconModel"
+visible = false
+process_mode = 4
+
+[node name="LifeShrine" type="Node3D" parent="PurpleCave_Default/GateIcon_2/Graphics/IconModel"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 138
+metadata/unity_name = "LifeShrine"
+
+[node name="LifeShrine_IconMesh" type="Node3D" parent="PurpleCave_Default/GateIcon_2/Graphics/IconModel/LifeShrine"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 135
+metadata/unity_name = "LifeShrine_IconMesh"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="PurpleCave_Default/GateIcon_2/Graphics/IconModel/LifeShrine/LifeShrine_IconMesh"]
+mesh = ExtResource("18")
+visible = true
+surface_material_override/0 = ExtResource("19")
+
+[node name="BasicTooltip" type="Node3D" parent="PurpleCave_Default/GateIcon_2/Graphics"]
+position = Vector3(0, 0, 14.4837265)
+quaternion = Quaternion(0, 0.921710908, -0, 0.387877643)
+scale = Vector3(0.278699964, 0.278699994, 0.278699964)
+metadata/unity_id = 74
+metadata/unity_name = "BasicTooltip"
+visible = false
+process_mode = 4
+
+[node name="VFX_Glow" type="Node3D" parent="PurpleCave_Default/GateIcon_2/Graphics"]
+position = Vector3(0, 1.42999995, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 53
+metadata/unity_name = "VFX_Glow"
+
+[node name="VFX_Flare" type="Node3D" parent="PurpleCave_Default/GateIcon_2/Graphics"]
+position = Vector3(0, 1.42999995, 0.465000272)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 97
+metadata/unity_name = "VFX_Flare"
+visible = false
+process_mode = 4
+
+[node name="Background_1" type="Node3D" parent="PurpleCave_Default/GateIcon_2/Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1.60000002, 1.60000002, 1.60000002)
+metadata/unity_id = 13
+metadata/unity_name = "Background_1"
+
+[node name="IconBG_Mesh" type="Node3D" parent="PurpleCave_Default/GateIcon_2/Graphics/Background_1"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 51
+metadata/unity_name = "IconBG_Mesh"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="PurpleCave_Default/GateIcon_2/Graphics/Background_1/IconBG_Mesh"]
+mesh = ExtResource("20")
+visible = true
+surface_material_override/0 = ExtResource("21")
+
+[node name="Pointer" type="Node3D" parent="PurpleCave_Default/GateIcon_2/Graphics"]
+position = Vector3(0, 4.86999989, -0)
+quaternion = Quaternion(-0, -0.707106829, 0, 0.707106829)
+scale = Vector3(0.200000003, 0.200000003, 0.200000003)
+metadata/unity_id = 61
+metadata/unity_name = "Pointer"
+visible = false
+process_mode = 4
+
+[node name="Pointer_Mesh" type="Node3D" parent="PurpleCave_Default/GateIcon_2/Graphics/Pointer"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 81
+metadata/unity_name = "Pointer_Mesh"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="PurpleCave_Default/GateIcon_2/Graphics/Pointer/Pointer_Mesh"]
+mesh = ExtResource("22")
+visible = true
+surface_material_override/0 = ExtResource("23")
+
+[node name="Tooltip" type="Node3D" parent="PurpleCave_Default/GateIcon_2"]
+position = Vector3(0, 0, -2.30000019)
+quaternion = Quaternion(-0.278974921, -0.326599896, 0.101538464, -0.897326827)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24
+metadata/unity_name = "Tooltip"
+visible = false
+process_mode = 4
+
+[node name="UnitySprite" type="Sprite3D" parent="PurpleCave_Default/GateIcon_2/Tooltip"]
+texture = ExtResource("24")
+pixel_size = 0.01
+visible = true
+flip_h = false
+flip_v = false
+modulate = Color(0.943396211, 0.943396211, 0.943396211, 1)
+
+[node name="Square_1" type="Node3D" parent="PurpleCave_Default/GateIcon_2/Tooltip"]
+position = Vector3(0, 0.5, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(-9, 0.0500000007, 1)
+metadata/unity_id = 89
+metadata/unity_name = "Square_1"
+visible = false
+process_mode = 4
+
+[node name="UnitySprite" type="Sprite3D" parent="PurpleCave_Default/GateIcon_2/Tooltip/Square_1"]
+texture = ExtResource("25")
+pixel_size = 0.0078125
+visible = true
+flip_h = false
+flip_v = false
+modulate = Color(1, 1, 1, 1)
+
+[node name="Description" type="Node3D" parent="PurpleCave_Default/GateIcon_2/Tooltip"]
+position = Vector3(0, 0, 0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(-1, 1, 1)
+metadata/unity_id = 35
+metadata/unity_name = "Description"
+
+[node name="Canvas" type="Node3D" parent="PurpleCave_Default/GateIcon_2"]
+position = Vector3(0, 0, -234.742905)
+quaternion = Quaternion(0, 0.921710908, -0, 0.387877643)
+scale = Vector3(0.999999762, 1, 0.999999762)
+metadata/unity_id = 107
+metadata/unity_name = "Canvas"
+visible = false
+process_mode = 4
+
+[node name="TooltipBox" type="Node3D" parent="PurpleCave_Default/GateIcon_2/Canvas"]
+position = Vector3(0, 0, 4.21839759e-05)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 120
+metadata/unity_name = "TooltipBox"
+
+[node name="Description" type="Node3D" parent="PurpleCave_Default/GateIcon_2/Canvas/TooltipBox"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 73
+metadata/unity_name = "Description"
+
+[node name="VFX_Gate_Break" type="Node3D" parent="PurpleCave_Default/GateIcon_2"]
+position = Vector3(0, 1.20000005, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 127
+metadata/unity_name = "VFX_Gate_Break"
+visible = false
+process_mode = 4
+
+[node name="Frames_01" type="Node3D" parent="PurpleCave_Default/GateIcon_2/VFX_Gate_Break"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22
+metadata/unity_name = "Frames_01"
+
+[node name="Plane_01" type="Node3D" parent="PurpleCave_Default/GateIcon_2/VFX_Gate_Break"]
+position = Vector3(0, 0.239999995, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 100
+metadata/unity_name = "Plane_01"
+
+[node name="Fracture_01" type="Node3D" parent="PurpleCave_Default/GateIcon_2/VFX_Gate_Break"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 34
+metadata/unity_name = "Fracture_01"
+
+[node name="Fracture_02" type="Node3D" parent="PurpleCave_Default/GateIcon_2/VFX_Gate_Break"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 113
+metadata/unity_name = "Fracture_02"
+
+[node name="Explosion_01" type="Node3D" parent="PurpleCave_Default/GateIcon_2/VFX_Gate_Break"]
+position = Vector3(0, 0.5, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 29
+metadata/unity_name = "Explosion_01"
+
+[node name="Dust_01" type="Node3D" parent="PurpleCave_Default/GateIcon_2/VFX_Gate_Break"]
+position = Vector3(0, 0.5, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 143
+metadata/unity_name = "Dust_01"
+
+[node name="Line_01" type="Node3D" parent="PurpleCave_Default/GateIcon_2/VFX_Gate_Break"]
+position = Vector3(-0, 0, 0.5)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 146
+metadata/unity_name = "Line_01"
+
+[node name="GateWaypoint" type="Node3D" parent="PurpleCave_Default/GateIcon_2"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18
+metadata/unity_name = "GateWaypoint"
+
+[node name="Cube" type="Node3D" parent="PurpleCave_Default/GateIcon_2/GateWaypoint"]
+position = Vector3(-2.00999999, 0, 0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7
+metadata/unity_name = "Cube"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="PurpleCave_Default/GateIcon_2/GateWaypoint/Cube"]
+mesh = ExtResource("1")
+visible = false
+surface_material_override/0 = ExtResource("2")
+
+[node name="Cube_1" type="Node3D" parent="PurpleCave_Default/GateIcon_2/GateWaypoint"]
+position = Vector3(2.04999995, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 85
+metadata/unity_name = "Cube_1"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="PurpleCave_Default/GateIcon_2/GateWaypoint/Cube_1"]
+mesh = ExtResource("1")
+visible = false
+surface_material_override/0 = ExtResource("2")
+
+[node name="WorldCanvas" type="Node3D" parent="PurpleCave_Default/GateIcon_2"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(0.0250000004, 0.0250000004, 0.0250000004)
+metadata/unity_id = 56
+metadata/unity_name = "WorldCanvas"
+
+[node name="HighlightUI" type="Node3D" parent="PurpleCave_Default/GateIcon_2/WorldCanvas"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 123
+metadata/unity_name = "HighlightUI"
+visible = false
+process_mode = 4
+
+[node name="Highlight_Rotating" type="Node3D" parent="PurpleCave_Default/GateIcon_2/WorldCanvas/HighlightUI"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 133
+metadata/unity_name = "Highlight_Rotating"
+
+[node name="ComplexTooltip_01" type="Node3D" parent="PurpleCave_Default/GateIcon_2/WorldCanvas"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -1, 0, 0)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8
+metadata/unity_name = "ComplexTooltip_01"
+
+[node name="DescriptionWorldSpace" type="Node3D" parent="PurpleCave_Default/GateIcon_2/WorldCanvas/ComplexTooltip_01"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17
+metadata/unity_name = "DescriptionWorldSpace"
+
+[node name="MainText" type="Node3D" parent="PurpleCave_Default/GateIcon_2/WorldCanvas/ComplexTooltip_01/DescriptionWorldSpace"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 3
+metadata/unity_name = "MainText"
+
+[node name="OuterFrame" type="Node3D" parent="PurpleCave_Default/GateIcon_2/WorldCanvas/ComplexTooltip_01"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 45
+metadata/unity_name = "OuterFrame"
+
+[node name="Background" type="Node3D" parent="PurpleCave_Default"]
+position = Vector3(-9.10000038, -92, -145)
+quaternion = Quaternion(-0.295749128, 0.0832263827, 0.0258747097, 0.951281428)
+scale = Vector3(2.99999976, 2.99999976, 2.99999976)
+metadata/unity_id = 6
+metadata/unity_name = "Background"
+
+[node name="UnitySprite" type="Sprite3D" parent="PurpleCave_Default/Background"]
+texture = ExtResource("26")
+pixel_size = 0.01
+visible = true
+flip_h = false
+flip_v = false
+modulate = Color(1, 1, 1, 1)
+
+[node name="Background_01" type="Node3D" parent="PurpleCave_Default"]
+position = Vector3(3.0999999, -42.2000008, -83.4000015)
+quaternion = Quaternion(-0.295749128, 0.0832263827, 0.0258747097, 0.951281428)
+scale = Vector3(2, 2, 2)
+metadata/unity_id = 5
+metadata/unity_name = "Background_01"
+
+[node name="UnitySprite" type="Sprite3D" parent="PurpleCave_Default/Background_01"]
+texture = ExtResource("27")
+pixel_size = 0.01
+visible = true
+flip_h = false
+flip_v = false
+modulate = Color(1, 1, 1, 1)

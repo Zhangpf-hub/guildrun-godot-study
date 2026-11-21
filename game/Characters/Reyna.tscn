@@ -1,0 +1,1504 @@
+[gd_scene format=3]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2871.obj" id="1"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_860.tres" id="2"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2764.obj" id="3"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_861.tres" id="4"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2836.obj" id="5"]
+
+[node name="Reyna" type="Node3D"]
+
+[node name="Reyna" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1.21000004, 1.21000004, 1.21000004)
+metadata/unity_id = 20956
+metadata/unity_name = "Reyna"
+
+[node name="Reyna_Model" type="Node3D" parent="Reyna"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20680
+metadata/unity_name = "Reyna_Model"
+
+[node name="Armature" type="Node3D" parent="Reyna/Reyna_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12679
+metadata/unity_name = "Armature"
+
+[node name="hips" type="Node3D" parent="Reyna/Reyna_Model/Armature"]
+position = Vector3(-0, 0.970313728, 0.0340246148)
+quaternion = Quaternion(-0.147809416, 0, -0, 0.989015877)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26509
+metadata/unity_name = "hips"
+
+[node name="spine" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips"]
+position = Vector3(8.14953979e-34, 0.130917311, -0.0179723576)
+quaternion = Quaternion(0.0967577845, -0, -0, 0.995307982)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12747
+metadata/unity_name = "spine"
+
+[node name="chest" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine"]
+position = Vector3(2.31677954e-17, 0.0933112502, -9.9979701e-08)
+quaternion = Quaternion(-0.00964279473, 0, -0, 0.999953508)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22024
+metadata/unity_name = "chest"
+
+[node name="neck" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest"]
+position = Vector3(3.94430444e-33, 0.205654681, 0.0960791558)
+quaternion = Quaternion(-0.0618552864, 0, -0, 0.998085141)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27078
+metadata/unity_name = "neck"
+
+[node name="head" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck"]
+position = Vector3(6.43467728e-18, 0.110383414, -0)
+quaternion = Quaternion(0.122668341, -0, -0, 0.992447734)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19919
+metadata/unity_name = "head"
+
+[node name="hair_root" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(-0, 0, 8.88178367e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9482
+metadata/unity_name = "hair_root"
+
+[node name="hairA_01" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(0.0340782739, 0.0902732909, -0.0949174538)
+quaternion = Quaternion(-0.349491149, -0.0985784605, 0.893136024, -0.265417129)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18584
+metadata/unity_name = "hairA_01"
+
+[node name="hairA_brA_02" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairA_01"]
+position = Vector3(0.0362945162, 0.0179920606, -0.00462350994)
+quaternion = Quaternion(0.0377628654, -0.209850118, -0.217246085, 0.95254451)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7160
+metadata/unity_name = "hairA_brA_02"
+
+[node name="hairA_brA_03_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairA_01/hairA_brA_02"]
+position = Vector3(-6.0253788e-17, 0.0387729555, 0.00120104372)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15890
+metadata/unity_name = "hairA_brA_03_end"
+
+[node name="hairA_brB_02" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairA_01"]
+position = Vector3(0.0141568063, 0.0297659561, -0.00118994759)
+quaternion = Quaternion(0.0634344891, 0.180083126, -0.0474960059, 0.980454147)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21143
+metadata/unity_name = "hairA_brB_02"
+
+[node name="hairA_brBA_03" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairA_01/hairA_brB_02"]
+position = Vector3(0.00513232267, 0.0624052547, -0.00148212339)
+quaternion = Quaternion(0.173624426, -1.18371796e-16, -3.19751099e-17, 0.984811962)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24482
+metadata/unity_name = "hairA_brBA_03"
+
+[node name="hairA_brBA_04_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairA_01/hairA_brB_02/hairA_brBA_03"]
+position = Vector3(1.77635673e-16, 0.058238782, -1.42108544e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24103
+metadata/unity_name = "hairA_brBA_04_end"
+
+[node name="hairA_brBB_03" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairA_01/hairA_brB_02"]
+position = Vector3(-0.00743342564, 0.0640414879, 0.0027073978)
+quaternion = Quaternion(0.247858182, -0.0296337772, 0.0206615273, 0.968122542)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16488
+metadata/unity_name = "hairA_brBB_03"
+
+[node name="hairA_brBB_04" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairA_01/hairA_brB_02/hairA_brBB_03"]
+position = Vector3(1.00105202e-09, 0.0743775666, 1.62484226e-09)
+quaternion = Quaternion(9.71842784e-09, 7.08482251e-09, -0.196852744, 0.980433106)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16234
+metadata/unity_name = "hairA_brBB_04"
+
+[node name="hairA_brBB_05_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairA_01/hairA_brB_02/hairA_brBB_03/hairA_brBB_04"]
+position = Vector3(-7.1054272e-17, 0.0502541773, 8.17494739e-10)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22852
+metadata/unity_name = "hairA_brBB_05_end"
+
+[node name="hairA_brC_02" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairA_01"]
+position = Vector3(-0.0241610408, 0.0510577559, 0.00387786771)
+quaternion = Quaternion(0.187134162, 0.147339389, 0.0411768034, 0.970348597)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18550
+metadata/unity_name = "hairA_brC_02"
+
+[node name="hairA_brCA_03" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairA_01/hairA_brC_02"]
+position = Vector3(0.021993624, 0.0527560562, -0.00428520143)
+quaternion = Quaternion(0.0599698685, -0.00234893546, -0.0390680358, 0.99743259)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5688
+metadata/unity_name = "hairA_brCA_03"
+
+[node name="hairA_brCA_04" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairA_01/hairA_brC_02/hairA_brCA_03"]
+position = Vector3(-7.1054272e-17, 0.0768629014, 7.1054272e-17)
+quaternion = Quaternion(0.165111765, -0.0150837619, -0.277098954, 0.946428478)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4788
+metadata/unity_name = "hairA_brCA_04"
+
+[node name="hairA_brCA_05" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairA_01/hairA_brC_02/hairA_brCA_03/hairA_brCA_04"]
+position = Vector3(7.1054272e-17, 0.04728771, -2.84217088e-16)
+quaternion = Quaternion(0.0940172002, -0.0172009133, -0.179143876, 0.97916925)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20753
+metadata/unity_name = "hairA_brCA_05"
+
+[node name="hairA_brCA_06_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairA_01/hairA_brC_02/hairA_brCA_03/hairA_brCA_04/hairA_brCA_05"]
+position = Vector3(-4.26325632e-16, 0.0413892344, -2.84217088e-16)
+quaternion = Quaternion(-0, 0.259094089, -0, 0.965852082)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25696
+metadata/unity_name = "hairA_brCA_06_end"
+
+[node name="hairA_brCB_03" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairA_01/hairA_brC_02"]
+position = Vector3(-1.42108544e-16, 0.0643583685, 7.1054272e-17)
+quaternion = Quaternion(0.0971485227, -0.0110286241, -0.112258375, 0.98885721)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22491
+metadata/unity_name = "hairA_brCB_03"
+
+[node name="hairA_brCB_04" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairA_01/hairA_brC_02/hairA_brCB_03"]
+position = Vector3(-0, 0.0733633712, 8.88178367e-17)
+quaternion = Quaternion(-0.0267912447, 0.00302307308, -0.112085789, 0.993332744)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24949
+metadata/unity_name = "hairA_brCB_04"
+
+[node name="hairA_brCB_05_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairA_01/hairA_brC_02/hairA_brCB_03/hairA_brCB_04"]
+position = Vector3(-7.99360543e-17, 0.0485833883, 3.5527136e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6757
+metadata/unity_name = "hairA_brCB_05_end"
+
+[node name="hairB_01" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(0.0821396112, 0.100793995, -0.0128682693)
+quaternion = Quaternion(-0.65436691, 0.0481682569, 0.74931109, -0.0895360187)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18118
+metadata/unity_name = "hairB_01"
+
+[node name="hairB_brA_02" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairB_01"]
+position = Vector3(0.0338977911, 0.0421787873, 0.00420272211)
+quaternion = Quaternion(0.0070326007, -0.0604865775, -0.0380491428, 0.997418761)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19730
+metadata/unity_name = "hairB_brA_02"
+
+[node name="hairB_brAA_03" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairB_01/hairB_brA_02"]
+position = Vector3(1.06581408e-16, 0.0722234547, -3.5527136e-17)
+quaternion = Quaternion(-0.0733025745, 0.132856309, -0.0527685583, 0.987011373)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6981
+metadata/unity_name = "hairB_brAA_03"
+
+[node name="hairB_brAA_04" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairB_01/hairB_brA_02/hairB_brAA_03"]
+position = Vector3(-1.6431301e-16, 0.0451652557, -3.19744223e-15)
+quaternion = Quaternion(-0.173842087, 0.028250942, -0.157897502, 0.97162199)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5132
+metadata/unity_name = "hairB_brAA_04"
+
+[node name="hairB_brAA_05" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairB_01/hairB_brA_02/hairB_brAA_03/hairB_brAA_04"]
+position = Vector3(7.1054272e-17, 0.0439854562, 4.26325632e-16)
+quaternion = Quaternion(-0.300939351, 0.0522673726, -0.162941232, 0.938165128)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7527
+metadata/unity_name = "hairB_brAA_05"
+
+[node name="hairB_brAA_06_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairB_01/hairB_brA_02/hairB_brAA_03/hairB_brAA_04/hairB_brAA_05"]
+position = Vector3(-8.52651264e-16, 0.0428023934, 7.10542693e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17171
+metadata/unity_name = "hairB_brAA_06_end"
+
+[node name="hairB_brAB_03" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairB_01/hairB_brA_02"]
+position = Vector3(-0.00492834579, 0.0552411526, -0.0235799029)
+quaternion = Quaternion(-0.0448304899, -0.101598181, -0.0603900105, 0.991978407)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13836
+metadata/unity_name = "hairB_brAB_03"
+
+[node name="hairB_braAB_04" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairB_01/hairB_brA_02/hairB_brAB_03"]
+position = Vector3(1.50990333e-16, 0.0651777089, 7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0.136530682, 0.990635872)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12906
+metadata/unity_name = "hairB_braAB_04"
+
+[node name="hairB_brAB_05_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairB_01/hairB_brA_02/hairB_brAB_03/hairB_braAB_04"]
+position = Vector3(9.90874031e-17, 0.0195983704, -6.73072695e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9053
+metadata/unity_name = "hairB_brAB_05_end"
+
+[node name="hairB_brB_02" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairB_01"]
+position = Vector3(0.00397954322, 0.0473720394, 0.00110255915)
+quaternion = Quaternion(0.112257153, 0.0627436787, -0.0283985026, 0.991289616)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13258
+metadata/unity_name = "hairB_brB_02"
+
+[node name="hairB_brB_03" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairB_01/hairB_brB_02"]
+position = Vector3(9.95731236e-18, 0.0751994178, -6.43929336e-17)
+quaternion = Quaternion(-0.112983428, -0.011802881, -0.182923198, 0.976542175)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23171
+metadata/unity_name = "hairB_brB_03"
+
+[node name="hairB_brB_04" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairB_01/hairB_brB_02/hairB_brB_03"]
+position = Vector3(1.42108544e-16, 0.052477587, 1.42108544e-16)
+quaternion = Quaternion(-0.172842041, 0.0119926222, -0.0681716278, 0.982514322)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23760
+metadata/unity_name = "hairB_brB_04"
+
+[node name="hairB_brB_05_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairB_01/hairB_brB_02/hairB_brB_03/hairB_brB_04"]
+position = Vector3(-4.26325632e-16, 0.0403451994, -7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23859
+metadata/unity_name = "hairB_brB_05_end"
+
+[node name="hairB_brC_02" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairB_01"]
+position = Vector3(0.0102744829, 0.0449796803, -0.014237334)
+quaternion = Quaternion(-0.131926104, 0.369600743, 0.133318141, 0.91006434)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5477
+metadata/unity_name = "hairB_brC_02"
+
+[node name="hairB_brC_03" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairB_01/hairB_brC_02"]
+position = Vector3(7.1054272e-17, 0.0471782498, 4.26325632e-16)
+quaternion = Quaternion(-0.239593506, -0.0802411959, 0.0037380408, 0.967544496)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11327
+metadata/unity_name = "hairB_brC_03"
+
+[node name="hairB_brC_04" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairB_01/hairB_brC_02/hairB_brC_03"]
+position = Vector3(-4.97379917e-16, 0.027661087, -2.84217088e-16)
+quaternion = Quaternion(-0.173608646, 0.00370552042, 0.021015048, 0.984583557)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13930
+metadata/unity_name = "hairB_brC_04"
+
+[node name="hairB_brC_05_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairB_01/hairB_brC_02/hairB_brC_03/hairB_brC_04"]
+position = Vector3(-2.84217088e-16, 0.0384152122, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20193
+metadata/unity_name = "hairB_brC_05_end"
+
+[node name="hairB_brD_02" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairB_01"]
+position = Vector3(-0.0365814976, 0.0501636676, 0.00210887031)
+quaternion = Quaternion(0.0313770622, 0.165060282, -0.0666959509, 0.983525395)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5198
+metadata/unity_name = "hairB_brD_02"
+
+[node name="hairB_brD_03" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairB_01/hairB_brD_02"]
+position = Vector3(-3.5527136e-17, 0.0782502443, -5.3290704e-17)
+quaternion = Quaternion(-0, 0, -0.0763570443, 0.997080564)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17355
+metadata/unity_name = "hairB_brD_03"
+
+[node name="hairB_brD_04_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairB_01/hairB_brD_02/hairB_brD_03"]
+position = Vector3(5.3290704e-17, 0.0621511787, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25906
+metadata/unity_name = "hairB_brD_04_end"
+
+[node name="hairB_brE_02" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairB_01"]
+position = Vector3(-0.0274097193, 0.0283873007, -0.0100026047)
+quaternion = Quaternion(-0.127969474, 0.146222189, 0.238365531, 0.951538146)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22951
+metadata/unity_name = "hairB_brE_02"
+
+[node name="hairB_brE_03_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairB_01/hairB_brE_02"]
+position = Vector3(-2.84217088e-16, 0.0550542772, -2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15160
+metadata/unity_name = "hairB_brE_03_end"
+
+[node name="hairC_01" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(0.0651042759, 0.109476939, 0.0586043969)
+quaternion = Quaternion(-0.923795342, -0.00275375135, 0.382677943, 0.0123400288)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24934
+metadata/unity_name = "hairC_01"
+
+[node name="hairC_brA_02" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairC_01"]
+position = Vector3(5.595524e-16, 0.05609129, -1.04805049e-15)
+quaternion = Quaternion(0.0436193869, -0, -0, 0.999048233)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19564
+metadata/unity_name = "hairC_brA_02"
+
+[node name="hairC_brAA_03" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairC_01/hairC_brA_02"]
+position = Vector3(0.0131685473, 0.0833484605, 0.0115175778)
+quaternion = Quaternion(-0.343582243, -0.0325946957, -0.096880734, 0.933543265)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21685
+metadata/unity_name = "hairC_brAA_03"
+
+[node name="hairC_brAA_04_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairC_01/hairC_brA_02/hairC_brAA_03"]
+position = Vector3(5.3290702e-16, 0.0517889, -6.39488435e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18321
+metadata/unity_name = "hairC_brAA_04_end"
+
+[node name="hairC_brAB_03" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairC_01/hairC_brA_02"]
+position = Vector3(-0.00699576084, 0.0758671239, 0.0134740314)
+quaternion = Quaternion(-0.382643938, -0.0268913116, -0.00508233206, 0.923490465)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16616
+metadata/unity_name = "hairC_brAB_03"
+
+[node name="hairC_brAB_04_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairC_01/hairC_brA_02/hairC_brAB_03"]
+position = Vector3(4.70734537e-16, 0.0367880501, -7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14334
+metadata/unity_name = "hairC_brAB_04_end"
+
+[node name="hairC_brB_02" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairC_01"]
+position = Vector3(0.011092471, 0.0567083694, -0.0229688808)
+quaternion = Quaternion(0.0652622432, -0.142405674, 0.172989532, 0.972386837)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16601
+metadata/unity_name = "hairC_brB_02"
+
+[node name="hairC_brB_03" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairC_01/hairC_brB_02"]
+position = Vector3(-0, 0.0610712767, -3.5527136e-17)
+quaternion = Quaternion(0.0858316496, 0.0151344361, 0.172987387, 0.981060266)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8665
+metadata/unity_name = "hairC_brB_03"
+
+[node name="hairC_brB_04_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairC_01/hairC_brB_02/hairC_brB_03"]
+position = Vector3(-0, 0.0280664898, 7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13707
+metadata/unity_name = "hairC_brB_04_end"
+
+[node name="hairD_01" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(0.00745737134, 0.113758706, 0.0821071118)
+quaternion = Quaternion(-0.998387396, 0.0244808532, 0.00125566684, -0.0512026027)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4722
+metadata/unity_name = "hairD_01"
+
+[node name="hairD_02" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairD_01"]
+position = Vector3(1.7763568e-17, 0.0617003292, 1.06581408e-16)
+quaternion = Quaternion(0.135862455, -0.00668678666, 0.188587889, 0.972590029)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24309
+metadata/unity_name = "hairD_02"
+
+[node name="hairD_03" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairD_01/hairD_02"]
+position = Vector3(-0, 0.0390217192, 3.01980666e-16)
+quaternion = Quaternion(-0.111160986, -0.0490497164, -0.26925227, 0.955374599)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26820
+metadata/unity_name = "hairD_03"
+
+[node name="hairD_04" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairD_01/hairD_02/hairD_03"]
+position = Vector3(7.46069849e-16, 0.031846907, -9.59232626e-16)
+quaternion = Quaternion(-0.0867514014, 0.00373031897, -0.0427981429, 0.995303273)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26367
+metadata/unity_name = "hairD_04"
+
+[node name="hairD_05_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/hair_root/hairD_01/hairD_02/hairD_03/hairD_04"]
+position = Vector3(7.1054272e-17, 0.0228617564, 7.81597005e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13755
+metadata/unity_name = "hairD_05_end"
+
+[node name="head_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(-4.07875712e-17, 0.183690891, 7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15134
+metadata/unity_name = "head_end"
+
+[node name="jaw" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(2.65876632e-18, -0.00975499302, -0.0209787525)
+quaternion = Quaternion(-0.905964494, 0, 0, 0.423353672)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20638
+metadata/unity_name = "jaw"
+
+[node name="jaw_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/neck/head/jaw"]
+position = Vector3(1.53046744e-17, 0.0844931304, -1.42108544e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24394
+metadata/unity_name = "jaw_end"
+
+[node name="shoulder_L" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest"]
+position = Vector3(-0.0188294984, 0.14904505, 0.0888699964)
+quaternion = Quaternion(-0.553003192, 0.501307249, -0.498689324, -0.440667063)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17482
+metadata/unity_name = "shoulder_L"
+
+[node name="upper_arm_L" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_L"]
+position = Vector3(1.24344979e-16, 0.123928495, -0)
+quaternion = Quaternion(0.46162045, -0.0108786887, -0.0208977666, 0.886764646)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24416
+metadata/unity_name = "upper_arm_L"
+
+[node name="lower_arm_L" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L"]
+position = Vector3(-1.68309809e-15, 0.219999999, -1.13686835e-15)
+quaternion = Quaternion(-0.0113356505, -0.000445378915, 0.039257288, 0.99916476)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6646
+metadata/unity_name = "lower_arm_L"
+
+[node name="hand_body_L" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L"]
+position = Vector3(-1.60760289e-15, 0.209999993, -8.52651264e-16)
+quaternion = Quaternion(0.0550719872, -0.00240449491, -0.0435530692, 0.997529209)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16647
+metadata/unity_name = "hand_body_L"
+
+[node name="hand_body_L_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_body_L"]
+position = Vector3(-8.57092152e-16, 0.149002001, -5.68434176e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14605
+metadata/unity_name = "hand_body_L_end"
+
+[node name="hand_L" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L"]
+position = Vector3(-2.1271873e-15, 0.280000001, -8.52651264e-16)
+quaternion = Quaternion(-0, 0, -0.0139621804, 0.999902546)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11926
+metadata/unity_name = "hand_L"
+
+[node name="hand_L_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L"]
+position = Vector3(-1.86961559e-15, 0.280000001, -2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9612
+metadata/unity_name = "hand_L_end"
+
+[node name="index_L_01" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L"]
+position = Vector3(-0.0716874972, 0.17705299, 1.56319401e-15)
+quaternion = Quaternion(0.406822324, -0.00747537101, 0.0168911833, 0.913320541)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23838
+metadata/unity_name = "index_L_01"
+
+[node name="index_L_02" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L/index_L_01"]
+position = Vector3(-1.7763568e-17, 0.110861994, 1.42108544e-16)
+quaternion = Quaternion(0.165047601, -0, -0, 0.986285627)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19399
+metadata/unity_name = "index_L_02"
+
+[node name="index_L_03" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L/index_L_01/index_L_02"]
+position = Vector3(-1.7763568e-17, 0.0593423098, 5.68434176e-16)
+quaternion = Quaternion(0.173648193, -0, -0, 0.984807789)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27176
+metadata/unity_name = "index_L_03"
+
+[node name="index_L_04_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L/index_L_01/index_L_02/index_L_03"]
+position = Vector3(-0, 0.0684259981, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26897
+metadata/unity_name = "index_L_04_end"
+
+[node name="middle_L_01" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L"]
+position = Vector3(-0.0195203982, 0.178290993, 1.56319401e-15)
+quaternion = Quaternion(0.406639844, 0.0199288893, -0.0088729132, 0.913328052)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21082
+metadata/unity_name = "middle_L_01"
+
+[node name="middle_L_02" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L/middle_L_01"]
+position = Vector3(-0, 0.110860005, -0)
+quaternion = Quaternion(0.165047601, -0, -0, 0.986285627)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11905
+metadata/unity_name = "middle_L_02"
+
+[node name="middle_L_03" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L/middle_L_01/middle_L_02"]
+position = Vector3(-8.881784e-18, 0.060842216, 7.10542693e-16)
+quaternion = Quaternion(0.173648193, -0, -0, 0.984807789)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6816
+metadata/unity_name = "middle_L_03"
+
+[node name="middle_L_04_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L/middle_L_01/middle_L_02/middle_L_03"]
+position = Vector3(1.3322676e-17, 0.0684209988, 1.42108544e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7266
+metadata/unity_name = "middle_L_04_end"
+
+[node name="pinky_L_01" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L"]
+position = Vector3(0.0735815912, 0.165849209, 0.000781467184)
+quaternion = Quaternion(0.392835706, -0.00293002021, -0.130992249, 0.910226643)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16690
+metadata/unity_name = "pinky_L_01"
+
+[node name="pinky_L_02" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L/pinky_L_01"]
+position = Vector3(-2.6645352e-17, 0.109999999, 1.42108544e-16)
+quaternion = Quaternion(0.165047601, -0, -0, 0.986285627)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14197
+metadata/unity_name = "pinky_L_02"
+
+[node name="pinky_L_03" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L/pinky_L_01/pinky_L_02"]
+position = Vector3(1.7763568e-17, 0.0562857836, 1.42108544e-16)
+quaternion = Quaternion(0.173648193, -0, -0, 0.984807789)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7380
+metadata/unity_name = "pinky_L_03"
+
+[node name="pinky_L_04_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L/pinky_L_01/pinky_L_02/pinky_L_03"]
+position = Vector3(-8.881784e-18, 0.0684209988, 9.94759834e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5579
+metadata/unity_name = "pinky_L_04_end"
+
+[node name="ring_L_01" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L"]
+position = Vector3(0.0328547992, 0.175415993, 1.27897687e-15)
+quaternion = Quaternion(0.407427162, 0.0216598175, -0.0478163734, 0.911727786)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15702
+metadata/unity_name = "ring_L_01"
+
+[node name="ring_L_02" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L/ring_L_01"]
+position = Vector3(8.881784e-18, 0.109999999, -0)
+quaternion = Quaternion(0.165047601, -0, -0, 0.986285627)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25685
+metadata/unity_name = "ring_L_02"
+
+[node name="ring_L_03" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L/ring_L_01/ring_L_02"]
+position = Vector3(-3.10862448e-17, 0.0609696098, 5.68434176e-16)
+quaternion = Quaternion(0.173648193, -0, -0, 0.984807789)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10487
+metadata/unity_name = "ring_L_03"
+
+[node name="ring_L_04_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L/ring_L_01/ring_L_02/ring_L_03"]
+position = Vector3(-8.881784e-18, 0.0684159994, 1.42108544e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5318
+metadata/unity_name = "ring_L_04_end"
+
+[node name="thumb_L_01" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L"]
+position = Vector3(-0.063699998, 0.049999997, 0.0384999998)
+quaternion = Quaternion(0.165543675, 0.492843091, 0.600525916, 0.607510984)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4831
+metadata/unity_name = "thumb_L_01"
+
+[node name="thumb_L_02" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L/thumb_L_01"]
+position = Vector3(-8.67268202e-10, 0.0518024117, -0)
+quaternion = Quaternion(0.234651595, 0.101667807, -0.157772094, 0.953787327)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11036
+metadata/unity_name = "thumb_L_02"
+
+[node name="thumb_L_03" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L/thumb_L_01/thumb_L_02"]
+position = Vector3(-2.11572893e-09, 0.0916403309, -3.27896738e-10)
+quaternion = Quaternion(0.156247631, 0.045451168, -0.109182946, 0.98061204)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26649
+metadata/unity_name = "thumb_L_03"
+
+[node name="thumb_L_04_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L/thumb_L_01/thumb_L_02/thumb_L_03"]
+position = Vector3(-9.23705523e-16, 0.0748990029, 2.12954644e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17892
+metadata/unity_name = "thumb_L_04_end"
+
+[node name="shoulder_R" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest"]
+position = Vector3(0.0188294984, 0.149044856, 0.0888703838)
+quaternion = Quaternion(-0.553003192, -0.501307249, 0.498689324, -0.440667063)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8513
+metadata/unity_name = "shoulder_R"
+
+[node name="upper_arm_R" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_R"]
+position = Vector3(-0, 0.123928495, 8.52651264e-16)
+quaternion = Quaternion(0.46162045, 0.0108786887, 0.0208977666, 0.886764646)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20955
+metadata/unity_name = "upper_arm_R"
+
+[node name="lower_arm_R" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R"]
+position = Vector3(-0, 0.219999999, 2.2737367e-15)
+quaternion = Quaternion(-0.0113356505, 0.000445378915, -0.039257288, 0.99916476)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19061
+metadata/unity_name = "lower_arm_R"
+
+[node name="hand_body_R" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R"]
+position = Vector3(-0, 0.209999993, 1.70530253e-15)
+quaternion = Quaternion(0.0550719872, -0.00240449491, -0.0435530692, 0.997529209)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7542
+metadata/unity_name = "hand_body_R"
+
+[node name="hand_body_R_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_body_R"]
+position = Vector3(-0, 0.149002001, 1.42108539e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9088
+metadata/unity_name = "hand_body_R_end"
+
+[node name="hand_R" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R"]
+position = Vector3(-0, 0.280000001, 2.55795374e-15)
+quaternion = Quaternion(-0, -0, 0.0139621804, 0.999902546)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18756
+metadata/unity_name = "hand_R"
+
+[node name="hand_R_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R"]
+position = Vector3(-0, 0.280000001, 2.2737367e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9609
+metadata/unity_name = "hand_R_end"
+
+[node name="index_R_01" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R"]
+position = Vector3(0.0716878995, 0.17705299, 1.42108539e-15)
+quaternion = Quaternion(0.406822324, 0.00747537101, -0.0168911833, 0.913320541)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5746
+metadata/unity_name = "index_R_01"
+
+[node name="index_R_02" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/index_R_01"]
+position = Vector3(-0, 0.110861994, 8.52651264e-16)
+quaternion = Quaternion(0.165047601, -0, -0, 0.986285627)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21807
+metadata/unity_name = "index_R_02"
+
+[node name="index_R_03" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/index_R_01/index_R_02"]
+position = Vector3(-0, 0.0593419969, 2.84217088e-16)
+quaternion = Quaternion(0.173648193, -0, -0, 0.984807789)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6671
+metadata/unity_name = "index_R_03"
+
+[node name="index_R_04_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/index_R_01/index_R_02/index_R_03"]
+position = Vector3(-0, 0.0684249997, 1.13686835e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21693
+metadata/unity_name = "index_R_04_end"
+
+[node name="middle_R_01" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R"]
+position = Vector3(0.0195209999, 0.178290993, 1.42108539e-15)
+quaternion = Quaternion(0.406639844, 0.0199288893, -0.0088729132, 0.913328052)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6564
+metadata/unity_name = "middle_R_01"
+
+[node name="middle_R_02" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/middle_R_01"]
+position = Vector3(-0, 0.110860005, 8.52651264e-16)
+quaternion = Quaternion(0.165047601, -0, -0, 0.986285627)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18564
+metadata/unity_name = "middle_R_02"
+
+[node name="middle_R_03" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/middle_R_01/middle_R_02"]
+position = Vector3(-0, 0.0608419962, 5.68434176e-16)
+quaternion = Quaternion(0.173648193, -0, -0, 0.984807789)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21896
+metadata/unity_name = "middle_R_03"
+
+[node name="middle_R_04_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/middle_R_01/middle_R_02/middle_R_03"]
+position = Vector3(-0, 0.0684189945, 5.68434176e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11848
+metadata/unity_name = "middle_R_04_end"
+
+[node name="pinky_R_01" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R"]
+position = Vector3(-0.0735809952, 0.165849, 0.000780000002)
+quaternion = Quaternion(0.392835706, 0.00293002021, 0.130992249, 0.910226643)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19835
+metadata/unity_name = "pinky_R_01"
+
+[node name="pinky_R_02" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/pinky_R_01"]
+position = Vector3(-0, 0.109999999, 2.84217088e-16)
+quaternion = Quaternion(0.165047601, -0, -0, 0.986285627)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16947
+metadata/unity_name = "pinky_R_02"
+
+[node name="pinky_R_03" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/pinky_R_01/pinky_R_02"]
+position = Vector3(-0, 0.0562859997, 8.52651264e-16)
+quaternion = Quaternion(0.173648193, -0, -0, 0.984807789)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27048
+metadata/unity_name = "pinky_R_03"
+
+[node name="pinky_R_04_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/pinky_R_01/pinky_R_02/pinky_R_03"]
+position = Vector3(-0, 0.0684169978, 5.68434176e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15260
+metadata/unity_name = "pinky_R_04_end"
+
+[node name="ring_R_01" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R"]
+position = Vector3(-0.0328539982, 0.175415993, 1.42108539e-15)
+quaternion = Quaternion(0.407427162, -0.0216598175, 0.0478163734, 0.911727786)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19342
+metadata/unity_name = "ring_R_01"
+
+[node name="ring_R_02" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/ring_R_01"]
+position = Vector3(-0, 0.109999999, 5.68434176e-16)
+quaternion = Quaternion(0.165047601, -0, -0, 0.986285627)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12796
+metadata/unity_name = "ring_R_02"
+
+[node name="ring_R_03" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/ring_R_01/ring_R_02"]
+position = Vector3(-0, 0.0609700009, 8.52651264e-16)
+quaternion = Quaternion(0.173648193, -0, -0, 0.984807789)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19667
+metadata/unity_name = "ring_R_03"
+
+[node name="ring_R_04_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/ring_R_01/ring_R_02/ring_R_03"]
+position = Vector3(-0, 0.0684159994, 8.52651264e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7794
+metadata/unity_name = "ring_R_04_end"
+
+[node name="thumb_R_01" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R"]
+position = Vector3(0.063699998, 0.049999997, 0.0384999998)
+quaternion = Quaternion(0.165543675, -0.492843091, -0.600525916, 0.607510984)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21885
+metadata/unity_name = "thumb_R_01"
+
+[node name="thumb_R_02" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/thumb_R_01"]
+position = Vector3(-0, 0.0518000908, -0)
+quaternion = Quaternion(0.234651595, -0.101667807, 0.157772094, 0.953787327)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14030
+metadata/unity_name = "thumb_R_02"
+
+[node name="thumb_R_03" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/thumb_R_01/thumb_R_02"]
+position = Vector3(-0, 0.0916413367, -0)
+quaternion = Quaternion(0.156247631, -0.045451168, 0.109182946, 0.98061204)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7847
+metadata/unity_name = "thumb_R_03"
+
+[node name="thumb_R_04_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/thumb_R_01/thumb_R_02/thumb_R_03"]
+position = Vector3(-2.30795627e-06, 0.0748975277, 8.68444602e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5765
+metadata/unity_name = "thumb_R_04_end"
+
+[node name="upper_leg_L" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips"]
+position = Vector3(-0.0984879956, -8.57601553e-05, -1.8448598e-05)
+quaternion = Quaternion(-0.00644735573, -0.147668734, 0.988074541, 0.0431402661)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17326
+metadata/unity_name = "upper_leg_L"
+
+[node name="lower_leg_L" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/upper_leg_L"]
+position = Vector3(5.3290704e-17, 0.427251995, -0)
+quaternion = Quaternion(0.0205061808, -0, -0, 0.999789715)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9419
+metadata/unity_name = "lower_leg_L"
+
+[node name="foot_L" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/upper_leg_L/lower_leg_L"]
+position = Vector3(5.3290704e-17, 0.440113962, -0)
+quaternion = Quaternion(-0.0196509603, -0.0307785664, 0.0415700413, 0.998468101)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19606
+metadata/unity_name = "foot_L"
+
+[node name="toes_L" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/upper_leg_L/lower_leg_L/foot_L"]
+position = Vector3(-2.02268755e-17, 0.0889999941, -0.123999991)
+quaternion = Quaternion(-0.619744062, 1.51873407e-22, 8.82649243e-15, 0.784803987)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23638
+metadata/unity_name = "toes_L"
+
+[node name="toes_L_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/upper_leg_L/lower_leg_L/foot_L/toes_L"]
+position = Vector3(-9.6562963e-16, 0.0459999964, 3.53016234e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5850
+metadata/unity_name = "toes_L_end"
+
+[node name="upper_leg_R" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips"]
+position = Vector3(0.0984880328, -8.61804292e-05, -1.85236768e-05)
+quaternion = Quaternion(0.00644735573, -0.147668734, 0.988074541, -0.0431402661)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21412
+metadata/unity_name = "upper_leg_R"
+
+[node name="lower_leg_R" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/upper_leg_R"]
+position = Vector3(-0, 0.427251965, -0)
+quaternion = Quaternion(0.0205061808, -0, -0, 0.999789715)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9736
+metadata/unity_name = "lower_leg_R"
+
+[node name="foot_R" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/upper_leg_R/lower_leg_R"]
+position = Vector3(1.7763568e-17, 0.440114051, -0)
+quaternion = Quaternion(-0.0196509603, 0.0307785664, -0.0415700413, 0.998468101)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25952
+metadata/unity_name = "foot_R"
+
+[node name="toes_R" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/upper_leg_R/lower_leg_R/foot_R"]
+position = Vector3(-0, 0.0889999941, -0.123999991)
+quaternion = Quaternion(-0.619746804, 0, -0, 0.784801841)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12505
+metadata/unity_name = "toes_R"
+
+[node name="toes_L_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/upper_leg_R/lower_leg_R/foot_R/toes_R"]
+position = Vector3(-9.41566291e-34, 0.0459999964, 5.55111479e-18)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18315
+metadata/unity_name = "toes_L_end"
+
+[node name="skirt_R_root" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/upper_leg_R"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0.0123583898, 0.0274127647, -0.0433883816, 0.998605669)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21777
+metadata/unity_name = "skirt_R_root"
+
+[node name="skirt_longA_01" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/upper_leg_R/skirt_R_root"]
+position = Vector3(0.0826425925, 0.263409793, 0.0945070833)
+quaternion = Quaternion(-0.00906350743, -0.999898732, -0.00404860731, 0.010201538)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20383
+metadata/unity_name = "skirt_longA_01"
+
+[node name="skirt_longA_02" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_longA_01"]
+position = Vector3(3.3861803e-17, 0.0918324292, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9593
+metadata/unity_name = "skirt_longA_02"
+
+[node name="skirt_longA_03" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_longA_01/skirt_longA_02"]
+position = Vector3(-3.05311338e-17, 0.063645184, 3.5527136e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14275
+metadata/unity_name = "skirt_longA_03"
+
+[node name="skirt_longA_04" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_longA_01/skirt_longA_02/skirt_longA_03"]
+position = Vector3(1.91513471e-17, 0.0901957229, 7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18761
+metadata/unity_name = "skirt_longA_04"
+
+[node name="skirt_longA_05" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_longA_01/skirt_longA_02/skirt_longA_03/skirt_longA_04"]
+position = Vector3(4.89608337e-16, 0.143834248, -9.41469074e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18744
+metadata/unity_name = "skirt_longA_05"
+
+[node name="skirt_longA_06_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_longA_01/skirt_longA_02/skirt_longA_03/skirt_longA_04/skirt_longA_05"]
+position = Vector3(-3.49997799e-16, 0.165043324, 5.3290704e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26269
+metadata/unity_name = "skirt_longA_06_end"
+
+[node name="skirt_longB_01" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/upper_leg_R/skirt_R_root"]
+position = Vector3(0.00902251899, 0.264128268, 0.0998806953)
+quaternion = Quaternion(0.00782619417, -0.997138858, -0.0739179328, -0.013749538)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17029
+metadata/unity_name = "skirt_longB_01"
+
+[node name="skirt_longB_02" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_longB_01"]
+position = Vector3(-7.1054272e-17, 0.0903628692, -0)
+quaternion = Quaternion(0.0639702529, -0, -0, 0.997951806)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7395
+metadata/unity_name = "skirt_longB_02"
+
+[node name="skirt_longB_03" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_longB_01/skirt_longB_02"]
+position = Vector3(-5.3290704e-17, 0.0628669709, 1.06581408e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13279
+metadata/unity_name = "skirt_longB_03"
+
+[node name="skirt_longB_04" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_longB_01/skirt_longB_02/skirt_longB_03"]
+position = Vector3(8.88178367e-17, 0.0908071101, -7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6146
+metadata/unity_name = "skirt_longB_04"
+
+[node name="skirt_longB_05" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_longB_01/skirt_longB_02/skirt_longB_03/skirt_longB_04"]
+position = Vector3(-7.1054272e-17, 0.141409174, 1.19015901e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10911
+metadata/unity_name = "skirt_longB_05"
+
+[node name="skirt_longB_06_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_longB_01/skirt_longB_02/skirt_longB_03/skirt_longB_04/skirt_longB_05"]
+position = Vector3(-2.13162816e-16, 0.162273943, 4.61852761e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19206
+metadata/unity_name = "skirt_longB_06_end"
+
+[node name="skirt_longC_01" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/upper_leg_R/skirt_R_root"]
+position = Vector3(-0.0823584571, 0.265392423, 0.0840110108)
+quaternion = Quaternion(0.00888455939, -0.996972501, -0.0766542852, -0.00954242237)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25262
+metadata/unity_name = "skirt_longC_01"
+
+[node name="skirt_longC_02" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_longC_01"]
+position = Vector3(1.2603283e-07, 0.0901810303, 2.94426286e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17495
+metadata/unity_name = "skirt_longC_02"
+
+[node name="skirt_longC_03" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_longC_01/skirt_longC_02"]
+position = Vector3(-1.2603283e-07, 0.0631712154, -2.94426286e-07)
+quaternion = Quaternion(0.029666245, -0, -0, 0.999559879)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5701
+metadata/unity_name = "skirt_longC_03"
+
+[node name="skirt_longC_04" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_longC_01/skirt_longC_02/skirt_longC_03"]
+position = Vector3(2.13162816e-16, 0.0825321376, 7.1054272e-17)
+quaternion = Quaternion(0.070975177, -0, -0, 0.997478068)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19432
+metadata/unity_name = "skirt_longC_04"
+
+[node name="skirt_longC_05" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_longC_01/skirt_longC_02/skirt_longC_03/skirt_longC_04"]
+position = Vector3(-7.1054272e-17, 0.14417243, -2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5578
+metadata/unity_name = "skirt_longC_05"
+
+[node name="skirt_longC_06_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_longC_01/skirt_longC_02/skirt_longC_03/skirt_longC_04/skirt_longC_05"]
+position = Vector3(-7.10542693e-16, 0.154629916, -8.88178367e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22758
+metadata/unity_name = "skirt_longC_06_end"
+
+[node name="skirt_short_01" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/upper_leg_R/skirt_R_root"]
+position = Vector3(0.0119745601, 0.267980069, 0.11611744)
+quaternion = Quaternion(0.00724412687, -0.998682618, -0.0481521524, -0.0161858182)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12574
+metadata/unity_name = "skirt_short_01"
+
+[node name="skirt_short_02_end" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_short_01"]
+position = Vector3(1.94007175e-08, 0.0800660625, 1.53643242e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6295
+metadata/unity_name = "skirt_short_02_end"
+
+[node name="Magica Capsule Collider (upper_leg_R)" type="Node3D" parent="Reyna/Reyna_Model/Armature/hips/upper_leg_R/skirt_R_root"]
+position = Vector3(-0.0288200043, 0.328656644, 0.00736014592)
+quaternion = Quaternion(0.0123583898, -0.0274127666, 0.0433883816, 0.998605669)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12187
+metadata/unity_name = "Magica Capsule Collider (upper_leg_R)"
+
+[node name="Reyna" type="Node3D" parent="Reyna/Reyna_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19331
+metadata/unity_name = "Reyna"
+
+[node name="Body_geo" type="Node3D" parent="Reyna/Reyna_Model/Reyna"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20114
+metadata/unity_name = "Body_geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Reyna/Reyna_Model/Reyna/Body_geo"]
+mesh = ExtResource("1")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="Weapon_L_geo" type="Node3D" parent="Reyna/Reyna_Model/Reyna"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14253
+metadata/unity_name = "Weapon_L_geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Reyna/Reyna_Model/Reyna/Weapon_L_geo"]
+mesh = ExtResource("3")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="Weapon_R_geo" type="Node3D" parent="Reyna/Reyna_Model/Reyna"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12356
+metadata/unity_name = "Weapon_R_geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Reyna/Reyna_Model/Reyna/Weapon_R_geo"]
+mesh = ExtResource("5")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="Magica Cloth (hair)" type="Node3D" parent="Reyna/Reyna_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15498
+metadata/unity_name = "Magica Cloth (hair)"
+
+[node name="Magica Cloth (skirt)" type="Node3D" parent="Reyna/Reyna_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11025
+metadata/unity_name = "Magica Cloth (skirt)"
+
+[node name="VFXParent" type="Node3D" parent="Reyna"]
+position = Vector3(0, 0.5, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23143
+metadata/unity_name = "VFXParent"
+
+[node name="VFX_Reyna_PassiveSkill" type="Node3D" parent="Reyna/VFXParent"]
+position = Vector3(0.294999987, 1.375, 0.150000006)
+quaternion = Quaternion(0.49164176, 0.0374830626, -0.23327817, 0.838131666)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21531
+metadata/unity_name = "VFX_Reyna_PassiveSkill"
+visible = false
+process_mode = 4
+
+[node name="root" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_PassiveSkill"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20891
+metadata/unity_name = "root"
+
+[node name="Glow_02" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_PassiveSkill/root"]
+position = Vector3(0, -0.439999998, -0.349999994)
+quaternion = Quaternion(0.328915298, -4.57368863e-08, 3.69054476e-08, 0.944359422)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17530
+metadata/unity_name = "Glow_02"
+
+[node name="Head_02" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_PassiveSkill/root"]
+position = Vector3(2.15752237e-07, -0.440000445, -0.350000232)
+quaternion = Quaternion(0.328915298, -4.57368863e-08, 3.69054476e-08, 0.944359422)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11664
+metadata/unity_name = "Head_02"
+
+[node name="Slash_01" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_PassiveSkill/root"]
+position = Vector3(0, -0.899999976, 1.27999997)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24833
+metadata/unity_name = "Slash_01"
+
+[node name="Slash_02" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_PassiveSkill/root"]
+position = Vector3(0, -0.899999976, 1.27999997)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9828
+metadata/unity_name = "Slash_02"
+
+[node name="Emitter" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_PassiveSkill/root"]
+position = Vector3(0, -0.899999976, 0.670000017)
+quaternion = Quaternion(0.42261827, -0, 0, 0.906307876)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12325
+metadata/unity_name = "Emitter"
+
+[node name="Aura_01" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_PassiveSkill/root/Emitter"]
+position = Vector3(0, 0.899999976, -1.27999985)
+quaternion = Quaternion(0, -3.32820811e-08, 1.58922009e-09, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14109
+metadata/unity_name = "Aura_01"
+
+[node name="Dust_01" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_PassiveSkill/root/Emitter"]
+position = Vector3(0, 0.899999976, -1.27999985)
+quaternion = Quaternion(0, -3.32820811e-08, 1.58922009e-09, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6241
+metadata/unity_name = "Dust_01"
+
+[node name="VFX_Reyna_SkillAttack_01" type="Node3D" parent="Reyna/VFXParent"]
+position = Vector3(0, 0, -0.5)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25556
+metadata/unity_name = "VFX_Reyna_SkillAttack_01"
+
+[node name="=====FirstPunch" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_SkillAttack_01"]
+position = Vector3(-0.0500000007, 0.25, 0.0799999982)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25191
+metadata/unity_name = "=====FirstPunch"
+
+[node name="Head_01" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_SkillAttack_01/=====FirstPunch"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0.707106829, 0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13027
+metadata/unity_name = "Head_01"
+
+[node name="Head_02" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_SkillAttack_01/=====FirstPunch"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0.707106829, 0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12105
+metadata/unity_name = "Head_02"
+
+[node name="Punch_01_Fresnel" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_SkillAttack_01/=====FirstPunch"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22464
+metadata/unity_name = "Punch_01_Fresnel"
+
+[node name="Punch_02_Glow" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_SkillAttack_01/=====FirstPunch"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17595
+metadata/unity_name = "Punch_02_Glow"
+
+[node name="Wave_01" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_SkillAttack_01/=====FirstPunch"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17313
+metadata/unity_name = "Wave_01"
+
+[node name="Wave_02" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_SkillAttack_01/=====FirstPunch"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6488
+metadata/unity_name = "Wave_02"
+
+[node name="Glow_01" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_SkillAttack_01/=====FirstPunch"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9346
+metadata/unity_name = "Glow_01"
+
+[node name="Lines_01" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_SkillAttack_01/=====FirstPunch"]
+position = Vector3(0.119999997, -0.230000004, -1.67999995)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4729
+metadata/unity_name = "Lines_01"
+
+[node name="=====SecondPunch" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_SkillAttack_01"]
+position = Vector3(-0.0799999982, 0.720000029, 0.0199999996)
+quaternion = Quaternion(-0, -0, 1, 0)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9610
+metadata/unity_name = "=====SecondPunch"
+
+[node name="Head_01" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_SkillAttack_01/=====SecondPunch"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0.707106829, 0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15975
+metadata/unity_name = "Head_01"
+
+[node name="Head_02" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_SkillAttack_01/=====SecondPunch"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0.707106829, 0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17084
+metadata/unity_name = "Head_02"
+
+[node name="Punch_01_Fresnel" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_SkillAttack_01/=====SecondPunch"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6728
+metadata/unity_name = "Punch_01_Fresnel"
+
+[node name="Punch_02_Glow" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_SkillAttack_01/=====SecondPunch"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11454
+metadata/unity_name = "Punch_02_Glow"
+
+[node name="Wave_01" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_SkillAttack_01/=====SecondPunch"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11960
+metadata/unity_name = "Wave_01"
+
+[node name="Wave_02" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_SkillAttack_01/=====SecondPunch"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22528
+metadata/unity_name = "Wave_02"
+
+[node name="Glow_01" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_SkillAttack_01/=====SecondPunch"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25248
+metadata/unity_name = "Glow_01"
+
+[node name="Lines_01" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_SkillAttack_01/=====SecondPunch"]
+position = Vector3(0.119999997, -0.0280000009, -1.67999995)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24338
+metadata/unity_name = "Lines_01"
+
+[node name="=====ThirdPunch" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_SkillAttack_01"]
+position = Vector3(-0.389999986, 0.790000021, 1.25)
+quaternion = Quaternion(0, -0.0578068048, -0, 0.998327792)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21593
+metadata/unity_name = "=====ThirdPunch"
+
+[node name="Head_01" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_SkillAttack_01/=====ThirdPunch"]
+position = Vector3(0, 0, -1.77999997)
+quaternion = Quaternion(-0, -0.707106829, 0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6429
+metadata/unity_name = "Head_01"
+
+[node name="Head_02" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_SkillAttack_01/=====ThirdPunch"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21592
+metadata/unity_name = "Head_02"
+
+[node name="Punch_01_Fresnel" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_SkillAttack_01/=====ThirdPunch"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5002
+metadata/unity_name = "Punch_01_Fresnel"
+
+[node name="Punch_02_Glow" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_SkillAttack_01/=====ThirdPunch"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9795
+metadata/unity_name = "Punch_02_Glow"
+
+[node name="Dust_01" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_SkillAttack_01/=====ThirdPunch"]
+position = Vector3(0.25, -0.0900000036, -0.680000007)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16084
+metadata/unity_name = "Dust_01"
+
+[node name="Dust_02" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_SkillAttack_01/=====ThirdPunch"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26658
+metadata/unity_name = "Dust_02"
+
+[node name="Wave_01" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_SkillAttack_01/=====ThirdPunch"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16045
+metadata/unity_name = "Wave_01"
+
+[node name="Wave_03" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_SkillAttack_01/=====ThirdPunch"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17941
+metadata/unity_name = "Wave_03"
+
+[node name="Glow_01" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_SkillAttack_01/=====ThirdPunch"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17281
+metadata/unity_name = "Glow_01"
+
+[node name="Lines_01" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_SkillAttack_01/=====ThirdPunch"]
+position = Vector3(-0.109999999, -0.209999993, -3.5)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23342
+metadata/unity_name = "Lines_01"
+
+[node name="Lines_02" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_SkillAttack_01/=====ThirdPunch"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14537
+metadata/unity_name = "Lines_02"
+
+[node name="Glow_03" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_SkillAttack_01"]
+position = Vector3(-0.109999999, 0, -1.38999999)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10782
+metadata/unity_name = "Glow_03"
+
+[node name="Punch_02_Glow" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_SkillAttack_01"]
+position = Vector3(0.209999993, 0.879999995, -0.629999995)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13189
+metadata/unity_name = "Punch_02_Glow"
+
+[node name="VFX_Reyna_BasicAttack_01" type="Node3D" parent="Reyna/VFXParent"]
+position = Vector3(0.140000001, 0.660000026, -1.45000005)
+quaternion = Quaternion(-0.689998686, -0, 0, 0.723810613)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9421
+metadata/unity_name = "VFX_Reyna_BasicAttack_01"
+
+[node name="root" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_BasicAttack_01"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14503
+metadata/unity_name = "root"
+
+[node name="Glow_01" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_BasicAttack_01/root"]
+position = Vector3(0, 0, 0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4816
+metadata/unity_name = "Glow_01"
+
+[node name="Head_01" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_BasicAttack_01/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6305
+metadata/unity_name = "Head_01"
+
+[node name="Wave_03" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_BasicAttack_01/root"]
+position = Vector3(0, 0.167999998, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18107
+metadata/unity_name = "Wave_03"
+
+[node name="VFX_Reyna_BasicAttack_02" type="Node3D" parent="Reyna/VFXParent"]
+position = Vector3(0, 0.331, -1.73399997)
+quaternion = Quaternion(-0.808826029, -2.98023153e-08, 1.19209261e-07, 0.5880481)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27097
+metadata/unity_name = "VFX_Reyna_BasicAttack_02"
+visible = false
+process_mode = 4
+
+[node name="root" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_BasicAttack_02"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19172
+metadata/unity_name = "root"
+
+[node name="Glow_01" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_BasicAttack_02/root"]
+position = Vector3(0, 0, 0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22505
+metadata/unity_name = "Glow_01"
+
+[node name="Head_01" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_BasicAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23849
+metadata/unity_name = "Head_01"
+
+[node name="Wave_03" type="Node3D" parent="Reyna/VFXParent/VFX_Reyna_BasicAttack_02/root"]
+position = Vector3(0, 0.167999998, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12131
+metadata/unity_name = "Wave_03"
+
+[node name="OverheadSlot" type="Node3D" parent="Reyna"]
+position = Vector3(0, 2.5, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26731
+metadata/unity_name = "OverheadSlot"

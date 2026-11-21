@@ -1,0 +1,116 @@
+[gd_scene format=3]
+
+
+[node name="battle_text_rewardUI" type="Control"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="ResultShardRewardView" type="Control" parent="."]
+mouse_filter = 2
+metadata/unity_id = 10489
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -186.600006
+offset_right = 186.600006
+offset_top = -17
+offset_bottom = 17
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="RewardTitle" type="Control" parent="ResultShardRewardView"]
+mouse_filter = 2
+metadata/unity_id = 16427
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="ResultShardRewardView/RewardTitle"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Экстренна"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.913725555, 0.898039281, 0.815686345, 1)
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="ShardValueText" type="Control" parent="ResultShardRewardView"]
+mouse_filter = 2
+metadata/unity_id = 5771
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(1, 0.5)
+
+[node name="UnityText" type="Label" parent="ResultShardRewardView/ShardValueText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "<sprite name=Shard_S> 666"
+theme_override_font_sizes/font_size = 24
+theme_override_colors/font_color = Color(0.941176474, 0.917647064, 0.831372559, 1)
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="HighlightUI" type="Control" parent="ResultShardRewardView"]
+mouse_filter = 2
+metadata/unity_id = 15603
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -24
+offset_right = 24
+offset_top = -4
+offset_bottom = 4
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="ColorRect" parent="ResultShardRewardView/HighlightUI"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.282352954, 0.737254918, 0.566557586, 0.643137276)
+
+[node name="Highlight_Rotating" type="Control" parent="ResultShardRewardView/HighlightUI"]
+mouse_filter = 2
+metadata/unity_id = 6227
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="ResultShardRewardView/HighlightUI/Highlight_Rotating"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.550729811, 0.98113209, 0.730767369, 1)

@@ -1,0 +1,527 @@
+[gd_scene format=3]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2906.obj" id="1"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_156.tres" id="2"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2770.obj" id="3"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_157.tres" id="4"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2747.obj" id="5"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_155.tres" id="6"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2702.obj" id="7"]
+
+[node name="Lizard" type="Node3D"]
+
+[node name="Lizard" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12452
+metadata/unity_name = "Lizard"
+
+[node name="Gecko_Model" type="Node3D" parent="Lizard"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1.39999986, 1.39999986, 1.39999986)
+metadata/unity_id = 27125
+metadata/unity_name = "Gecko_Model"
+
+[node name="Body" type="Node3D" parent="Lizard/Gecko_Model"]
+position = Vector3(1.90734859e-08, -4.25556168e-09, 5.39421008e-10)
+quaternion = Quaternion(0.707106888, -0, 0, 0.707106709)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26402
+metadata/unity_name = "Body"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Lizard/Gecko_Model/Body"]
+mesh = ExtResource("1")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="Cube" type="Node3D" parent="Lizard/Gecko_Model"]
+position = Vector3(1.90734859e-08, -3.81469718e-08, -6.21493019e-15)
+quaternion = Quaternion(0.707106888, -0, 0, 0.707106709)
+scale = Vector3(1, 1.00000012, 1.00000012)
+metadata/unity_id = 25959
+metadata/unity_name = "Cube"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Lizard/Gecko_Model/Cube"]
+mesh = ExtResource("3")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="Leaves_001" type="Node3D" parent="Lizard/Gecko_Model"]
+position = Vector3(8.34465013e-08, -1.52587845e-07, -1.62124664e-07)
+quaternion = Quaternion(0.707106888, 3.9512674e-08, -7.90252574e-09, 0.707106709)
+scale = Vector3(0.999999881, 1, 1)
+metadata/unity_id = 13067
+metadata/unity_name = "Leaves.001"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Lizard/Gecko_Model/Leaves_001"]
+mesh = ExtResource("5")
+visible = true
+surface_material_override/0 = ExtResource("6")
+
+[node name="root" type="Node3D" parent="Lizard/Gecko_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(0.707106888, -0, 0, 0.707106709)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18050
+metadata/unity_name = "root"
+
+[node name="pelvis" type="Node3D" parent="Lizard/Gecko_Model/root"]
+position = Vector3(-0.0134684797, 0.317855597, -0.528211713)
+quaternion = Quaternion(-0.643873394, 0.00516275642, 0.0158248134, 0.764950991)
+scale = Vector3(1, 1, 1.00000012)
+metadata/unity_id = 21275
+metadata/unity_name = "pelvis"
+
+[node name="spine_01" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis"]
+position = Vector3(0.00725682639, -0.0216790773, -0.328372568)
+quaternion = Quaternion(0.128990874, -0.0201755147, -0.0458423942, 0.990380108)
+scale = Vector3(1, 1.00000012, 0.99999994)
+metadata/unity_id = 18294
+metadata/unity_name = "spine_01"
+
+[node name="spine_02" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/spine_01"]
+position = Vector3(2.9788016e-05, -0.0504000857, -0.326523006)
+quaternion = Quaternion(-0.0966772437, -0.0373848006, 0.0249771047, 0.994299769)
+scale = Vector3(0.99999994, 1.00000012, 1.00000012)
+metadata/unity_id = 8408
+metadata/unity_name = "spine_02"
+
+[node name="clavicle_l" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/spine_01/spine_02"]
+position = Vector3(-0.219795793, -0.0819479376, -0.105280228)
+quaternion = Quaternion(-0.0717523396, 0.0356903486, -0.0670863017, 0.994523644)
+scale = Vector3(1, 1.00000012, 1.00000024)
+metadata/unity_id = 20259
+metadata/unity_name = "clavicle_l"
+
+[node name="upperarm_l" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/spine_01/spine_02/clavicle_l"]
+position = Vector3(-0.0397700891, -0.174067691, -0.00167434686)
+quaternion = Quaternion(-0.462198198, 0.00567873893, 0.0250763968, 0.886403859)
+scale = Vector3(1, 0.999999583, 1.00000024)
+metadata/unity_id = 8097
+metadata/unity_name = "upperarm_l"
+
+[node name="lowerarm_l" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/spine_01/spine_02/clavicle_l/upperarm_l"]
+position = Vector3(-0.0262264628, -0.204004928, 0.00113262178)
+quaternion = Quaternion(0.55845356, -0.0242336765, 0.0222724024, 0.828882575)
+scale = Vector3(1, 0.999999762, 1.00000024)
+metadata/unity_id = 9341
+metadata/unity_name = "lowerarm_l"
+
+[node name="hand_l" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/spine_01/spine_02/clavicle_l/upperarm_l/lowerarm_l"]
+position = Vector3(-0.021660652, -0.278473675, 0.0117154308)
+quaternion = Quaternion(-0.167539552, 0.209007561, -0.017816497, 0.963290691)
+scale = Vector3(1, 0.999999821, 1.00000012)
+metadata/unity_id = 23620
+metadata/unity_name = "hand_l"
+
+[node name="fingers_l" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/spine_01/spine_02/clavicle_l/upperarm_l/lowerarm_l/hand_l"]
+position = Vector3(-2.95639029e-06, -0.00243439199, -0.0998497754)
+quaternion = Quaternion(5.31416072e-06, 0.000338587386, 0.0138809951, 0.999903619)
+scale = Vector3(1, 1, 0.99999994)
+metadata/unity_id = 9250
+metadata/unity_name = "fingers_l"
+
+[node name="fingers_l_end" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/spine_01/spine_02/clavicle_l/upperarm_l/lowerarm_l/hand_l/fingers_l"]
+position = Vector3(-0, 0.0998936072, -2.06146069e-08)
+quaternion = Quaternion(-1.96930614e-08, -0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21298
+metadata/unity_name = "fingers_l_end"
+
+[node name="clavicle_r" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/spine_01/spine_02"]
+position = Vector3(0.219796419, -0.0819413364, -0.105168261)
+quaternion = Quaternion(-0.987785995, -0.119637907, 0.092340596, -0.0379323103)
+scale = Vector3(0.999999881, 1.00000012, 1.00000036)
+metadata/unity_id = 10854
+metadata/unity_name = "clavicle_r"
+
+[node name="upperarm_r" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/spine_01/spine_02/clavicle_r"]
+position = Vector3(0.039761886, 0.174036324, 0.00168949121)
+quaternion = Quaternion(-0.495032966, 0.0107190451, 0.0407342985, 0.867852628)
+scale = Vector3(0.99999994, 0.999999762, 1.00000012)
+metadata/unity_id = 20465
+metadata/unity_name = "upperarm_r"
+
+[node name="lowerarm_r" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/spine_01/spine_02/clavicle_r/upperarm_r"]
+position = Vector3(0.0262257755, 0.203978956, -0.00116037368)
+quaternion = Quaternion(0.618386745, -0.0422524065, 0.0343239419, 0.783986211)
+scale = Vector3(1.00000012, 1.0000006, 0.999999881)
+metadata/unity_id = 18603
+metadata/unity_name = "lowerarm_r"
+
+[node name="hand_r" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/spine_01/spine_02/clavicle_r/upperarm_r/lowerarm_r"]
+position = Vector3(0.0216588583, 0.278458595, -0.0117000192)
+quaternion = Quaternion(-0.2197368, 0.125038907, 0.0285498351, 0.967091501)
+scale = Vector3(1, 0.999999881, 1.00000036)
+metadata/unity_id = 13711
+metadata/unity_name = "hand_r"
+
+[node name="fingers_r" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/spine_01/spine_02/clavicle_r/upperarm_r/lowerarm_r/hand_r"]
+position = Vector3(2.09236132e-05, 0.00250411034, 0.0998730436)
+quaternion = Quaternion(0.000341810839, -0.000630659633, -0.023337204, 0.999727428)
+scale = Vector3(1, 1, 1.00000012)
+metadata/unity_id = 8084
+metadata/unity_name = "fingers_r"
+
+[node name="fingers_r_end" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/spine_01/spine_02/clavicle_r/upperarm_r/lowerarm_r/hand_r/fingers_r"]
+position = Vector3(-0, 0.0998936221, -1.78781558e-08)
+quaternion = Quaternion(1.34079983e-08, -0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5259
+metadata/unity_name = "fingers_r_end"
+
+[node name="neck_01" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/spine_01/spine_02"]
+position = Vector3(-6.43730175e-07, 0.00855541229, -0.183452949)
+quaternion = Quaternion(0.144507781, 0.0614239834, -0.0502546988, 0.986315906)
+scale = Vector3(1.00000012, 1.00000024, 1.00000036)
+metadata/unity_id = 23194
+metadata/unity_name = "neck_01"
+
+[node name="neck_02" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/spine_01/spine_02/neck_01"]
+position = Vector3(-8.58306862e-07, -0.000719909673, -0.208483115)
+quaternion = Quaternion(0.21179533, 0.016808331, 0.0506416671, 0.975856364)
+scale = Vector3(1, 1, 0.999999702)
+metadata/unity_id = 12570
+metadata/unity_name = "neck_02"
+
+[node name="head" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/spine_01/spine_02/neck_01/neck_02"]
+position = Vector3(1.78813934e-07, 0.0047407914, -0.181518853)
+quaternion = Quaternion(-0.10618683, 0.000477434864, 0.000562903122, 0.994345963)
+scale = Vector3(1.00000012, 1, 1.00000012)
+metadata/unity_id = 13474
+metadata/unity_name = "head"
+
+[node name="eyelid_lower_l" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/spine_01/spine_02/neck_01/neck_02/head"]
+position = Vector3(-0.120890766, -0.160795137, -0.151822582)
+quaternion = Quaternion(-0.37460658, -7.45763007e-09, -1.9296337e-08, 0.927183867)
+scale = Vector3(1.00000024, 1.00000024, 1.00000012)
+metadata/unity_id = 20914
+metadata/unity_name = "eyelid_lower_l"
+
+[node name="eyelid_lower_l_end" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/spine_01/spine_02/neck_01/neck_02/head/eyelid_lower_l"]
+position = Vector3(-0, 0.236139238, 5.24520871e-08)
+quaternion = Quaternion(-1.67638063e-08, -0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21979
+metadata/unity_name = "eyelid_lower_l_end"
+
+[node name="eyelid_lower_r" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/spine_01/spine_02/neck_01/neck_02/head"]
+position = Vector3(0.120889969, -0.160795212, -0.151822582)
+quaternion = Quaternion(-0.37460658, 7.45755013e-09, 1.92965661e-08, 0.927183867)
+scale = Vector3(1.00000024, 1.00000024, 1.00000012)
+metadata/unity_id = 22569
+metadata/unity_name = "eyelid_lower_r"
+
+[node name="eyelid_lower_r_end" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/spine_01/spine_02/neck_01/neck_02/head/eyelid_lower_r"]
+position = Vector3(-0, 0.236139238, 5.24520871e-08)
+quaternion = Quaternion(-1.67638063e-08, -0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25197
+metadata/unity_name = "eyelid_lower_r_end"
+
+[node name="eyelid_upper_l" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/spine_01/spine_02/neck_01/neck_02/head"]
+position = Vector3(-0.117399253, -0.148534998, -0.162447274)
+quaternion = Quaternion(-0.37460658, 2.33202746e-09, 4.58811655e-09, 0.927183867)
+scale = Vector3(1.00000024, 1.00000024, 1.00000012)
+metadata/unity_id = 8176
+metadata/unity_name = "eyelid_upper_l"
+
+[node name="eyelid_upper_l_end" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/spine_01/spine_02/neck_01/neck_02/head/eyelid_upper_l"]
+position = Vector3(9.53674295e-09, 0.236139223, 4.76837148e-09)
+quaternion = Quaternion(-1.67638063e-08, -0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26373
+metadata/unity_name = "eyelid_upper_l_end"
+
+[node name="eyelid_upper_r" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/spine_01/spine_02/neck_01/neck_02/head"]
+position = Vector3(0.117399976, -0.148534924, -0.162446976)
+quaternion = Quaternion(-0.37460658, -0, 0, 0.927183867)
+scale = Vector3(1.00000024, 1.00000024, 1.00000012)
+metadata/unity_id = 9318
+metadata/unity_name = "eyelid_upper_r"
+
+[node name="eyelid_upper_r_end" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/spine_01/spine_02/neck_01/neck_02/head/eyelid_upper_r"]
+position = Vector3(-9.53674295e-09, 0.236139297, 5.72204577e-08)
+quaternion = Quaternion(-3.25962901e-08, -0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11136
+metadata/unity_name = "eyelid_upper_r_end"
+
+[node name="jaw" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/spine_01/spine_02/neck_01/neck_02/head"]
+position = Vector3(-3.07559958e-07, -0.177685961, -0.00190437317)
+quaternion = Quaternion(0.292348951, 1.95871119e-12, 1.94519834e-12, 0.956311762)
+scale = Vector3(1.00000024, 1, 1.00000012)
+metadata/unity_id = 21222
+metadata/unity_name = "jaw"
+
+[node name="tongue_01" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/spine_01/spine_02/neck_01/neck_02/head/jaw"]
+position = Vector3(0, 0.00813133176, -0.0472233556)
+quaternion = Quaternion(0.252935737, -5.68299693e-05, -2.13135918e-05, 0.967483103)
+scale = Vector3(1, 0.999999881, 1.00000012)
+metadata/unity_id = 13799
+metadata/unity_name = "tongue_01"
+
+[node name="tongue_02" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/spine_01/spine_02/neck_01/neck_02/head/jaw/tongue_01"]
+position = Vector3(2.93254857e-07, -0.0688591748, 0.00120334618)
+quaternion = Quaternion(-0.444986939, 0.000111101683, 4.62257303e-05, 0.895537078)
+scale = Vector3(1, 0.999999702, 1.00000012)
+metadata/unity_id = 25941
+metadata/unity_name = "tongue_02"
+
+[node name="tongue_03" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/spine_01/spine_02/neck_01/neck_02/head/jaw/tongue_01/tongue_02"]
+position = Vector3(-1.4781952e-07, -0.0735460296, 0.00149841304)
+quaternion = Quaternion(0.115801305, -5.11102589e-05, -3.27971175e-05, 0.993272424)
+scale = Vector3(1, 1.00000024, 0.99999994)
+metadata/unity_id = 7367
+metadata/unity_name = "tongue_03"
+
+[node name="tongue_04" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/spine_01/spine_02/neck_01/neck_02/head/jaw/tongue_01/tongue_02/tongue_03"]
+position = Vector3(3.57627847e-08, -0.0709814429, 0.000332488999)
+quaternion = Quaternion(0.448533535, -5.76412131e-05, -1.9178975e-05, 0.893765986)
+scale = Vector3(0.99999994, 1.00000012, 0.999999642)
+metadata/unity_id = 11142
+metadata/unity_name = "tongue_04"
+
+[node name="tongue_05" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/spine_01/spine_02/neck_01/neck_02/head/jaw/tongue_01/tongue_02/tongue_03/tongue_04"]
+position = Vector3(-1.69277186e-07, -0.0366102606, -0.00088176725)
+quaternion = Quaternion(0.509804606, -5.77535902e-05, 2.0393365e-05, 0.860290229)
+scale = Vector3(1, 1.00000048, 0.999999642)
+metadata/unity_id = 23534
+metadata/unity_name = "tongue_05"
+
+[node name="tongue_06" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/spine_01/spine_02/neck_01/neck_02/head/jaw/tongue_01/tongue_02/tongue_03/tongue_04/tongue_05"]
+position = Vector3(-6.91413859e-08, -0.0392505638, 0.00157188415)
+quaternion = Quaternion(0.167632759, -4.60441006e-05, 3.9268587e-05, 0.985849559)
+scale = Vector3(1, 1.00000012, 0.999999821)
+metadata/unity_id = 15612
+metadata/unity_name = "tongue_06"
+
+[node name="tongue_06_end" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/spine_01/spine_02/neck_01/neck_02/head/jaw/tongue_01/tongue_02/tongue_03/tongue_04/tongue_05/tongue_06"]
+position = Vector3(-0, 0.0392820351, -0)
+quaternion = Quaternion(7.4505806e-09, -0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16450
+metadata/unity_name = "tongue_06_end"
+
+[node name="tail_01" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis"]
+position = Vector3(-3.09944141e-08, -0.0180294421, 0.210545078)
+quaternion = Quaternion(2.19292997e-05, -1.42372858e-06, 4.88886826e-07, 1)
+scale = Vector3(1, 1.00000024, 1)
+metadata/unity_id = 26780
+metadata/unity_name = "tail_01"
+
+[node name="tail_02" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/tail_01"]
+position = Vector3(4.23192965e-08, -0.0168829337, 0.337529868)
+quaternion = Quaternion(-0.220920995, -0.0102382414, -0.0568851009, 0.973577559)
+scale = Vector3(0.99999994, 1.00000024, 1.00000024)
+metadata/unity_id = 17222
+metadata/unity_name = "tail_02"
+
+[node name="tail_03" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/tail_01/tail_02"]
+position = Vector3(8.09431072e-07, -0.0206348989, 0.444219947)
+quaternion = Quaternion(-0.221849069, -0.0311824195, -0.024806615, 0.974266589)
+scale = Vector3(1.00000012, 0.99999994, 1)
+metadata/unity_id = 15684
+metadata/unity_name = "tail_03"
+
+[node name="tail_04" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/tail_01/tail_02/tail_03"]
+position = Vector3(1.206398e-06, 0.00329006184, 0.327634573)
+quaternion = Quaternion(-0.238222197, 0.0211233348, -0.00570087507, 0.970964193)
+scale = Vector3(1.00000024, 1.00000012, 1.00000048)
+metadata/unity_id = 21142
+metadata/unity_name = "tail_04"
+
+[node name="tail_05" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/tail_01/tail_02/tail_03/tail_04"]
+position = Vector3(1.02996819e-06, 0.00576171884, 0.236773446)
+quaternion = Quaternion(-0.30603987, 0.0208794437, -0.0369992778, 0.951070309)
+scale = Vector3(1.00000012, 0.999999881, 1.00000048)
+metadata/unity_id = 25096
+metadata/unity_name = "tail_05"
+
+[node name="tail_06" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/tail_01/tail_02/tail_03/tail_04/tail_05"]
+position = Vector3(-2.6702881e-07, -0.00622955291, 0.200007319)
+quaternion = Quaternion(-0.118122615, -8.90123993e-05, -8.67735707e-06, 0.992999017)
+scale = Vector3(1.00000012, 1, 1.00000024)
+metadata/unity_id = 9588
+metadata/unity_name = "tail_06"
+
+[node name="tail_06_end" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/tail_01/tail_02/tail_03/tail_04/tail_05/tail_06"]
+position = Vector3(-0, 0.20010303, 1.90734859e-08)
+quaternion = Quaternion(-8.19563866e-08, -0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24957
+metadata/unity_name = "tail_06_end"
+
+[node name="thigh_l" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis"]
+position = Vector3(-0.179791793, -0.048377648, -0.0486027151)
+quaternion = Quaternion(0.614248574, -0.151338324, -0.27161479, 0.725272954)
+scale = Vector3(0.99999994, 0.99999994, 0.99999994)
+metadata/unity_id = 22281
+metadata/unity_name = "thigh_l"
+
+[node name="calf_01_l" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/thigh_l"]
+position = Vector3(0.00655246712, -0.0146825407, 0.268906862)
+quaternion = Quaternion(-0.650273621, -0.00805930048, 0.0195074715, 0.759406805)
+scale = Vector3(1.00000012, 0.99999994, 1)
+metadata/unity_id = 20724
+metadata/unity_name = "calf_01_l"
+
+[node name="calf_02_l" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/thigh_l/calf_01_l"]
+position = Vector3(0.00273971562, -0.0144556612, 0.255125612)
+quaternion = Quaternion(0.827018738, 0.0418098383, 0.0390510112, 0.559255779)
+scale = Vector3(1.00000012, 1, 0.999999821)
+metadata/unity_id = 22152
+metadata/unity_name = "calf_02_l"
+
+[node name="foot_l" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/thigh_l/calf_01_l/calf_02_l"]
+position = Vector3(0.00101890566, 0.000492897001, 0.181802988)
+quaternion = Quaternion(0.437601894, 0.222929209, -0.130165964, 0.86131525)
+scale = Vector3(1.00000024, 1.0000006, 0.999999821)
+metadata/unity_id = 22726
+metadata/unity_name = "foot_l"
+
+[node name="ball_l" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/thigh_l/calf_01_l/calf_02_l/foot_l"]
+position = Vector3(-0.00645595556, 0.00255089509, 0.0608966798)
+quaternion = Quaternion(-0.0182750113, -0.0346049778, 0.0123558268, 0.999157608)
+scale = Vector3(1, 1.00000012, 0.99999994)
+metadata/unity_id = 20337
+metadata/unity_name = "ball_l"
+
+[node name="ball_l_end" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/thigh_l/calf_01_l/calf_02_l/foot_l/ball_l"]
+position = Vector3(-8.67992611e-09, 0.0612911358, 3.695488e-08)
+quaternion = Quaternion(-2.93948732e-09, -9.98261385e-09, -4.77302819e-09, 1)
+scale = Vector3(1, 0.99999994, 1)
+metadata/unity_id = 25766
+metadata/unity_name = "ball_l_end"
+
+[node name="thigh_r" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis"]
+position = Vector3(0.179791257, -0.0484255217, -0.0486484505)
+quaternion = Quaternion(-0.693191409, -0.441693753, 0.0855946094, 0.563086033)
+scale = Vector3(1, 1.00000012, 0.99999994)
+metadata/unity_id = 22737
+metadata/unity_name = "thigh_r"
+
+[node name="calf_01_r" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/thigh_r"]
+position = Vector3(-0.00646419497, 0.0145185422, -0.268799812)
+quaternion = Quaternion(-0.563232005, -0.0157999452, 0.0104282331, 0.826081932)
+scale = Vector3(1.00000012, 1.00000036, 0.999999702)
+metadata/unity_id = 9101
+metadata/unity_name = "calf_01_r"
+
+[node name="calf_02_r" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/thigh_r/calf_01_r"]
+position = Vector3(-0.00268787378, 0.0143701453, -0.255200356)
+quaternion = Quaternion(0.731486142, 0.0349422395, 0.040176034, 0.679774225)
+scale = Vector3(1, 1.0000006, 0.999999583)
+metadata/unity_id = 6088
+metadata/unity_name = "calf_02_r"
+
+[node name="foot_r" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/thigh_r/calf_01_r/calf_02_r"]
+position = Vector3(-0.000982627855, -0.000545921328, -0.181710869)
+quaternion = Quaternion(0.427792519, 0.285085112, -0.192340747, 0.835897744)
+scale = Vector3(1.00000024, 1.0000006, 0.999999821)
+metadata/unity_id = 6096
+metadata/unity_name = "foot_r"
+
+[node name="ball_r" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/thigh_r/calf_01_r/calf_02_r/foot_r"]
+position = Vector3(0.00646961201, -0.0014978504, -0.0609488674)
+quaternion = Quaternion(-0.0174419619, -0.0348940641, 0.000609099166, 0.99923861)
+scale = Vector3(0.99999994, 0.999999881, 1)
+metadata/unity_id = 14910
+metadata/unity_name = "ball_r"
+
+[node name="ball_r_end" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/thigh_r/calf_01_r/calf_02_r/foot_r/ball_r"]
+position = Vector3(-2.60025264e-08, 0.0613029338, 1.43051144e-08)
+quaternion = Quaternion(6.1991166e-08, -8.67294148e-09, -4.77302819e-09, 1)
+scale = Vector3(1, 0.99999994, 0.99999994)
+metadata/unity_id = 22974
+metadata/unity_name = "ball_r_end"
+
+[node name="VFX_Gecko_SkillAttack_Body" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10722
+metadata/unity_name = "VFX_Gecko_SkillAttack_Body"
+
+[node name="root" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/VFX_Gecko_SkillAttack_Body"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-2.98023188e-08, 2.98023188e-08, 5.96046377e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13115
+metadata/unity_name = "root"
+
+[node name="Leaf_01" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/VFX_Gecko_SkillAttack_Body/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26959
+metadata/unity_name = "Leaf_01"
+
+[node name="Rings_01" type="Node3D" parent="Lizard/Gecko_Model/root/pelvis/VFX_Gecko_SkillAttack_Body/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26543
+metadata/unity_name = "Rings_01"
+
+[node name="Teeth" type="Node3D" parent="Lizard/Gecko_Model"]
+position = Vector3(1.90734859e-08, -2.33290454e-08, 5.39386702e-10)
+quaternion = Quaternion(0.707106888, -0, 0, 0.707106709)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9647
+metadata/unity_name = "Teeth"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Lizard/Gecko_Model/Teeth"]
+mesh = ExtResource("7")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="OverheadSlot" type="Node3D" parent="Lizard"]
+position = Vector3(0, 2, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11057
+metadata/unity_name = "OverheadSlot"
+
+[node name="VFXParent" type="Node3D" parent="Lizard"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5716
+metadata/unity_name = "VFXParent"
+
+[node name="VFX_Gecko_BasicAttack" type="Node3D" parent="Lizard/VFXParent"]
+position = Vector3(0.200000003, 0.5, -1.07000041)
+quaternion = Quaternion(-0.0222687852, 0.142872676, 0.142037526, 0.97924304)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23449
+metadata/unity_name = "VFX_Gecko_BasicAttack"
+
+[node name="root" type="Node3D" parent="Lizard/VFXParent/VFX_Gecko_BasicAttack"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -5.587935e-09, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12865
+metadata/unity_name = "root"
+
+[node name="Slash_01" type="Node3D" parent="Lizard/VFXParent/VFX_Gecko_BasicAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6878
+metadata/unity_name = "Slash_01"
+
+[node name="Slash_02_Highlight" type="Node3D" parent="Lizard/VFXParent/VFX_Gecko_BasicAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(3.7252903e-09, 2.98023224e-08, 1.86264515e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13733
+metadata/unity_name = "Slash_02_Highlight"
+
+[node name="Slash_03_Wind" type="Node3D" parent="Lizard/VFXParent/VFX_Gecko_BasicAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0.491207778, 0, 0.87104243)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12705
+metadata/unity_name = "Slash_03_Wind"

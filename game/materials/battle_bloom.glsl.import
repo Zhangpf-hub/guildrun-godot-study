@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://budcs7hals6ba"
+path="res://.godot/imported/battle_bloom.glsl-b232e391d5b4660356b9bde36d883444.res"
+
+[deps]
+
+source_file="res://materials/battle_bloom.glsl"
+dest_files=["res://.godot/imported/battle_bloom.glsl-b232e391d5b4660356b9bde36d883444.res"]
+
+[params]
+

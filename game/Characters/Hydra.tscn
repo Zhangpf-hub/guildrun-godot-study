@@ -1,0 +1,1472 @@
+[gd_scene format=3]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2925.obj" id="1"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_148.tres" id="2"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2931.obj" id="3"]
+
+[node name="Hydra" type="Node3D"]
+
+[node name="Hydra" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13823
+metadata/unity_name = "Hydra"
+
+[node name="Hydra_Model" type="Node3D" parent="Hydra"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(2.20000005, 2.20000005, 2.20000005)
+metadata/unity_id = 11484
+metadata/unity_name = "Hydra_Model"
+
+[node name="Armature" type="Node3D" parent="Hydra/Hydra_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(3.77489471e-08, -0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17943
+metadata/unity_name = "Armature"
+
+[node name="root" type="Node3D" parent="Hydra/Hydra_Model/Armature"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10494
+metadata/unity_name = "root"
+
+[node name="pelvis" type="Node3D" parent="Hydra/Hydra_Model/Armature/root"]
+position = Vector3(-1.52587887e-07, 0.722881019, 0.242771417)
+quaternion = Quaternion(-1.23677523e-07, -0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10355
+metadata/unity_name = "pelvis"
+
+[node name="spine_01" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis"]
+position = Vector3(-0, -0.0328811631, -0.242771387)
+quaternion = Quaternion(1.07891516e-07, 6.40836625e-15, -2.23517418e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6708
+metadata/unity_name = "spine_01"
+
+[node name="spine_02" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01"]
+position = Vector3(-7.3987505e-10, 0.0165509861, -0.176007405)
+quaternion = Quaternion(-1.77635684e-15, -5.29395592e-23, -1.26217745e-29, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11464
+metadata/unity_name = "spine_02"
+
+[node name="clavicle_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02"]
+position = Vector3(-0.218983918, 0.050799787, -0.090295516)
+quaternion = Quaternion(2.54791619e-08, 5.29395592e-22, 8.38548224e-23, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6683
+metadata/unity_name = "clavicle_l"
+
+[node name="Upperarm_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/clavicle_l"]
+position = Vector3(-0.0192574188, -0.18302618, -0.0339830704)
+quaternion = Quaternion(-6.5726411e-08, 4.23516474e-22, -2.16313107e-22, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12378
+metadata/unity_name = "Upperarm_l"
+
+[node name="Lowerarm_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/clavicle_l/Upperarm_l"]
+position = Vector3(-0.0986580625, -0.226586163, 0.0583181195)
+quaternion = Quaternion(4.40311219e-08, 5.29395592e-22, 1.44911476e-22, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6309
+metadata/unity_name = "Lowerarm_l"
+
+[node name="Hand_l_01" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/clavicle_l/Upperarm_l/Lowerarm_l"]
+position = Vector3(7.29311141e-05, -0.215907976, -0.0171871725)
+quaternion = Quaternion(-4.08471799e-08, 3.17637355e-22, -1.34432766e-22, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11662
+metadata/unity_name = "Hand_l_01"
+
+[node name="Hand_l_02" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/clavicle_l/Upperarm_l/Lowerarm_l/Hand_l_01"]
+position = Vector3(0.00188827119, -0.044011429, -0.0581605621)
+quaternion = Quaternion(1.26217745e-29, 3.17637355e-22, -0, 1)
+scale = Vector3(1, 0.99999994, 1)
+metadata/unity_id = 21473
+metadata/unity_name = "Hand_l_02"
+
+[node name="Hand_l_02_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/clavicle_l/Upperarm_l/Lowerarm_l/Hand_l_01/Hand_l_02"]
+position = Vector3(-7.18738979e-09, 0.0729604438, 1.69941412e-08)
+quaternion = Quaternion(-7.92903521e-10, 2.07283243e-16, 2.6142223e-07, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6384
+metadata/unity_name = "Hand_l_02_end"
+
+[node name="Hand_l_02_end_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/clavicle_l/Upperarm_l/Lowerarm_l/Hand_l_01/Hand_l_02/Hand_l_02_end"]
+position = Vector3(-2.68035194e-09, 0.0729604587, 6.00314065e-09)
+quaternion = Quaternion(-1.77635536e-15, 2.11758224e-22, -2.6142223e-07, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22258
+metadata/unity_name = "Hand_l_02_end_end"
+
+[node name="clavicle_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02"]
+position = Vector3(0.218983918, 0.050799273, -0.090295516)
+quaternion = Quaternion(2.54791299e-08, 5.55865372e-22, 8.38547152e-23, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20377
+metadata/unity_name = "clavicle_r"
+
+[node name="Upperarm_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/clavicle_r"]
+position = Vector3(0.0192577485, -0.183026925, -0.0339818113)
+quaternion = Quaternion(-6.5727022e-08, 1.4435499e-08, -1.02810371e-15, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12268
+metadata/unity_name = "Upperarm_r"
+
+[node name="Lowerarm_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/clavicle_r/Upperarm_r"]
+position = Vector3(0.0986583009, -0.22658363, 0.0583169051)
+quaternion = Quaternion(4.40309798e-08, -7.92187723e-16, -2.52569184e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11781
+metadata/unity_name = "Lowerarm_r"
+
+[node name="Hand_r_01" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/clavicle_r/Upperarm_r/Lowerarm_r"]
+position = Vector3(-7.19054515e-05, -0.215908691, -0.0171873141)
+quaternion = Quaternion(-1.004518e-07, 2.98023295e-08, -2.98023188e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8788
+metadata/unity_name = "Hand_r_01"
+
+[node name="Hand_r_02" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/clavicle_r/Upperarm_r/Lowerarm_r/Hand_r_01"]
+position = Vector3(-0.00189004908, -0.0440113805, -0.0581606738)
+quaternion = Quaternion(8.09421974e-15, 7.84262724e-15, -2.23517311e-08, 1)
+scale = Vector3(1, 0.99999994, 1)
+metadata/unity_id = 10238
+metadata/unity_name = "Hand_r_02"
+
+[node name="Hand_r_02_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/clavicle_r/Upperarm_r/Lowerarm_r/Hand_r_01/Hand_r_02"]
+position = Vector3(-3.40303146e-08, 0.0729605332, -1.04991793e-08)
+quaternion = Quaternion(-7.92144128e-10, -8.58967589e-16, -2.61421889e-07, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18837
+metadata/unity_name = "Hand_r_02_end"
+
+[node name="Hand_r_02_end_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/clavicle_r/Upperarm_r/Lowerarm_r/Hand_r_01/Hand_r_02/Hand_r_02_end"]
+position = Vector3(-1.45241525e-08, 0.0729605407, -1.27928406e-08)
+quaternion = Quaternion(-4.45931422e-15, 5.92860383e-16, 2.61421889e-07, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26332
+metadata/unity_name = "Hand_r_02_end_end"
+
+[node name="spine_03" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02"]
+position = Vector3(-1.48839951e-09, 0.0332953744, -0.154404402)
+quaternion = Quaternion(-3.13893054e-08, 6.3527471e-22, -1.03305759e-22, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21959
+metadata/unity_name = "spine_03"
+
+[node name="neck_01" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03"]
+position = Vector3(-4.4771804e-09, 0.100153618, -0.111267358)
+quaternion = Quaternion(-0, 4.23516474e-22, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13253
+metadata/unity_name = "neck_01"
+
+[node name="neck_02" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01"]
+position = Vector3(-6.7055197e-09, 0.149999887, 0.0121698547)
+quaternion = Quaternion(-6.11621687e-09, 4.23516474e-22, -2.01291807e-23, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10453
+metadata/unity_name = "neck_02"
+
+[node name="neck_03" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02"]
+position = Vector3(-1.60634499e-07, 0.179999799, 0.0747578144)
+quaternion = Quaternion(1.25731453e-22, -2.38418579e-07, -2.7119303e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15510
+metadata/unity_name = "neck_03"
+
+[node name="neck_04" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03"]
+position = Vector3(3.60859751e-08, 0.119999796, 0.0869277343)
+quaternion = Quaternion(6.67120688e-08, 1.19209275e-07, 8.21101542e-15, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20971
+metadata/unity_name = "neck_04"
+
+[node name="neck_05" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04"]
+position = Vector3(1.3158405e-08, 0.119999833, 0.0776906163)
+quaternion = Quaternion(-1.58224207e-08, 5.96046448e-08, -5.96046874e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14207
+metadata/unity_name = "neck_05"
+
+[node name="neck_06" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05"]
+position = Vector3(-2.28770567e-08, 0.149999842, 0.0143428873)
+quaternion = Quaternion(1.19872681e-08, 1.87817935e-14, -1.49011488e-08, 1)
+scale = Vector3(1, 0.99999994, 1)
+metadata/unity_id = 8589
+metadata/unity_name = "neck_06"
+
+[node name="neck_07" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06"]
+position = Vector3(-3.38125652e-08, 0.120118856, -0.088447772)
+quaternion = Quaternion(3.70140327e-08, -2.02964976e-15, -2.9802333e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9336
+metadata/unity_name = "neck_07"
+
+[node name="head" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07"]
+position = Vector3(-2.59873421e-08, 0.0459504314, -0.120352469)
+quaternion = Quaternion(-1.07581052e-07, -2.38418551e-07, -7.45058202e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16200
+metadata/unity_name = "head"
+
+[node name="ear_01_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07/head"]
+position = Vector3(-0.0916301236, -0.0350268632, 0.154689655)
+quaternion = Quaternion(-7.54953012e-15, 1.78813949e-07, -2.46227768e-14, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20953
+metadata/unity_name = "ear_01_l"
+
+[node name="ear_02_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07/head/ear_01_l"]
+position = Vector3(-0.0662015006, 0.067108728, 0.0382023863)
+quaternion = Quaternion(7.42799031e-08, -2.38418579e-07, 2.38418551e-07, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5674
+metadata/unity_name = "ear_02_l"
+
+[node name="ear_03_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07/head/ear_01_l/ear_02_l"]
+position = Vector3(-0.0709966198, 0.0780944973, 0.098605603)
+quaternion = Quaternion(-6.60265158e-08, 1.7881392e-07, -1.1920929e-07, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9852
+metadata/unity_name = "ear_03_l"
+
+[node name="ear_03_l_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07/head/ear_01_l/ear_02_l/ear_03_l"]
+position = Vector3(4.44411397e-09, 0.144438133, -4.92748775e-09)
+quaternion = Quaternion(-3.39272113e-08, -2.78055379e-15, 6.06665664e-15, 1)
+scale = Vector3(1, 1.00000012, 1)
+metadata/unity_id = 6425
+metadata/unity_name = "ear_03_l_end"
+
+[node name="ear_03_l_end_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07/head/ear_01_l/ear_02_l/ear_03_l/ear_03_l_end"]
+position = Vector3(-1.57649532e-10, 0.144437999, -7.62134711e-09)
+quaternion = Quaternion(3.30132686e-08, 2.70565109e-15, 1.20219556e-15, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20568
+metadata/unity_name = "ear_03_l_end_end"
+
+[node name="ear_01_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07/head"]
+position = Vector3(0.0916303694, -0.0350260288, 0.154689506)
+quaternion = Quaternion(-6.99442369e-15, 1.93715124e-07, -2.37140782e-14, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22173
+metadata/unity_name = "ear_01_r"
+
+[node name="ear_02_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07/head/ear_01_r"]
+position = Vector3(0.0662014335, 0.0671073198, 0.0382024646)
+quaternion = Quaternion(7.42794555e-08, 2.2351756e-08, -6.38490132e-15, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8441
+metadata/unity_name = "ear_02_r"
+
+[node name="ear_03_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07/head/ear_01_r/ear_02_r"]
+position = Vector3(0.0709966645, 0.0780960992, 0.0986055136)
+quaternion = Quaternion(-6.6026125e-08, 3.64557966e-14, -3.0115877e-14, 1)
+scale = Vector3(1, 1.00000012, 1)
+metadata/unity_id = 12869
+metadata/unity_name = "ear_03_r"
+
+[node name="ear_03_r_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07/head/ear_01_r/ear_02_r/ear_03_r"]
+position = Vector3(8.00904676e-09, 0.144438878, -2.9287775e-10)
+quaternion = Quaternion(-3.39270692e-08, 2.8046362e-16, 2.78053515e-15, 1)
+scale = Vector3(1, 0.999999881, 1)
+metadata/unity_id = 23754
+metadata/unity_name = "ear_03_r_end"
+
+[node name="ear_03_r_end_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07/head/ear_01_r/ear_02_r/ear_03_r/ear_03_r_end"]
+position = Vector3(7.1172277e-09, 0.144438729, -2.98709435e-09)
+quaternion = Quaternion(3.30130945e-08, -4.6432398e-16, -2.7056316e-15, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17254
+metadata/unity_name = "ear_03_r_end_end"
+
+[node name="eyelid_bottom_01_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07/head"]
+position = Vector3(-0.048972968, -0.0141270058, -0.0904670209)
+quaternion = Quaternion(-8.10463147e-15, 1.63912773e-07, -4.2151917e-15, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25915
+metadata/unity_name = "eyelid_bottom_01_l"
+
+[node name="eyelid_bottom_02_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07/head/eyelid_bottom_01_l"]
+position = Vector3(-0.0178234857, -0.0132618397, 0.000118900323)
+quaternion = Quaternion(7.33600292e-09, 1.49012056e-08, -7.18056342e-15, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17527
+metadata/unity_name = "eyelid_bottom_02_l"
+
+[node name="eyelid_bottom_02_l_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07/head/eyelid_bottom_01_l/eyelid_bottom_02_l"]
+position = Vector3(2.50065552e-10, 0.0222166684, 9.82787451e-09)
+quaternion = Quaternion(3.36619621e-12, 6.75932292e-19, -7.10583055e-15, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11219
+metadata/unity_name = "eyelid_bottom_02_l_end"
+
+[node name="eyelid_bottom_02_l_end_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07/head/eyelid_bottom_01_l/eyelid_bottom_02_l/eyelid_bottom_02_l_end"]
+position = Vector3(8.48440318e-10, 0.0222165156, 1.21997799e-08)
+quaternion = Quaternion(-1.77635853e-15, -1.69406589e-21, -7.10542905e-15, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22012
+metadata/unity_name = "eyelid_bottom_02_l_end_end"
+
+[node name="eyelid_bottom_01_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07/head"]
+position = Vector3(0.0489731953, -0.0141277295, -0.0904679149)
+quaternion = Quaternion(-5.31796998e-14, 1.93715081e-07, 2.38418579e-07, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13769
+metadata/unity_name = "eyelid_bottom_01_r"
+
+[node name="eyelid_bottom_02_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07/head/eyelid_bottom_01_r"]
+position = Vector3(0.0178236328, -0.0132599873, 0.000120012875)
+quaternion = Quaternion(7.33650696e-09, 4.43408195e-14, -1.49011626e-07, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20246
+metadata/unity_name = "eyelid_bottom_02_r"
+
+[node name="eyelid_bottom_02_r_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07/head/eyelid_bottom_01_r/eyelid_bottom_02_r"]
+position = Vector3(2.64380096e-09, 0.0222151838, -2.00340029e-08)
+quaternion = Quaternion(2.86171087e-12, 3.20178454e-19, -1.065844e-14, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10765
+metadata/unity_name = "eyelid_bottom_02_r_end"
+
+[node name="eyelid_bottom_02_r_end_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07/head/eyelid_bottom_01_r/eyelid_bottom_02_r/eyelid_bottom_02_r_end"]
+position = Vector3(2.44669529e-09, 0.0222151838, -1.76605148e-08)
+quaternion = Quaternion(-1.77635684e-15, -0, -3.5527141e-15, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26858
+metadata/unity_name = "eyelid_bottom_02_r_end_end"
+
+[node name="eyelid_upper_01_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07/head"]
+position = Vector3(-0.048972968, -0.0141270058, -0.0904670209)
+quaternion = Quaternion(-3.44170323e-15, 1.93715124e-07, -2.37140799e-14, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18231
+metadata/unity_name = "eyelid_upper_01_l"
+
+[node name="eyelid_upper_02_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07/head/eyelid_upper_01_l"]
+position = Vector3(-0.00234026718, 0.0219929889, -0.0113028781)
+quaternion = Quaternion(-7.10542905e-15, 2.13162804e-14, -1.42108547e-14, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25837
+metadata/unity_name = "eyelid_upper_02_l"
+
+[node name="eyelid_upper_02_l_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07/head/eyelid_upper_01_l/eyelid_upper_02_l"]
+position = Vector3(-3.21718274e-09, 0.0248378366, -3.67136854e-09)
+quaternion = Quaternion(7.33937355e-09, 1.4764301e-15, -7.65557695e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25783
+metadata/unity_name = "eyelid_upper_02_l_end"
+
+[node name="eyelid_upper_02_l_end_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07/head/eyelid_upper_01_l/eyelid_upper_02_l/eyelid_upper_02_l_end"]
+position = Vector3(-3.6734582e-09, 0.0248378292, 1.13237411e-08)
+quaternion = Quaternion(1.69406589e-21, -8.47032947e-22, -1.69406589e-21, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15580
+metadata/unity_name = "eyelid_upper_02_l_end_end"
+
+[node name="eyelid_upper_01_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07/head"]
+position = Vector3(0.0489731953, -0.0141277295, -0.0904679149)
+quaternion = Quaternion(-1.55431562e-15, 1.49011612e-07, -5.12388949e-15, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18969
+metadata/unity_name = "eyelid_upper_01_r"
+
+[node name="eyelid_upper_02_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07/head/eyelid_upper_01_r"]
+position = Vector3(0.00234023249, 0.0219930317, -0.0113010341)
+quaternion = Quaternion(1.11021964e-15, 2.98023508e-08, 1.81739304e-15, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26958
+metadata/unity_name = "eyelid_upper_02_r"
+
+[node name="eyelid_upper_02_r_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07/head/eyelid_upper_01_r/eyelid_upper_02_r"]
+position = Vector3(-3.40571193e-09, 0.0248369649, -2.66103939e-08)
+quaternion = Quaternion(7.33937355e-09, 1.47642925e-15, -8.74922354e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11479
+metadata/unity_name = "eyelid_upper_02_r_end"
+
+[node name="eyelid_upper_02_r_end_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07/head/eyelid_upper_01_r/eyelid_upper_02_r/eyelid_upper_02_r_end"]
+position = Vector3(-3.86162347e-09, 0.0248369575, -1.16153744e-08)
+quaternion = Quaternion(1.69406589e-21, -8.47032947e-22, -1.69406589e-21, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8447
+metadata/unity_name = "eyelid_upper_02_r_end_end"
+
+[node name="jaw_01" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07/head"]
+position = Vector3(4.79681859e-08, -0.0920850635, 0.0183190238)
+quaternion = Quaternion(-6.60583038e-15, 1.56462193e-07, -4.66954017e-15, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24520
+metadata/unity_name = "jaw_01"
+
+[node name="tongue_01" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07/head/jaw_01"]
+position = Vector3(0.00025024495, -0.0137095172, -0.0165443718)
+quaternion = Quaternion(-7.49405624e-16, 3.72531872e-09, -6.87825227e-15, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26390
+metadata/unity_name = "tongue_01"
+
+[node name="tongue_02" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07/head/jaw_01/tongue_01"]
+position = Vector3(0.000375214702, -0.0337296538, -0.0461964346)
+quaternion = Quaternion(-1.06581495e-14, 4.26325608e-14, -7.10542397e-15, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10764
+metadata/unity_name = "tongue_02"
+
+[node name="tongue_03" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07/head/jaw_01/tongue_01/tongue_02"]
+position = Vector3(-1.51833768e-09, -0.0318575464, -0.0515478104)
+quaternion = Quaternion(-7.10543244e-15, 2.84217094e-14, -7.10542482e-15, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20156
+metadata/unity_name = "tongue_03"
+
+[node name="tongue_03_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07/head/jaw_01/tongue_01/tongue_02/tongue_03"]
+position = Vector3(2.91402111e-11, 0.060598202, 6.09834938e-09)
+quaternion = Quaternion(7.33937355e-09, 1.51392062e-15, -6.1476968e-10, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7497
+metadata/unity_name = "tongue_03_end"
+
+[node name="tongue_03_end_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07/head/jaw_01/tongue_01/tongue_02/tongue_03/tongue_03_end"]
+position = Vector3(5.45696789e-13, 0.0605978891, -1.11108065e-08)
+quaternion = Quaternion(-1.69162136e-15, -3.29766867e-17, 6.1475447e-10, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5124
+metadata/unity_name = "tongue_03_end_end"
+
+[node name="nose" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07/head"]
+position = Vector3(5.98154202e-08, -0.0413742885, -0.183574647)
+quaternion = Quaternion(-7.54952843e-15, 1.78813934e-07, -2.46227768e-14, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22220
+metadata/unity_name = "nose"
+
+[node name="nose_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07/head/nose"]
+position = Vector3(-2.72848404e-14, 0.132970646, 3.0953565e-08)
+quaternion = Quaternion(1.50780764e-07, 1.91021091e-15, -3.76360879e-15, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19959
+metadata/unity_name = "nose_end"
+
+[node name="nose_end_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/neck_06/neck_07/head/nose/nose_end"]
+position = Vector3(-6.82120986e-14, 0.13297078, 3.11391446e-08)
+quaternion = Quaternion(-1.43441383e-07, 3.11893201e-15, -4.21674177e-15, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24548
+metadata/unity_name = "nose_end_end"
+
+[node name="neck_01_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03"]
+position = Vector3(-0.129283458, 0.0587354563, -0.0570019148)
+quaternion = Quaternion(4.83073478e-22, 2.11758237e-22, -8.94069672e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9352
+metadata/unity_name = "neck_01_l"
+
+[node name="neck_02_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l"]
+position = Vector3(-0.0650003329, 0.135137782, 0.0126661034)
+quaternion = Quaternion(-1.25325499e-07, -8.47032947e-22, 6.44735589e-22, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11177
+metadata/unity_name = "neck_02_l"
+
+[node name="neck_03_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l"]
+position = Vector3(-0.0768831223, 0.162484854, 0.0753414109)
+quaternion = Quaternion(3.0277846e-07, 2.11758237e-22, -1.55764087e-21, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22218
+metadata/unity_name = "neck_03_l"
+
+[node name="neck_04_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l"]
+position = Vector3(-0.0505667478, 0.108520836, 0.0873102471)
+quaternion = Quaternion(-1.1920929e-07, -1.27054942e-21, 6.13271322e-22, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10102
+metadata/unity_name = "neck_04_l"
+
+[node name="neck_05_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l"]
+position = Vector3(-0.0507368743, 0.108469687, 0.0780753717)
+quaternion = Quaternion(-6.32897326e-08, -8.47032947e-22, 3.25593466e-22, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26157
+metadata/unity_name = "neck_05_l"
+
+[node name="neck_06_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l"]
+position = Vector3(-0.0649593547, 0.135150522, 0.0148388846)
+quaternion = Quaternion(-3.55271537e-15, -6.3527471e-21, 2.38418579e-07, 1)
+scale = Vector3(1, 0.99999994, 1)
+metadata/unity_id = 22352
+metadata/unity_name = "neck_06_l"
+
+[node name="neck_07_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l"]
+position = Vector3(-0.0674040467, 0.100805812, -0.0868708417)
+quaternion = Quaternion(7.40281791e-08, 8.82485003e-15, -1.19209318e-07, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26076
+metadata/unity_name = "neck_07_l"
+
+[node name="head_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l"]
+position = Vector3(-0.0362069458, 0.0336120538, -0.118976183)
+quaternion = Quaternion(-1.07581037e-07, -1.45583788e-21, -6.66136462e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20076
+metadata/unity_name = "head_l"
+
+[node name="ear_01_l_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l/head_l"]
+position = Vector3(-0.0486137532, -0.0676388144, 0.163136512)
+quaternion = Quaternion(9.46436103e-08, -1.4889251e-21, 2.22046961e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7082
+metadata/unity_name = "ear_01_l_l"
+
+[node name="ear_02_l_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l/head_l/ear_01_l_l"]
+position = Vector3(-0.0829818547, 0.0347700566, 0.0453720093)
+quaternion = Quaternion(-6.60264021e-08, -2.44845461e-21, 2.22042951e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15731
+metadata/unity_name = "ear_02_l_l"
+
+[node name="ear_03_l_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l/head_l/ear_01_l_l/ear_02_l_l"]
+position = Vector3(-0.0866698995, 0.0418705866, 0.107692048)
+quaternion = Quaternion(-8.8817842e-15, -1.64112634e-21, 2.22044605e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6563
+metadata/unity_name = "ear_03_l_l"
+
+[node name="ear_03_l_l_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l/head_l/ear_01_l_l/ear_02_l_l/ear_03_l_l"]
+position = Vector3(2.58713442e-08, 0.14443849, -1.10233012e-11)
+quaternion = Quaternion(2.00214352e-08, 2.38228016e-22, 2.22045108e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7999
+metadata/unity_name = "ear_03_l_l_end"
+
+[node name="ear_03_l_l_end_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l/head_l/ear_01_l_l/ear_02_l_l/ear_03_l_l/ear_03_l_l_end"]
+position = Vector3(2.80236314e-08, 0.144438177, 2.02607459e-10)
+quaternion = Quaternion(-8.25331092e-09, -3.44107135e-22, 2.22044393e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14323
+metadata/unity_name = "ear_03_l_l_end_end"
+
+[node name="ear_01_r_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l/head_l"]
+position = Vector3(0.11145705, 0.0195227414, 0.144041568)
+quaternion = Quaternion(4.66208441e-08, -1.4293681e-21, 4.44090375e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23722
+metadata/unity_name = "ear_01_r_l"
+
+[node name="ear_02_r_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l/head_l/ear_01_r_l"]
+position = Vector3(0.0356623717, 0.0910902545, 0.0298662372)
+quaternion = Quaternion(-1.65065739e-08, -1.82641479e-21, -4.11933825e-22, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12275
+metadata/unity_name = "ear_02_r_l"
+
+[node name="ear_03_r_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l/head_l/ear_01_r_l/ear_02_r_l"]
+position = Vector3(0.0357441567, 0.102445684, 0.0953396186)
+quaternion = Quaternion(3.30132579e-08, -1.2970192e-21, 6.66134662e-16, 1)
+scale = Vector3(1, 0.999999881, 1)
+metadata/unity_id = 25656
+metadata/unity_name = "ear_03_r_l"
+
+[node name="ear_03_r_l_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l/head_l/ear_01_r_l/ear_02_r_l/ear_03_r_l"]
+position = Vector3(-9.23495591e-09, 0.144438028, 2.05027439e-09)
+quaternion = Quaternion(-1.44888892e-08, 1.72053567e-22, 4.44088839e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21542
+metadata/unity_name = "ear_03_r_l_end"
+
+[node name="ear_03_r_l_end_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l/head_l/ear_01_r_l/ear_02_r_l/ear_03_r_l/ear_03_r_l_end"]
+position = Vector3(-7.08266423e-09, 0.144438177, 2.24510655e-09)
+quaternion = Quaternion(1.65066147e-08, -9.26442286e-23, 4.11934935e-22, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15058
+metadata/unity_name = "ear_03_r_l_end_end"
+
+[node name="eyelid_bottom_01_l_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l/head_l"]
+position = Vector3(-0.0469769426, -0.0405959263, -0.0832318887)
+quaternion = Quaternion(-0, -1.74700545e-21, 2.22044605e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20434
+metadata/unity_name = "eyelid_bottom_01_l_l"
+
+[node name="eyelid_bottom_02_l_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l/head_l/eyelid_bottom_01_l_l"]
+position = Vector3(-0.00928208884, -0.0200368464, 0.00240599993)
+quaternion = Quaternion(3.0187401e-08, -1.85288457e-21, 2.22045373e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14465
+metadata/unity_name = "eyelid_bottom_02_l_l"
+
+[node name="eyelid_bottom_02_l_l_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l/head_l/eyelid_bottom_01_l_l/eyelid_bottom_02_l_l"]
+position = Vector3(-1.51345354e-08, 0.0222130362, 1.91023961e-08)
+quaternion = Quaternion(1.9446329e-09, -5.2939556e-23, 4.44089263e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14268
+metadata/unity_name = "eyelid_bottom_02_l_l_end"
+
+[node name="eyelid_bottom_02_l_l_end_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l/head_l/eyelid_bottom_01_l_l/eyelid_bottom_02_l_l/eyelid_bottom_02_l_l_end"]
+position = Vector3(-1.48035335e-08, 0.0222131871, 1.54791522e-08)
+quaternion = Quaternion(-1.77635684e-15, 2.64697796e-23, 2.22044605e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25595
+metadata/unity_name = "eyelid_bottom_02_l_l_end_end"
+
+[node name="eyelid_bottom_01_r_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l/head_l"]
+position = Vector3(0.038537886, 0.00534614921, -0.0962727219)
+quaternion = Quaternion(-0, -1.74700545e-21, 2.22044605e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6264
+metadata/unity_name = "eyelid_bottom_01_r_l"
+
+[node name="eyelid_bottom_02_r_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l/head_l/eyelid_bottom_01_r_l"]
+position = Vector3(0.0218400434, -0.00332084298, -0.00234309677)
+quaternion = Quaternion(3.35381003e-08, -1.79994501e-21, 2.22045452e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25418
+metadata/unity_name = "eyelid_bottom_02_r_l"
+
+[node name="eyelid_bottom_02_r_l_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l/head_l/eyelid_bottom_01_r_l/eyelid_bottom_02_r_l"]
+position = Vector3(-1.42008263e-08, 0.0222153235, 1.52994062e-08)
+quaternion = Quaternion(-1.40606815e-09, -5.29395592e-23, 2.22044565e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13410
+metadata/unity_name = "eyelid_bottom_02_r_l_end"
+
+[node name="eyelid_bottom_02_r_l_end_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l/head_l/eyelid_bottom_01_r_l/eyelid_bottom_02_r_l/eyelid_bottom_02_r_l_end"]
+position = Vector3(-1.38697969e-08, 0.022215018, -1.59451385e-08)
+quaternion = Quaternion(-0, 5.29395592e-23, 2.01948392e-28, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21670
+metadata/unity_name = "eyelid_bottom_02_r_l_end_end"
+
+[node name="eyelid_upper_01_l_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l/head_l"]
+position = Vector3(-0.0469769426, -0.0405959263, -0.0832318887)
+quaternion = Quaternion(-0, -1.74700545e-21, 2.22044605e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11127
+metadata/unity_name = "eyelid_upper_01_l_l"
+
+[node name="eyelid_upper_02_l_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l/head_l/eyelid_upper_01_l_l"]
+position = Vector3(-0.0137939602, 0.0176400039, -0.0107429503)
+quaternion = Quaternion(2.39985791e-08, -1.69406589e-21, 4.44089792e-16, 1)
+scale = Vector3(1, 1.00000012, 1)
+metadata/unity_id = 11005
+metadata/unity_name = "eyelid_upper_02_l_l"
+
+[node name="eyelid_upper_02_l_l_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l/head_l/eyelid_upper_01_l_l/eyelid_upper_02_l_l"]
+position = Vector3(-1.45340113e-08, 0.0248367898, 5.04994002e-09)
+quaternion = Quaternion(8.1334548e-09, -3.17637355e-22, 2.02976006e-22, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14204
+metadata/unity_name = "eyelid_upper_02_l_l_end"
+
+[node name="eyelid_upper_02_l_l_end_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l/head_l/eyelid_upper_01_l_l/eyelid_upper_02_l_l/eyelid_upper_02_l_l_end"]
+position = Vector3(-1.4163918e-08, 0.0248366334, 2.00842329e-08)
+quaternion = Quaternion(-0, -2.64697796e-23, -3.02922588e-28, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26865
+metadata/unity_name = "eyelid_upper_02_l_l_end_end"
+
+[node name="eyelid_upper_01_r_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l/head_l"]
+position = Vector3(0.038537886, 0.00534614921, -0.0962727219)
+quaternion = Quaternion(4.44087119e-16, 5.9604595e-08, 2.27557916e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22765
+metadata/unity_name = "eyelid_upper_01_r_l"
+
+[node name="eyelid_upper_02_r_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l/head_l/eyelid_upper_01_r_l"]
+position = Vector3(-0.00970794726, 0.0198334567, -0.0113699865)
+quaternion = Quaternion(-9.52108934e-08, 1.49011719e-08, 2.70855366e-15, 1)
+scale = Vector3(1, 1.00000012, 1)
+metadata/unity_id = 10115
+metadata/unity_name = "eyelid_upper_02_r_l"
+
+[node name="eyelid_upper_02_r_l_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l/head_l/eyelid_upper_01_r_l/eyelid_upper_02_r_l"]
+position = Vector3(-2.56376662e-08, 0.0248368941, 1.87816571e-08)
+quaternion = Quaternion(8.13359691e-09, -6.05998075e-17, -6.01367982e-17, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16187
+metadata/unity_name = "eyelid_upper_02_r_l_end"
+
+[node name="eyelid_upper_02_r_l_end_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l/head_l/eyelid_upper_01_r_l/eyelid_upper_02_r_l/eyelid_upper_02_r_l_end"]
+position = Vector3(-2.52675694e-08, 0.0248368885, 8.07094669e-10)
+quaternion = Quaternion(-5.29395592e-23, -2.11758237e-22, -3.38813179e-21, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6052
+metadata/unity_name = "eyelid_upper_02_r_l_end_end"
+
+[node name="jaw_01_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l/head_l"]
+position = Vector3(0.0457139425, -0.0801087394, 0.0175498854)
+quaternion = Quaternion(2.63250985e-08, -1.82641479e-21, 2.22045267e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24697
+metadata/unity_name = "jaw_01_l"
+
+[node name="tongue_01_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l/head_l/jaw_01_l"]
+position = Vector3(0.00732206646, -0.0169790201, -0.0130669735)
+quaternion = Quaternion(-3.55271347e-15, -1.66759611e-21, 4.44089183e-16, 1)
+scale = Vector3(1, 1.00000012, 1)
+metadata/unity_id = 10245
+metadata/unity_name = "tongue_01_l"
+
+[node name="tongue_02_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l/head_l/jaw_01_l/tongue_01_l"]
+position = Vector3(0.0107728411, -0.0321599841, -0.0460611507)
+quaternion = Quaternion(-2.5243549e-29, -1.66759611e-21, -4.03896783e-28, 1)
+scale = Vector3(1, 0.999999881, 1)
+metadata/unity_id = 4874
+metadata/unity_name = "tongue_02_l"
+
+[node name="tongue_03_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l/head_l/jaw_01_l/tongue_01_l/tongue_02_l"]
+position = Vector3(0.00898039062, -0.0309533104, -0.0513161309)
+quaternion = Quaternion(1.77635684e-15, -1.66759611e-21, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20199
+metadata/unity_name = "tongue_03_l"
+
+[node name="tongue_03_l_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l/head_l/jaw_01_l/tongue_01_l/tongue_02_l/tongue_03_l"]
+position = Vector3(-1.60462275e-08, 0.0605983548, 2.37572699e-08)
+quaternion = Quaternion(3.20562094e-07, 7.41153829e-22, 7.99986404e-21, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24307
+metadata/unity_name = "tongue_03_l_end"
+
+[node name="tongue_03_l_end_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l/head_l/jaw_01_l/tongue_01_l/tongue_02_l/tongue_03_l/tongue_03_l_end"]
+position = Vector3(-1.51432555e-08, 0.0605977811, -5.10411136e-09)
+quaternion = Quaternion(-3.14755169e-07, 1.00585162e-21, -7.85494749e-21, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24850
+metadata/unity_name = "tongue_03_l_end_end"
+
+[node name="nose_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l/head_l"]
+position = Vector3(-0.00256196572, -0.0469617248, -0.182207674)
+quaternion = Quaternion(7.17205353e-08, 2.13743724e-15, -2.98023295e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12554
+metadata/unity_name = "nose_l"
+
+[node name="nose_l_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l/head_l/nose_l"]
+position = Vector3(1.69391734e-09, 0.13297087, 8.7578611e-09)
+quaternion = Quaternion(-3.95884996e-08, -2.11758224e-22, -1.77635769e-15, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24125
+metadata/unity_name = "nose_l_end"
+
+[node name="nose_l_end_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_l/neck_02_l/neck_03_l/neck_04_l/neck_05_l/neck_06_l/neck_07_l/head_l/nose_l/nose_l_end"]
+position = Vector3(-4.25034452e-09, 0.132970601, 2.56401833e-09)
+quaternion = Quaternion(-1.77635684e-15, 4.23516474e-22, -8.8817842e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16357
+metadata/unity_name = "nose_l_end_end"
+
+[node name="neck_01_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03"]
+position = Vector3(0.129283428, 0.0587356985, -0.0570032112)
+quaternion = Quaternion(-1.19209268e-07, 3.55271304e-15, -2.98023224e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25105
+metadata/unity_name = "neck_01_r"
+
+[node name="neck_02_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r"]
+position = Vector3(0.0694030821, 0.132895038, 0.0130442474)
+quaternion = Quaternion(2.32302355e-07, 4.470348e-08, -1.03255984e-14, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18049
+metadata/unity_name = "neck_02_r"
+
+[node name="neck_03_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r"]
+position = Vector3(0.076038748, 0.162914708, 0.0752698854)
+quaternion = Quaternion(-1.74058087e-07, -3.74876792e-15, 2.87713947e-15, 1)
+scale = Vector3(1, 0.99999994, 1)
+metadata/unity_id = 25590
+metadata/unity_name = "neck_03_r"
+
+[node name="neck_04_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r"]
+position = Vector3(0.0462255739, 0.110731125, 0.0869379416)
+quaternion = Quaternion(1.84296988e-14, 1.49011612e-07, -2.98022584e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11553
+metadata/unity_name = "neck_04_r"
+
+[node name="neck_05_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r"]
+position = Vector3(0.0473381318, 0.11020264, 0.0777832493)
+quaternion = Quaternion(-6.32896828e-08, 1.91843645e-15, 1.95068977e-15, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21903
+metadata/unity_name = "neck_05_r"
+
+[node name="neck_06_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r"]
+position = Vector3(0.0691415742, 0.13301982, 0.0151978573)
+quaternion = Quaternion(-1.02140544e-14, -2.38418608e-07, -2.98024077e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21092
+metadata/unity_name = "neck_06_r"
+
+[node name="neck_07_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r"]
+position = Vector3(0.0674038082, 0.10080523, -0.0868708789)
+quaternion = Quaternion(7.40280797e-08, 1.00582824e-07, 6.82816806e-15, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7077
+metadata/unity_name = "neck_07_r"
+
+[node name="head_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r"]
+position = Vector3(0.0362046324, 0.0336140729, -0.118976563)
+quaternion = Quaternion(1.30837549e-07, -3.14133307e-15, 2.05681411e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10845
+metadata/unity_name = "head_r"
+
+[node name="ear_01_l_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r/head_r"]
+position = Vector3(-0.115180612, 0.0209537577, 0.140876502)
+quaternion = Quaternion(-1.27241266e-08, -3.19839027e-15, -7.11014279e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8710
+metadata/unity_name = "ear_01_l_r"
+
+[node name="ear_02_l_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r/head_r/ear_01_l_r"]
+position = Vector3(-0.0306945611, 0.0923804566, 0.0294851996)
+quaternion = Quaternion(-7.61112489e-08, -3.48565048e-15, -1.49011266e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10907
+metadata/unity_name = "ear_02_l_r"
+
+[node name="ear_03_l_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r/head_r/ear_01_l_r/ear_02_l_r"]
+position = Vector3(-0.0369656309, 0.107766204, 0.0887825266)
+quaternion = Quaternion(3.30132437e-08, -1.27293403e-15, -2.98023508e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25526
+metadata/unity_name = "ear_03_l_r"
+
+[node name="ear_03_l_r_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r/head_r/ear_01_l_r/ear_02_l_r/ear_03_l_r"]
+position = Vector3(8.04332156e-09, 0.144438282, 3.28535865e-09)
+quaternion = Quaternion(-3.12556416e-08, -3.71048331e-15, -1.32052918e-07, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13205
+metadata/unity_name = "ear_03_l_r_end"
+
+[node name="ear_03_l_r_end_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r/head_r/ear_01_l_r/ear_02_l_r/ear_03_l_r/ear_03_l_r_end"]
+position = Vector3(-1.76555783e-08, 0.144438222, 2.28946195e-09)
+quaternion = Quaternion(-2.73597571e-16, 2.1826345e-17, 1.32052932e-07, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25985
+metadata/unity_name = "ear_03_l_r_end_end"
+
+[node name="ear_01_r_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r/head_r"]
+position = Vector3(0.044821687, -0.0649994239, 0.165280908)
+quaternion = Quaternion(-2.5447342e-08, -1.56583453e-15, -1.49011097e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17858
+metadata/unity_name = "ear_01_r_r"
+
+[node name="ear_02_r_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r/head_r/ear_01_r_r"]
+position = Vector3(0.0849039033, 0.0302775726, 0.0471171401)
+quaternion = Quaternion(-6.60261037e-08, -3.15281884e-15, -1.49011861e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18054
+metadata/unity_name = "ear_02_r_r"
+
+[node name="ear_03_r_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r/head_r/ear_01_r_r/ear_02_r_r"]
+position = Vector3(0.0870074555, 0.041168578, 0.10769143)
+quaternion = Quaternion(1.42108539e-14, -3.55270944e-15, 6.3527471e-22, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20903
+metadata/unity_name = "ear_03_r_r"
+
+[node name="ear_03_r_r_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r/head_r/ear_01_r_r/ear_02_r_r/ear_03_r_r"]
+position = Vector3(4.37753584e-08, 0.144438848, 1.17643131e-10)
+quaternion = Quaternion(2.09022044e-08, -5.93775178e-16, 1.16799999e-15, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10374
+metadata/unity_name = "ear_03_r_r_end"
+
+[node name="ear_03_r_r_end_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r/head_r/ear_01_r_r/ear_02_r_r/ear_03_r_r/ear_03_r_r_end"]
+position = Vector3(2.88156499e-09, 0.144438848, 6.18911103e-11)
+quaternion = Quaternion(-7.22161353e-09, 7.54059646e-16, -4.0353899e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18256
+metadata/unity_name = "ear_03_r_r_end_end"
+
+[node name="eyelid_bottom_01_l_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r/head_r"]
+position = Vector3(-0.0385363027, 0.00534432242, -0.0962736234)
+quaternion = Quaternion(-1.19209233e-07, -3.16275834e-15, -1.49011292e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22870
+metadata/unity_name = "eyelid_bottom_01_l_r"
+
+[node name="eyelid_bottom_02_l_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r/head_r/eyelid_bottom_01_l_r"]
+position = Vector3(-0.0218413267, -0.00332149141, -0.00234258501)
+quaternion = Quaternion(3.35362742e-08, -2.85772653e-15, -4.07585817e-14, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22967
+metadata/unity_name = "eyelid_bottom_02_l_r"
+
+[node name="eyelid_bottom_02_l_r_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r/head_r/eyelid_bottom_01_l_r/eyelid_bottom_02_l_r"]
+position = Vector3(2.17300009e-08, 0.0222165063, 3.08742472e-08)
+quaternion = Quaternion(8.57123382e-07, 2.0536822e-16, -1.84255755e-15, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8455
+metadata/unity_name = "eyelid_bottom_02_l_r_end"
+
+[node name="eyelid_bottom_02_l_r_end_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r/head_r/eyelid_bottom_01_l_r/eyelid_bottom_02_l_r/eyelid_bottom_02_l_r_end"]
+position = Vector3(1.61020797e-08, 0.022216389, 2.50389025e-08)
+quaternion = Quaternion(-8.5852821e-07, -3.83315443e-16, 1.76405623e-15, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23582
+metadata/unity_name = "eyelid_bottom_02_l_r_end_end"
+
+[node name="eyelid_bottom_01_r_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r/head_r"]
+position = Vector3(0.0469785333, -0.0405962095, -0.0832311213)
+quaternion = Quaternion(-5.96045808e-08, -3.60684671e-15, -1.49011115e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23091
+metadata/unity_name = "eyelid_bottom_01_r_r"
+
+[node name="eyelid_bottom_02_r_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r/head_r/eyelid_bottom_01_r_r"]
+position = Vector3(0.00928192399, -0.0200391952, 0.00240550376)
+quaternion = Quaternion(-2.94201286e-08, -3.72634866e-15, 1.25668798e-14, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19567
+metadata/unity_name = "eyelid_bottom_02_r_r"
+
+[node name="eyelid_bottom_02_r_r_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r/head_r/eyelid_bottom_01_r_r/eyelid_bottom_02_r_r"]
+position = Vector3(-2.532065e-09, 0.0222151615, 9.56874846e-09)
+quaternion = Quaternion(1.94693506e-09, 2.46597972e-16, 1.08793759e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21063
+metadata/unity_name = "eyelid_bottom_02_r_r_end"
+
+[node name="eyelid_bottom_02_r_r_end_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r/head_r/eyelid_bottom_01_r_r/eyelid_bottom_02_r_r/eyelid_bottom_02_r_r_end"]
+position = Vector3(-8.15961787e-09, 0.0222151615, 5.93860916e-09)
+quaternion = Quaternion(-1.27054942e-21, -8.47032947e-22, 6.3527471e-22, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9181
+metadata/unity_name = "eyelid_bottom_02_r_r_end_end"
+
+[node name="eyelid_upper_01_l_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r/head_r"]
+position = Vector3(-0.0385363027, 0.00534432242, -0.0962736234)
+quaternion = Quaternion(-1.19209233e-07, -3.1627575e-15, -1.49011008e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11325
+metadata/unity_name = "eyelid_upper_01_l_r"
+
+[node name="eyelid_upper_02_l_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r/head_r/eyelid_upper_01_l_r"]
+position = Vector3(0.0097088851, 0.0198343396, -0.0113693727)
+quaternion = Quaternion(2.39974156e-08, -4.06591908e-15, -1.28698965e-14, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13541
+metadata/unity_name = "eyelid_upper_02_l_r"
+
+[node name="eyelid_upper_02_l_r_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r/head_r/eyelid_upper_01_l_r/eyelid_upper_02_l_r"]
+position = Vector3(1.62091283e-08, 0.0248379819, -8.05088352e-09)
+quaternion = Quaternion(-7.59782893e-07, -3.10684909e-16, 1.76447127e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8486
+metadata/unity_name = "eyelid_upper_02_l_r_end"
+
+[node name="eyelid_upper_02_l_r_end_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r/head_r/eyelid_upper_01_l_r/eyelid_upper_02_l_r/eyelid_upper_02_l_r_end"]
+position = Vector3(9.91717108e-09, 0.0248378776, -3.82113274e-09)
+quaternion = Quaternion(7.67916902e-07, -4.35401193e-16, 2.78072446e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25574
+metadata/unity_name = "eyelid_upper_02_l_r_end_end"
+
+[node name="eyelid_upper_01_r_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r/head_r"]
+position = Vector3(0.0469785333, -0.0405962095, -0.0832311213)
+quaternion = Quaternion(-1.19209233e-07, -2.66452933e-15, 4.44101704e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16239
+metadata/unity_name = "eyelid_upper_01_r_r"
+
+[node name="eyelid_upper_02_r_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r/head_r/eyelid_upper_01_r_r"]
+position = Vector3(0.01379494, 0.0176392142, -0.0107443696)
+quaternion = Quaternion(-9.52109929e-08, 5.6282163e-15, -4.47034481e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12432
+metadata/unity_name = "eyelid_upper_02_r_r"
+
+[node name="eyelid_upper_02_r_r_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r/head_r/eyelid_upper_01_r_r/eyelid_upper_02_r_r"]
+position = Vector3(8.7173424e-09, 0.0248370711, -7.64841346e-09)
+quaternion = Quaternion(-7.5981211e-07, 1.34081927e-16, 1.74815742e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15623
+metadata/unity_name = "eyelid_upper_02_r_r_end"
+
+[node name="eyelid_upper_02_r_r_end_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r/head_r/eyelid_upper_01_r_r/eyelid_upper_02_r_r/eyelid_upper_02_r_r_end"]
+position = Vector3(9.45242329e-10, 0.0248370972, 5.74272674e-09)
+quaternion = Quaternion(7.67945266e-07, -6.37876796e-16, 2.7965301e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20966
+metadata/unity_name = "eyelid_upper_02_r_r_end_end"
+
+[node name="jaw_01_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r/head_r"]
+position = Vector3(-0.0457129218, -0.0801100805, 0.0175518729)
+quaternion = Quaternion(-2.13280657e-07, 6.7055268e-08, -2.98022762e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10385
+metadata/unity_name = "jaw_01_r"
+
+[node name="tongue_01_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r/head_r/jaw_01_r"]
+position = Vector3(-0.0082463054, -0.0191089381, -0.0113605447)
+quaternion = Quaternion(1.04202016e-08, 1.47509094e-15, 1.54918616e-14, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21615
+metadata/unity_name = "tongue_01_r"
+
+[node name="tongue_02_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r/head_r/jaw_01_r/tongue_01_r"]
+position = Vector3(-0.0100444183, -0.0325452127, -0.045955047)
+quaternion = Quaternion(1.42108513e-14, -1.69406589e-21, 1.42108581e-14, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19021
+metadata/unity_name = "tongue_02_r"
+
+[node name="tongue_03_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r/head_r/jaw_01_r/tongue_01_r/tongue_02_r"]
+position = Vector3(-0.0088428827, -0.0310252681, -0.051296439)
+quaternion = Quaternion(1.42108513e-14, -1.1479437e-41, 1.42108581e-14, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18018
+metadata/unity_name = "tongue_03_r"
+
+[node name="tongue_03_r_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r/head_r/jaw_01_r/tongue_01_r/tongue_02_r/tongue_03_r"]
+position = Vector3(-1.17031682e-08, 0.0605976507, -3.16930873e-08)
+quaternion = Quaternion(3.1132933e-07, 1.43951047e-15, 2.74599611e-15, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8543
+metadata/unity_name = "tongue_03_r_end"
+
+[node name="tongue_03_r_end_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r/head_r/jaw_01_r/tongue_01_r/tongue_02_r/tongue_03_r/tongue_03_r_end"]
+position = Vector3(-2.88596933e-08, 0.0605976991, -1.71084409e-08)
+quaternion = Quaternion(-3.14755937e-07, -1.9245893e-15, -3.16724084e-15, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8293
+metadata/unity_name = "tongue_03_r_end_end"
+
+[node name="nose_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r/head_r"]
+position = Vector3(0.00256158761, -0.0469646342, -0.182206839)
+quaternion = Quaternion(-4.74884487e-08, 3.85620304e-15, -4.47034481e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21787
+metadata/unity_name = "nose_r"
+
+[node name="nose_r_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r/head_r/nose_r"]
+position = Vector3(3.03999386e-08, 0.132970452, -6.78710421e-09)
+quaternion = Quaternion(-3.95893487e-08, -8.65164746e-16, -2.21222432e-15, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17325
+metadata/unity_name = "nose_r_end"
+
+[node name="nose_r_end_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/spine_01/spine_02/spine_03/neck_01_r/neck_02_r/neck_03_r/neck_04_r/neck_05_r/neck_06_r/neck_07_r/head_r/nose_r/nose_r_end"]
+position = Vector3(2.69371583e-08, 0.132970661, -1.2978262e-08)
+quaternion = Quaternion(-0, -0, 6.3527471e-22, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11450
+metadata/unity_name = "nose_r_end_end"
+
+[node name="tail_01" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis"]
+position = Vector3(-0, -0.0792094767, 0.198023766)
+quaternion = Quaternion(4.37920491e-08, -0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10851
+metadata/unity_name = "tail_01"
+
+[node name="tail_02" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/tail_01"]
+position = Vector3(-0, -0.123473682, 0.179386333)
+quaternion = Quaternion(1.12270754e-07, -0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24315
+metadata/unity_name = "tail_02"
+
+[node name="tail_03" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/tail_01/tail_02"]
+position = Vector3(-0, -0.0978469625, 0.235298783)
+quaternion = Quaternion(-7.22828588e-08, -0, -0, 1)
+scale = Vector3(1, 0.99999994, 1)
+metadata/unity_id = 22181
+metadata/unity_name = "tail_03"
+
+[node name="tail_04" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/tail_01/tail_02/tail_03"]
+position = Vector3(-0, -0.062901549, 0.256266117)
+quaternion = Quaternion(3.55271368e-15, -0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8463
+metadata/unity_name = "tail_04"
+
+[node name="tail_05" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/tail_01/tail_02/tail_03/tail_04"]
+position = Vector3(-0, -0.0419344977, 0.212001592)
+quaternion = Quaternion(1.77635684e-15, -0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9939
+metadata/unity_name = "tail_05"
+
+[node name="tail_06" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/tail_01/tail_02/tail_03/tail_04/tail_05"]
+position = Vector3(-0, -0.0326156132, 0.239958212)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23332
+metadata/unity_name = "tail_06"
+
+[node name="tail_07" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/tail_01/tail_02/tail_03/tail_04/tail_05/tail_06"]
+position = Vector3(-0, -0.020967111, 0.228309497)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10551
+metadata/unity_name = "tail_07"
+
+[node name="tail_08" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/tail_01/tail_02/tail_03/tail_04/tail_05/tail_06/tail_07"]
+position = Vector3(-0, -0.0116484165, 0.239958048)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26512
+metadata/unity_name = "tail_08"
+
+[node name="tail_08_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/tail_01/tail_02/tail_03/tail_04/tail_05/tail_06/tail_07/tail_08"]
+position = Vector3(-0, 0.240240857, 3.93010744e-08)
+quaternion = Quaternion(3.03828045e-07, -0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27095
+metadata/unity_name = "tail_08_end"
+
+[node name="tail_08_end_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/tail_01/tail_02/tail_03/tail_04/tail_05/tail_06/tail_07/tail_08/tail_08_end"]
+position = Vector3(-0, 0.240240857, 7.09653207e-08)
+quaternion = Quaternion(-3.17572642e-07, -0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26952
+metadata/unity_name = "tail_08_end_end"
+
+[node name="thigh_l" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis"]
+position = Vector3(-0.188253015, -0.0854913667, 0.058251366)
+quaternion = Quaternion(1.17416214e-07, 4.37409466e-15, -3.7252903e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21897
+metadata/unity_name = "thigh_l"
+
+[node name="calf_l_01" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/thigh_l"]
+position = Vector3(-0.103023261, -0.174216166, -0.0163078047)
+quaternion = Quaternion(4.21884749e-15, 2.98023259e-08, 1.86601597e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21190
+metadata/unity_name = "calf_l_01"
+
+[node name="calf_l_02" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/thigh_l/calf_l_01"]
+position = Vector3(0.00193987926, -0.158436701, 0.120187975)
+quaternion = Quaternion(-6.86560995e-08, 9.95074613e-16, -2.69754477e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16599
+metadata/unity_name = "calf_l_02"
+
+[node name="foot_l_01" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/thigh_l/calf_l_01/calf_l_02"]
+position = Vector3(-0.00657964079, -0.20794864, 0.0112916911)
+quaternion = Quaternion(1.86117752e-08, 2.46969947e-15, 5.54674126e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10834
+metadata/unity_name = "foot_l_01"
+
+[node name="foot_l_02" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/thigh_l/calf_l_01/calf_l_02/foot_l_01"]
+position = Vector3(-0.011335914, -0.0284581054, -0.0562502742)
+quaternion = Quaternion(-7.10542736e-15, 1.77635642e-15, -5.29395592e-22, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16739
+metadata/unity_name = "foot_l_02"
+
+[node name="foot_l_02_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/thigh_l/calf_l_01/calf_l_02/foot_l_01/foot_l_02"]
+position = Vector3(-1.22439978e-08, 0.0640505031, -3.40612116e-09)
+quaternion = Quaternion(2.66340283e-09, 4.89190961e-16, -1.48894117e-07, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9637
+metadata/unity_name = "foot_l_02_end"
+
+[node name="foot_l_02_end_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/thigh_l/calf_l_01/calf_l_02/foot_l_01/foot_l_02/foot_l_02_end"]
+position = Vector3(7.82979404e-10, 0.0640504882, 2.76033796e-09)
+quaternion = Quaternion(-8.84679962e-16, 6.59266919e-18, 1.48894117e-07, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17422
+metadata/unity_name = "foot_l_02_end_end"
+
+[node name="thigh_r" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis"]
+position = Vector3(0.188252866, -0.0854922086, 0.0582514592)
+quaternion = Quaternion(1.17415993e-07, 4.37408661e-15, -3.7252903e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4921
+metadata/unity_name = "thigh_r"
+
+[node name="calf_r_01" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/thigh_r"]
+position = Vector3(0.103775114, -0.17379266, -0.0160595067)
+quaternion = Quaternion(8.8817842e-15, -3.57342025e-22, -6.50810247e-30, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17775
+metadata/unity_name = "calf_r_01"
+
+[node name="calf_r_02" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/thigh_r/calf_r_01"]
+position = Vector3(-0.000774520682, -0.15841493, 0.120228499)
+quaternion = Quaternion(-6.86560711e-08, -5.29395592e-22, 3.2029463e-23, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9632
+metadata/unity_name = "calf_r_02"
+
+[node name="foot_r_01" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/thigh_r/calf_r_01/calf_r_02"]
+position = Vector3(0.00511872536, -0.208010674, 0.0108989477)
+quaternion = Quaternion(1.86112494e-08, -5.29395592e-22, -8.68255653e-24, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15636
+metadata/unity_name = "foot_r_01"
+
+[node name="foot_r_02" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/thigh_r/calf_r_01/calf_r_02/foot_r_01"]
+position = Vector3(0.010878901, -0.0288401283, -0.0561478697)
+quaternion = Quaternion(-1.09187841e-22, 2.95623604e-15, 1.66454839e-22, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12067
+metadata/unity_name = "foot_r_02"
+
+[node name="foot_r_02_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/thigh_r/calf_r_01/calf_r_02/foot_r_01/foot_r_02"]
+position = Vector3(-9.86327731e-09, 0.064052254, 1.49079664e-08)
+quaternion = Quaternion(2.6641267e-09, 1.05879118e-22, 6.63293182e-24, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7576
+metadata/unity_name = "foot_r_02_end"
+
+[node name="foot_r_02_end_end" type="Node3D" parent="Hydra/Hydra_Model/Armature/root/pelvis/thigh_r/calf_r_01/calf_r_02/foot_r_01/foot_r_02/foot_r_02_end"]
+position = Vector3(4.43794335e-09, 0.0640522614, 2.1074408e-08)
+quaternion = Quaternion(-0, 1.05879118e-22, 1.26217745e-29, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11009
+metadata/unity_name = "foot_r_02_end_end"
+
+[node name="Hydra_Mesh" type="Node3D" parent="Hydra/Hydra_Model"]
+position = Vector3(-0, -4.88319696e-09, 6.93497215e-09)
+quaternion = Quaternion(1.58932707e-08, -0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24164
+metadata/unity_name = "Hydra_Mesh"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Hydra/Hydra_Model/Hydra_Mesh"]
+mesh = ExtResource("1")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="Stone_Jaw" type="Node3D" parent="Hydra/Hydra_Model"]
+position = Vector3(1.66893006e-08, -9.65155511e-09, -1.40964029e-09)
+quaternion = Quaternion(-1.41064987e-07, -0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18271
+metadata/unity_name = "Stone_Jaw"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Hydra/Hydra_Model/Stone_Jaw"]
+mesh = ExtResource("3")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="splatter" type="Node3D" parent="Hydra/Hydra_Model"]
+position = Vector3(-0.170000002, 0.141000003, -0.0949999988)
+quaternion = Quaternion(-0.338922143, -0.0731471628, 0.317549467, 0.882577896)
+scale = Vector3(0, 0, 0)
+metadata/unity_id = 6880
+metadata/unity_name = "splatter"
+
+[node name="splatter_1" type="Node3D" parent="Hydra/Hydra_Model/splatter"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-2.98023117e-08, 0, -2.60770232e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22238
+metadata/unity_name = "splatter_1"
+
+[node name="splatter_2" type="Node3D" parent="Hydra/Hydra_Model/splatter"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-2.98023117e-08, 0, -2.60770232e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20329
+metadata/unity_name = "splatter_2"
+
+[node name="VolumetricBlood_01" type="Node3D" parent="Hydra/Hydra_Model/splatter"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-5.96046164e-08, -2.98023082e-07, 0.934099138, 0.357013822)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23738
+metadata/unity_name = "VolumetricBlood_01"
+
+[node name="OverheadSlot" type="Node3D" parent="Hydra"]
+position = Vector3(0, 4.5, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12984
+metadata/unity_name = "OverheadSlot"
+
+[node name="VFXParent" type="Node3D" parent="Hydra"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10206
+metadata/unity_name = "VFXParent"
+
+[node name="VFX_Hydra_BasicAttack" type="Node3D" parent="Hydra/VFXParent"]
+position = Vector3(0, 1.14999998, -3.6099999)
+quaternion = Quaternion(-0, -1, 0, 0)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18913
+metadata/unity_name = "VFX_Hydra_BasicAttack"
+
+[node name="root" type="Node3D" parent="Hydra/VFXParent/VFX_Hydra_BasicAttack"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23306
+metadata/unity_name = "root"
+
+[node name="Highlight_01" type="Node3D" parent="Hydra/VFXParent/VFX_Hydra_BasicAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10729
+metadata/unity_name = "Highlight_01"
+
+[node name="Highlight_02" type="Node3D" parent="Hydra/VFXParent/VFX_Hydra_BasicAttack/root"]
+position = Vector3(-0, 0, 0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12808
+metadata/unity_name = "Highlight_02"
+
+[node name="Stab_01" type="Node3D" parent="Hydra/VFXParent/VFX_Hydra_BasicAttack/root"]
+position = Vector3(-0, -0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17972
+metadata/unity_name = "Stab_01"
+
+[node name="Stab_02_Mesh" type="Node3D" parent="Hydra/VFXParent/VFX_Hydra_BasicAttack/root"]
+position = Vector3(0.0340000018, -0.0810000002, -0.323000014)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8779
+metadata/unity_name = "Stab_02_Mesh"
+
+[node name="Wind_01" type="Node3D" parent="Hydra/VFXParent/VFX_Hydra_BasicAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14972
+metadata/unity_name = "Wind_01"
+
+[node name="VFX_Hydra_SkillAttack" type="Node3D" parent="Hydra/VFXParent"]
+position = Vector3(0, 1.14999998, -3.6099999)
+quaternion = Quaternion(-0, -1, 0, 0)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13539
+metadata/unity_name = "VFX_Hydra_SkillAttack"
+
+[node name="Poison Bubble Burst" type="Node3D" parent="Hydra/VFXParent/VFX_Hydra_SkillAttack"]
+position = Vector3(-0, 0, 1.36000001)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16547
+metadata/unity_name = "Poison Bubble Burst"
+
+[node name="Smoke" type="Node3D" parent="Hydra/VFXParent/VFX_Hydra_SkillAttack/Poison Bubble Burst"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12571
+metadata/unity_name = "Smoke"
+
+[node name="Impact" type="Node3D" parent="Hydra/VFXParent/VFX_Hydra_SkillAttack/Poison Bubble Burst"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17461
+metadata/unity_name = "Impact"
+
+[node name="Circle_AlphaFlowy_Soft" type="Node3D" parent="Hydra/VFXParent/VFX_Hydra_SkillAttack/Poison Bubble Burst"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23921
+metadata/unity_name = "Circle_AlphaFlowy_Soft"
+
+[node name="root" type="Node3D" parent="Hydra/VFXParent/VFX_Hydra_SkillAttack"]
+position = Vector3(-0.219999999, -0.393000007, 0.990999997)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15991
+metadata/unity_name = "root"
+
+[node name="Highlight_01" type="Node3D" parent="Hydra/VFXParent/VFX_Hydra_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10592
+metadata/unity_name = "Highlight_01"
+
+[node name="Highlight_02" type="Node3D" parent="Hydra/VFXParent/VFX_Hydra_SkillAttack/root"]
+position = Vector3(-0, 0, 0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23101
+metadata/unity_name = "Highlight_02"
+
+[node name="Stab_01" type="Node3D" parent="Hydra/VFXParent/VFX_Hydra_SkillAttack/root"]
+position = Vector3(-0, -0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19722
+metadata/unity_name = "Stab_01"
+
+[node name="Stab_02_Mesh" type="Node3D" parent="Hydra/VFXParent/VFX_Hydra_SkillAttack/root"]
+position = Vector3(0.0299999993, -0.0810000002, -0.0399999991)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16085
+metadata/unity_name = "Stab_02_Mesh"
+
+[node name="root_1" type="Node3D" parent="Hydra/VFXParent/VFX_Hydra_SkillAttack"]
+position = Vector3(-0.400000006, -0.397000015, 0.899999976)
+quaternion = Quaternion(0.144526646, -0.377971977, 0.0598648936, 0.91250509)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19214
+metadata/unity_name = "root_1"
+
+[node name="Highlight_02" type="Node3D" parent="Hydra/VFXParent/VFX_Hydra_SkillAttack/root_1"]
+position = Vector3(-0, 0, 0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5703
+metadata/unity_name = "Highlight_02"
+
+[node name="Stab_01" type="Node3D" parent="Hydra/VFXParent/VFX_Hydra_SkillAttack/root_1"]
+position = Vector3(-0, -0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21420
+metadata/unity_name = "Stab_01"
+
+[node name="Wind_01" type="Node3D" parent="Hydra/VFXParent/VFX_Hydra_SkillAttack/root_1"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11877
+metadata/unity_name = "Wind_01"
+
+[node name="root_2" type="Node3D" parent="Hydra/VFXParent/VFX_Hydra_SkillAttack"]
+position = Vector3(0.25999999, -0.127000004, 1.25)
+quaternion = Quaternion(0.069761537, 0.313660324, 0.140018165, 0.936560452)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16327
+metadata/unity_name = "root_2"
+
+[node name="Highlight_02" type="Node3D" parent="Hydra/VFXParent/VFX_Hydra_SkillAttack/root_2"]
+position = Vector3(-0, 0, 0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17440
+metadata/unity_name = "Highlight_02"
+
+[node name="Stab_01" type="Node3D" parent="Hydra/VFXParent/VFX_Hydra_SkillAttack/root_2"]
+position = Vector3(-0, -0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20650
+metadata/unity_name = "Stab_01"
+
+[node name="Wind_01" type="Node3D" parent="Hydra/VFXParent/VFX_Hydra_SkillAttack/root_2"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22248
+metadata/unity_name = "Wind_01"

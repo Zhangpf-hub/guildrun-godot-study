@@ -1,0 +1,29 @@
+[gd_scene format=3]
+
+[node name="RootVContainerBootstrap" type="Node3D"]
+
+[node name="VContainerBootstrap" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 1
+metadata/unity_name = "VContainerBootstrap"
+
+[node name="Main Camera" type="Node3D" parent="."]
+position = Vector3(0, 1, 10)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 2
+metadata/unity_name = "Main Camera"
+
+[node name="UnityCamera" type="Camera3D" parent="Main Camera"]
+fov = 60.0
+near = 0.30000001192092896
+far = 1000.0
+
+[node name="EventSystem" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 3
+metadata/unity_name = "EventSystem"

@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" format=3]
+
+[ext_resource type="Shader" path="res://materials/battle_shadow_receiver.gdshader" id="1"]
+
+[resource]
+resource_name = "ShadowPlane_Mat"
+render_priority = -90
+shader = ExtResource("1")
+shader_parameter/shadow_tint = Color(0.0495442115, 0.0347543657, 0.103773594, 0.686274529)
+metadata/unity_shader = "Custom/ShadowDrawerMod"

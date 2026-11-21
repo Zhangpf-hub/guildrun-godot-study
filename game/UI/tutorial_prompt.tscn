@@ -1,0 +1,253 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://UI/sliced_image.gd" id="SlicedImage"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets3_447.png" id="1"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets3_468.png" id="2"]
+
+[node name="tutorial_promptUI" type="Control"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="UtilitiesCanvas" type="Control" parent="."]
+mouse_filter = 2
+metadata/unity_id = 16827
+anchor_right = 1.0
+anchor_bottom = 1.0
+metadata/reference_resolution = Vector2(1920, 1080)
+metadata/match_width_or_height = 0.0
+metadata/aspect_ratio_threshold = 1.7999999523162842
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="TextDisplay" type="Control" parent="UtilitiesCanvas"]
+mouse_filter = 2
+metadata/unity_id = 9992
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="TextContainer" type="Control" parent="UtilitiesCanvas/TextDisplay"]
+mouse_filter = 2
+metadata/unity_id = 2504
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 421.999817
+offset_right = 821.999817
+offset_top = 153.600525
+offset_bottom = 253.290527
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 1)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+metadata/layout_spacing = 10.0
+metadata/layout_padding = Vector4(24, 24, 24, 24)
+
+[node name="UnityImage" type="Control" parent="UtilitiesCanvas/TextDisplay/TextContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("1")
+border = Vector4(32, 32, 32, 32)
+pixels_per_unit = 1.5
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Glow" type="Control" parent="UtilitiesCanvas/TextDisplay/TextContainer"]
+mouse_filter = 2
+metadata/unity_id = 2528
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -20.9999981
+offset_right = 20.9999981
+offset_top = -21
+offset_bottom = 21
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+
+[node name="UnityImage" type="Control" parent="UtilitiesCanvas/TextDisplay/TextContainer/Glow"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("2")
+border = Vector4(32, 32, 32, 32)
+pixels_per_unit = 1
+draw_center = true
+self_modulate = Color(0, 0.509433985, 0.289451092, 0.247058824)
+
+[node name="Arrow_L" type="Control" parent="UtilitiesCanvas/TextDisplay/TextContainer"]
+mouse_filter = 2
+metadata/unity_id = 7966
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -56
+offset_right = -8
+offset_top = -24
+offset_bottom = 24
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(1, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+
+[node name="UnityImage" type="ColorRect" parent="UtilitiesCanvas/TextDisplay/TextContainer/Arrow_L"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(1, 1, 1, 1)
+
+[node name="Arrow_R" type="Control" parent="UtilitiesCanvas/TextDisplay/TextContainer"]
+mouse_filter = 2
+metadata/unity_id = 1493
+anchor_left = 1
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 8
+offset_right = 56
+offset_top = -24
+offset_bottom = 24
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+
+[node name="UnityImage" type="ColorRect" parent="UtilitiesCanvas/TextDisplay/TextContainer/Arrow_R"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(1, 1, 1, 1)
+
+[node name="Arrow_T" type="Control" parent="UtilitiesCanvas/TextDisplay/TextContainer"]
+mouse_filter = 2
+metadata/unity_id = 14187
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0
+anchor_bottom = 0
+offset_left = -24
+offset_right = 24
+offset_top = -56
+offset_bottom = -8
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 1)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+
+[node name="UnityImage" type="ColorRect" parent="UtilitiesCanvas/TextDisplay/TextContainer/Arrow_T"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(1, 1, 1, 1)
+
+[node name="Arrow_B" type="Control" parent="UtilitiesCanvas/TextDisplay/TextContainer"]
+mouse_filter = 2
+metadata/unity_id = 9128
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -24
+offset_right = 24
+offset_top = 8
+offset_bottom = 56
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+
+[node name="UnityImage" type="ColorRect" parent="UtilitiesCanvas/TextDisplay/TextContainer/Arrow_B"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(1, 1, 1, 1)
+
+[node name="TutorialText" type="Control" parent="UtilitiesCanvas/TextDisplay/TextContainer"]
+mouse_filter = 2
+metadata/unity_id = 13838
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 24
+offset_right = 376
+offset_top = 24.0000019
+offset_bottom = 75.6900005
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+
+[node name="UnityText" type="Label" parent="UtilitiesCanvas/TextDisplay/TextContainer/TutorialText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "When you’re ready - start your first fight."
+theme_override_font_sizes/font_size = 22
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TutorialText_1" type="Control" parent="UtilitiesCanvas/TextDisplay/TextContainer"]
+mouse_filter = 2
+metadata/unity_id = 4429
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 30
+offset_right = 530
+offset_top = 101.309994
+offset_bottom = 118.239994
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = 500.0
+metadata/preferred_width = 1000.0
+
+[node name="UnityText" type="Label" parent="UtilitiesCanvas/TextDisplay/TextContainer/TutorialText_1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Click to Continue"
+theme_override_font_sizes/font_size = 16
+theme_override_colors/font_color = Color(1, 1, 1, 0.368627459)
+horizontal_alignment = 1
+vertical_alignment = 1

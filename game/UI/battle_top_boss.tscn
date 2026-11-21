@@ -1,0 +1,152 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://sprites/sharedassets3_454.png" id="1"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets2_129.png" id="2"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets3_600.png" id="3"]
+
+[node name="battle_top_bossUI" type="Control"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="BossNode" type="Control" parent="."]
+mouse_filter = 2
+metadata/unity_id = 10778
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -12
+offset_right = 12
+offset_top = -12
+offset_bottom = 12
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = 27.0
+
+[node name="UnityImage" type="TextureRect" parent="BossNode"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("1")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="CurrentMarker" type="Control" parent="BossNode"]
+mouse_filter = 2
+metadata/unity_id = 15406
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -5
+offset_right = 5
+offset_top = -23
+offset_bottom = -13
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityImage" type="TextureRect" parent="BossNode/CurrentMarker"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="IndicatorMarker" type="Control" parent="BossNode"]
+mouse_filter = 2
+metadata/unity_id = 2226
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -6
+offset_right = 6
+offset_top = 4
+offset_bottom = 16
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityImage" type="TextureRect" parent="BossNode/IndicatorMarker"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("3")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(0.372549027, 1, 0.717647076, 1)
+
+[node name="TutorialViewReference" type="Control" parent="BossNode"]
+mouse_filter = 2
+metadata/unity_id = 13947
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -48.8
+offset_right = 51.2
+offset_top = 40
+offset_bottom = 140
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="HighlightUI" type="Control" parent="BossNode"]
+mouse_filter = 2
+metadata/unity_id = 16331
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -6
+offset_right = 6
+offset_top = -6
+offset_bottom = 6
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+
+[node name="UnityImage" type="ColorRect" parent="BossNode/HighlightUI"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.282352954, 0.737254918, 0.566557586, 0.643137276)
+
+[node name="Highlight_Rotating" type="Control" parent="BossNode/HighlightUI"]
+mouse_filter = 2
+metadata/unity_id = 17143
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityImage" type="ColorRect" parent="BossNode/HighlightUI/Highlight_Rotating"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.550729811, 0.98113209, 0.730767369, 1)

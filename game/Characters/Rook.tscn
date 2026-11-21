@@ -1,0 +1,584 @@
+[gd_scene format=3]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2870.obj" id="1"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_882.tres" id="2"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2958.obj" id="3"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_880.tres" id="4"]
+
+[node name="Rook" type="Node3D"]
+
+[node name="Rook" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26392
+metadata/unity_name = "Rook"
+
+[node name="Rook_Model" type="Node3D" parent="Rook"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10213
+metadata/unity_name = "Rook_Model"
+
+[node name="Armature" type="Node3D" parent="Rook/Rook_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22089
+metadata/unity_name = "Armature"
+
+[node name="hips" type="Node3D" parent="Rook/Rook_Model/Armature"]
+position = Vector3(-0, 1.03999996, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18879
+metadata/unity_name = "hips"
+
+[node name="spine" type="Node3D" parent="Rook/Rook_Model/Armature/hips"]
+position = Vector3(-7.09550431e-33, 0.263055593, -3.5527136e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8747
+metadata/unity_name = "spine"
+
+[node name="chest" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine"]
+position = Vector3(-0, 0.289700001, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13761
+metadata/unity_name = "chest"
+
+[node name="neck" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest"]
+position = Vector3(-0, 0.419290215, 0.07560689)
+quaternion = Quaternion(-0.259211153, 0, -0, 0.96582067)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9858
+metadata/unity_name = "neck"
+
+[node name="head" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/neck"]
+position = Vector3(-0, 0.151001483, 2.6645352e-17)
+quaternion = Quaternion(0.250773013, -0, -0, 0.96804589)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22918
+metadata/unity_name = "head"
+
+[node name="hair_root" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10117
+metadata/unity_name = "hair_root"
+
+[node name="hair_base" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(-0, 0.219999999, 0.0599999987)
+quaternion = Quaternion(0.342020154, -0, -0, 0.939692616)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23629
+metadata/unity_name = "hair_base"
+
+[node name="hair_end" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_base"]
+position = Vector3(-0, 0.159999996, 5.68434176e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7325
+metadata/unity_name = "hair_end"
+
+[node name="hair_strand_L_00" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(-0.0529569313, 0.192641333, 0.117506728)
+quaternion = Quaternion(-0.709985554, -0.267691821, -0.636554956, -0.138055801)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11884
+metadata/unity_name = "hair_strand_L_00"
+
+[node name="hair_strand_L_01" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_strand_L_00"]
+position = Vector3(-1.42108539e-15, 0.0825428814, 1.06581408e-16)
+quaternion = Quaternion(0.109385967, 0.0205063727, -0.116032124, 0.986990809)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13817
+metadata/unity_name = "hair_strand_L_01"
+
+[node name="hair_strand_L_02" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_strand_L_00/hair_strand_L_01"]
+position = Vector3(0.00161969208, 0.0557875186, 0.00493642362)
+quaternion = Quaternion(0.327035785, -0.0114329634, -0.111735351, 0.938313484)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18924
+metadata/unity_name = "hair_strand_L_02"
+
+[node name="hair_strand_L_03_end" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_strand_L_00/hair_strand_L_01/hair_strand_L_02"]
+position = Vector3(1.42108539e-15, 0.0717930347, 1.84741105e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19915
+metadata/unity_name = "hair_strand_L_03_end"
+
+[node name="hair_strand_R_00" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(0.0350000001, 0.209999993, 0.0580000021)
+quaternion = Quaternion(-0.42975238, 0.429618031, 0.664828002, -0.434447855)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21973
+metadata/unity_name = "hair_strand_R_00"
+
+[node name="hair_strand_R_01" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_strand_R_00"]
+position = Vector3(2.84217088e-16, 0.108169928, 7.1054272e-17)
+quaternion = Quaternion(0.289375752, 0.0917954296, 0.0811000615, 0.949346125)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12688
+metadata/unity_name = "hair_strand_R_01"
+
+[node name="hair_strand_R_02" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_strand_R_00/hair_strand_R_01"]
+position = Vector3(-2.84217088e-16, 0.0637810379, -1.95399251e-16)
+quaternion = Quaternion(0.317232013, -0.0143362414, 0.00678976206, 0.948215306)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26065
+metadata/unity_name = "hair_strand_R_02"
+
+[node name="hair_strand_R_03_end" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_strand_R_00/hair_strand_R_01/hair_strand_R_02"]
+position = Vector3(2.84217088e-16, 0.057026729, -5.77315952e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11997
+metadata/unity_name = "hair_strand_R_03_end"
+
+[node name="head_end" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(-0, 0.25, 2.6645352e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23995
+metadata/unity_name = "head_end"
+
+[node name="jaw" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(3.3250378e-09, -0.0147750061, -0.0509254076)
+quaternion = Quaternion(2.26972631e-07, -0.464710414, 0.885462701, -3.90188433e-08)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26976
+metadata/unity_name = "jaw"
+
+[node name="jaw_end" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/neck/head/jaw"]
+position = Vector3(-1.47680825e-18, 0.165930957, 3.99680272e-17)
+quaternion = Quaternion(0.0817900002, 3.00621053e-07, -6.56101484e-09, 0.996649623)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5451
+metadata/unity_name = "jaw_end"
+
+[node name="necklace_01" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest"]
+position = Vector3(-0, 0.370000005, -0.099999994)
+quaternion = Quaternion(-1.5159646e-18, -0.258819073, 0.965925872, 6.29861905e-17)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18570
+metadata/unity_name = "necklace_01"
+
+[node name="necklace_02" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/necklace_01"]
+position = Vector3(-0, 0.449999988, -0)
+quaternion = Quaternion(0.21643962, -0, -0, 0.976296008)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4724
+metadata/unity_name = "necklace_02"
+
+[node name="necklace_03" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/necklace_01/necklace_02"]
+position = Vector3(-2.45850337e-17, 0.219999999, 9.99200696e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25806
+metadata/unity_name = "necklace_03"
+
+[node name="necklace_04_end" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/necklace_01/necklace_02/necklace_03"]
+position = Vector3(1.7763568e-17, 0.189999998, -2.58404394e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16819
+metadata/unity_name = "necklace_04_end"
+
+[node name="shoulder_L" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest"]
+position = Vector3(-0.0799999982, 0.359999985, 0.0914000049)
+quaternion = Quaternion(-0.5, 0.5, -0.5, -0.5)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26871
+metadata/unity_name = "shoulder_L"
+
+[node name="upper_arm_L" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/shoulder_L"]
+position = Vector3(-6.661338e-18, 0.399999976, 5.68434176e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17765
+metadata/unity_name = "upper_arm_L"
+
+[node name="lower_arm_L" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L"]
+position = Vector3(-0, 0.550000012, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16317
+metadata/unity_name = "lower_arm_L"
+
+[node name="hand_L" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L"]
+position = Vector3(4.76240736e-09, 0.449999988, -5.68434176e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10216
+metadata/unity_name = "hand_L"
+
+[node name="fingaerA_L_01" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L"]
+position = Vector3(-0.0939620733, 0.0439365394, 0.0657687336)
+quaternion = Quaternion(0.12017031, 0.630516171, 0.298148364, 0.706481457)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5829
+metadata/unity_name = "fingaerA_L_01"
+
+[node name="fingaerA_L_02" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L/fingaerA_L_01"]
+position = Vector3(2.84217088e-16, 0.0999105424, -1.6431301e-16)
+quaternion = Quaternion(0.148842961, -0, -0, 0.988860846)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11461
+metadata/unity_name = "fingaerA_L_02"
+
+[node name="fingaerA_L_03_end" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L/fingaerA_L_01/fingaerA_L_02"]
+position = Vector3(-9.04571564e-17, 0.153820395, 2.44249064e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15789
+metadata/unity_name = "fingaerA_L_03_end"
+
+[node name="fingaerB_L_01" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L"]
+position = Vector3(-0.0226216316, 0.258294433, -0.0174781531)
+quaternion = Quaternion(0.480453581, 3.65054476e-08, 6.6637071e-08, 0.87702018)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13826
+metadata/unity_name = "fingaerB_L_01"
+
+[node name="fingaerB_L_02" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L/fingaerB_L_01"]
+position = Vector3(2.6645352e-17, 0.0999105424, -0)
+quaternion = Quaternion(0.34843263, -0, -0, 0.937333822)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11209
+metadata/unity_name = "fingaerB_L_02"
+
+[node name="fingaerB_L_03_end" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L/fingaerB_L_01/fingaerB_L_02"]
+position = Vector3(-2.6645352e-17, 0.0891258717, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13155
+metadata/unity_name = "fingaerB_L_03_end"
+
+[node name="hand_L_end" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L"]
+position = Vector3(-0, 0.349999994, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8947
+metadata/unity_name = "hand_L_end"
+
+[node name="weapon_L_01" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L"]
+position = Vector3(-1.7763568e-17, 0.125, -0.185000002)
+quaternion = Quaternion(-0, -0.707106829, 0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26080
+metadata/unity_name = "weapon_L_01"
+
+[node name="weapon_L_02_end" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/weapon_L_01"]
+position = Vector3(-4.1106006e-16, 0.599999964, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26297
+metadata/unity_name = "weapon_L_02_end"
+
+[node name="shoulder_R" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest"]
+position = Vector3(0.0799999982, 0.359999985, 0.0914000049)
+quaternion = Quaternion(-0.500003397, -0.499996662, 0.500003397, -0.499996662)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10000
+metadata/unity_name = "shoulder_R"
+
+[node name="upper_arm_R" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/shoulder_R"]
+position = Vector3(-0, 0.399999976, -1.13686835e-15)
+quaternion = Quaternion(-0, 1.24842529e-06, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11231
+metadata/unity_name = "upper_arm_R"
+
+[node name="lower_arm_R" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R"]
+position = Vector3(-0, 0.550000012, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25106
+metadata/unity_name = "lower_arm_R"
+
+[node name="hand_R" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R"]
+position = Vector3(-0, 0.449999988, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18111
+metadata/unity_name = "hand_R"
+
+[node name="fingaerA_R_01" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R"]
+position = Vector3(0.0939617679, 0.0439408831, 0.0657464266)
+quaternion = Quaternion(0.120165966, -0.630519032, -0.298143893, 0.706481516)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23203
+metadata/unity_name = "fingaerA_R_01"
+
+[node name="fingaerA_R_02" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/fingaerA_R_01"]
+position = Vector3(2.77860613e-06, 0.099909611, -1.91302107e-07)
+quaternion = Quaternion(0.148842961, 3.43080041e-17, -5.16402777e-18, 0.988860846)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11214
+metadata/unity_name = "fingaerA_R_02"
+
+[node name="fingaerA_R_03_end" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/fingaerA_R_01/fingaerA_R_02"]
+position = Vector3(-1.05482002e-06, 0.153820097, -4.73560711e-08)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18569
+metadata/unity_name = "fingaerA_R_03_end"
+
+[node name="fingaerB_R_01" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R"]
+position = Vector3(0.0226215422, 0.258289754, -0.0174966268)
+quaternion = Quaternion(0.48044768, -1.09489815e-06, 5.99803002e-07, 0.877023399)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13449
+metadata/unity_name = "fingaerB_R_01"
+
+[node name="fingaerB_R_02" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/fingaerB_R_01"]
+position = Vector3(8.881784e-18, 0.0999065563, -8.81481265e-06)
+quaternion = Quaternion(0.34843263, -0, -0, 0.937333822)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20832
+metadata/unity_name = "fingaerB_R_02"
+
+[node name="fingaerB_R_03_end" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/fingaerB_R_01/fingaerB_R_02"]
+position = Vector3(-3.20511145e-10, 0.0891319662, 2.41576481e-06)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14314
+metadata/unity_name = "fingaerB_R_03_end"
+
+[node name="hand_R_end" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R"]
+position = Vector3(-0, 0.349999994, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7464
+metadata/unity_name = "hand_R_end"
+
+[node name="weapon_R_01" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R"]
+position = Vector3(5.3290704e-17, 0.125, -0.185000002)
+quaternion = Quaternion(-4.75148545e-06, -0.707107663, 4.75147453e-06, 0.707105875)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9234
+metadata/unity_name = "weapon_R_01"
+
+[node name="weapon_R_02_end" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/weapon_R_01"]
+position = Vector3(-0, 0.599999964, -7.34788045e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10752
+metadata/unity_name = "weapon_R_02_end"
+
+[node name="Magica Capsule Collider (spine)" type="Node3D" parent="Rook/Rook_Model/Armature/hips/spine"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21339
+metadata/unity_name = "Magica Capsule Collider (spine)"
+
+[node name="upper_leg_L" type="Node3D" parent="Rook/Rook_Model/Armature/hips"]
+position = Vector3(-0.219999999, -0.119999997, 7.6506268e-09)
+quaternion = Quaternion(-0, -0, 1, 2.65167426e-08)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21233
+metadata/unity_name = "upper_leg_L"
+
+[node name="lower_leg_L" type="Node3D" parent="Rook/Rook_Model/Armature/hips/upper_leg_L"]
+position = Vector3(-4.81138906e-10, 0.290753633, -5.63971092e-10)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19253
+metadata/unity_name = "lower_leg_L"
+
+[node name="foot_L" type="Node3D" parent="Rook/Rook_Model/Armature/hips/upper_leg_L/lower_leg_L"]
+position = Vector3(-0, 0.449999988, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21803
+metadata/unity_name = "foot_L"
+
+[node name="toes_L" type="Node3D" parent="Rook/Rook_Model/Armature/hips/upper_leg_L/lower_leg_L/foot_L"]
+position = Vector3(-3.5527136e-17, 0.119999997, -0.20784609)
+quaternion = Quaternion(-0.557748735, -1.84543576e-24, 2.74627232e-24, 0.830009818)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11958
+metadata/unity_name = "toes_L"
+
+[node name="toes_L_end" type="Node3D" parent="Rook/Rook_Model/Armature/hips/upper_leg_L/lower_leg_L/foot_L/toes_L"]
+position = Vector3(-2.29943564e-10, 0.162739009, 3.5527136e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18020
+metadata/unity_name = "toes_L_end"
+
+[node name="leg_tie_L" type="Node3D" parent="Rook/Rook_Model/Armature/hips/upper_leg_L/lower_leg_L"]
+position = Vector3(0.129999965, 0.329246372, 0.0399999544)
+quaternion = Quaternion(-0.5, -0.5, -0.49999997, 0.5)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25125
+metadata/unity_name = "leg_tie_L"
+
+[node name="leg_tie_L_end" type="Node3D" parent="Rook/Rook_Model/Armature/hips/upper_leg_L/lower_leg_L/leg_tie_L"]
+position = Vector3(-1.7763568e-17, 0.149999991, -2.13162816e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24272
+metadata/unity_name = "leg_tie_L_end"
+
+[node name="upper_leg_R" type="Node3D" parent="Rook/Rook_Model/Armature/hips"]
+position = Vector3(0.219999999, -0.119999997, -0)
+quaternion = Quaternion(-3.204653e-18, -3.46944695e-18, 1, -6.12323426e-17)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9141
+metadata/unity_name = "upper_leg_R"
+
+[node name="lower_leg_R" type="Node3D" parent="Rook/Rook_Model/Armature/hips/upper_leg_R"]
+position = Vector3(1.77635673e-16, 0.291000009, -3.37507795e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10643
+metadata/unity_name = "lower_leg_R"
+
+[node name="foot_R" type="Node3D" parent="Rook/Rook_Model/Armature/hips/upper_leg_R/lower_leg_R"]
+position = Vector3(-1.42108544e-16, 0.449999988, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23898
+metadata/unity_name = "foot_R"
+
+[node name="toes_R" type="Node3D" parent="Rook/Rook_Model/Armature/hips/upper_leg_R/lower_leg_R/foot_R"]
+position = Vector3(-1.89714899e-14, 0.119999997, -0.20784609)
+quaternion = Quaternion(-0.558330476, 0, -0, 0.829618633)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14766
+metadata/unity_name = "toes_R"
+
+[node name="toes_R_end" type="Node3D" parent="Rook/Rook_Model/Armature/hips/upper_leg_R/lower_leg_R/foot_R/toes_R"]
+position = Vector3(-1.06581408e-16, 0.16264604, -1.7763568e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25043
+metadata/unity_name = "toes_R_end"
+
+[node name="leg_tie_R" type="Node3D" parent="Rook/Rook_Model/Armature/hips/upper_leg_R/lower_leg_R"]
+position = Vector3(-0.129999995, 0.328999996, 0.0399999991)
+quaternion = Quaternion(-0.5, 0.5, 0.5, 0.5)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27206
+metadata/unity_name = "leg_tie_R"
+
+[node name="leg_tie_R_end" type="Node3D" parent="Rook/Rook_Model/Armature/hips/upper_leg_R/lower_leg_R/leg_tie_R"]
+position = Vector3(-0, 0.149999991, -3.5527136e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5827
+metadata/unity_name = "leg_tie_R_end"
+
+[node name="Rook" type="Node3D" parent="Rook/Rook_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21074
+metadata/unity_name = "Rook"
+
+[node name="Body_geo" type="Node3D" parent="Rook/Rook_Model/Rook"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26477
+metadata/unity_name = "Body_geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Rook/Rook_Model/Rook/Body_geo"]
+mesh = ExtResource("1")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="Weapon_geo" type="Node3D" parent="Rook/Rook_Model/Rook"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16761
+metadata/unity_name = "Weapon_geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Rook/Rook_Model/Rook/Weapon_geo"]
+mesh = ExtResource("3")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="Magica Cloth (leg)" type="Node3D" parent="Rook/Rook_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12289
+metadata/unity_name = "Magica Cloth (leg)"
+
+[node name="Magica Cloth (hair)" type="Node3D" parent="Rook/Rook_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8232
+metadata/unity_name = "Magica Cloth (hair)"
+
+[node name="Magica Cloth (strand)" type="Node3D" parent="Rook/Rook_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14590
+metadata/unity_name = "Magica Cloth (strand)"
+
+[node name="Magica Cloth (necklace)" type="Node3D" parent="Rook/Rook_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16694
+metadata/unity_name = "Magica Cloth (necklace)"
+
+[node name="OverheadSlot" type="Node3D" parent="Rook"]
+position = Vector3(0, 2.5, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20685
+metadata/unity_name = "OverheadSlot"
+
+[node name="VFXParents" type="Node3D" parent="Rook"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16842
+metadata/unity_name = "VFXParents"
+
+[node name="VFX_Rook_BasicAttack" type="Node3D" parent="Rook/VFXParents"]
+position = Vector3(0.100000001, 1.39999998, -0.920000017)
+quaternion = Quaternion(0.358812064, 0.13571474, 0.902564824, 0.195479199)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10403
+metadata/unity_name = "VFX_Rook_BasicAttack"
+
+[node name="root" type="Node3D" parent="Rook/VFXParents/VFX_Rook_BasicAttack"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12449
+metadata/unity_name = "root"
+
+[node name="Slash_01" type="Node3D" parent="Rook/VFXParents/VFX_Rook_BasicAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13402
+metadata/unity_name = "Slash_01"
+
+[node name="Highlight_01" type="Node3D" parent="Rook/VFXParents/VFX_Rook_BasicAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5395
+metadata/unity_name = "Highlight_01"
+
+[node name="Wind_01" type="Node3D" parent="Rook/VFXParents/VFX_Rook_BasicAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18093
+metadata/unity_name = "Wind_01"

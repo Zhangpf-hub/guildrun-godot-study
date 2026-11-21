@@ -1,0 +1,7391 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://UI/sliced_image.gd" id="SlicedImage"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets3_435.png" id="1"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets3_486.png" id="2"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets3_553.png" id="3"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets3_379.png" id="4"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets1_3677.png" id="5"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets2_178.png" id="6"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets2_187.png" id="7"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets3_591.png" id="8"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets2_208.png" id="9"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets2_100.png" id="10"]
+[ext_resource type="Texture2D" path="res://sprites/resources_967.png" id="11"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets2_133.png" id="12"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets1_4535.png" id="13"]
+
+[node name="battle_health_barUI" type="Control"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="HealthBar" type="Control" parent="."]
+mouse_filter = 2
+metadata/unity_id = 3346
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -61.5
+offset_right = 61.5
+offset_top = -8
+offset_bottom = 8
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Deco" type="Control" parent="HealthBar"]
+mouse_filter = 2
+metadata/unity_id = 607
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -6
+offset_right = 6
+offset_top = -12
+offset_bottom = 12
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="L_Deco" type="Control" parent="HealthBar/Deco"]
+mouse_filter = 2
+metadata/unity_id = 11148
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 12
+offset_top = -6
+offset_bottom = 6
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/Deco/L_Deco"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("1")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="R_Deco" type="Control" parent="HealthBar/Deco"]
+mouse_filter = 2
+metadata/unity_id = 1298
+anchor_left = 1
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -12
+offset_right = 0
+offset_top = -6
+offset_bottom = 6
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/Deco/R_Deco"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("1")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="HealthBackgroundImage" type="Control" parent="HealthBar"]
+mouse_filter = 2
+metadata/unity_id = 10303
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="HealthBar/HealthBackgroundImage"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="HealthBarImage" type="Control" parent="HealthBar"]
+mouse_filter = 2
+metadata/unity_id = 6295
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 2
+offset_right = -2
+offset_top = 2
+offset_bottom = -2
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="HealthBar/HealthBarImage"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(1, 1, 1, 1)
+
+[node name="ManaBackgroundImage" type="Control" parent="HealthBar"]
+mouse_filter = 2
+metadata/unity_id = 8851
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -61.5
+offset_right = 61.5
+offset_top = -1
+offset_bottom = 7
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+
+[node name="UnityImage" type="ColorRect" parent="HealthBar/ManaBackgroundImage"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="ManaSlider" type="Control" parent="HealthBar/ManaBackgroundImage"]
+mouse_filter = 2
+metadata/unity_id = 16189
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 2
+offset_right = -2
+offset_top = 1
+offset_bottom = -2
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="HighlightUI_Mana" type="Control" parent="HealthBar/ManaBackgroundImage/ManaSlider"]
+mouse_filter = 2
+metadata/unity_id = 17619
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -2
+offset_right = 2
+offset_top = -2
+offset_bottom = 2
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="ColorRect" parent="HealthBar/ManaBackgroundImage/ManaSlider/HighlightUI_Mana"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.610893548, 0.905660391, 0.794427633, 0.87843138)
+
+[node name="Highlight_Rotating" type="Control" parent="HealthBar/ManaBackgroundImage/ManaSlider/HighlightUI_Mana"]
+mouse_filter = 2
+metadata/unity_id = 15742
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="HealthBar/ManaBackgroundImage/ManaSlider/HighlightUI_Mana/Highlight_Rotating"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.550729811, 0.98113209, 0.730767369, 1)
+
+[node name="UIParticle" type="Control" parent="HealthBar/ManaBackgroundImage/ManaSlider/HighlightUI_Mana"]
+mouse_filter = 2
+metadata/unity_id = 15788
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="FillBackgroundImage" type="Control" parent="HealthBar/ManaBackgroundImage/ManaSlider"]
+mouse_filter = 2
+metadata/unity_id = 9196
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="HealthBar/ManaBackgroundImage/ManaSlider/FillBackgroundImage"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.0745098069, 0.129411772, 0.200000003, 1)
+
+[node name="PrimeryFillImage" type="Control" parent="HealthBar/ManaBackgroundImage/ManaSlider"]
+mouse_filter = 2
+metadata/unity_id = 12911
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="HealthBar/ManaBackgroundImage/ManaSlider/PrimeryFillImage"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.294117659, 0.486274511, 0.721568644, 1)
+
+[node name="Statuses" type="Control" parent="HealthBar"]
+mouse_filter = 2
+metadata/unity_id = 7749
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 0
+offset_top = -36
+offset_bottom = -4
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 1)
+
+[node name="NewHealthBar" type="Control" parent="HealthBar"]
+mouse_filter = 2
+metadata/unity_id = 7017
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 26.7000008
+offset_top = -4.9829483e-05
+offset_bottom = 2.87805009
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="ColorRect" parent="HealthBar/NewHealthBar"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(1, 1, 1, 1)
+
+[node name="ManaBar" type="Control" parent="HealthBar"]
+mouse_filter = 2
+metadata/unity_id = 17094
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -59.0999985
+offset_right = 77.5400009
+offset_top = 1.30000019
+offset_bottom = 8.80000019
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0)
+visible = false
+
+[node name="UnityImage" type="ColorRect" parent="HealthBar/ManaBar"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(1, 1, 1, 1)
+
+[node name="CountdownBar" type="Control" parent="HealthBar"]
+mouse_filter = 2
+metadata/unity_id = 5966
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -61.3300018
+offset_right = 75.3399963
+offset_top = 7.65999985
+offset_bottom = 15.6599998
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0)
+visible = false
+
+[node name="UnityImage" type="ColorRect" parent="HealthBar/CountdownBar"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(1, 1, 1, 1)
+
+[node name="TopBar" type="Control" parent="HealthBar"]
+mouse_filter = 2
+metadata/unity_id = 5523
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 0
+offset_top = -108
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 1)
+
+[node name="CharacterNameText" type="Control" parent="HealthBar/TopBar"]
+mouse_filter = 2
+metadata/unity_id = 16647
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 124
+offset_top = 6
+offset_bottom = 30
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 1)
+visible = false
+
+[node name="UnityText" type="Label" parent="HealthBar/TopBar/CharacterNameText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Mushroom Fire Mage"
+theme_override_font_sizes/font_size = 20
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="HeroItemRows" type="Control" parent="HealthBar/TopBar"]
+mouse_filter = 2
+metadata/unity_id = 17429
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -65
+offset_right = 65
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 1)
+
+[node name="HeroItemsView_Bottom" type="Control" parent="HealthBar/TopBar/HeroItemRows"]
+mouse_filter = 2
+metadata/unity_id = 13539
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -64
+offset_right = 64
+offset_top = -38
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 1)
+
+[node name="ItemSlot_Small_1" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom"]
+mouse_filter = 2
+metadata/unity_id = 16750
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -20.5
+offset_right = 20.5
+offset_top = -20.5
+offset_bottom = 20.5
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+modulate = Color(1, 1, 1, 1.0)
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 0)
+
+[node name="TooltipAnchor" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 15579
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 0
+offset_top = -8
+offset_bottom = -8
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Niklas_Consume_01" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 11907
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_Item_Appear" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 12301
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Item_Activation_Back" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 13299
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Item_Activated" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 12377
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Fiona_Passive_B" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 8500
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Ray" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1/VFX_UI_Fiona_Passive_B"]
+mouse_filter = 2
+metadata/unity_id = 15594
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -2
+offset_right = 2
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Fiona_Passive_A" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 9307
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Ray" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1/VFX_UI_Fiona_Passive_A"]
+mouse_filter = 2
+metadata/unity_id = 1375
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -2
+offset_right = 2
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fire" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1/VFX_UI_Fiona_Passive_A"]
+mouse_filter = 2
+metadata/unity_id = 17089
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Fiona_Passive_S" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 16195
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Ray" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1/VFX_UI_Fiona_Passive_S"]
+mouse_filter = 2
+metadata/unity_id = 12048
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -2
+offset_right = 2
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fire" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1/VFX_UI_Fiona_Passive_S"]
+mouse_filter = 2
+metadata/unity_id = 15308
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="StarCloud_01" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1/VFX_UI_Fiona_Passive_S"]
+mouse_filter = 2
+metadata/unity_id = 17043
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="EmptySlotBackground" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 6479
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 1)
+visible = false
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1/EmptySlotBackground"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("3")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="RankFrame" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 15459
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1/RankFrame"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("4")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="VFX_UI_Item_Activated_8057" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 8057
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_ItemRelic_Activation" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 4081
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="ActiveSlot" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 10882
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1/ActiveSlot"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("5")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="NameText" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1/ActiveSlot"]
+mouse_filter = 2
+metadata/unity_id = 2963
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 3
+offset_right = -3
+offset_top = 3
+offset_bottom = -3
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1/ActiveSlot/NameText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Very Long Item Name"
+theme_override_font_sizes/font_size = 8
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RankFrame_1" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 5343
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1/RankFrame_1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("6")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 0.490196079)
+
+[node name="VFX_UI_Item_Activation_Front" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 11364
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="HoveringSlot" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 9516
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="ColorRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1/HoveringSlot"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(1, 1, 1, 1)
+
+[node name="NameText" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1/HoveringSlot"]
+mouse_filter = 2
+metadata/unity_id = 7668
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 10
+offset_right = -10
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1/HoveringSlot/NameText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Hero Name"
+theme_override_font_sizes/font_size = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VFX_UI_Niklas_Consume_02" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 12804
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Ratna_Passive_Lp" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 7912
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Ratna_Passive_Burst" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 14236
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Fiona_Passive_S_02" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 9873
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Rainbow" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 6358
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Glitter" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 4509
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Wave_Explode_1" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 13644
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Dust_Explode" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 4708
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Fiona_Passive" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 4737
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_SmallFlash" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 3325
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -50
+offset_right = 50
+offset_top = -55
+offset_bottom = 45
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="CounterPanel" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 5107
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -15.2049999
+offset_right = 15.2049999
+offset_top = -22
+offset_bottom = 2
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1/CounterPanel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("7")
+border = Vector4(12, 12, 12, 12)
+pixels_per_unit = 4
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Number" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1/CounterPanel"]
+mouse_filter = 2
+metadata/unity_id = 17225
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 30.4099998
+offset_top = 0
+offset_bottom = 24
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_1/CounterPanel/Number"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "123"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.356862754, 0.800000012, 0.596078455, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ItemSlot_Small_2" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom"]
+mouse_filter = 2
+metadata/unity_id = 11154
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -20.5
+offset_right = 20.5
+offset_top = -20.5
+offset_bottom = 20.5
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+modulate = Color(1, 1, 1, 1.0)
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 0)
+
+[node name="TooltipAnchor" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 12725
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 0
+offset_top = -8
+offset_bottom = -8
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Niklas_Consume_01" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 14258
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_Item_Appear" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 13581
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Item_Activation_Back" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 14572
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Item_Activated" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 13759
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Fiona_Passive_B" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 2427
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Ray" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2/VFX_UI_Fiona_Passive_B"]
+mouse_filter = 2
+metadata/unity_id = 12706
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -2
+offset_right = 2
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Fiona_Passive_A" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 16473
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Ray" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2/VFX_UI_Fiona_Passive_A"]
+mouse_filter = 2
+metadata/unity_id = 7494
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -2
+offset_right = 2
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fire" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2/VFX_UI_Fiona_Passive_A"]
+mouse_filter = 2
+metadata/unity_id = 10972
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Fiona_Passive_S" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 9577
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Ray" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2/VFX_UI_Fiona_Passive_S"]
+mouse_filter = 2
+metadata/unity_id = 13858
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -2
+offset_right = 2
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fire" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2/VFX_UI_Fiona_Passive_S"]
+mouse_filter = 2
+metadata/unity_id = 12968
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="StarCloud_01" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2/VFX_UI_Fiona_Passive_S"]
+mouse_filter = 2
+metadata/unity_id = 10927
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="EmptySlotBackground" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 4720
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 1)
+visible = false
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2/EmptySlotBackground"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("3")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="RankFrame" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 12572
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2/RankFrame"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("4")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="VFX_UI_Item_Activated_750" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 750
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_ItemRelic_Activation" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 7001
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="ActiveSlot" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 17480
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2/ActiveSlot"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("5")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="NameText" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2/ActiveSlot"]
+mouse_filter = 2
+metadata/unity_id = 5889
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 3
+offset_right = -3
+offset_top = 3
+offset_bottom = -3
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2/ActiveSlot/NameText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Very Long Item Name"
+theme_override_font_sizes/font_size = 8
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RankFrame_1" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 3536
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2/RankFrame_1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("6")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 0.490196079)
+
+[node name="VFX_UI_Item_Activation_Front" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 16862
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="HoveringSlot" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 16663
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="ColorRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2/HoveringSlot"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(1, 1, 1, 1)
+
+[node name="NameText" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2/HoveringSlot"]
+mouse_filter = 2
+metadata/unity_id = 912
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 10
+offset_right = -10
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2/HoveringSlot/NameText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Hero Name"
+theme_override_font_sizes/font_size = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VFX_UI_Niklas_Consume_02" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 15202
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Ratna_Passive_Lp" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 670
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Ratna_Passive_Burst" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 11819
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Fiona_Passive_S_02" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 16025
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Rainbow" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 4615
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Glitter" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 6329
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Wave_Explode_1" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 12346
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Dust_Explode" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 6526
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Fiona_Passive" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 6493
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_SmallFlash" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 5665
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -50
+offset_right = 50
+offset_top = -55
+offset_bottom = 45
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="CounterPanel" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 3761
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -15.2049999
+offset_right = 15.2049999
+offset_top = -22
+offset_bottom = 2
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2/CounterPanel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("7")
+border = Vector4(12, 12, 12, 12)
+pixels_per_unit = 4
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Number" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2/CounterPanel"]
+mouse_filter = 2
+metadata/unity_id = 11119
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 30.4099998
+offset_top = 0
+offset_bottom = 24
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_2/CounterPanel/Number"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "123"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.356862754, 0.800000012, 0.596078455, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ItemSlot_Small_3" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom"]
+mouse_filter = 2
+metadata/unity_id = 975
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -20.5
+offset_right = 20.5
+offset_top = -20.5
+offset_bottom = 20.5
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+modulate = Color(1, 1, 1, 1.0)
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 0)
+
+[node name="TooltipAnchor" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3"]
+mouse_filter = 2
+metadata/unity_id = 3610
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 0
+offset_top = -8
+offset_bottom = -8
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Niklas_Consume_01" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3"]
+mouse_filter = 2
+metadata/unity_id = 6167
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_Item_Appear" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3"]
+mouse_filter = 2
+metadata/unity_id = 6553
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Item_Activation_Back" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3"]
+mouse_filter = 2
+metadata/unity_id = 5588
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Item_Activated" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3"]
+mouse_filter = 2
+metadata/unity_id = 6701
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Fiona_Passive_B" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3"]
+mouse_filter = 2
+metadata/unity_id = 9254
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Ray" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3/VFX_UI_Fiona_Passive_B"]
+mouse_filter = 2
+metadata/unity_id = 3606
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -2
+offset_right = 2
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Fiona_Passive_A" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3"]
+mouse_filter = 2
+metadata/unity_id = 8487
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Ray" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3/VFX_UI_Fiona_Passive_A"]
+mouse_filter = 2
+metadata/unity_id = 17738
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -2
+offset_right = 2
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fire" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3/VFX_UI_Fiona_Passive_A"]
+mouse_filter = 2
+metadata/unity_id = 610
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Fiona_Passive_S" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3"]
+mouse_filter = 2
+metadata/unity_id = 2722
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Ray" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3/VFX_UI_Fiona_Passive_S"]
+mouse_filter = 2
+metadata/unity_id = 6805
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -2
+offset_right = 2
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fire" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3/VFX_UI_Fiona_Passive_S"]
+mouse_filter = 2
+metadata/unity_id = 3849
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="StarCloud_01" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3/VFX_UI_Fiona_Passive_S"]
+mouse_filter = 2
+metadata/unity_id = 701
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="EmptySlotBackground" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3"]
+mouse_filter = 2
+metadata/unity_id = 11580
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 1)
+visible = false
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3/EmptySlotBackground"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("3")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="RankFrame" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3"]
+mouse_filter = 2
+metadata/unity_id = 3470
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3/RankFrame"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("4")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="VFX_UI_Item_Activated_11096" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3"]
+mouse_filter = 2
+metadata/unity_id = 11096
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_ItemRelic_Activation" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3"]
+mouse_filter = 2
+metadata/unity_id = 14025
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="ActiveSlot" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3"]
+mouse_filter = 2
+metadata/unity_id = 7228
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3/ActiveSlot"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("5")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="NameText" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3/ActiveSlot"]
+mouse_filter = 2
+metadata/unity_id = 14893
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 3
+offset_right = -3
+offset_top = 3
+offset_bottom = -3
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3/ActiveSlot/NameText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Very Long Item Name"
+theme_override_font_sizes/font_size = 8
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RankFrame_1" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3"]
+mouse_filter = 2
+metadata/unity_id = 12494
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3/RankFrame_1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("6")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 0.490196079)
+
+[node name="VFX_UI_Item_Activation_Front" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3"]
+mouse_filter = 2
+metadata/unity_id = 7843
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="HoveringSlot" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3"]
+mouse_filter = 2
+metadata/unity_id = 8544
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="ColorRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3/HoveringSlot"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(1, 1, 1, 1)
+
+[node name="NameText" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3/HoveringSlot"]
+mouse_filter = 2
+metadata/unity_id = 11268
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 10
+offset_right = -10
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3/HoveringSlot/NameText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Hero Name"
+theme_override_font_sizes/font_size = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VFX_UI_Niklas_Consume_02" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3"]
+mouse_filter = 2
+metadata/unity_id = 5043
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Ratna_Passive_Lp" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3"]
+mouse_filter = 2
+metadata/unity_id = 11012
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Ratna_Passive_Burst" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3"]
+mouse_filter = 2
+metadata/unity_id = 4944
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Fiona_Passive_S_02" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3"]
+mouse_filter = 2
+metadata/unity_id = 9006
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Rainbow" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 11490
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Glitter" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 14432
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Wave_Explode_1" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 4453
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Dust_Explode" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 14475
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Fiona_Passive" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3"]
+mouse_filter = 2
+metadata/unity_id = 14450
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_SmallFlash" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3"]
+mouse_filter = 2
+metadata/unity_id = 14781
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -50
+offset_right = 50
+offset_top = -55
+offset_bottom = 45
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="CounterPanel" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3"]
+mouse_filter = 2
+metadata/unity_id = 12737
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -15.2049999
+offset_right = 15.2049999
+offset_top = -22
+offset_bottom = 2
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3/CounterPanel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("7")
+border = Vector4(12, 12, 12, 12)
+pixels_per_unit = 4
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Number" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3/CounterPanel"]
+mouse_filter = 2
+metadata/unity_id = 771
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 30.4099998
+offset_top = 0
+offset_bottom = 24
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Bottom/ItemSlot_Small_3/CounterPanel/Number"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "123"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.356862754, 0.800000012, 0.596078455, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HeroItemsView_Top" type="Control" parent="HealthBar/TopBar/HeroItemRows"]
+mouse_filter = 2
+metadata/unity_id = 9220
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -64
+offset_right = 64
+offset_top = -38
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 1)
+
+[node name="ItemSlot_Small_4" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top"]
+mouse_filter = 2
+metadata/unity_id = 9942
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -20.5
+offset_right = 20.5
+offset_top = -20.5
+offset_bottom = 20.5
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+modulate = Color(1, 1, 1, 1.0)
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 0)
+
+[node name="TooltipAnchor" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 11775
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 0
+offset_top = -8
+offset_bottom = -8
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Niklas_Consume_01" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 15465
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_Item_Appear" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 15072
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Item_Activation_Back" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 13911
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Item_Activated" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 14957
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Fiona_Passive_B" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 1705
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Ray" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4/VFX_UI_Fiona_Passive_B"]
+mouse_filter = 2
+metadata/unity_id = 11789
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -2
+offset_right = 2
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Fiona_Passive_A" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 17405
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Ray" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4/VFX_UI_Fiona_Passive_A"]
+mouse_filter = 2
+metadata/unity_id = 8142
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -2
+offset_right = 2
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fire" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4/VFX_UI_Fiona_Passive_A"]
+mouse_filter = 2
+metadata/unity_id = 10284
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Fiona_Passive_S" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 10542
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Ray" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4/VFX_UI_Fiona_Passive_S"]
+mouse_filter = 2
+metadata/unity_id = 14791
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -2
+offset_right = 2
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fire" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4/VFX_UI_Fiona_Passive_S"]
+mouse_filter = 2
+metadata/unity_id = 11532
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="StarCloud_01" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4/VFX_UI_Fiona_Passive_S"]
+mouse_filter = 2
+metadata/unity_id = 10228
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="EmptySlotBackground" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 3795
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 1)
+visible = false
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4/EmptySlotBackground"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("3")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="RankFrame" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 11903
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4/RankFrame"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("4")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="VFX_UI_Item_Activated_2071" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 2071
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_ItemRelic_Activation" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 5566
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="ActiveSlot" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 16530
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4/ActiveSlot"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("5")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="NameText" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4/ActiveSlot"]
+mouse_filter = 2
+metadata/unity_id = 6775
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 3
+offset_right = -3
+offset_top = 3
+offset_bottom = -3
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4/ActiveSlot/NameText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Very Long Item Name"
+theme_override_font_sizes/font_size = 8
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RankFrame_1" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 4985
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4/RankFrame_1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("6")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 0.490196079)
+
+[node name="VFX_UI_Item_Activation_Front" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 15937
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="HoveringSlot" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 17353
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="ColorRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4/HoveringSlot"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(1, 1, 1, 1)
+
+[node name="NameText" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4/HoveringSlot"]
+mouse_filter = 2
+metadata/unity_id = 1949
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 10
+offset_right = -10
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4/HoveringSlot/NameText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Hero Name"
+theme_override_font_sizes/font_size = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VFX_UI_Niklas_Consume_02" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 14533
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Ratna_Passive_Lp" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 2258
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Ratna_Passive_Burst" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 12469
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Fiona_Passive_S_02" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 16956
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Rainbow" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 3923
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Glitter" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 5184
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Wave_Explode_1" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 13043
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Dust_Explode" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 5130
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Fiona_Passive" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 5089
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_SmallFlash" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 6815
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -50
+offset_right = 50
+offset_top = -55
+offset_bottom = 45
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="CounterPanel" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 4685
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -15.2049999
+offset_right = 15.2049999
+offset_top = -22
+offset_bottom = 2
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4/CounterPanel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("7")
+border = Vector4(12, 12, 12, 12)
+pixels_per_unit = 4
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Number" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4/CounterPanel"]
+mouse_filter = 2
+metadata/unity_id = 10159
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 30.4099998
+offset_top = 0
+offset_bottom = 24
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_4/CounterPanel/Number"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "123"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.356862754, 0.800000012, 0.596078455, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ItemSlot_Small_5" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top"]
+mouse_filter = 2
+metadata/unity_id = 1123
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -20.5
+offset_right = 20.5
+offset_top = -20.5
+offset_bottom = 20.5
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+modulate = Color(1, 1, 1, 1.0)
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 0)
+
+[node name="TooltipAnchor" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5"]
+mouse_filter = 2
+metadata/unity_id = 3456
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 0
+offset_top = -8
+offset_bottom = -8
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Niklas_Consume_01" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5"]
+mouse_filter = 2
+metadata/unity_id = 6061
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_Item_Appear" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5"]
+mouse_filter = 2
+metadata/unity_id = 6681
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Item_Activation_Back" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5"]
+mouse_filter = 2
+metadata/unity_id = 5717
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Item_Activated" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5"]
+mouse_filter = 2
+metadata/unity_id = 6570
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Fiona_Passive_B" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5"]
+mouse_filter = 2
+metadata/unity_id = 9405
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Ray" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5/VFX_UI_Fiona_Passive_B"]
+mouse_filter = 2
+metadata/unity_id = 3460
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -2
+offset_right = 2
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Fiona_Passive_A" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5"]
+mouse_filter = 2
+metadata/unity_id = 8607
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Ray" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5/VFX_UI_Fiona_Passive_A"]
+mouse_filter = 2
+metadata/unity_id = 17568
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -2
+offset_right = 2
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fire" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5/VFX_UI_Fiona_Passive_A"]
+mouse_filter = 2
+metadata/unity_id = 749
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Fiona_Passive_S" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5"]
+mouse_filter = 2
+metadata/unity_id = 2876
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Ray" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5/VFX_UI_Fiona_Passive_S"]
+mouse_filter = 2
+metadata/unity_id = 6950
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -2
+offset_right = 2
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fire" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5/VFX_UI_Fiona_Passive_S"]
+mouse_filter = 2
+metadata/unity_id = 3726
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="StarCloud_01" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5/VFX_UI_Fiona_Passive_S"]
+mouse_filter = 2
+metadata/unity_id = 835
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="EmptySlotBackground" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5"]
+mouse_filter = 2
+metadata/unity_id = 11479
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 1)
+visible = false
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5/EmptySlotBackground"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("3")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="RankFrame" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5"]
+mouse_filter = 2
+metadata/unity_id = 3600
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5/RankFrame"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("4")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="VFX_UI_Item_Activated_10970" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5"]
+mouse_filter = 2
+metadata/unity_id = 10970
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_ItemRelic_Activation" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5"]
+mouse_filter = 2
+metadata/unity_id = 13887
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="ActiveSlot" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5"]
+mouse_filter = 2
+metadata/unity_id = 7095
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5/ActiveSlot"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("5")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="NameText" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5/ActiveSlot"]
+mouse_filter = 2
+metadata/unity_id = 15042
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 3
+offset_right = -3
+offset_top = 3
+offset_bottom = -3
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5/ActiveSlot/NameText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Very Long Item Name"
+theme_override_font_sizes/font_size = 8
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RankFrame_1" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5"]
+mouse_filter = 2
+metadata/unity_id = 12646
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5/RankFrame_1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("6")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 0.490196079)
+
+[node name="VFX_UI_Item_Activation_Front" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5"]
+mouse_filter = 2
+metadata/unity_id = 7703
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="HoveringSlot" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5"]
+mouse_filter = 2
+metadata/unity_id = 8423
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="ColorRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5/HoveringSlot"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(1, 1, 1, 1)
+
+[node name="NameText" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5/HoveringSlot"]
+mouse_filter = 2
+metadata/unity_id = 11386
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 10
+offset_right = -10
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5/HoveringSlot/NameText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Hero Name"
+theme_override_font_sizes/font_size = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VFX_UI_Niklas_Consume_02" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5"]
+mouse_filter = 2
+metadata/unity_id = 5167
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Ratna_Passive_Lp" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5"]
+mouse_filter = 2
+metadata/unity_id = 11147
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Ratna_Passive_Burst" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5"]
+mouse_filter = 2
+metadata/unity_id = 4824
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Fiona_Passive_S_02" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5"]
+mouse_filter = 2
+metadata/unity_id = 9127
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Rainbow" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 11598
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Glitter" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 14558
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Wave_Explode_1" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 4338
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Dust_Explode" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 14365
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Fiona_Passive" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5"]
+mouse_filter = 2
+metadata/unity_id = 14337
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_SmallFlash" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5"]
+mouse_filter = 2
+metadata/unity_id = 14655
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -50
+offset_right = 50
+offset_top = -55
+offset_bottom = 45
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="CounterPanel" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5"]
+mouse_filter = 2
+metadata/unity_id = 12876
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -15.2049999
+offset_right = 15.2049999
+offset_top = -22
+offset_bottom = 2
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5/CounterPanel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("7")
+border = Vector4(12, 12, 12, 12)
+pixels_per_unit = 4
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Number" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5/CounterPanel"]
+mouse_filter = 2
+metadata/unity_id = 617
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 30.4099998
+offset_top = 0
+offset_bottom = 24
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_5/CounterPanel/Number"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "123"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.356862754, 0.800000012, 0.596078455, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ItemSlot_Small_6" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top"]
+mouse_filter = 2
+metadata/unity_id = 2320
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -20.5
+offset_right = 20.5
+offset_top = -20.5
+offset_bottom = 20.5
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+modulate = Color(1, 1, 1, 1.0)
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 0)
+
+[node name="TooltipAnchor" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6"]
+mouse_filter = 2
+metadata/unity_id = 4508
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 0
+offset_top = -8
+offset_bottom = -8
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Niklas_Consume_01" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6"]
+mouse_filter = 2
+metadata/unity_id = 5062
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_Item_Appear" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6"]
+mouse_filter = 2
+metadata/unity_id = 5698
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Item_Activation_Back" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6"]
+mouse_filter = 2
+metadata/unity_id = 6759
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Item_Activated" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6"]
+mouse_filter = 2
+metadata/unity_id = 5517
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Fiona_Passive_B" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6"]
+mouse_filter = 2
+metadata/unity_id = 10521
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Ray" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6/VFX_UI_Fiona_Passive_B"]
+mouse_filter = 2
+metadata/unity_id = 4512
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -2
+offset_right = 2
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Fiona_Passive_A" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6"]
+mouse_filter = 2
+metadata/unity_id = 7600
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Ray" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6/VFX_UI_Fiona_Passive_A"]
+mouse_filter = 2
+metadata/unity_id = 16537
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -2
+offset_right = 2
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fire" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6/VFX_UI_Fiona_Passive_A"]
+mouse_filter = 2
+metadata/unity_id = 1960
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Fiona_Passive_S" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6"]
+mouse_filter = 2
+metadata/unity_id = 1729
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Ray" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6/VFX_UI_Fiona_Passive_S"]
+mouse_filter = 2
+metadata/unity_id = 5965
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -2
+offset_right = 2
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fire" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6/VFX_UI_Fiona_Passive_S"]
+mouse_filter = 2
+metadata/unity_id = 4750
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="StarCloud_01" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6/VFX_UI_Fiona_Passive_S"]
+mouse_filter = 2
+metadata/unity_id = 2056
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="EmptySlotBackground" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6"]
+mouse_filter = 2
+metadata/unity_id = 12457
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 1)
+visible = false
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6/EmptySlotBackground"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("3")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="RankFrame" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6"]
+mouse_filter = 2
+metadata/unity_id = 4639
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6/RankFrame"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("4")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="VFX_UI_Item_Activated_9907" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6"]
+mouse_filter = 2
+metadata/unity_id = 9907
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_ItemRelic_Activation" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6"]
+mouse_filter = 2
+metadata/unity_id = 14943
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="ActiveSlot" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6"]
+mouse_filter = 2
+metadata/unity_id = 8199
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6/ActiveSlot"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("5")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="NameText" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6/ActiveSlot"]
+mouse_filter = 2
+metadata/unity_id = 13923
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 3
+offset_right = -3
+offset_top = 3
+offset_bottom = -3
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6/ActiveSlot/NameText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Very Long Item Name"
+theme_override_font_sizes/font_size = 8
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RankFrame_1" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6"]
+mouse_filter = 2
+metadata/unity_id = 11576
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6/RankFrame_1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("6")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 0.490196079)
+
+[node name="VFX_UI_Item_Activation_Front" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6"]
+mouse_filter = 2
+metadata/unity_id = 8783
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="HoveringSlot" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6"]
+mouse_filter = 2
+metadata/unity_id = 7401
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="ColorRect" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6/HoveringSlot"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(1, 1, 1, 1)
+
+[node name="NameText" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6/HoveringSlot"]
+mouse_filter = 2
+metadata/unity_id = 10337
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 10
+offset_right = -10
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6/HoveringSlot/NameText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Hero Name"
+theme_override_font_sizes/font_size = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VFX_UI_Niklas_Consume_02" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6"]
+mouse_filter = 2
+metadata/unity_id = 6149
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Ratna_Passive_Lp" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6"]
+mouse_filter = 2
+metadata/unity_id = 10020
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Ratna_Passive_Burst" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6"]
+mouse_filter = 2
+metadata/unity_id = 3813
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Fiona_Passive_S_02" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6"]
+mouse_filter = 2
+metadata/unity_id = 8025
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Rainbow" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 12602
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Glitter" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 15580
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Wave_Explode_1" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 3200
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Dust_Explode" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 15387
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Fiona_Passive" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6"]
+mouse_filter = 2
+metadata/unity_id = 15428
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_SmallFlash" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6"]
+mouse_filter = 2
+metadata/unity_id = 13633
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -50
+offset_right = 50
+offset_top = -55
+offset_bottom = 45
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="CounterPanel" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6"]
+mouse_filter = 2
+metadata/unity_id = 11832
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -15.2049999
+offset_right = 15.2049999
+offset_top = -22
+offset_bottom = 2
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6/CounterPanel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("7")
+border = Vector4(12, 12, 12, 12)
+pixels_per_unit = 4
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Number" type="Control" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6/CounterPanel"]
+mouse_filter = 2
+metadata/unity_id = 1828
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 30.4099998
+offset_top = 0
+offset_bottom = 24
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="HealthBar/TopBar/HeroItemRows/HeroItemsView_Top/ItemSlot_Small_6/CounterPanel/Number"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "123"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.356862754, 0.800000012, 0.596078455, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="EquipmentSlotsHolder" type="Control" parent="HealthBar/TopBar"]
+mouse_filter = 2
+metadata/unity_id = 2303
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = -15
+offset_right = 139
+offset_top = 102
+offset_bottom = 108
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 1)
+visible = false
+
+[node name="ItemSlot_Small" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder"]
+mouse_filter = 2
+metadata/unity_id = 9224
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 15
+offset_right = 55
+offset_top = -38
+offset_bottom = 2
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+modulate = Color(1, 1, 1, 1.0)
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 0)
+
+[node name="TooltipAnchor" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small"]
+mouse_filter = 2
+metadata/unity_id = 6042
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 0
+offset_top = -8
+offset_bottom = -8
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Niklas_Consume_01" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small"]
+mouse_filter = 2
+metadata/unity_id = 3433
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_Item_Appear" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small"]
+mouse_filter = 2
+metadata/unity_id = 3039
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Item_Activation_Back" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small"]
+mouse_filter = 2
+metadata/unity_id = 4208
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Item_Activated" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small"]
+mouse_filter = 2
+metadata/unity_id = 2903
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Fiona_Passive_B" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small"]
+mouse_filter = 2
+metadata/unity_id = 17444
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Ray" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small/VFX_UI_Fiona_Passive_B"]
+mouse_filter = 2
+metadata/unity_id = 6036
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -2
+offset_right = 2
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Fiona_Passive_A" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small"]
+mouse_filter = 2
+metadata/unity_id = 1741
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Ray" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small/VFX_UI_Fiona_Passive_A"]
+mouse_filter = 2
+metadata/unity_id = 9659
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -2
+offset_right = 2
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fire" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small/VFX_UI_Fiona_Passive_A"]
+mouse_filter = 2
+metadata/unity_id = 8875
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Fiona_Passive_S" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small"]
+mouse_filter = 2
+metadata/unity_id = 7546
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Ray" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small/VFX_UI_Fiona_Passive_S"]
+mouse_filter = 2
+metadata/unity_id = 3301
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -2
+offset_right = 2
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fire" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small/VFX_UI_Fiona_Passive_S"]
+mouse_filter = 2
+metadata/unity_id = 6302
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="StarCloud_01" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small/VFX_UI_Fiona_Passive_S"]
+mouse_filter = 2
+metadata/unity_id = 8926
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="EmptySlotBackground" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small"]
+mouse_filter = 2
+metadata/unity_id = 15123
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 1)
+visible = false
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small/EmptySlotBackground"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("3")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="RankFrame" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small"]
+mouse_filter = 2
+metadata/unity_id = 6161
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small/RankFrame"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("4")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="VFX_UI_Item_Activated_15749" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small"]
+mouse_filter = 2
+metadata/unity_id = 15749
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_ItemRelic_Activation" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small"]
+mouse_filter = 2
+metadata/unity_id = 13319
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="ActiveSlot" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small"]
+mouse_filter = 2
+metadata/unity_id = 2386
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small/ActiveSlot"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("5")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="NameText" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small/ActiveSlot"]
+mouse_filter = 2
+metadata/unity_id = 12304
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 3
+offset_right = -3
+offset_top = 3
+offset_bottom = -3
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small/ActiveSlot/NameText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Very Long Item Name"
+theme_override_font_sizes/font_size = 8
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RankFrame_1" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small"]
+mouse_filter = 2
+metadata/unity_id = 14172
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small/RankFrame_1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("6")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 0.490196079)
+
+[node name="VFX_UI_Item_Activation_Front" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small"]
+mouse_filter = 2
+metadata/unity_id = 1879
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="HoveringSlot" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small"]
+mouse_filter = 2
+metadata/unity_id = 1519
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="ColorRect" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small/HoveringSlot"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(1, 1, 1, 1)
+
+[node name="NameText" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small/HoveringSlot"]
+mouse_filter = 2
+metadata/unity_id = 16150
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 10
+offset_right = -10
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small/HoveringSlot/NameText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Hero Name"
+theme_override_font_sizes/font_size = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VFX_UI_Niklas_Consume_02" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small"]
+mouse_filter = 2
+metadata/unity_id = 4648
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Ratna_Passive_Lp" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small"]
+mouse_filter = 2
+metadata/unity_id = 15835
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Ratna_Passive_Burst" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small"]
+mouse_filter = 2
+metadata/unity_id = 5353
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Fiona_Passive_S_02" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small"]
+mouse_filter = 2
+metadata/unity_id = 1071
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Rainbow" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 15235
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Glitter" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 12944
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Wave_Explode_1" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 5855
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Dust_Explode" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 12729
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Fiona_Passive" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small"]
+mouse_filter = 2
+metadata/unity_id = 12754
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_SmallFlash" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small"]
+mouse_filter = 2
+metadata/unity_id = 12023
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -50
+offset_right = 50
+offset_top = -55
+offset_bottom = 45
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="CounterPanel" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small"]
+mouse_filter = 2
+metadata/unity_id = 14485
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -15.2049999
+offset_right = 15.2049999
+offset_top = -22
+offset_bottom = 2
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small/CounterPanel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("7")
+border = Vector4(12, 12, 12, 12)
+pixels_per_unit = 4
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Number" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small/CounterPanel"]
+mouse_filter = 2
+metadata/unity_id = 8698
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 30.4099998
+offset_top = 0
+offset_bottom = 24
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small/CounterPanel/Number"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "123"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.356862754, 0.800000012, 0.596078455, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ItemSlot_Small_1" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder"]
+mouse_filter = 2
+metadata/unity_id = 5503
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 57
+offset_right = 97
+offset_top = -38
+offset_bottom = 2
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+modulate = Color(1, 1, 1, 1.0)
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 0)
+
+[node name="TooltipAnchor" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 7618
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 0
+offset_top = -8
+offset_bottom = -8
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Niklas_Consume_01" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 1810
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_Item_Appear" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 2533
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Item_Activation_Back" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 1468
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Item_Activated" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 2377
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Fiona_Passive_B" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 13697
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Ray" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1/VFX_UI_Fiona_Passive_B"]
+mouse_filter = 2
+metadata/unity_id = 7614
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -2
+offset_right = 2
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Fiona_Passive_A" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 4468
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Ray" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1/VFX_UI_Fiona_Passive_A"]
+mouse_filter = 2
+metadata/unity_id = 13372
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -2
+offset_right = 2
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fire" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1/VFX_UI_Fiona_Passive_A"]
+mouse_filter = 2
+metadata/unity_id = 5191
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Fiona_Passive_S" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 7003
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Ray" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1/VFX_UI_Fiona_Passive_S"]
+mouse_filter = 2
+metadata/unity_id = 2777
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -2
+offset_right = 2
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fire" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1/VFX_UI_Fiona_Passive_S"]
+mouse_filter = 2
+metadata/unity_id = 7904
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="StarCloud_01" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1/VFX_UI_Fiona_Passive_S"]
+mouse_filter = 2
+metadata/unity_id = 5231
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="EmptySlotBackground" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 15647
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 1)
+visible = false
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1/EmptySlotBackground"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("3")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="RankFrame" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 7764
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1/RankFrame"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("4")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="VFX_UI_Item_Activated_15212" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 15212
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_ItemRelic_Activation" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 9605
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="ActiveSlot" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 2914
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1/ActiveSlot"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("5")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="NameText" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1/ActiveSlot"]
+mouse_filter = 2
+metadata/unity_id = 10743
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 3
+offset_right = -3
+offset_top = 3
+offset_bottom = -3
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1/ActiveSlot/NameText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Very Long Item Name"
+theme_override_font_sizes/font_size = 8
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RankFrame_1" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 16843
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1/RankFrame_1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("6")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 0.490196079)
+
+[node name="VFX_UI_Item_Activation_Front" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 3520
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="HoveringSlot" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 4260
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="ColorRect" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1/HoveringSlot"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(1, 1, 1, 1)
+
+[node name="NameText" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1/HoveringSlot"]
+mouse_filter = 2
+metadata/unity_id = 15607
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 10
+offset_right = -10
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1/HoveringSlot/NameText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Hero Name"
+theme_override_font_sizes/font_size = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VFX_UI_Niklas_Consume_02" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 776
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Ratna_Passive_Lp" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 15296
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Ratna_Passive_Burst" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 9064
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Fiona_Passive_S_02" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 4883
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Rainbow" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 15778
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Glitter" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 10290
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Wave_Explode_1" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 8481
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Dust_Explode" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 10071
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Fiona_Passive" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 10108
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_SmallFlash" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 10455
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -50
+offset_right = 50
+offset_top = -55
+offset_bottom = 45
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="CounterPanel" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1"]
+mouse_filter = 2
+metadata/unity_id = 17176
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -15.2049999
+offset_right = 15.2049999
+offset_top = -22
+offset_bottom = 2
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1/CounterPanel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("7")
+border = Vector4(12, 12, 12, 12)
+pixels_per_unit = 4
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Number" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1/CounterPanel"]
+mouse_filter = 2
+metadata/unity_id = 5038
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 30.4099998
+offset_top = 0
+offset_bottom = 24
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_1/CounterPanel/Number"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "123"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.356862754, 0.800000012, 0.596078455, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ItemSlot_Small_2" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder"]
+mouse_filter = 2
+metadata/unity_id = 5169
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 99
+offset_right = 139
+offset_top = -38
+offset_bottom = 2
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+modulate = Color(1, 1, 1, 1.0)
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 0)
+
+[node name="TooltipAnchor" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 7984
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 0
+offset_top = -8
+offset_bottom = -8
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Niklas_Consume_01" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 2188
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_Item_Appear" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 2868
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Item_Activation_Back" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 1661
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Item_Activated" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 2680
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Fiona_Passive_B" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 14005
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Ray" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2/VFX_UI_Fiona_Passive_B"]
+mouse_filter = 2
+metadata/unity_id = 7983
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -2
+offset_right = 2
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Fiona_Passive_A" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 4127
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Ray" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2/VFX_UI_Fiona_Passive_A"]
+mouse_filter = 2
+metadata/unity_id = 13047
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -2
+offset_right = 2
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fire" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2/VFX_UI_Fiona_Passive_A"]
+mouse_filter = 2
+metadata/unity_id = 5491
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Fiona_Passive_S" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 6673
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Ray" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2/VFX_UI_Fiona_Passive_S"]
+mouse_filter = 2
+metadata/unity_id = 2598
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -2
+offset_right = 2
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fire" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2/VFX_UI_Fiona_Passive_S"]
+mouse_filter = 2
+metadata/unity_id = 7686
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="StarCloud_01" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2/VFX_UI_Fiona_Passive_S"]
+mouse_filter = 2
+metadata/unity_id = 5441
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="EmptySlotBackground" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 15976
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 1)
+visible = false
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2/EmptySlotBackground"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("3")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="RankFrame" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 8100
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2/RankFrame"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("4")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="VFX_UI_Item_Activated_15397" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 15397
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_ItemRelic_Activation" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 9276
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="ActiveSlot" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 3238
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2/ActiveSlot"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("5")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="NameText" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2/ActiveSlot"]
+mouse_filter = 2
+metadata/unity_id = 10566
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 3
+offset_right = -3
+offset_top = 3
+offset_bottom = -3
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2/ActiveSlot/NameText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Very Long Item Name"
+theme_override_font_sizes/font_size = 8
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RankFrame_1" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 17196
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2/RankFrame_1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("6")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 0.490196079)
+
+[node name="VFX_UI_Item_Activation_Front" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 3741
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="HoveringSlot" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 4053
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="ColorRect" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2/HoveringSlot"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(1, 1, 1, 1)
+
+[node name="NameText" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2/HoveringSlot"]
+mouse_filter = 2
+metadata/unity_id = 15283
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 10
+offset_right = -10
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2/HoveringSlot/NameText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Hero Name"
+theme_override_font_sizes/font_size = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VFX_UI_Niklas_Consume_02" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 1126
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Ratna_Passive_Lp" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 15517
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Ratna_Passive_Burst" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 8709
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Fiona_Passive_S_02" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 4699
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Rainbow" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 16125
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Glitter" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 9956
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Wave_Explode_1" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 8135
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Dust_Explode" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 9880
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Fiona_Passive" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 9917
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_SmallFlash" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 10672
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -50
+offset_right = 50
+offset_top = -55
+offset_bottom = 45
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="CounterPanel" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2"]
+mouse_filter = 2
+metadata/unity_id = 16964
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -15.2049999
+offset_right = 15.2049999
+offset_top = -22
+offset_bottom = 2
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2/CounterPanel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("7")
+border = Vector4(12, 12, 12, 12)
+pixels_per_unit = 4
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Number" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2/CounterPanel"]
+mouse_filter = 2
+metadata/unity_id = 5383
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 30.4099998
+offset_top = 0
+offset_bottom = 24
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_2/CounterPanel/Number"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "123"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.356862754, 0.800000012, 0.596078455, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ItemSlot_Small_4" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder"]
+mouse_filter = 2
+metadata/unity_id = 14101
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 15
+offset_right = 55
+offset_top = -80
+offset_bottom = -40
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+modulate = Color(1, 1, 1, 1.0)
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 0)
+
+[node name="TooltipAnchor" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 16109
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 0
+offset_top = -8
+offset_bottom = -8
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Niklas_Consume_01" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 11409
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_Item_Appear" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 10730
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Item_Activation_Back" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 9585
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Item_Activated" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 10835
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Fiona_Passive_B" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 5891
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Ray" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4/VFX_UI_Fiona_Passive_B"]
+mouse_filter = 2
+metadata/unity_id = 16117
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -2
+offset_right = 2
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Fiona_Passive_A" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 13028
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Ray" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4/VFX_UI_Fiona_Passive_A"]
+mouse_filter = 2
+metadata/unity_id = 4120
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -2
+offset_right = 2
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fire" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4/VFX_UI_Fiona_Passive_A"]
+mouse_filter = 2
+metadata/unity_id = 14418
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Fiona_Passive_S" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 14586
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Ray" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4/VFX_UI_Fiona_Passive_S"]
+mouse_filter = 2
+metadata/unity_id = 10464
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -2
+offset_right = 2
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fire" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4/VFX_UI_Fiona_Passive_S"]
+mouse_filter = 2
+metadata/unity_id = 15861
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="StarCloud_01" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4/VFX_UI_Fiona_Passive_S"]
+mouse_filter = 2
+metadata/unity_id = 14341
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="EmptySlotBackground" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 8095
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 1)
+visible = false
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4/EmptySlotBackground"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("3")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="RankFrame" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 15978
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4/RankFrame"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("4")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="VFX_UI_Item_Activated_6466" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 6466
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_ItemRelic_Activation" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 1334
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="ActiveSlot" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 12418
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4/ActiveSlot"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("5")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="NameText" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4/ActiveSlot"]
+mouse_filter = 2
+metadata/unity_id = 2431
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 3
+offset_right = -3
+offset_top = 3
+offset_bottom = -3
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4/ActiveSlot/NameText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Very Long Item Name"
+theme_override_font_sizes/font_size = 8
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RankFrame_1" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 9034
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4/RankFrame_1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("6")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 0.490196079)
+
+[node name="VFX_UI_Item_Activation_Front" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 11838
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="HoveringSlot" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 13240
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="ColorRect" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4/HoveringSlot"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(1, 1, 1, 1)
+
+[node name="NameText" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4/HoveringSlot"]
+mouse_filter = 2
+metadata/unity_id = 6068
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 10
+offset_right = -10
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4/HoveringSlot/NameText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Hero Name"
+theme_override_font_sizes/font_size = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VFX_UI_Niklas_Consume_02" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 10154
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Ratna_Passive_Lp" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 6282
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Ratna_Passive_Burst" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 16883
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_Fiona_Passive_S_02" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 12528
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="Rainbow" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 7957
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Glitter" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 608
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Wave_Explode_1" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 17422
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Dust_Explode" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 822
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="VFX_UI_Fiona_Passive" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 863
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="VFX_UI_SmallFlash" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 2784
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -50
+offset_right = 50
+offset_top = -55
+offset_bottom = 45
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="CounterPanel" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4"]
+mouse_filter = 2
+metadata/unity_id = 8776
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -15.2049999
+offset_right = 15.2049999
+offset_top = -22
+offset_bottom = 2
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4/CounterPanel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("7")
+border = Vector4(12, 12, 12, 12)
+pixels_per_unit = 4
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Number" type="Control" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4/CounterPanel"]
+mouse_filter = 2
+metadata/unity_id = 14538
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 30.4099998
+offset_top = 0
+offset_bottom = 24
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="HealthBar/TopBar/EquipmentSlotsHolder/ItemSlot_Small_4/CounterPanel/Number"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "123"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.356862754, 0.800000012, 0.596078455, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Rank" type="Control" parent="HealthBar"]
+mouse_filter = 2
+metadata/unity_id = 7403
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -20.4100001
+offset_right = 15.5899999
+offset_top = -7.95000029
+offset_bottom = 16.7500005
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/Rank"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("8")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Rank_Icon" type="Control" parent="HealthBar/Rank"]
+mouse_filter = 2
+metadata/unity_id = 12387
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -18
+offset_right = 18
+offset_top = -14
+offset_bottom = 14
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/Rank/Rank_Icon"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("9")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="DamageTextHolder" type="Control" parent="HealthBar"]
+mouse_filter = 2
+metadata/unity_id = 13079
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -100
+offset_right = 100
+offset_top = 81
+offset_bottom = 111
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="HeroDamageIndicator" type="Control" parent="HealthBar"]
+mouse_filter = 2
+metadata/unity_id = 4523
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -12
+offset_right = 12
+offset_top = -12
+offset_bottom = 12
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/HeroDamageIndicator"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("10")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="DamageIcon" type="Control" parent="HealthBar/HeroDamageIndicator"]
+mouse_filter = 2
+metadata/unity_id = 6776
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -9
+offset_right = 9
+offset_top = -10
+offset_bottom = 8
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/HeroDamageIndicator/DamageIcon"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("11")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="HealthText" type="Control" parent="HealthBar"]
+mouse_filter = 2
+metadata/unity_id = 5595
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityText" type="Label" parent="HealthBar/HealthText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "99,999/99,999"
+theme_override_font_sizes/font_size = 16
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TutorialViewReference" type="Control" parent="HealthBar"]
+mouse_filter = 2
+metadata/unity_id = 10404
+anchor_left = 1
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 78
+offset_right = 78
+offset_top = 30
+offset_bottom = 30
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="HighlightShard" type="Control" parent="HealthBar"]
+mouse_filter = 2
+metadata/unity_id = 17017
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -116.4
+offset_right = 123.6
+offset_top = -31.5
+offset_bottom = 31.5
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="EnemyAbilityIcon" type="Control" parent="HealthBar"]
+mouse_filter = 2
+metadata/unity_id = 9476
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -33.8699999
+offset_right = 14.1300001
+offset_top = -24
+offset_bottom = 24
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/EnemyAbilityIcon"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("12")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(0, 0, 0, 1)
+
+[node name="Icon" type="Control" parent="HealthBar/EnemyAbilityIcon"]
+mouse_filter = 2
+metadata/unity_id = 16154
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 8
+offset_right = -8
+offset_top = 8
+offset_bottom = -8
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="HealthBar/EnemyAbilityIcon/Icon"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("13")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="TooltipAnchor" type="Control" parent="HealthBar/EnemyAbilityIcon"]
+mouse_filter = 2
+metadata/unity_id = 16223
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Anchor" type="Control" parent="HealthBar/EnemyAbilityIcon/TooltipAnchor"]
+mouse_filter = 2
+metadata/unity_id = 7541
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = 8
+offset_bottom = 8
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)

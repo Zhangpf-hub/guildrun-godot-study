@@ -1,0 +1,35 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[Fmod]
+
+General/is_live_update_enabled=false
+
+[application]
+
+config/name="裂隙远征"
+run/main_scene="res://UI/contracts.tscn"
+config/features=PackedStringArray("4.7")
+
+[autoload]
+
+GodotIQRuntime="*uid://1ldxh1tidkyl"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godotiq/plugin.cfg")
+
+[internationalization]
+
+locale/translations=PackedStringArray("res://locale/guildrun.en.translation", "res://locale/guildrun.zh_Hans.translation", "res://locale/guildrun.zh_Hant.translation", "res://locale/guildrun.de.translation", "res://locale/guildrun.es.translation", "res://locale/guildrun.fr.translation", "res://locale/guildrun.ja.translation", "res://locale/guildrun.pt_BR.translation", "res://locale/guildrun.ru.translation")
+
+[rendering]
+
+anti_aliasing/quality/screen_space_aa=2

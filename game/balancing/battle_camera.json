@@ -1,0 +1,347 @@
+{
+  "source": {
+    "scene": "level3",
+    "controller": 5673,
+    "virtual_camera_blends": 65267,
+    "effective_aspect_cap": "CameraEffectiveRectApplier.Apply@0x6D4E20",
+    "intro_delay": "BattleCameraController.OnBattleFlowStateChanged@0x38B410"
+  },
+  "active_priority": 10,
+  "intro_delay": 0.10000000149011612,
+  "effective_aspect_cap": 2.3333332538604736,
+  "projection": {
+    "camera": 9518,
+    "physical": true,
+    "gate_fit": "horizontal",
+    "sensor": [
+      21.945999145507812,
+      16.00200080871582
+    ],
+    "lens_shift": [
+      0.0,
+      0.0
+    ],
+    "focal_length": 43.169532775878906
+  },
+  "default_blend": [
+    1,
+    2.0
+  ],
+  "blends": [
+    [
+      "CutVCam",
+      "CrossroadsVCam",
+      0,
+      2.0
+    ],
+    [
+      "CutVCam",
+      "**ANY CAMERA**",
+      0,
+      8.0
+    ],
+    [
+      "CrossroadsVCam",
+      "CrossroadsVCam_Aiming",
+      1,
+      8.0
+    ],
+    [
+      "InTransitionVCam",
+      "PreparationVCam",
+      1,
+      2.0
+    ],
+    [
+      "PreparationVCam",
+      "PreparationVCamStart",
+      1,
+      0.0
+    ],
+    [
+      "PreparationVCamStart",
+      "PreparationVCam",
+      1,
+      4.0
+    ],
+    [
+      "InTransitionVCam",
+      "PreparationVCamStart",
+      1,
+      0.0
+    ],
+    [
+      "PreparationVCam",
+      "BattleVCam",
+      1,
+      3.0
+    ],
+    [
+      "**ANY CAMERA**",
+      "CrossroadsVCam",
+      1,
+      2.0
+    ],
+    [
+      "**ANY CAMERA**",
+      "CrossroadsVCam_Aiming",
+      1,
+      8.0
+    ],
+    [
+      "**ANY CAMERA**",
+      "**ANY CAMERA**",
+      1,
+      2.0
+    ]
+  ],
+  "cameras": {
+    "cut": {
+      "id": 4160,
+      "name": "CutVCam",
+      "priority": 1,
+      "fov": 21.0,
+      "near": 0.10000000149011612,
+      "far": 5000.0,
+      "physical_lens": {
+        "mode_override": "inherit",
+        "gate_fit": "horizontal",
+        "sensor": [
+          21.945999145507812,
+          16.00200080871582
+        ],
+        "lens_shift": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "start": {
+      "id": 6281,
+      "name": "PreparationVCamStart",
+      "priority": 0,
+      "fov": 21.0,
+      "near": 0.10000000149011612,
+      "far": 5000.0,
+      "physical_lens": {
+        "mode_override": "inherit",
+        "gate_fit": "horizontal",
+        "sensor": [
+          21.945999145507812,
+          16.00200080871582
+        ],
+        "lens_shift": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "placement": {
+      "id": 7662,
+      "name": "PreparationVCam",
+      "priority": 0,
+      "fov": 21.0,
+      "near": 0.10000000149011612,
+      "far": 5000.0,
+      "physical_lens": {
+        "mode_override": "inherit",
+        "gate_fit": "horizontal",
+        "sensor": [
+          21.945999145507812,
+          16.00200080871582
+        ],
+        "lens_shift": [
+          0.0,
+          0.0
+        ]
+      },
+      "aspect": [
+        1.600000023841858,
+        2.5
+      ],
+      "z": [
+        -0.0,
+        5.0
+      ]
+    },
+    "fight": {
+      "id": 3251,
+      "name": "BattleVCam",
+      "priority": 0,
+      "fov": 21.0,
+      "near": 0.10000000149011612,
+      "far": 5000.0,
+      "physical_lens": {
+        "mode_override": "inherit",
+        "gate_fit": "horizontal",
+        "sensor": [
+          21.945999145507812,
+          16.00200080871582
+        ],
+        "lens_shift": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "result": {
+      "id": 4051,
+      "name": "PostBattleVCam",
+      "priority": 0,
+      "fov": 21.0,
+      "near": 0.10000000149011612,
+      "far": 5000.0,
+      "physical_lens": {
+        "mode_override": "inherit",
+        "gate_fit": "horizontal",
+        "sensor": [
+          21.945999145507812,
+          16.00200080871582
+        ],
+        "lens_shift": [
+          0.0,
+          0.0
+        ]
+      },
+      "aspect": [
+        1.600000023841858,
+        2.5
+      ],
+      "z": [
+        -0.0,
+        5.0
+      ]
+    },
+    "crossroads": {
+      "id": 1775,
+      "name": "CrossroadsVCam",
+      "priority": 0,
+      "fov": 21.0,
+      "near": 0.10000000149011612,
+      "far": 5000.0,
+      "physical_lens": {
+        "mode_override": "inherit",
+        "gate_fit": "horizontal",
+        "sensor": [
+          21.945999145507812,
+          16.00200080871582
+        ],
+        "lens_shift": [
+          0.0,
+          0.0
+        ]
+      },
+      "aspect": [
+        1.600000023841858,
+        2.5
+      ],
+      "z": [
+        -0.0,
+        32.0
+      ]
+    },
+    "crossroads_zoom": {
+      "id": 5859,
+      "name": "CrossroadsVCam_Aiming",
+      "priority": 0,
+      "fov": 21.0,
+      "near": 0.10000000149011612,
+      "far": 5000.0,
+      "physical_lens": {
+        "mode_override": "inherit",
+        "gate_fit": "horizontal",
+        "sensor": [
+          21.945999145507812,
+          16.00200080871582
+        ],
+        "lens_shift": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "intro": {
+      "id": 6181,
+      "name": "InTransitionVCam",
+      "priority": 0,
+      "fov": 21.000003814697266,
+      "near": 0.10000000149011612,
+      "far": 5000.0,
+      "physical_lens": {
+        "mode_override": "inherit",
+        "gate_fit": "horizontal",
+        "sensor": [
+          21.945999145507812,
+          16.00200080871582
+        ],
+        "lens_shift": [
+          0.0,
+          0.0
+        ]
+      },
+      "aspect": [
+        1.600000023841858,
+        2.5
+      ],
+      "z": [
+        -0.0,
+        5.0
+      ]
+    },
+    "boss_intro": {
+      "id": 5284,
+      "name": "BossVCam",
+      "priority": 0,
+      "fov": 21.0,
+      "near": 0.10000000149011612,
+      "far": 5000.0,
+      "physical_lens": {
+        "mode_override": "inherit",
+        "gate_fit": "horizontal",
+        "sensor": [
+          21.945999145507812,
+          16.00200080871582
+        ],
+        "lens_shift": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "input": {
+    "mover": 2748,
+    "aspect": [
+      1.7699999809265137,
+      2.3299999237060547
+    ],
+    "narrow": [
+      0.0,
+      11.0
+    ],
+    "wide": [
+      -5.0,
+      7.0
+    ],
+    "initial": [
+      0.4000000059604645,
+      0.0
+    ],
+    "aim_distance": [
+      65.0,
+      105.0
+    ],
+    "bounds_x": [
+      -2.0,
+      2.0,
+      -6.0,
+      6.0
+    ],
+    "bounds_z": [
+      -11.0,
+      -5.0,
+      -11.0,
+      -5.0
+    ]
+  }
+}

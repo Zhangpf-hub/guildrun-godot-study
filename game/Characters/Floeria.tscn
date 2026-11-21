@@ -1,0 +1,1588 @@
+[gd_scene format=3]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2868.obj" id="1"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_439.tres" id="2"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2840.obj" id="3"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_443.tres" id="4"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2739.obj" id="5"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2740.obj" id="6"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_440.tres" id="7"]
+
+[node name="Floeria" type="Node3D"]
+
+[node name="Floeria" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6322
+metadata/unity_name = "Floeria"
+
+[node name="Floeria_Float" type="Node3D" parent="Floeria"]
+position = Vector3(0, 0.939999998, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9204
+metadata/unity_name = "Floeria_Float"
+
+[node name="Floeria_Model" type="Node3D" parent="Floeria/Floeria_Float"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1.70000005, 1.70000005, 1.70000005)
+metadata/unity_id = 13612
+metadata/unity_name = "Floeria_Model"
+
+[node name="Armature" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14403
+metadata/unity_name = "Armature"
+
+[node name="hips" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature"]
+position = Vector3(-0, 0.267324984, 0.000246626238)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17605
+metadata/unity_name = "hips"
+
+[node name="spine" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips"]
+position = Vector3(-5.17971778e-33, 0.0401499979, -2.59514633e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8859
+metadata/unity_name = "spine"
+
+[node name="chest" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine"]
+position = Vector3(-0, 0.0401499979, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22118
+metadata/unity_name = "chest"
+
+[node name="neck" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest"]
+position = Vector3(1.94511074e-17, 0.0640570074, 0.0025473889)
+quaternion = Quaternion(-0.171529755, 0, -0, 0.985178947)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9066
+metadata/unity_name = "neck"
+
+[node name="head" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck"]
+position = Vector3(-9.0966392e-18, 0.0335892998, -1.7763568e-17)
+quaternion = Quaternion(0.171529755, -0, -0, 0.985178947)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14061
+metadata/unity_name = "head"
+
+[node name="corolla_root" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(-1.97215222e-33, -7.1054272e-17, -1.110223e-18)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4794
+metadata/unity_name = "corolla_root"
+
+[node name="corollaA_01" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/corolla_root"]
+position = Vector3(-0.0128097497, 0.0414679199, -0.0300090946)
+quaternion = Quaternion(0.100179076, -0.848464787, 0.489861369, 0.173515245)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13917
+metadata/unity_name = "corollaA_01"
+
+[node name="corollaA_02_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/corolla_root/corollaA_01"]
+position = Vector3(-6.66133775e-17, 0.00730000017, 7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21271
+metadata/unity_name = "corollaA_02_end"
+
+[node name="corollaB_01" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/corolla_root"]
+position = Vector3(-0.0289044641, 0.0401424989, -0.00796747115)
+quaternion = Quaternion(0.30295676, -0.688949645, 0.397765249, 0.524736524)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26736
+metadata/unity_name = "corollaB_01"
+
+[node name="corollaB_02_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/corolla_root/corollaB_01"]
+position = Vector3(-5.55111479e-18, 0.00730000017, -2.13162816e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7889
+metadata/unity_name = "corollaB_02_end"
+
+[node name="corollaC_01" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/corolla_root"]
+position = Vector3(-0.0314149745, 0.0370901562, 0.00800166279)
+quaternion = Quaternion(0.394782811, -0.53145045, 0.306833059, 0.683783889)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12729
+metadata/unity_name = "corollaC_01"
+
+[node name="corollaC_02_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/corolla_root/corollaC_01"]
+position = Vector3(2.6645352e-17, 0.00901937485, 7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6930
+metadata/unity_name = "corollaC_02_end"
+
+[node name="corollaD_01" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/corolla_root"]
+position = Vector3(-0.0249162931, 0.0324586518, 0.0284631774)
+quaternion = Quaternion(0.468032092, -0.304693043, 0.1759146, 0.810655415)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11733
+metadata/unity_name = "corollaD_01"
+
+[node name="corollaD_02_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/corolla_root/corollaD_01"]
+position = Vector3(7.77156104e-17, 0.00730000017, -7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14014
+metadata/unity_name = "corollaD_02_end"
+
+[node name="corollaE_01" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/corolla_root"]
+position = Vector3(-0.0149925072, 0.0360764004, 0.0360583477)
+quaternion = Quaternion(0.49032715, -0.169522345, 0.0978737697, 0.849271595)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19070
+metadata/unity_name = "corollaE_01"
+
+[node name="corollaE_02_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/corolla_root/corollaE_01"]
+position = Vector3(8.88178367e-17, 0.00730000017, 7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17050
+metadata/unity_name = "corollaE_02_end"
+
+[node name="corollaF_01" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/corolla_root"]
+position = Vector3(-0.00163654948, 0.0347300991, 0.0387753733)
+quaternion = Quaternion(0.499888808, -0.0182634983, 0.0105444351, 0.865832806)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23551
+metadata/unity_name = "corollaF_01"
+
+[node name="corollaF_02_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/corolla_root/corollaF_01"]
+position = Vector3(8.3266725e-19, 0.00730000017, -1.42108544e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23933
+metadata/unity_name = "corollaF_02_end"
+
+[node name="corollaG_01" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/corolla_root"]
+position = Vector3(0.0114614051, 0.0363782644, 0.0355624072)
+quaternion = Quaternion(0.493936926, 0.134458035, -0.0776293799, 0.855523825)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19627
+metadata/unity_name = "corollaG_01"
+
+[node name="corollaG_02_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/corolla_root/corollaG_01"]
+position = Vector3(8.54871708e-17, 0.00730000017, 7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25362
+metadata/unity_name = "corollaG_02_end"
+
+[node name="corollaH_01" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/corolla_root"]
+position = Vector3(0.0249160565, 0.0324585922, 0.0284624267)
+quaternion = Quaternion(0.468031377, 0.304696441, -0.175916567, 0.810654104)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25692
+metadata/unity_name = "corollaH_01"
+
+[node name="corollaH_02_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/corolla_root/corollaH_01"]
+position = Vector3(7.88258324e-17, 0.00730000017, 7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14139
+metadata/unity_name = "corollaH_02_end"
+
+[node name="corollaI_01" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/corolla_root"]
+position = Vector3(0.0314138941, 0.0370905995, 0.00800183509)
+quaternion = Quaternion(0.394784868, 0.53144592, -0.306830436, 0.683787465)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22027
+metadata/unity_name = "corollaI_01"
+
+[node name="corollaI_02_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/corolla_root/corollaI_01"]
+position = Vector3(1.7763568e-17, 0.00730000017, 2.13162816e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18575
+metadata/unity_name = "corollaI_02_end"
+
+[node name="corollaJ_01" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/corolla_root"]
+position = Vector3(0.0289037433, 0.0401420482, -0.00796750188)
+quaternion = Quaternion(0.3029553, 0.688951552, -0.397766382, 0.524733961)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14371
+metadata/unity_name = "corollaJ_01"
+
+[node name="corollaJ_02_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/corolla_root/corollaJ_01"]
+position = Vector3(-1.88737916e-17, 0.00730000017, 7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23566
+metadata/unity_name = "corollaJ_02_end"
+
+[node name="corollaK_01" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/corolla_root"]
+position = Vector3(0.0128094135, 0.0414676368, -0.0300088581)
+quaternion = Quaternion(-0.100177452, -0.848465383, 0.489861727, -0.173512444)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23816
+metadata/unity_name = "corollaK_01"
+
+[node name="corollaK_02_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/corolla_root/corollaK_01"]
+position = Vector3(-7.54951665e-17, 0.00730000017, 2.13162816e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20205
+metadata/unity_name = "corollaK_02_end"
+
+[node name="hair_root" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(2.6020149e-17, -7.1054272e-17, -2.6645352e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23288
+metadata/unity_name = "hair_root"
+
+[node name="hair_B_01" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(1.03831983e-08, -0.0052023367, 0.0277155004)
+quaternion = Quaternion(-0.900722027, -0, 8.10420602e-07, -0.434395999)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15198
+metadata/unity_name = "hair_B_01"
+
+[node name="hair_B_02" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_B_01"]
+position = Vector3(-6.77626343e-23, 0.0581237115, -7.1054272e-17)
+quaternion = Quaternion(0.201371297, -0, -0, 0.979515016)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18992
+metadata/unity_name = "hair_B_02"
+
+[node name="hair_B_03" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_B_01/hair_B_02"]
+position = Vector3(-2.03287903e-22, 0.0424598455, 3.5527136e-17)
+quaternion = Quaternion(0.18901363, -0, -0, 0.981974483)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17445
+metadata/unity_name = "hair_B_03"
+
+[node name="hair_B_brchA_04" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_B_01/hair_B_02/hair_B_03"]
+position = Vector3(-0.0169173721, 0.0259983316, 0.0022099996)
+quaternion = Quaternion(0.0516477153, 0.000371489296, -0.00716877077, 0.998639584)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26801
+metadata/unity_name = "hair_B_brchA_04"
+
+[node name="hair_B_brchA_05" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_B_01/hair_B_02/hair_B_03/hair_B_brchA_04"]
+position = Vector3(1.55431224e-17, 0.0246348027, -5.3290704e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24381
+metadata/unity_name = "hair_B_brchA_05"
+
+[node name="hair_B_brchA_06_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_B_01/hair_B_02/hair_B_03/hair_B_brchA_04/hair_B_brchA_05"]
+position = Vector3(4.66293656e-17, 0.0387386158, -3.5527136e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12456
+metadata/unity_name = "hair_B_brchA_06_end"
+
+[node name="hair_B_brchB_04" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_B_01/hair_B_02/hair_B_03"]
+position = Vector3(2.21470913e-08, 0.0258428231, 0.000583095185)
+quaternion = Quaternion(0.0488847047, -0, -0, 0.99880445)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5279
+metadata/unity_name = "hair_B_brchB_04"
+
+[node name="hair_B_brchB_05" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_B_01/hair_B_02/hair_B_03/hair_B_brchB_04"]
+position = Vector3(-1.00576353e-17, 0.0248917621, 1.7763568e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6507
+metadata/unity_name = "hair_B_brchB_05"
+
+[node name="hair_B_brchB_06_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_B_01/hair_B_02/hair_B_03/hair_B_brchB_04/hair_B_brchB_05"]
+position = Vector3(1.62094995e-18, 0.0383599363, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15304
+metadata/unity_name = "hair_B_brchB_06_end"
+
+[node name="hair_B_brchC_04" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_B_01/hair_B_02/hair_B_03"]
+position = Vector3(0.0162392966, 0.0261483118, 0.00061475276)
+quaternion = Quaternion(0.0531857312, -0, -0, 0.998584628)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10028
+metadata/unity_name = "hair_B_brchC_04"
+
+[node name="hair_B_brchC_05" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_B_01/hair_B_02/hair_B_03/hair_B_brchC_04"]
+position = Vector3(-4.440892e-18, 0.024635084, -1.7763568e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5956
+metadata/unity_name = "hair_B_brchC_05"
+
+[node name="hair_B_brchC_06_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_B_01/hair_B_02/hair_B_03/hair_B_brchC_04/hair_B_brchC_05"]
+position = Vector3(4.440892e-18, 0.0387384631, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20389
+metadata/unity_name = "hair_B_brchC_06_end"
+
+[node name="hair_L_01" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(-0.0263084527, -0.00502619613, 0.0210249443)
+quaternion = Quaternion(-0.918860137, 0.0616566874, -0.0260931347, -0.388861984)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21680
+metadata/unity_name = "hair_L_01"
+
+[node name="hair_L_02" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_L_01"]
+position = Vector3(-0, 0.0504166223, -7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0.0610485449, 0.998134851)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15932
+metadata/unity_name = "hair_L_02"
+
+[node name="hair_LA_03" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_L_01/hair_L_02"]
+position = Vector3(-0.00634785835, 0.0496106148, 0.0049035931)
+quaternion = Quaternion(0.303990036, -0.0232103188, 0.0612686388, 0.950419664)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5320
+metadata/unity_name = "hair_LA_03"
+
+[node name="hair_LA_04" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_L_01/hair_L_02/hair_LA_03"]
+position = Vector3(1.7763568e-17, 0.0276620407, -1.7763568e-17)
+quaternion = Quaternion(0.0835807249, -0, -0, 0.996501029)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10260
+metadata/unity_name = "hair_LA_04"
+
+[node name="hair_LA_05_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_L_01/hair_L_02/hair_LA_03/hair_LA_04"]
+position = Vector3(1.7763568e-17, 0.0244554542, -5.3290704e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11575
+metadata/unity_name = "hair_LA_05_end"
+
+[node name="hair_LB_03" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_L_01/hair_L_02"]
+position = Vector3(0.00549357291, 0.0478949733, 0.00696342112)
+quaternion = Quaternion(0.325628638, -0, -0, 0.945497751)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23782
+metadata/unity_name = "hair_LB_03"
+
+[node name="hair_LB_brchA_04" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_L_01/hair_L_02/hair_LB_03"]
+position = Vector3(-0.00488666398, 0.0266952291, -2.79360265e-05)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5444
+metadata/unity_name = "hair_LB_brchA_04"
+
+[node name="hair_LB_brchA_05_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_L_01/hair_L_02/hair_LB_03/hair_LB_brchA_04"]
+position = Vector3(3.99680272e-17, 0.0383306555, 1.7763568e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27079
+metadata/unity_name = "hair_LB_brchA_05_end"
+
+[node name="hair_LB_brchB_04" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_L_01/hair_L_02/hair_LB_03"]
+position = Vector3(0.000188438906, 0.0264740456, -0.00116504752)
+quaternion = Quaternion(0.02952848, -0, -0, 0.999563932)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13638
+metadata/unity_name = "hair_LB_brchB_04"
+
+[node name="hair_LB_brchB_05" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_L_01/hair_L_02/hair_LB_03/hair_LB_brchB_04"]
+position = Vector3(1.3322676e-17, 0.025345454, 1.7763568e-17)
+quaternion = Quaternion(0.0255737342, -0, -0, 0.999672949)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7070
+metadata/unity_name = "hair_LB_brchB_05"
+
+[node name="hair_LB_brchB_06_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_L_01/hair_L_02/hair_LB_03/hair_LB_brchB_04/hair_LB_brchB_05"]
+position = Vector3(-2.6645352e-17, 0.031213535, -5.3290704e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12445
+metadata/unity_name = "hair_LB_brchB_06_end"
+
+[node name="hair_LF_01" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(-0.0228303112, 0.037616834, -0.0101091573)
+quaternion = Quaternion(-0.000479945942, 0.0473979861, 0.998824775, -0.0101139722)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17593
+metadata/unity_name = "hair_LF_01"
+
+[node name="hair_LF_02" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LF_01"]
+position = Vector3(-0, 0.0435213521, 1.3322676e-17)
+quaternion = Quaternion(-0.0851549804, -0.101546943, -0.00283088582, 0.991175532)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10246
+metadata/unity_name = "hair_LF_02"
+
+[node name="hair_LF_03" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LF_01/hair_LF_02"]
+position = Vector3(6.661338e-18, 0.0116566131, -8.881784e-18)
+quaternion = Quaternion(-0.0942307189, 0, -0, 0.995550394)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18762
+metadata/unity_name = "hair_LF_03"
+
+[node name="hair_LF_04" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LF_01/hair_LF_02/hair_LF_03"]
+position = Vector3(-8.881784e-18, 0.0114365797, -0)
+quaternion = Quaternion(-0.0799739882, 0, -0, 0.996796966)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15718
+metadata/unity_name = "hair_LF_04"
+
+[node name="hair_LF_05" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LF_01/hair_LF_02/hair_LF_03/hair_LF_04"]
+position = Vector3(1.55431224e-17, 0.0123438761, -3.5527136e-17)
+quaternion = Quaternion(0.0216017924, -0, -0, 0.999766648)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15923
+metadata/unity_name = "hair_LF_05"
+
+[node name="hair_LF_06" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LF_01/hair_LF_02/hair_LF_03/hair_LF_04/hair_LF_05"]
+position = Vector3(-1.11022296e-17, 0.011068861, 7.1054272e-17)
+quaternion = Quaternion(0.0452310704, -0, -0, 0.998976529)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17504
+metadata/unity_name = "hair_LF_06"
+
+[node name="hair_LF_07" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LF_01/hair_LF_02/hair_LF_03/hair_LF_04/hair_LF_05/hair_LF_06"]
+position = Vector3(6.661338e-18, 0.0113757802, -1.7763568e-17)
+quaternion = Quaternion(0.0664235801, 1.08180774e-19, -7.20165898e-21, 0.997791529)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8354
+metadata/unity_name = "hair_LF_07"
+
+[node name="hair_LF_08" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LF_01/hair_LF_02/hair_LF_03/hair_LF_04/hair_LF_05/hair_LF_06/hair_LF_07"]
+position = Vector3(4.440892e-18, 0.0107187126, -1.7763568e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9659
+metadata/unity_name = "hair_LF_08"
+
+[node name="hair_LF_09" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LF_01/hair_LF_02/hair_LF_03/hair_LF_04/hair_LF_05/hair_LF_06/hair_LF_07/hair_LF_08"]
+position = Vector3(6.661338e-18, 0.00817840174, 1.7763568e-17)
+quaternion = Quaternion(0.0356613994, -0, -0, 0.999363959)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13664
+metadata/unity_name = "hair_LF_09"
+
+[node name="hair_LF_10" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LF_01/hair_LF_02/hair_LF_03/hair_LF_04/hair_LF_05/hair_LF_06/hair_LF_07/hair_LF_08/hair_LF_09"]
+position = Vector3(-3.33066888e-17, 0.0124498019, 2.6645352e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7528
+metadata/unity_name = "hair_LF_10"
+
+[node name="hair_LF_11" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LF_01/hair_LF_02/hair_LF_03/hair_LF_04/hair_LF_05/hair_LF_06/hair_LF_07/hair_LF_08/hair_LF_09/hair_LF_10"]
+position = Vector3(2.220446e-18, 0.0129726026, -3.5527136e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5263
+metadata/unity_name = "hair_LF_11"
+
+[node name="hair_LF_12_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LF_01/hair_LF_02/hair_LF_03/hair_LF_04/hair_LF_05/hair_LF_06/hair_LF_07/hair_LF_08/hair_LF_09/hair_LF_10/hair_LF_11"]
+position = Vector3(8.881784e-18, 0.0277400184, -8.881784e-18)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17289
+metadata/unity_name = "hair_LF_12_end"
+
+[node name="hair_R_01" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(0.0263084695, -0.00502611557, 0.0210249778)
+quaternion = Quaternion(-0.918860137, -0.0616566874, 0.0260931347, -0.388861984)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24100
+metadata/unity_name = "hair_R_01"
+
+[node name="hair_R_02" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_R_01"]
+position = Vector3(1.29973821e-09, 0.0504166037, 4.84973413e-08)
+quaternion = Quaternion(-0, -0, 0.0610485449, 0.998134851)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13227
+metadata/unity_name = "hair_R_02"
+
+[node name="hair_RA_03" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_R_01/hair_R_02"]
+position = Vector3(0.00634782994, 0.0496105328, 0.00490336632)
+quaternion = Quaternion(0.303990036, 0.0232103188, -0.0612686388, 0.950419664)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5922
+metadata/unity_name = "hair_RA_03"
+
+[node name="hair_RA_04" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_R_01/hair_R_02/hair_RA_03"]
+position = Vector3(-9.92829641e-09, 0.0276620928, -1.23015127e-07)
+quaternion = Quaternion(0.0835807249, -0, -0, 0.996501029)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21993
+metadata/unity_name = "hair_RA_04"
+
+[node name="hair_RA_05_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_R_01/hair_R_02/hair_RA_03/hair_RA_04"]
+position = Vector3(3.2837562e-08, 0.0244555138, -5.16119307e-08)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9716
+metadata/unity_name = "hair_RA_05_end"
+
+[node name="hair_RB_03" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_R_01/hair_R_02"]
+position = Vector3(-0.00549359713, 0.0478947498, 0.00696336385)
+quaternion = Quaternion(0.325628638, -0, -0, 0.945497751)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24366
+metadata/unity_name = "hair_RB_03"
+
+[node name="hair_RB_brchA_04" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_R_01/hair_R_02/hair_RB_03"]
+position = Vector3(0.0048866705, 0.0266954303, -2.78162206e-05)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8433
+metadata/unity_name = "hair_RB_brchA_04"
+
+[node name="hair_RB_brchA_05_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_R_01/hair_R_02/hair_RB_03/hair_RB_brchA_04"]
+position = Vector3(2.19223182e-08, 0.0383304693, -3.44319744e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23616
+metadata/unity_name = "hair_RB_brchA_05_end"
+
+[node name="hair_RB_brchB_04" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_R_01/hair_R_02/hair_RB_03"]
+position = Vector3(-0.000188445163, 0.0264744237, -0.0011652481)
+quaternion = Quaternion(0.02952848, -0, -0, 0.999563932)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6638
+metadata/unity_name = "hair_RB_brchB_04"
+
+[node name="hair_RB_brchB_05" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_R_01/hair_R_02/hair_RB_03/hair_RB_brchB_04"]
+position = Vector3(8.74096173e-09, 0.0253452584, 3.59386945e-07)
+quaternion = Quaternion(0.0255737342, -0, -0, 0.999672949)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20401
+metadata/unity_name = "hair_RB_brchB_05"
+
+[node name="hair_RB_brchB_06_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_R_01/hair_R_02/hair_RB_03/hair_RB_brchB_04/hair_RB_brchB_05"]
+position = Vector3(-2.2700485e-08, 0.0312134959, -8.23366264e-08)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12014
+metadata/unity_name = "hair_RB_brchB_06_end"
+
+[node name="hair_RF_01" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(0.0228302758, 0.0376165807, -0.0101091731)
+quaternion = Quaternion(0.000479918264, 0.0473981909, 0.998824775, 0.0101133445)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13375
+metadata/unity_name = "hair_RF_01"
+
+[node name="hair_RF_02" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RF_01"]
+position = Vector3(4.440892e-18, 0.0435209833, 1.3322676e-17)
+quaternion = Quaternion(-0.0851523653, 0.101546936, 0.00283115334, 0.991175771)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18537
+metadata/unity_name = "hair_RF_02"
+
+[node name="hair_RF_03" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RF_01/hair_RF_02"]
+position = Vector3(-2.220446e-18, 0.0116566392, -1.7763568e-17)
+quaternion = Quaternion(-0.0942355767, 0, -0, 0.995549977)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18685
+metadata/unity_name = "hair_RF_03"
+
+[node name="hair_RF_04" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RF_01/hair_RF_02/hair_RF_03"]
+position = Vector3(6.661338e-18, 0.0114366375, -1.7763568e-17)
+quaternion = Quaternion(-0.0799751803, 0, -0, 0.996796846)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13040
+metadata/unity_name = "hair_RF_04"
+
+[node name="hair_RA_05" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RF_01/hair_RF_02/hair_RF_03/hair_RF_04"]
+position = Vector3(-8.881784e-18, 0.0123436674, -3.5527136e-17)
+quaternion = Quaternion(0.0216070302, -0, -0, 0.999766529)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6214
+metadata/unity_name = "hair_RA_05"
+
+[node name="hair_RF_06" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RF_01/hair_RF_02/hair_RF_03/hair_RF_04/hair_RA_05"]
+position = Vector3(-0, 0.0110688936, -0)
+quaternion = Quaternion(0.0452279299, -0, -0, 0.998976707)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8494
+metadata/unity_name = "hair_RF_06"
+
+[node name="hair_RF_07" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RF_01/hair_RF_02/hair_RF_03/hair_RF_04/hair_RA_05/hair_RF_06"]
+position = Vector3(-2.220446e-18, 0.0113756359, 1.7763568e-17)
+quaternion = Quaternion(0.0664263219, -0, -0, 0.99779135)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24769
+metadata/unity_name = "hair_RF_07"
+
+[node name="hair_RF_08" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RF_01/hair_RF_02/hair_RF_03/hair_RF_04/hair_RA_05/hair_RF_06/hair_RF_07"]
+position = Vector3(2.220446e-18, 0.010719046, -1.7763568e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16545
+metadata/unity_name = "hair_RF_08"
+
+[node name="hair_RF_09" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RF_01/hair_RF_02/hair_RF_03/hair_RF_04/hair_RA_05/hair_RF_06/hair_RF_07/hair_RF_08"]
+position = Vector3(-0, 0.0081785908, -0)
+quaternion = Quaternion(0.0348994955, -0, -0, 0.999390841)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19358
+metadata/unity_name = "hair_RF_09"
+
+[node name="hair_RF_10" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RF_01/hair_RF_02/hair_RF_03/hair_RF_04/hair_RA_05/hair_RF_06/hair_RF_07/hair_RF_08/hair_RF_09"]
+position = Vector3(2.220446e-18, 0.0124499258, -8.881784e-18)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17150
+metadata/unity_name = "hair_RF_10"
+
+[node name="hair_RF_11" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RF_01/hair_RF_02/hair_RF_03/hair_RF_04/hair_RA_05/hair_RF_06/hair_RF_07/hair_RF_08/hair_RF_09/hair_RF_10"]
+position = Vector3(1.3322676e-17, 0.0129722496, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18373
+metadata/unity_name = "hair_RF_11"
+
+[node name="hair_RF_12_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RF_01/hair_RF_02/hair_RF_03/hair_RF_04/hair_RA_05/hair_RF_06/hair_RF_07/hair_RF_08/hair_RF_09/hair_RF_10/hair_RF_11"]
+position = Vector3(-1.11022296e-17, 0.0277398322, 5.3290704e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24650
+metadata/unity_name = "hair_RF_12_end"
+
+[node name="head_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(4.41831245e-18, 0.0598134138, -1.66533444e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25344
+metadata/unity_name = "head_end"
+
+[node name="jaw" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(1.7301745e-18, 0.00126032264, -0.0104506528)
+quaternion = Quaternion(-0.936267912, -1.41357958e-23, 3.07923841e-07, 0.351286888)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9494
+metadata/unity_name = "jaw"
+
+[node name="jaw_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/neck/head/jaw"]
+position = Vector3(1.69406586e-23, 0.0230449345, -3.5527136e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6918
+metadata/unity_name = "jaw_end"
+
+[node name="shoulder_L" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest"]
+position = Vector3(-0.01241, 0.0480349958, 0.00705337385)
+quaternion = Quaternion(-0.568779469, 0.420107037, -0.568779469, -0.420107037)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25338
+metadata/unity_name = "shoulder_L"
+
+[node name="upper_arm_L" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/shoulder_L"]
+position = Vector3(-2.44249064e-17, 0.0302949995, 7.1054272e-17)
+quaternion = Quaternion(0.410578102, -0.0107513657, -0.0238671489, 0.911449611)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18157
+metadata/unity_name = "upper_arm_L"
+
+[node name="lower_arm_L" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L"]
+position = Vector3(-3.99680272e-17, 0.0580350012, -0)
+quaternion = Quaternion(-0, -0, 0.0392598212, 0.999229074)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24013
+metadata/unity_name = "lower_arm_L"
+
+[node name="bangleA_L" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L"]
+position = Vector3(3.65296692e-05, 0.0563559979, -0.00291999988)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14125
+metadata/unity_name = "bangleA_L"
+
+[node name="bangleA_L_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/bangleA_L"]
+position = Vector3(-7.77156121e-18, 0.00730000017, -1.42108544e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25660
+metadata/unity_name = "bangleA_L_end"
+
+[node name="hand_L" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L"]
+position = Vector3(-4.32986964e-17, 0.065700002, -7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0.0436193869, 0.999048233)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24830
+metadata/unity_name = "hand_L"
+
+[node name="bangleB_L" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L"]
+position = Vector3(-0, 0.00291999988, -0.00291999988)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18468
+metadata/unity_name = "bangleB_L"
+
+[node name="bangleB_L_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L/bangleB_L"]
+position = Vector3(-7.77156121e-18, 0.00730000017, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4979
+metadata/unity_name = "bangleB_L_end"
+
+[node name="hand_L_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L"]
+position = Vector3(-2.77555756e-17, 0.0401499979, 7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13902
+metadata/unity_name = "hand_L_end"
+
+[node name="shoulder_R" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest"]
+position = Vector3(0.01241, 0.0480349958, 0.00705337385)
+quaternion = Quaternion(-0.568779469, -0.420107037, 0.568779469, -0.420107037)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25433
+metadata/unity_name = "shoulder_R"
+
+[node name="upper_arm_R" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/shoulder_R"]
+position = Vector3(1.22124532e-17, 0.0302949995, -1.42108544e-16)
+quaternion = Quaternion(0.410578102, 0.0107513666, 0.0238671489, 0.911449611)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12847
+metadata/unity_name = "upper_arm_R"
+
+[node name="lower_arm_R" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R"]
+position = Vector3(2.22044592e-17, 0.0580350012, -7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0.0392598212, 0.999229074)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13614
+metadata/unity_name = "lower_arm_R"
+
+[node name="bangleA_R" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R"]
+position = Vector3(-3.65300002e-05, 0.0563559979, -0.00291999988)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18410
+metadata/unity_name = "bangleA_R"
+
+[node name="bangleA_R_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/bangleA_R"]
+position = Vector3(1.110223e-18, 0.00730000017, -7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18999
+metadata/unity_name = "bangleA_R_end"
+
+[node name="hand_R" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R"]
+position = Vector3(2.6645352e-17, 0.065700002, -2.13162816e-16)
+quaternion = Quaternion(-0, -0, 0.0436193869, 0.999048233)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9899
+metadata/unity_name = "hand_R"
+
+[node name="bangleB_R" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R"]
+position = Vector3(1.110223e-18, 0.00291999988, -0.00291999988)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12719
+metadata/unity_name = "bangleB_R"
+
+[node name="bangleB_R_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/bangleB_R"]
+position = Vector3(3.330669e-18, 0.00730000017, -7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10814
+metadata/unity_name = "bangleB_R_end"
+
+[node name="hand_R_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R"]
+position = Vector3(1.44328988e-17, 0.0401499979, -7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12768
+metadata/unity_name = "hand_R_end"
+
+[node name="wing_root" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23845
+metadata/unity_name = "wing_root"
+
+[node name="wing_base" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/wing_root"]
+position = Vector3(2.20339967e-18, 0.00913434383, 0.0413327068)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14575
+metadata/unity_name = "wing_base"
+
+[node name="wing_LA_01" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/wing_root/wing_base"]
+position = Vector3(-0.0218273494, 0.000624001434, 0.00426450931)
+quaternion = Quaternion(0.601858616, -0.730477929, -0.189046711, 0.26159057)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24730
+metadata/unity_name = "wing_LA_01"
+
+[node name="wing_LA_02" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/wing_root/wing_base/wing_LA_01"]
+position = Vector3(5.68434176e-16, 0.0748267844, -1.9095835e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13260
+metadata/unity_name = "wing_LA_02"
+
+[node name="wing_LA_03" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/wing_root/wing_base/wing_LA_01/wing_LA_02"]
+position = Vector3(-1.42108544e-16, 0.110726461, 4.440892e-18)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14969
+metadata/unity_name = "wing_LA_03"
+
+[node name="wing_LA_04" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/wing_root/wing_base/wing_LA_01/wing_LA_02/wing_LA_03"]
+position = Vector3(-2.13162816e-16, 0.128090069, 4.88498128e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15223
+metadata/unity_name = "wing_LA_04"
+
+[node name="wing_LA_05_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/wing_root/wing_base/wing_LA_01/wing_LA_02/wing_LA_03/wing_LA_04"]
+position = Vector3(2.84217088e-16, 0.16118364, -4.440892e-18)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13257
+metadata/unity_name = "wing_LA_05_end"
+
+[node name="wing_LB_01" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/wing_root/wing_base"]
+position = Vector3(-0.00335510657, -0.0278921239, 0.00442988425)
+quaternion = Quaternion(-0.752717435, 0.635614336, 0.121761449, -0.120768636)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13138
+metadata/unity_name = "wing_LB_01"
+
+[node name="wing_LB_02" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/wing_root/wing_base/wing_LB_01"]
+position = Vector3(-2.13162816e-16, 0.0596825741, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25334
+metadata/unity_name = "wing_LB_02"
+
+[node name="wing_LB_03" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/wing_root/wing_base/wing_LB_01/wing_LB_02"]
+position = Vector3(7.1054272e-17, 0.0970575809, -1.68753898e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15415
+metadata/unity_name = "wing_LB_03"
+
+[node name="wing_LB_04" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/wing_root/wing_base/wing_LB_01/wing_LB_02/wing_LB_03"]
+position = Vector3(2.13162816e-16, 0.191129908, -5.24025244e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14882
+metadata/unity_name = "wing_LB_04"
+
+[node name="wing_LB_05_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/wing_root/wing_base/wing_LB_01/wing_LB_02/wing_LB_03/wing_LB_04"]
+position = Vector3(3.55271347e-16, 0.19028753, 4.08562054e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5364
+metadata/unity_name = "wing_LB_05_end"
+
+[node name="wing_LC_01" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/wing_root/wing_base"]
+position = Vector3(-0.0146487327, -0.0258064996, 0.0117947264)
+quaternion = Quaternion(-0.965762973, 0.225678891, 0.126393333, -0.0198908746)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9636
+metadata/unity_name = "wing_LC_01"
+
+[node name="wing_LC_02" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/wing_root/wing_base/wing_LC_01"]
+position = Vector3(2.84217088e-16, 0.066134043, -5.3290704e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5341
+metadata/unity_name = "wing_LC_02"
+
+[node name="wing_LC_03" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/wing_root/wing_base/wing_LC_01/wing_LC_02"]
+position = Vector3(3.5527136e-17, 0.0833555087, -1.7763568e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6841
+metadata/unity_name = "wing_LC_03"
+
+[node name="wing_LC_04" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/wing_root/wing_base/wing_LC_01/wing_LC_02/wing_LC_03"]
+position = Vector3(-1.06581408e-16, 0.125543177, -1.7763568e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21717
+metadata/unity_name = "wing_LC_04"
+
+[node name="wing_LC_05_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/wing_root/wing_base/wing_LC_01/wing_LC_02/wing_LC_03/wing_LC_04"]
+position = Vector3(-0, 0.139499083, -3.5527136e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20810
+metadata/unity_name = "wing_LC_05_end"
+
+[node name="wing_RA_01" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/wing_root/wing_base"]
+position = Vector3(0.0218273643, 0.000623832981, 0.00426451862)
+quaternion = Quaternion(-0.601858616, -0.730477929, -0.189046711, -0.26159057)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25482
+metadata/unity_name = "wing_RA_01"
+
+[node name="wing_RA_02" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/wing_root/wing_base/wing_RA_01"]
+position = Vector3(-1.47826043e-07, 0.0748269856, 9.61011253e-08)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14876
+metadata/unity_name = "wing_RA_02"
+
+[node name="wing_RA_03" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/wing_root/wing_base/wing_RA_01/wing_RA_02"]
+position = Vector3(5.03895627e-08, 0.110725887, 5.4184234e-08)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7448
+metadata/unity_name = "wing_RA_03"
+
+[node name="wing_RA_04" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/wing_root/wing_base/wing_RA_01/wing_RA_02/wing_RA_03"]
+position = Vector3(1.23673345e-07, 0.128090516, -6.50759731e-08)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14273
+metadata/unity_name = "wing_RA_04"
+
+[node name="wing_RA_05_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/wing_root/wing_base/wing_RA_01/wing_RA_02/wing_RA_03/wing_RA_04"]
+position = Vector3(-1.7566741e-07, 0.161183506, -1.17031576e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23354
+metadata/unity_name = "wing_RA_05_end"
+
+[node name="wing_RB_01" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/wing_root/wing_base"]
+position = Vector3(0.00335510913, -0.0278921574, 0.00442986377)
+quaternion = Quaternion(-0.752717435, -0.635614336, -0.121761449, -0.120768636)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12021
+metadata/unity_name = "wing_RB_01"
+
+[node name="wing_RB_02" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/wing_root/wing_base/wing_RB_01"]
+position = Vector3(-3.15494162e-07, 0.0596826114, -2.78348669e-08)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23847
+metadata/unity_name = "wing_RB_02"
+
+[node name="wing_RB_03" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/wing_root/wing_base/wing_RB_01/wing_RB_02"]
+position = Vector3(5.33778689e-07, 0.0970578492, -1.09223784e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5353
+metadata/unity_name = "wing_RB_03"
+
+[node name="wing_RB_04" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/wing_root/wing_base/wing_RB_01/wing_RB_02/wing_RB_03"]
+position = Vector3(-4.58580615e-07, 0.191129372, -8.30027673e-08)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24435
+metadata/unity_name = "wing_RB_04"
+
+[node name="wing_RB_05_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/wing_root/wing_base/wing_RB_01/wing_RB_02/wing_RB_03/wing_RB_04"]
+position = Vector3(5.01491854e-07, 0.190287814, -8.28561184e-08)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5881
+metadata/unity_name = "wing_RB_05_end"
+
+[node name="wing_RC_01" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/wing_root/wing_base"]
+position = Vector3(0.0146487635, -0.0258065462, 0.0117947599)
+quaternion = Quaternion(-0.965762973, -0.225678891, -0.126393333, -0.0198908746)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23459
+metadata/unity_name = "wing_RC_01"
+
+[node name="wing_RC_02" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/wing_root/wing_base/wing_RC_01"]
+position = Vector3(-1.28570733e-07, 0.0661341771, -5.86723248e-09)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21721
+metadata/unity_name = "wing_RC_02"
+
+[node name="wing_RC_03" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/wing_root/wing_base/wing_RC_01/wing_RC_02"]
+position = Vector3(2.19964249e-07, 0.0833555311, 6.66986324e-08)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15095
+metadata/unity_name = "wing_RC_03"
+
+[node name="wing_RC_04" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/wing_root/wing_base/wing_RC_01/wing_RC_02/wing_RC_03"]
+position = Vector3(1.7542925e-07, 0.125543281, -2.80675692e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7251
+metadata/unity_name = "wing_RC_04"
+
+[node name="wing_RC_05_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest/wing_root/wing_base/wing_RC_01/wing_RC_02/wing_RC_03/wing_RC_04"]
+position = Vector3(-1.18773741e-07, 0.139498815, 3.16121628e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5110
+metadata/unity_name = "wing_RC_05_end"
+
+[node name="Magica Capsule Collider (chest)" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/chest"]
+position = Vector3(0, 0.00700000674, 0.0260000005)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15384
+metadata/unity_name = "Magica Capsule Collider (chest)"
+
+[node name="skirt_root" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25392
+metadata/unity_name = "skirt_root"
+
+[node name="skirt_B_01" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root"]
+position = Vector3(-2.75345524e-10, 0.0211798549, 0.0201147199)
+quaternion = Quaternion(-0.913818002, -0, 0, -0.406123966)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24899
+metadata/unity_name = "skirt_B_01"
+
+[node name="skirt_B_02" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_B_01"]
+position = Vector3(6.61744475e-26, 0.0654570237, 7.1054272e-17)
+quaternion = Quaternion(0.112692192, -0, -0, 0.993629932)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7886
+metadata/unity_name = "skirt_B_02"
+
+[node name="skirt_B_03" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_B_01/skirt_B_02"]
+position = Vector3(-6.61744475e-26, 0.0457822159, -7.1054272e-17)
+quaternion = Quaternion(0.11179623, -4.76863038e-09, -4.2387267e-08, 0.993731201)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19142
+metadata/unity_name = "skirt_B_03"
+
+[node name="skirt_B_04" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_B_01/skirt_B_02/skirt_B_03"]
+position = Vector3(2.11758232e-24, 0.0433628261, -0)
+quaternion = Quaternion(-0.0944631472, 0, -0, 0.9955284)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20146
+metadata/unity_name = "skirt_B_04"
+
+[node name="skirt_B_05" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_B_01/skirt_B_02/skirt_B_03/skirt_B_04"]
+position = Vector3(4.23516464e-24, 0.0914589316, -3.5527136e-17)
+quaternion = Quaternion(-0.0711385757, 0, -0, 0.997466445)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19075
+metadata/unity_name = "skirt_B_05"
+
+[node name="skirt_B_06_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_B_01/skirt_B_02/skirt_B_03/skirt_B_04/skirt_B_05"]
+position = Vector3(-6.35274696e-24, 0.0320094079, 3.5527136e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17360
+metadata/unity_name = "skirt_B_06_end"
+
+[node name="skirt_F_01" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root"]
+position = Vector3(-9.7900632e-10, 0.0211798549, -0.0322266072)
+quaternion = Quaternion(3.0378974e-08, -0.226881459, 0.973922431, -1.30406278e-07)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11470
+metadata/unity_name = "skirt_F_01"
+
+[node name="skirt_F_02" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_F_01"]
+position = Vector3(-3.35028621e-18, 0.0488986261, -0)
+quaternion = Quaternion(0.0548473112, -0, -0, 0.998494744)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16181
+metadata/unity_name = "skirt_F_02"
+
+[node name="skirt_F_03" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_F_01/skirt_F_02"]
+position = Vector3(-1.69406586e-23, 0.0556634925, -0)
+quaternion = Quaternion(0.0989258885, -3.44766637e-09, -3.46800562e-08, 0.995094836)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17176
+metadata/unity_name = "skirt_F_03"
+
+[node name="skirt_F_04" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_F_01/skirt_F_02/skirt_F_03"]
+position = Vector3(1.69406586e-23, 0.0747129545, 1.7763568e-17)
+quaternion = Quaternion(-0.0217276216, 0, -0, 0.999763966)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21485
+metadata/unity_name = "skirt_F_04"
+
+[node name="skirt_F_05" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_F_01/skirt_F_02/skirt_F_03/skirt_F_04"]
+position = Vector3(-2.54109878e-23, 0.0788656101, -5.3290704e-17)
+quaternion = Quaternion(-0.0481750034, 0, -0, 0.998838902)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5890
+metadata/unity_name = "skirt_F_05"
+
+[node name="skirt_F_06_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_F_01/skirt_F_02/skirt_F_03/skirt_F_04/skirt_F_05"]
+position = Vector3(-6.40949816e-20, 0.0383231975, -5.3290704e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5678
+metadata/unity_name = "skirt_F_06_end"
+
+[node name="skirt_L_01" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root"]
+position = Vector3(-0.0340499729, 0.0211797561, -0.00754015846)
+quaternion = Quaternion(-0.682222307, 0.151599079, -0.664011419, -0.26585573)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22891
+metadata/unity_name = "skirt_L_01"
+
+[node name="skirt_L_02" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_L_01"]
+position = Vector3(-8.881784e-18, 0.0539750904, -1.1783542e-07)
+quaternion = Quaternion(0.0884942561, -0.00369490194, -0.00104731752, 0.996069312)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25287
+metadata/unity_name = "skirt_L_02"
+
+[node name="skirt_L_03" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_L_01/skirt_L_02"]
+position = Vector3(-5.91110272e-08, 0.050292477, -3.17420984e-07)
+quaternion = Quaternion(0.0460711829, -0.00690242508, 0.0136849768, 0.998820603)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25218
+metadata/unity_name = "skirt_L_03"
+
+[node name="skirt_L_04" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_L_01/skirt_L_02/skirt_L_03"]
+position = Vector3(-1.62354858e-08, 0.0620385967, -1.7763568e-17)
+quaternion = Quaternion(-0.103818052, -0.00362792588, 0.0169572029, 0.994445145)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16434
+metadata/unity_name = "skirt_L_04"
+
+[node name="skirt_L_05" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_L_01/skirt_L_02/skirt_L_03/skirt_L_04"]
+position = Vector3(8.881784e-18, 0.0907765552, 3.5527136e-17)
+quaternion = Quaternion(-0.10758467, -0.022187639, 0.0387623832, 0.993192196)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18319
+metadata/unity_name = "skirt_L_05"
+
+[node name="skirt_L_06_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_L_01/skirt_L_02/skirt_L_03/skirt_L_04/skirt_L_05"]
+position = Vector3(8.881784e-18, 0.0412333831, -7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9469
+metadata/unity_name = "skirt_L_06_end"
+
+[node name="skirt_LB_01" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root"]
+position = Vector3(-0.0265625827, 0.0211797561, 0.0128075248)
+quaternion = Quaternion(-0.824451923, 0.0846215189, -0.4515661, -0.330463916)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20011
+metadata/unity_name = "skirt_LB_01"
+
+[node name="skirt_LB_02" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_LB_01"]
+position = Vector3(-8.881784e-18, 0.0571696796, -0)
+quaternion = Quaternion(0.0903041065, -0.0276709422, 0.011724893, 0.995460749)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13960
+metadata/unity_name = "skirt_LB_02"
+
+[node name="skirt_LB_03" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_LB_01/skirt_LB_02"]
+position = Vector3(-4.440892e-18, 0.0448752493, -0)
+quaternion = Quaternion(0.0398206413, -0.007527248, -0.00144702103, 0.999177456)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20252
+metadata/unity_name = "skirt_LB_03"
+
+[node name="skirt_LB_04" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_LB_01/skirt_LB_02/skirt_LB_03"]
+position = Vector3(2.22044592e-17, 0.0532490946, -0)
+quaternion = Quaternion(-0.0541927591, 0.00586879719, 0.0225723181, 0.998258114)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13910
+metadata/unity_name = "skirt_LB_04"
+
+[node name="skirt_LB_05" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_LB_01/skirt_LB_02/skirt_LB_03/skirt_LB_04"]
+position = Vector3(4.440892e-18, 0.0886320248, -0)
+quaternion = Quaternion(-0.0974067971, 0.024685204, 0.017503025, 0.994784534)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5679
+metadata/unity_name = "skirt_LB_05"
+
+[node name="skirt_LB_06_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_LB_01/skirt_LB_02/skirt_LB_03/skirt_LB_04/skirt_LB_05"]
+position = Vector3(-1.3322676e-17, 0.0348786265, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8888
+metadata/unity_name = "skirt_LB_06_end"
+
+[node name="skirt_LF_01" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root"]
+position = Vector3(-0.0205824226, 0.0211797561, -0.0256562456)
+quaternion = Quaternion(0.429706186, -0.185228541, 0.866971672, 0.171473369)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21353
+metadata/unity_name = "skirt_LF_01"
+
+[node name="skirt_LF_02" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_LF_01"]
+position = Vector3(8.881784e-18, 0.0502699837, 3.5527136e-17)
+quaternion = Quaternion(0.0712892562, 0.00655224267, 0.0392526574, 0.996661544)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12913
+metadata/unity_name = "skirt_LF_02"
+
+[node name="skirt_LF_03" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_LF_01/skirt_LF_02"]
+position = Vector3(1.3322676e-17, 0.0539318696, -3.5527136e-17)
+quaternion = Quaternion(0.079607673, 0.02309292, -0.038819585, 0.995802402)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16170
+metadata/unity_name = "skirt_LF_03"
+
+[node name="skirt_LF_04" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_LF_01/skirt_LF_02/skirt_LF_03"]
+position = Vector3(-8.881784e-18, 0.0711258352, -1.7763568e-17)
+quaternion = Quaternion(-0.0766604692, -0.00908606406, -0.0284085292, 0.996611059)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11656
+metadata/unity_name = "skirt_LF_04"
+
+[node name="skirt_LF_05" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_LF_01/skirt_LF_02/skirt_LF_03/skirt_LF_04"]
+position = Vector3(-8.881784e-18, 0.0851669759, -0)
+quaternion = Quaternion(-0.0645724311, -0.015549357, -0.0125510553, 0.99771297)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15791
+metadata/unity_name = "skirt_LF_05"
+
+[node name="skirt_LF_06_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_LF_01/skirt_LF_02/skirt_LF_03/skirt_LF_04/skirt_LF_05"]
+position = Vector3(1.7763568e-17, 0.0399532542, 3.5527136e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8314
+metadata/unity_name = "skirt_LF_06_end"
+
+[node name="skirt_R_01" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root"]
+position = Vector3(0.0340499803, 0.0211798288, -0.00754016032)
+quaternion = Quaternion(-0.682222307, -0.151599079, 0.664011419, -0.26585573)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21874
+metadata/unity_name = "skirt_R_01"
+
+[node name="skirt_R_02" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_R_01"]
+position = Vector3(-0, 0.0539752804, 7.1054272e-17)
+quaternion = Quaternion(0.0884942561, 0.00369490194, 0.00104731752, 0.996069312)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5973
+metadata/unity_name = "skirt_R_02"
+
+[node name="skirt_R_03" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_R_01/skirt_R_02"]
+position = Vector3(-8.881784e-18, 0.050292287, -7.1054272e-17)
+quaternion = Quaternion(0.0460711829, 0.00690242508, -0.0136849768, 0.998820603)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6531
+metadata/unity_name = "skirt_R_03"
+
+[node name="skirt_R_04" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_R_01/skirt_R_02/skirt_R_03"]
+position = Vector3(-0, 0.0620382503, -1.7763568e-17)
+quaternion = Quaternion(-0.103818052, 0.00362792588, -0.0169572029, 0.994445145)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22199
+metadata/unity_name = "skirt_R_04"
+
+[node name="skirt_R_05" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_R_01/skirt_R_02/skirt_R_03/skirt_R_04"]
+position = Vector3(-4.440892e-18, 0.0907773376, -0)
+quaternion = Quaternion(-0.10758467, 0.022187639, -0.0387623832, 0.993192196)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10733
+metadata/unity_name = "skirt_R_05"
+
+[node name="skirt_R_06_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_R_01/skirt_R_02/skirt_R_03/skirt_R_04/skirt_R_05"]
+position = Vector3(4.440892e-18, 0.0412325226, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7491
+metadata/unity_name = "skirt_R_06_end"
+
+[node name="skirt_RB_01" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root"]
+position = Vector3(0.0265625548, 0.0211798288, 0.012807535)
+quaternion = Quaternion(-0.824451923, -0.0846215189, 0.4515661, -0.330463916)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6661
+metadata/unity_name = "skirt_RB_01"
+
+[node name="skirt_RB_02" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_RB_01"]
+position = Vector3(-0, 0.0571698546, -0)
+quaternion = Quaternion(0.0903041065, 0.0276709422, -0.011724893, 0.995460749)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17160
+metadata/unity_name = "skirt_RB_02"
+
+[node name="skirt_RB_03" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_RB_01/skirt_RB_02"]
+position = Vector3(2.6645352e-17, 0.0448750257, -3.5527136e-17)
+quaternion = Quaternion(0.0398206413, 0.007527248, 0.00144702103, 0.999177456)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9592
+metadata/unity_name = "skirt_RB_03"
+
+[node name="skirt_RB_04" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_RB_01/skirt_RB_02/skirt_RB_03"]
+position = Vector3(-1.7763568e-17, 0.0532491021, -0)
+quaternion = Quaternion(-0.0541927591, -0.00586879719, -0.0225723181, 0.998258114)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24023
+metadata/unity_name = "skirt_RB_04"
+
+[node name="skirt_RB_05" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_RB_01/skirt_RB_02/skirt_RB_03/skirt_RB_04"]
+position = Vector3(3.5527136e-17, 0.088632524, 3.5527136e-17)
+quaternion = Quaternion(-0.0974067971, -0.024685204, -0.017503025, 0.994784534)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9026
+metadata/unity_name = "skirt_RB_05"
+
+[node name="skirt_RB_06_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_RB_01/skirt_RB_02/skirt_RB_03/skirt_RB_04/skirt_RB_05"]
+position = Vector3(1.7763568e-17, 0.0348781943, -0)
+quaternion = Quaternion(-0, 8.32667268e-17, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16291
+metadata/unity_name = "skirt_RB_06_end"
+
+[node name="skirt_RF_01" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root"]
+position = Vector3(0.0205824487, 0.0211798549, -0.0256562438)
+quaternion = Quaternion(-0.429706186, -0.185228541, 0.866971672, -0.171473369)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13477
+metadata/unity_name = "skirt_RF_01"
+
+[node name="skirt_RF_02" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_RF_01"]
+position = Vector3(1.7763568e-17, 0.0502701923, 3.5527136e-17)
+quaternion = Quaternion(0.0712892562, -0.00655224267, -0.0392526574, 0.996661544)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26626
+metadata/unity_name = "skirt_RF_02"
+
+[node name="skirt_RF_03" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_RF_01/skirt_RF_02"]
+position = Vector3(-4.440892e-18, 0.0539319217, -3.5527136e-17)
+quaternion = Quaternion(0.079607673, -0.02309292, 0.038819585, 0.995802402)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21374
+metadata/unity_name = "skirt_RF_03"
+
+[node name="skirt_RF_04" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_RF_01/skirt_RF_02/skirt_RF_03"]
+position = Vector3(8.881784e-18, 0.0711259171, -0)
+quaternion = Quaternion(-0.0766604692, 0.00908606406, 0.0284085292, 0.996611059)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9790
+metadata/unity_name = "skirt_RF_04"
+
+[node name="skirt_RF_05" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_RF_01/skirt_RF_02/skirt_RF_03/skirt_RF_04"]
+position = Vector3(8.881784e-18, 0.0851666033, -0)
+quaternion = Quaternion(-0.0645724311, 0.015549357, 0.0125510553, 0.99771297)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15076
+metadata/unity_name = "skirt_RF_05"
+
+[node name="skirt_RF_06_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine/skirt_root/skirt_RF_01/skirt_RF_02/skirt_RF_03/skirt_RF_04/skirt_RF_05"]
+position = Vector3(-1.7763568e-17, 0.0399534851, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10523
+metadata/unity_name = "skirt_RF_06_end"
+
+[node name="Magica Capsule Collider (spine)" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/spine"]
+position = Vector3(0, 0.0136999972, -0.00700000022)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10883
+metadata/unity_name = "Magica Capsule Collider (spine)"
+
+[node name="upper_leg_L" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips"]
+position = Vector3(-0.0288342349, 0, -0)
+quaternion = Quaternion(0.000336561061, 0.0226848386, 0.999632657, 0.0148309367)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8969
+metadata/unity_name = "upper_leg_L"
+
+[node name="lower_leg_L" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/upper_leg_L"]
+position = Vector3(-0, 0.1062067, 1.3322676e-17)
+quaternion = Quaternion(0.0150965247, -0, -0, 0.999886036)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25889
+metadata/unity_name = "lower_leg_L"
+
+[node name="foot_L" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/upper_leg_L/lower_leg_L"]
+position = Vector3(-1.7763568e-17, 0.137613297, -0)
+quaternion = Quaternion(-0.0373722352, -0.026715612, 0.0138302976, 0.998848557)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18215
+metadata/unity_name = "foot_L"
+
+[node name="toes_L" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/upper_leg_L/lower_leg_L/foot_L"]
+position = Vector3(-0, 0.0182537381, -0.0352222845)
+quaternion = Quaternion(-0.564149797, -0.0092574181, 0.0115778176, 0.82553941)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9479
+metadata/unity_name = "toes_L"
+
+[node name="toes_L_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/upper_leg_L/lower_leg_L/foot_L/toes_L"]
+position = Vector3(8.881784e-18, 0.0163870752, 2.220446e-18)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24354
+metadata/unity_name = "toes_L_end"
+
+[node name="Magica Capsule Collider (lower_leg_L)" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/upper_leg_L/lower_leg_L"]
+position = Vector3(0.0120000066, 0.0790001228, 0.00299999351)
+quaternion = Quaternion(-4.65661243e-09, -2.07738046e-11, -1.3759085e-09, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5057
+metadata/unity_name = "Magica Capsule Collider (lower_leg_L)"
+
+[node name="Magica Capsule Collider (upper_leg_L)" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/upper_leg_L"]
+position = Vector3(0.0116000073, 0.0571000241, 0.00159999961)
+quaternion = Quaternion(0, 0, 1.49157117e-10, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26062
+metadata/unity_name = "Magica Capsule Collider (upper_leg_L)"
+
+[node name="upper_leg_R" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips"]
+position = Vector3(0.0288342685, 0, -0)
+quaternion = Quaternion(-0.000336561061, 0.0226848386, 0.999632657, -0.0148309367)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19136
+metadata/unity_name = "upper_leg_R"
+
+[node name="lower_leg_R" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/upper_leg_R"]
+position = Vector3(1.7763568e-17, 0.106206998, -0)
+quaternion = Quaternion(0.0150965247, -0, -0, 0.999886036)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6578
+metadata/unity_name = "lower_leg_R"
+
+[node name="foot_R" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/upper_leg_R/lower_leg_R"]
+position = Vector3(-8.881784e-18, 0.137612998, 1.3322676e-17)
+quaternion = Quaternion(-0.0373722352, 0.026715612, -0.0138302976, 0.998848557)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24540
+metadata/unity_name = "foot_R"
+
+[node name="toes_R" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/upper_leg_R/lower_leg_R/foot_R"]
+position = Vector3(8.881784e-18, 0.0182537381, -0.0352222845)
+quaternion = Quaternion(-0.564090967, 0.00925659109, -0.0115784779, 0.825579584)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11215
+metadata/unity_name = "toes_R"
+
+[node name="toes_R_end" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/upper_leg_R/lower_leg_R/foot_R/toes_R"]
+position = Vector3(-0, 0.0163847804, 2.220446e-18)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6508
+metadata/unity_name = "toes_R_end"
+
+[node name="Magica Capsule Collider (lower_leg_R)" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/upper_leg_R/lower_leg_R"]
+position = Vector3(-0.0130000087, 0.0790001079, 0.00299999397)
+quaternion = Quaternion(-4.65661243e-09, 2.07738046e-11, 1.3759085e-09, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6265
+metadata/unity_name = "Magica Capsule Collider (lower_leg_R)"
+
+[node name="Magica Capsule Collider (upper_leg_R)" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips/upper_leg_R"]
+position = Vector3(-0.0117000081, 0.0571000315, 0.00159999938)
+quaternion = Quaternion(0, 0, -1.49157117e-10, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20881
+metadata/unity_name = "Magica Capsule Collider (upper_leg_R)"
+
+[node name="Magica Capsule Collider (hips)" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Armature/hips"]
+position = Vector3(0, -0.0155999959, 9.12455725e-05)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26113
+metadata/unity_name = "Magica Capsule Collider (hips)"
+
+[node name="Floeria" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23050
+metadata/unity_name = "Floeria"
+
+[node name="Body_geo" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Floeria"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13190
+metadata/unity_name = "Body_geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Floeria/Floeria_Float/Floeria_Model/Floeria/Body_geo"]
+mesh = ExtResource("1")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="Flower_geo" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Floeria"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9816
+metadata/unity_name = "Flower_geo"
+visible = false
+process_mode = 4
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Floeria/Floeria_Float/Floeria_Model/Floeria/Flower_geo"]
+mesh = ExtResource("3")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="Grass_geo" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Floeria"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11965
+metadata/unity_name = "Grass_geo"
+visible = false
+process_mode = 4
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Floeria/Floeria_Float/Floeria_Model/Floeria/Grass_geo"]
+mesh = ExtResource("5")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="Wings_geo" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model/Floeria"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16957
+metadata/unity_name = "Wings_geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Floeria/Floeria_Float/Floeria_Model/Floeria/Wings_geo"]
+mesh = ExtResource("6")
+visible = true
+surface_material_override/0 = ExtResource("7")
+
+[node name="Magica Cloth (backhair)" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16746
+metadata/unity_name = "Magica Cloth (backhair)"
+
+[node name="Magica Cloth (sidehair)" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4837
+metadata/unity_name = "Magica Cloth (sidehair)"
+
+[node name="Magica Cloth (corolla)" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9662
+metadata/unity_name = "Magica Cloth (corolla)"
+
+[node name="Magica Cloth (bangle)" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5915
+metadata/unity_name = "Magica Cloth (bangle)"
+
+[node name="Magica Cloth (skirt)" type="Node3D" parent="Floeria/Floeria_Float/Floeria_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6680
+metadata/unity_name = "Magica Cloth (skirt)"
+
+[node name="OverheadSlot" type="Node3D" parent="Floeria"]
+position = Vector3(0, 2.20000005, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15405
+metadata/unity_name = "OverheadSlot"
+
+[node name="VFXParent" type="Node3D" parent="Floeria"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26085
+metadata/unity_name = "VFXParent"

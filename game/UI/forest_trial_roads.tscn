@@ -1,0 +1,258 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://UI/sliced_image.gd" id="SlicedImage"]
+[ext_resource type="Texture2D" path="res://sprites/resources_922.png" id="1"]
+
+[node name="forest_trial_roadsUI" type="Control"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="Canvas" type="Control" parent="."]
+mouse_filter = 2
+metadata/unity_id = 40
+anchor_right = 1.0
+anchor_bottom = 1.0
+metadata/reference_resolution = Vector2(1920, 1080)
+metadata/match_width_or_height = 0.0
+metadata/unity_file = "level3"
+
+[node name="Root" type="Control" parent="Canvas"]
+mouse_filter = 2
+metadata/unity_id = 20
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 20
+offset_right = -20
+offset_top = 20
+offset_bottom = -20
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "level3"
+
+[node name="CrossroadsPanel" type="Control" parent="Canvas/Root"]
+mouse_filter = 2
+metadata/unity_id = 1
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 30
+offset_right = -30
+offset_top = 30
+offset_bottom = -30
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "level3"
+
+[node name="Modal" type="Control" parent="Canvas/Root/CrossroadsPanel"]
+mouse_filter = 2
+metadata/unity_id = 34
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -50
+offset_right = 50
+offset_top = -50
+offset_bottom = 50
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "level3"
+
+[node name="UnityImage" type="ColorRect" parent="Canvas/Root/CrossroadsPanel/Modal"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0.501960814)
+
+[node name="CrossroadsContentPanel" type="Control" parent="Canvas/Root/CrossroadsPanel"]
+mouse_filter = 2
+metadata/unity_id = 33
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -764.150024
+offset_right = 764.150024
+offset_top = -457.150009
+offset_bottom = -215.250015
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "level3"
+
+[node name="CrossroadsTitleText" type="Control" parent="Canvas/Root/CrossroadsPanel/CrossroadsContentPanel"]
+mouse_filter = 2
+metadata/unity_id = 23
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 80
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+visible = false
+metadata/unity_file = "level3"
+
+[node name="UnityText" type="Label" parent="Canvas/Root/CrossroadsPanel/CrossroadsContentPanel/CrossroadsTitleText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Crossroads Title"
+theme_override_font_sizes/font_size = 52
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CrossroadsButtonHolder" type="Control" parent="Canvas/Root/CrossroadsPanel/CrossroadsContentPanel"]
+mouse_filter = 2
+metadata/unity_id = 30
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -3.81469727e-06
+offset_bottom = 3.81469727e-06
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "level3"
+metadata/layout_spacing = 0.0
+metadata/layout_padding = Vector4(0, 0, 0, 0)
+
+[node name="CrossroadsPathView" type="Control" parent="Canvas/Root/CrossroadsPanel/CrossroadsContentPanel/CrossroadsButtonHolder"]
+mouse_filter = 2
+metadata/unity_id = 14
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 559.285019
+offset_right = 969.01503
+offset_top = 43.7149963
+offset_bottom = 198.184998
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "level3"
+
+[node name="TitleText" type="Control" parent="Canvas/Root/CrossroadsPanel/CrossroadsContentPanel/CrossroadsButtonHolder/CrossroadsPathView"]
+mouse_filter = 2
+metadata/unity_id = 32
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 0
+offset_top = -0.809997559
+offset_bottom = 34.1900024
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "level3"
+
+[node name="UnityText" type="Label" parent="Canvas/Root/CrossroadsPanel/CrossroadsContentPanel/CrossroadsButtonHolder/CrossroadsPathView/TitleText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Medium Team Stat Bonus"
+theme_override_font_sizes/font_size = 28
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 1
+vertical_alignment = 0
+
+[node name="DescriptionText" type="Control" parent="Canvas/Root/CrossroadsPanel/CrossroadsContentPanel/CrossroadsButtonHolder/CrossroadsPathView"]
+mouse_filter = 2
+metadata/unity_id = 4
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = 35
+offset_bottom = -85
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "level3"
+
+[node name="UnityText" type="Label" parent="Canvas/Root/CrossroadsPanel/CrossroadsContentPanel/CrossroadsButtonHolder/CrossroadsPathView/DescriptionText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Destroy a rare item of your choice"
+theme_override_font_sizes/font_size = 22
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="EnterButton" type="Control" parent="Canvas/Root/CrossroadsPanel/CrossroadsContentPanel/CrossroadsButtonHolder/CrossroadsPathView"]
+mouse_filter = 2
+metadata/unity_id = 8
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -50.5450001
+offset_right = 50.5449963
+offset_top = -79.8600006
+offset_bottom = 0.13999939
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "level3"
+
+[node name="UnityImage" type="Control" parent="Canvas/Root/CrossroadsPanel/CrossroadsContentPanel/CrossroadsButtonHolder/CrossroadsPathView/EnterButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("1")
+border = Vector4(10, 10, 10, 10)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Text (TMP)" type="Control" parent="Canvas/Root/CrossroadsPanel/CrossroadsContentPanel/CrossroadsButtonHolder/CrossroadsPathView/EnterButton"]
+mouse_filter = 2
+metadata/unity_id = 11
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "level3"
+
+[node name="UnityText" type="Label" parent="Canvas/Root/CrossroadsPanel/CrossroadsContentPanel/CrossroadsButtonHolder/CrossroadsPathView/EnterButton/Text (TMP)"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Enter"
+theme_override_font_sizes/font_size = 24
+theme_override_colors/font_color = Color(0.196078435, 0.196078435, 0.196078435, 1)
+horizontal_alignment = 1
+vertical_alignment = 1

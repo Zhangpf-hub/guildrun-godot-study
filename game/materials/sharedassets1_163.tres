@@ -1,0 +1,22 @@
+[gd_resource type="ShaderMaterial" format=3]
+[ext_resource type="Shader" path="res://materials/character_toon.gdshader" id="toon"]
+[ext_resource type="Texture2D" path="res://textures/sharedassets1_1803.png" id="main_texture"]
+
+[resource]
+resource_name = "MushroomArcher_Hat_Mat"
+shader = ExtResource("toon")
+metadata/unity_shader = "lilToon"
+metadata/unity_material_id = 163
+metadata/unity_reflection = false
+shader_parameter/main_texture = ExtResource("main_texture")
+shader_parameter/main_transform = Vector4(1, 1, 0, 0)
+shader_parameter/tint = Color(1, 1, 1, 1)
+shader_parameter/cutoff = 0.0
+shader_parameter/use_shadow = true
+shader_parameter/shadow_color = Color(0.819999993, 0.75999999, 0.850000024, 1)
+shader_parameter/second_color = Color(0.680000007, 0.659999967, 0.789999962, 0)
+shader_parameter/shadow_border_color = Color(1, 0.0999999419, 0, 1)
+shader_parameter/shade_shape = Vector4(0.689999998, 0, 0.109999999, 0.100000001)
+shader_parameter/shade_controls = Vector4(1, 0, 0, 1)
+shader_parameter/shade_receivers = Vector3(0, 0, 0)
+shader_parameter/light_limits = Vector2(0.0500000007, 1)

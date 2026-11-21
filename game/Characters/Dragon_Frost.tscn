@@ -1,0 +1,1347 @@
+[gd_scene format=3]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2907.obj" id="1"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_95.tres" id="2"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2804.obj" id="3"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_94.tres" id="4"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2914.obj" id="5"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2969.obj" id="6"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2766.obj" id="7"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2946.obj" id="8"]
+
+[node name="Dragon_Frost" type="Node3D"]
+
+[node name="Dragon_Frost" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1.39999998, 1.39999998, 1.39999998)
+metadata/unity_id = 9292
+metadata/unity_name = "Dragon_Frost"
+
+[node name="DragonMod" type="Node3D" parent="Dragon_Frost"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19800
+metadata/unity_name = "DragonMod"
+
+[node name="Body" type="Node3D" parent="Dragon_Frost/DragonMod"]
+position = Vector3(-2.86102289e-08, 9.53674295e-09, 7.20003998e-16)
+quaternion = Quaternion(0.707106829, -2.63417821e-09, -1.05367128e-08, 0.707106709)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19097
+metadata/unity_name = "Body"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Dragon_Frost/DragonMod/Body"]
+mesh = ExtResource("1")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="Body_001" type="Node3D" parent="Dragon_Frost/DragonMod"]
+position = Vector3(-2.86102289e-08, 9.53674295e-09, 7.20003998e-16)
+quaternion = Quaternion(0.707106829, -2.63417821e-09, -1.05367128e-08, 0.707106709)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21921
+metadata/unity_name = "Body.001"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Dragon_Frost/DragonMod/Body_001"]
+mesh = ExtResource("3")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="Eyes" type="Node3D" parent="Dragon_Frost/DragonMod"]
+position = Vector3(2.87117063e-09, 1.5381794, -2.45477462)
+quaternion = Quaternion(0.707106829, 1.01457021e-08, -1.09277245e-08, 0.707106709)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5590
+metadata/unity_name = "Eyes"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Dragon_Frost/DragonMod/Eyes"]
+mesh = ExtResource("5")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="Horns" type="Node3D" parent="Dragon_Frost/DragonMod"]
+position = Vector3(-8.88178301e-17, 1.6830163, -1.83689368)
+quaternion = Quaternion(0.707106829, -5.55659935e-24, -8.77357392e-25, 0.707106709)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5391
+metadata/unity_name = "Horns"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Dragon_Frost/DragonMod/Horns"]
+mesh = ExtResource("6")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="root" type="Node3D" parent="Dragon_Frost/DragonMod"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(0.707106829, -0, 0, 0.707106709)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21866
+metadata/unity_name = "root"
+
+[node name="pelvis" type="Node3D" parent="Dragon_Frost/DragonMod/root"]
+position = Vector3(3.18323147e-14, 1.06999981, -1.57000017)
+quaternion = Quaternion(-0.649870157, 0.278690934, 0.649870217, -0.278691322)
+scale = Vector3(1, 1, 0.999999762)
+metadata/unity_id = 25113
+metadata/unity_name = "pelvis"
+
+[node name="Hip_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis"]
+position = Vector3(-0.071732536, 0.238713011, 0.410000145)
+quaternion = Quaternion(0.116398737, -0.0863349587, 0.79470259, 0.589444995)
+scale = Vector3(1.00000012, 0.999999762, 0.999999702)
+metadata/unity_id = 18382
+metadata/unity_name = "Hip_L"
+
+[node name="thigh_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Hip_L"]
+position = Vector3(0.523041964, -8.64266951e-08, -1.62124635e-07)
+quaternion = Quaternion(0.0961020216, 0.108474582, 0.656129956, 0.740601957)
+scale = Vector3(1.00000226, 0.999999523, 1.00000036)
+metadata/unity_id = 22110
+metadata/unity_name = "thigh_L"
+
+[node name="calf_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Hip_L/thigh_L"]
+position = Vector3(0.653349817, -6.209617e-08, -3.84972374e-08)
+quaternion = Quaternion(-1.57151106e-07, -1.34588632e-07, -0.780701399, 0.624904275)
+scale = Vector3(1.00000131, 0.999997914, 1)
+metadata/unity_id = 24287
+metadata/unity_name = "calf_L"
+
+[node name="knee_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Hip_L/thigh_L/calf_L"]
+position = Vector3(0.460183769, -4.16629035e-07, -1.88678328e-07)
+quaternion = Quaternion(-0.928069949, 0.372347116, 0.00246669119, -0.00614798302)
+scale = Vector3(1.0000006, 0.999998569, 0.999999762)
+metadata/unity_id = 6475
+metadata/unity_name = "knee_L"
+
+[node name="ball_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Hip_L/thigh_L/calf_L/knee_L"]
+position = Vector3(0.152660608, -0.095011808, -0.0570349693)
+quaternion = Quaternion(-0.983192563, 0.10637261, 0.147022575, 0.0200416017)
+scale = Vector3(1.00000262, 1.00000048, 1.00000048)
+metadata/unity_id = 6287
+metadata/unity_name = "ball_L"
+
+[node name="ball_L_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Hip_L/thigh_L/calf_L/knee_L/ball_L"]
+position = Vector3(-0, 0.215777799, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26346
+metadata/unity_name = "ball_L_end"
+
+[node name="Index_Back_01_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Hip_L/thigh_L/calf_L/knee_L"]
+position = Vector3(0.139491484, -0.089232102, 0.0860834122)
+quaternion = Quaternion(-0.987148821, 0.106574714, -0.0537866056, -0.106235929)
+scale = Vector3(1.00000072, 1, 1.0000006)
+metadata/unity_id = 13338
+metadata/unity_name = "Index_Back_01_L"
+
+[node name="Index_Back_02_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Hip_L/thigh_L/calf_L/knee_L/Index_Back_01_L"]
+position = Vector3(0.123866573, -1.43051144e-08, 1.4781952e-07)
+quaternion = Quaternion(0.0831754282, -0.0700068027, 0.00184148713, 0.994071186)
+scale = Vector3(1.00000024, 1.00000048, 0.999999762)
+metadata/unity_id = 16661
+metadata/unity_name = "Index_Back_02_L"
+
+[node name="Index_Back_02_L_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Hip_L/thigh_L/calf_L/knee_L/Index_Back_01_L/Index_Back_02_L"]
+position = Vector3(-0, 0.123867005, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8611
+metadata/unity_name = "Index_Back_02_L_end"
+
+[node name="Middle_Back_01_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Hip_L/thigh_L/calf_L/knee_L"]
+position = Vector3(0.158752546, -0.0866018757, -0.0622410253)
+quaternion = Quaternion(-0.960128844, 0.0738873333, 0.170708537, 0.208691016)
+scale = Vector3(0.999999702, 1.00000048, 0.999999464)
+metadata/unity_id = 23746
+metadata/unity_name = "Middle_Back_01_L"
+
+[node name="Middle_Back_02_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Hip_L/thigh_L/calf_L/knee_L/Middle_Back_01_L"]
+position = Vector3(0.144983649, 2.86102289e-08, -4.76837148e-09)
+quaternion = Quaternion(-0.0833309963, 0.0853225514, 0.0871130973, 0.98903352)
+scale = Vector3(1.00000012, 0.999999404, 1.00000024)
+metadata/unity_id = 6745
+metadata/unity_name = "Middle_Back_02_L"
+
+[node name="Middle_Back_02_L_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Hip_L/thigh_L/calf_L/knee_L/Middle_Back_01_L/Middle_Back_02_L"]
+position = Vector3(-0, 0.144984648, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5854
+metadata/unity_name = "Middle_Back_02_L_end"
+
+[node name="Pinky_Back_01_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Hip_L/thigh_L/calf_L/knee_L"]
+position = Vector3(0.0901766643, -0.0920869038, -0.183543846)
+quaternion = Quaternion(-0.886148751, 0.155309707, 0.281319916, 0.333883941)
+scale = Vector3(1.0000006, 0.999998868, 1.00000036)
+metadata/unity_id = 24927
+metadata/unity_name = "Pinky_Back_01_L"
+
+[node name="Pinky_Back_02_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Hip_L/thigh_L/calf_L/knee_L/Pinky_Back_01_L"]
+position = Vector3(0.158565864, -1.7166137e-07, -1.43051139e-07)
+quaternion = Quaternion(-0.11518193, 0.13033022, 0.0857386664, 0.981017888)
+scale = Vector3(1.00000048, 1.00000083, 1.00000012)
+metadata/unity_id = 11934
+metadata/unity_name = "Pinky_Back_02_L"
+
+[node name="Pinky_Back_02_L_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Hip_L/thigh_L/calf_L/knee_L/Pinky_Back_01_L/Pinky_Back_02_L"]
+position = Vector3(-0, 0.158565342, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9068
+metadata/unity_name = "Pinky_Back_02_L_end"
+
+[node name="Thumb_Back_01_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Hip_L/thigh_L/calf_L/knee_L"]
+position = Vector3(-0.235518888, 0.0635324344, 0.153272659)
+quaternion = Quaternion(-0.871138215, 0.208369955, -0.305413902, -0.323144764)
+scale = Vector3(1.00000203, 0.999999821, 1.00000048)
+metadata/unity_id = 23415
+metadata/unity_name = "Thumb_Back_01_L"
+
+[node name="Thumb_Back_02_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Hip_L/thigh_L/calf_L/knee_L/Thumb_Back_01_L"]
+position = Vector3(0.103596397, -6.67572024e-08, 1.14440915e-07)
+quaternion = Quaternion(0.150580361, -0.250973821, 0.0119021796, 0.956135988)
+scale = Vector3(1.00000024, 1.00000024, 0.999999583)
+metadata/unity_id = 21723
+metadata/unity_name = "Thumb_Back_02_L"
+
+[node name="Thumb_Back_02_L_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Hip_L/thigh_L/calf_L/knee_L/Thumb_Back_01_L/Thumb_Back_02_L"]
+position = Vector3(-0, 0.103596076, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10600
+metadata/unity_name = "Thumb_Back_02_L_end"
+
+[node name="Hip_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis"]
+position = Vector3(-0.0717326552, 0.238713056, -0.410000056)
+quaternion = Quaternion(-0.086334832, -0.116398461, -0.589444935, 0.794702768)
+scale = Vector3(0.999999881, 0.999999583, 0.999999523)
+metadata/unity_id = 23007
+metadata/unity_name = "Hip_R"
+
+[node name="thigh_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Hip_R"]
+position = Vector3(-0.523041964, -1.66888814e-08, -2.09808348e-07)
+quaternion = Quaternion(0.0961018801, 0.108474262, 0.656129956, 0.740601957)
+scale = Vector3(1.00000203, 0.999999404, 1.00000024)
+metadata/unity_id = 19423
+metadata/unity_name = "thigh_R"
+
+[node name="calf_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Hip_R/thigh_R"]
+position = Vector3(-0.653349757, 2.00674648e-07, 9.66755707e-08)
+quaternion = Quaternion(9.11376432e-08, 1.47845142e-07, -0.780701518, 0.624904215)
+scale = Vector3(1.00000143, 0.999997914, 1)
+metadata/unity_id = 7820
+metadata/unity_name = "calf_R"
+
+[node name="knee_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Hip_R/thigh_R/calf_R"]
+position = Vector3(-0.46018368, 1.79805951e-07, -1.11747084e-07)
+quaternion = Quaternion(-0.928069949, 0.372347057, 0.00245834724, -0.00615107315)
+scale = Vector3(1.00000072, 0.99999845, 0.999999762)
+metadata/unity_id = 8266
+metadata/unity_name = "knee_R"
+
+[node name="ball_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Hip_R/thigh_R/calf_R/knee_R"]
+position = Vector3(-0.152661756, 0.0950117856, 0.0570323542)
+quaternion = Quaternion(-0.983193755, 0.106372662, 0.147014141, 0.0200426616)
+scale = Vector3(1.00000346, 1.00000048, 1.00000036)
+metadata/unity_id = 23290
+metadata/unity_name = "ball_R"
+
+[node name="ball_R_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Hip_R/thigh_R/calf_R/knee_R/ball_R"]
+position = Vector3(-0, 0.215777874, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23262
+metadata/unity_name = "ball_R_end"
+
+[node name="Index_Back_01_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Hip_R/thigh_R/calf_R/knee_R"]
+position = Vector3(-0.139490202, 0.0892319977, -0.0860857815)
+quaternion = Quaternion(-0.987148285, 0.106575839, -0.0537952222, -0.106235348)
+scale = Vector3(1.00000167, 1, 1.00000131)
+metadata/unity_id = 25031
+metadata/unity_name = "Index_Back_01_R"
+
+[node name="Index_Back_02_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Hip_R/thigh_R/calf_R/knee_R/Index_Back_01_R"]
+position = Vector3(-0.12386667, 1.28746024e-07, -3.12328325e-07)
+quaternion = Quaternion(0.0831751972, -0.0700059906, 0.00184150063, 0.994071245)
+scale = Vector3(1.00000012, 1.00000036, 1)
+metadata/unity_id = 7984
+metadata/unity_name = "Index_Back_02_R"
+
+[node name="Index_Back_02_R_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Hip_R/thigh_R/calf_R/knee_R/Index_Back_01_R/Index_Back_02_R"]
+position = Vector3(-0, 0.123866946, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10574
+metadata/unity_name = "Index_Back_02_R_end"
+
+[node name="Middle_Back_01_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Hip_R/thigh_R/calf_R/knee_R"]
+position = Vector3(-0.158753633, 0.0866018087, 0.0622384138)
+quaternion = Quaternion(-0.960130215, 0.0738855749, 0.170700878, 0.208691537)
+scale = Vector3(0.999999821, 1.00000048, 0.99999994)
+metadata/unity_id = 25592
+metadata/unity_name = "Middle_Back_01_R"
+
+[node name="Middle_Back_02_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Hip_R/thigh_R/calf_R/knee_R/Middle_Back_01_R"]
+position = Vector3(-0.144983709, 0, 1.90734852e-07)
+quaternion = Quaternion(-0.0833308771, 0.0853231996, 0.0871126354, 0.98903352)
+scale = Vector3(0.999999762, 0.999999642, 1.00000012)
+metadata/unity_id = 10973
+metadata/unity_name = "Middle_Back_02_R"
+
+[node name="Middle_Back_02_R_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Hip_R/thigh_R/calf_R/knee_R/Middle_Back_01_R/Middle_Back_02_R"]
+position = Vector3(-0, 0.144984409, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9472
+metadata/unity_name = "Middle_Back_02_R_end"
+
+[node name="Pinky_Back_01_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Hip_R/thigh_R/calf_R/knee_R"]
+position = Vector3(-0.0901799276, 0.0920869112, 0.183542356)
+quaternion = Quaternion(-0.886151135, 0.155307129, 0.281312197, 0.333885312)
+scale = Vector3(1.00000048, 0.999998808, 1.00000024)
+metadata/unity_id = 20056
+metadata/unity_name = "Pinky_Back_01_R"
+
+[node name="Pinky_Back_02_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Hip_R/thigh_R/calf_R/knee_R/Pinky_Back_01_R"]
+position = Vector3(-0.158565968, 3.81469718e-08, 1.76429751e-07)
+quaternion = Quaternion(-0.115181699, 0.130330458, 0.0857387483, 0.981017888)
+scale = Vector3(1.00000083, 1.00000107, 1.0000006)
+metadata/unity_id = 12832
+metadata/unity_name = "Pinky_Back_02_R"
+
+[node name="Pinky_Back_02_R_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Hip_R/thigh_R/calf_R/knee_R/Pinky_Back_01_R/Pinky_Back_02_R"]
+position = Vector3(-0, 0.158565149, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23751
+metadata/unity_name = "Pinky_Back_02_R_end"
+
+[node name="Thumb_Back_01_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Hip_R/thigh_R/calf_R/knee_R"]
+position = Vector3(0.23552148, -0.0635325983, -0.153268501)
+quaternion = Quaternion(-0.871135652, 0.208372876, -0.305421442, -0.323142797)
+scale = Vector3(1.00000179, 0.999999642, 1.00000024)
+metadata/unity_id = 17567
+metadata/unity_name = "Thumb_Back_01_R"
+
+[node name="Thumb_Back_02_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Hip_R/thigh_R/calf_R/knee_R/Thumb_Back_01_R"]
+position = Vector3(-0.10359624, 9.5367426e-08, -5.72204577e-08)
+quaternion = Quaternion(0.150580257, -0.25097391, 0.0119021256, 0.956135988)
+scale = Vector3(1.00000036, 1.00000036, 0.999999464)
+metadata/unity_id = 16107
+metadata/unity_name = "Thumb_Back_02_R"
+
+[node name="Thumb_Back_02_R_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Hip_R/thigh_R/calf_R/knee_R/Thumb_Back_01_R/Thumb_Back_02_R"]
+position = Vector3(-0, 0.103595905, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19408
+metadata/unity_name = "Thumb_Back_02_R_end"
+
+[node name="spine_01" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis"]
+position = Vector3(0.397238106, 0.526311338, -3.85165535e-08)
+quaternion = Quaternion(0.457289338, -0.889317989, 1.13213808e-07, -1.43108949e-07)
+scale = Vector3(0.99999994, 1, 1)
+metadata/unity_id = 22856
+metadata/unity_name = "spine_01"
+
+[node name="spine_02" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01"]
+position = Vector3(-0.491697043, -1.84774009e-07, 2.12135784e-08)
+quaternion = Quaternion(-8.05154055e-10, 2.98323428e-08, -0.00850587431, 0.99996382)
+scale = Vector3(0.999999881, 0.999999881, 1)
+metadata/unity_id = 15681
+metadata/unity_name = "spine_02"
+
+[node name="spine_03" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02"]
+position = Vector3(-0.439273596, 9.53679589e-08, 2.84767694e-08)
+quaternion = Quaternion(-5.29031681e-08, -1.21719367e-07, -0.27628988, 0.961074352)
+scale = Vector3(1, 0.99999994, 1)
+metadata/unity_id = 26159
+metadata/unity_name = "spine_03"
+
+[node name="clavicle_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03"]
+position = Vector3(-0.187185898, 0.0264200661, -0.227484494)
+quaternion = Quaternion(0.315838516, 0.564439118, -0.144216523, 0.748903275)
+scale = Vector3(1.00000036, 0.999999225, 1)
+metadata/unity_id = 20527
+metadata/unity_name = "clavicle_L"
+
+[node name="upperarm_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/clavicle_L"]
+position = Vector3(0.28919971, -3.81469718e-08, 1.90734859e-08)
+quaternion = Quaternion(0.366223365, 0.628374457, 0.111881994, 0.677132487)
+scale = Vector3(1.00000083, 0.999999166, 0.999999642)
+metadata/unity_id = 6901
+metadata/unity_name = "upperarm_L"
+
+[node name="lowerarm_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/clavicle_L/upperarm_L"]
+position = Vector3(0.598985851, -4.82797589e-07, 2.60472291e-07)
+quaternion = Quaternion(-3.37554305e-08, -2.19706621e-07, -0.617817104, 0.786321819)
+scale = Vector3(1.00000226, 0.999998868, 1)
+metadata/unity_id = 5766
+metadata/unity_name = "lowerarm_L"
+
+[node name="hand_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/clavicle_L/upperarm_L/lowerarm_L"]
+position = Vector3(0.646651387, 8.91685488e-07, -2.40802763e-07)
+quaternion = Quaternion(-0.141096234, 0.520590961, 0.217854351, 0.813398063)
+scale = Vector3(1.00000095, 0.999998927, 0.999998689)
+metadata/unity_id = 15449
+metadata/unity_name = "hand_L"
+
+[node name="ball1_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/clavicle_L/upperarm_L/lowerarm_L/hand_L"]
+position = Vector3(0.0368901156, -0.120888315, 0.101538219)
+quaternion = Quaternion(0.178287685, -0.520232916, -0.502042711, 0.667476118)
+scale = Vector3(1.00000179, 0.999999464, 0.999999642)
+metadata/unity_id = 15248
+metadata/unity_name = "ball1_L"
+
+[node name="ball1_L_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/clavicle_L/upperarm_L/lowerarm_L/hand_L/ball1_L"]
+position = Vector3(-0, 0.185909197, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20360
+metadata/unity_name = "ball1_L_end"
+
+[node name="index_01_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/clavicle_L/upperarm_L/lowerarm_L/hand_L"]
+position = Vector3(0.0981206521, -0.167693332, 0.0662342235)
+quaternion = Quaternion(0.219653398, -0.2925964, -0.564689577, 0.73977387)
+scale = Vector3(1.00000167, 1.00000024, 1)
+metadata/unity_id = 17531
+metadata/unity_name = "index_01_L"
+
+[node name="index_02_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/clavicle_L/upperarm_L/lowerarm_L/hand_L/index_01_L"]
+position = Vector3(0.170859069, 4.29153431e-07, 9.29832424e-08)
+quaternion = Quaternion(0.0521000326, -0.0418021418, 0.186542705, 0.980173469)
+scale = Vector3(0.999999821, 0.999999523, 0.999999344)
+metadata/unity_id = 18651
+metadata/unity_name = "index_02_L"
+
+[node name="index_02_L_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/clavicle_L/upperarm_L/lowerarm_L/hand_L/index_01_L/index_02_L"]
+position = Vector3(-0, 0.170859277, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18198
+metadata/unity_name = "index_02_L_end"
+
+[node name="middle_01_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/clavicle_L/upperarm_L/lowerarm_L/hand_L"]
+position = Vector3(-0.0140278339, -0.159319296, 0.121031776)
+quaternion = Quaternion(0.266138464, -0.605431378, -0.447726786, 0.601800561)
+scale = Vector3(1.00000215, 0.999999881, 0.999998987)
+metadata/unity_id = 22193
+metadata/unity_name = "middle_01_L"
+
+[node name="middle_02_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/clavicle_L/upperarm_L/lowerarm_L/hand_L/middle_01_L"]
+position = Vector3(0.149304792, 2.9563904e-07, 1.45435337e-07)
+quaternion = Quaternion(-0.116050631, 0.124116272, 0.0676324442, 0.983134449)
+scale = Vector3(0.999999166, 0.999999523, 1.0000006)
+metadata/unity_id = 15413
+metadata/unity_name = "middle_02_L"
+
+[node name="middle_02_L_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/clavicle_L/upperarm_L/lowerarm_L/hand_L/middle_01_L/middle_02_L"]
+position = Vector3(-0, 0.149306163, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5513
+metadata/unity_name = "middle_02_L_end"
+
+[node name="pinky_01_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/clavicle_L/upperarm_L/lowerarm_L/hand_L"]
+position = Vector3(-0.0972509086, -0.081978403, 0.166251138)
+quaternion = Quaternion(0.240258768, -0.789439678, -0.318577945, 0.466442734)
+scale = Vector3(1.00000155, 1.00000012, 0.999999821)
+metadata/unity_id = 22607
+metadata/unity_name = "pinky_01_L"
+
+[node name="pinky_02_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/clavicle_L/upperarm_L/lowerarm_L/hand_L/pinky_01_L"]
+position = Vector3(0.127273396, 2.24113464e-07, 1.43051144e-08)
+quaternion = Quaternion(-0.114633061, 0.144133747, 0.0793474242, 0.979688048)
+scale = Vector3(1.00000036, 0.999999583, 0.999999702)
+metadata/unity_id = 13254
+metadata/unity_name = "pinky_02_L"
+
+[node name="pinky_02_L_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/clavicle_L/upperarm_L/lowerarm_L/hand_L/pinky_01_L/pinky_02_L"]
+position = Vector3(-0, 0.12727274, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25859
+metadata/unity_name = "pinky_02_L_end"
+
+[node name="thumb_01_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/clavicle_L/upperarm_L/lowerarm_L/hand_L"]
+position = Vector3(0.15225485, -4.05311589e-08, 1.52587887e-07)
+quaternion = Quaternion(0.119323388, 0.00287294667, -0.324630737, 0.938279629)
+scale = Vector3(1.00000036, 1.00000036, 1)
+metadata/unity_id = 6112
+metadata/unity_name = "thumb_01_L"
+
+[node name="thumb_02_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/clavicle_L/upperarm_L/lowerarm_L/hand_L/thumb_01_L"]
+position = Vector3(0.121834159, 2.28881831e-07, 1.09672541e-07)
+quaternion = Quaternion(0.074623704, -0.149233997, -0.0367113315, 0.985298336)
+scale = Vector3(1.00000048, 0.999998927, 0.999999702)
+metadata/unity_id = 4976
+metadata/unity_name = "thumb_02_L"
+
+[node name="thumb_02_L_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/clavicle_L/upperarm_L/lowerarm_L/hand_L/thumb_01_L/thumb_02_L"]
+position = Vector3(-0, 0.12183544, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23864
+metadata/unity_name = "thumb_02_L_end"
+
+[node name="clavicle_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03"]
+position = Vector3(-0.187185824, 0.0264198221, 0.227484524)
+quaternion = Quaternion(-0.564438879, 0.315838516, 0.748903513, 0.14421615)
+scale = Vector3(1.00000048, 0.999999583, 1.00000012)
+metadata/unity_id = 14077
+metadata/unity_name = "clavicle_R"
+
+[node name="upperarm_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/clavicle_R"]
+position = Vector3(-0.289199531, -1.33514405e-07, -4.76837148e-09)
+quaternion = Quaternion(0.366223365, 0.628374338, 0.111882091, 0.677132547)
+scale = Vector3(1.0000006, 0.999998927, 0.999999464)
+metadata/unity_id = 12893
+metadata/unity_name = "upperarm_R"
+
+[node name="lowerarm_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/clavicle_R/upperarm_R"]
+position = Vector3(-0.59898603, 6.81877111e-07, 1.4007091e-07)
+quaternion = Quaternion(3.19789102e-08, 3.31632428e-08, -0.617817223, 0.786321759)
+scale = Vector3(1.00000226, 0.999998868, 1)
+metadata/unity_id = 13054
+metadata/unity_name = "lowerarm_R"
+
+[node name="hand_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/clavicle_R/upperarm_R/lowerarm_R"]
+position = Vector3(-0.646651626, -1.2350082e-06, 5.48362706e-08)
+quaternion = Quaternion(-0.141096652, 0.520590961, 0.217854947, 0.813397884)
+scale = Vector3(1.00000095, 0.999999166, 0.999998868)
+metadata/unity_id = 16625
+metadata/unity_name = "hand_R"
+
+[node name="ball1_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/clavicle_R/upperarm_R/lowerarm_R/hand_R"]
+position = Vector3(-0.0368901566, 0.120888457, -0.101538226)
+quaternion = Quaternion(0.178287879, -0.520232677, -0.502043128, 0.667475939)
+scale = Vector3(1.00000143, 0.999999285, 0.999999642)
+metadata/unity_id = 14772
+metadata/unity_name = "ball1_R"
+
+[node name="ball1_R_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/clavicle_R/upperarm_R/lowerarm_R/hand_R/ball1_R"]
+position = Vector3(-0, 0.185909301, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18269
+metadata/unity_name = "ball1_R_end"
+
+[node name="index_01_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/clavicle_R/upperarm_R/lowerarm_R/hand_R"]
+position = Vector3(-0.0981205925, 0.167693108, -0.066234149)
+quaternion = Quaternion(0.219653755, -0.292596281, -0.564690173, 0.739773393)
+scale = Vector3(1.00000119, 0.999999762, 0.999999702)
+metadata/unity_id = 26040
+metadata/unity_name = "index_01_R"
+
+[node name="index_02_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/clavicle_R/upperarm_R/lowerarm_R/hand_R/index_01_R"]
+position = Vector3(-0.170858964, -5.57899455e-07, -1.90734859e-08)
+quaternion = Quaternion(0.05209966, -0.0418017283, 0.18654269, 0.980173528)
+scale = Vector3(1, 0.999999762, 0.999999762)
+metadata/unity_id = 6092
+metadata/unity_name = "index_02_R"
+
+[node name="index_02_R_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/clavicle_R/upperarm_R/lowerarm_R/hand_R/index_01_R/index_02_R"]
+position = Vector3(-0, 0.170859426, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13662
+metadata/unity_name = "index_02_R_end"
+
+[node name="middle_01_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/clavicle_R/upperarm_R/lowerarm_R/hand_R"]
+position = Vector3(0.0140279047, 0.159319341, -0.121031776)
+quaternion = Quaternion(0.266138315, -0.605431676, -0.447727174, 0.601800025)
+scale = Vector3(1.00000203, 0.999999702, 0.999998748)
+metadata/unity_id = 19219
+metadata/unity_name = "middle_01_R"
+
+[node name="middle_02_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/clavicle_R/upperarm_R/lowerarm_R/hand_R/middle_01_R"]
+position = Vector3(-0.149304703, -3.52859502e-07, 2.14576712e-08)
+quaternion = Quaternion(-0.116050698, 0.124117024, 0.0676321313, 0.983134329)
+scale = Vector3(0.999999285, 0.999999523, 1.00000072)
+metadata/unity_id = 11128
+metadata/unity_name = "middle_02_R"
+
+[node name="middle_02_R_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/clavicle_R/upperarm_R/lowerarm_R/hand_R/middle_01_R/middle_02_R"]
+position = Vector3(-0, 0.149306074, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10153
+metadata/unity_name = "middle_02_R_end"
+
+[node name="pinky_01_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/clavicle_R/upperarm_R/lowerarm_R/hand_R"]
+position = Vector3(0.0972508565, 0.0819784626, -0.166251138)
+quaternion = Quaternion(0.240258902, -0.789439559, -0.318578333, 0.466442615)
+scale = Vector3(1.00000107, 0.999999464, 0.999999225)
+metadata/unity_id = 8259
+metadata/unity_name = "pinky_01_R"
+
+[node name="pinky_02_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/clavicle_R/upperarm_R/lowerarm_R/hand_R/pinky_01_R"]
+position = Vector3(-0.127273485, -1.7166137e-07, 4.29153424e-08)
+quaternion = Quaternion(-0.114633009, 0.144133732, 0.0793472603, 0.979688108)
+scale = Vector3(1.0000006, 0.999999821, 1)
+metadata/unity_id = 18238
+metadata/unity_name = "pinky_02_R"
+
+[node name="pinky_02_R_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/clavicle_R/upperarm_R/lowerarm_R/hand_R/pinky_01_R/pinky_02_R"]
+position = Vector3(-0, 0.127272904, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17921
+metadata/unity_name = "pinky_02_R_end"
+
+[node name="thumb_01_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/clavicle_R/upperarm_R/lowerarm_R/hand_R"]
+position = Vector3(-0.152254775, 1.83582301e-07, -1.81198118e-07)
+quaternion = Quaternion(0.11932373, 0.00287304819, -0.324630976, 0.93827945)
+scale = Vector3(1.00000024, 1.00000036, 0.999999881)
+metadata/unity_id = 18489
+metadata/unity_name = "thumb_01_R"
+
+[node name="thumb_02_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/clavicle_R/upperarm_R/lowerarm_R/hand_R/thumb_01_R"]
+position = Vector3(-0.121834084, -3.05175774e-07, -7.62939436e-08)
+quaternion = Quaternion(0.0746238455, -0.149234325, -0.0367111489, 0.985298276)
+scale = Vector3(1.0000006, 0.999999225, 0.999999762)
+metadata/unity_id = 11704
+metadata/unity_name = "thumb_02_R"
+
+[node name="thumb_02_R_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/clavicle_R/upperarm_R/lowerarm_R/hand_R/thumb_01_R/thumb_02_R"]
+position = Vector3(-0, 0.121835589, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23408
+metadata/unity_name = "thumb_02_R_end"
+
+[node name="neck_01" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03"]
+position = Vector3(-0.377026498, 1.42534869e-13, 7.99412021e-08)
+quaternion = Quaternion(6.75064982e-08, 9.10550497e-08, 0.303305268, 0.952893436)
+scale = Vector3(1.00000048, 1.00000036, 1.00000012)
+metadata/unity_id = 5560
+metadata/unity_name = "neck_01"
+
+[node name="neck_02" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01"]
+position = Vector3(-0.3304452, 3.81478138e-08, 4.19709245e-08)
+quaternion = Quaternion(2.12653948e-08, 4.42745112e-08, 0.262100905, 0.965040505)
+scale = Vector3(0.999999523, 0.999999642, 1)
+metadata/unity_id = 13829
+metadata/unity_name = "neck_02"
+
+[node name="neck_03" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02"]
+position = Vector3(-0.29534179, -7.62927073e-08, 1.0412732e-08)
+quaternion = Quaternion(2.8853151e-09, 1.1080143e-08, 0.119746476, 0.992804527)
+scale = Vector3(0.999999642, 0.999999583, 1)
+metadata/unity_id = 20761
+metadata/unity_name = "neck_03"
+
+[node name="neck_04" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03"]
+position = Vector3(-0.318707347, 2.86115416e-08, 2.41225635e-08)
+quaternion = Quaternion(-4.76057416e-10, -5.58657964e-09, -0.0256971736, 0.99966979)
+scale = Vector3(1.00000012, 1.00000012, 1)
+metadata/unity_id = 18966
+metadata/unity_name = "neck_04"
+
+[node name="neck_05" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04"]
+position = Vector3(-0.316761911, -3.8145668e-08, -1.23625066e-08)
+quaternion = Quaternion(-9.65536362e-09, -2.44038851e-08, -0.197031826, 0.980397105)
+scale = Vector3(1.0000006, 1.0000006, 1)
+metadata/unity_id = 5305
+metadata/unity_name = "neck_05"
+
+[node name="head" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05"]
+position = Vector3(-0.326052815, 1.2147438e-12, -1.5906334e-08)
+quaternion = Quaternion(0.597048044, -0.802205503, -1.39511556e-07, 1.97945539e-07)
+scale = Vector3(1.00000012, 0.99999994, 1)
+metadata/unity_id = 10058
+metadata/unity_name = "head"
+
+[node name="eye_down_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head"]
+position = Vector3(0.0431924388, 0.256457329, 0.120364308)
+quaternion = Quaternion(1.06581424e-13, 6.56501431e-09, 3.3527634e-08, 1)
+scale = Vector3(0.999999821, 0.999999821, 1)
+metadata/unity_id = 24255
+metadata/unity_name = "eye_down_L"
+
+[node name="eye_down_L_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head/eye_down_L"]
+position = Vector3(-0, 0.246408552, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15879
+metadata/unity_name = "eye_down_L_end"
+
+[node name="eye_down_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head"]
+position = Vector3(0.0431922562, 0.256457299, -0.120364293)
+quaternion = Quaternion(9.4146926e-14, 6.56501076e-09, 4.09782217e-08, 1)
+scale = Vector3(0.999999821, 0.999999821, 1)
+metadata/unity_id = 25250
+metadata/unity_name = "eye_down_R"
+
+[node name="eye_down_R_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head/eye_down_R"]
+position = Vector3(-0, 0.246408552, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12738
+metadata/unity_name = "eye_down_R_end"
+
+[node name="eye_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head"]
+position = Vector3(0.0743987337, 0.23243387, 0.107982144)
+quaternion = Quaternion(0.553819358, -0.668541729, -0.313239753, -0.384989619)
+scale = Vector3(0.999999762, 0.999999166, 0.999999404)
+metadata/unity_id = 25499
+metadata/unity_name = "eye_L"
+
+[node name="eye_L_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head/eye_L"]
+position = Vector3(-0, 0.246408492, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6956
+metadata/unity_name = "eye_L_end"
+
+[node name="eye_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head"]
+position = Vector3(0.0743988901, 0.2324339, -0.107982188)
+quaternion = Quaternion(0.55381912, -0.668541968, 0.313239366, 0.384989768)
+scale = Vector3(0.999999762, 0.999999225, 0.999999464)
+metadata/unity_id = 8093
+metadata/unity_name = "eye_R"
+
+[node name="eye_R_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head/eye_R"]
+position = Vector3(-0, 0.246408492, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24910
+metadata/unity_name = "eye_R_end"
+
+[node name="eye_up_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head"]
+position = Vector3(0.0996032506, 0.242347136, 0.130954444)
+quaternion = Quaternion(1.06581424e-13, 6.89882373e-09, 5.7742028e-08, 1)
+scale = Vector3(0.999999821, 0.999999762, 1)
+metadata/unity_id = 7390
+metadata/unity_name = "eye_up_L"
+
+[node name="eye_up_L_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head/eye_up_L"]
+position = Vector3(-0, 0.246408388, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5037
+metadata/unity_name = "eye_up_L_end"
+
+[node name="eye_up_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head"]
+position = Vector3(0.0996033847, 0.242347211, -0.130954459)
+quaternion = Quaternion(1.06581424e-13, 6.89882373e-09, 5.7742028e-08, 1)
+scale = Vector3(0.999999821, 0.999999762, 1)
+metadata/unity_id = 24223
+metadata/unity_name = "eye_up_R"
+
+[node name="eye_up_R_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head/eye_up_R"]
+position = Vector3(-0, 0.246408388, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9937
+metadata/unity_name = "eye_up_R_end"
+
+[node name="jaw" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head"]
+position = Vector3(-0.117123179, -1.90719049e-08, 1.09699609e-08)
+quaternion = Quaternion(-0.887501657, 0.460804552, -7.66141568e-08, 1.79608719e-07)
+scale = Vector3(0.999999881, 0.999999702, 1)
+metadata/unity_id = 24144
+metadata/unity_name = "jaw"
+
+[node name="jaw_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head/jaw"]
+position = Vector3(-0, 0.246408477, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23695
+metadata/unity_name = "jaw_end"
+
+[node name="tongue_01" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head"]
+position = Vector3(-0.142798975, 0.0752606243, 8.99024588e-09)
+quaternion = Quaternion(0.695663452, -0.718367875, 1.15029124e-07, -2.16489994e-07)
+scale = Vector3(0.999999404, 0.999999523, 1)
+metadata/unity_id = 26914
+metadata/unity_name = "tongue_01"
+
+[node name="tongue_02" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head/tongue_01"]
+position = Vector3(-0.108561464, -3.24247452e-07, 8.02232503e-09)
+quaternion = Quaternion(-8.49563264e-09, -3.03837311e-08, -0.0813894644, 0.996682405)
+scale = Vector3(1.00000024, 1.00000024, 1)
+metadata/unity_id = 6994
+metadata/unity_name = "tongue_02"
+
+[node name="tongue_03" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head/tongue_01/tongue_02"]
+position = Vector3(-0.0995156094, -1.90733246e-07, 1.34213769e-08)
+quaternion = Quaternion(2.48689105e-08, 4.43465034e-08, 0.280485988, 0.959858119)
+scale = Vector3(1.00000036, 1.00000036, 1.00000012)
+metadata/unity_id = 18408
+metadata/unity_name = "tongue_03"
+
+[node name="tongue_03_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head/tongue_01/tongue_02/tongue_03"]
+position = Vector3(-0, 0.0995144024, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27210
+metadata/unity_name = "tongue_03_end"
+
+[node name="VFX_Dragon_Fire_ActiveAbility" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head"]
+position = Vector3(-0.330000013, 0.569999993, -0)
+quaternion = Quaternion(0.270598054, 0.65328151, -0.270598054, 0.65328151)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21696
+metadata/unity_name = "VFX_Dragon_Fire_ActiveAbility"
+visible = false
+process_mode = 4
+
+[node name="root" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head/VFX_Dragon_Fire_ActiveAbility"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-4.47034481e-08, -8.94068961e-08, -2.98022975e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19275
+metadata/unity_name = "root"
+
+[node name="Smoke_01" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head/VFX_Dragon_Fire_ActiveAbility/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7018
+metadata/unity_name = "Smoke_01"
+
+[node name="Tube_01_Dissolve" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head/VFX_Dragon_Fire_ActiveAbility/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27073
+metadata/unity_name = "Tube_01_Dissolve"
+
+[node name="Cone_01" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head/VFX_Dragon_Fire_ActiveAbility/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10796
+metadata/unity_name = "Cone_01"
+
+[node name="Cone_02" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head/VFX_Dragon_Fire_ActiveAbility/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22462
+metadata/unity_name = "Cone_02"
+
+[node name="Cone_03" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head/VFX_Dragon_Fire_ActiveAbility/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18185
+metadata/unity_name = "Cone_03"
+
+[node name="Sparks_01" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head/VFX_Dragon_Fire_ActiveAbility/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15333
+metadata/unity_name = "Sparks_01"
+
+[node name="Noise_01" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head/VFX_Dragon_Fire_ActiveAbility/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25667
+metadata/unity_name = "Noise_01"
+
+[node name="VFX_Dragon_Poison_ActiveAbility" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head"]
+position = Vector3(-0.330000013, 0.569999993, 0)
+quaternion = Quaternion(0.270598054, 0.65328151, -0.270598054, 0.65328151)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26207
+metadata/unity_name = "VFX_Dragon_Poison_ActiveAbility"
+visible = false
+process_mode = 4
+
+[node name="root" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head/VFX_Dragon_Poison_ActiveAbility"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-4.47034481e-08, -8.94068961e-08, -2.98022975e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12857
+metadata/unity_name = "root"
+
+[node name="Smoke_01" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head/VFX_Dragon_Poison_ActiveAbility/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15597
+metadata/unity_name = "Smoke_01"
+
+[node name="Tube_01_Dissolve" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head/VFX_Dragon_Poison_ActiveAbility/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17569
+metadata/unity_name = "Tube_01_Dissolve"
+
+[node name="Cone_01" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head/VFX_Dragon_Poison_ActiveAbility/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5516
+metadata/unity_name = "Cone_01"
+
+[node name="Cone_02" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head/VFX_Dragon_Poison_ActiveAbility/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6526
+metadata/unity_name = "Cone_02"
+
+[node name="Cone_03" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head/VFX_Dragon_Poison_ActiveAbility/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5770
+metadata/unity_name = "Cone_03"
+
+[node name="Sparks_01" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head/VFX_Dragon_Poison_ActiveAbility/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11706
+metadata/unity_name = "Sparks_01"
+
+[node name="Noise_01" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head/VFX_Dragon_Poison_ActiveAbility/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16786
+metadata/unity_name = "Noise_01"
+
+[node name="VFX_Dragon_Frost_ActiveAbility" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head"]
+position = Vector3(-0.330000013, 0.569999993, 0)
+quaternion = Quaternion(0.270598054, 0.65328151, -0.270598054, 0.65328151)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16297
+metadata/unity_name = "VFX_Dragon_Frost_ActiveAbility"
+
+[node name="root" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head/VFX_Dragon_Frost_ActiveAbility"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-4.47034481e-08, -8.94068961e-08, -2.98022975e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5957
+metadata/unity_name = "root"
+
+[node name="Smoke_01" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head/VFX_Dragon_Frost_ActiveAbility/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15081
+metadata/unity_name = "Smoke_01"
+
+[node name="Tube_01_Dissolve" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head/VFX_Dragon_Frost_ActiveAbility/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6519
+metadata/unity_name = "Tube_01_Dissolve"
+
+[node name="Cone_01" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head/VFX_Dragon_Frost_ActiveAbility/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16048
+metadata/unity_name = "Cone_01"
+
+[node name="Cone_02" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head/VFX_Dragon_Frost_ActiveAbility/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5301
+metadata/unity_name = "Cone_02"
+
+[node name="Cone_03" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head/VFX_Dragon_Frost_ActiveAbility/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18735
+metadata/unity_name = "Cone_03"
+
+[node name="Sparks_01" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head/VFX_Dragon_Frost_ActiveAbility/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22009
+metadata/unity_name = "Sparks_01"
+
+[node name="Noise_01" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/neck_03/neck_04/neck_05/head/VFX_Dragon_Frost_ActiveAbility/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7574
+metadata/unity_name = "Noise_01"
+
+[node name="wing_scapula_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03"]
+position = Vector3(0.36950323, 0.0588025972, -0.1635461)
+quaternion = Quaternion(0.192394868, 0.355393052, -0.277646214, 0.87154609)
+scale = Vector3(1.00000012, 1.00000012, 1)
+metadata/unity_id = 23953
+metadata/unity_name = "wing_scapula_L"
+
+[node name="wing_shoulder_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_L"]
+position = Vector3(0.361538649, 1.62124635e-07, -1.61987543e-08)
+quaternion = Quaternion(-0.121345446, -0.117671207, 0.170393407, 0.97077024)
+scale = Vector3(1.00000012, 1.00000012, 0.99999994)
+metadata/unity_id = 26254
+metadata/unity_name = "wing_shoulder_L"
+
+[node name="wing_elbow_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_L/wing_shoulder_L"]
+position = Vector3(1.07253242, 3.05175774e-07, 1.38282772e-07)
+quaternion = Quaternion(5.47719168e-08, -1.00018269e-07, -0.623067677, 0.782167912)
+scale = Vector3(1, 1, 1.00000012)
+metadata/unity_id = 12515
+metadata/unity_name = "wing_elbow_L"
+
+[node name="wing_wrist_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_L/wing_shoulder_L/wing_elbow_L"]
+position = Vector3(1.84912324, 4.19616697e-07, 3.24249271e-07)
+quaternion = Quaternion(-0.12250977, -0.0109610315, 0.239533618, 0.963065386)
+scale = Vector3(1, 1, 0.99999994)
+metadata/unity_id = 26791
+metadata/unity_name = "wing_wrist_L"
+
+[node name="wing_index_01_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_L/wing_shoulder_L/wing_elbow_L/wing_wrist_L"]
+position = Vector3(0.291927457, 0.205148727, 0.056289386)
+quaternion = Quaternion(0.134030953, -0.143829003, 0.433461696, 0.879465699)
+scale = Vector3(0.99999994, 0.99999994, 0.999999881)
+metadata/unity_id = 25953
+metadata/unity_name = "wing_index_01_L"
+
+[node name="wing_index_02_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_L/wing_shoulder_L/wing_elbow_L/wing_wrist_L/wing_index_01_L"]
+position = Vector3(1.08573854, 1.04904174e-07, -9.11951048e-08)
+quaternion = Quaternion(0.00900755357, 0.00777728902, 0.195588261, 0.980613947)
+scale = Vector3(0.999999702, 0.999999881, 0.999999821)
+metadata/unity_id = 7848
+metadata/unity_name = "wing_index_02_L"
+
+[node name="wing_index_03_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_L/wing_shoulder_L/wing_elbow_L/wing_wrist_L/wing_index_01_L/wing_index_02_L"]
+position = Vector3(1.34985518, -3.81469704e-07, 2.28881831e-07)
+quaternion = Quaternion(0.598548472, 0.181569725, 0.17092675, 0.761285901)
+scale = Vector3(1, 1.00000012, 1)
+metadata/unity_id = 15398
+metadata/unity_name = "wing_index_03_L"
+
+[node name="wing_index_03_L_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_L/wing_shoulder_L/wing_elbow_L/wing_wrist_L/wing_index_01_L/wing_index_02_L/wing_index_03_L"]
+position = Vector3(-0, 1.34985518, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24864
+metadata/unity_name = "wing_index_03_L_end"
+
+[node name="wing_middle_01_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_L/wing_shoulder_L/wing_elbow_L/wing_wrist_L"]
+position = Vector3(0.0671323538, 0.273984224, 0.0907564685)
+quaternion = Quaternion(0.350546807, 0.0861944705, 0.615463555, 0.700636923)
+scale = Vector3(0.999999881, 0.999999881, 0.999999642)
+metadata/unity_id = 24619
+metadata/unity_name = "wing_middle_01_L"
+
+[node name="wing_middle_02_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_L/wing_shoulder_L/wing_elbow_L/wing_wrist_L/wing_middle_01_L"]
+position = Vector3(1.13314056, -2.86102278e-07, 1.90734852e-07)
+quaternion = Quaternion(0.123758756, 0.114618428, 0.13683188, 0.97612673)
+scale = Vector3(1, 0.99999994, 1)
+metadata/unity_id = 15139
+metadata/unity_name = "wing_middle_02_L"
+
+[node name="wing_middle_03_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_L/wing_shoulder_L/wing_elbow_L/wing_wrist_L/wing_middle_01_L/wing_middle_02_L"]
+position = Vector3(1.26906478, -9.5367426e-08, 7.62939408e-07)
+quaternion = Quaternion(0.292097777, 0.211006373, -0.016593717, 0.932673514)
+scale = Vector3(1, 1.00000012, 1)
+metadata/unity_id = 6292
+metadata/unity_name = "wing_middle_03_L"
+
+[node name="wing_middle_03_L_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_L/wing_shoulder_L/wing_elbow_L/wing_wrist_L/wing_middle_01_L/wing_middle_02_L/wing_middle_03_L"]
+position = Vector3(-0, 1.26906478, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19879
+metadata/unity_name = "wing_middle_03_L_end"
+
+[node name="wing_pinky_01_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_L/wing_shoulder_L/wing_elbow_L/wing_wrist_L"]
+position = Vector3(-0.139703542, 0.196565151, 0.0598759651)
+quaternion = Quaternion(0.447111189, 0.238530427, 0.709623516, 0.489519477)
+scale = Vector3(0.999999821, 0.99999994, 0.999999881)
+metadata/unity_id = 26481
+metadata/unity_name = "wing_pinky_01_L"
+
+[node name="wing_pinky_02_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_L/wing_shoulder_L/wing_elbow_L/wing_wrist_L/wing_pinky_01_L"]
+position = Vector3(0.945535541, 1.91926958e-07, -1.54972071e-08)
+quaternion = Quaternion(0.0178406648, 0.228565753, 0.0817195922, 0.969928503)
+scale = Vector3(1, 1.00000024, 1)
+metadata/unity_id = 19936
+metadata/unity_name = "wing_pinky_02_L"
+
+[node name="wing_pinky_03_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_L/wing_shoulder_L/wing_elbow_L/wing_wrist_L/wing_pinky_01_L/wing_pinky_02_L"]
+position = Vector3(1.0582267, -3.14712508e-07, 4.79221342e-07)
+quaternion = Quaternion(0.0262269061, 0.211220846, -0.0375282019, 0.976365507)
+scale = Vector3(0.999999881, 1.00000024, 0.99999994)
+metadata/unity_id = 22959
+metadata/unity_name = "wing_pinky_03_L"
+
+[node name="wing_pinky_03_L_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_L/wing_shoulder_L/wing_elbow_L/wing_wrist_L/wing_pinky_01_L/wing_pinky_02_L/wing_pinky_03_L"]
+position = Vector3(-0, 1.0582267, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19841
+metadata/unity_name = "wing_pinky_03_L_end"
+
+[node name="wing_thumb_01_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_L/wing_shoulder_L/wing_elbow_L/wing_wrist_L"]
+position = Vector3(0.389751047, 5.14984094e-07, -2.6702881e-07)
+quaternion = Quaternion(0.0153228389, -0.0539637133, 0.093430765, 0.994044185)
+scale = Vector3(1, 0.99999994, 0.999999821)
+metadata/unity_id = 15328
+metadata/unity_name = "wing_thumb_01_L"
+
+[node name="wing_thumb_02_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_L/wing_shoulder_L/wing_elbow_L/wing_wrist_L/wing_thumb_01_L"]
+position = Vector3(0.294956803, 4.19616697e-07, 2.09808348e-07)
+quaternion = Quaternion(-0.0688104555, -0.250007719, 0.165846318, 0.951449573)
+scale = Vector3(1, 1.00000012, 1.00000012)
+metadata/unity_id = 15692
+metadata/unity_name = "wing_thumb_02_L"
+
+[node name="wing_thumb_03_L" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_L/wing_shoulder_L/wing_elbow_L/wing_wrist_L/wing_thumb_01_L/wing_thumb_02_L"]
+position = Vector3(0.376690358, 0, -7.62939436e-08)
+quaternion = Quaternion(-0.049675066, -0.127259895, -0.0683010891, 0.988267362)
+scale = Vector3(0.999999762, 1, 1)
+metadata/unity_id = 23135
+metadata/unity_name = "wing_thumb_03_L"
+
+[node name="wing_thumb_03_L_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_L/wing_shoulder_L/wing_elbow_L/wing_wrist_L/wing_thumb_01_L/wing_thumb_02_L/wing_thumb_03_L"]
+position = Vector3(-0, 0.376691133, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21847
+metadata/unity_name = "wing_thumb_03_L_end"
+
+[node name="wing_scapula_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03"]
+position = Vector3(0.369503289, 0.0588027686, 0.163545817)
+quaternion = Quaternion(-0.355392784, 0.192395091, 0.871546149, 0.277646363)
+scale = Vector3(1.00000024, 0.999999881, 1.00000012)
+metadata/unity_id = 11607
+metadata/unity_name = "wing_scapula_R"
+
+[node name="wing_shoulder_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_R"]
+position = Vector3(-0.361538559, -9.05990589e-08, -1.82381726e-07)
+quaternion = Quaternion(-0.121345513, -0.117671415, 0.170393407, 0.97077024)
+scale = Vector3(0.999999881, 1, 0.999999762)
+metadata/unity_id = 10368
+metadata/unity_name = "wing_shoulder_R"
+
+[node name="wing_elbow_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_R/wing_shoulder_R"]
+position = Vector3(-1.07253277, 0, -1.43051144e-08)
+quaternion = Quaternion(1.61934409e-07, -6.19160758e-08, -0.623067737, 0.782167912)
+scale = Vector3(0.99999994, 0.999999821, 1)
+metadata/unity_id = 5743
+metadata/unity_name = "wing_elbow_R"
+
+[node name="wing_wrist_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_R/wing_shoulder_R/wing_elbow_R"]
+position = Vector3(-1.84912455, -2.28881831e-07, -1.62124635e-07)
+quaternion = Quaternion(-0.12251009, -0.0109610641, 0.239533544, 0.963065326)
+scale = Vector3(1, 1, 1.00000012)
+metadata/unity_id = 12582
+metadata/unity_name = "wing_wrist_R"
+
+[node name="wing_index_01_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_R/wing_shoulder_R/wing_elbow_R/wing_wrist_R"]
+position = Vector3(-0.291927189, -0.20514819, -0.0562898256)
+quaternion = Quaternion(0.134030923, -0.143828884, 0.433461726, 0.879465699)
+scale = Vector3(1, 0.999999881, 1.00000012)
+metadata/unity_id = 26300
+metadata/unity_name = "wing_index_01_R"
+
+[node name="wing_index_02_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_R/wing_shoulder_R/wing_elbow_R/wing_wrist_R/wing_index_01_R"]
+position = Vector3(-1.08573949, 4.005432e-07, -2.35736366e-07)
+quaternion = Quaternion(0.00900734961, 0.00777741941, 0.195588112, 0.980613947)
+scale = Vector3(0.999999762, 1, 0.99999994)
+metadata/unity_id = 21165
+metadata/unity_name = "wing_index_02_R"
+
+[node name="wing_index_03_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_R/wing_shoulder_R/wing_elbow_R/wing_wrist_R/wing_index_01_R/wing_index_02_R"]
+position = Vector3(-1.3498559, -4.57763662e-07, -7.58171041e-07)
+quaternion = Quaternion(0.598548472, 0.181569651, 0.170926705, 0.761285901)
+scale = Vector3(1, 1.00000024, 1.00000012)
+metadata/unity_id = 24613
+metadata/unity_name = "wing_index_03_R"
+
+[node name="wing_index_03_R_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_R/wing_shoulder_R/wing_elbow_R/wing_wrist_R/wing_index_01_R/wing_index_02_R/wing_index_03_R"]
+position = Vector3(-0, 1.34985483, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15638
+metadata/unity_name = "wing_index_03_R_end"
+
+[node name="wing_middle_01_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_R/wing_shoulder_R/wing_elbow_R/wing_wrist_R"]
+position = Vector3(-0.0671321079, -0.273983747, -0.0907570645)
+quaternion = Quaternion(0.350546896, 0.0861942098, 0.615463376, 0.700637043)
+scale = Vector3(1.00000012, 1, 1)
+metadata/unity_id = 19773
+metadata/unity_name = "wing_middle_01_R"
+
+[node name="wing_middle_02_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_R/wing_shoulder_R/wing_elbow_R/wing_wrist_R/wing_middle_01_R"]
+position = Vector3(-1.13314176, 7.62939436e-08, -4.48226928e-07)
+quaternion = Quaternion(0.123758666, 0.114618249, 0.136831805, 0.97612679)
+scale = Vector3(1, 0.99999994, 0.99999994)
+metadata/unity_id = 20353
+metadata/unity_name = "wing_middle_02_R"
+
+[node name="wing_middle_03_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_R/wing_shoulder_R/wing_elbow_R/wing_wrist_R/wing_middle_01_R/wing_middle_02_R"]
+position = Vector3(-1.26906574, -6.10351549e-07, -1.7166137e-07)
+quaternion = Quaternion(0.292097837, 0.211006522, -0.0165936798, 0.932673454)
+scale = Vector3(1, 1, 1.00000036)
+metadata/unity_id = 22369
+metadata/unity_name = "wing_middle_03_R"
+
+[node name="wing_middle_03_R_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_R/wing_shoulder_R/wing_elbow_R/wing_wrist_R/wing_middle_01_R/wing_middle_02_R/wing_middle_03_R"]
+position = Vector3(-0, 1.26906502, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13992
+metadata/unity_name = "wing_middle_03_R_end"
+
+[node name="wing_pinky_01_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_R/wing_shoulder_R/wing_elbow_R/wing_wrist_R"]
+position = Vector3(0.139703959, -0.196564898, -0.0598761179)
+quaternion = Quaternion(0.44711104, 0.23853007, 0.709623635, 0.489519566)
+scale = Vector3(1.00000012, 1, 0.999999762)
+metadata/unity_id = 13087
+metadata/unity_name = "wing_pinky_01_R"
+
+[node name="wing_pinky_02_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_R/wing_shoulder_R/wing_elbow_R/wing_wrist_R/wing_pinky_01_R"]
+position = Vector3(-0.945536613, -4.49419019e-07, -9.88841066e-07)
+quaternion = Quaternion(0.0178412572, 0.228565618, 0.0817195252, 0.969928563)
+scale = Vector3(1, 0.999999881, 1)
+metadata/unity_id = 20218
+metadata/unity_name = "wing_pinky_02_R"
+
+[node name="wing_pinky_03_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_R/wing_shoulder_R/wing_elbow_R/wing_wrist_R/wing_pinky_01_R/wing_pinky_02_R"]
+position = Vector3(-1.05822742, -4.10079934e-07, 4.74452975e-07)
+quaternion = Quaternion(0.0262269769, 0.211220816, -0.0375281721, 0.976365507)
+scale = Vector3(0.999999881, 1.00000024, 1)
+metadata/unity_id = 11613
+metadata/unity_name = "wing_pinky_03_R"
+
+[node name="wing_pinky_03_R_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_R/wing_shoulder_R/wing_elbow_R/wing_wrist_R/wing_pinky_01_R/wing_pinky_02_R/wing_pinky_03_R"]
+position = Vector3(-0, 1.05822599, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23103
+metadata/unity_name = "wing_pinky_03_R_end"
+
+[node name="wing_thumb_01_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_R/wing_shoulder_R/wing_elbow_R/wing_wrist_R"]
+position = Vector3(-0.389751285, -1.81198118e-07, 2.6702881e-07)
+quaternion = Quaternion(0.0153231751, -0.0539638363, 0.0934312791, 0.994044125)
+scale = Vector3(0.999999881, 1, 1.00000012)
+metadata/unity_id = 11445
+metadata/unity_name = "wing_thumb_01_R"
+
+[node name="wing_thumb_02_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_R/wing_shoulder_R/wing_elbow_R/wing_wrist_R/wing_thumb_01_R"]
+position = Vector3(-0.294957072, 1.52587887e-07, 9.5367426e-08)
+quaternion = Quaternion(-0.0688104555, -0.250007778, 0.165845722, 0.951449692)
+scale = Vector3(1.00000012, 0.999999821, 1)
+metadata/unity_id = 12624
+metadata/unity_name = "wing_thumb_02_R"
+
+[node name="wing_thumb_03_R" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_R/wing_shoulder_R/wing_elbow_R/wing_wrist_R/wing_thumb_01_R/wing_thumb_02_R"]
+position = Vector3(-0.376691431, 3.81469704e-07, 1.52587887e-07)
+quaternion = Quaternion(-0.049675554, -0.127259776, -0.0683013052, 0.988267303)
+scale = Vector3(0.999999821, 1, 1)
+metadata/unity_id = 14565
+metadata/unity_name = "wing_thumb_03_R"
+
+[node name="wing_thumb_03_R_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/spine_01/spine_02/spine_03/wing_scapula_R/wing_shoulder_R/wing_elbow_R/wing_wrist_R/wing_thumb_01_R/wing_thumb_02_R/wing_thumb_03_R"]
+position = Vector3(-0, 0.37669012, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16441
+metadata/unity_name = "wing_thumb_03_R_end"
+
+[node name="Tail_01" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis"]
+position = Vector3(-0.324834824, 3.05175689e-07, 4.62914436e-08)
+quaternion = Quaternion(-1.47757904e-08, 1.24337811e-08, 0.019040281, 0.999818742)
+scale = Vector3(1.00000036, 1.00000036, 1)
+metadata/unity_id = 21913
+metadata/unity_name = "Tail_01"
+
+[node name="Tail_02" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Tail_01"]
+position = Vector3(-0.546001315, 7.62936523e-08, 2.07889499e-07)
+quaternion = Quaternion(6.62596111e-09, -1.31974529e-08, 0.0801838934, 0.996780097)
+scale = Vector3(0.999999762, 0.999999881, 1)
+metadata/unity_id = 15801
+metadata/unity_name = "Tail_02"
+
+[node name="Tail_03" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Tail_01/Tail_02"]
+position = Vector3(-0.669974566, 1.14440425e-07, 1.64232986e-07)
+quaternion = Quaternion(2.17584954e-08, -3.10325063e-08, 0.170828432, 0.985300779)
+scale = Vector3(1.0000006, 1.0000006, 1)
+metadata/unity_id = 13607
+metadata/unity_name = "Tail_03"
+
+[node name="Tail_04" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Tail_01/Tail_02/Tail_03"]
+position = Vector3(-0.636481881, -1.90735392e-07, 1.21114851e-07)
+quaternion = Quaternion(3.06915737e-08, -2.42374174e-08, 0.167302608, 0.985905588)
+scale = Vector3(0.999999762, 0.999999762, 1)
+metadata/unity_id = 10597
+metadata/unity_name = "Tail_04"
+
+[node name="Tail_05" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Tail_01/Tail_02/Tail_03/Tail_04"]
+position = Vector3(-0.615448475, 2.57491649e-07, 1.68033651e-07)
+quaternion = Quaternion(1.06690523e-08, -4.88294338e-09, 0.050107494, 0.998743832)
+scale = Vector3(0.999999583, 0.999999642, 1)
+metadata/unity_id = 21923
+metadata/unity_name = "Tail_05"
+
+[node name="Tail_06" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Tail_01/Tail_02/Tail_03/Tail_04/Tail_05"]
+position = Vector3(-0.549399793, 2.28881447e-07, 1.19665657e-07)
+quaternion = Quaternion(-3.5929812e-08, 2.47912606e-08, -0.18657425, 0.982440889)
+scale = Vector3(1.00000024, 1.00000036, 1)
+metadata/unity_id = 5907
+metadata/unity_name = "Tail_06"
+
+[node name="Tail_07" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Tail_01/Tail_02/Tail_03/Tail_04/Tail_05/Tail_06"]
+position = Vector3(-0.414695591, 1.52586935e-07, 1.29396014e-07)
+quaternion = Quaternion(-2.87369417e-08, 6.43758185e-08, -0.286967397, 0.9579404)
+scale = Vector3(1.00000024, 1.00000024, 1)
+metadata/unity_id = 12595
+metadata/unity_name = "Tail_07"
+
+[node name="Tail_07_end" type="Node3D" parent="Dragon_Frost/DragonMod/root/pelvis/Tail_01/Tail_02/Tail_03/Tail_04/Tail_05/Tail_06/Tail_07"]
+position = Vector3(-0, 0.414693564, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16039
+metadata/unity_name = "Tail_07_end"
+
+[node name="Tongue" type="Node3D" parent="Dragon_Frost/DragonMod"]
+position = Vector3(1.69406586e-23, -3.8146986e-08, 1.81198118e-07)
+quaternion = Quaternion(0.707106829, -2.9245249e-24, 1.75471538e-24, 0.707106709)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16224
+metadata/unity_name = "Tongue"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Dragon_Frost/DragonMod/Tongue"]
+mesh = ExtResource("7")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="Wings_2Sided" type="Node3D" parent="Dragon_Frost/DragonMod"]
+position = Vector3(-6.28153813e-08, 3.03241023e-08, 1.56143365e-08)
+quaternion = Quaternion(0.707106829, 3.29272276e-10, -3.29272304e-10, 0.707106709)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10341
+metadata/unity_name = "Wings_2Sided"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Dragon_Frost/DragonMod/Wings_2Sided"]
+mesh = ExtResource("8")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="OverheadSlot" type="Node3D" parent="Dragon_Frost"]
+position = Vector3(0, 5, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18386
+metadata/unity_name = "OverheadSlot"
+
+[node name="VFXParent" type="Node3D" parent="Dragon_Frost"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24735
+metadata/unity_name = "VFXParent"

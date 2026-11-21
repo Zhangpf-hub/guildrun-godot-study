@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3]
+[ext_resource type="Texture2D" path="res://textures/sharedassets1_1422.png" id="1"]
+
+[resource]
+resource_name = "BlueCavern_Waterfall_Mat_Animated"
+albedo_texture = ExtResource("1")
+transparency = 1
+cull_mode = 2
+albedo_color = Color(0.293832302, 0.386482269, 0.669811308, 1)
+metadata/unity_shader = "Shader Graphs/VFXTrail_SG"

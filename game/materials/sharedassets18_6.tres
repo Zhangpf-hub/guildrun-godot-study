@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" format=3]
+[ext_resource type="Texture2D" path="res://textures/sharedassets18_12.png" id="1"]
+[ext_resource type="Shader" path="res://materials/environment_plane_transparent.gdshader" id="2"]
+
+[resource]
+resource_name = "Grid_Mat"
+shader = ExtResource("2")
+shader_parameter/tint = Vector3(1, 1, 1)
+shader_parameter/main_texture = ExtResource("1")
+metadata/unity_shader = "Shader Graphs/EnvironmentPlane_SG"

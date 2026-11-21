@@ -1,0 +1,615 @@
+[gd_scene format=3]
+[ext_resource type="ArrayMesh" path="res://meshes/unity_default_resources_10209.obj" id="1"]
+[ext_resource type="ShaderMaterial" path="res://materials/sharedassets7_10.tres" id="2"]
+[ext_resource type="ShaderMaterial" path="res://materials/sharedassets18_6.tres" id="3"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets18_13.obj" id="4"]
+[ext_resource type="ShaderMaterial" path="res://materials/sharedassets19_3.tres" id="5"]
+[ext_resource type="ShaderMaterial" path="res://materials/sharedassets18_5.tres" id="6"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets19_7.obj" id="7"]
+[ext_resource type="ShaderMaterial" path="res://materials/sharedassets19_2.tres" id="8"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets18_29.png" id="9"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets18_28.png" id="10"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets1_4632.png" id="11"]
+[ext_resource type="ArrayMesh" path="res://meshes/unity_default_resources_10202.obj" id="12"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_1167.tres" id="13"]
+
+[node name="Environment_FightScenarioRoom_Evening" type="Node3D"]
+
+[node name="ShadowPlane" type="Node3D" parent="."]
+position = Vector3(9.69999981, 0.100000001, -6.30000019)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(2.5, 2.5, 2.5)
+metadata/unity_id = 2
+metadata/unity_name = "ShadowPlane"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="ShadowPlane"]
+mesh = ExtResource("1")
+visible = true
+surface_material_override/0 = ExtResource("2")
+cast_shadow = 0
+
+[node name="PostProcessing" type="Node3D" parent="."]
+position = Vector3(58.9327431, -11.2559824, -10.263546)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4
+metadata/unity_name = "PostProcessing"
+
+[node name="=====Timeline" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7
+metadata/unity_name = "=====Timeline"
+
+[node name="BackgroundPlanes" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11
+metadata/unity_name = "BackgroundPlanes"
+
+[node name="Foreground" type="Node3D" parent="BackgroundPlanes"]
+position = Vector3(32, 12, 25)
+quaternion = Quaternion(-0.277308047, 0.0913352966, -0.00289992429, 0.956425488)
+scale = Vector3(0.5, 0.5, 0.5)
+metadata/unity_id = 25
+metadata/unity_name = "Foreground"
+
+[node name="Grid" type="Node3D" parent="BackgroundPlanes"]
+position = Vector3(9.73999977, 0.100000001, -6.09000015)
+quaternion = Quaternion(0, -1, -0, 0)
+scale = Vector3(2.21199989, 0, 2.21199989)
+metadata/unity_id = 6
+metadata/unity_name = "Grid"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="BackgroundPlanes/Grid"]
+mesh = ExtResource("1")
+visible = true
+surface_material_override/0 = ExtResource("3")
+cast_shadow = 0
+
+[node name="Crystals_FightRoom_Night" type="Node3D" parent="BackgroundPlanes"]
+position = Vector3(-3.4000001, -0.545300007, -4)
+quaternion = Quaternion(-0.257834226, 0.084186025, 0.0225575808, 0.962250173)
+scale = Vector3(1.18391228, 1.18391204, 1.18391204)
+metadata/unity_id = 62
+metadata/unity_name = "Crystals_FightRoom_Night"
+
+[node name="Crystals_0" type="Node3D" parent="BackgroundPlanes/Crystals_FightRoom_Night"]
+position = Vector3(-13.8999996, 9.39999962, -13.8000002)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(5.27840567, 5.27840567, 5.27840567)
+metadata/unity_id = 56
+metadata/unity_name = "Crystals_0"
+
+[node name="Crystals_Highlights_0" type="Node3D" parent="BackgroundPlanes/Crystals_FightRoom_Night/Crystals_0"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 64
+metadata/unity_name = "Crystals_Highlights_0"
+
+[node name="Crystal_Glow" type="Node3D" parent="BackgroundPlanes/Crystals_FightRoom_Night/Crystals_0"]
+position = Vector3(0.417999476, -1.63499999, 0.135000035)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 55
+metadata/unity_name = "Crystal_Glow"
+
+[node name="VFX_Glow_Crystal" type="Node3D" parent="BackgroundPlanes/Crystals_FightRoom_Night/Crystals_0"]
+position = Vector3(-0.129999995, 0.00999999978, -0.0199999996)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 40
+metadata/unity_name = "VFX_Glow_Crystal"
+
+[node name="Crystals_1" type="Node3D" parent="BackgroundPlanes/Crystals_FightRoom_Night"]
+position = Vector3(5.09999943, 14.1999979, -22.3999977)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1.42429996, 1.42430007, 1.42430007)
+metadata/unity_id = 65
+metadata/unity_name = "Crystals_1"
+
+[node name="Crystals_Highlights_1" type="Node3D" parent="BackgroundPlanes/Crystals_FightRoom_Night/Crystals_1"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 28
+metadata/unity_name = "Crystals_Highlights_1"
+
+[node name="Crystal_Glow" type="Node3D" parent="BackgroundPlanes/Crystals_FightRoom_Night/Crystals_1"]
+position = Vector3(0.0399999991, -1.63, 0.639999986)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 61
+metadata/unity_name = "Crystal_Glow"
+
+[node name="Ray_01" type="Node3D" parent="BackgroundPlanes/Crystals_FightRoom_Night/Crystals_1"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 3
+metadata/unity_name = "Ray_01"
+
+[node name="VFX_Glow_Crystal" type="Node3D" parent="BackgroundPlanes/Crystals_FightRoom_Night/Crystals_1"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 53
+metadata/unity_name = "VFX_Glow_Crystal"
+
+[node name="Crystals_2" type="Node3D" parent="BackgroundPlanes/Crystals_FightRoom_Night"]
+position = Vector3(-3.11678505, -4.02901649, 10.5835571)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(3.39969444, 3.39968753, 3.39969611)
+metadata/unity_id = 70
+metadata/unity_name = "Crystals_2"
+
+[node name="Crystals_Highlights_0" type="Node3D" parent="BackgroundPlanes/Crystals_FightRoom_Night/Crystals_2"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 51
+metadata/unity_name = "Crystals_Highlights_0"
+
+[node name="Crystal_Glow" type="Node3D" parent="BackgroundPlanes/Crystals_FightRoom_Night/Crystals_2"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 39
+metadata/unity_name = "Crystal_Glow"
+
+[node name="VFX_Glow_Crystal" type="Node3D" parent="BackgroundPlanes/Crystals_FightRoom_Night/Crystals_2"]
+position = Vector3(0.148000002, -0.0520000011, -0.00100000005)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 60
+metadata/unity_name = "VFX_Glow_Crystal"
+
+[node name="Crystals_3" type="Node3D" parent="BackgroundPlanes/Crystals_FightRoom_Night"]
+position = Vector3(21.8299999, -4.1500001, 7.11999989)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 71
+metadata/unity_name = "Crystals_3"
+
+[node name="Crystals_Highlights_3" type="Node3D" parent="BackgroundPlanes/Crystals_FightRoom_Night/Crystals_3"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 45
+metadata/unity_name = "Crystals_Highlights_3"
+
+[node name="Crystal_Glow" type="Node3D" parent="BackgroundPlanes/Crystals_FightRoom_Night/Crystals_3"]
+position = Vector3(-0.370000005, -0.810000002, 1.40999997)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1.5, 1.5, 1.5)
+metadata/unity_id = 37
+metadata/unity_name = "Crystal_Glow"
+
+[node name="Ray_01" type="Node3D" parent="BackgroundPlanes/Crystals_FightRoom_Night/Crystals_3"]
+position = Vector3(0, -0.589999974, -0.340000004)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14
+metadata/unity_name = "Ray_01"
+
+[node name="VFX_Glow_Crystal" type="Node3D" parent="BackgroundPlanes/Crystals_FightRoom_Night/Crystals_3"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 34
+metadata/unity_name = "VFX_Glow_Crystal"
+
+[node name="Crystals_4" type="Node3D" parent="BackgroundPlanes/Crystals_FightRoom_Night"]
+position = Vector3(26.7000008, 9, -17)
+quaternion = Quaternion(0.257834226, -0.084186025, -0.0225575808, 0.962250173)
+scale = Vector3(0.679325938, 0.679325879, 0.679325879)
+metadata/unity_id = 63
+metadata/unity_name = "Crystals_4"
+
+[node name="VFX_Glow_Crystal" type="Node3D" parent="BackgroundPlanes/Crystals_FightRoom_Night/Crystals_4"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 66
+metadata/unity_name = "VFX_Glow_Crystal"
+
+[node name="Crystals_5" type="Node3D" parent="BackgroundPlanes/Crystals_FightRoom_Night"]
+position = Vector3(23.7999992, 10.2000008, -19)
+quaternion = Quaternion(0.257834226, -0.084186025, -0.0225575808, 0.962250173)
+scale = Vector3(0.867021739, 0.867021739, 0.867021739)
+metadata/unity_id = 29
+metadata/unity_name = "Crystals_5"
+
+[node name="VFX_Glow_Crystal" type="Node3D" parent="BackgroundPlanes/Crystals_FightRoom_Night/Crystals_5"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 46
+metadata/unity_name = "VFX_Glow_Crystal"
+
+[node name="Crystals_6" type="Node3D" parent="BackgroundPlanes/Crystals_FightRoom_Night"]
+position = Vector3(29.2000008, 8.60000038, -14.8999996)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(4.7791543, 4.77915621, 4.77915621)
+metadata/unity_id = 13
+metadata/unity_name = "Crystals_6"
+
+[node name="Crystals_Highlights_9" type="Node3D" parent="BackgroundPlanes/Crystals_FightRoom_Night/Crystals_6"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 1
+metadata/unity_name = "Crystals_Highlights_9"
+
+[node name="PlayStage" type="Node3D" parent="BackgroundPlanes"]
+position = Vector3(7.82000065, -2.08739996, -16.3600006)
+quaternion = Quaternion(0, -1, -0, 0)
+scale = Vector3(1.20486522, 1.20486522, 1.20486522)
+metadata/unity_id = 31
+metadata/unity_name = "PlayStage"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="BackgroundPlanes/PlayStage"]
+mesh = ExtResource("4")
+visible = true
+surface_material_override/0 = ExtResource("5")
+cast_shadow = 0
+
+[node name="PlayStage_Trees" type="Node3D" parent="BackgroundPlanes"]
+position = Vector3(7.82000065, -2.08739996, -16.3600006)
+quaternion = Quaternion(0, -1, -0, 0)
+scale = Vector3(1.20486522, 1.20486522, 1.20486522)
+metadata/unity_id = 30
+metadata/unity_name = "PlayStage_Trees"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="BackgroundPlanes/PlayStage_Trees"]
+mesh = ExtResource("4")
+visible = true
+surface_material_override/0 = ExtResource("6")
+cast_shadow = 0
+
+[node name="VFX_Fireflies" type="Node3D" parent="BackgroundPlanes"]
+position = Vector3(10.8999996, 6.80000019, -7.19999981)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 68
+metadata/unity_name = "VFX_Fireflies"
+
+[node name="Left_Fireflies" type="Node3D" parent="BackgroundPlanes/VFX_Fireflies"]
+position = Vector3(3.3900001, -3.69000006, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 48
+metadata/unity_name = "Left_Fireflies"
+
+[node name="Left_Fireflies_Glow" type="Node3D" parent="BackgroundPlanes/VFX_Fireflies/Left_Fireflies"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 52
+metadata/unity_name = "Left_Fireflies_Glow"
+
+[node name="Fireflies_Swarm" type="Node3D" parent="BackgroundPlanes/VFX_Fireflies"]
+position = Vector3(3, -3.51999998, 12.5200005)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 38
+metadata/unity_name = "Fireflies_Swarm"
+
+[node name="Left_Fireflies_Glow" type="Node3D" parent="BackgroundPlanes/VFX_Fireflies/Fireflies_Swarm"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 35
+metadata/unity_name = "Left_Fireflies_Glow"
+
+[node name="Fireflies_Swarm_1" type="Node3D" parent="BackgroundPlanes/VFX_Fireflies"]
+position = Vector3(27.8199997, -3.51999998, 10.8299999)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 33
+metadata/unity_name = "Fireflies_Swarm_1"
+
+[node name="Left_Fireflies_Glow" type="Node3D" parent="BackgroundPlanes/VFX_Fireflies/Fireflies_Swarm_1"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 58
+metadata/unity_name = "Left_Fireflies_Glow"
+
+[node name="Fireflies_Swarm_2" type="Node3D" parent="BackgroundPlanes/VFX_Fireflies"]
+position = Vector3(7.6500001, -3.18000007, -17.3600006)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 47
+metadata/unity_name = "Fireflies_Swarm_2"
+
+[node name="Left_Fireflies_Glow" type="Node3D" parent="BackgroundPlanes/VFX_Fireflies/Fireflies_Swarm_2"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27
+metadata/unity_name = "Left_Fireflies_Glow"
+
+[node name="Fireflies_Swarm_3" type="Node3D" parent="BackgroundPlanes/VFX_Fireflies"]
+position = Vector3(33.3100014, 1.44000006, -4.42999983)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 50
+metadata/unity_name = "Fireflies_Swarm_3"
+
+[node name="Left_Fireflies_Glow" type="Node3D" parent="BackgroundPlanes/VFX_Fireflies/Fireflies_Swarm_3"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 41
+metadata/unity_name = "Left_Fireflies_Glow"
+
+[node name="Right_Fireflies" type="Node3D" parent="BackgroundPlanes/VFX_Fireflies"]
+position = Vector3(28.5300007, 0, 3.07999992)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 72
+metadata/unity_name = "Right_Fireflies"
+
+[node name="Right_Fireflies_Glow" type="Node3D" parent="BackgroundPlanes/VFX_Fireflies/Right_Fireflies"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 67
+metadata/unity_name = "Right_Fireflies_Glow"
+
+[node name="Mid_Fireflies" type="Node3D" parent="BackgroundPlanes/VFX_Fireflies"]
+position = Vector3(13.6000004, -2.92000008, -13.9599991)
+quaternion = Quaternion(0, -0.707106829, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 43
+metadata/unity_name = "Mid_Fireflies"
+
+[node name="Mid_Fireflies_Glow" type="Node3D" parent="BackgroundPlanes/VFX_Fireflies/Mid_Fireflies"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 44
+metadata/unity_name = "Mid_Fireflies_Glow"
+
+[node name="VFX_Glow" type="Node3D" parent="BackgroundPlanes"]
+position = Vector3(9.60000038, -9.5, -32.4000015)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26
+metadata/unity_name = "VFX_Glow"
+
+[node name="Ray_01" type="Node3D" parent="BackgroundPlanes/VFX_Glow"]
+position = Vector3(0, -8.30000019, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17
+metadata/unity_name = "Ray_01"
+
+[node name="PlayStage_Trees_1" type="Node3D" parent="BackgroundPlanes"]
+position = Vector3(6.79960012, -2.08739996, -24.9442005)
+quaternion = Quaternion(0, -1, -0, 0)
+scale = Vector3(1.20486522, 1.20486522, 1.20486522)
+metadata/unity_id = 32
+metadata/unity_name = "PlayStage_Trees_1"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="BackgroundPlanes/PlayStage_Trees_1"]
+mesh = ExtResource("7")
+visible = true
+surface_material_override/0 = ExtResource("8")
+cast_shadow = 0
+
+[node name="VFX_Glow_3" type="Node3D" parent="BackgroundPlanes"]
+position = Vector3(-21.1000004, -10, -46.5299988)
+quaternion = Quaternion(0, 0, 0.11786475, 0.993029654)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8
+metadata/unity_name = "VFX_Glow_3"
+
+[node name="VFX_Glow_4" type="Node3D" parent="BackgroundPlanes"]
+position = Vector3(32.9000015, -22.5, -68.5999985)
+quaternion = Quaternion(0, 0, 0.11786475, 0.993029654)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22
+metadata/unity_name = "VFX_Glow_4"
+
+[node name="VFX_Glow_1" type="Node3D" parent="BackgroundPlanes"]
+position = Vector3(-23.2999992, -7.4000001, -47.7999992)
+quaternion = Quaternion(0, 0, 0.11786475, 0.993029654)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12
+metadata/unity_name = "VFX_Glow_1"
+
+[node name="VFX_Glow_2" type="Node3D" parent="BackgroundPlanes"]
+position = Vector3(33.4000015, -9.39999962, -44.5999985)
+quaternion = Quaternion(0, 0, -0.245340273, 0.969437063)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5
+metadata/unity_name = "VFX_Glow_2"
+
+[node name="Ray_01" type="Node3D" parent="BackgroundPlanes/VFX_Glow_2"]
+position = Vector3(2.0999999, -7, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15
+metadata/unity_name = "Ray_01"
+
+[node name="Bridge" type="Node3D" parent="BackgroundPlanes"]
+position = Vector3(-30.6000004, -109.900002, -234)
+quaternion = Quaternion(-0.257834226, 0.084186025, 0.0225575808, 0.962250173)
+scale = Vector3(3, 3, 3)
+metadata/unity_id = 18
+metadata/unity_name = "Bridge"
+
+[node name="UnitySprite" type="Sprite3D" parent="BackgroundPlanes/Bridge"]
+texture = ExtResource("9")
+pixel_size = 0.029475236580308563
+visible = true
+flip_h = false
+flip_v = false
+modulate = Color(0.349019617, 0.349019617, 0.349019617, 1)
+offset = Vector2(0, 213.038025)
+
+[node name="Background" type="Node3D" parent="BackgroundPlanes"]
+position = Vector3(-40, -133.300003, -273)
+quaternion = Quaternion(-0.257834226, 0.084186025, 0.0225575808, 0.962250173)
+scale = Vector3(3.5, 3.5, 3.5)
+metadata/unity_id = 23
+metadata/unity_name = "Background"
+
+[node name="UnitySprite" type="Sprite3D" parent="BackgroundPlanes/Background"]
+texture = ExtResource("10")
+pixel_size = 0.029475236580308563
+visible = true
+flip_h = false
+flip_v = false
+modulate = Color(0.41568628, 0.41568628, 0.41568628, 1)
+offset = Vector2(0, 16.5380363)
+
+[node name="Square" type="Node3D" parent="BackgroundPlanes"]
+position = Vector3(7.5494194, -109.599998, -326.399994)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(300, 300, 300)
+metadata/unity_id = 9
+metadata/unity_name = "Square"
+
+[node name="UnitySprite" type="Sprite3D" parent="BackgroundPlanes/Square"]
+texture = ExtResource("11")
+pixel_size = 0.00390625
+visible = true
+flip_h = false
+flip_v = false
+modulate = Color(0.0941176489, 0.129411772, 0.149019614, 1)
+
+[node name="Directional Light" type="Node3D" parent="."]
+position = Vector3(0, 3, -0)
+quaternion = Quaternion(-0.39999947, 0.27805841, 0.766180456, 0.419108063)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16
+metadata/unity_name = "Directional Light"
+
+[node name="UnityLight" type="DirectionalLight3D" parent="Directional Light"]
+light_color = Color(0.542452812, 0.636149346, 0.809189819, 1)
+light_energy = 4.0
+visible = true
+shadow_enabled = true
+directional_shadow_mode = 0
+directional_shadow_max_distance = 150.0
+shadow_opacity = 1
+metadata/unity_color_temperature = 5000
+
+[node name="LocalVolume" type="Node3D" parent="."]
+position = Vector3(16.7000008, 29.4101543, 34.7999992)
+quaternion = Quaternion(-0.295718223, 0.0832255185, 0.0258774292, 0.951291025)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19
+metadata/unity_name = "LocalVolume"
+
+[node name="CameraRig" type="Node3D" parent="."]
+position = Vector3(27.1000004, 55, 84.9000015)
+quaternion = Quaternion(-0.257834226, 0.084186025, 0.0225575808, 0.962250173)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21
+metadata/unity_name = "CameraRig"
+visible = false
+process_mode = 4
+
+[node name="Main Camera" type="Node3D" parent="CameraRig"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10
+metadata/unity_name = "Main Camera"
+
+[node name="UnityCamera" type="Camera3D" parent="CameraRig/Main Camera"]
+fov = 15.189287185668945
+near = 0.009999999776482582
+far = 1000.0
+
+[node name="FadeIn" type="Node3D" parent="CameraRig/Main Camera"]
+position = Vector3(0, 0, -9.80000019)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24
+metadata/unity_name = "FadeIn"
+
+[node name="FadeOut" type="Node3D" parent="CameraRig/Main Camera"]
+position = Vector3(0, 0, -9.80000019)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20
+metadata/unity_name = "FadeOut"
+visible = false
+process_mode = 4
+
+[node name="IntroWaypoints" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 57
+metadata/unity_name = "IntroWaypoints"
+
+[node name="FirstTimeIntroWaypoint" type="Node3D" parent="IntroWaypoints"]
+position = Vector3(9.14000034, 0, 6.6960001)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 54
+metadata/unity_name = "FirstTimeIntroWaypoint"
+
+[node name="Cube" type="Node3D" parent="IntroWaypoints/FirstTimeIntroWaypoint"]
+position = Vector3(-2.00999999, 0, 0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 59
+metadata/unity_name = "Cube"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="IntroWaypoints/FirstTimeIntroWaypoint/Cube"]
+mesh = ExtResource("12")
+visible = false
+surface_material_override/0 = ExtResource("13")
+
+[node name="Cube_1" type="Node3D" parent="IntroWaypoints/FirstTimeIntroWaypoint"]
+position = Vector3(2.04999995, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 36
+metadata/unity_name = "Cube_1"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="IntroWaypoints/FirstTimeIntroWaypoint/Cube_1"]
+mesh = ExtResource("12")
+visible = false
+surface_material_override/0 = ExtResource("13")
+
+[node name="RegularIntroWaypoint" type="Node3D" parent="IntroWaypoints"]
+position = Vector3(9.14000034, 0, 6.6960001)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 42
+metadata/unity_name = "RegularIntroWaypoint"
+
+[node name="Cube" type="Node3D" parent="IntroWaypoints/RegularIntroWaypoint"]
+position = Vector3(-2.00999999, 0, 0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 49
+metadata/unity_name = "Cube"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="IntroWaypoints/RegularIntroWaypoint/Cube"]
+mesh = ExtResource("12")
+visible = false
+surface_material_override/0 = ExtResource("13")
+
+[node name="Cube_1" type="Node3D" parent="IntroWaypoints/RegularIntroWaypoint"]
+position = Vector3(2.04999995, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 69
+metadata/unity_name = "Cube_1"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="IntroWaypoints/RegularIntroWaypoint/Cube_1"]
+mesh = ExtResource("12")
+visible = false
+surface_material_override/0 = ExtResource("13")

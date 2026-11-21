@@ -1,0 +1,982 @@
+[gd_scene format=3]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2730.obj" id="1"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_991.tres" id="2"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2728.obj" id="3"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_995.tres" id="4"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2841.obj" id="5"]
+
+[node name="Skorn" type="Node3D"]
+
+[node name="Skorn" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1.10000002, 1.10000002, 1.10000002)
+metadata/unity_id = 22282
+metadata/unity_name = "Skorn"
+
+[node name="Skorn_Model" type="Node3D" parent="Skorn"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17714
+metadata/unity_name = "Skorn_Model"
+
+[node name="Armature" type="Node3D" parent="Skorn/Skorn_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19995
+metadata/unity_name = "Armature"
+
+[node name="hips" type="Node3D" parent="Skorn/Skorn_Model/Armature"]
+position = Vector3(-0, 0.985410869, -0.0096050119)
+quaternion = Quaternion(0.0201659128, -0, -0, 0.999796629)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11806
+metadata/unity_name = "hips"
+
+[node name="spine" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips"]
+position = Vector3(8.14953979e-34, 0.139400735, -4.03208219e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7989
+metadata/unity_name = "spine"
+
+[node name="chest" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/spine"]
+position = Vector3(2.31677954e-17, 0.20565185, 1.7310274e-06)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6770
+metadata/unity_name = "chest"
+
+[node name="neck" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/spine/chest"]
+position = Vector3(-1.18329133e-32, 0.286789656, 0.0562644675)
+quaternion = Quaternion(-0.251128197, 1.98969188e-33, -2.638032e-17, 0.967953861)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15288
+metadata/unity_name = "neck"
+
+[node name="head" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/spine/chest/neck"]
+position = Vector3(6.43467728e-18, 0.125997543, 6.21724896e-17)
+quaternion = Quaternion(0.23156485, 7.91896106e-34, 3.49981639e-17, 0.972819448)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20659
+metadata/unity_name = "head"
+
+[node name="hair_root" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(3.94430444e-33, 0, 1.1546319e-16)
+quaternion = Quaternion(-2.10693338e-06, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23919
+metadata/unity_name = "hair_root"
+
+[node name="hair" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(-3.94430444e-33, 0.167689219, -0.0288932528)
+quaternion = Quaternion(-5.49117385e-06, 2.83756885e-37, -5.16750902e-32, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13125
+metadata/unity_name = "hair"
+
+[node name="hair_end" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/spine/chest/neck/head/hair_root/hair"]
+position = Vector3(1.18329133e-32, 0.0569112822, -8.18227999e-14)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5837
+metadata/unity_name = "hair_end"
+
+[node name="head_end" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(-1.49311626e-17, 0.219273463, 2.64858071e-17)
+quaternion = Quaternion(-2.10693338e-06, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19078
+metadata/unity_name = "head_end"
+
+[node name="jaw" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(6.37923384e-18, -0.00448914757, -0.0177371036)
+quaternion = Quaternion(-0.904334605, 6.81492997e-33, 2.07711722e-16, 0.426824331)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20285
+metadata/unity_name = "jaw"
+
+[node name="jaw_end" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/spine/chest/neck/head/jaw"]
+position = Vector3(-2.12558782e-17, 0.119877852, 1.16459725e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18178
+metadata/unity_name = "jaw_end"
+
+[node name="necklace" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/spine/chest"]
+position = Vector3(-4.65661287e-09, 0.113867812, -0.136771187)
+quaternion = Quaternion(5.70804253e-18, -0.0932194069, 0.995645583, -6.09657125e-17)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11410
+metadata/unity_name = "necklace"
+
+[node name="necklace_end" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/spine/chest/necklace"]
+position = Vector3(-7.51645746e-10, 0.126748264, 4.27934346e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15919
+metadata/unity_name = "necklace_end"
+
+[node name="necklace_root" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/spine/chest"]
+position = Vector3(-0, 2.84217088e-16, -0)
+quaternion = Quaternion(-0.0142594539, -0.706963003, 0.0142594539, 0.706963003)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11861
+metadata/unity_name = "necklace_root"
+
+[node name="shoulder_L" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/spine/chest"]
+position = Vector3(-0.0482299998, 0.224670291, 0.086301744)
+quaternion = Quaternion(-0.574250758, 0.412548125, -0.503579021, -0.496435583)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10695
+metadata/unity_name = "shoulder_L"
+
+[node name="upper_arm_L" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/spine/chest/shoulder_L"]
+position = Vector3(-3.7204336e-06, 0.221000001, 1.22582825e-12)
+quaternion = Quaternion(0.308719367, -0.0228931792, 0.0623462163, 0.948831499)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17419
+metadata/unity_name = "upper_arm_L"
+
+[node name="lower_arm_L" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L"]
+position = Vector3(-4.10830171e-06, 0.244039983, 5.11874993e-13)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15571
+metadata/unity_name = "lower_arm_L"
+
+[node name="hand_L" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L"]
+position = Vector3(-5.56347959e-06, 0.330480009, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12991
+metadata/unity_name = "hand_L"
+
+[node name="hand_L_end" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L"]
+position = Vector3(-3.14536578e-06, 0.186839998, 5.97992738e-13)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12006
+metadata/unity_name = "hand_L_end"
+
+[node name="weapon_L_01" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L"]
+position = Vector3(-0.0264424123, -0.0429409295, -0.119653031)
+quaternion = Quaternion(0.0523359552, -0, -0, 0.99862951)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15085
+metadata/unity_name = "weapon_L_01"
+
+[node name="weapon_L_02_end" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/weapon_L_01"]
+position = Vector3(-1.7763568e-17, 0.899999976, 2.61667302e-11)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20511
+metadata/unity_name = "weapon_L_02_end"
+
+[node name="shoulder_R" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/spine/chest"]
+position = Vector3(0.0482316576, 0.224671453, 0.086301446)
+quaternion = Quaternion(-0.574250758, -0.412548125, 0.503579021, -0.496435583)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14474
+metadata/unity_name = "shoulder_R"
+
+[node name="upper_arm_R" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/spine/chest/shoulder_R"]
+position = Vector3(3.7204336e-06, 0.221000001, -2.84217088e-16)
+quaternion = Quaternion(0.308719367, 0.0228931792, -0.0623462163, 0.948831499)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5810
+metadata/unity_name = "upper_arm_R"
+
+[node name="armshield_R_root" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R"]
+position = Vector3(0.0307341311, -0.00798711367, 0.0488013253)
+quaternion = Quaternion(-0.577574074, -0.0359772965, 0.113215014, 0.80764854)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13618
+metadata/unity_name = "armshield_R_root"
+
+[node name="armshield_R" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/armshield_R_root"]
+position = Vector3(3.37702507e-17, 0.48329851, 3.0079169e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12336
+metadata/unity_name = "armshield_R"
+
+[node name="lower_arm_R" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R"]
+position = Vector3(4.1083058e-06, 0.244040251, 8.26503308e-13)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23763
+metadata/unity_name = "lower_arm_R"
+
+[node name="hand_R" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R"]
+position = Vector3(5.56340501e-06, 0.330475569, 6.25561831e-13)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15395
+metadata/unity_name = "hand_R"
+
+[node name="hand_R_end" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R"]
+position = Vector3(3.14528484e-06, 0.186835185, -8.52651264e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15781
+metadata/unity_name = "hand_R_end"
+
+[node name="weapon_R_01" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R"]
+position = Vector3(0.00741340267, 0.170356289, -0.0582302362)
+quaternion = Quaternion(0.173648193, -0, -0, 0.984807789)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22135
+metadata/unity_name = "weapon_R_01"
+
+[node name="weapon_R_02_end" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/weapon_R_01"]
+position = Vector3(4.54140763e-06, 0.53953445, 1.91130306e-11)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20493
+metadata/unity_name = "weapon_R_02_end"
+
+[node name="Magica Capsule Collider (chest)" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/spine/chest"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11252
+metadata/unity_name = "Magica Capsule Collider (chest)"
+
+[node name="upper_leg_L" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips"]
+position = Vector3(-0.121529996, -4.15212554e-07, -2.10186357e-09)
+quaternion = Quaternion(0.00302259601, 0.0678696632, 0.996701658, 0.0443884134)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10747
+metadata/unity_name = "upper_leg_L"
+
+[node name="lower_leg_L" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/upper_leg_L"]
+position = Vector3(5.3290704e-17, 0.423851013, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5977
+metadata/unity_name = "lower_leg_L"
+
+[node name="foot_L" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/upper_leg_L/lower_leg_L"]
+position = Vector3(5.3290704e-17, 0.431401998, -0)
+quaternion = Quaternion(-0.0466561206, -0.0282490142, 0.0431379564, 0.997579277)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19448
+metadata/unity_name = "foot_L"
+
+[node name="toes_L" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/upper_leg_L/lower_leg_L/foot_L"]
+position = Vector3(-3.5527136e-17, 0.107499994, -0.149999991)
+quaternion = Quaternion(-0.570851564, 0, -0, 0.821053267)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4768
+metadata/unity_name = "toes_L"
+
+[node name="toes_L_end" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/upper_leg_L/lower_leg_L/foot_L/toes_L"]
+position = Vector3(-0, 0.0861999989, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10655
+metadata/unity_name = "toes_L_end"
+
+[node name="upper_leg_R" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips"]
+position = Vector3(0.121530004, 0, -2.220446e-18)
+quaternion = Quaternion(-0.00302259601, 0.0678696632, 0.996701658, -0.0443884134)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9536
+metadata/unity_name = "upper_leg_R"
+
+[node name="lower_leg_R" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/upper_leg_R"]
+position = Vector3(-0, 0.423851341, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19637
+metadata/unity_name = "lower_leg_R"
+
+[node name="foot_R" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/upper_leg_R/lower_leg_R"]
+position = Vector3(-0, 0.431402087, -0)
+quaternion = Quaternion(-0.0466561206, 0.0282490142, -0.0431379564, 0.997579277)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11273
+metadata/unity_name = "foot_R"
+
+[node name="toes_R" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/upper_leg_R/lower_leg_R/foot_R"]
+position = Vector3(-7.22666921e-18, 0.107499994, -0.149999991)
+quaternion = Quaternion(-0.57058841, -1.20072175e-31, -9.00065786e-16, 0.821236193)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12507
+metadata/unity_name = "toes_R"
+
+[node name="toes_R_end" type="Node3D" parent="Skorn/Skorn_Model/Armature/hips/upper_leg_R/lower_leg_R/foot_R/toes_R"]
+position = Vector3(1.27856593e-16, 0.0861999989, 1.08801854e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14688
+metadata/unity_name = "toes_R_end"
+
+[node name="Skorn" type="Node3D" parent="Skorn/Skorn_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16943
+metadata/unity_name = "Skorn"
+
+[node name="Skorn_geo" type="Node3D" parent="Skorn/Skorn_Model/Skorn"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26782
+metadata/unity_name = "Skorn_geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Skorn/Skorn_Model/Skorn/Skorn_geo"]
+mesh = ExtResource("1")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="Skorn_Weapon_L_geo" type="Node3D" parent="Skorn/Skorn_Model/Skorn"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16361
+metadata/unity_name = "Skorn_Weapon_L_geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Skorn/Skorn_Model/Skorn/Skorn_Weapon_L_geo"]
+mesh = ExtResource("3")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="Skorn_Weapon_R_geo" type="Node3D" parent="Skorn/Skorn_Model/Skorn"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5230
+metadata/unity_name = "Skorn_Weapon_R_geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Skorn/Skorn_Model/Skorn/Skorn_Weapon_R_geo"]
+mesh = ExtResource("5")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="Magica Cloth (necklace)" type="Node3D" parent="Skorn/Skorn_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26685
+metadata/unity_name = "Magica Cloth (necklace)"
+
+[node name="Magica Cloth (hair)" type="Node3D" parent="Skorn/Skorn_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19261
+metadata/unity_name = "Magica Cloth (hair)"
+
+[node name="OverheadSlot" type="Node3D" parent="Skorn"]
+position = Vector3(0, 2, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25901
+metadata/unity_name = "OverheadSlot"
+
+[node name="VFXParent" type="Node3D" parent="Skorn"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25036
+metadata/unity_name = "VFXParent"
+
+[node name="VFX_Skorn_SkillAttack" type="Node3D" parent="Skorn/VFXParent"]
+position = Vector3(0.0599999987, 0, -0.0599999987)
+quaternion = Quaternion(0, 1, -0, 0)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16927
+metadata/unity_name = "VFX_Skorn_SkillAttack"
+
+[node name="root" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16986
+metadata/unity_name = "root"
+
+[node name="Shield_02" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack/root"]
+position = Vector3(0, 1, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12540
+metadata/unity_name = "Shield_02"
+
+[node name="Shield_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack/root"]
+position = Vector3(0, 1, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16280
+metadata/unity_name = "Shield_01"
+
+[node name="Shockwave_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack/root"]
+position = Vector3(0, 0.100000001, -0)
+quaternion = Quaternion(0.707106829, -0, 0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20053
+metadata/unity_name = "Shockwave_01"
+
+[node name="Sparks_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack/root"]
+position = Vector3(0, 0.699999988, 0.5)
+quaternion = Quaternion(0.953716934, -0, 0, 0.30070582)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5755
+metadata/unity_name = "Sparks_01"
+
+[node name="Sparks_02" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack/root"]
+position = Vector3(0, 0.699999988, 0.5)
+quaternion = Quaternion(0.953716934, -0, 0, 0.30070582)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7078
+metadata/unity_name = "Sparks_02"
+
+[node name="Glow_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack/root"]
+position = Vector3(0, 0.0299999993, -0)
+quaternion = Quaternion(0.707106829, 0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9269
+metadata/unity_name = "Glow_01"
+
+[node name="Glow_02" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack/root"]
+position = Vector3(0, 0.0299999993, -0)
+quaternion = Quaternion(0.707106829, 0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19553
+metadata/unity_name = "Glow_02"
+
+[node name="Glow_03" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack/root"]
+position = Vector3(0, 0.0299999993, -0)
+quaternion = Quaternion(0.707106829, 0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26187
+metadata/unity_name = "Glow_03"
+
+[node name="Shield_Glow_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack/root"]
+position = Vector3(0, 1.20000005, -0)
+quaternion = Quaternion(0.707106829, 0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22775
+metadata/unity_name = "Shield_Glow_01"
+
+[node name="Spark_Glow_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack/root"]
+position = Vector3(0, 1.03699994, 1)
+quaternion = Quaternion(0.707106829, 0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13306
+metadata/unity_name = "Spark_Glow_01"
+
+[node name="Wisps_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack/root"]
+position = Vector3(0, 0.550000012, -0)
+quaternion = Quaternion(0.707106829, -0, 0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18757
+metadata/unity_name = "Wisps_01"
+
+[node name="Vortex_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack/root"]
+position = Vector3(0, 0.100000001, -0)
+quaternion = Quaternion(0.707106829, -0, 0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21884
+metadata/unity_name = "Vortex_01"
+
+[node name="VFX_Skorn_SkillAttack_ShieldBurst" type="Node3D" parent="Skorn/VFXParent"]
+position = Vector3(0.0599999987, 0, -0.0599999987)
+quaternion = Quaternion(0, 1, -0, 0)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20590
+metadata/unity_name = "VFX_Skorn_SkillAttack_ShieldBurst"
+
+[node name="root" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_ShieldBurst"]
+position = Vector3(-4.44951534, 0, -7.82022953)
+quaternion = Quaternion(0, -0.707106829, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12753
+metadata/unity_name = "root"
+
+[node name="Shield_Energy_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_ShieldBurst/root"]
+position = Vector3(7.82023001, 0.600000024, -4.44951677)
+quaternion = Quaternion(0, 0.707106829, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10951
+metadata/unity_name = "Shield_Energy_01"
+
+[node name="Shield_Glow_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_ShieldBurst/root"]
+position = Vector3(7.82023001, 1.5, -4.44951677)
+quaternion = Quaternion(0, 0.707106829, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7819
+metadata/unity_name = "Shield_Glow_01"
+
+[node name="Shield_Glow_02" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_ShieldBurst/root"]
+position = Vector3(7.82023001, 0.00999999046, -4.44951677)
+quaternion = Quaternion(0, 0.707106829, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15010
+metadata/unity_name = "Shield_Glow_02"
+
+[node name="Shield_Glow_03" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_ShieldBurst/root"]
+position = Vector3(7.82023001, 0.0299999714, -4.39951658)
+quaternion = Quaternion(0.5, 0.5, -0.5, 0.5)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8756
+metadata/unity_name = "Shield_Glow_03"
+
+[node name="Shield_Shockwave_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_ShieldBurst/root"]
+position = Vector3(7.82023001, 0.850000024, -4.44951677)
+quaternion = Quaternion(0, 0.707106829, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8663
+metadata/unity_name = "Shield_Shockwave_01"
+
+[node name="Shield_Sphere_Shockwave_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_ShieldBurst/root"]
+position = Vector3(7.82023001, 1, -4.39951658)
+quaternion = Quaternion(0, 0.707106829, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19231
+metadata/unity_name = "Shield_Sphere_Shockwave_01"
+
+[node name="Shield_Sparks_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_ShieldBurst/root"]
+position = Vector3(7.82023001, 1.38, -4.44951677)
+quaternion = Quaternion(0.5, 0.5, -0.5, 0.5)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5253
+metadata/unity_name = "Shield_Sparks_01"
+
+[node name="VFX_Skorn_BasicAttack" type="Node3D" parent="Skorn/VFXParent"]
+position = Vector3(0.0599999987, 0.699999988, -0.0599999987)
+quaternion = Quaternion(-0, -1, 0, 0)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15743
+metadata/unity_name = "VFX_Skorn_BasicAttack"
+
+[node name="root" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_BasicAttack"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15825
+metadata/unity_name = "root"
+
+[node name="Dust_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_BasicAttack/root"]
+position = Vector3(-0.300000012, -0.150000006, 1.20000005)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25920
+metadata/unity_name = "Dust_01"
+
+[node name="Edge_Spark_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_BasicAttack/root"]
+position = Vector3(-0.300000012, 0, 1.00199997)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16099
+metadata/unity_name = "Edge_Spark_01"
+
+[node name="Edge_Spark_02" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_BasicAttack/root"]
+position = Vector3(-0.300000012, -0.25, 1.05999994)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6217
+metadata/unity_name = "Edge_Spark_02"
+
+[node name="VFX_Skorn_SkillAttack_L" type="Node3D" parent="Skorn/VFXParent"]
+position = Vector3(0.0599999987, 0, -0.0599999987)
+quaternion = Quaternion(0, 1, -0, 0)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14817
+metadata/unity_name = "VFX_Skorn_SkillAttack_L"
+
+[node name="root" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_L"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10754
+metadata/unity_name = "root"
+
+[node name="Distortion_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_L/root"]
+position = Vector3(0, 1, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21403
+metadata/unity_name = "Distortion_01"
+
+[node name="Impact_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_L/root"]
+position = Vector3(0, 0.649999976, -0)
+quaternion = Quaternion(0, -9.31322464e-10, 5.52972723e-10, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18176
+metadata/unity_name = "Impact_01"
+
+[node name="Sphere_02" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_L/root"]
+position = Vector3(0, 1, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19847
+metadata/unity_name = "Sphere_02"
+
+[node name="Impact_02" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_L/root"]
+position = Vector3(0, 1, -0)
+quaternion = Quaternion(0, -9.31322464e-10, 5.52972723e-10, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14335
+metadata/unity_name = "Impact_02"
+
+[node name="Shield_02" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_L/root"]
+position = Vector3(0, 1, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16792
+metadata/unity_name = "Shield_02"
+
+[node name="Shield_03" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_L/root"]
+position = Vector3(0, 1, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18990
+metadata/unity_name = "Shield_03"
+
+[node name="Shield_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_L/root"]
+position = Vector3(0, 1, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16769
+metadata/unity_name = "Shield_01"
+
+[node name="Shockwave_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_L/root"]
+position = Vector3(0, 0.100000001, -0)
+quaternion = Quaternion(0.707106829, -0, 0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23391
+metadata/unity_name = "Shockwave_01"
+
+[node name="Sparks_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_L/root"]
+position = Vector3(0, 0.699999988, 0.5)
+quaternion = Quaternion(0.953716934, -0, 0, 0.30070582)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5408
+metadata/unity_name = "Sparks_01"
+
+[node name="Sparks_02" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_L/root"]
+position = Vector3(0, 0.699999988, 0.5)
+quaternion = Quaternion(0.953716934, -0, 0, 0.30070582)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14712
+metadata/unity_name = "Sparks_02"
+
+[node name="Glow_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_L/root"]
+position = Vector3(0, 0.0299999993, -0)
+quaternion = Quaternion(0.707106829, 0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7075
+metadata/unity_name = "Glow_01"
+
+[node name="Glow_04" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_L/root"]
+position = Vector3(0, 1.20000005, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10145
+metadata/unity_name = "Glow_04"
+
+[node name="Glow_02" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_L/root"]
+position = Vector3(0, 0.0299999993, -0)
+quaternion = Quaternion(0.707106829, 0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9620
+metadata/unity_name = "Glow_02"
+
+[node name="Glow_03" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_L/root"]
+position = Vector3(0, 0.0299999993, -0)
+quaternion = Quaternion(0.707106829, 0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21524
+metadata/unity_name = "Glow_03"
+
+[node name="Shield_Glow_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_L/root"]
+position = Vector3(0, 1.20000005, -0)
+quaternion = Quaternion(0.707106829, 0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22174
+metadata/unity_name = "Shield_Glow_01"
+
+[node name="Spark_Glow_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_L/root"]
+position = Vector3(0, 1.03699994, 1)
+quaternion = Quaternion(0.707106829, 0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6422
+metadata/unity_name = "Spark_Glow_01"
+
+[node name="Spark_Glow_02" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_L/root/Spark_Glow_01"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10344
+metadata/unity_name = "Spark_Glow_02"
+
+[node name="Wisps_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_L/root"]
+position = Vector3(0, 0.550000012, -0)
+quaternion = Quaternion(0.707106829, -0, 0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9969
+metadata/unity_name = "Wisps_01"
+
+[node name="Vortex_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_L/root"]
+position = Vector3(0, 0.100000001, -0)
+quaternion = Quaternion(0.707106829, -0, 0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16060
+metadata/unity_name = "Vortex_01"
+
+[node name="Shield_Sparks_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_L/root"]
+position = Vector3(0, 0.5, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21772
+metadata/unity_name = "Shield_Sparks_01"
+
+[node name="VFX_Skorn_SkillAttack_S" type="Node3D" parent="Skorn/VFXParent"]
+position = Vector3(0.0599999987, 0, -0.0599999987)
+quaternion = Quaternion(0, 1, -0, 0)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26559
+metadata/unity_name = "VFX_Skorn_SkillAttack_S"
+
+[node name="root" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_S"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23711
+metadata/unity_name = "root"
+
+[node name="Shield_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_S/root"]
+position = Vector3(0, 1, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14433
+metadata/unity_name = "Shield_01"
+
+[node name="Shockwave_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_S/root"]
+position = Vector3(0, 0.100000001, -0)
+quaternion = Quaternion(0.707106829, -0, 0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11211
+metadata/unity_name = "Shockwave_01"
+
+[node name="Sparks_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_S/root"]
+position = Vector3(0, 0.699999988, 0.5)
+quaternion = Quaternion(0.953716934, -0, 0, 0.30070582)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25171
+metadata/unity_name = "Sparks_01"
+
+[node name="Sparks_02" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_S/root"]
+position = Vector3(0, 0.699999988, 0.5)
+quaternion = Quaternion(0.953716934, -0, 0, 0.30070582)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18541
+metadata/unity_name = "Sparks_02"
+
+[node name="Glow_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_S/root"]
+position = Vector3(0, 0.0299999993, -0)
+quaternion = Quaternion(0.707106829, 0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14995
+metadata/unity_name = "Glow_01"
+
+[node name="Glow_02" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_S/root"]
+position = Vector3(0, 0.0299999993, -0)
+quaternion = Quaternion(0.707106829, 0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20019
+metadata/unity_name = "Glow_02"
+
+[node name="Glow_03" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_S/root"]
+position = Vector3(0, 0.0299999993, -0)
+quaternion = Quaternion(0.707106829, 0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19466
+metadata/unity_name = "Glow_03"
+
+[node name="Shield_Glow_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_S/root"]
+position = Vector3(0, 1.20000005, -0)
+quaternion = Quaternion(0.707106829, 0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19076
+metadata/unity_name = "Shield_Glow_01"
+
+[node name="Spark_Glow_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_S/root"]
+position = Vector3(0, 1.03699994, 1)
+quaternion = Quaternion(0.707106829, 0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5165
+metadata/unity_name = "Spark_Glow_01"
+
+[node name="Wisps_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_S/root"]
+position = Vector3(0, 0.550000012, -0)
+quaternion = Quaternion(0.707106829, -0, 0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9696
+metadata/unity_name = "Wisps_01"
+
+[node name="Vortex_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_S/root"]
+position = Vector3(0, 0.100000001, -0)
+quaternion = Quaternion(0.707106829, -0, 0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5971
+metadata/unity_name = "Vortex_01"
+
+[node name="VFX_Skorn_SkillAttack_ShieldBurst_S" type="Node3D" parent="Skorn/VFXParent"]
+position = Vector3(0.0599999987, 0, -0.0599999987)
+quaternion = Quaternion(0, 1, -0, 0)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15125
+metadata/unity_name = "VFX_Skorn_SkillAttack_ShieldBurst_S"
+
+[node name="root" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_ShieldBurst_S"]
+position = Vector3(-4.44951534, 0, -7.82022953)
+quaternion = Quaternion(0, -0.707106829, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5544
+metadata/unity_name = "root"
+
+[node name="Shield_Energy_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_ShieldBurst_S/root"]
+position = Vector3(7.82023001, 0.600000024, -4.44951677)
+quaternion = Quaternion(0, 0.707106829, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11757
+metadata/unity_name = "Shield_Energy_01"
+
+[node name="Shield_Glow_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_ShieldBurst_S/root"]
+position = Vector3(7.82023001, 1, -4.44951677)
+quaternion = Quaternion(0, 0.707106829, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22206
+metadata/unity_name = "Shield_Glow_01"
+
+[node name="Shield_Glow_02" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_ShieldBurst_S/root"]
+position = Vector3(7.82023001, 0.00999999046, -4.44951677)
+quaternion = Quaternion(0, 0.707106829, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18981
+metadata/unity_name = "Shield_Glow_02"
+
+[node name="Shield_Glow_03" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_ShieldBurst_S/root"]
+position = Vector3(7.82023001, 0.0299999714, -4.39951658)
+quaternion = Quaternion(0.5, 0.5, -0.5, 0.5)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11889
+metadata/unity_name = "Shield_Glow_03"
+
+[node name="Shield_Shockwave_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_ShieldBurst_S/root"]
+position = Vector3(7.82023001, 0.850000024, -4.44951677)
+quaternion = Quaternion(0, 0.707106829, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16831
+metadata/unity_name = "Shield_Shockwave_01"
+
+[node name="Shield_Sphere_Shockwave_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_ShieldBurst_S/root"]
+position = Vector3(7.82023001, 1, -4.39951658)
+quaternion = Quaternion(0, 0.707106829, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18697
+metadata/unity_name = "Shield_Sphere_Shockwave_01"
+
+[node name="Shield_Sparks_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_ShieldBurst_S/root"]
+position = Vector3(7.82023001, 1.38, -4.44951677)
+quaternion = Quaternion(0.5, 0.5, -0.5, 0.5)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16574
+metadata/unity_name = "Shield_Sparks_01"
+
+[node name="VFX_Skorn_SkillAttack_ShieldBurst_L" type="Node3D" parent="Skorn/VFXParent"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7205
+metadata/unity_name = "VFX_Skorn_SkillAttack_ShieldBurst_L"
+
+[node name="root" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_ShieldBurst_L"]
+position = Vector3(0, 1.20000005, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13958
+metadata/unity_name = "root"
+
+[node name="Rainbow_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_ShieldBurst_L/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7267
+metadata/unity_name = "Rainbow_01"
+
+[node name="Sparks_02" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_ShieldBurst_L/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7504
+metadata/unity_name = "Sparks_02"
+
+[node name="Shield_Energy_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_ShieldBurst_L/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14356
+metadata/unity_name = "Shield_Energy_01"
+
+[node name="Shield_Glow_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_ShieldBurst_L/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10312
+metadata/unity_name = "Shield_Glow_01"
+
+[node name="Shield_Glow_04" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_ShieldBurst_L/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9991
+metadata/unity_name = "Shield_Glow_04"
+
+[node name="Shield_Glow_02" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_ShieldBurst_L/root"]
+position = Vector3(0, -1.20000005, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20766
+metadata/unity_name = "Shield_Glow_02"
+
+[node name="Shield_Glow_03" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_ShieldBurst_L/root"]
+position = Vector3(0, -1.20000005, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8706
+metadata/unity_name = "Shield_Glow_03"
+
+[node name="Shield_Shockwave_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_ShieldBurst_L/root"]
+position = Vector3(0, -1.20000005, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7588
+metadata/unity_name = "Shield_Shockwave_01"
+
+[node name="Shield_Shockwave_02" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_ShieldBurst_L/root"]
+position = Vector3(0, -1.10000002, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23991
+metadata/unity_name = "Shield_Shockwave_02"
+
+[node name="Shield_Sphere_Shockwave_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_ShieldBurst_L/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15805
+metadata/unity_name = "Shield_Sphere_Shockwave_01"
+
+[node name="Shield_Sparks_01" type="Node3D" parent="Skorn/VFXParent/VFX_Skorn_SkillAttack_ShieldBurst_L/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15966
+metadata/unity_name = "Shield_Sparks_01"

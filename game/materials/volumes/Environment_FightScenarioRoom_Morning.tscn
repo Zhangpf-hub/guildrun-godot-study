@@ -1,0 +1,44 @@
+[gd_scene format=3]
+
+[ext_resource type="Shader" path="res://materials/battle_volume.gdshader" id="1"]
+[ext_resource type="Texture2D" path="res://materials/volumes/grade_luts/grade_156c3af90eb3.png" id="2"]
+
+[sub_resource type="Environment" id="WorldEffects"]
+ambient_light_source = 1
+ssao_enabled = true
+ssao_radius = 0.300000012
+ssao_intensity = 0.400000006
+ssao_light_affect = 0.25
+glow_enabled = true
+glow_intensity = 2.55999994
+glow_hdr_threshold = 0.800000012
+glow_hdr_scale = 1.0
+
+[sub_resource type="ShaderMaterial" id="Grade"]
+resource_local_to_scene = true
+shader = ExtResource("1")
+shader_parameter/grade_lookup = ExtResource("2")
+shader_parameter/neutral_tonemap = false
+shader_parameter/exposure = 1.3195079162244137
+shader_parameter/vignette_center = Vector2(0.5, 0.5)
+shader_parameter/vignette_color = Vector3(0.266666681, 0.192156866, 0.160784319)
+shader_parameter/vignette_intensity = 1.2239999771118164
+shader_parameter/vignette_smoothness = 0.754999965429306
+shader_parameter/vignette_rounded = false
+
+[node name="BattleVolume" type="CanvasLayer"]
+layer = -1
+metadata/unity_profiles = "level3:26856/sharedassets3.assets:65268 + level20:142/globalgamemanagers.assets:6669 + level20:143/sharedassets12.assets:25"
+metadata/ambient_occlusion = Vector4(0.300000012, 0.400000006, 100, 0.25)
+metadata/bloom_filter = Vector4(0.320000011, 65472, 0.603827359, 0.30191368)
+metadata/bloom_strength = Vector4(0.9999999, 0.9999999, 0.9999999, 2.55999994)
+metadata/bloom_quality = Vector3i(1, 1, 6)
+
+[node name="WorldEffects" type="WorldEnvironment" parent="."]
+environment = SubResource("WorldEffects")
+
+[node name="ColorGrade" type="ColorRect" parent="."]
+material = SubResource("Grade")
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2

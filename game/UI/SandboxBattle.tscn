@@ -1,0 +1,2160 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://UI/sliced_image.gd" id="SlicedImage"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets2_161.png" id="1"]
+[ext_resource type="Texture2D" path="res://sprites/resources_922.png" id="2"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets1_3696.png" id="3"]
+[ext_resource type="Texture2D" path="res://sprites/resources_925.png" id="4"]
+[ext_resource type="Texture2D" path="res://sprites/resources_926.png" id="5"]
+[ext_resource type="Texture2D" path="res://sprites/resources_921.png" id="6"]
+[ext_resource type="Texture2D" path="res://sprites/resources_923.png" id="7"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets5_3.png" id="8"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets1_3376.png" id="9"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets1_4561.png" id="10"]
+
+[node name="SandboxBattleUI" type="Control"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="Canvas" type="Control" parent="."]
+mouse_filter = 2
+metadata/unity_id = 70
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Background" type="Control" parent="Canvas"]
+mouse_filter = 2
+metadata/unity_id = 49
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Canvas/Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.438011765, 0.438525826, 0.48113209, 1)
+
+[node name="RelicsContainer" type="Control" parent="Canvas"]
+mouse_filter = 2
+metadata/unity_id = 19
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 32.000061
+offset_right = -1125.99994
+offset_top = 640
+offset_bottom = -32
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 1)
+
+[node name="UnityImage" type="Control" parent="Canvas/RelicsContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("1")
+border = Vector4(10, 10, 10, 10)
+pixels_per_unit = 1.28
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="TitleText" type="Control" parent="Canvas/RelicsContainer"]
+mouse_filter = 2
+metadata/unity_id = 36
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0
+anchor_bottom = 0
+offset_left = -100
+offset_right = 100
+offset_top = 16
+offset_bottom = 76
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+
+[node name="UnityText" type="Label" parent="Canvas/RelicsContainer/TitleText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Relics"
+theme_override_font_sizes/font_size = 48
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 1
+vertical_alignment = 0
+
+[node name="ItemsContainer" type="Control" parent="Canvas"]
+mouse_filter = 2
+metadata/unity_id = 62
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 826
+offset_right = -674
+offset_top = 640
+offset_bottom = -32
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="Control" parent="Canvas/ItemsContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("1")
+border = Vector4(10, 10, 10, 10)
+pixels_per_unit = 1.28
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="TitleText" type="Control" parent="Canvas/ItemsContainer"]
+mouse_filter = 2
+metadata/unity_id = 2
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0
+anchor_bottom = 0
+offset_left = -100
+offset_right = 100
+offset_top = 16
+offset_bottom = 76
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+
+[node name="UnityText" type="Label" parent="Canvas/ItemsContainer/TitleText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Items"
+theme_override_font_sizes/font_size = 48
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 1
+vertical_alignment = 0
+
+[node name="Controls" type="Control" parent="Canvas"]
+mouse_filter = 2
+metadata/unity_id = 18
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 1278
+offset_right = -356
+offset_top = 640
+offset_bottom = -32
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Reset" type="Control" parent="Canvas/Controls"]
+mouse_filter = 2
+metadata/unity_id = 71
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 40
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(1, 0)
+
+[node name="UnityImage" type="Control" parent="Canvas/Controls/Reset"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("2")
+border = Vector4(10, 10, 10, 10)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Label" type="Control" parent="Canvas/Controls/Reset"]
+mouse_filter = 2
+metadata/unity_id = 46
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 4
+offset_right = -4
+offset_top = 4
+offset_bottom = -4
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="Canvas/Controls/Reset/Label"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Reset"
+theme_override_font_sizes/font_size = 24
+theme_override_colors/font_color = Color(0.196078435, 0.196078435, 0.196078435, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Copy" type="Control" parent="Canvas/Controls"]
+mouse_filter = 2
+metadata/unity_id = 22
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 40
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(1, 0)
+
+[node name="UnityImage" type="Control" parent="Canvas/Controls/Copy"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("2")
+border = Vector4(10, 10, 10, 10)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Label" type="Control" parent="Canvas/Controls/Copy"]
+mouse_filter = 2
+metadata/unity_id = 83
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 4
+offset_right = -4
+offset_top = 4
+offset_bottom = -4
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="Canvas/Controls/Copy/Label"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Copy to clipboard"
+theme_override_font_sizes/font_size = 24
+theme_override_colors/font_color = Color(0.196078435, 0.196078435, 0.196078435, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Paste" type="Control" parent="Canvas/Controls"]
+mouse_filter = 2
+metadata/unity_id = 41
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 40
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(1, 0)
+
+[node name="UnityImage" type="Control" parent="Canvas/Controls/Paste"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("2")
+border = Vector4(10, 10, 10, 10)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Label" type="Control" parent="Canvas/Controls/Paste"]
+mouse_filter = 2
+metadata/unity_id = 26
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 4
+offset_right = -4
+offset_top = 4
+offset_bottom = -4
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="Canvas/Controls/Paste/Label"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Paste from clipboard\n"
+theme_override_font_sizes/font_size = 24
+theme_override_colors/font_color = Color(0.196078435, 0.196078435, 0.196078435, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Spacer" type="Control" parent="Canvas/Controls"]
+mouse_filter = 2
+metadata/unity_id = 15
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -16.0149994
+offset_bottom = 16.0149994
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Seed" type="Control" parent="Canvas/Controls"]
+mouse_filter = 2
+metadata/unity_id = 30
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -40
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(1, 1)
+
+[node name="UnityImage" type="Control" parent="Canvas/Controls/Seed"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("3")
+border = Vector4(10, 10, 10, 10)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Title" type="Control" parent="Canvas/Controls/Seed"]
+mouse_filter = 2
+metadata/unity_id = 25
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 7.99975586
+offset_right = -8.00024414
+offset_top = -14
+offset_bottom = 2
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+
+[node name="UnityText" type="Label" parent="Canvas/Controls/Seed/Title"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Seed"
+theme_override_font_sizes/font_size = 10
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 0
+vertical_alignment = 2
+
+[node name="Text Area" type="Control" parent="Canvas/Controls/Seed"]
+mouse_filter = 2
+metadata/unity_id = 53
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 10
+offset_right = -10
+offset_top = 7
+offset_bottom = -6
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+clip_contents = true
+
+[node name="Placeholder" type="Control" parent="Canvas/Controls/Seed/Text Area"]
+mouse_filter = 2
+metadata/unity_id = 32
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="Canvas/Controls/Seed/Text Area/Placeholder"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Custom seed"
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.196078435, 0.196078435, 0.196078435, 0.5)
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="Text" type="Control" parent="Canvas/Controls/Seed/Text Area"]
+mouse_filter = 2
+metadata/unity_id = 68
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="Canvas/Controls/Seed/Text Area/Text"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "​"
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.196078435, 0.196078435, 0.196078435, 1)
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="ModeDropdown" type="Control" parent="Canvas/Controls"]
+mouse_filter = 2
+metadata/unity_id = 20
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -40
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(1, 1)
+
+[node name="UnityImage" type="Control" parent="Canvas/Controls/ModeDropdown"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("2")
+border = Vector4(10, 10, 10, 10)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Title" type="Control" parent="Canvas/Controls/ModeDropdown"]
+mouse_filter = 2
+metadata/unity_id = 17
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 8
+offset_right = -8
+offset_top = -14
+offset_bottom = 2
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+
+[node name="UnityText" type="Label" parent="Canvas/Controls/ModeDropdown/Title"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Mode"
+theme_override_font_sizes/font_size = 10
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 0
+vertical_alignment = 2
+
+[node name="Label" type="Control" parent="Canvas/Controls/ModeDropdown"]
+mouse_filter = 2
+metadata/unity_id = 9
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 10
+offset_right = -25
+offset_top = 7
+offset_bottom = -6
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="Canvas/Controls/ModeDropdown/Label"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = ""
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.196078435, 0.196078435, 0.196078435, 1)
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="Arrow" type="Control" parent="Canvas/Controls/ModeDropdown"]
+mouse_filter = 2
+metadata/unity_id = 84
+anchor_left = 1
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -25
+offset_right = -5
+offset_top = -10
+offset_bottom = 10
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="Canvas/Controls/ModeDropdown/Arrow"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("4")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Template" type="Control" parent="Canvas/Controls/ModeDropdown"]
+mouse_filter = 2
+metadata/unity_id = 24
+anchor_left = 0
+anchor_right = 1
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -2
+offset_bottom = 148
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+visible = false
+
+[node name="UnityImage" type="Control" parent="Canvas/Controls/ModeDropdown/Template"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("2")
+border = Vector4(10, 10, 10, 10)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Viewport" type="Control" parent="Canvas/Controls/ModeDropdown/Template"]
+mouse_filter = 2
+metadata/unity_id = 75
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = -18
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0)
+clip_contents = true
+
+[node name="UnityImage" type="Control" parent="Canvas/Controls/ModeDropdown/Template/Viewport"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("5")
+border = Vector4(10, 10, 10, 10)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Content" type="Control" parent="Canvas/Controls/ModeDropdown/Template/Viewport"]
+mouse_filter = 2
+metadata/unity_id = 45
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 28
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+
+[node name="Item" type="Control" parent="Canvas/Controls/ModeDropdown/Template/Viewport/Content"]
+mouse_filter = 2
+metadata/unity_id = 56
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -10
+offset_bottom = 10
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Item Background" type="Control" parent="Canvas/Controls/ModeDropdown/Template/Viewport/Content/Item"]
+mouse_filter = 2
+metadata/unity_id = 4
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Canvas/Controls/ModeDropdown/Template/Viewport/Content/Item/Item Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.960784316, 0.960784316, 0.960784316, 1)
+
+[node name="Item Checkmark" type="Control" parent="Canvas/Controls/ModeDropdown/Template/Viewport/Content/Item"]
+mouse_filter = 2
+metadata/unity_id = 65
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 20
+offset_top = -10
+offset_bottom = 10
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="Canvas/Controls/ModeDropdown/Template/Viewport/Content/Item/Item Checkmark"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("6")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Item Label" type="Control" parent="Canvas/Controls/ModeDropdown/Template/Viewport/Content/Item"]
+mouse_filter = 2
+metadata/unity_id = 87
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 20
+offset_right = -10
+offset_top = 2
+offset_bottom = -1
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="Canvas/Controls/ModeDropdown/Template/Viewport/Content/Item/Item Label"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Option A"
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.196078435, 0.196078435, 0.196078435, 1)
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="Scrollbar" type="Control" parent="Canvas/Controls/ModeDropdown/Template"]
+mouse_filter = 2
+metadata/unity_id = 33
+anchor_left = 1
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -20
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(1, 0)
+
+[node name="UnityImage" type="Control" parent="Canvas/Controls/ModeDropdown/Template/Scrollbar"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("7")
+border = Vector4(10, 10, 10, 10)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Sliding Area" type="Control" parent="Canvas/Controls/ModeDropdown/Template/Scrollbar"]
+mouse_filter = 2
+metadata/unity_id = 81
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 10
+offset_right = -10
+offset_top = 10
+offset_bottom = -10
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Handle" type="Control" parent="Canvas/Controls/ModeDropdown/Template/Scrollbar/Sliding Area"]
+mouse_filter = 2
+metadata/unity_id = 61
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.799999997
+anchor_bottom = 1
+offset_left = -10
+offset_right = 10
+offset_top = -10
+offset_bottom = 10
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="Control" parent="Canvas/Controls/ModeDropdown/Template/Scrollbar/Sliding Area/Handle"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("2")
+border = Vector4(10, 10, 10, 10)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="StageDropdown" type="Control" parent="Canvas/Controls"]
+mouse_filter = 2
+metadata/unity_id = 16
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -40
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(1, 1)
+
+[node name="UnityImage" type="Control" parent="Canvas/Controls/StageDropdown"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("2")
+border = Vector4(10, 10, 10, 10)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Title" type="Control" parent="Canvas/Controls/StageDropdown"]
+mouse_filter = 2
+metadata/unity_id = 14
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 8
+offset_right = -8
+offset_top = -14
+offset_bottom = 2
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+
+[node name="UnityText" type="Label" parent="Canvas/Controls/StageDropdown/Title"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Stage"
+theme_override_font_sizes/font_size = 10
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 0
+vertical_alignment = 2
+
+[node name="Label" type="Control" parent="Canvas/Controls/StageDropdown"]
+mouse_filter = 2
+metadata/unity_id = 35
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 10
+offset_right = -25
+offset_top = 7
+offset_bottom = -6
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="Canvas/Controls/StageDropdown/Label"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = ""
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.196078435, 0.196078435, 0.196078435, 1)
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="Arrow" type="Control" parent="Canvas/Controls/StageDropdown"]
+mouse_filter = 2
+metadata/unity_id = 74
+anchor_left = 1
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -25
+offset_right = -5
+offset_top = -10
+offset_bottom = 10
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="Canvas/Controls/StageDropdown/Arrow"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("4")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Template" type="Control" parent="Canvas/Controls/StageDropdown"]
+mouse_filter = 2
+metadata/unity_id = 80
+anchor_left = 0
+anchor_right = 1
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -2
+offset_bottom = 148
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+visible = false
+
+[node name="UnityImage" type="Control" parent="Canvas/Controls/StageDropdown/Template"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("2")
+border = Vector4(10, 10, 10, 10)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Viewport" type="Control" parent="Canvas/Controls/StageDropdown/Template"]
+mouse_filter = 2
+metadata/unity_id = 82
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = -18
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0)
+clip_contents = true
+
+[node name="UnityImage" type="Control" parent="Canvas/Controls/StageDropdown/Template/Viewport"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("5")
+border = Vector4(10, 10, 10, 10)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Content" type="Control" parent="Canvas/Controls/StageDropdown/Template/Viewport"]
+mouse_filter = 2
+metadata/unity_id = 8
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 28
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+
+[node name="Item" type="Control" parent="Canvas/Controls/StageDropdown/Template/Viewport/Content"]
+mouse_filter = 2
+metadata/unity_id = 12
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -10
+offset_bottom = 10
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Item Background" type="Control" parent="Canvas/Controls/StageDropdown/Template/Viewport/Content/Item"]
+mouse_filter = 2
+metadata/unity_id = 34
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Canvas/Controls/StageDropdown/Template/Viewport/Content/Item/Item Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.960784316, 0.960784316, 0.960784316, 1)
+
+[node name="Item Checkmark" type="Control" parent="Canvas/Controls/StageDropdown/Template/Viewport/Content/Item"]
+mouse_filter = 2
+metadata/unity_id = 86
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 20
+offset_top = -10
+offset_bottom = 10
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="Canvas/Controls/StageDropdown/Template/Viewport/Content/Item/Item Checkmark"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("6")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Item Label" type="Control" parent="Canvas/Controls/StageDropdown/Template/Viewport/Content/Item"]
+mouse_filter = 2
+metadata/unity_id = 85
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 20
+offset_right = -10
+offset_top = 2
+offset_bottom = -1
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="Canvas/Controls/StageDropdown/Template/Viewport/Content/Item/Item Label"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Option A"
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.196078435, 0.196078435, 0.196078435, 1)
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="Scrollbar" type="Control" parent="Canvas/Controls/StageDropdown/Template"]
+mouse_filter = 2
+metadata/unity_id = 72
+anchor_left = 1
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -20
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(1, 0)
+
+[node name="UnityImage" type="Control" parent="Canvas/Controls/StageDropdown/Template/Scrollbar"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("7")
+border = Vector4(10, 10, 10, 10)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Sliding Area" type="Control" parent="Canvas/Controls/StageDropdown/Template/Scrollbar"]
+mouse_filter = 2
+metadata/unity_id = 3
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 10
+offset_right = -10
+offset_top = 10
+offset_bottom = -10
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Handle" type="Control" parent="Canvas/Controls/StageDropdown/Template/Scrollbar/Sliding Area"]
+mouse_filter = 2
+metadata/unity_id = 66
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.799999997
+anchor_bottom = 1
+offset_left = -10
+offset_right = 10
+offset_top = -10
+offset_bottom = 10
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="Control" parent="Canvas/Controls/StageDropdown/Template/Scrollbar/Sliding Area/Handle"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("2")
+border = Vector4(10, 10, 10, 10)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="FightModeDropdown" type="Control" parent="Canvas/Controls"]
+mouse_filter = 2
+metadata/unity_id = 88
+anchor_left = 1
+anchor_right = 1
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -192
+offset_right = -32
+offset_top = -116
+offset_bottom = -76
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(1, 1)
+visible = false
+
+[node name="UnityImage" type="Control" parent="Canvas/Controls/FightModeDropdown"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("2")
+border = Vector4(10, 10, 10, 10)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Title" type="Control" parent="Canvas/Controls/FightModeDropdown"]
+mouse_filter = 2
+metadata/unity_id = 42
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 8
+offset_right = -8
+offset_top = -14
+offset_bottom = 2
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+
+[node name="UnityText" type="Label" parent="Canvas/Controls/FightModeDropdown/Title"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Fight mode\n"
+theme_override_font_sizes/font_size = 10
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 0
+vertical_alignment = 2
+
+[node name="Label" type="Control" parent="Canvas/Controls/FightModeDropdown"]
+mouse_filter = 2
+metadata/unity_id = 64
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 10
+offset_right = -25
+offset_top = 7
+offset_bottom = -6
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="Canvas/Controls/FightModeDropdown/Label"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = ""
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.196078435, 0.196078435, 0.196078435, 1)
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="Arrow" type="Control" parent="Canvas/Controls/FightModeDropdown"]
+mouse_filter = 2
+metadata/unity_id = 5
+anchor_left = 1
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -25
+offset_right = -5
+offset_top = -10
+offset_bottom = 10
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="Canvas/Controls/FightModeDropdown/Arrow"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("4")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Template" type="Control" parent="Canvas/Controls/FightModeDropdown"]
+mouse_filter = 2
+metadata/unity_id = 29
+anchor_left = 0
+anchor_right = 1
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -2
+offset_bottom = 148
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+visible = false
+
+[node name="UnityImage" type="Control" parent="Canvas/Controls/FightModeDropdown/Template"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("2")
+border = Vector4(10, 10, 10, 10)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Viewport" type="Control" parent="Canvas/Controls/FightModeDropdown/Template"]
+mouse_filter = 2
+metadata/unity_id = 73
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = -18
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0)
+clip_contents = true
+
+[node name="UnityImage" type="Control" parent="Canvas/Controls/FightModeDropdown/Template/Viewport"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("5")
+border = Vector4(10, 10, 10, 10)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Content" type="Control" parent="Canvas/Controls/FightModeDropdown/Template/Viewport"]
+mouse_filter = 2
+metadata/unity_id = 39
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 28
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+
+[node name="Item" type="Control" parent="Canvas/Controls/FightModeDropdown/Template/Viewport/Content"]
+mouse_filter = 2
+metadata/unity_id = 78
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -10
+offset_bottom = 10
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Item Background" type="Control" parent="Canvas/Controls/FightModeDropdown/Template/Viewport/Content/Item"]
+mouse_filter = 2
+metadata/unity_id = 7
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Canvas/Controls/FightModeDropdown/Template/Viewport/Content/Item/Item Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.960784316, 0.960784316, 0.960784316, 1)
+
+[node name="Item Checkmark" type="Control" parent="Canvas/Controls/FightModeDropdown/Template/Viewport/Content/Item"]
+mouse_filter = 2
+metadata/unity_id = 31
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 20
+offset_top = -10
+offset_bottom = 10
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="Canvas/Controls/FightModeDropdown/Template/Viewport/Content/Item/Item Checkmark"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("6")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Item Label" type="Control" parent="Canvas/Controls/FightModeDropdown/Template/Viewport/Content/Item"]
+mouse_filter = 2
+metadata/unity_id = 6
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 20
+offset_right = -10
+offset_top = 2
+offset_bottom = -1
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="Canvas/Controls/FightModeDropdown/Template/Viewport/Content/Item/Item Label"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Option A"
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.196078435, 0.196078435, 0.196078435, 1)
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="Scrollbar" type="Control" parent="Canvas/Controls/FightModeDropdown/Template"]
+mouse_filter = 2
+metadata/unity_id = 21
+anchor_left = 1
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -20
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(1, 0)
+
+[node name="UnityImage" type="Control" parent="Canvas/Controls/FightModeDropdown/Template/Scrollbar"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("7")
+border = Vector4(10, 10, 10, 10)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Sliding Area" type="Control" parent="Canvas/Controls/FightModeDropdown/Template/Scrollbar"]
+mouse_filter = 2
+metadata/unity_id = 47
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 10
+offset_right = -10
+offset_top = 10
+offset_bottom = -10
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Handle" type="Control" parent="Canvas/Controls/FightModeDropdown/Template/Scrollbar/Sliding Area"]
+mouse_filter = 2
+metadata/unity_id = 43
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.799999997
+anchor_bottom = 1
+offset_left = -10
+offset_right = 10
+offset_top = -10
+offset_bottom = 10
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="Control" parent="Canvas/Controls/FightModeDropdown/Template/Scrollbar/Sliding Area/Handle"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("2")
+border = Vector4(10, 10, 10, 10)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="StartButton" type="Control" parent="Canvas/Controls"]
+mouse_filter = 2
+metadata/unity_id = 38
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -40
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(1, 1)
+
+[node name="UnityImage" type="Control" parent="Canvas/Controls/StartButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("2")
+border = Vector4(10, 10, 10, 10)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Label" type="Control" parent="Canvas/Controls/StartButton"]
+mouse_filter = 2
+metadata/unity_id = 60
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="Canvas/Controls/StartButton/Label"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Start"
+theme_override_font_sizes/font_size = 24
+theme_override_colors/font_color = Color(0.196078435, 0.196078435, 0.196078435, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Netcode" type="Control" parent="Canvas"]
+mouse_filter = 2
+metadata/unity_id = 54
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 1596
+offset_right = -38
+offset_top = 640
+offset_bottom = -32
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="StatusLabel" type="Control" parent="Canvas/Netcode"]
+mouse_filter = 2
+metadata/unity_id = 51
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -15
+offset_bottom = 15
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="Canvas/Netcode/StatusLabel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Disconnected"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.850000024, 0.150000006, 0.150000006, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StartHostButton" type="Control" parent="Canvas/Netcode"]
+mouse_filter = 2
+metadata/unity_id = 23
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 30
+rotation = 0
+scale = Vector2(1.00000012, 1.00000012)
+pivot_offset_ratio = Vector2(0.5, 0)
+
+[node name="UnityImage" type="Control" parent="Canvas/Netcode/StartHostButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("2")
+border = Vector4(10, 10, 10, 10)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Label" type="Control" parent="Canvas/Netcode/StartHostButton"]
+mouse_filter = 2
+metadata/unity_id = 50
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 4
+offset_right = -4
+offset_top = 4
+offset_bottom = -4
+rotation = 0
+scale = Vector2(0.99999994, 0.99999994)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="Canvas/Netcode/StartHostButton/Label"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Start Host"
+theme_override_font_sizes/font_size = 20
+theme_override_colors/font_color = Color(0.195999995, 0.195999995, 0.195999995, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ConnectClientButton" type="Control" parent="Canvas/Netcode"]
+mouse_filter = 2
+metadata/unity_id = 79
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 30
+rotation = 0
+scale = Vector2(1.00000012, 1.00000012)
+pivot_offset_ratio = Vector2(0.5, 0)
+
+[node name="UnityImage" type="Control" parent="Canvas/Netcode/ConnectClientButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("2")
+border = Vector4(10, 10, 10, 10)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Label" type="Control" parent="Canvas/Netcode/ConnectClientButton"]
+mouse_filter = 2
+metadata/unity_id = 69
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 4
+offset_right = -4
+offset_top = 4
+offset_bottom = -4
+rotation = 0
+scale = Vector2(0.99999994, 0.99999994)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="Canvas/Netcode/ConnectClientButton/Label"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Connect Client"
+theme_override_font_sizes/font_size = 20
+theme_override_colors/font_color = Color(0.195999995, 0.195999995, 0.195999995, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DisconnectButton" type="Control" parent="Canvas/Netcode"]
+mouse_filter = 2
+metadata/unity_id = 77
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 30
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+
+[node name="UnityImage" type="Control" parent="Canvas/Netcode/DisconnectButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("2")
+border = Vector4(10, 10, 10, 10)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Label" type="Control" parent="Canvas/Netcode/DisconnectButton"]
+mouse_filter = 2
+metadata/unity_id = 44
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 4
+offset_right = -4
+offset_top = 4
+offset_bottom = -4
+rotation = 0
+scale = Vector2(0.99999994, 0.99999994)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="Canvas/Netcode/DisconnectButton/Label"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Disconnect"
+theme_override_font_sizes/font_size = 20
+theme_override_colors/font_color = Color(0.195999995, 0.195999995, 0.195999995, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HeroesContainer" type="Control" parent="Canvas"]
+mouse_filter = 2
+metadata/unity_id = 59
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 32
+offset_right = -32
+offset_top = 32
+offset_bottom = 608
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+
+[node name="UnityImage" type="Control" parent="Canvas/HeroesContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("1")
+border = Vector4(10, 10, 10, 10)
+pixels_per_unit = 1.28
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Scroll View" type="Control" parent="Canvas/HeroesContainer"]
+mouse_filter = 2
+metadata/unity_id = 11
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = 0
+offset_bottom = 16
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="Control" parent="Canvas/HeroesContainer/Scroll View"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("7")
+border = Vector4(10, 10, 10, 10)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 0)
+
+[node name="Viewport" type="Control" parent="Canvas/HeroesContainer/Scroll View"]
+mouse_filter = 2
+metadata/unity_id = 13
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0)
+clip_contents = true
+
+[node name="UnityImage" type="Control" parent="Canvas/HeroesContainer/Scroll View/Viewport"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("5")
+border = Vector4(10, 10, 10, 10)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Content" type="Control" parent="Canvas/HeroesContainer/Scroll View/Viewport"]
+mouse_filter = 2
+metadata/unity_id = 52
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0.000183105469
+offset_right = 0.000183105469
+offset_top = 80
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Scrollbar Horizontal" type="Control" parent="Canvas/HeroesContainer/Scroll View"]
+mouse_filter = 2
+metadata/unity_id = 27
+anchor_left = 0
+anchor_right = 1
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -12
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 1)
+
+[node name="UnityImage" type="ColorRect" parent="Canvas/HeroesContainer/Scroll View/Scrollbar Horizontal"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(1, 1, 1, 1)
+
+[node name="Sliding Area" type="Control" parent="Canvas/HeroesContainer/Scroll View/Scrollbar Horizontal"]
+mouse_filter = 2
+metadata/unity_id = 76
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 10
+offset_right = -10
+offset_top = 10
+offset_bottom = -10
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Handle" type="Control" parent="Canvas/HeroesContainer/Scroll View/Scrollbar Horizontal/Sliding Area"]
+mouse_filter = 2
+metadata/unity_id = 67
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -10
+offset_right = 10
+offset_top = -10
+offset_bottom = 10
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="Control" parent="Canvas/HeroesContainer/Scroll View/Scrollbar Horizontal/Sliding Area/Handle"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("8")
+border = Vector4(24, 24, 24, 24)
+pixels_per_unit = 4
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="TitleText" type="Control" parent="Canvas/HeroesContainer"]
+mouse_filter = 2
+metadata/unity_id = 58
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0
+anchor_bottom = 0
+offset_left = -100
+offset_right = 100
+offset_top = 16
+offset_bottom = 76
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+
+[node name="UnityText" type="Label" parent="Canvas/HeroesContainer/TitleText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Heroes"
+theme_override_font_sizes/font_size = 48
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 1
+vertical_alignment = 0
+
+[node name="ErrorDialog" type="Control" parent="Canvas"]
+mouse_filter = 2
+metadata/unity_id = 97
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -50
+offset_right = 50
+offset_top = -50
+offset_bottom = 50
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="ModalBackground" type="Control" parent="Canvas/ErrorDialog"]
+mouse_filter = 2
+metadata/unity_id = 90
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Canvas/ErrorDialog/ModalBackground"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0.501960814)
+
+[node name="DialogPanel" type="Control" parent="Canvas/ErrorDialog"]
+mouse_filter = 2
+metadata/unity_id = 89
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -350
+offset_right = 350
+offset_top = -210.924347
+offset_bottom = 210.924347
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="Control" parent="Canvas/ErrorDialog/DialogPanel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("9")
+border = Vector4(24, 24, 24, 24)
+pixels_per_unit = 4
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="DialogTitleText" type="Control" parent="Canvas/ErrorDialog/DialogPanel"]
+mouse_filter = 2
+metadata/unity_id = 99
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+
+[node name="UnityText" type="Label" parent="Canvas/ErrorDialog/DialogPanel/DialogTitleText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Unhandled Exception"
+theme_override_font_sizes/font_size = 36
+theme_override_colors/font_color = Color(0.972549021, 0.941176474, 0.823529422, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DialogText" type="Control" parent="Canvas/ErrorDialog/DialogPanel"]
+mouse_filter = 2
+metadata/unity_id = 98
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="Canvas/ErrorDialog/DialogPanel/DialogText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "An unexpected error occurred. Please paste the stack trace below to bug reporting and/or the engineering team. (Click below, then <b>Ctrl+A, Ctrl+C</b> to copy)."
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.972549021, 0.941176474, 0.823529422, 1)
+horizontal_alignment = 1
+vertical_alignment = 0
+
+[node name="StackStrackText" type="Control" parent="Canvas/ErrorDialog/DialogPanel"]
+mouse_filter = 2
+metadata/unity_id = 95
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="Control" parent="Canvas/ErrorDialog/DialogPanel/StackStrackText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("3")
+border = Vector4(10, 10, 10, 10)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Text Area" type="Control" parent="Canvas/ErrorDialog/DialogPanel/StackStrackText"]
+mouse_filter = 2
+metadata/unity_id = 94
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 10
+offset_right = -10
+offset_top = 7
+offset_bottom = -6
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+clip_contents = true
+
+[node name="Placeholder" type="Control" parent="Canvas/ErrorDialog/DialogPanel/StackStrackText/Text Area"]
+mouse_filter = 2
+metadata/unity_id = 93
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="Canvas/ErrorDialog/DialogPanel/StackStrackText/Text Area/Placeholder"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = ""
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.196078435, 0.196078435, 0.196078435, 0.5)
+horizontal_alignment = 0
+vertical_alignment = 0
+
+[node name="Text" type="Control" parent="Canvas/ErrorDialog/DialogPanel/StackStrackText/Text Area"]
+mouse_filter = 2
+metadata/unity_id = 91
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="Canvas/ErrorDialog/DialogPanel/StackStrackText/Text Area/Text"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "​"
+theme_override_font_sizes/font_size = 12
+theme_override_colors/font_color = Color(0.196078435, 0.196078435, 0.196078435, 1)
+horizontal_alignment = 0
+vertical_alignment = 0
+
+[node name="ButtonPanel" type="Control" parent="Canvas/ErrorDialog/DialogPanel"]
+mouse_filter = 2
+metadata/unity_id = 96
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 1)
+
+[node name="CancelButton" type="Control" parent="Canvas/ErrorDialog/DialogPanel/ButtonPanel"]
+mouse_filter = 2
+metadata/unity_id = 101
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 170
+offset_right = 330
+offset_top = 7.99088669
+offset_bottom = 47.9908867
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="Control" parent="Canvas/ErrorDialog/DialogPanel/ButtonPanel/CancelButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("2")
+border = Vector4(10, 10, 10, 10)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(0.98113209, 0.634033442, 0.634033442, 1)
+
+[node name="Text (TMP)" type="Control" parent="Canvas/ErrorDialog/DialogPanel/ButtonPanel/CancelButton"]
+mouse_filter = 2
+metadata/unity_id = 92
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="Canvas/ErrorDialog/DialogPanel/ButtonPanel/CancelButton/Text (TMP)"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Cancel"
+theme_override_font_sizes/font_size = 24
+theme_override_colors/font_color = Color(0.196078435, 0.196078435, 0.196078435, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OkButton" type="Control" parent="Canvas/ErrorDialog/DialogPanel/ButtonPanel"]
+mouse_filter = 2
+metadata/unity_id = 100
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 245
+offset_right = 425
+offset_top = 4.47733688
+offset_bottom = 52.4773369
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="Control" parent="Canvas/ErrorDialog/DialogPanel/ButtonPanel/OkButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("10")
+border = Vector4(6, 6, 6, 7)
+pixels_per_unit = 4
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Text" type="Control" parent="Canvas/ErrorDialog/DialogPanel/ButtonPanel/OkButton"]
+mouse_filter = 2
+metadata/unity_id = 102
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="Canvas/ErrorDialog/DialogPanel/ButtonPanel/OkButton/Text"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "ok"
+theme_override_font_sizes/font_size = 24
+theme_override_colors/font_color = Color(0.972549021, 0.941176474, 0.823529422, 1)
+horizontal_alignment = 1
+vertical_alignment = 1

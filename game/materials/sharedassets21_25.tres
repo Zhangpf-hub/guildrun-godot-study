@@ -1,0 +1,5 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[resource]
+resource_name = "HexagonTile_Mat"
+metadata/unity_shader = "Shader Graphs/Tile_SG"

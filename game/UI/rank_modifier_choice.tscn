@@ -1,0 +1,1313 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://UI/sliced_image.gd" id="SlicedImage"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets2_173.png" id="1"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets2_219.png" id="2"]
+[ext_resource type="Texture2D" path="res://sprites/resources_908.png" id="3"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets2_93.png" id="4"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets1_4328.png" id="5"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets2_210.png" id="6"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets2_188.png" id="7"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets2_100.png" id="8"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets2_142.png" id="9"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets2_215.png" id="10"]
+[ext_resource type="Texture2D" path="res://sprites/resources_877.png" id="11"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets2_187.png" id="12"]
+
+[node name="rank_modifier_choiceUI" type="Control"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="RankModifierChoiceView" type="Control" parent="."]
+mouse_filter = 2
+metadata/unity_id = 4597
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -150
+offset_right = 150
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+metadata/unity_file = "sharedassets3.assets"
+metadata/fit_axes = Vector2i(0, 2)
+metadata/layout_spacing = 8.0
+metadata/layout_padding = Vector4(22, 42, 22, 8)
+metadata/child_alignment = 1
+modulate = Color(1, 1, 1, 1.0)
+
+[node name="UnityImage" type="ColorRect" parent="RankModifierChoiceView"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(1, 1, 1, 0)
+
+[node name="TooltipAnchors" type="Control" parent="RankModifierChoiceView"]
+mouse_filter = 2
+metadata/unity_id = 3226
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -16
+offset_right = -16
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+metadata/ignore_layout = true
+metadata/preferred_height = -1.0
+
+[node name="VFX_Glow" type="Control" parent="RankModifierChoiceView"]
+mouse_filter = 2
+metadata/unity_id = 14836
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+metadata/ignore_layout = true
+metadata/preferred_height = -1.0
+
+[node name="Background" type="Control" parent="RankModifierChoiceView"]
+mouse_filter = 2
+metadata/unity_id = 6879
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -4
+offset_right = 4
+offset_top = -4
+offset_bottom = 4
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+metadata/ignore_layout = true
+metadata/preferred_height = -1.0
+
+[node name="UnityImage" type="TextureRect" parent="RankModifierChoiceView/Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("1")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="InnerBorder" type="Control" parent="RankModifierChoiceView"]
+mouse_filter = 2
+metadata/unity_id = 16200
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -9
+offset_right = 9
+offset_top = -32
+offset_bottom = 9
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = 320.0
+metadata/ignore_layout = true
+metadata/preferred_height = 462.05999755859375
+
+[node name="UnityImage" type="Control" parent="RankModifierChoiceView/InnerBorder"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("2")
+border = Vector4(90, 150, 90, 91)
+pixels_per_unit = 2.70000005
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="InnerBorder_Highlight" type="Control" parent="RankModifierChoiceView"]
+mouse_filter = 2
+metadata/unity_id = 10777
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -9
+offset_right = 9
+offset_top = -32
+offset_bottom = 9
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = 320.0
+metadata/ignore_layout = true
+metadata/preferred_height = 462.05999755859375
+
+[node name="UnityImage" type="Control" parent="RankModifierChoiceView/InnerBorder_Highlight"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("2")
+border = Vector4(90, 150, 90, 91)
+pixels_per_unit = 2.70000005
+draw_center = true
+self_modulate = Color(0.964705944, 0.937254965, 0.623529434, 1)
+
+[node name="TitleContainer" type="Control" parent="RankModifierChoiceView"]
+mouse_filter = 2
+metadata/unity_id = 12636
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/layout_spacing = 0.0
+metadata/layout_padding = Vector4(0, 0, 0, 0)
+metadata/child_alignment = 0
+
+[node name="ModifierTitleText" type="Control" parent="RankModifierChoiceView/TitleContainer"]
+mouse_filter = 2
+metadata/unity_id = 14693
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0)
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+metadata/ignore_layout = false
+metadata/preferred_height = -1.0
+
+[node name="UnityText" type="Label" parent="RankModifierChoiceView/TitleContainer/ModifierTitleText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "rage"
+theme_override_font_sizes/font_size = 28
+theme_override_colors/font_color = Color(0.972549081, 0.941176534, 0.823529482, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/unity_wrap = 1
+autowrap_mode = 3
+metadata/unity_font_style = 1
+metadata/unity_character_spacing = 0.0
+
+[node name="SubtitlePanel" type="Control" parent="RankModifierChoiceView/TitleContainer"]
+mouse_filter = 2
+metadata/unity_id = 3207
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/layout_spacing = 0.0
+metadata/layout_padding = Vector4(0, 0, 0, 0)
+metadata/child_alignment = 1
+
+[node name="Subtitle" type="Control" parent="RankModifierChoiceView/TitleContainer/SubtitlePanel"]
+mouse_filter = 2
+metadata/unity_id = 14561
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = 130.0
+metadata/preferred_width = -1.0
+metadata/ignore_layout = false
+metadata/preferred_height = -1.0
+metadata/layout_spacing = 0.0
+metadata/layout_padding = Vector4(0, 0, 0, 0)
+metadata/child_alignment = 0
+
+[node name="UnityText" type="Label" parent="RankModifierChoiceView/TitleContainer/SubtitlePanel/Subtitle"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Active Ability"
+theme_override_font_sizes/font_size = 24
+theme_override_colors/font_color = Color(1, 0.945098042, 0.764705896, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/unity_wrap = 1
+autowrap_mode = 3
+metadata/unity_font_style = 0
+metadata/unity_character_spacing = 0.0
+
+[node name="Mana" type="Control" parent="RankModifierChoiceView/TitleContainer/SubtitlePanel"]
+mouse_filter = 2
+metadata/unity_id = 16895
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 256
+offset_top = 21.3500013
+offset_bottom = 42.7000017
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = 130.0
+metadata/preferred_width = -1.0
+metadata/ignore_layout = false
+metadata/preferred_height = -1.0
+metadata/layout_spacing = 0.0
+metadata/layout_padding = Vector4(0, 0, 0, 0)
+metadata/child_alignment = 3
+
+[node name="ProgressText" type="Control" parent="RankModifierChoiceView/TitleContainer/SubtitlePanel/Mana"]
+mouse_filter = 2
+metadata/unity_id = 4350
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 256
+offset_top = 0
+offset_bottom = 21.3500004
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/layout_spacing = 0.0
+metadata/layout_padding = Vector4(0, 0, 0, 0)
+metadata/child_alignment = 0
+
+[node name="UnityText" type="Label" parent="RankModifierChoiceView/TitleContainer/SubtitlePanel/Mana/ProgressText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "[999/999 Mana]\n"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(1, 0.945098042, 0.764705896, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/unity_wrap = 1
+autowrap_mode = 3
+metadata/unity_font_style = 0
+metadata/unity_character_spacing = 0.0
+
+[node name="BodyContainer" type="Control" parent="RankModifierChoiceView"]
+mouse_filter = 2
+metadata/unity_id = 7487
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+metadata/ignore_layout = false
+metadata/preferred_height = -1.0
+metadata/layout_spacing = 12.0
+metadata/layout_padding = Vector4(0, 12, 0, 0)
+metadata/child_alignment = 0
+
+[node name="TopContainer" type="Control" parent="RankModifierChoiceView/BodyContainer"]
+mouse_filter = 2
+metadata/unity_id = 7442
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 256
+offset_top = 12
+offset_bottom = 48
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+metadata/layout_spacing = 12.0
+metadata/layout_padding = Vector4(0, 0, 0, 0)
+metadata/child_alignment = 0
+
+[node name="Class" type="Control" parent="RankModifierChoiceView/BodyContainer/TopContainer"]
+mouse_filter = 2
+metadata/unity_id = 15638
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 256
+offset_top = 0
+offset_bottom = 24
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+metadata/ignore_layout = false
+metadata/preferred_height = -1.0
+
+[node name="UnityText" type="Label" parent="RankModifierChoiceView/BodyContainer/TopContainer/Class"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Become a Duelist"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.886274576, 0.847058892, 0.690196097, 1)
+horizontal_alignment = 0
+vertical_alignment = 0
+metadata/unity_wrap = 1
+autowrap_mode = 3
+metadata/unity_font_style = 0
+metadata/unity_character_spacing = 0.0
+
+[node name="ClassIcon" type="Control" parent="RankModifierChoiceView/BodyContainer/TopContainer/Class"]
+mouse_filter = 2
+metadata/unity_id = 3000
+anchor_left = 1
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -60
+offset_right = -12
+offset_top = -24
+offset_bottom = 24
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="Icon" type="Control" parent="RankModifierChoiceView/BodyContainer/TopContainer/Class/ClassIcon"]
+mouse_filter = 2
+metadata/unity_id = 5339
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 4
+offset_right = -4
+offset_top = 4
+offset_bottom = -4
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityImage" type="TextureRect" parent="RankModifierChoiceView/BodyContainer/TopContainer/Class/ClassIcon/Icon"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("3")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="DividerLine" type="Control" parent="RankModifierChoiceView/BodyContainer/TopContainer"]
+mouse_filter = 2
+metadata/unity_id = 16291
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 256
+offset_top = 36
+offset_bottom = 36
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="Line_1" type="Control" parent="RankModifierChoiceView/BodyContainer/TopContainer/DividerLine"]
+mouse_filter = 2
+metadata/unity_id = 15367
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -1
+offset_bottom = 1
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityImage" type="ColorRect" parent="RankModifierChoiceView/BodyContainer/TopContainer/DividerLine/Line_1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.566037774, 0.566037774, 0.566037774, 0.470588237)
+
+[node name="MiddleContainer" type="Control" parent="RankModifierChoiceView/BodyContainer"]
+mouse_filter = 2
+metadata/unity_id = 9368
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/layout_spacing = 16.0
+metadata/layout_padding = Vector4(0, 0, 0, 64)
+metadata/child_alignment = 0
+
+[node name="ModifierDescription" type="Control" parent="RankModifierChoiceView/BodyContainer/MiddleContainer"]
+mouse_filter = 2
+metadata/unity_id = 14367
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityText" type="Label" parent="RankModifierChoiceView/BodyContainer/MiddleContainer/ModifierDescription"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "aLorem iapsum LaLorem em iapsum LaLorem iaaLorem iapsuaLorem iapsum LaLorem iaaLorem iapsuaLorem iapsum LaLorem iaaLorem iapsuaLorem iapsum LaLorem iaaLorem iapsuaLorem iapsum LaLorem iaaLorem iapsu"
+theme_override_font_sizes/font_size = 16
+theme_override_colors/font_color = Color(0.925490201, 0.890196085, 0.75686276, 1)
+horizontal_alignment = 0
+vertical_alignment = 0
+metadata/unity_wrap = 1
+autowrap_mode = 3
+metadata/unity_font_style = 0
+metadata/unity_character_spacing = 1.0
+
+[node name="ItemSimple" type="Control" parent="RankModifierChoiceView/BodyContainer/MiddleContainer"]
+mouse_filter = 2
+metadata/unity_id = 974
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 256
+offset_top = 186.789993
+offset_bottom = 250.789993
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = 256.0
+metadata/ignore_layout = false
+metadata/preferred_height = 64.0
+
+[node name="UnityImage" type="ColorRect" parent="RankModifierChoiceView/BodyContainer/MiddleContainer/ItemSimple"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(1, 1, 1, 0)
+
+[node name="TooltipAnchor" type="Control" parent="RankModifierChoiceView/BodyContainer/MiddleContainer/ItemSimple"]
+mouse_filter = 2
+metadata/unity_id = 4110
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 0
+offset_top = -8
+offset_bottom = -8
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="RankFrame" type="Control" parent="RankModifierChoiceView/BodyContainer/MiddleContainer/ItemSimple"]
+mouse_filter = 2
+metadata/unity_id = 3492
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityImage" type="TextureRect" parent="RankModifierChoiceView/BodyContainer/MiddleContainer/ItemSimple/RankFrame"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("4")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="ActiveSlot" type="Control" parent="RankModifierChoiceView/BodyContainer/MiddleContainer/ItemSimple"]
+mouse_filter = 2
+metadata/unity_id = 1483
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 4
+offset_right = -4
+offset_top = 4
+offset_bottom = -4
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityImage" type="TextureRect" parent="RankModifierChoiceView/BodyContainer/MiddleContainer/ItemSimple/ActiveSlot"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("5")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="NameText" type="Control" parent="RankModifierChoiceView/BodyContainer/MiddleContainer/ItemSimple/ActiveSlot"]
+mouse_filter = 2
+metadata/unity_id = 14110
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 3
+offset_right = -3
+offset_top = 3
+offset_bottom = -3
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityText" type="Label" parent="RankModifierChoiceView/BodyContainer/MiddleContainer/ItemSimple/ActiveSlot/NameText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Very Long Item Name"
+theme_override_font_sizes/font_size = 8
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/unity_wrap = 1
+autowrap_mode = 3
+metadata/unity_font_style = 16
+metadata/unity_character_spacing = 0.0
+
+[node name="BottomContainer" type="Control" parent="RankModifierChoiceView/BodyContainer"]
+mouse_filter = 2
+metadata/unity_id = 12132
+anchor_left = 0
+anchor_right = 1
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -46.7000008
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 1)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+metadata/fit_axes = Vector2i(0, 2)
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+metadata/ignore_layout = true
+metadata/preferred_height = -1.0
+metadata/layout_spacing = 0.0
+metadata/layout_padding = Vector4(0, 4, 0, 0)
+metadata/child_alignment = 0
+
+[node name="DividerLine_1" type="Control" parent="RankModifierChoiceView/BodyContainer/BottomContainer"]
+mouse_filter = 2
+metadata/unity_id = 15408
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+metadata/ignore_layout = true
+metadata/preferred_height = 2.0
+
+[node name="Line_1" type="Control" parent="RankModifierChoiceView/BodyContainer/BottomContainer/DividerLine_1"]
+mouse_filter = 2
+metadata/unity_id = 16242
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -1
+offset_bottom = 1
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityImage" type="ColorRect" parent="RankModifierChoiceView/BodyContainer/BottomContainer/DividerLine_1/Line_1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.566037774, 0.566037774, 0.566037774, 0.470588237)
+
+[node name="ModifierTitleText" type="Control" parent="RankModifierChoiceView/BodyContainer/BottomContainer"]
+mouse_filter = 2
+metadata/unity_id = 17723
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 276
+offset_top = 4
+offset_bottom = 46.7000008
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 1)
+metadata/unity_file = "sharedassets3.assets"
+metadata/layout_spacing = 0.0
+metadata/layout_padding = Vector4(0, 0, 0, 0)
+metadata/child_alignment = 0
+
+[node name="UnityText" type="Label" parent="RankModifierChoiceView/BodyContainer/BottomContainer/ModifierTitleText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Für weitere Infos [Umschalttaste] gedrückt halten"
+theme_override_font_sizes/font_size = 28
+theme_override_colors/font_color = Color(0.972549081, 0.941176534, 0.823529482, 1)
+horizontal_alignment = 0
+vertical_alignment = 1
+metadata/unity_wrap = 1
+autowrap_mode = 3
+metadata/unity_font_style = 0
+metadata/unity_character_spacing = 0.0
+
+[node name="OuterBorder" type="Control" parent="RankModifierChoiceView"]
+mouse_filter = 2
+metadata/unity_id = 7899
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -9
+offset_right = 9
+offset_top = -32
+offset_bottom = 9
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = 320.0
+metadata/ignore_layout = true
+metadata/preferred_height = 462.05999755859375
+
+[node name="UnityImage" type="Control" parent="RankModifierChoiceView/OuterBorder"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("6")
+border = Vector4(330, 390, 330, 271)
+pixels_per_unit = 2.6500001
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="OuterBorder_Highlight" type="Control" parent="RankModifierChoiceView"]
+mouse_filter = 2
+metadata/unity_id = 16867
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -9
+offset_right = 9
+offset_top = -32
+offset_bottom = 9
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = 320.0
+metadata/ignore_layout = true
+metadata/preferred_height = 462.05999755859375
+
+[node name="UnityImage" type="Control" parent="RankModifierChoiceView/OuterBorder_Highlight"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("6")
+border = Vector4(330, 390, 330, 271)
+pixels_per_unit = 2.6500001
+draw_center = true
+self_modulate = Color(0.964705884, 0.937254906, 0.623529434, 1)
+
+[node name="Icon" type="Control" parent="RankModifierChoiceView"]
+mouse_filter = 2
+metadata/unity_id = 8186
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0
+anchor_bottom = 0
+offset_left = -82
+offset_right = 82
+offset_top = -55.3999989
+offset_bottom = 36.6000011
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.199999988)
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+metadata/ignore_layout = true
+metadata/preferred_height = 50.0
+
+[node name="UnityImage" type="TextureRect" parent="RankModifierChoiceView/Icon"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("7")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Icon_Highlight" type="Control" parent="RankModifierChoiceView/Icon"]
+mouse_filter = 2
+metadata/unity_id = 8595
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0
+anchor_bottom = 0
+offset_left = -82
+offset_right = 82
+offset_top = 2.62260437e-06
+offset_bottom = 92.0000026
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.199999988)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityImage" type="TextureRect" parent="RankModifierChoiceView/Icon/Icon_Highlight"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("7")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(0.964705884, 0.937254906, 0.623529434, 1)
+
+[node name="Frame" type="Control" parent="RankModifierChoiceView/Icon"]
+mouse_filter = 2
+metadata/unity_id = 16522
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -34
+offset_right = 34
+offset_top = -36
+offset_bottom = 34
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityImage" type="TextureRect" parent="RankModifierChoiceView/Icon/Frame"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("8")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="IconReference_1" type="Control" parent="RankModifierChoiceView/Icon"]
+mouse_filter = 2
+metadata/unity_id = 13565
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -27
+offset_right = 27
+offset_top = -27
+offset_bottom = 27
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityImage" type="TextureRect" parent="RankModifierChoiceView/Icon/IconReference_1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("9")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="StatsBanner" type="Control" parent="RankModifierChoiceView"]
+mouse_filter = 2
+metadata/unity_id = 16758
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = -33
+offset_right = 9
+offset_top = 42
+offset_bottom = 90
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+metadata/fit_axes = Vector2i(0, 2)
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+metadata/ignore_layout = true
+metadata/preferred_height = 48.0
+metadata/layout_spacing = 6.0
+metadata/layout_padding = Vector4(0, 12, 0, 24)
+metadata/child_alignment = 4
+
+[node name="UnityImage" type="Control" parent="RankModifierChoiceView/StatsBanner"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("10")
+border = Vector4(18, 18, 18, 128)
+pixels_per_unit = 5
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="ClassTag" type="Control" parent="RankModifierChoiceView/StatsBanner"]
+mouse_filter = 2
+metadata/unity_id = 2079
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 9.04999924
+offset_right = 33.0499992
+offset_top = 12
+offset_bottom = 48
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityImage" type="TextureRect" parent="RankModifierChoiceView/StatsBanner/ClassTag"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("11")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="FakeTooltip" type="Control" parent="RankModifierChoiceView/StatsBanner/ClassTag"]
+mouse_filter = 2
+metadata/unity_id = 14057
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0
+anchor_bottom = 0
+offset_left = -70.6399994
+offset_right = 70.6399994
+offset_top = -16
+offset_bottom = 8
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 1)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+metadata/fit_axes = Vector2i(2, 0)
+metadata/layout_spacing = 0.0
+metadata/layout_padding = Vector4(4, 0, 4, 0)
+metadata/child_alignment = 4
+
+[node name="UnityImage" type="Control" parent="RankModifierChoiceView/StatsBanner/ClassTag/FakeTooltip"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("12")
+border = Vector4(12, 12, 12, 12)
+pixels_per_unit = 4
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="TooltipText" type="Control" parent="RankModifierChoiceView/StatsBanner/ClassTag/FakeTooltip"]
+mouse_filter = 2
+metadata/unity_id = 15665
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 2
+offset_right = 139.279999
+offset_top = 0
+offset_bottom = 24
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = 80.0
+metadata/preferred_width = -1.0
+metadata/ignore_layout = false
+metadata/preferred_height = -1.0
+metadata/layout_spacing = 0.0
+metadata/layout_padding = Vector4(0, 0, 0, 0)
+metadata/child_alignment = 0
+
+[node name="UnityText" type="Label" parent="RankModifierChoiceView/StatsBanner/ClassTag/FakeTooltip/TooltipText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "assassindadsadsad"
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/unity_wrap = 1
+autowrap_mode = 3
+metadata/unity_font_style = 16
+metadata/unity_character_spacing = 0.0
+
+[node name="ClassBanner" type="Control" parent="RankModifierChoiceView"]
+mouse_filter = 2
+metadata/unity_id = 2970
+anchor_left = 1
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 0
+offset_left = -9
+offset_right = 33
+offset_top = 42
+offset_bottom = 90
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+metadata/fit_axes = Vector2i(0, 2)
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+metadata/ignore_layout = true
+metadata/preferred_height = 48.0
+metadata/layout_spacing = 6.0
+metadata/layout_padding = Vector4(0, 12, 0, 24)
+metadata/child_alignment = 4
+
+[node name="UnityImage" type="Control" parent="RankModifierChoiceView/ClassBanner"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("10")
+border = Vector4(18, 18, 18, 128)
+pixels_per_unit = 5
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="ClassTag" type="Control" parent="RankModifierChoiceView/ClassBanner"]
+mouse_filter = 2
+metadata/unity_id = 13840
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 9.04999924
+offset_right = 33.0499992
+offset_top = 12
+offset_bottom = 48
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityImage" type="TextureRect" parent="RankModifierChoiceView/ClassBanner/ClassTag"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("11")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="FakeTooltip" type="Control" parent="RankModifierChoiceView/ClassBanner/ClassTag"]
+mouse_filter = 2
+metadata/unity_id = 2437
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -143.619999
+offset_right = -2.33999991
+offset_top = -12
+offset_bottom = 12
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(1, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+metadata/fit_axes = Vector2i(2, 0)
+metadata/layout_spacing = 0.0
+metadata/layout_padding = Vector4(4, 0, 4, 0)
+metadata/child_alignment = 4
+
+[node name="UnityImage" type="Control" parent="RankModifierChoiceView/ClassBanner/ClassTag/FakeTooltip"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("12")
+border = Vector4(12, 12, 12, 12)
+pixels_per_unit = 4
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="TooltipText" type="Control" parent="RankModifierChoiceView/ClassBanner/ClassTag/FakeTooltip"]
+mouse_filter = 2
+metadata/unity_id = 4045
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 2
+offset_right = 139.279999
+offset_top = 0
+offset_bottom = 24
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = 80.0
+metadata/preferred_width = -1.0
+metadata/ignore_layout = false
+metadata/preferred_height = -1.0
+metadata/layout_spacing = 0.0
+metadata/layout_padding = Vector4(0, 0, 0, 0)
+metadata/child_alignment = 0
+
+[node name="UnityText" type="Label" parent="RankModifierChoiceView/ClassBanner/ClassTag/FakeTooltip/TooltipText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "assassindadsadsad"
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/unity_wrap = 1
+autowrap_mode = 3
+metadata/unity_font_style = 16
+metadata/unity_character_spacing = 0.0
+
+[node name="VFX_RankModifier_Chosen" type="Control" parent="RankModifierChoiceView"]
+mouse_filter = 2
+metadata/unity_id = 11278
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -140
+offset_right = 140
+offset_top = -54
+offset_bottom = -54
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+metadata/ignore_layout = true
+metadata/preferred_height = -1.0
+
+[node name="Spell_Storm_5" type="Control" parent="RankModifierChoiceView/VFX_RankModifier_Chosen"]
+mouse_filter = 2
+metadata/unity_id = 15513
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 280
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="ClassSource" type="Control" parent="RankModifierChoiceView"]
+mouse_filter = 2
+metadata/unity_id = 800
+anchor_left = 0
+anchor_right = 1
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = 12
+offset_bottom = 36
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+metadata/ignore_layout = true
+metadata/preferred_height = -1.0
+
+[node name="UnityText" type="Label" parent="RankModifierChoiceView/ClassSource"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Class Name"
+theme_override_font_sizes/font_size = 36
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 2
+vertical_alignment = 0
+metadata/unity_wrap = 1
+autowrap_mode = 3
+metadata/unity_font_style = 0
+metadata/unity_character_spacing = 0.0
+
+[node name="CurrentText" type="Control" parent="RankModifierChoiceView"]
+mouse_filter = 2
+metadata/unity_id = 9051
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 300
+offset_top = 48
+offset_bottom = 80
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+metadata/ignore_layout = true
+metadata/preferred_height = -1.0
+
+[node name="UnityText" type="Label" parent="RankModifierChoiceView/CurrentText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "current"
+theme_override_font_sizes/font_size = 32
+theme_override_colors/font_color = Color(0.568627477, 0.568627477, 0.568627477, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/unity_wrap = 1
+autowrap_mode = 3
+metadata/unity_font_style = 16
+metadata/unity_character_spacing = 0.0

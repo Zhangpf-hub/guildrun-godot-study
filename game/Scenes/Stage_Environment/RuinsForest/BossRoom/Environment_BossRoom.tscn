@@ -1,0 +1,357 @@
+[gd_scene format=3]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets10_30.obj" id="1"]
+[ext_resource type="ShaderMaterial" path="res://materials/sharedassets10_4.tres" id="2"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets10_31.obj" id="3"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets10_36.obj" id="4"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets10_37.obj" id="5"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets10_38.obj" id="6"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets16_13.obj" id="7"]
+[ext_resource type="ShaderMaterial" path="res://materials/sharedassets16_2.tres" id="8"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets16_15.obj" id="9"]
+[ext_resource type="ShaderMaterial" path="res://materials/sharedassets16_5.tres" id="10"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets16_6.tres" id="11"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets16_14.obj" id="12"]
+[ext_resource type="ShaderMaterial" path="res://materials/sharedassets16_3.tres" id="13"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets16_4.tres" id="14"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets16_17.png" id="15"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets16_18.png" id="16"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets16_19.png" id="17"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets16_16.png" id="18"]
+[ext_resource type="ArrayMesh" path="res://meshes/unity_default_resources_10202.obj" id="19"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_1167.tres" id="20"]
+[ext_resource type="ArrayMesh" path="res://meshes/unity_default_resources_10209.obj" id="21"]
+[ext_resource type="ShaderMaterial" path="res://materials/sharedassets7_10.tres" id="22"]
+
+[node name="Environment_BossRoom" type="Node3D"]
+
+[node name="LocalVolume" type="Node3D" parent="."]
+position = Vector3(16.7000008, 29.4101543, 34.7999992)
+quaternion = Quaternion(-0.295718223, 0.0832255185, 0.0258774292, 0.951291025)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 2
+metadata/unity_name = "LocalVolume"
+
+[node name="BackgroundPlanes" type="Node3D" parent="."]
+position = Vector3(-0.699999988, 0, -5.5)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(0.980000019, 0.980000019, 0.980000019)
+metadata/unity_id = 4
+metadata/unity_name = "BackgroundPlanes"
+
+[node name="FloatingCrystal" type="Node3D" parent="BackgroundPlanes"]
+position = Vector3(14.1999998, -0.600000083, 9.39999962)
+quaternion = Quaternion(0, -1, -0, 0)
+scale = Vector3(0.800000072, 0.800000072, 0.800000072)
+metadata/unity_id = 11
+metadata/unity_name = "FloatingCrystal"
+
+[node name="RuinsForest_Default_Gate03_Crystal_Floating" type="Node3D" parent="BackgroundPlanes/FloatingCrystal"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(8, 8, 8)
+metadata/unity_id = 14
+metadata/unity_name = "RuinsForest_Default_Gate03_Crystal_Floating"
+
+[node name="RuinsForest_Crystal_Floating_01" type="Node3D" parent="BackgroundPlanes/FloatingCrystal/RuinsForest_Default_Gate03_Crystal_Floating"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18
+metadata/unity_name = "RuinsForest_Crystal_Floating_01"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="BackgroundPlanes/FloatingCrystal/RuinsForest_Default_Gate03_Crystal_Floating/RuinsForest_Crystal_Floating_01"]
+mesh = ExtResource("1")
+visible = true
+surface_material_override/0 = ExtResource("2")
+cast_shadow = 0
+
+[node name="RuinsForest_Crystal_Floating_02" type="Node3D" parent="BackgroundPlanes/FloatingCrystal/RuinsForest_Default_Gate03_Crystal_Floating"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22
+metadata/unity_name = "RuinsForest_Crystal_Floating_02"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="BackgroundPlanes/FloatingCrystal/RuinsForest_Default_Gate03_Crystal_Floating/RuinsForest_Crystal_Floating_02"]
+mesh = ExtResource("3")
+visible = true
+surface_material_override/0 = ExtResource("2")
+cast_shadow = 0
+
+[node name="RuinsForest_Crystal_Floating_03" type="Node3D" parent="BackgroundPlanes/FloatingCrystal/RuinsForest_Default_Gate03_Crystal_Floating"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20
+metadata/unity_name = "RuinsForest_Crystal_Floating_03"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="BackgroundPlanes/FloatingCrystal/RuinsForest_Default_Gate03_Crystal_Floating/RuinsForest_Crystal_Floating_03"]
+mesh = ExtResource("4")
+visible = true
+surface_material_override/0 = ExtResource("2")
+cast_shadow = 0
+
+[node name="RuinsForest_Crystal_Floating_04" type="Node3D" parent="BackgroundPlanes/FloatingCrystal/RuinsForest_Default_Gate03_Crystal_Floating"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27
+metadata/unity_name = "RuinsForest_Crystal_Floating_04"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="BackgroundPlanes/FloatingCrystal/RuinsForest_Default_Gate03_Crystal_Floating/RuinsForest_Crystal_Floating_04"]
+mesh = ExtResource("5")
+visible = true
+surface_material_override/0 = ExtResource("2")
+cast_shadow = 0
+
+[node name="RuinsForest_Crystal_Floating_05" type="Node3D" parent="BackgroundPlanes/FloatingCrystal/RuinsForest_Default_Gate03_Crystal_Floating"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 28
+metadata/unity_name = "RuinsForest_Crystal_Floating_05"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="BackgroundPlanes/FloatingCrystal/RuinsForest_Default_Gate03_Crystal_Floating/RuinsForest_Crystal_Floating_05"]
+mesh = ExtResource("6")
+visible = true
+surface_material_override/0 = ExtResource("2")
+cast_shadow = 0
+
+[node name="PlayStage" type="Node3D" parent="BackgroundPlanes"]
+position = Vector3(9.89999962, -0.600000024, -4.49999952)
+quaternion = Quaternion(0, -1, -0, 0)
+scale = Vector3(0.850000024, 0.850000024, 0.850000024)
+metadata/unity_id = 13
+metadata/unity_name = "PlayStage"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="BackgroundPlanes/PlayStage"]
+mesh = ExtResource("7")
+visible = true
+surface_material_override/0 = ExtResource("8")
+cast_shadow = 0
+
+[node name="PlayStage_Crystal" type="Node3D" parent="BackgroundPlanes"]
+position = Vector3(10.3999996, 1.29999995, -4.69999981)
+quaternion = Quaternion(0, -1, -0, 0)
+scale = Vector3(0.850000024, 0.850000024, 0.850000024)
+metadata/unity_id = 1
+metadata/unity_name = "PlayStage_Crystal"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="BackgroundPlanes/PlayStage_Crystal"]
+mesh = ExtResource("9")
+visible = true
+surface_material_override/0 = ExtResource("10")
+cast_shadow = 0
+
+[node name="PlayStage_Crystal_Shine" type="Node3D" parent="BackgroundPlanes/PlayStage_Crystal"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7
+metadata/unity_name = "PlayStage_Crystal_Shine"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="BackgroundPlanes/PlayStage_Crystal/PlayStage_Crystal_Shine"]
+mesh = ExtResource("9")
+visible = true
+surface_material_override/0 = ExtResource("11")
+cast_shadow = 0
+
+[node name="PlayStage_Crystal_02" type="Node3D" parent="BackgroundPlanes"]
+position = Vector3(10.5, 2, -4.5)
+quaternion = Quaternion(0, -1, -0, 0)
+scale = Vector3(0.850000024, 0.850000024, 0.850000024)
+metadata/unity_id = 12
+metadata/unity_name = "PlayStage_Crystal_02"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="BackgroundPlanes/PlayStage_Crystal_02"]
+mesh = ExtResource("12")
+visible = true
+surface_material_override/0 = ExtResource("13")
+cast_shadow = 0
+
+[node name="PlayStage_Crystal_02_Shine" type="Node3D" parent="BackgroundPlanes/PlayStage_Crystal_02"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6
+metadata/unity_name = "PlayStage_Crystal_02_Shine"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="BackgroundPlanes/PlayStage_Crystal_02/PlayStage_Crystal_02_Shine"]
+mesh = ExtResource("12")
+visible = true
+surface_material_override/0 = ExtResource("14")
+cast_shadow = 0
+
+[node name="Background_01" type="Node3D" parent="BackgroundPlanes"]
+position = Vector3(1, -58.2000008, -119)
+quaternion = Quaternion(-0.257834226, 0.084186025, 0.0225575808, 0.962250173)
+scale = Vector3(2.3599999, 2.3599999, 2.3599999)
+metadata/unity_id = 9
+metadata/unity_name = "Background_01"
+
+[node name="UnitySprite" type="Sprite3D" parent="BackgroundPlanes/Background_01"]
+texture = ExtResource("15")
+pixel_size = 0.0195312497089617
+visible = true
+flip_h = false
+flip_v = false
+modulate = Color(1, 1, 1, 1)
+
+[node name="Background_02" type="Node3D" parent="BackgroundPlanes"]
+position = Vector3(-31.7000008, -140.300018, -270.300018)
+quaternion = Quaternion(-0.257834226, 0.084186025, 0.0225575808, 0.962250173)
+scale = Vector3(4.78000021, 4.78000021, 4.78000021)
+metadata/unity_id = 10
+metadata/unity_name = "Background_02"
+
+[node name="UnitySprite" type="Sprite3D" parent="BackgroundPlanes/Background_02"]
+texture = ExtResource("16")
+pixel_size = 0.0195312497089617
+visible = true
+flip_h = false
+flip_v = false
+modulate = Color(1, 1, 1, 1)
+
+[node name="Background_03" type="Node3D" parent="BackgroundPlanes"]
+position = Vector3(-40.5999985, -169.899994, -320.900024)
+quaternion = Quaternion(-0.257834226, 0.084186025, 0.0225575808, 0.962250173)
+scale = Vector3(5.57999992, 5.57999992, 5.57999992)
+metadata/unity_id = 8
+metadata/unity_name = "Background_03"
+
+[node name="UnitySprite" type="Sprite3D" parent="BackgroundPlanes/Background_03"]
+texture = ExtResource("17")
+pixel_size = 0.0195312497089617
+visible = true
+flip_h = false
+flip_v = false
+modulate = Color(1, 1, 1, 1)
+offset = Vector2(0, 699.538208)
+
+[node name="Sky" type="Node3D" parent="BackgroundPlanes"]
+position = Vector3(-40.7000008, -109.099998, -319.299988)
+quaternion = Quaternion(-0.257834226, 0.084186025, 0.0225575808, 0.962250173)
+scale = Vector3(20.1000004, 20.1000004, 20.1000004)
+metadata/unity_id = 3
+metadata/unity_name = "Sky"
+
+[node name="UnitySprite" type="Sprite3D" parent="BackgroundPlanes/Sky"]
+texture = ExtResource("18")
+pixel_size = 0.01
+visible = true
+flip_h = false
+flip_v = false
+modulate = Color(1, 1, 1, 1)
+
+[node name="Directional Light" type="Node3D" parent="."]
+position = Vector3(0, 3, -0)
+quaternion = Quaternion(-0.39999947, 0.27805841, 0.766180456, 0.419108063)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5
+metadata/unity_name = "Directional Light"
+
+[node name="UnityLight" type="DirectionalLight3D" parent="Directional Light"]
+light_color = Color(0.542452812, 0.636149346, 0.809189819, 1)
+light_energy = 4.0
+visible = true
+shadow_enabled = true
+directional_shadow_mode = 0
+directional_shadow_max_distance = 150.0
+shadow_opacity = 1
+metadata/unity_color_temperature = 5000
+
+[node name="IntroWaypoints" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25
+metadata/unity_name = "IntroWaypoints"
+
+[node name="FirstTimeIntroWaypoint" type="Node3D" parent="IntroWaypoints"]
+position = Vector3(9.14000034, 0, 6.6960001)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24
+metadata/unity_name = "FirstTimeIntroWaypoint"
+
+[node name="Cube" type="Node3D" parent="IntroWaypoints/FirstTimeIntroWaypoint"]
+position = Vector3(-2.00999999, 0, 0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26
+metadata/unity_name = "Cube"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="IntroWaypoints/FirstTimeIntroWaypoint/Cube"]
+mesh = ExtResource("19")
+visible = false
+surface_material_override/0 = ExtResource("20")
+
+[node name="Cube_1" type="Node3D" parent="IntroWaypoints/FirstTimeIntroWaypoint"]
+position = Vector3(2.04999995, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16
+metadata/unity_name = "Cube_1"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="IntroWaypoints/FirstTimeIntroWaypoint/Cube_1"]
+mesh = ExtResource("19")
+visible = false
+surface_material_override/0 = ExtResource("20")
+
+[node name="RegularIntroWaypoint" type="Node3D" parent="IntroWaypoints"]
+position = Vector3(9.14000034, 0, 6.6960001)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19
+metadata/unity_name = "RegularIntroWaypoint"
+
+[node name="Cube" type="Node3D" parent="IntroWaypoints/RegularIntroWaypoint"]
+position = Vector3(-2.00999999, 0, 0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23
+metadata/unity_name = "Cube"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="IntroWaypoints/RegularIntroWaypoint/Cube"]
+mesh = ExtResource("19")
+visible = false
+surface_material_override/0 = ExtResource("20")
+
+[node name="Cube_1" type="Node3D" parent="IntroWaypoints/RegularIntroWaypoint"]
+position = Vector3(2.04999995, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 29
+metadata/unity_name = "Cube_1"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="IntroWaypoints/RegularIntroWaypoint/Cube_1"]
+mesh = ExtResource("19")
+visible = false
+surface_material_override/0 = ExtResource("20")
+
+[node name="ShadowPlane" type="Node3D" parent="."]
+position = Vector3(9.69999981, 0.100000001, -6.30000019)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(4, 4, 4)
+metadata/unity_id = 15
+metadata/unity_name = "ShadowPlane"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="ShadowPlane"]
+mesh = ExtResource("21")
+visible = true
+surface_material_override/0 = ExtResource("22")
+cast_shadow = 0
+
+[node name="VFX_EveningGlow" type="Node3D" parent="."]
+position = Vector3(0.899999976, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17
+metadata/unity_name = "VFX_EveningGlow"
+
+[node name="Back_Glow" type="Node3D" parent="VFX_EveningGlow"]
+position = Vector3(6.4000001, -0.200000003, -5.4000001)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21
+metadata/unity_name = "Back_Glow"

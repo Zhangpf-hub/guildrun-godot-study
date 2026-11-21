@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3]
+[ext_resource type="Texture2D" path="res://textures/sharedassets21_59.png" id="1"]
+
+[resource]
+resource_name = "M_Stairsrocks3"
+albedo_texture = ExtResource("1")
+transparency = 1
+cull_mode = 2
+albedo_color = Color(0.524260998, 0.53773582, 0.504761457, 1)
+metadata/unity_shader = "lilToon"

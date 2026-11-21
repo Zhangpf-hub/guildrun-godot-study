@@ -1,0 +1,142 @@
+[gd_scene format=3]
+
+
+[node name="tutorial_modalUI" type="Control"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="Canvas" type="Control" parent="."]
+mouse_filter = 2
+metadata/unity_id = 11559
+anchor_right = 1.0
+anchor_bottom = 1.0
+metadata/reference_resolution = Vector2(1920, 1080)
+metadata/match_width_or_height = 0.0
+metadata/aspect_ratio_threshold = 1.7999999523162842
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="Root" type="Control" parent="Canvas"]
+mouse_filter = 2
+metadata/unity_id = 3544
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 20
+offset_right = -20
+offset_top = 20
+offset_bottom = -20
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="CoreGameUI" type="Control" parent="Canvas/Root"]
+mouse_filter = 2
+metadata/unity_id = 12234
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+modulate = Color(1, 1, 1, 1.0)
+
+[node name="TutorialModal" type="Control" parent="Canvas/Root/CoreGameUI"]
+mouse_filter = 2
+metadata/unity_id = 3431
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -20
+offset_right = 20
+offset_top = -20.0000076
+offset_bottom = 20.0000076
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityImage" type="ColorRect" parent="Canvas/Root/CoreGameUI/TutorialModal"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="ModalMask_FirstFight" type="Control" parent="Canvas/Root/CoreGameUI/TutorialModal"]
+mouse_filter = 2
+metadata/unity_id = 15151
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 161.399963
+offset_right = -512.600037
+offset_top = -52.9399414
+offset_bottom = 427.140015
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityImage" type="ColorRect" parent="Canvas/Root/CoreGameUI/TutorialModal/ModalMask_FirstFight"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(1, 1, 1, 1)
+
+[node name="ModalMask_Crossroad" type="Control" parent="Canvas/Root/CoreGameUI/TutorialModal"]
+mouse_filter = 2
+metadata/unity_id = 14851
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -614.5
+offset_right = 765.300049
+offset_top = 149.200012
+offset_bottom = -445.139954
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityImage" type="ColorRect" parent="Canvas/Root/CoreGameUI/TutorialModal/ModalMask_Crossroad"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(1, 1, 1, 1)
+
+[node name="Modal" type="Control" parent="Canvas/Root/CoreGameUI/TutorialModal"]
+mouse_filter = 2
+metadata/unity_id = 17020
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityImage" type="ColorRect" parent="Canvas/Root/CoreGameUI/TutorialModal/Modal"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0.501960814)

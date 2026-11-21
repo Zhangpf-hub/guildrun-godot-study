@@ -1,0 +1,598 @@
+[gd_scene format=3]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2757.obj" id="1"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_571.tres" id="2"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2722.obj" id="3"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_575.tres" id="4"]
+
+[node name="Irini" type="Node3D"]
+
+[node name="Irini" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1.12, 1.12, 1.12)
+metadata/unity_id = 11091
+metadata/unity_name = "Irini"
+
+[node name="Irini_Model" type="Node3D" parent="Irini"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17023
+metadata/unity_name = "Irini_Model"
+
+[node name="Armature" type="Node3D" parent="Irini/Irini_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6156
+metadata/unity_name = "Armature"
+
+[node name="hips" type="Node3D" parent="Irini/Irini_Model/Armature"]
+position = Vector3(-0.0471792966, 0.725554705, -0.00471587386)
+quaternion = Quaternion(0.046065636, -0.311773956, -0.0193816498, 0.948841035)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26148
+metadata/unity_name = "hips"
+
+[node name="spine" type="Node3D" parent="Irini/Irini_Model/Armature/hips"]
+position = Vector3(-0.00905477162, 0.120648056, -0.0027198391)
+quaternion = Quaternion(-0.129800558, -0.0944192931, 0.0946971625, 0.982481182)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22801
+metadata/unity_name = "spine"
+
+[node name="chest" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine"]
+position = Vector3(-0.00773808593, 0.147242635, -0.0336823128)
+quaternion = Quaternion(-0.377232939, -0.00735682389, 0.0858464167, 0.922101736)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14553
+metadata/unity_name = "chest"
+
+[node name="neck" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest"]
+position = Vector3(5.40550937e-10, 0.21924673, 0.0604321361)
+quaternion = Quaternion(-0.0264952891, 0.0476277731, 0.0780319348, 0.995460033)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11600
+metadata/unity_name = "neck"
+
+[node name="head" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/neck"]
+position = Vector3(2.75204703e-09, 0.140509978, -1.72222325e-09)
+quaternion = Quaternion(0.311404824, 0.280201197, 0.0416461378, 0.907072186)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12675
+metadata/unity_name = "head"
+
+[node name="hair_root" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(1.57772178e-32, 2.84217088e-16, 3.99680272e-17)
+quaternion = Quaternion(0.0095991632, -0, -0, 0.999953926)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21300
+metadata/unity_name = "hair_root"
+
+[node name="hair_B_01" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(-2.96024747e-17, 0.124313295, 0.0832476243)
+quaternion = Quaternion(-1.79614147e-17, 0.29333216, 0.95601064, -5.85387712e-17)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10960
+metadata/unity_name = "hair_B_01"
+
+[node name="hair_B_02" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_B_01"]
+position = Vector3(-6.11177781e-18, 0.0602794103, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21584
+metadata/unity_name = "hair_B_02"
+
+[node name="hair_B_03" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_B_01/hair_B_02"]
+position = Vector3(-8.55816944e-18, 0.0844077542, -1.42108544e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10932
+metadata/unity_name = "hair_B_03"
+
+[node name="hair_B_04" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_B_01/hair_B_02/hair_B_03"]
+position = Vector3(1.48813411e-18, 0.0706150904, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21744
+metadata/unity_name = "hair_B_04"
+
+[node name="hair_B_05" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_B_01/hair_B_02/hair_B_03/hair_B_04"]
+position = Vector3(-2.18644168e-17, 0.101537712, 1.42108544e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6600
+metadata/unity_name = "hair_B_05"
+
+[node name="hair_B_06" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_B_01/hair_B_02/hair_B_03/hair_B_04/hair_B_05"]
+position = Vector3(-1.5917109e-17, 0.0698957369, -2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6859
+metadata/unity_name = "hair_B_06"
+
+[node name="hair_B_07" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_B_01/hair_B_02/hair_B_03/hair_B_04/hair_B_05/hair_B_06"]
+position = Vector3(-1.54354979e-17, 0.0648965612, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25990
+metadata/unity_name = "hair_B_07"
+
+[node name="hair_B_08" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_B_01/hair_B_02/hair_B_03/hair_B_04/hair_B_05/hair_B_06/hair_B_07"]
+position = Vector3(-1.2682415e-17, 0.0535150766, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25375
+metadata/unity_name = "hair_B_08"
+
+[node name="hair_B_09" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_B_01/hair_B_02/hair_B_03/hair_B_04/hair_B_05/hair_B_06/hair_B_07/hair_B_08"]
+position = Vector3(1.43518607e-18, 0.0524140745, -2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26223
+metadata/unity_name = "hair_B_09"
+
+[node name="hair_B_10" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_B_01/hair_B_02/hair_B_03/hair_B_04/hair_B_05/hair_B_06/hair_B_07/hair_B_08/hair_B_09"]
+position = Vector3(-3.42123638e-18, 0.0548307262, 1.42108544e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7094
+metadata/unity_name = "hair_B_10"
+
+[node name="hair_B_11" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_B_01/hair_B_02/hair_B_03/hair_B_04/hair_B_05/hair_B_06/hair_B_07/hair_B_08/hair_B_09/hair_B_10"]
+position = Vector3(3.70448029e-19, 0.0496982895, -1.42108544e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15264
+metadata/unity_name = "hair_B_11"
+
+[node name="hair_B_12_end" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_B_01/hair_B_02/hair_B_03/hair_B_04/hair_B_05/hair_B_06/hair_B_07/hair_B_08/hair_B_09/hair_B_10/hair_B_11"]
+position = Vector3(-3.58564366e-17, 0.151816562, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8444
+metadata/unity_name = "hair_B_12_end"
+
+[node name="hair_LF_01" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(-0.0494986437, 0.0816606954, -0.0811026096)
+quaternion = Quaternion(0.0974585339, 0.0124551626, 0.98713994, 0.126100838)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15234
+metadata/unity_name = "hair_LF_01"
+
+[node name="hair_LF_02" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LF_01"]
+position = Vector3(-1.12983516e-17, 0.0319242962, 3.76671788e-18)
+quaternion = Quaternion(0.267721236, -0.142880008, -0.235164031, 0.923368096)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25149
+metadata/unity_name = "hair_LF_02"
+
+[node name="hair_LF_03" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LF_01/hair_LF_02"]
+position = Vector3(2.24085312e-17, 0.0248795263, -4.84652532e-17)
+quaternion = Quaternion(-0.101372756, -0.010821051, 0.105589114, 0.989170074)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9461
+metadata/unity_name = "hair_LF_03"
+
+[node name="hair_LF_04" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LF_01/hair_LF_02/hair_LF_03"]
+position = Vector3(3.50288675e-16, 0.0306955539, 4.60451411e-17)
+quaternion = Quaternion(-0.162127316, 0.0306827482, 0.160856247, 0.973087132)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14093
+metadata/unity_name = "hair_LF_04"
+
+[node name="hair_LF_05" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LF_01/hair_LF_02/hair_LF_03/hair_LF_04"]
+position = Vector3(-7.79085155e-17, 0.0316771343, 1.05852847e-17)
+quaternion = Quaternion(-0.156665012, 0.067498751, 0.107653767, 0.979444087)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20151
+metadata/unity_name = "hair_LF_05"
+
+[node name="hair_LF_06" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LF_01/hair_LF_02/hair_LF_03/hair_LF_04/hair_LF_05"]
+position = Vector3(5.26386441e-17, 0.0301115345, 1.43442753e-16)
+quaternion = Quaternion(-0, -0, 0.0436193869, 0.999048233)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10820
+metadata/unity_name = "hair_LF_06"
+
+[node name="hair_LF_07_end" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LF_01/hair_LF_02/hair_LF_03/hair_LF_04/hair_LF_05/hair_LF_06"]
+position = Vector3(2.06707902e-17, 0.0290456954, 2.04906352e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20552
+metadata/unity_name = "hair_LF_07_end"
+
+[node name="hair_RF_01" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(0.049498599, 0.0816605464, -0.0811025947)
+quaternion = Quaternion(-0.0974585339, 0.0124551626, 0.98713994, -0.126100838)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16890
+metadata/unity_name = "hair_RF_01"
+
+[node name="hair_RF_02" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RF_01"]
+position = Vector3(1.50793213e-07, 0.0319251604, -6.74706229e-08)
+quaternion = Quaternion(0.267721236, 0.142880008, 0.235164031, 0.923368096)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23085
+metadata/unity_name = "hair_RF_02"
+
+[node name="hair_RF_03" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RF_01/hair_RF_02"]
+position = Vector3(1.54987367e-06, 0.0248808619, 5.60976154e-08)
+quaternion = Quaternion(-0.101372756, 0.010821051, -0.105589114, 0.989170074)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17468
+metadata/unity_name = "hair_RF_03"
+
+[node name="hair_RF_04" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RF_01/hair_RF_02/hair_RF_03"]
+position = Vector3(-2.13439216e-06, 0.03069265, -4.68154493e-09)
+quaternion = Quaternion(-0.184834912, -0.0269120261, -0.161529914, 0.96903044)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22756
+metadata/unity_name = "hair_RF_04"
+
+[node name="hair_RF_05" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RF_01/hair_RF_02/hair_RF_03/hair_RF_04"]
+position = Vector3(1.29064722e-06, 0.0316804461, -2.54423867e-07)
+quaternion = Quaternion(-0.156662449, -0.0674984753, -0.107653953, 0.979444504)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25905
+metadata/unity_name = "hair_RF_05"
+
+[node name="hair_RF_06" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RF_01/hair_RF_02/hair_RF_03/hair_RF_04/hair_RF_05"]
+position = Vector3(-5.26957367e-09, 0.0301113334, -9.21767409e-08)
+quaternion = Quaternion(-0, 0, -0.0436193869, 0.999048233)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16632
+metadata/unity_name = "hair_RF_06"
+
+[node name="hair_RF_07_end" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RF_01/hair_RF_02/hair_RF_03/hair_RF_04/hair_RF_05/hair_RF_06"]
+position = Vector3(5.20803951e-08, 0.0290462151, 1.84473322e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11646
+metadata/unity_name = "hair_RF_07_end"
+
+[node name="head_end" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(1.32387878e-09, 0.1770733, 9.24386882e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26591
+metadata/unity_name = "head_end"
+
+[node name="jaw" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(2.65876632e-18, -0.00852953456, 0.00784793217)
+quaternion = Quaternion(-0.847012818, -0, 0, 0.53157258)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8185
+metadata/unity_name = "jaw"
+
+[node name="jaw_end" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/neck/head/jaw"]
+position = Vector3(1.53046744e-17, 0.103078805, 1.66533454e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20675
+metadata/unity_name = "jaw_end"
+
+[node name="Magica Capsule Collider (head)" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(0, 0.036999952, -0.00100000575)
+quaternion = Quaternion(0.32788977, 0, -0, 0.944715977)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13169
+metadata/unity_name = "Magica Capsule Collider (head)"
+
+[node name="shoulder_L" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest"]
+position = Vector3(-0.0188298225, 0.172819033, 0.0633674115)
+quaternion = Quaternion(0.521149993, -0.71869266, 0.283979565, 0.362269461)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23208
+metadata/unity_name = "shoulder_L"
+
+[node name="upper_arm_L" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/shoulder_L"]
+position = Vector3(-1.37526354e-06, 0.123927645, -8.22573497e-07)
+quaternion = Quaternion(0.454150468, -0.000259502878, -0.183100432, 0.871906877)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5394
+metadata/unity_name = "upper_arm_L"
+
+[node name="lower_arm_L" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L"]
+position = Vector3(0.000132608111, 0.237998292, -8.84051497e-06)
+quaternion = Quaternion(0.0110699534, -0.0260551441, 0.403912216, 0.914359629)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16470
+metadata/unity_name = "lower_arm_L"
+
+[node name="hand_L" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L"]
+position = Vector3(-0.000140656761, 0.223002061, 7.66531866e-06)
+quaternion = Quaternion(-0.207516313, 0.011975592, 0.102038063, 0.972821593)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6506
+metadata/unity_name = "hand_L"
+
+[node name="hand_L_end" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L"]
+position = Vector3(-3.39997541e-06, 0.140000001, 5.97992738e-13)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24299
+metadata/unity_name = "hand_L_end"
+
+[node name="VFX_Irini_SkillAttack_Hand" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L/hand_L_end"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22660
+metadata/unity_name = "VFX_Irini_SkillAttack_Hand"
+
+[node name="root" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L/hand_L_end/VFX_Irini_SkillAttack_Hand"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9178
+metadata/unity_name = "root"
+
+[node name="Glow_01" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L/hand_L_end/VFX_Irini_SkillAttack_Hand/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12206
+metadata/unity_name = "Glow_01"
+
+[node name="Wave_01" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L/hand_L_end/VFX_Irini_SkillAttack_Hand/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6690
+metadata/unity_name = "Wave_01"
+
+[node name="handshield" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L"]
+position = Vector3(-0.00149723119, 0.0899999887, -0.0570000112)
+quaternion = Quaternion(-0, -0, 4.20863535e-06, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6803
+metadata/unity_name = "handshield"
+
+[node name="shouldershield" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L"]
+position = Vector3(-0.00569708738, 0.0313853361, -0.158491343)
+quaternion = Quaternion(-0.136038497, 0.024290029, 0.0653872043, 0.988244951)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26362
+metadata/unity_name = "shouldershield"
+
+[node name="shoulder_R" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest"]
+position = Vector3(0.018829532, 0.172820121, 0.0633678511)
+quaternion = Quaternion(0.587327659, 0.370099097, -0.40734604, 0.593415737)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21863
+metadata/unity_name = "shoulder_R"
+
+[node name="upper_arm_R" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/shoulder_R"]
+position = Vector3(1.04518404e-06, 0.12392883, 1.71165054e-10)
+quaternion = Quaternion(0.345460027, 0.000185075347, -0.242826045, 0.906472802)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22690
+metadata/unity_name = "upper_arm_R"
+
+[node name="lower_arm_R" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R"]
+position = Vector3(-0.000132890986, 0.237997934, -7.67210622e-06)
+quaternion = Quaternion(-0.021844551, 0.226435855, -0.123311199, 0.965942025)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16199
+metadata/unity_name = "lower_arm_R"
+
+[node name="hand_R" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R"]
+position = Vector3(0.000140661505, 0.223002061, 7.6613187e-06)
+quaternion = Quaternion(-0.0938190296, -0.0501290448, 0.357735604, 0.927744746)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5761
+metadata/unity_name = "hand_R"
+
+[node name="hand_R_end" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R"]
+position = Vector3(3.39997837e-06, 0.140000001, -2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8818
+metadata/unity_name = "hand_R_end"
+
+[node name="Magica Capsule Collider (upper_arm_R)" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(0.892857134, 0.892857134, 0.892857134)
+metadata/unity_id = 14130
+metadata/unity_name = "Magica Capsule Collider (upper_arm_R)"
+
+[node name="Magica Capsule Collider (chest)" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine/chest"]
+position = Vector3(0, 0.178999975, 0.0379999988)
+quaternion = Quaternion(9.42691258e-10, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7294
+metadata/unity_name = "Magica Capsule Collider (chest)"
+
+[node name="Magica Capsule Collider (spine)" type="Node3D" parent="Irini/Irini_Model/Armature/hips/spine"]
+position = Vector3(0, 0.146999955, 0.00299999886)
+quaternion = Quaternion(9.42691258e-10, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18851
+metadata/unity_name = "Magica Capsule Collider (spine)"
+
+[node name="upper_leg_L" type="Node3D" parent="Irini/Irini_Model/Armature/hips"]
+position = Vector3(-0.0980407223, 0.00234096008, 0.00908104144)
+quaternion = Quaternion(0.0430061631, -0.271166831, 0.914458811, 0.297294676)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15159
+metadata/unity_name = "upper_leg_L"
+
+[node name="lower_leg_L" type="Node3D" parent="Irini/Irini_Model/Armature/hips/upper_leg_L"]
+position = Vector3(5.01287332e-06, 0.423869401, -0.000332060561)
+quaternion = Quaternion(0.389760613, 0.0432681516, -0.0125251962, 0.919813931)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6614
+metadata/unity_name = "lower_leg_L"
+
+[node name="foot_L" type="Node3D" parent="Irini/Irini_Model/Armature/hips/upper_leg_L/lower_leg_L"]
+position = Vector3(-4.97578458e-06, 0.431383669, 0.000332062686)
+quaternion = Quaternion(0.0333728455, -0.093076773, 0.314927757, 0.943951011)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20254
+metadata/unity_name = "foot_L"
+
+[node name="toes_L" type="Node3D" parent="Irini/Irini_Model/Armature/hips/upper_leg_L/lower_leg_L/foot_L"]
+position = Vector3(5.65122948e-10, 0.0756999925, -0.120031305)
+quaternion = Quaternion(-0.710443377, -0.00123239448, 0.0013791332, 0.703751981)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20411
+metadata/unity_name = "toes_L"
+
+[node name="toes_L_end" type="Node3D" parent="Irini/Irini_Model/Armature/hips/upper_leg_L/lower_leg_L/foot_L/toes_L"]
+position = Vector3(5.51437299e-11, 0.0943000019, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19560
+metadata/unity_name = "toes_L_end"
+
+[node name="upper_leg_R" type="Node3D" parent="Irini/Irini_Model/Armature/hips"]
+position = Vector3(0.0980405137, -0.00234125881, -0.00908124633)
+quaternion = Quaternion(0.0334203951, -0.163378209, 0.898754656, -0.405500501)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23250
+metadata/unity_name = "upper_leg_R"
+
+[node name="lower_leg_R" type="Node3D" parent="Irini/Irini_Model/Armature/hips/upper_leg_R"]
+position = Vector3(-4.97644396e-06, 0.423869818, -0.000332061871)
+quaternion = Quaternion(0.443905503, 0.0424738824, -0.027787907, 0.894635022)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13237
+metadata/unity_name = "lower_leg_R"
+
+[node name="foot_R" type="Node3D" parent="Irini/Irini_Model/Armature/hips/upper_leg_R/lower_leg_R"]
+position = Vector3(4.97509927e-06, 0.431383669, 0.000332063501)
+quaternion = Quaternion(-0.117531233, 0.0102183912, -0.277991563, 0.953311443)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15213
+metadata/unity_name = "foot_R"
+
+[node name="toes_R" type="Node3D" parent="Irini/Irini_Model/Armature/hips/upper_leg_R/lower_leg_R/foot_R"]
+position = Vector3(-2.70229794e-08, 0.0756999999, -0.120031357)
+quaternion = Quaternion(-0.697900593, 0.0570555851, -0.0643581823, 0.711011589)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9032
+metadata/unity_name = "toes_R"
+
+[node name="toes_R_end" type="Node3D" parent="Irini/Irini_Model/Armature/hips/upper_leg_R/lower_leg_R/foot_R/toes_R"]
+position = Vector3(-1.42108544e-16, 0.0943000019, -8.88178367e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18029
+metadata/unity_name = "toes_R_end"
+
+[node name="Magica Capsule Collider (hips)" type="Node3D" parent="Irini/Irini_Model/Armature/hips"]
+position = Vector3(0, 0.0460000522, 0.0300000012)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20970
+metadata/unity_name = "Magica Capsule Collider (hips)"
+
+[node name="Irini" type="Node3D" parent="Irini/Irini_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8605
+metadata/unity_name = "Irini"
+
+[node name="Body_GEO" type="Node3D" parent="Irini/Irini_Model/Irini"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26629
+metadata/unity_name = "Body_GEO"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Irini/Irini_Model/Irini/Body_GEO"]
+mesh = ExtResource("1")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="Weapon_A_GEO" type="Node3D" parent="Irini/Irini_Model/Irini"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11585
+metadata/unity_name = "Weapon_A_GEO"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Irini/Irini_Model/Irini/Weapon_A_GEO"]
+mesh = ExtResource("3")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="Weapon_A_01" type="Node3D" parent="Irini/Irini_Model"]
+position = Vector3(-0.0337046348, 1.19543278, 0.273814887)
+quaternion = Quaternion(-0.632644415, -0.220131502, 0.550393522, -0.498367488)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20044
+metadata/unity_name = "Weapon_A_01"
+
+[node name="Weapon_A_02" type="Node3D" parent="Irini/Irini_Model/Weapon_A_01"]
+position = Vector3(9.53674295e-09, 0.0583540723, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8252
+metadata/unity_name = "Weapon_A_02"
+
+[node name="Weapon_A_03" type="Node3D" parent="Irini/Irini_Model/Weapon_A_01/Weapon_A_02"]
+position = Vector3(-9.53674295e-09, 0.136290893, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20138
+metadata/unity_name = "Weapon_A_03"
+
+[node name="Weapon_A_04" type="Node3D" parent="Irini/Irini_Model/Weapon_A_01/Weapon_A_02/Weapon_A_03"]
+position = Vector3(-0, 0.272581667, -1.90734859e-08)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9171
+metadata/unity_name = "Weapon_A_04"
+
+[node name="Weapon_A_05" type="Node3D" parent="Irini/Irini_Model/Weapon_A_01/Weapon_A_02/Weapon_A_03/Weapon_A_04"]
+position = Vector3(-9.53674295e-09, 0.272581935, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26520
+metadata/unity_name = "Weapon_A_05"
+
+[node name="Weapon_A_06_end" type="Node3D" parent="Irini/Irini_Model/Weapon_A_01/Weapon_A_02/Weapon_A_03/Weapon_A_04/Weapon_A_05"]
+position = Vector3(-4.99188868e-09, 0.563122869, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9500
+metadata/unity_name = "Weapon_A_06_end"
+
+[node name="Magica Cloth (sidehair)" type="Node3D" parent="Irini/Irini_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9097
+metadata/unity_name = "Magica Cloth (sidehair)"
+
+[node name="Magica Cloth (backhair)" type="Node3D" parent="Irini/Irini_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13107
+metadata/unity_name = "Magica Cloth (backhair)"
+
+[node name="VFXParent" type="Node3D" parent="Irini"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7532
+metadata/unity_name = "VFXParent"
+
+[node name="OverheadSlot" type="Node3D" parent="Irini"]
+position = Vector3(0, 2, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22271
+metadata/unity_name = "OverheadSlot"
+
+[node name="GameObject" type="Node3D" parent="Irini"]
+position = Vector3(0.153083667, 1.6446619, -1.65890682)
+quaternion = Quaternion(0.104751788, -0.754740536, 0.641612232, -0.0879069269)
+scale = Vector3(1.33511329, 1.33511317, 1.33511353)
+metadata/unity_id = 15092
+metadata/unity_name = "GameObject"

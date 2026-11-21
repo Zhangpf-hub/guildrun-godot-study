@@ -1,0 +1,2054 @@
+{
+  "catalog": {
+    "Hero_1": {
+      "kind": "Hero",
+      "id": 1,
+      "tier": 1,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_4568.png"
+    },
+    "Hero_2": {
+      "kind": "Hero",
+      "id": 2,
+      "tier": 1,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3613.png"
+    },
+    "Hero_3": {
+      "kind": "Hero",
+      "id": 3,
+      "tier": 1,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3451.png"
+    },
+    "Hero_4": {
+      "kind": "Hero",
+      "id": 4,
+      "tier": 1,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3455.png"
+    },
+    "Hero_6": {
+      "kind": "Hero",
+      "id": 6,
+      "tier": 1,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3576.png"
+    },
+    "Hero_7": {
+      "kind": "Hero",
+      "id": 7,
+      "tier": 1,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3594.png"
+    },
+    "Hero_8": {
+      "kind": "Hero",
+      "id": 8,
+      "tier": 1,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_4357.png"
+    },
+    "Hero_10": {
+      "kind": "Hero",
+      "id": 10,
+      "tier": 1,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_4614.png"
+    },
+    "Hero_11": {
+      "kind": "Hero",
+      "id": 11,
+      "tier": 1,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3675.png"
+    },
+    "Hero_12": {
+      "kind": "Hero",
+      "id": 12,
+      "tier": 1,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3509.png"
+    },
+    "Hero_13": {
+      "kind": "Hero",
+      "id": 13,
+      "tier": 1,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_4510.png"
+    },
+    "Hero_14": {
+      "kind": "Hero",
+      "id": 14,
+      "tier": 1,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_4255.png"
+    },
+    "Hero_16": {
+      "kind": "Hero",
+      "id": 16,
+      "tier": 1,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3450.png"
+    },
+    "Hero_17": {
+      "kind": "Hero",
+      "id": 17,
+      "tier": 1,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3415.png"
+    },
+    "Hero_18": {
+      "kind": "Hero",
+      "id": 18,
+      "tier": 1,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3664.png"
+    },
+    "Hero_20": {
+      "kind": "Hero",
+      "id": 20,
+      "tier": 1,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3518.png"
+    },
+    "Hero_21": {
+      "kind": "Hero",
+      "id": 21,
+      "tier": 1,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_4420.png"
+    },
+    "Hero_22": {
+      "kind": "Hero",
+      "id": 22,
+      "tier": 1,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3603.png"
+    },
+    "Hero_23": {
+      "kind": "Hero",
+      "id": 23,
+      "tier": 1,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3336.png"
+    },
+    "Hero_24": {
+      "kind": "Hero",
+      "id": 24,
+      "tier": 1,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_4546.png"
+    },
+    "Hero_26": {
+      "kind": "Hero",
+      "id": 26,
+      "tier": 1,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3401.png"
+    },
+    "Hero_27": {
+      "kind": "Hero",
+      "id": 27,
+      "tier": 1,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3651.png"
+    },
+    "Item_101": {
+      "kind": "Item",
+      "id": 101,
+      "tier": 1,
+      "price": 5,
+      "icon": "res://sprites/sharedassets1_3514.png"
+    },
+    "Item_102": {
+      "kind": "Item",
+      "id": 102,
+      "tier": 1,
+      "price": 5,
+      "icon": "res://sprites/sharedassets1_4371.png"
+    },
+    "Item_103": {
+      "kind": "Item",
+      "id": 103,
+      "tier": 1,
+      "price": 5,
+      "icon": "res://sprites/sharedassets1_3690.png"
+    },
+    "Item_104": {
+      "kind": "Item",
+      "id": 104,
+      "tier": 1,
+      "price": 5,
+      "icon": "res://sprites/sharedassets1_4547.png"
+    },
+    "Item_105": {
+      "kind": "Item",
+      "id": 105,
+      "tier": 1,
+      "price": 5,
+      "icon": "res://sprites/sharedassets1_3342.png"
+    },
+    "Item_106": {
+      "kind": "Item",
+      "id": 106,
+      "tier": 1,
+      "price": 5,
+      "icon": "res://sprites/sharedassets1_3677.png"
+    },
+    "Item_107": {
+      "kind": "Item",
+      "id": 107,
+      "tier": 1,
+      "price": 5,
+      "icon": "res://sprites/sharedassets1_4456.png"
+    },
+    "Item_108": {
+      "kind": "Item",
+      "id": 108,
+      "tier": 1,
+      "price": 5,
+      "icon": "res://sprites/sharedassets1_3570.png"
+    },
+    "Item_109": {
+      "kind": "Item",
+      "id": 109,
+      "tier": 1,
+      "price": 5,
+      "icon": "res://sprites/sharedassets1_4595.png"
+    },
+    "Item_110": {
+      "kind": "Item",
+      "id": 110,
+      "tier": 1,
+      "price": 5,
+      "icon": "res://sprites/sharedassets1_4532.png"
+    },
+    "Item_111": {
+      "kind": "Item",
+      "id": 111,
+      "tier": 1,
+      "price": 5,
+      "icon": "res://sprites/sharedassets1_3317.png"
+    },
+    "Item_112": {
+      "kind": "Item",
+      "id": 112,
+      "tier": 1,
+      "price": 5,
+      "icon": "res://sprites/sharedassets1_4455.png"
+    },
+    "Item_113": {
+      "kind": "Item",
+      "id": 113,
+      "tier": 1,
+      "price": 5,
+      "icon": "res://sprites/sharedassets1_4346.png"
+    },
+    "Item_114": {
+      "kind": "Item",
+      "id": 114,
+      "tier": 1,
+      "price": 5,
+      "icon": "res://sprites/sharedassets1_4285.png"
+    },
+    "Item_115": {
+      "kind": "Item",
+      "id": 115,
+      "tier": 1,
+      "price": 5,
+      "icon": "res://sprites/sharedassets1_4615.png"
+    },
+    "Item_116": {
+      "kind": "Item",
+      "id": 116,
+      "tier": 1,
+      "price": 5,
+      "icon": "res://sprites/sharedassets1_4293.png"
+    },
+    "Item_117": {
+      "kind": "Item",
+      "id": 117,
+      "tier": 1,
+      "price": 5,
+      "icon": "res://sprites/sharedassets1_4328.png"
+    },
+    "Item_118": {
+      "kind": "Item",
+      "id": 118,
+      "tier": 1,
+      "price": 5,
+      "icon": "res://sprites/sharedassets1_3465.png"
+    },
+    "Item_119": {
+      "kind": "Item",
+      "id": 119,
+      "tier": 1,
+      "price": 5,
+      "icon": "res://sprites/sharedassets1_3659.png"
+    },
+    "Item_120": {
+      "kind": "Item",
+      "id": 120,
+      "tier": 1,
+      "price": 5,
+      "icon": "res://sprites/sharedassets1_3281.png"
+    },
+    "Item_121": {
+      "kind": "Item",
+      "id": 121,
+      "tier": 1,
+      "price": 5,
+      "icon": "res://sprites/sharedassets1_3695.png"
+    },
+    "Item_122": {
+      "kind": "Item",
+      "id": 122,
+      "tier": 1,
+      "price": 5,
+      "icon": "res://sprites/sharedassets1_4517.png"
+    },
+    "Item_123": {
+      "kind": "Item",
+      "id": 123,
+      "tier": 1,
+      "price": 5,
+      "icon": "res://sprites/sharedassets1_4295.png"
+    },
+    "Item_124": {
+      "kind": "Item",
+      "id": 124,
+      "tier": 1,
+      "price": 5,
+      "icon": "res://sprites/sharedassets1_4463.png"
+    },
+    "Item_125": {
+      "kind": "Item",
+      "id": 125,
+      "tier": 1,
+      "price": 5,
+      "icon": "res://sprites/sharedassets1_3688.png"
+    },
+    "Item_601": {
+      "kind": "Item",
+      "id": 601,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3476.png"
+    },
+    "Item_602": {
+      "kind": "Item",
+      "id": 602,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_4326.png"
+    },
+    "Item_603": {
+      "kind": "Item",
+      "id": 603,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3472.png"
+    },
+    "Item_604": {
+      "kind": "Item",
+      "id": 604,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_4630.png"
+    },
+    "Item_605": {
+      "kind": "Item",
+      "id": 605,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_4288.png"
+    },
+    "Item_606": {
+      "kind": "Item",
+      "id": 606,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3487.png"
+    },
+    "Item_607": {
+      "kind": "Item",
+      "id": 607,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_4560.png"
+    },
+    "Item_608": {
+      "kind": "Item",
+      "id": 608,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3353.png"
+    },
+    "Item_609": {
+      "kind": "Item",
+      "id": 609,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3448.png"
+    },
+    "Item_610": {
+      "kind": "Item",
+      "id": 610,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3562.png"
+    },
+    "Item_611": {
+      "kind": "Item",
+      "id": 611,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3555.png"
+    },
+    "Item_612": {
+      "kind": "Item",
+      "id": 612,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3386.png"
+    },
+    "Item_613": {
+      "kind": "Item",
+      "id": 613,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3333.png"
+    },
+    "Item_614": {
+      "kind": "Item",
+      "id": 614,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3519.png"
+    },
+    "Item_615": {
+      "kind": "Item",
+      "id": 615,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3560.png"
+    },
+    "Item_616": {
+      "kind": "Item",
+      "id": 616,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_4501.png"
+    },
+    "Item_617": {
+      "kind": "Item",
+      "id": 617,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_4433.png"
+    },
+    "Item_618": {
+      "kind": "Item",
+      "id": 618,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_4534.png"
+    },
+    "Item_619": {
+      "kind": "Item",
+      "id": 619,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3312.png"
+    },
+    "Item_620": {
+      "kind": "Item",
+      "id": 620,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_4616.png"
+    },
+    "Item_621": {
+      "kind": "Item",
+      "id": 621,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_4548.png"
+    },
+    "Item_622": {
+      "kind": "Item",
+      "id": 622,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3699.png"
+    },
+    "Item_623": {
+      "kind": "Item",
+      "id": 623,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3299.png"
+    },
+    "Item_624": {
+      "kind": "Item",
+      "id": 624,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3624.png"
+    },
+    "Item_625": {
+      "kind": "Item",
+      "id": 625,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_4601.png"
+    },
+    "Item_626": {
+      "kind": "Item",
+      "id": 626,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_4440.png"
+    },
+    "Item_627": {
+      "kind": "Item",
+      "id": 627,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_4556.png"
+    },
+    "Item_628": {
+      "kind": "Item",
+      "id": 628,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_4256.png"
+    },
+    "Item_629": {
+      "kind": "Item",
+      "id": 629,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_4513.png"
+    },
+    "Item_630": {
+      "kind": "Item",
+      "id": 630,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3508.png"
+    },
+    "Item_631": {
+      "kind": "Item",
+      "id": 631,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3649.png"
+    },
+    "Item_632": {
+      "kind": "Item",
+      "id": 632,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3556.png"
+    },
+    "Item_633": {
+      "kind": "Item",
+      "id": 633,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3496.png"
+    },
+    "Item_634": {
+      "kind": "Item",
+      "id": 634,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3665.png"
+    },
+    "Item_635": {
+      "kind": "Item",
+      "id": 635,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3591.png"
+    },
+    "Item_636": {
+      "kind": "Item",
+      "id": 636,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3611.png"
+    },
+    "Item_637": {
+      "kind": "Item",
+      "id": 637,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_4247.png"
+    },
+    "Item_638": {
+      "kind": "Item",
+      "id": 638,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_4507.png"
+    },
+    "Item_640": {
+      "kind": "Item",
+      "id": 640,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3692.png"
+    },
+    "Item_701": {
+      "kind": "Item",
+      "id": 701,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_3436.png"
+    },
+    "Item_702": {
+      "kind": "Item",
+      "id": 702,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_3410.png"
+    },
+    "Item_703": {
+      "kind": "Item",
+      "id": 703,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_4479.png"
+    },
+    "Item_704": {
+      "kind": "Item",
+      "id": 704,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_3529.png"
+    },
+    "Item_705": {
+      "kind": "Item",
+      "id": 705,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_3373.png"
+    },
+    "Item_706": {
+      "kind": "Item",
+      "id": 706,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_4382.png"
+    },
+    "Item_707": {
+      "kind": "Item",
+      "id": 707,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_3682.png"
+    },
+    "Item_709": {
+      "kind": "Item",
+      "id": 709,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_3616.png"
+    },
+    "Item_710": {
+      "kind": "Item",
+      "id": 710,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_4263.png"
+    },
+    "Item_711": {
+      "kind": "Item",
+      "id": 711,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_3370.png"
+    },
+    "Item_712": {
+      "kind": "Item",
+      "id": 712,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_4599.png"
+    },
+    "Item_713": {
+      "kind": "Item",
+      "id": 713,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_3583.png"
+    },
+    "Item_715": {
+      "kind": "Item",
+      "id": 715,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_4621.png"
+    },
+    "Item_716": {
+      "kind": "Item",
+      "id": 716,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_4515.png"
+    },
+    "Item_717": {
+      "kind": "Item",
+      "id": 717,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_4395.png"
+    },
+    "Item_718": {
+      "kind": "Item",
+      "id": 718,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_3380.png"
+    },
+    "Item_719": {
+      "kind": "Item",
+      "id": 719,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_3686.png"
+    },
+    "Item_720": {
+      "kind": "Item",
+      "id": 720,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_3537.png"
+    },
+    "Item_722": {
+      "kind": "Item",
+      "id": 722,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_3354.png"
+    },
+    "Item_724": {
+      "kind": "Item",
+      "id": 724,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_4482.png"
+    },
+    "Item_725": {
+      "kind": "Item",
+      "id": 725,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_3311.png"
+    },
+    "Item_726": {
+      "kind": "Item",
+      "id": 726,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_4603.png"
+    },
+    "Item_728": {
+      "kind": "Item",
+      "id": 728,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_4325.png"
+    },
+    "Item_730": {
+      "kind": "Item",
+      "id": 730,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_3364.png"
+    },
+    "Item_731": {
+      "kind": "Item",
+      "id": 731,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_4544.png"
+    },
+    "Item_732": {
+      "kind": "Item",
+      "id": 732,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_3441.png"
+    },
+    "Item_735": {
+      "kind": "Item",
+      "id": 735,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_3294.png"
+    },
+    "Item_736": {
+      "kind": "Item",
+      "id": 736,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_4354.png"
+    },
+    "Item_737": {
+      "kind": "Item",
+      "id": 737,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_3646.png"
+    },
+    "Item_738": {
+      "kind": "Item",
+      "id": 738,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_4478.png"
+    },
+    "Item_739": {
+      "kind": "Item",
+      "id": 739,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_3538.png"
+    },
+    "Item_740": {
+      "kind": "Item",
+      "id": 740,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_3385.png"
+    },
+    "Relic_1000": {
+      "kind": "Relic",
+      "id": 1000,
+      "tier": 1,
+      "price": 10,
+      "icon": "res://sprites/sharedassets1_4582.png"
+    },
+    "Relic_1001": {
+      "kind": "Relic",
+      "id": 1001,
+      "tier": 1,
+      "price": 10,
+      "icon": "res://sprites/sharedassets1_4496.png"
+    },
+    "Relic_1002": {
+      "kind": "Relic",
+      "id": 1002,
+      "tier": 1,
+      "price": 10,
+      "icon": "res://sprites/sharedassets1_3399.png"
+    },
+    "Relic_1003": {
+      "kind": "Relic",
+      "id": 1003,
+      "tier": 1,
+      "price": 10,
+      "icon": "res://sprites/sharedassets1_3681.png"
+    },
+    "Relic_1004": {
+      "kind": "Relic",
+      "id": 1004,
+      "tier": 1,
+      "price": 10,
+      "icon": "res://sprites/sharedassets1_4598.png"
+    },
+    "Relic_1005": {
+      "kind": "Relic",
+      "id": 1005,
+      "tier": 1,
+      "price": 10,
+      "icon": "res://sprites/sharedassets1_4311.png"
+    },
+    "Relic_1006": {
+      "kind": "Relic",
+      "id": 1006,
+      "tier": 1,
+      "price": 10,
+      "icon": "res://sprites/sharedassets1_4469.png"
+    },
+    "Relic_1007": {
+      "kind": "Relic",
+      "id": 1007,
+      "tier": 1,
+      "price": 10,
+      "icon": "res://sprites/sharedassets1_4488.png"
+    },
+    "Relic_1008": {
+      "kind": "Relic",
+      "id": 1008,
+      "tier": 1,
+      "price": 10,
+      "icon": "res://sprites/sharedassets1_4367.png"
+    },
+    "Relic_1009": {
+      "kind": "Relic",
+      "id": 1009,
+      "tier": 1,
+      "price": 10,
+      "icon": "res://sprites/sharedassets1_4268.png"
+    },
+    "Relic_1010": {
+      "kind": "Relic",
+      "id": 1010,
+      "tier": 1,
+      "price": 10,
+      "icon": "res://sprites/sharedassets1_3288.png"
+    },
+    "Relic_1011": {
+      "kind": "Relic",
+      "id": 1011,
+      "tier": 1,
+      "price": 10,
+      "icon": "res://sprites/sharedassets1_3592.png"
+    },
+    "Relic_1012": {
+      "kind": "Relic",
+      "id": 1012,
+      "tier": 1,
+      "price": 10,
+      "icon": "res://sprites/sharedassets1_3443.png"
+    },
+    "Relic_1013": {
+      "kind": "Relic",
+      "id": 1013,
+      "tier": 1,
+      "price": 10,
+      "icon": "res://sprites/sharedassets1_4454.png"
+    },
+    "Relic_1014": {
+      "kind": "Relic",
+      "id": 1014,
+      "tier": 1,
+      "price": 10,
+      "icon": "res://sprites/sharedassets1_4465.png"
+    },
+    "Relic_1015": {
+      "kind": "Relic",
+      "id": 1015,
+      "tier": 1,
+      "price": 10,
+      "icon": "res://sprites/sharedassets1_3617.png"
+    },
+    "Relic_1016": {
+      "kind": "Relic",
+      "id": 1016,
+      "tier": 1,
+      "price": 10,
+      "icon": "res://sprites/sharedassets1_3625.png"
+    },
+    "Relic_1017": {
+      "kind": "Relic",
+      "id": 1017,
+      "tier": 1,
+      "price": 10,
+      "icon": "res://sprites/sharedassets1_3329.png"
+    },
+    "Relic_1018": {
+      "kind": "Relic",
+      "id": 1018,
+      "tier": 1,
+      "price": 10,
+      "icon": "res://sprites/sharedassets1_4208.png"
+    },
+    "Relic_1019": {
+      "kind": "Relic",
+      "id": 1019,
+      "tier": 1,
+      "price": 10,
+      "icon": "res://sprites/sharedassets1_4508.png"
+    },
+    "Relic_1020": {
+      "kind": "Relic",
+      "id": 1020,
+      "tier": 1,
+      "price": 10,
+      "icon": "res://sprites/sharedassets1_4250.png"
+    },
+    "Relic_1021": {
+      "kind": "Relic",
+      "id": 1021,
+      "tier": 1,
+      "price": 10,
+      "icon": "res://sprites/sharedassets1_4538.png"
+    },
+    "Relic_1022": {
+      "kind": "Relic",
+      "id": 1022,
+      "tier": 1,
+      "price": 10,
+      "icon": "res://sprites/sharedassets1_3447.png"
+    },
+    "Relic_1023": {
+      "kind": "Relic",
+      "id": 1023,
+      "tier": 1,
+      "price": 10,
+      "icon": "res://sprites/sharedassets1_3468.png"
+    },
+    "Relic_1024": {
+      "kind": "Relic",
+      "id": 1024,
+      "tier": 1,
+      "price": 10,
+      "icon": "res://sprites/sharedassets1_4585.png"
+    },
+    "Relic_1025": {
+      "kind": "Relic",
+      "id": 1025,
+      "tier": 1,
+      "price": 10,
+      "icon": "res://sprites/sharedassets1_3304.png"
+    },
+    "Relic_1026": {
+      "kind": "Relic",
+      "id": 1026,
+      "tier": 1,
+      "price": 10,
+      "icon": "res://sprites/sharedassets1_4428.png"
+    },
+    "Relic_1027": {
+      "kind": "Relic",
+      "id": 1027,
+      "tier": 1,
+      "price": 10,
+      "icon": "res://sprites/sharedassets1_3365.png"
+    },
+    "Relic_1028": {
+      "kind": "Relic",
+      "id": 1028,
+      "tier": 1,
+      "price": 10,
+      "icon": "res://sprites/sharedassets1_3326.png"
+    },
+    "Relic_1029": {
+      "kind": "Relic",
+      "id": 1029,
+      "tier": 1,
+      "price": 10,
+      "icon": "res://sprites/sharedassets1_3326.png"
+    },
+    "Relic_2000": {
+      "kind": "Relic",
+      "id": 2000,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4360.png"
+    },
+    "Relic_2001": {
+      "kind": "Relic",
+      "id": 2001,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_3595.png"
+    },
+    "Relic_2002": {
+      "kind": "Relic",
+      "id": 2002,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_3391.png"
+    },
+    "Relic_2003": {
+      "kind": "Relic",
+      "id": 2003,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4240.png"
+    },
+    "Relic_2004": {
+      "kind": "Relic",
+      "id": 2004,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4516.png"
+    },
+    "Relic_2005": {
+      "kind": "Relic",
+      "id": 2005,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_3343.png"
+    },
+    "Relic_2006": {
+      "kind": "Relic",
+      "id": 2006,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4291.png"
+    },
+    "Relic_2007": {
+      "kind": "Relic",
+      "id": 2007,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_3383.png"
+    },
+    "Relic_2008": {
+      "kind": "Relic",
+      "id": 2008,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4583.png"
+    },
+    "Relic_2009": {
+      "kind": "Relic",
+      "id": 2009,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4529.png"
+    },
+    "Relic_2010": {
+      "kind": "Relic",
+      "id": 2010,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4570.png"
+    },
+    "Relic_2011": {
+      "kind": "Relic",
+      "id": 2011,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_3546.png"
+    },
+    "Relic_2012": {
+      "kind": "Relic",
+      "id": 2012,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_3452.png"
+    },
+    "Relic_2013": {
+      "kind": "Relic",
+      "id": 2013,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4587.png"
+    },
+    "Relic_2014": {
+      "kind": "Relic",
+      "id": 2014,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4503.png"
+    },
+    "Relic_2015": {
+      "kind": "Relic",
+      "id": 2015,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4216.png"
+    },
+    "Relic_2016": {
+      "kind": "Relic",
+      "id": 2016,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4235.png"
+    },
+    "Relic_2017": {
+      "kind": "Relic",
+      "id": 2017,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4227.png"
+    },
+    "Relic_2018": {
+      "kind": "Relic",
+      "id": 2018,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4473.png"
+    },
+    "Relic_2019": {
+      "kind": "Relic",
+      "id": 2019,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4336.png"
+    },
+    "Relic_2020": {
+      "kind": "Relic",
+      "id": 2020,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4430.png"
+    },
+    "Relic_2021": {
+      "kind": "Relic",
+      "id": 2021,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4269.png"
+    },
+    "Relic_2022": {
+      "kind": "Relic",
+      "id": 2022,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_3265.png"
+    },
+    "Relic_2023": {
+      "kind": "Relic",
+      "id": 2023,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_3481.png"
+    },
+    "Relic_2024": {
+      "kind": "Relic",
+      "id": 2024,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4612.png"
+    },
+    "Relic_2025": {
+      "kind": "Relic",
+      "id": 2025,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4504.png"
+    },
+    "Relic_2026": {
+      "kind": "Relic",
+      "id": 2026,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_3262.png"
+    },
+    "Relic_2027": {
+      "kind": "Relic",
+      "id": 2027,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_3305.png"
+    },
+    "Relic_2028": {
+      "kind": "Relic",
+      "id": 2028,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4564.png"
+    },
+    "Relic_2029": {
+      "kind": "Relic",
+      "id": 2029,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_3403.png"
+    },
+    "Relic_2030": {
+      "kind": "Relic",
+      "id": 2030,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_3586.png"
+    },
+    "Relic_2031": {
+      "kind": "Relic",
+      "id": 2031,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4254.png"
+    },
+    "Relic_2032": {
+      "kind": "Relic",
+      "id": 2032,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_3679.png"
+    },
+    "Relic_2033": {
+      "kind": "Relic",
+      "id": 2033,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4600.png"
+    },
+    "Relic_2034": {
+      "kind": "Relic",
+      "id": 2034,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_3368.png"
+    },
+    "Relic_2035": {
+      "kind": "Relic",
+      "id": 2035,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4438.png"
+    },
+    "Relic_2036": {
+      "kind": "Relic",
+      "id": 2036,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4542.png"
+    },
+    "Relic_2037": {
+      "kind": "Relic",
+      "id": 2037,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_3652.png"
+    },
+    "Relic_2038": {
+      "kind": "Relic",
+      "id": 2038,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4446.png"
+    },
+    "Relic_2039": {
+      "kind": "Relic",
+      "id": 2039,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4555.png"
+    },
+    "Relic_2040": {
+      "kind": "Relic",
+      "id": 2040,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_3632.png"
+    },
+    "Relic_2041": {
+      "kind": "Relic",
+      "id": 2041,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4553.png"
+    },
+    "Relic_2042": {
+      "kind": "Relic",
+      "id": 2042,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4249.png"
+    },
+    "Relic_2043": {
+      "kind": "Relic",
+      "id": 2043,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_3435.png"
+    },
+    "Relic_2044": {
+      "kind": "Relic",
+      "id": 2044,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4239.png"
+    },
+    "Relic_2045": {
+      "kind": "Relic",
+      "id": 2045,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4627.png"
+    },
+    "Relic_2046": {
+      "kind": "Relic",
+      "id": 2046,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4248.png"
+    },
+    "Relic_2047": {
+      "kind": "Relic",
+      "id": 2047,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4468.png"
+    },
+    "Relic_2048": {
+      "kind": "Relic",
+      "id": 2048,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_3483.png"
+    },
+    "Relic_2049": {
+      "kind": "Relic",
+      "id": 2049,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4424.png"
+    },
+    "Relic_2050": {
+      "kind": "Relic",
+      "id": 2050,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4306.png"
+    },
+    "Relic_2051": {
+      "kind": "Relic",
+      "id": 2051,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4442.png"
+    },
+    "Relic_2052": {
+      "kind": "Relic",
+      "id": 2052,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4569.png"
+    },
+    "Relic_2053": {
+      "kind": "Relic",
+      "id": 2053,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4226.png"
+    },
+    "Relic_2054": {
+      "kind": "Relic",
+      "id": 2054,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_3575.png"
+    },
+    "Relic_2055": {
+      "kind": "Relic",
+      "id": 2055,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_3643.png"
+    },
+    "Relic_2056": {
+      "kind": "Relic",
+      "id": 2056,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_3388.png"
+    },
+    "Relic_2057": {
+      "kind": "Relic",
+      "id": 2057,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_3322.png"
+    },
+    "Relic_2058": {
+      "kind": "Relic",
+      "id": 2058,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_3327.png"
+    },
+    "Relic_2059": {
+      "kind": "Relic",
+      "id": 2059,
+      "tier": 2,
+      "price": 20,
+      "icon": "res://sprites/sharedassets1_4435.png"
+    },
+    "Relic_3000": {
+      "kind": "Relic",
+      "id": 3000,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3363.png"
+    },
+    "Relic_3001": {
+      "kind": "Relic",
+      "id": 3001,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3482.png"
+    },
+    "Relic_3002": {
+      "kind": "Relic",
+      "id": 3002,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_4372.png"
+    },
+    "Relic_3003": {
+      "kind": "Relic",
+      "id": 3003,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_4494.png"
+    },
+    "Relic_3004": {
+      "kind": "Relic",
+      "id": 3004,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_4231.png"
+    },
+    "Relic_3005": {
+      "kind": "Relic",
+      "id": 3005,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3360.png"
+    },
+    "Relic_3006": {
+      "kind": "Relic",
+      "id": 3006,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3577.png"
+    },
+    "Relic_3007": {
+      "kind": "Relic",
+      "id": 3007,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_4411.png"
+    },
+    "Relic_3008": {
+      "kind": "Relic",
+      "id": 3008,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_4292.png"
+    },
+    "Relic_3009": {
+      "kind": "Relic",
+      "id": 3009,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3349.png"
+    },
+    "Relic_3010": {
+      "kind": "Relic",
+      "id": 3010,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3409.png"
+    },
+    "Relic_3011": {
+      "kind": "Relic",
+      "id": 3011,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3637.png"
+    },
+    "Relic_3012": {
+      "kind": "Relic",
+      "id": 3012,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3337.png"
+    },
+    "Relic_3013": {
+      "kind": "Relic",
+      "id": 3013,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3658.png"
+    },
+    "Relic_3014": {
+      "kind": "Relic",
+      "id": 3014,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_4275.png"
+    },
+    "Relic_3015": {
+      "kind": "Relic",
+      "id": 3015,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_4537.png"
+    },
+    "Relic_3016": {
+      "kind": "Relic",
+      "id": 3016,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_4620.png"
+    },
+    "Relic_3020": {
+      "kind": "Relic",
+      "id": 3020,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_4466.png"
+    },
+    "Relic_3021": {
+      "kind": "Relic",
+      "id": 3021,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3512.png"
+    },
+    "Relic_3022": {
+      "kind": "Relic",
+      "id": 3022,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3369.png"
+    },
+    "Relic_3023": {
+      "kind": "Relic",
+      "id": 3023,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3310.png"
+    },
+    "Relic_3024": {
+      "kind": "Relic",
+      "id": 3024,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3619.png"
+    },
+    "Relic_3025": {
+      "kind": "Relic",
+      "id": 3025,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3554.png"
+    },
+    "Relic_3026": {
+      "kind": "Relic",
+      "id": 3026,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_4233.png"
+    },
+    "Relic_3027": {
+      "kind": "Relic",
+      "id": 3027,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3297.png"
+    },
+    "Relic_3028": {
+      "kind": "Relic",
+      "id": 3028,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3397.png"
+    },
+    "Relic_3029": {
+      "kind": "Relic",
+      "id": 3029,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3612.png"
+    },
+    "Relic_3031": {
+      "kind": "Relic",
+      "id": 3031,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3408.png"
+    },
+    "Relic_3032": {
+      "kind": "Relic",
+      "id": 3032,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_4464.png"
+    },
+    "Relic_3033": {
+      "kind": "Relic",
+      "id": 3033,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_4356.png"
+    },
+    "Relic_3035": {
+      "kind": "Relic",
+      "id": 3035,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3423.png"
+    },
+    "Relic_3038": {
+      "kind": "Relic",
+      "id": 3038,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3424.png"
+    },
+    "Relic_3039": {
+      "kind": "Relic",
+      "id": 3039,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3661.png"
+    },
+    "Relic_3040": {
+      "kind": "Relic",
+      "id": 3040,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3638.png"
+    },
+    "Relic_3041": {
+      "kind": "Relic",
+      "id": 3041,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_4303.png"
+    },
+    "Relic_3042": {
+      "kind": "Relic",
+      "id": 3042,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_4531.png"
+    },
+    "Relic_3043": {
+      "kind": "Relic",
+      "id": 3043,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3272.png"
+    },
+    "Relic_3044": {
+      "kind": "Relic",
+      "id": 3044,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_4584.png"
+    },
+    "Relic_3045": {
+      "kind": "Relic",
+      "id": 3045,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3417.png"
+    },
+    "Relic_3046": {
+      "kind": "Relic",
+      "id": 3046,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3580.png"
+    },
+    "Relic_3047": {
+      "kind": "Relic",
+      "id": 3047,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3453.png"
+    },
+    "Relic_3048": {
+      "kind": "Relic",
+      "id": 3048,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_4602.png"
+    },
+    "Relic_3050": {
+      "kind": "Relic",
+      "id": 3050,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3440.png"
+    },
+    "Relic_3051": {
+      "kind": "Relic",
+      "id": 3051,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3421.png"
+    },
+    "Relic_3052": {
+      "kind": "Relic",
+      "id": 3052,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3432.png"
+    },
+    "Relic_3053": {
+      "kind": "Relic",
+      "id": 3053,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3618.png"
+    },
+    "Relic_3054": {
+      "kind": "Relic",
+      "id": 3054,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_4206.png"
+    },
+    "Relic_3055": {
+      "kind": "Relic",
+      "id": 3055,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3532.png"
+    },
+    "Relic_3056": {
+      "kind": "Relic",
+      "id": 3056,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_4402.png"
+    },
+    "Relic_3058": {
+      "kind": "Relic",
+      "id": 3058,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_4427.png"
+    },
+    "Relic_3059": {
+      "kind": "Relic",
+      "id": 3059,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_4322.png"
+    },
+    "Relic_3060": {
+      "kind": "Relic",
+      "id": 3060,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_4618.png"
+    }
+  },
+  "locked_catalog": {
+    "Hero_5": {
+      "kind": "Hero",
+      "id": 5,
+      "tier": 1,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_4540.png",
+      "xp": 650
+    },
+    "Hero_9": {
+      "kind": "Hero",
+      "id": 9,
+      "tier": 1,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_4343.png",
+      "xp": 1250
+    },
+    "Hero_15": {
+      "kind": "Hero",
+      "id": 15,
+      "tier": 1,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3541.png",
+      "xp": 50
+    },
+    "Item_639": {
+      "kind": "Item",
+      "id": 639,
+      "tier": 2,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_4522.png",
+      "xp": 1450
+    },
+    "Item_708": {
+      "kind": "Item",
+      "id": 708,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_3557.png",
+      "xp": 50
+    },
+    "Item_714": {
+      "kind": "Item",
+      "id": 714,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_4419.png",
+      "xp": 1450
+    },
+    "Item_721": {
+      "kind": "Item",
+      "id": 721,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_4381.png",
+      "xp": 850
+    },
+    "Item_723": {
+      "kind": "Item",
+      "id": 723,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_3270.png",
+      "xp": 650
+    },
+    "Item_727": {
+      "kind": "Item",
+      "id": 727,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_3357.png",
+      "xp": 250
+    },
+    "Item_729": {
+      "kind": "Item",
+      "id": 729,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_3352.png",
+      "xp": 250
+    },
+    "Item_733": {
+      "kind": "Item",
+      "id": 733,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_4392.png",
+      "xp": 850
+    },
+    "Item_734": {
+      "kind": "Item",
+      "id": 734,
+      "tier": 3,
+      "price": 25,
+      "icon": "res://sprites/sharedassets1_4566.png",
+      "xp": 1250
+    },
+    "Relic_3017": {
+      "kind": "Relic",
+      "id": 3017,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_4497.png",
+      "xp": 250
+    },
+    "Relic_3018": {
+      "kind": "Relic",
+      "id": 3018,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3445.png",
+      "xp": 250
+    },
+    "Relic_3019": {
+      "kind": "Relic",
+      "id": 3019,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3298.png",
+      "xp": 250
+    },
+    "Relic_3030": {
+      "kind": "Relic",
+      "id": 3030,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3442.png",
+      "xp": 1450
+    },
+    "Relic_3034": {
+      "kind": "Relic",
+      "id": 3034,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3566.png",
+      "xp": 850
+    },
+    "Relic_3036": {
+      "kind": "Relic",
+      "id": 3036,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_4563.png",
+      "xp": 850
+    },
+    "Relic_3049": {
+      "kind": "Relic",
+      "id": 3049,
+      "tier": 3,
+      "price": 30,
+      "icon": "res://sprites/sharedassets1_3394.png",
+      "xp": 1450
+    }
+  },
+  "odds": {
+    "Hero": {
+      "1": 5570560,
+      "2": 0,
+      "3": -655360,
+      "4": 0
+    },
+    "Item": {
+      "1": 4325376,
+      "2": 2162688,
+      "3": -655360
+    },
+    "Relic": {
+      "1": 4325376,
+      "2": 2162688,
+      "3": -327680
+    }
+  },
+  "counts": {
+    "Hero": 3,
+    "Item": 2,
+    "Relic": 1
+  },
+  "second_chunk_odds": {
+    "Hero": {
+      "1": 2949120,
+      "2": 3276800,
+      "3": 327680,
+      "4": -655360
+    },
+    "Item": {
+      "1": 2162688,
+      "2": 4325376,
+      "3": 65536
+    },
+    "Relic": {
+      "1": 2162688,
+      "2": 4325376,
+      "3": 65536
+    }
+  },
+  "super_odds": {
+    "Hero": {
+      "1": 1966080,
+      "2": 3276800,
+      "3": 1310720,
+      "4": 0
+    },
+    "Item": {
+      "1": 1966080,
+      "2": 3276800,
+      "3": 1310720
+    },
+    "Relic": {
+      "1": 1966080,
+      "2": 3276800,
+      "3": 1310720,
+      "6": 0
+    }
+  },
+  "super_counts": {
+    "Hero": 3,
+    "Item": 4,
+    "Relic": 3
+  },
+  "super_reroll": 7,
+  "rank_prices": {
+    "1": 15,
+    "2": 25,
+    "3": 35,
+    "4": 45
+  },
+  "discount": 16384,
+  "reroll": 1,
+  "reroll_increment": 1,
+  "surviving_hero_shards": 2
+}

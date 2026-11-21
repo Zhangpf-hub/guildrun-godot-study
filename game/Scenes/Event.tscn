@@ -1,0 +1,876 @@
+[gd_scene format=3]
+
+[node name="Event" type="Node3D"]
+
+[node name="UICamera" type="Node3D" parent="."]
+position = Vector3(0, 10, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4
+metadata/unity_name = "UICamera"
+visible = false
+process_mode = 4
+
+[node name="UnityCamera" type="Camera3D" parent="UICamera"]
+fov = 60.0
+near = 0.30000001192092896
+far = 1000.0
+projection = 1
+size = 10.0
+
+[node name="===== Cameras & Light =====" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6
+metadata/unity_name = "===== Cameras & Light ====="
+
+[node name="DummyBaseCamera" type="Node3D" parent="."]
+position = Vector3(-60.2646637, 36.1485367, 0.0911637247)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7
+metadata/unity_name = "DummyBaseCamera"
+
+[node name="UnityCamera" type="Camera3D" parent="DummyBaseCamera"]
+fov = 60.0
+near = 0.30000001192092896
+far = 1000.0
+projection = 1
+size = 10.0
+
+[node name="EventSystem" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9
+metadata/unity_name = "EventSystem"
+
+[node name="EventScope" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13
+metadata/unity_name = "EventScope"
+
+[node name="InputHandlerController" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18
+metadata/unity_name = "InputHandlerController"
+
+[node name="===== UI ===============" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21
+metadata/unity_name = "===== UI ==============="
+
+[node name="GameMainCamera" type="Node3D" parent="."]
+position = Vector3(10.7299995, 18.3400002, 18.1299992)
+quaternion = Quaternion(-0.340718597, 0.0818996504, 0.0298090279, 0.936116815)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 82
+metadata/unity_name = "GameMainCamera"
+visible = false
+process_mode = 4
+
+[node name="UnityCamera" type="Camera3D" parent="GameMainCamera"]
+fov = 24.61603355407715
+near = 0.10000000149011612
+far = 5000.0
+
+[node name="Canvas" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(0, 0, 0)
+metadata/unity_id = 10
+metadata/unity_name = "Canvas"
+
+[node name="Background" type="Node3D" parent="Canvas"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22
+metadata/unity_name = "Background"
+
+[node name="Modal" type="Node3D" parent="Canvas"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 3
+metadata/unity_name = "Modal"
+
+[node name="VFX_UI_Lines_1" type="Node3D" parent="Canvas"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(0, 0, 0)
+metadata/unity_id = 14
+metadata/unity_name = "VFX_UI_Lines_1"
+
+[node name="VFX_UI_Event" type="Node3D" parent="Canvas"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 80
+metadata/unity_name = "VFX_UI_Event"
+visible = false
+process_mode = 4
+
+[node name="Glow_01" type="Node3D" parent="Canvas/VFX_UI_Event"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 85
+metadata/unity_name = "Glow_01"
+
+[node name="Root" type="Node3D" parent="Canvas"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12
+metadata/unity_name = "Root"
+
+[node name="Background" type="Node3D" parent="Canvas/Root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20
+metadata/unity_name = "Background"
+
+[node name="EventImagePanel" type="Node3D" parent="Canvas/Root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19
+metadata/unity_name = "EventImagePanel"
+
+[node name="EventImage" type="Node3D" parent="Canvas/Root/EventImagePanel"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23
+metadata/unity_name = "EventImage"
+
+[node name="PlaceholderPanel" type="Node3D" parent="Canvas/Root/EventImagePanel/EventImage"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 2
+metadata/unity_name = "PlaceholderPanel"
+
+[node name="Text (TMP)" type="Node3D" parent="Canvas/Root/EventImagePanel/EventImage/PlaceholderPanel"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24
+metadata/unity_name = "Text (TMP)"
+
+[node name="EventUIController" type="Node3D" parent="Canvas/Root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11
+metadata/unity_name = "EventUIController"
+
+[node name="EventContentPanel" type="Node3D" parent="Canvas/Root/EventUIController"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15
+metadata/unity_name = "EventContentPanel"
+
+[node name="EventNameText" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5
+metadata/unity_name = "EventNameText"
+
+[node name="EventDescriptionText" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17
+metadata/unity_name = "EventDescriptionText"
+
+[node name="EventOutcomeText" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8
+metadata/unity_name = "EventOutcomeText"
+visible = false
+process_mode = 4
+
+[node name="ScrollView" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 86
+metadata/unity_name = "ScrollView"
+
+[node name="Viewport" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView"]
+position = Vector3(0, 0, 0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 112
+metadata/unity_name = "Viewport"
+
+[node name="ChoicesHolder" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 1
+metadata/unity_name = "ChoicesHolder"
+
+[node name="ChoiceButtonView_2" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 47
+metadata/unity_name = "ChoiceButtonView_2"
+visible = false
+process_mode = 4
+
+[node name="Icon" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_2"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 43
+metadata/unity_name = "Icon"
+visible = false
+process_mode = 4
+
+[node name="Line" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_2"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 32
+metadata/unity_name = "Line"
+visible = false
+process_mode = 4
+
+[node name="VFX_Button_Chosen_Back" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_2"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 58
+metadata/unity_name = "VFX_Button_Chosen_Back"
+
+[node name="Dust_03" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_2/VFX_Button_Chosen_Back"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 30
+metadata/unity_name = "Dust_03"
+
+[node name="Dust_02" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_2/VFX_Button_Chosen_Back"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 79
+metadata/unity_name = "Dust_02"
+
+[node name="Button" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_2"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 33
+metadata/unity_name = "Button"
+
+[node name="Graphics" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_2/Button"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 76
+metadata/unity_name = "Graphics"
+
+[node name="Hover" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_2/Button/Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 65
+metadata/unity_name = "Hover"
+
+[node name="Highlight" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_2/Button/Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 36
+metadata/unity_name = "Highlight"
+
+[node name="Hover_Highlight" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_2/Button/Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 116
+metadata/unity_name = "Hover_Highlight"
+
+[node name="Pressed" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_2/Button/Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 109
+metadata/unity_name = "Pressed"
+
+[node name="TopLayer" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_2/Button/Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 35
+metadata/unity_name = "TopLayer"
+
+[node name="Disabled" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_2/Button/Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 72
+metadata/unity_name = "Disabled"
+
+[node name="SwipeIn" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_2/Button/Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 91
+metadata/unity_name = "SwipeIn"
+
+[node name="Mask" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_2/Button"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 68
+metadata/unity_name = "Mask"
+
+[node name="VFX_Button_Chosen" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_2/Button/Mask"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 118
+metadata/unity_name = "VFX_Button_Chosen"
+
+[node name="Glow_05" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_2/Button/Mask/VFX_Button_Chosen"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 100
+metadata/unity_name = "Glow_05"
+
+[node name="Glow_03" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_2/Button/Mask/VFX_Button_Chosen"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 41
+metadata/unity_name = "Glow_03"
+
+[node name="ButtonText" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_2"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 104
+metadata/unity_name = "ButtonText"
+
+[node name="ChoiceButtonView_Artifact_Variant" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 74
+metadata/unity_name = "ChoiceButtonView_Artifact_Variant"
+visible = false
+process_mode = 4
+
+[node name="Icon" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Artifact_Variant"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 84
+metadata/unity_name = "Icon"
+visible = false
+process_mode = 4
+
+[node name="Line" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Artifact_Variant"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 50
+metadata/unity_name = "Line"
+visible = false
+process_mode = 4
+
+[node name="VFX_Button_Chosen_Back" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Artifact_Variant"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 37
+metadata/unity_name = "VFX_Button_Chosen_Back"
+
+[node name="Dust_03" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Artifact_Variant/VFX_Button_Chosen_Back"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 67
+metadata/unity_name = "Dust_03"
+
+[node name="Dust_02" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Artifact_Variant/VFX_Button_Chosen_Back"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 40
+metadata/unity_name = "Dust_02"
+
+[node name="Button" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Artifact_Variant"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 49
+metadata/unity_name = "Button"
+
+[node name="Graphics" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Artifact_Variant/Button"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 39
+metadata/unity_name = "Graphics"
+
+[node name="Hover" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Artifact_Variant/Button/Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27
+metadata/unity_name = "Hover"
+
+[node name="Highlight" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Artifact_Variant/Button/Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 55
+metadata/unity_name = "Highlight"
+
+[node name="Hover_Highlight" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Artifact_Variant/Button/Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 102
+metadata/unity_name = "Hover_Highlight"
+
+[node name="Pressed" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Artifact_Variant/Button/Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 95
+metadata/unity_name = "Pressed"
+
+[node name="TopLayer" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Artifact_Variant/Button/Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 56
+metadata/unity_name = "TopLayer"
+
+[node name="Disabled" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Artifact_Variant/Button/Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 45
+metadata/unity_name = "Disabled"
+
+[node name="SwipeIn" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Artifact_Variant/Button/Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 107
+metadata/unity_name = "SwipeIn"
+
+[node name="RewardHolder" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Artifact_Variant/Button"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(0.699999988, 0.699999988, 0.699999988)
+metadata/unity_id = 62
+metadata/unity_name = "RewardHolder"
+
+[node name="ItemSimple" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Artifact_Variant/Button/RewardHolder"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 70
+metadata/unity_name = "ItemSimple"
+
+[node name="TooltipAnchor" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Artifact_Variant/Button/RewardHolder/ItemSimple"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 64
+metadata/unity_name = "TooltipAnchor"
+
+[node name="RankFrame" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Artifact_Variant/Button/RewardHolder/ItemSimple"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 57
+metadata/unity_name = "RankFrame"
+
+[node name="ActiveSlot" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Artifact_Variant/Button/RewardHolder/ItemSimple"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 75
+metadata/unity_name = "ActiveSlot"
+
+[node name="NameText" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Artifact_Variant/Button/RewardHolder/ItemSimple/ActiveSlot"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 103
+metadata/unity_name = "NameText"
+
+[node name="RelicSimple" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Artifact_Variant/Button/RewardHolder"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 63
+metadata/unity_name = "RelicSimple"
+
+[node name="TooltipAnchor" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Artifact_Variant/Button/RewardHolder/RelicSimple"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 71
+metadata/unity_name = "TooltipAnchor"
+
+[node name="RankFrame" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Artifact_Variant/Button/RewardHolder/RelicSimple"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 83
+metadata/unity_name = "RankFrame"
+
+[node name="ActiveSlot" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Artifact_Variant/Button/RewardHolder/RelicSimple"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 66
+metadata/unity_name = "ActiveSlot"
+
+[node name="NameText" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Artifact_Variant/Button/RewardHolder/RelicSimple"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 94
+metadata/unity_name = "NameText"
+
+[node name="Mask" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Artifact_Variant/Button"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 29
+metadata/unity_name = "Mask"
+
+[node name="VFX_Button_Chosen" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Artifact_Variant/Button/Mask"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 105
+metadata/unity_name = "VFX_Button_Chosen"
+
+[node name="Glow_05" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Artifact_Variant/Button/Mask/VFX_Button_Chosen"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 114
+metadata/unity_name = "Glow_05"
+
+[node name="Glow_03" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Artifact_Variant/Button/Mask/VFX_Button_Chosen"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 78
+metadata/unity_name = "Glow_03"
+
+[node name="ButtonText" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Artifact_Variant"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 117
+metadata/unity_name = "ButtonText"
+
+[node name="ChoiceButtonView_Last" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 73
+metadata/unity_name = "ChoiceButtonView_Last"
+visible = false
+process_mode = 4
+
+[node name="Icon" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Last"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 77
+metadata/unity_name = "Icon"
+visible = false
+process_mode = 4
+
+[node name="Line" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Last"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 60
+metadata/unity_name = "Line"
+visible = false
+process_mode = 4
+
+[node name="VFX_Button_Chosen_Back" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Last"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 34
+metadata/unity_name = "VFX_Button_Chosen_Back"
+
+[node name="Dust_03" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Last/VFX_Button_Chosen_Back"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 61
+metadata/unity_name = "Dust_03"
+
+[node name="Dust_02" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Last/VFX_Button_Chosen_Back"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 42
+metadata/unity_name = "Dust_02"
+
+[node name="Button" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Last"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 59
+metadata/unity_name = "Button"
+
+[node name="Graphics" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Last/Button"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 44
+metadata/unity_name = "Graphics"
+
+[node name="Hover" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Last/Button/Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 31
+metadata/unity_name = "Hover"
+
+[node name="Highlight" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Last/Button/Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 53
+metadata/unity_name = "Highlight"
+
+[node name="Hover_Highlight" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Last/Button/Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 99
+metadata/unity_name = "Hover_Highlight"
+
+[node name="Pressed" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Last/Button/Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 89
+metadata/unity_name = "Pressed"
+
+[node name="TopLayer" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Last/Button/Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 54
+metadata/unity_name = "TopLayer"
+
+[node name="Disabled" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Last/Button/Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 48
+metadata/unity_name = "Disabled"
+
+[node name="SwipeIn" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Last/Button/Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 108
+metadata/unity_name = "SwipeIn"
+
+[node name="Mask" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Last/Button"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26
+metadata/unity_name = "Mask"
+
+[node name="VFX_Button_Chosen" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Last/Button/Mask"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 96
+metadata/unity_name = "VFX_Button_Chosen"
+
+[node name="Glow_05" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Last/Button/Mask/VFX_Button_Chosen"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 115
+metadata/unity_name = "Glow_05"
+
+[node name="Glow_03" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Last/Button/Mask/VFX_Button_Chosen"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 81
+metadata/unity_name = "Glow_03"
+
+[node name="ButtonText" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Viewport/ChoicesHolder/ChoiceButtonView_Last"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 113
+metadata/unity_name = "ButtonText"
+
+[node name="Scrollbar Vertical" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 111
+metadata/unity_name = "Scrollbar Vertical"
+
+[node name="Sliding Area" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Scrollbar Vertical"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 52
+metadata/unity_name = "Sliding Area"
+
+[node name="Handle" type="Node3D" parent="Canvas/Root/EventUIController/EventContentPanel/ScrollView/Scrollbar Vertical/Sliding Area"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 87
+metadata/unity_name = "Handle"
+
+[node name="PrimaryButton" type="Node3D" parent="Canvas/Root/EventUIController"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 90
+metadata/unity_name = "PrimaryButton"
+
+[node name="Button_Graphics" type="Node3D" parent="Canvas/Root/EventUIController/PrimaryButton"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 97
+metadata/unity_name = "Button_Graphics"
+
+[node name="TweenAnimation" type="Node3D" parent="Canvas/Root/EventUIController/PrimaryButton/Button_Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 69
+metadata/unity_name = "TweenAnimation"
+
+[node name="Hover" type="Node3D" parent="Canvas/Root/EventUIController/PrimaryButton/Button_Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 92
+metadata/unity_name = "Hover"
+
+[node name="Pressed" type="Node3D" parent="Canvas/Root/EventUIController/PrimaryButton/Button_Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 88
+metadata/unity_name = "Pressed"
+
+[node name="L_Decos" type="Node3D" parent="Canvas/Root/EventUIController/PrimaryButton/Button_Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 51
+metadata/unity_name = "L_Decos"
+
+[node name="R_Decos" type="Node3D" parent="Canvas/Root/EventUIController/PrimaryButton/Button_Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(-1, 1, 1)
+metadata/unity_id = 110
+metadata/unity_name = "R_Decos"
+
+[node name="Highlight" type="Node3D" parent="Canvas/Root/EventUIController/PrimaryButton/Button_Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 38
+metadata/unity_name = "Highlight"
+
+[node name="Disabled" type="Node3D" parent="Canvas/Root/EventUIController/PrimaryButton/Button_Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 28
+metadata/unity_name = "Disabled"
+
+[node name="TopLayer" type="Node3D" parent="Canvas/Root/EventUIController/PrimaryButton/Button_Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 98
+metadata/unity_name = "TopLayer"
+
+[node name="VFX_Button_Chosen" type="Node3D" parent="Canvas/Root/EventUIController/PrimaryButton/Button_Graphics"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(0, 0, 0)
+metadata/unity_id = 93
+metadata/unity_name = "VFX_Button_Chosen"
+
+[node name="Glow_02" type="Node3D" parent="Canvas/Root/EventUIController/PrimaryButton/Button_Graphics/VFX_Button_Chosen"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 46
+metadata/unity_name = "Glow_02"
+
+[node name="Dust_02" type="Node3D" parent="Canvas/Root/EventUIController/PrimaryButton/Button_Graphics/VFX_Button_Chosen"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 101
+metadata/unity_name = "Dust_02"
+
+[node name="Text (TMP)" type="Node3D" parent="Canvas/Root/EventUIController/PrimaryButton"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 106
+metadata/unity_name = "Text (TMP)"
+
+[node name="Border" type="Node3D" parent="Canvas/Root/EventUIController"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25
+metadata/unity_name = "Border"
+visible = false
+process_mode = 4
+
+[node name="CanvasCameraBinder" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16
+metadata/unity_name = "CanvasCameraBinder"

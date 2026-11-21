@@ -1,0 +1,524 @@
+{
+  "duration": 19.799999952316284,
+  "tracks": [
+    {
+      "node": 1427,
+      "property": "group_alpha",
+      "start": 0.0,
+      "duration": 0.20000000298023224,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1739,
+      "property": "group_alpha",
+      "start": 0.5,
+      "duration": 0.20000000298023224,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1879,
+      "property": "scale",
+      "start": 0.5,
+      "duration": 3.0,
+      "ease": 0,
+      "from": [
+        1.0,
+        0.0
+      ],
+      "to": [
+        1.0499999523162842,
+        0.0
+      ]
+    },
+    {
+      "node": 1252,
+      "property": "position",
+      "start": 0.5,
+      "duration": 2.5,
+      "ease": 3,
+      "from": [
+        0.0,
+        -5.0
+      ],
+      "to": [
+        0.0,
+        10.0
+      ]
+    },
+    {
+      "node": 1642,
+      "property": "group_alpha",
+      "start": 2.5,
+      "duration": 0.20000000298023224,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1841,
+      "property": "image_alpha",
+      "start": 2.550000000745058,
+      "duration": 0.30000001192092896,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1502,
+      "property": "image_alpha",
+      "start": 2.550000000745058,
+      "duration": 1.7000000476837158,
+      "ease": -1,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1433,
+      "property": "group_alpha",
+      "start": 2.9000000953674316,
+      "duration": 0.20000000298023224,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1855,
+      "property": "image_alpha",
+      "start": 3.0,
+      "duration": 0.30000001192092896,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1855,
+      "property": "size",
+      "start": 3.0,
+      "duration": 2.0,
+      "ease": 0,
+      "from": [
+        880.0,
+        660.0
+      ],
+      "to": [
+        902.0,
+        680.0
+      ]
+    },
+    {
+      "node": 1504,
+      "property": "group_alpha",
+      "start": 4.5,
+      "duration": 0.20000000298023224,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1447,
+      "property": "scale",
+      "start": 4.5,
+      "duration": 3.0,
+      "ease": 0,
+      "from": [
+        1.0,
+        0.0
+      ],
+      "to": [
+        0.8999999761581421,
+        0.0
+      ]
+    },
+    {
+      "node": 1579,
+      "property": "scale",
+      "start": 4.5,
+      "duration": 3.0,
+      "ease": 0,
+      "from": [
+        1.0,
+        0.0
+      ],
+      "to": [
+        1.100000023841858,
+        0.0
+      ]
+    },
+    {
+      "node": 1918,
+      "property": "group_alpha",
+      "start": 5.0,
+      "duration": 0.20000000298023224,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1840,
+      "property": "group_alpha",
+      "start": 7.699999809265137,
+      "duration": 0.20000000298023224,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1580,
+      "property": "position_x",
+      "start": 7.699999809265137,
+      "duration": 3.0,
+      "ease": -1,
+      "from": [
+        -400.0,
+        0.0
+      ],
+      "to": [
+        -15.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1649,
+      "property": "position_x",
+      "start": 7.699999809265137,
+      "duration": 3.5,
+      "ease": 0,
+      "from": [
+        -292.510009765625,
+        0.0
+      ],
+      "to": [
+        -275.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1336,
+      "property": "group_alpha",
+      "start": 8.0,
+      "duration": 0.20000000298023224,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1258,
+      "property": "group_alpha",
+      "start": 11.0,
+      "duration": 0.20000000298023224,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1422,
+      "property": "image_alpha",
+      "start": 11.0,
+      "duration": 1.0,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1710,
+      "property": "group_alpha",
+      "start": 13.0,
+      "duration": 0.20000000298023224,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1622,
+      "property": "group_alpha",
+      "start": 15.0,
+      "duration": 0.20000000298023224,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1415,
+      "property": "image_alpha",
+      "start": 16.0,
+      "duration": 0.5,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1448,
+      "property": "group_alpha",
+      "start": 16.799999952316284,
+      "duration": 1.0,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1567,
+      "property": "group_alpha",
+      "start": 16.799999952316284,
+      "duration": 1.0,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1509,
+      "property": "image_alpha",
+      "start": 16.799999952316284,
+      "duration": 0.5,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1897,
+      "property": "position_x",
+      "start": 16.799999952316284,
+      "duration": 2.0,
+      "ease": 0,
+      "from": [
+        -10.0,
+        0.0
+      ],
+      "to": [
+        10.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1883,
+      "property": "position_x",
+      "start": 16.799999952316284,
+      "duration": 2.0,
+      "ease": 0,
+      "from": [
+        -20.0,
+        0.0
+      ],
+      "to": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1230,
+      "property": "scale",
+      "start": 16.799999952316284,
+      "duration": 3.0,
+      "ease": 0,
+      "from": [
+        1.0,
+        0.0
+      ],
+      "to": [
+        1.100000023841858,
+        0.0
+      ]
+    },
+    {
+      "node": 1885,
+      "property": "group_alpha",
+      "start": 17.0,
+      "duration": 0.20000000298023224,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "captions": {
+    "1470": {
+      "key": "Comics.Introduction.Panel5.2",
+      "width": 454.8999938964844,
+      "padding": [
+        24,
+        18,
+        24,
+        18
+      ],
+      "spacing": 0.0
+    },
+    "1290": {
+      "key": "Comics.Introduction.Panel5.1",
+      "width": 405.79998779296875,
+      "padding": [
+        24,
+        18,
+        24,
+        18
+      ],
+      "spacing": 0.0
+    },
+    "1661": {
+      "key": "Comics.Introduction.Panel4.1",
+      "width": 521.1300048828125,
+      "padding": [
+        24,
+        18,
+        24,
+        18
+      ],
+      "spacing": 0.0
+    },
+    "1507": {
+      "key": "Comics.Introduction.Panel3.1",
+      "width": 406.4200134277344,
+      "padding": [
+        24,
+        18,
+        24,
+        18
+      ],
+      "spacing": 0.0
+    },
+    "1779": {
+      "key": "Comics.Introduction.Panel2.1",
+      "width": 480.0,
+      "padding": [
+        24,
+        18,
+        24,
+        18
+      ],
+      "spacing": 0.0
+    },
+    "1743": {
+      "key": "Comics.Introduction.Panel1.1",
+      "width": -1.0,
+      "padding": [
+        24,
+        18,
+        24,
+        18
+      ],
+      "spacing": 0.0
+    }
+  },
+  "sound": "event:/SFX/COMICS/comic_01"
+}

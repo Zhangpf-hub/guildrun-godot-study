@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" format=3]
+[ext_resource type="Texture2D" path="res://textures/sharedassets18_8.png" id="1"]
+[ext_resource type="Shader" path="res://materials/environment_plane_transparent.gdshader" id="2"]
+
+[resource]
+resource_name = "Arc01_FightScenario_Mat_Trees"
+shader = ExtResource("2")
+shader_parameter/tint = Vector3(0.662745118, 0.627451003, 0.737254918)
+shader_parameter/main_texture_clamped = ExtResource("1")
+shader_parameter/sampler_mode = 1
+metadata/unity_shader = "Shader Graphs/EnvironmentPlane_SG"

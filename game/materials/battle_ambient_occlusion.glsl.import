@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://bddbpd40jcjwx"
+path="res://.godot/imported/battle_ambient_occlusion.glsl-2c1b9a6295ddd6919c446cedfe5dae6a.res"
+
+[deps]
+
+source_file="res://materials/battle_ambient_occlusion.glsl"
+dest_files=["res://.godot/imported/battle_ambient_occlusion.glsl-2c1b9a6295ddd6919c446cedfe5dae6a.res"]
+
+[params]
+

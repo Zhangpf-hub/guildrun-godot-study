@@ -1,0 +1,150 @@
+{
+  "canvas_fade_delay": 0.1,
+  "canvas_fade_duration": 0.3,
+  "reward_delay": 0.06,
+  "tracker_stagger": 0.1,
+  "stats": {
+    "source": "level3:29175",
+    "duration": 0.17,
+    "tracks": [
+      {
+        "path": "Panel/BattleStatsPanel",
+        "property": "size:y",
+        "from": 0.0,
+        "to": 654.0,
+        "start": 0,
+        "duration": 0.1,
+        "linear": true
+      },
+      {
+        "path": "Panel/BattleStatsPanel/TitlePanel",
+        "property": "modulate:a",
+        "from": 0.0,
+        "to": 1.0,
+        "start": 0.02,
+        "duration": 0.1,
+        "linear": false
+      },
+      {
+        "path": "Panel/BattleStatsPanel/TitlePanel/SwitchHolder",
+        "property": "modulate:a",
+        "from": 0.0,
+        "to": 1.0,
+        "start": 0.02,
+        "duration": 0.1,
+        "linear": false
+      },
+      {
+        "path": "Panel/BattleStatsPanel/TitlePanel/BottomPanel/CombatDurationText/UnityText",
+        "property": "modulate:a",
+        "from": 0.0,
+        "to": 1.0,
+        "start": 0.04,
+        "duration": 0.1,
+        "linear": false
+      },
+      {
+        "path": "Panel/BattleStatsPanel/TitlePanel/BottomPanel",
+        "property": "modulate:a",
+        "from": 0.0,
+        "to": 1.0,
+        "start": 0.07,
+        "duration": 0.1,
+        "linear": false
+      }
+    ]
+  },
+  "rewards": {
+    "source": "level3:29552",
+    "duration": 0.32,
+    "tracks": [
+      {
+        "path": "Panel/BattleStatsPanel",
+        "property": "position:x",
+        "from": 200.0,
+        "to": 0.0,
+        "start": 0.0,
+        "duration": 0.1,
+        "linear": false
+      },
+      {
+        "path": "Panel/RewardsPanel",
+        "property": "size:x",
+        "from": 0.0,
+        "to": 388.0,
+        "start": 0.02,
+        "duration": 0.1,
+        "linear": false
+      },
+      {
+        "path": "Panel/RewardsPanel/Line",
+        "property": "size:x",
+        "from": 0.0,
+        "to": 326.0,
+        "start": 0.12,
+        "duration": 0.1,
+        "linear": false
+      },
+      {
+        "path": "Panel/RewardsPanel/ResultTitleText/UnityText",
+        "property": "modulate:a",
+        "from": 0.0,
+        "to": 1.0,
+        "start": 0.07,
+        "duration": 0.1,
+        "linear": false
+      },
+      {
+        "path": "Panel/RewardsPanel/Scroll_Rewards",
+        "property": "modulate:a",
+        "from": 0.0,
+        "to": 1.0,
+        "start": 0.09,
+        "duration": 0.1,
+        "linear": false
+      },
+      {
+        "path": "Panel/RewardsPanel/TotalEarnedRewardView",
+        "property": "modulate:a",
+        "from": 0.0,
+        "to": 1.0,
+        "start": 0.1,
+        "duration": 0.1,
+        "linear": false
+      },
+      {
+        "path": "Panel/RewardsPanel/ButtonContainer",
+        "property": "modulate:a",
+        "from": 0.0,
+        "to": 1.0,
+        "start": 0.12,
+        "duration": 0.2,
+        "linear": false
+      }
+    ]
+  },
+  "tracker": {
+    "source": "level3:30834",
+    "duration": 0.15,
+    "tracks": [
+      {
+        "path": "HeroRoundIconSmall",
+        "property": "modulate:a",
+        "from": 0.0,
+        "to": 1.0,
+        "start": 0,
+        "duration": 0.05,
+        "linear": false
+      },
+      {
+        "path": "DamageSlidersHolder",
+        "property": "size:x",
+        "from": 0.0,
+        "to": 500.0,
+        "start": 0.05,
+        "duration": 0.1,
+        "linear": false
+      }
+    ]
+  }
+}

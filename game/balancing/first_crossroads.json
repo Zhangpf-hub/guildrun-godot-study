@@ -1,0 +1,304 @@
+{
+  "id": 120,
+  "paths": [
+    [
+      [
+        809,
+        1
+      ]
+    ],
+    [
+      [
+        800,
+        10
+      ],
+      [
+        801,
+        10
+      ],
+      [
+        802,
+        10
+      ],
+      [
+        803,
+        10
+      ],
+      [
+        804,
+        10
+      ],
+      [
+        805,
+        10
+      ],
+      [
+        806,
+        10
+      ]
+    ],
+    [
+      [
+        902,
+        10
+      ],
+      [
+        903,
+        10
+      ],
+      [
+        904,
+        10
+      ],
+      [
+        905,
+        10
+      ],
+      [
+        906,
+        10
+      ],
+      [
+        907,
+        10
+      ],
+      [
+        908,
+        10
+      ]
+    ]
+  ],
+  "events": {
+    "809": {
+      "icon": "res://sprites/sharedassets1_3741.png",
+      "art": "res://sprites/sharedassets1_4103.png",
+      "kind": "shards",
+      "amount": 5
+    },
+    "800": {
+      "icon": "res://sprites/sharedassets1_4085.png",
+      "art": "res://sprites/sharedassets1_4036.png",
+      "kind": "item",
+      "choices": [
+        [
+          111,
+          10
+        ],
+        [
+          113,
+          10
+        ],
+        [
+          114,
+          10
+        ],
+        [
+          115,
+          10
+        ],
+        [
+          118,
+          10
+        ]
+      ]
+    },
+    "801": {
+      "icon": "res://sprites/sharedassets1_3987.png",
+      "art": "res://sprites/sharedassets1_4036.png",
+      "kind": "item",
+      "choices": [
+        [
+          105,
+          10
+        ],
+        [
+          107,
+          10
+        ],
+        [
+          108,
+          10
+        ],
+        [
+          109,
+          10
+        ]
+      ]
+    },
+    "802": {
+      "icon": "res://sprites/sharedassets1_3754.png",
+      "art": "res://sprites/sharedassets1_4036.png",
+      "kind": "item",
+      "choices": [
+        [
+          101,
+          10
+        ],
+        [
+          102,
+          10
+        ],
+        [
+          103,
+          10
+        ],
+        [
+          121,
+          10
+        ]
+      ]
+    },
+    "803": {
+      "icon": "res://sprites/sharedassets1_4152.png",
+      "art": "res://sprites/sharedassets1_4036.png",
+      "kind": "item",
+      "choices": [
+        [
+          104,
+          10
+        ],
+        [
+          105,
+          10
+        ],
+        [
+          106,
+          10
+        ],
+        [
+          114,
+          10
+        ]
+      ]
+    },
+    "804": {
+      "icon": "res://sprites/sharedassets1_4133.png",
+      "art": "res://sprites/sharedassets1_4036.png",
+      "kind": "item",
+      "choices": [
+        [
+          110,
+          10
+        ],
+        [
+          111,
+          10
+        ],
+        [
+          112,
+          10
+        ]
+      ]
+    },
+    "805": {
+      "icon": "res://sprites/sharedassets1_4087.png",
+      "art": "res://sprites/sharedassets1_4036.png",
+      "kind": "item",
+      "choices": [
+        [
+          102,
+          10
+        ],
+        [
+          109,
+          10
+        ],
+        [
+          116,
+          10
+        ],
+        [
+          117,
+          10
+        ],
+        [
+          118,
+          10
+        ],
+        [
+          125,
+          10
+        ]
+      ]
+    },
+    "806": {
+      "icon": "res://sprites/sharedassets1_3704.png",
+      "art": "res://sprites/sharedassets1_4036.png",
+      "kind": "item",
+      "choices": [
+        [
+          117,
+          10
+        ],
+        [
+          119,
+          10
+        ],
+        [
+          120,
+          10
+        ],
+        [
+          121,
+          10
+        ]
+      ]
+    },
+    "902": {
+      "icon": "res://sprites/sharedassets1_3919.png",
+      "art": "res://sprites/sharedassets1_4015.png",
+      "kind": "training",
+      "modifier": 1,
+      "target_stat": 1,
+      "amount_q16": 6553600
+    },
+    "903": {
+      "icon": "res://sprites/sharedassets1_3919.png",
+      "art": "res://sprites/sharedassets1_4015.png",
+      "kind": "training",
+      "modifier": 4,
+      "target_stat": 12,
+      "amount_q16": 131072
+    },
+    "904": {
+      "icon": "res://sprites/sharedassets1_3919.png",
+      "art": "res://sprites/sharedassets1_4015.png",
+      "kind": "training",
+      "modifier": 7,
+      "target_stat": 6,
+      "amount_q16": 786432
+    },
+    "905": {
+      "icon": "res://sprites/sharedassets1_3919.png",
+      "art": "res://sprites/sharedassets1_4015.png",
+      "kind": "training",
+      "modifier": 10,
+      "target_stat": 7,
+      "amount_q16": 786432
+    },
+    "906": {
+      "icon": "res://sprites/sharedassets1_3919.png",
+      "art": "res://sprites/sharedassets1_4015.png",
+      "kind": "training",
+      "modifier": 13,
+      "target_stat": 4,
+      "amount_q16": 983040
+    },
+    "907": {
+      "icon": "res://sprites/sharedassets1_3919.png",
+      "art": "res://sprites/sharedassets1_4015.png",
+      "kind": "training",
+      "modifier": 16,
+      "target_stat": 9,
+      "amount_q16": 655360
+    },
+    "908": {
+      "icon": "res://sprites/sharedassets1_3919.png",
+      "art": "res://sprites/sharedassets1_4015.png",
+      "kind": "training",
+      "modifier": 19,
+      "target_stat": 11,
+      "amount_q16": 458752
+    }
+  }
+}

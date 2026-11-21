@@ -1,0 +1,442 @@
+[gd_scene format=3]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2912.obj" id="1"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_260.tres" id="2"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2986.obj" id="3"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2935.obj" id="4"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_259.tres" id="5"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2707.obj" id="6"]
+
+[node name="Slime" type="Node3D"]
+
+[node name="Slime" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9398
+metadata/unity_name = "Slime"
+
+[node name="Slime_Retexture" type="Node3D" parent="Slime"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1.29999995, 1.29999995, 1.29999995)
+metadata/unity_id = 10952
+metadata/unity_name = "Slime_Retexture"
+
+[node name="Body_Mesh" type="Node3D" parent="Slime/Slime_Retexture"]
+position = Vector3(-5.96046448e-08, -2.48933123e-08, -1.43051153e-08)
+quaternion = Quaternion(0.707106829, 8.54495141e-09, 1.37692657e-08, 0.707106709)
+scale = Vector3(0.999999881, 0.999999881, 1)
+metadata/unity_id = 21918
+metadata/unity_name = "Body_Mesh"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Slime/Slime_Retexture/Body_Mesh"]
+mesh = ExtResource("1")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="Bone01_Mesh" type="Node3D" parent="Slime/Slime_Retexture"]
+position = Vector3(-2.62260453e-08, -5.81982063e-09, 1.43051135e-08)
+quaternion = Quaternion(0.707106829, 1.77645738e-08, 1.48490402e-08, 0.707106709)
+scale = Vector3(0.999999881, 0.999999881, 1)
+metadata/unity_id = 13721
+metadata/unity_name = "Bone01_Mesh"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Slime/Slime_Retexture/Bone01_Mesh"]
+mesh = ExtResource("3")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="Crystal_Mesh" type="Node3D" parent="Slime/Slime_Retexture"]
+position = Vector3(-2.14576712e-08, -5.81982729e-09, -4.76837192e-09)
+quaternion = Quaternion(0.707106829, 1.44981973e-08, 1.80254673e-08, 0.707106709)
+scale = Vector3(1, 0.999999702, 1)
+metadata/unity_id = 21416
+metadata/unity_name = "Crystal_Mesh"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Slime/Slime_Retexture/Crystal_Mesh"]
+mesh = ExtResource("4")
+visible = true
+surface_material_override/0 = ExtResource("5")
+
+[node name="root" type="Node3D" parent="Slime/Slime_Retexture"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(0.707106888, -0, 0, 0.707106709)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8918
+metadata/unity_name = "root"
+
+[node name="pelvis" type="Node3D" parent="Slime/Slime_Retexture/root"]
+position = Vector3(-0, -3.38813171e-23, -0.189999998)
+quaternion = Quaternion(7.00124292e-05, -8.39705626e-06, 0.00147049979, 0.999998927)
+scale = Vector3(1, 0.99999994, 1)
+metadata/unity_id = 5096
+metadata/unity_name = "pelvis"
+
+[node name="spike_l" type="Node3D" parent="Slime/Slime_Retexture/root/pelvis"]
+position = Vector3(-0.692795694, -0.0185294989, -0.0798840001)
+quaternion = Quaternion(0.0479427241, -0.899992108, -0.0661109611, -0.428188086)
+scale = Vector3(1, 1.00000012, 1.00000036)
+metadata/unity_id = 9541
+metadata/unity_name = "spike_l"
+
+[node name="spike_l_end" type="Node3D" parent="Slime/Slime_Retexture/root/pelvis/spike_l"]
+position = Vector3(4.76837148e-09, 0.497731775, -2.86102289e-08)
+quaternion = Quaternion(-8.93007712e-09, 4.19095159e-09, -1.88111215e-08, 1)
+scale = Vector3(1, 0.99999994, 1)
+metadata/unity_id = 10286
+metadata/unity_name = "spike_l_end"
+
+[node name="spike_r" type="Node3D" parent="Slime/Slime_Retexture/root/pelvis"]
+position = Vector3(0.54387933, 0.55327934, 0.0769212171)
+quaternion = Quaternion(-0.1053055, 0.468699157, 0.311504364, 0.819876194)
+scale = Vector3(1.00000048, 0.999999881, 1.00000024)
+metadata/unity_id = 19101
+metadata/unity_name = "spike_r"
+
+[node name="spike_r_end" type="Node3D" parent="Slime/Slime_Retexture/root/pelvis/spike_r"]
+position = Vector3(-0, 0.497731805, -3.81469718e-08)
+quaternion = Quaternion(-3.09404804e-08, -4.47034836e-08, 5.79109338e-09, 1)
+scale = Vector3(1, 1.00000012, 1)
+metadata/unity_id = 5924
+metadata/unity_name = "spike_r_end"
+
+[node name="spine_01" type="Node3D" parent="Slime/Slime_Retexture/root/pelvis"]
+position = Vector3(0.01620676, -0.0450545475, -0.235304043)
+quaternion = Quaternion(0.0317007788, -0.706402779, -0.0313864201, 0.706402898)
+scale = Vector3(1.00000012, 1.00000036, 1.00000036)
+metadata/unity_id = 7761
+metadata/unity_name = "spine_01"
+
+[node name="spine_02" type="Node3D" parent="Slime/Slime_Retexture/root/pelvis/spine_01"]
+position = Vector3(-0.252467901, 0.0477050766, -0.0200411882)
+quaternion = Quaternion(-0.000701676239, -0.0377819985, 0.102206655, 0.994045198)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17528
+metadata/unity_name = "spine_02"
+
+[node name="spine_03" type="Node3D" parent="Slime/Slime_Retexture/root/pelvis/spine_01/spine_02"]
+position = Vector3(-0.287404925, -0.0268453695, -0.0326804407)
+quaternion = Quaternion(0.00375379226, 0.0315256901, -0.0394603163, 0.998716652)
+scale = Vector3(1.00000012, 0.999999881, 1)
+metadata/unity_id = 6811
+metadata/unity_name = "spine_03"
+
+[node name="head" type="Node3D" parent="Slime/Slime_Retexture/root/pelvis/spine_01/spine_02/spine_03"]
+position = Vector3(0.0512080379, -0.154416561, 0.0306091905)
+quaternion = Quaternion(-0.00383550255, -0.0711371973, 7.77679306e-05, 0.997459173)
+scale = Vector3(1, 0.999998987, 0.999998987)
+metadata/unity_id = 12550
+metadata/unity_name = "head"
+
+[node name="bone_l" type="Node3D" parent="Slime/Slime_Retexture/root/pelvis/spine_01/spine_02/spine_03/head"]
+position = Vector3(-0.255618513, 0.0675334483, 0.517512679)
+quaternion = Quaternion(0.321434915, -0.569364369, 0.699749768, 0.287843883)
+scale = Vector3(0.999998987, 1, 1.00000012)
+metadata/unity_id = 21012
+metadata/unity_name = "bone_l"
+
+[node name="bone_l_end" type="Node3D" parent="Slime/Slime_Retexture/root/pelvis/spine_01/spine_02/spine_03/head/bone_l"]
+position = Vector3(-1.21146442e-07, 0.475849181, -8.3446503e-09)
+quaternion = Quaternion(2.79396772e-09, -1.40629709e-07, -5.07570803e-08, 1)
+scale = Vector3(1.00000012, 0.99999994, 1)
+metadata/unity_id = 15342
+metadata/unity_name = "bone_l_end"
+
+[node name="bone_r" type="Node3D" parent="Slime/Slime_Retexture/root/pelvis/spine_01/spine_02/spine_03/head"]
+position = Vector3(-0.169757843, -0.136462763, -0.376900554)
+quaternion = Quaternion(-0.548153758, -0.325207233, -0.283932298, 0.716345012)
+scale = Vector3(0.999999821, 1, 0.999999821)
+metadata/unity_id = 26972
+metadata/unity_name = "bone_r"
+
+[node name="bone_r_end" type="Node3D" parent="Slime/Slime_Retexture/root/pelvis/spine_01/spine_02/spine_03/head/bone_r"]
+position = Vector3(1.09672541e-07, 0.475849211, -9.53674295e-09)
+quaternion = Quaternion(-2.14204192e-08, -4.65661332e-09, -6.05359851e-09, 1)
+scale = Vector3(0.99999994, 1, 0.99999994)
+metadata/unity_id = 17539
+metadata/unity_name = "bone_r_end"
+
+[node name="eye_01_l" type="Node3D" parent="Slime/Slime_Retexture/root/pelvis/spine_01/spine_02/spine_03/head"]
+position = Vector3(-0.490244806, -0.212057993, 0.259532928)
+quaternion = Quaternion(0.519658208, -0.824449897, 0.0240717418, 0.222841367)
+scale = Vector3(0.999999106, 0.999999404, 1.00000012)
+metadata/unity_id = 24322
+metadata/unity_name = "eye_01_l"
+
+[node name="eye_02_l" type="Node3D" parent="Slime/Slime_Retexture/root/pelvis/spine_01/spine_02/spine_03/head/eye_01_l"]
+position = Vector3(0.264996797, 0.0740225166, 0.00899157953)
+quaternion = Quaternion(-0.241584763, -0.349009663, -0.362132639, 0.829872906)
+scale = Vector3(0.999999523, 0.999999702, 0.99999994)
+metadata/unity_id = 8972
+metadata/unity_name = "eye_02_l"
+
+[node name="eye_02_l_end" type="Node3D" parent="Slime/Slime_Retexture/root/pelvis/spine_01/spine_02/spine_03/head/eye_01_l/eye_02_l"]
+position = Vector3(2.86102289e-08, 0.25985235, -4.05311589e-08)
+quaternion = Quaternion(-3.25962901e-08, -1.02445483e-08, 3.11993062e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7240
+metadata/unity_name = "eye_02_l_end"
+
+[node name="eye_01_r" type="Node3D" parent="Slime/Slime_Retexture/root/pelvis/spine_01/spine_02/spine_03/head"]
+position = Vector3(-0.517282486, -0.164578974, -0.182045177)
+quaternion = Quaternion(-0.886370659, -0.412151903, -0.148033828, 0.150212824)
+scale = Vector3(1.00000036, 0.99999994, 0.99999994)
+metadata/unity_id = 14290
+metadata/unity_name = "eye_01_r"
+
+[node name="eye_02_r" type="Node3D" parent="Slime/Slime_Retexture/root/pelvis/spine_01/spine_02/spine_03/head/eye_01_r"]
+position = Vector3(-0.313121796, -0.0236252584, -0.0137135899)
+quaternion = Quaternion(0.0117496653, -0.130893707, -0.0223093946, 0.991075754)
+scale = Vector3(0.99999994, 0.999999821, 1)
+metadata/unity_id = 5901
+metadata/unity_name = "eye_02_r"
+
+[node name="eye_02_r_end" type="Node3D" parent="Slime/Slime_Retexture/root/pelvis/spine_01/spine_02/spine_03/head/eye_01_r/eye_02_r"]
+position = Vector3(-6.67572024e-08, 0.307467699, 2.86102289e-08)
+quaternion = Quaternion(1.58324855e-08, 4.93601036e-08, -9.87202071e-08, 1)
+scale = Vector3(0.99999994, 0.99999994, 0.99999994)
+metadata/unity_id = 9131
+metadata/unity_name = "eye_02_r_end"
+
+[node name="jaw" type="Node3D" parent="Slime/Slime_Retexture/root/pelvis/spine_01/spine_02/spine_03/head"]
+position = Vector3(-0.040388111, -0.163280979, -0.0147729898)
+quaternion = Quaternion(-0.417430758, -0.905691266, -0.0656338707, -0.0341634825)
+scale = Vector3(0.999999523, 1.00000024, 1.00000036)
+metadata/unity_id = 14832
+metadata/unity_name = "jaw"
+
+[node name="jaw_end" type="Node3D" parent="Slime/Slime_Retexture/root/pelvis/spine_01/spine_02/spine_03/head/jaw"]
+position = Vector3(2.7644564e-08, 0.475849181, -4.76837148e-09)
+quaternion = Quaternion(9.31322663e-09, 1.82812983e-08, -5.29624256e-09, 1)
+scale = Vector3(1, 0.999999881, 0.99999994)
+metadata/unity_id = 18934
+metadata/unity_name = "jaw_end"
+
+[node name="tail_b" type="Node3D" parent="Slime/Slime_Retexture/root/pelvis"]
+position = Vector3(-0.00153548992, 0.47583586, 0.0771507472)
+quaternion = Quaternion(0.0781737491, -0.000956646749, -0.0209342428, 0.99671948)
+scale = Vector3(0.999999762, 0.99999994, 1.00000024)
+metadata/unity_id = 5054
+metadata/unity_name = "tail_b"
+
+[node name="tail_b_end" type="Node3D" parent="Slime/Slime_Retexture/root/pelvis/tail_b"]
+position = Vector3(-2.71050537e-22, 0.497731894, -0)
+quaternion = Quaternion(7.4505806e-09, -0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15429
+metadata/unity_name = "tail_b_end"
+
+[node name="tail_f" type="Node3D" parent="Slime/Slime_Retexture/root/pelvis"]
+position = Vector3(0.0238918401, -0.426876366, 0.0839860961)
+quaternion = Quaternion(-0.00425510015, 0.00162415695, -0.00332160154, 0.999984145)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20391
+metadata/unity_name = "tail_f"
+
+[node name="tail_f_end" type="Node3D" parent="Slime/Slime_Retexture/root/pelvis/tail_f"]
+position = Vector3(-1.47656147e-16, 0.497731745, -9.05248321e-09)
+quaternion = Quaternion(-8.38190317e-09, -1.41514445e-13, -2.73096382e-14, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12597
+metadata/unity_name = "tail_f_end"
+
+[node name="tail_l" type="Node3D" parent="Slime/Slime_Retexture/root/pelvis"]
+position = Vector3(-0.389214545, -0.0987516567, 0.0595226698)
+quaternion = Quaternion(-0.00358265103, 0.0105438298, -0.10984841, 0.993885994)
+scale = Vector3(1.00000048, 1, 1.0000006)
+metadata/unity_id = 18938
+metadata/unity_name = "tail_l"
+
+[node name="tail_l_end" type="Node3D" parent="Slime/Slime_Retexture/root/pelvis/tail_l"]
+position = Vector3(2.86480777e-08, 0.497731775, -1.18925163e-08)
+quaternion = Quaternion(-2.22738494e-15, 2.35922393e-16, -1.11758727e-08, 1)
+scale = Vector3(0.99999994, 0.99999994, 1)
+metadata/unity_id = 7467
+metadata/unity_name = "tail_l_end"
+
+[node name="tail_r" type="Node3D" parent="Slime/Slime_Retexture/root/pelvis"]
+position = Vector3(0.417841703, -0.0182236098, 0.06264285)
+quaternion = Quaternion(-0.00650229584, -0.0815306529, 0.0394502692, 0.995868564)
+scale = Vector3(1.00000048, 0.999999702, 1.0000006)
+metadata/unity_id = 21604
+metadata/unity_name = "tail_r"
+
+[node name="tail_r_end" type="Node3D" parent="Slime/Slime_Retexture/root/pelvis/tail_r"]
+position = Vector3(-5.96046412e-09, 0.497731835, 5.25738875e-09)
+quaternion = Quaternion(5.75397785e-11, -2.24423076e-08, 6.66477717e-09, 1)
+scale = Vector3(1, 0.99999994, 1)
+metadata/unity_id = 4901
+metadata/unity_name = "tail_r_end"
+
+[node name="VFX_Slime_Puddle" type="Node3D" parent="Slime/Slime_Retexture/root"]
+position = Vector3(0, 0, -0.0199999996)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14298
+metadata/unity_name = "VFX_Slime_Puddle"
+
+[node name="root" type="Node3D" parent="Slime/Slime_Retexture/root/VFX_Slime_Puddle"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25703
+metadata/unity_name = "root"
+
+[node name="Puddle" type="Node3D" parent="Slime/Slime_Retexture/root/VFX_Slime_Puddle/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21995
+metadata/unity_name = "Puddle"
+
+[node name="PuddleTrail" type="Node3D" parent="Slime/Slime_Retexture/root/VFX_Slime_Puddle/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18873
+metadata/unity_name = "PuddleTrail"
+
+[node name="Bubble" type="Node3D" parent="Slime/Slime_Retexture/root/VFX_Slime_Puddle/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 2.63417776e-09, -2.63417821e-09, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10544
+metadata/unity_name = "Bubble"
+
+[node name="Sword_Mesh" type="Node3D" parent="Slime/Slime_Retexture"]
+position = Vector3(-6.43730118e-08, -2.48933034e-08, 4.76836881e-09)
+quaternion = Quaternion(0.707106829, 2.56671058e-08, 1.29441791e-08, 0.707106709)
+scale = Vector3(0.999999881, 0.999999881, 1)
+metadata/unity_id = 20456
+metadata/unity_name = "Sword_Mesh"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Slime/Slime_Retexture/Sword_Mesh"]
+mesh = ExtResource("6")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="OverheadSlot" type="Node3D" parent="Slime"]
+position = Vector3(0, 2, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5606
+metadata/unity_name = "OverheadSlot"
+
+[node name="VFXParent" type="Node3D" parent="Slime"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11304
+metadata/unity_name = "VFXParent"
+
+[node name="VFX_Slime_SkillAttack" type="Node3D" parent="Slime/VFXParent"]
+position = Vector3(-0, 1, -2)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6155
+metadata/unity_name = "VFX_Slime_SkillAttack"
+
+[node name="root" type="Node3D" parent="Slime/VFXParent/VFX_Slime_SkillAttack"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11683
+metadata/unity_name = "root"
+
+[node name="Flare_01" type="Node3D" parent="Slime/VFXParent/VFX_Slime_SkillAttack/root"]
+position = Vector3(0, 0.5, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13795
+metadata/unity_name = "Flare_01"
+
+[node name="Smoke_01" type="Node3D" parent="Slime/VFXParent/VFX_Slime_SkillAttack/root"]
+position = Vector3(0, 0.200000003, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16930
+metadata/unity_name = "Smoke_01"
+
+[node name="Lines_01" type="Node3D" parent="Slime/VFXParent/VFX_Slime_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8435
+metadata/unity_name = "Lines_01"
+
+[node name="Flecks_01" type="Node3D" parent="Slime/VFXParent/VFX_Slime_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6002
+metadata/unity_name = "Flecks_01"
+
+[node name="Poison_01" type="Node3D" parent="Slime/VFXParent/VFX_Slime_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6742
+metadata/unity_name = "Poison_01"
+
+[node name="Flare_01_23801" type="Node3D" parent="Slime/VFXParent/VFX_Slime_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23801
+metadata/unity_name = "Flare_01"
+
+[node name="Dust_01" type="Node3D" parent="Slime/VFXParent/VFX_Slime_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15525
+metadata/unity_name = "Dust_01"
+
+[node name="Impact_01" type="Node3D" parent="Slime/VFXParent/VFX_Slime_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18065
+metadata/unity_name = "Impact_01"
+
+[node name="Impact_02" type="Node3D" parent="Slime/VFXParent/VFX_Slime_SkillAttack/root"]
+position = Vector3(-0.0199999996, 0, 0.219999999)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16615
+metadata/unity_name = "Impact_02"
+
+[node name="VFX_Slime_BaseAttack" type="Node3D" parent="Slime/VFXParent"]
+position = Vector3(-0.0799999982, 0.889999986, -1.82000005)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15798
+metadata/unity_name = "VFX_Slime_BaseAttack"
+
+[node name="root" type="Node3D" parent="Slime/VFXParent/VFX_Slime_BaseAttack"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27148
+metadata/unity_name = "root"
+
+[node name="Splatter_01" type="Node3D" parent="Slime/VFXParent/VFX_Slime_BaseAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23810
+metadata/unity_name = "Splatter_01"
+
+[node name="Impact_01" type="Node3D" parent="Slime/VFXParent/VFX_Slime_BaseAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12328
+metadata/unity_name = "Impact_01"
+
+[node name="Bubble_01" type="Node3D" parent="Slime/VFXParent/VFX_Slime_BaseAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20834
+metadata/unity_name = "Bubble_01"

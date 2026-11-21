@@ -1,0 +1,1132 @@
+{
+  "floors": {
+    "0/2": [
+      {
+        "_enemyRelicPoolId": 70,
+        "_rewardRelicPoolIds": [
+          105,
+          106,
+          107
+        ]
+      }
+    ],
+    "1/1": [
+      {
+        "_enemyRelicPoolId": 71,
+        "_rewardRelicPoolIds": [
+          108,
+          109,
+          110
+        ]
+      }
+    ]
+  },
+  "pools": {
+    "70": [
+      [
+        5000,
+        10
+      ],
+      [
+        5001,
+        10
+      ],
+      [
+        5002,
+        10
+      ],
+      [
+        5003,
+        10
+      ],
+      [
+        5004,
+        10
+      ]
+    ],
+    "105": [
+      [
+        2043,
+        10
+      ],
+      [
+        2030,
+        10
+      ],
+      [
+        2033,
+        10
+      ],
+      [
+        2036,
+        10
+      ],
+      [
+        2028,
+        10
+      ],
+      [
+        2027,
+        10
+      ],
+      [
+        2045,
+        10
+      ],
+      [
+        2046,
+        10
+      ],
+      [
+        2047,
+        10
+      ],
+      [
+        2048,
+        10
+      ],
+      [
+        2049,
+        10
+      ],
+      [
+        2050,
+        10
+      ],
+      [
+        2051,
+        10
+      ],
+      [
+        2052,
+        10
+      ],
+      [
+        2053,
+        10
+      ],
+      [
+        2054,
+        10
+      ],
+      [
+        2055,
+        10
+      ],
+      [
+        2056,
+        10
+      ]
+    ],
+    "106": [
+      [
+        2017,
+        10
+      ],
+      [
+        2020,
+        10
+      ],
+      [
+        2023,
+        10
+      ],
+      [
+        2026,
+        10
+      ],
+      [
+        2029,
+        10
+      ],
+      [
+        2032,
+        10
+      ],
+      [
+        2035,
+        10
+      ],
+      [
+        2038,
+        10
+      ],
+      [
+        2041,
+        10
+      ],
+      [
+        2044,
+        10
+      ],
+      [
+        2058,
+        10
+      ],
+      [
+        2059,
+        10
+      ]
+    ],
+    "107": [
+      [
+        2000,
+        10
+      ],
+      [
+        2001,
+        10
+      ],
+      [
+        2002,
+        10
+      ],
+      [
+        2003,
+        10
+      ],
+      [
+        2004,
+        10
+      ],
+      [
+        2005,
+        10
+      ],
+      [
+        2006,
+        10
+      ],
+      [
+        2007,
+        10
+      ],
+      [
+        2008,
+        10
+      ],
+      [
+        2009,
+        10
+      ],
+      [
+        2010,
+        10
+      ],
+      [
+        2011,
+        10
+      ],
+      [
+        2012,
+        10
+      ],
+      [
+        2013,
+        10
+      ],
+      [
+        2014,
+        10
+      ],
+      [
+        2015,
+        10
+      ],
+      [
+        2016,
+        10
+      ],
+      [
+        2018,
+        10
+      ],
+      [
+        2019,
+        10
+      ],
+      [
+        2021,
+        10
+      ],
+      [
+        2022,
+        10
+      ],
+      [
+        2024,
+        10
+      ],
+      [
+        2025,
+        10
+      ],
+      [
+        2027,
+        10
+      ],
+      [
+        2028,
+        10
+      ],
+      [
+        2030,
+        10
+      ],
+      [
+        2031,
+        10
+      ],
+      [
+        2033,
+        10
+      ],
+      [
+        2034,
+        10
+      ],
+      [
+        2036,
+        10
+      ],
+      [
+        2037,
+        10
+      ],
+      [
+        2039,
+        10
+      ],
+      [
+        2040,
+        10
+      ],
+      [
+        2042,
+        10
+      ],
+      [
+        2043,
+        10
+      ],
+      [
+        2045,
+        10
+      ],
+      [
+        2046,
+        10
+      ],
+      [
+        2047,
+        10
+      ],
+      [
+        2048,
+        10
+      ],
+      [
+        2049,
+        10
+      ],
+      [
+        2050,
+        10
+      ],
+      [
+        2051,
+        10
+      ],
+      [
+        2052,
+        10
+      ],
+      [
+        2053,
+        10
+      ],
+      [
+        2054,
+        10
+      ],
+      [
+        2055,
+        10
+      ],
+      [
+        2056,
+        10
+      ],
+      [
+        2057,
+        10
+      ]
+    ],
+    "71": [
+      [
+        5011,
+        10
+      ],
+      [
+        5012,
+        10
+      ],
+      [
+        5013,
+        10
+      ],
+      [
+        5014,
+        10
+      ],
+      [
+        5015,
+        10
+      ]
+    ],
+    "108": [
+      [
+        3015,
+        10
+      ],
+      [
+        3016,
+        10
+      ],
+      [
+        3021,
+        10
+      ],
+      [
+        3023,
+        10
+      ],
+      [
+        3024,
+        10
+      ],
+      [
+        3026,
+        10
+      ],
+      [
+        3031,
+        10
+      ],
+      [
+        3054,
+        10
+      ],
+      [
+        3055,
+        10
+      ],
+      [
+        3051,
+        10
+      ],
+      [
+        3052,
+        10
+      ],
+      [
+        3053,
+        10
+      ]
+    ],
+    "109": [
+      [
+        3020,
+        10
+      ],
+      [
+        3025,
+        10
+      ],
+      [
+        3032,
+        10
+      ],
+      [
+        3035,
+        10
+      ],
+      [
+        3038,
+        10
+      ],
+      [
+        3041,
+        10
+      ],
+      [
+        3044,
+        10
+      ],
+      [
+        3047,
+        10
+      ],
+      [
+        3050,
+        10
+      ],
+      [
+        3058,
+        10
+      ],
+      [
+        3059,
+        10
+      ]
+    ],
+    "110": [
+      [
+        3000,
+        10
+      ],
+      [
+        3001,
+        10
+      ],
+      [
+        3002,
+        10
+      ],
+      [
+        3003,
+        10
+      ],
+      [
+        3004,
+        10
+      ],
+      [
+        3005,
+        10
+      ],
+      [
+        3006,
+        10
+      ],
+      [
+        3007,
+        10
+      ],
+      [
+        3008,
+        10
+      ],
+      [
+        3009,
+        10
+      ],
+      [
+        3010,
+        10
+      ],
+      [
+        3011,
+        10
+      ],
+      [
+        3012,
+        10
+      ],
+      [
+        3013,
+        10
+      ],
+      [
+        3014,
+        10
+      ],
+      [
+        3015,
+        10
+      ],
+      [
+        3016,
+        10
+      ],
+      [
+        3021,
+        10
+      ],
+      [
+        3022,
+        10
+      ],
+      [
+        3023,
+        10
+      ],
+      [
+        3024,
+        10
+      ],
+      [
+        3026,
+        10
+      ],
+      [
+        3027,
+        10
+      ],
+      [
+        3028,
+        10
+      ],
+      [
+        3029,
+        10
+      ],
+      [
+        3031,
+        10
+      ],
+      [
+        3033,
+        10
+      ],
+      [
+        3039,
+        10
+      ],
+      [
+        3040,
+        10
+      ],
+      [
+        3042,
+        10
+      ],
+      [
+        3043,
+        10
+      ],
+      [
+        3045,
+        10
+      ],
+      [
+        3046,
+        10
+      ],
+      [
+        3048,
+        10
+      ],
+      [
+        3051,
+        10
+      ],
+      [
+        3052,
+        10
+      ],
+      [
+        3053,
+        10
+      ],
+      [
+        3054,
+        10
+      ],
+      [
+        3055,
+        10
+      ],
+      [
+        3060,
+        10
+      ]
+    ]
+  },
+  "relics": {
+    "5000": {
+      "icon": "",
+      "rarity": 7
+    },
+    "5001": {
+      "icon": "",
+      "rarity": 7
+    },
+    "5002": {
+      "icon": "",
+      "rarity": 7
+    },
+    "5003": {
+      "icon": "",
+      "rarity": 7
+    },
+    "5004": {
+      "icon": "",
+      "rarity": 7
+    },
+    "2043": {
+      "icon": "res://sprites/sharedassets1_3435.png",
+      "rarity": 2
+    },
+    "2030": {
+      "icon": "res://sprites/sharedassets1_3586.png",
+      "rarity": 2
+    },
+    "2033": {
+      "icon": "res://sprites/sharedassets1_4600.png",
+      "rarity": 2
+    },
+    "2036": {
+      "icon": "res://sprites/sharedassets1_4542.png",
+      "rarity": 2
+    },
+    "2028": {
+      "icon": "res://sprites/sharedassets1_4564.png",
+      "rarity": 2
+    },
+    "2027": {
+      "icon": "res://sprites/sharedassets1_3305.png",
+      "rarity": 2
+    },
+    "2045": {
+      "icon": "res://sprites/sharedassets1_4627.png",
+      "rarity": 2
+    },
+    "2046": {
+      "icon": "res://sprites/sharedassets1_4248.png",
+      "rarity": 2
+    },
+    "2047": {
+      "icon": "res://sprites/sharedassets1_4468.png",
+      "rarity": 2
+    },
+    "2048": {
+      "icon": "res://sprites/sharedassets1_3483.png",
+      "rarity": 2
+    },
+    "2049": {
+      "icon": "res://sprites/sharedassets1_4424.png",
+      "rarity": 2
+    },
+    "2050": {
+      "icon": "res://sprites/sharedassets1_4306.png",
+      "rarity": 2
+    },
+    "2051": {
+      "icon": "res://sprites/sharedassets1_4442.png",
+      "rarity": 2
+    },
+    "2052": {
+      "icon": "res://sprites/sharedassets1_4569.png",
+      "rarity": 2
+    },
+    "2053": {
+      "icon": "res://sprites/sharedassets1_4226.png",
+      "rarity": 2
+    },
+    "2054": {
+      "icon": "res://sprites/sharedassets1_3575.png",
+      "rarity": 2
+    },
+    "2055": {
+      "icon": "res://sprites/sharedassets1_3643.png",
+      "rarity": 2
+    },
+    "2056": {
+      "icon": "res://sprites/sharedassets1_3388.png",
+      "rarity": 2
+    },
+    "2017": {
+      "icon": "res://sprites/sharedassets1_4227.png",
+      "rarity": 2
+    },
+    "2020": {
+      "icon": "res://sprites/sharedassets1_4430.png",
+      "rarity": 2
+    },
+    "2023": {
+      "icon": "res://sprites/sharedassets1_3481.png",
+      "rarity": 2
+    },
+    "2026": {
+      "icon": "res://sprites/sharedassets1_3262.png",
+      "rarity": 2
+    },
+    "2029": {
+      "icon": "res://sprites/sharedassets1_3403.png",
+      "rarity": 2
+    },
+    "2032": {
+      "icon": "res://sprites/sharedassets1_3679.png",
+      "rarity": 2
+    },
+    "2035": {
+      "icon": "res://sprites/sharedassets1_4438.png",
+      "rarity": 2
+    },
+    "2038": {
+      "icon": "res://sprites/sharedassets1_4446.png",
+      "rarity": 2
+    },
+    "2041": {
+      "icon": "res://sprites/sharedassets1_4553.png",
+      "rarity": 2
+    },
+    "2044": {
+      "icon": "res://sprites/sharedassets1_4239.png",
+      "rarity": 2
+    },
+    "2058": {
+      "icon": "res://sprites/sharedassets1_3327.png",
+      "rarity": 2
+    },
+    "2059": {
+      "icon": "res://sprites/sharedassets1_4435.png",
+      "rarity": 2
+    },
+    "2000": {
+      "icon": "res://sprites/sharedassets1_4360.png",
+      "rarity": 2
+    },
+    "2001": {
+      "icon": "res://sprites/sharedassets1_3595.png",
+      "rarity": 2
+    },
+    "2002": {
+      "icon": "res://sprites/sharedassets1_3391.png",
+      "rarity": 2
+    },
+    "2003": {
+      "icon": "res://sprites/sharedassets1_4240.png",
+      "rarity": 2
+    },
+    "2004": {
+      "icon": "res://sprites/sharedassets1_4516.png",
+      "rarity": 2
+    },
+    "2005": {
+      "icon": "res://sprites/sharedassets1_3343.png",
+      "rarity": 2
+    },
+    "2006": {
+      "icon": "res://sprites/sharedassets1_4291.png",
+      "rarity": 2
+    },
+    "2007": {
+      "icon": "res://sprites/sharedassets1_3383.png",
+      "rarity": 2
+    },
+    "2008": {
+      "icon": "res://sprites/sharedassets1_4583.png",
+      "rarity": 2
+    },
+    "2009": {
+      "icon": "res://sprites/sharedassets1_4529.png",
+      "rarity": 2
+    },
+    "2010": {
+      "icon": "res://sprites/sharedassets1_4570.png",
+      "rarity": 2
+    },
+    "2011": {
+      "icon": "res://sprites/sharedassets1_3546.png",
+      "rarity": 2
+    },
+    "2012": {
+      "icon": "res://sprites/sharedassets1_3452.png",
+      "rarity": 2
+    },
+    "2013": {
+      "icon": "res://sprites/sharedassets1_4587.png",
+      "rarity": 2
+    },
+    "2014": {
+      "icon": "res://sprites/sharedassets1_4503.png",
+      "rarity": 2
+    },
+    "2015": {
+      "icon": "res://sprites/sharedassets1_4216.png",
+      "rarity": 2
+    },
+    "2016": {
+      "icon": "res://sprites/sharedassets1_4235.png",
+      "rarity": 2
+    },
+    "2018": {
+      "icon": "res://sprites/sharedassets1_4473.png",
+      "rarity": 2
+    },
+    "2019": {
+      "icon": "res://sprites/sharedassets1_4336.png",
+      "rarity": 2
+    },
+    "2021": {
+      "icon": "res://sprites/sharedassets1_4269.png",
+      "rarity": 2
+    },
+    "2022": {
+      "icon": "res://sprites/sharedassets1_3265.png",
+      "rarity": 2
+    },
+    "2024": {
+      "icon": "res://sprites/sharedassets1_4612.png",
+      "rarity": 2
+    },
+    "2025": {
+      "icon": "res://sprites/sharedassets1_4504.png",
+      "rarity": 2
+    },
+    "2031": {
+      "icon": "res://sprites/sharedassets1_4254.png",
+      "rarity": 2
+    },
+    "2034": {
+      "icon": "res://sprites/sharedassets1_3368.png",
+      "rarity": 2
+    },
+    "2037": {
+      "icon": "res://sprites/sharedassets1_3652.png",
+      "rarity": 2
+    },
+    "2039": {
+      "icon": "res://sprites/sharedassets1_4555.png",
+      "rarity": 2
+    },
+    "2040": {
+      "icon": "res://sprites/sharedassets1_3632.png",
+      "rarity": 2
+    },
+    "2042": {
+      "icon": "res://sprites/sharedassets1_4249.png",
+      "rarity": 2
+    },
+    "2057": {
+      "icon": "res://sprites/sharedassets1_3322.png",
+      "rarity": 2
+    },
+    "5011": {
+      "icon": "",
+      "rarity": 7
+    },
+    "5012": {
+      "icon": "",
+      "rarity": 7
+    },
+    "5013": {
+      "icon": "",
+      "rarity": 7
+    },
+    "5014": {
+      "icon": "",
+      "rarity": 7
+    },
+    "5015": {
+      "icon": "",
+      "rarity": 7
+    },
+    "3015": {
+      "icon": "res://sprites/sharedassets1_4537.png",
+      "rarity": 3
+    },
+    "3016": {
+      "icon": "res://sprites/sharedassets1_4620.png",
+      "rarity": 3
+    },
+    "3021": {
+      "icon": "res://sprites/sharedassets1_3512.png",
+      "rarity": 3
+    },
+    "3023": {
+      "icon": "res://sprites/sharedassets1_3310.png",
+      "rarity": 3
+    },
+    "3024": {
+      "icon": "res://sprites/sharedassets1_3619.png",
+      "rarity": 3
+    },
+    "3026": {
+      "icon": "res://sprites/sharedassets1_4233.png",
+      "rarity": 3
+    },
+    "3031": {
+      "icon": "res://sprites/sharedassets1_3408.png",
+      "rarity": 3
+    },
+    "3054": {
+      "icon": "res://sprites/sharedassets1_4206.png",
+      "rarity": 3
+    },
+    "3055": {
+      "icon": "res://sprites/sharedassets1_3532.png",
+      "rarity": 3
+    },
+    "3051": {
+      "icon": "res://sprites/sharedassets1_3421.png",
+      "rarity": 3
+    },
+    "3052": {
+      "icon": "res://sprites/sharedassets1_3432.png",
+      "rarity": 3
+    },
+    "3053": {
+      "icon": "res://sprites/sharedassets1_3618.png",
+      "rarity": 3
+    },
+    "3020": {
+      "icon": "res://sprites/sharedassets1_4466.png",
+      "rarity": 3
+    },
+    "3025": {
+      "icon": "res://sprites/sharedassets1_3554.png",
+      "rarity": 3
+    },
+    "3032": {
+      "icon": "res://sprites/sharedassets1_4464.png",
+      "rarity": 3
+    },
+    "3035": {
+      "icon": "res://sprites/sharedassets1_3423.png",
+      "rarity": 3
+    },
+    "3038": {
+      "icon": "res://sprites/sharedassets1_3424.png",
+      "rarity": 3
+    },
+    "3041": {
+      "icon": "res://sprites/sharedassets1_4303.png",
+      "rarity": 3
+    },
+    "3044": {
+      "icon": "res://sprites/sharedassets1_4584.png",
+      "rarity": 3
+    },
+    "3047": {
+      "icon": "res://sprites/sharedassets1_3453.png",
+      "rarity": 3
+    },
+    "3050": {
+      "icon": "res://sprites/sharedassets1_3440.png",
+      "rarity": 3
+    },
+    "3058": {
+      "icon": "res://sprites/sharedassets1_4427.png",
+      "rarity": 3
+    },
+    "3059": {
+      "icon": "res://sprites/sharedassets1_4322.png",
+      "rarity": 3
+    },
+    "3000": {
+      "icon": "res://sprites/sharedassets1_3363.png",
+      "rarity": 3
+    },
+    "3001": {
+      "icon": "res://sprites/sharedassets1_3482.png",
+      "rarity": 3
+    },
+    "3002": {
+      "icon": "res://sprites/sharedassets1_4372.png",
+      "rarity": 3
+    },
+    "3003": {
+      "icon": "res://sprites/sharedassets1_4494.png",
+      "rarity": 3
+    },
+    "3004": {
+      "icon": "res://sprites/sharedassets1_4231.png",
+      "rarity": 3
+    },
+    "3005": {
+      "icon": "res://sprites/sharedassets1_3360.png",
+      "rarity": 3
+    },
+    "3006": {
+      "icon": "res://sprites/sharedassets1_3577.png",
+      "rarity": 3
+    },
+    "3007": {
+      "icon": "res://sprites/sharedassets1_4411.png",
+      "rarity": 3
+    },
+    "3008": {
+      "icon": "res://sprites/sharedassets1_4292.png",
+      "rarity": 3
+    },
+    "3009": {
+      "icon": "res://sprites/sharedassets1_3349.png",
+      "rarity": 3
+    },
+    "3010": {
+      "icon": "res://sprites/sharedassets1_3409.png",
+      "rarity": 3
+    },
+    "3011": {
+      "icon": "res://sprites/sharedassets1_3637.png",
+      "rarity": 3
+    },
+    "3012": {
+      "icon": "res://sprites/sharedassets1_3337.png",
+      "rarity": 3
+    },
+    "3013": {
+      "icon": "res://sprites/sharedassets1_3658.png",
+      "rarity": 3
+    },
+    "3014": {
+      "icon": "res://sprites/sharedassets1_4275.png",
+      "rarity": 3
+    },
+    "3022": {
+      "icon": "res://sprites/sharedassets1_3369.png",
+      "rarity": 3
+    },
+    "3027": {
+      "icon": "res://sprites/sharedassets1_3297.png",
+      "rarity": 3
+    },
+    "3028": {
+      "icon": "res://sprites/sharedassets1_3397.png",
+      "rarity": 3
+    },
+    "3029": {
+      "icon": "res://sprites/sharedassets1_3612.png",
+      "rarity": 3
+    },
+    "3033": {
+      "icon": "res://sprites/sharedassets1_4356.png",
+      "rarity": 3
+    },
+    "3039": {
+      "icon": "res://sprites/sharedassets1_3661.png",
+      "rarity": 3
+    },
+    "3040": {
+      "icon": "res://sprites/sharedassets1_3638.png",
+      "rarity": 3
+    },
+    "3042": {
+      "icon": "res://sprites/sharedassets1_4531.png",
+      "rarity": 3
+    },
+    "3043": {
+      "icon": "res://sprites/sharedassets1_3272.png",
+      "rarity": 3
+    },
+    "3045": {
+      "icon": "res://sprites/sharedassets1_3417.png",
+      "rarity": 3
+    },
+    "3046": {
+      "icon": "res://sprites/sharedassets1_3580.png",
+      "rarity": 3
+    },
+    "3048": {
+      "icon": "res://sprites/sharedassets1_4602.png",
+      "rarity": 3
+    },
+    "3060": {
+      "icon": "res://sprites/sharedassets1_4618.png",
+      "rarity": 3
+    }
+  }
+}

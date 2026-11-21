@@ -1,0 +1,882 @@
+{
+  "source": "sharedassets3.assets",
+  "roster": {
+    "divider": 6107,
+    "active": {
+      "root": 11399,
+      "cards": [
+        {
+          "id": 75114,
+          "root": 9887,
+          "_heroIcon": 3020,
+          "_frameImage": 12791,
+          "_backupIconContainer": 6678,
+          "_portraitActiveContainer": 4484,
+          "_itemRowsContainer": 13304,
+          "_damageIndicatorView": 1200,
+          "_abilitiesViewContainer": 3468,
+          "rank_frames": [
+            "res://sprites/sharedassets3_402.png",
+            "res://sprites/sharedassets3_589.png",
+            "res://sprites/sharedassets3_521.png",
+            "res://sprites/sharedassets3_359.png"
+          ],
+          "equipment_slots": [
+            {
+              "id": 77542,
+              "root": 12912,
+              "_emptySlotParent": 1871,
+              "_activeSlotParent": 14676,
+              "_hoveringSlotParent": 13880,
+              "_activeSlotImage": 14676,
+              "_hoveringSlotImage": 13880,
+              "_activeNameText": 7557,
+              "_frameImage": 11090
+            },
+            {
+              "id": 72996,
+              "root": 15248,
+              "_emptySlotParent": 9077,
+              "_activeSlotParent": 13311,
+              "_hoveringSlotParent": 11980,
+              "_activeSlotImage": 13311,
+              "_hoveringSlotImage": 11980,
+              "_activeNameText": 1442,
+              "_frameImage": 17221
+            },
+            {
+              "id": 66478,
+              "root": 5216,
+              "_emptySlotParent": 15967,
+              "_activeSlotParent": 3125,
+              "_hoveringSlotParent": 3934,
+              "_activeSlotImage": 3125,
+              "_hoveringSlotImage": 3934,
+              "_activeNameText": 10516,
+              "_frameImage": 8050
+            },
+            {
+              "id": 73532,
+              "root": 14336,
+              "_emptySlotParent": 7881,
+              "_activeSlotParent": 12122,
+              "_hoveringSlotParent": 13444,
+              "_activeSlotImage": 12122,
+              "_hoveringSlotImage": 13444,
+              "_activeNameText": 2715,
+              "_frameImage": 15730
+            },
+            {
+              "id": 66355,
+              "root": 5100,
+              "_emptySlotParent": 16102,
+              "_activeSlotParent": 3272,
+              "_hoveringSlotParent": 4079,
+              "_activeSlotImage": 3272,
+              "_hoveringSlotImage": 4079,
+              "_activeNameText": 10383,
+              "_frameImage": 7927
+            },
+            {
+              "id": 65546,
+              "root": 6141,
+              "_emptySlotParent": 17140,
+              "_activeSlotParent": 4405,
+              "_hoveringSlotParent": 3050,
+              "_activeSlotImage": 4405,
+              "_hoveringSlotImage": 3050,
+              "_activeNameText": 9262,
+              "_frameImage": 8962
+            }
+          ]
+        },
+        {
+          "id": 75825,
+          "root": 17507,
+          "_heroIcon": 6079,
+          "_frameImage": 13919,
+          "_backupIconContainer": 3472,
+          "_portraitActiveContainer": 5347,
+          "_itemRowsContainer": 14449,
+          "_damageIndicatorView": 8852,
+          "_abilitiesViewContainer": 6682,
+          "rank_frames": [
+            "res://sprites/sharedassets3_402.png",
+            "res://sprites/sharedassets3_589.png",
+            "res://sprites/sharedassets3_521.png",
+            "res://sprites/sharedassets3_359.png"
+          ],
+          "equipment_slots": [
+            {
+              "id": 73090,
+              "root": 13804,
+              "_emptySlotParent": 7326,
+              "_activeSlotParent": 11621,
+              "_hoveringSlotParent": 12943,
+              "_activeSlotImage": 11621,
+              "_hoveringSlotImage": 12943,
+              "_activeNameText": 2176,
+              "_frameImage": 16281
+            },
+            {
+              "id": 78988,
+              "root": 11968,
+              "_emptySlotParent": 1718,
+              "_activeSlotParent": 14544,
+              "_hoveringSlotParent": 15329,
+              "_activeSlotImage": 14544,
+              "_hoveringSlotImage": 15329,
+              "_activeNameText": 8734,
+              "_frameImage": 9603
+            },
+            {
+              "id": 70682,
+              "root": 4055,
+              "_emptySlotParent": 10762,
+              "_activeSlotParent": 6434,
+              "_hoveringSlotParent": 5168,
+              "_activeSlotImage": 6434,
+              "_hoveringSlotImage": 5168,
+              "_activeNameText": 15632,
+              "_frameImage": 2620
+            },
+            {
+              "id": 77993,
+              "root": 13430,
+              "_emptySlotParent": 2451,
+              "_activeSlotParent": 15198,
+              "_hoveringSlotParent": 14408,
+              "_activeSlotImage": 15198,
+              "_hoveringSlotImage": 14408,
+              "_activeNameText": 8081,
+              "_frameImage": 10555
+            },
+            {
+              "id": 70795,
+              "root": 4210,
+              "_emptySlotParent": 10656,
+              "_activeSlotParent": 6320,
+              "_hoveringSlotParent": 5040,
+              "_activeSlotImage": 6320,
+              "_hoveringSlotImage": 5040,
+              "_activeNameText": 15783,
+              "_frameImage": 2740
+            },
+            {
+              "id": 71638,
+              "root": 3091,
+              "_emptySlotParent": 9586,
+              "_activeSlotParent": 5258,
+              "_hoveringSlotParent": 6041,
+              "_activeSlotImage": 5258,
+              "_hoveringSlotImage": 6041,
+              "_activeNameText": 16890,
+              "_frameImage": 1653
+            }
+          ]
+        },
+        {
+          "id": 78676,
+          "root": 14051,
+          "_heroIcon": 7294,
+          "_frameImage": 17112,
+          "_backupIconContainer": 2577,
+          "_portraitActiveContainer": 8577,
+          "_itemRowsContainer": 17625,
+          "_damageIndicatorView": 5593,
+          "_abilitiesViewContainer": 7736,
+          "rank_frames": [
+            "res://sprites/sharedassets3_402.png",
+            "res://sprites/sharedassets3_589.png",
+            "res://sprites/sharedassets3_521.png",
+            "res://sprites/sharedassets3_359.png"
+          ],
+          "equipment_slots": [
+            {
+              "id": 74035,
+              "root": 17241,
+              "_emptySlotParent": 6057,
+              "_activeSlotParent": 10382,
+              "_hoveringSlotParent": 9566,
+              "_activeSlotImage": 10382,
+              "_hoveringSlotImage": 9566,
+              "_activeNameText": 3270,
+              "_frameImage": 15233
+            },
+            {
+              "id": 76395,
+              "root": 11103,
+              "_emptySlotParent": 4792,
+              "_activeSlotParent": 17529,
+              "_hoveringSlotParent": 16166,
+              "_activeSlotImage": 17529,
+              "_hoveringSlotImage": 16166,
+              "_activeNameText": 5685,
+              "_frameImage": 12904
+            },
+            {
+              "id": 69936,
+              "root": 767,
+              "_emptySlotParent": 11778,
+              "_activeSlotParent": 7407,
+              "_hoveringSlotParent": 8210,
+              "_activeSlotImage": 7407,
+              "_hoveringSlotImage": 8210,
+              "_activeNameText": 14797,
+              "_frameImage": 3918
+            },
+            {
+              "id": 76903,
+              "root": 10175,
+              "_emptySlotParent": 3607,
+              "_activeSlotParent": 16314,
+              "_hoveringSlotParent": 17661,
+              "_activeSlotImage": 16314,
+              "_hoveringSlotImage": 17661,
+              "_activeNameText": 6827,
+              "_frameImage": 11467
+            },
+            {
+              "id": 69827,
+              "root": 622,
+              "_emptySlotParent": 11910,
+              "_activeSlotParent": 7555,
+              "_hoveringSlotParent": 8345,
+              "_activeSlotImage": 7555,
+              "_hoveringSlotImage": 8345,
+              "_activeNameText": 14675,
+              "_frameImage": 3783
+            },
+            {
+              "id": 68982,
+              "root": 1834,
+              "_emptySlotParent": 12960,
+              "_activeSlotParent": 8634,
+              "_hoveringSlotParent": 7312,
+              "_activeSlotImage": 8634,
+              "_hoveringSlotImage": 7312,
+              "_activeNameText": 13576,
+              "_frameImage": 4804
+            }
+          ]
+        },
+        {
+          "id": 75646,
+          "root": 17717,
+          "_heroIcon": 6403,
+          "_frameImage": 13728,
+          "_backupIconContainer": 3803,
+          "_portraitActiveContainer": 5011,
+          "_itemRowsContainer": 14269,
+          "_damageIndicatorView": 9205,
+          "_abilitiesViewContainer": 7027,
+          "rank_frames": [
+            "res://sprites/sharedassets3_402.png",
+            "res://sprites/sharedassets3_589.png",
+            "res://sprites/sharedassets3_521.png",
+            "res://sprites/sharedassets3_359.png"
+          ],
+          "equipment_slots": [
+            {
+              "id": 73249,
+              "root": 13579,
+              "_emptySlotParent": 7537,
+              "_activeSlotParent": 11798,
+              "_hoveringSlotParent": 12579,
+              "_activeSlotImage": 11798,
+              "_hoveringSlotImage": 12579,
+              "_activeNameText": 1816,
+              "_frameImage": 16483
+            },
+            {
+              "id": 78718,
+              "root": 12299,
+              "_emptySlotParent": 1367,
+              "_activeSlotParent": 14212,
+              "_hoveringSlotParent": 15542,
+              "_activeSlotImage": 14212,
+              "_hoveringSlotImage": 15542,
+              "_activeNameText": 8968,
+              "_frameImage": 9256
+            },
+            {
+              "id": 70498,
+              "root": 4275,
+              "_emptySlotParent": 10583,
+              "_activeSlotParent": 6250,
+              "_hoveringSlotParent": 5489,
+              "_activeSlotImage": 6250,
+              "_hoveringSlotImage": 5489,
+              "_activeNameText": 15989,
+              "_frameImage": 2422
+            },
+            {
+              "id": 78181,
+              "root": 13245,
+              "_emptySlotParent": 2624,
+              "_activeSlotParent": 15396,
+              "_hoveringSlotParent": 14076,
+              "_activeSlotImage": 15396,
+              "_hoveringSlotImage": 14076,
+              "_activeNameText": 7755,
+              "_frameImage": 10757
+            },
+            {
+              "id": 70625,
+              "root": 4419,
+              "_emptySlotParent": 10428,
+              "_activeSlotParent": 6118,
+              "_hoveringSlotParent": 5359,
+              "_activeSlotImage": 6118,
+              "_hoveringSlotImage": 5359,
+              "_activeNameText": 16110,
+              "_frameImage": 2567
+            },
+            {
+              "id": 71483,
+              "root": 3285,
+              "_emptySlotParent": 9374,
+              "_activeSlotParent": 5071,
+              "_hoveringSlotParent": 6345,
+              "_activeSlotImage": 5071,
+              "_hoveringSlotImage": 6345,
+              "_activeNameText": 17208,
+              "_frameImage": 1458
+            }
+          ]
+        },
+        {
+          "id": 67402,
+          "root": 2410,
+          "_heroIcon": 12713,
+          "_frameImage": 3211,
+          "_backupIconContainer": 14301,
+          "_portraitActiveContainer": 11827,
+          "_itemRowsContainer": 3764,
+          "_damageIndicatorView": 11008,
+          "_abilitiesViewContainer": 13095,
+          "rank_frames": [
+            "res://sprites/sharedassets3_402.png",
+            "res://sprites/sharedassets3_589.png",
+            "res://sprites/sharedassets3_521.png",
+            "res://sprites/sharedassets3_359.png"
+          ],
+          "equipment_slots": [
+            {
+              "id": 71427,
+              "root": 3358,
+              "_emptySlotParent": 9319,
+              "_activeSlotParent": 5004,
+              "_hoveringSlotParent": 6284,
+              "_activeSlotImage": 5004,
+              "_hoveringSlotImage": 6284,
+              "_activeNameText": 17158,
+              "_frameImage": 1372
+            },
+            {
+              "id": 66918,
+              "root": 5762,
+              "_emptySlotParent": 16459,
+              "_activeSlotParent": 3718,
+              "_hoveringSlotParent": 4525,
+              "_activeSlotImage": 3718,
+              "_hoveringSlotImage": 4525,
+              "_activeNameText": 11030,
+              "_frameImage": 7499
+            },
+            {
+              "id": 72612,
+              "root": 14743,
+              "_emptySlotParent": 8485,
+              "_activeSlotParent": 12843,
+              "_hoveringSlotParent": 11522,
+              "_activeSlotImage": 12843,
+              "_hoveringSlotImage": 11522,
+              "_activeNameText": 812,
+              "_frameImage": 17730
+            },
+            {
+              "id": 65759,
+              "root": 6913,
+              "_emptySlotParent": 17428,
+              "_activeSlotParent": 4663,
+              "_hoveringSlotParent": 3854,
+              "_activeSlotImage": 4663,
+              "_hoveringSlotImage": 3854,
+              "_activeNameText": 10084,
+              "_frameImage": 8137
+            },
+            {
+              "id": 72478,
+              "root": 14632,
+              "_emptySlotParent": 8619,
+              "_activeSlotParent": 12974,
+              "_hoveringSlotParent": 11652,
+              "_activeSlotImage": 12974,
+              "_hoveringSlotImage": 11652,
+              "_activeNameText": 686,
+              "_frameImage": 17576
+            },
+            {
+              "id": 73289,
+              "root": 13533,
+              "_emptySlotParent": 7607,
+              "_activeSlotParent": 11863,
+              "_hoveringSlotParent": 12663,
+              "_activeSlotImage": 11863,
+              "_hoveringSlotImage": 12663,
+              "_activeNameText": 1891,
+              "_frameImage": 16543
+            }
+          ]
+        }
+      ]
+    },
+    "reserve": {
+      "root": 9576,
+      "cards": [
+        {
+          "id": 74584,
+          "root": 10547,
+          "_heroIcon": 4613,
+          "_frameImage": 12397,
+          "_backupIconContainer": 5124,
+          "_portraitActiveContainer": 3704,
+          "_itemRowsContainer": 11882,
+          "_damageIndicatorView": 2034,
+          "_abilitiesViewContainer": 4174,
+          "rank_frames": [
+            "res://sprites/sharedassets3_402.png",
+            "res://sprites/sharedassets3_589.png",
+            "res://sprites/sharedassets3_521.png",
+            "res://sprites/sharedassets3_359.png"
+          ],
+          "equipment_slots": [
+            {
+              "id": 78707,
+              "root": 12262,
+              "_emptySlotParent": 1398,
+              "_activeSlotParent": 14180,
+              "_hoveringSlotParent": 15499,
+              "_activeSlotImage": 14180,
+              "_hoveringSlotImage": 15499,
+              "_activeNameText": 8993,
+              "_frameImage": 9293
+            },
+            {
+              "id": 73271,
+              "root": 13635,
+              "_emptySlotParent": 7506,
+              "_activeSlotParent": 11835,
+              "_hoveringSlotParent": 12633,
+              "_activeSlotImage": 11835,
+              "_hoveringSlotImage": 12633,
+              "_activeNameText": 1786,
+              "_frameImage": 16448
+            },
+            {
+              "id": 66001,
+              "root": 6590,
+              "_emptySlotParent": 17749,
+              "_activeSlotParent": 4974,
+              "_hoveringSlotParent": 3654,
+              "_activeSlotImage": 4974,
+              "_hoveringSlotImage": 3654,
+              "_activeNameText": 9878,
+              "_frameImage": 8464
+            },
+            {
+              "id": 72334,
+              "root": 15095,
+              "_emptySlotParent": 8162,
+              "_activeSlotParent": 12479,
+              "_hoveringSlotParent": 11695,
+              "_activeSlotImage": 12479,
+              "_hoveringSlotImage": 11695,
+              "_activeNameText": 1045,
+              "_frameImage": 17397
+            },
+            {
+              "id": 66129,
+              "root": 6711,
+              "_emptySlotParent": 17589,
+              "_activeSlotParent": 4830,
+              "_hoveringSlotParent": 3513,
+              "_activeSlotImage": 4830,
+              "_hoveringSlotImage": 3513,
+              "_activeNameText": 9995,
+              "_frameImage": 8599
+            },
+            {
+              "id": 66949,
+              "root": 5668,
+              "_emptySlotParent": 16557,
+              "_activeSlotParent": 3745,
+              "_hoveringSlotParent": 4558,
+              "_activeSlotImage": 3745,
+              "_hoveringSlotImage": 4558,
+              "_activeNameText": 11125,
+              "_frameImage": 7590
+            }
+          ]
+        },
+        {
+          "id": 77331,
+          "root": 15654,
+          "_heroIcon": 5733,
+          "_frameImage": 15490,
+          "_backupIconContainer": 4172,
+          "_portraitActiveContainer": 6985,
+          "_itemRowsContainer": 14978,
+          "_damageIndicatorView": 7134,
+          "_abilitiesViewContainer": 5118,
+          "rank_frames": [
+            "res://sprites/sharedassets3_402.png",
+            "res://sprites/sharedassets3_589.png",
+            "res://sprites/sharedassets3_521.png",
+            "res://sprites/sharedassets3_359.png"
+          ],
+          "equipment_slots": [
+            {
+              "id": 72762,
+              "root": 15617,
+              "_emptySlotParent": 8673,
+              "_activeSlotParent": 13029,
+              "_hoveringSlotParent": 12217,
+              "_activeSlotImage": 13029,
+              "_hoveringSlotImage": 12217,
+              "_activeNameText": 1621,
+              "_frameImage": 16854
+            },
+            {
+              "id": 77679,
+              "root": 12677,
+              "_emptySlotParent": 2122,
+              "_activeSlotParent": 14848,
+              "_hoveringSlotParent": 13509,
+              "_activeSlotImage": 14848,
+              "_hoveringSlotImage": 13509,
+              "_activeNameText": 7256,
+              "_frameImage": 11338
+            },
+            {
+              "id": 72134,
+              "root": 3576,
+              "_emptySlotParent": 10208,
+              "_activeSlotParent": 5845,
+              "_hoveringSlotParent": 6614,
+              "_activeSlotImage": 5845,
+              "_hoveringSlotImage": 6614,
+              "_activeNameText": 17501,
+              "_frameImage": 1158
+            },
+            {
+              "id": 78260,
+              "root": 11748,
+              "_emptySlotParent": 796,
+              "_activeSlotParent": 13638,
+              "_hoveringSlotParent": 14987,
+              "_activeSlotImage": 13638,
+              "_hoveringSlotImage": 14987,
+              "_activeNameText": 8429,
+              "_frameImage": 9848
+            },
+            {
+              "id": 72036,
+              "root": 3413,
+              "_emptySlotParent": 10339,
+              "_activeSlotParent": 5977,
+              "_hoveringSlotParent": 6723,
+              "_activeSlotImage": 5977,
+              "_hoveringSlotImage": 6723,
+              "_activeNameText": 17364,
+              "_frameImage": 1017
+            },
+            {
+              "id": 71177,
+              "root": 4538,
+              "_emptySlotParent": 11387,
+              "_activeSlotParent": 7040,
+              "_hoveringSlotParent": 5738,
+              "_activeSlotImage": 7040,
+              "_hoveringSlotImage": 5738,
+              "_activeNameText": 16235,
+              "_frameImage": 2141
+            }
+          ]
+        },
+        {
+          "id": 78025,
+          "root": 14828,
+          "_heroIcon": 8718,
+          "_frameImage": 16596,
+          "_backupIconContainer": 671,
+          "_portraitActiveContainer": 7975,
+          "_itemRowsContainer": 16069,
+          "_damageIndicatorView": 6178,
+          "_abilitiesViewContainer": 8286,
+          "rank_frames": [
+            "res://sprites/sharedassets3_402.png",
+            "res://sprites/sharedassets3_589.png",
+            "res://sprites/sharedassets3_521.png",
+            "res://sprites/sharedassets3_359.png"
+          ],
+          "equipment_slots": [
+            {
+              "id": 75253,
+              "root": 16465,
+              "_emptySlotParent": 5755,
+              "_activeSlotParent": 9994,
+              "_hoveringSlotParent": 11373,
+              "_activeSlotImage": 9994,
+              "_hoveringSlotImage": 11373,
+              "_activeNameText": 4828,
+              "_frameImage": 13621
+            },
+            {
+              "id": 76760,
+              "root": 9318,
+              "_emptySlotParent": 3359,
+              "_activeSlotParent": 16151,
+              "_hoveringSlotParent": 16963,
+              "_activeSlotImage": 16151,
+              "_hoveringSlotImage": 16963,
+              "_activeNameText": 6104,
+              "_frameImage": 12248
+            },
+            {
+              "id": 69365,
+              "root": 2481,
+              "_emptySlotParent": 13388,
+              "_activeSlotParent": 9134,
+              "_hoveringSlotParent": 7799,
+              "_activeSlotImage": 9134,
+              "_hoveringSlotImage": 7799,
+              "_activeNameText": 14038,
+              "_frameImage": 4231
+            },
+            {
+              "id": 75804,
+              "root": 10796,
+              "_emptySlotParent": 4007,
+              "_activeSlotParent": 16813,
+              "_hoveringSlotParent": 16014,
+              "_activeSlotImage": 16813,
+              "_hoveringSlotImage": 16014,
+              "_activeNameText": 5450,
+              "_frameImage": 13209
+            },
+            {
+              "id": 69476,
+              "root": 2590,
+              "_emptySlotParent": 13277,
+              "_activeSlotParent": 8991,
+              "_hoveringSlotParent": 7640,
+              "_activeSlotImage": 8991,
+              "_hoveringSlotImage": 7640,
+              "_activeNameText": 14179,
+              "_frameImage": 4359
+            },
+            {
+              "id": 70301,
+              "root": 1425,
+              "_emptySlotParent": 12237,
+              "_activeSlotParent": 7887,
+              "_hoveringSlotParent": 8647,
+              "_activeSlotImage": 7887,
+              "_hoveringSlotImage": 8647,
+              "_activeNameText": 15259,
+              "_frameImage": 3305
+            }
+          ]
+        },
+        {
+          "id": 77038,
+          "root": 15997,
+          "_heroIcon": 5925,
+          "_frameImage": 15155,
+          "_backupIconContainer": 4388,
+          "_portraitActiveContainer": 6778,
+          "_itemRowsContainer": 14625,
+          "_damageIndicatorView": 7356,
+          "_abilitiesViewContainer": 5312,
+          "rank_frames": [
+            "res://sprites/sharedassets3_402.png",
+            "res://sprites/sharedassets3_589.png",
+            "res://sprites/sharedassets3_521.png",
+            "res://sprites/sharedassets3_359.png"
+          ],
+          "equipment_slots": [
+            {
+              "id": 73024,
+              "root": 15279,
+              "_emptySlotParent": 9053,
+              "_activeSlotParent": 13354,
+              "_hoveringSlotParent": 12028,
+              "_activeSlotImage": 13354,
+              "_hoveringSlotImage": 12028,
+              "_activeNameText": 1419,
+              "_frameImage": 17185
+            },
+            {
+              "id": 77521,
+              "root": 12895,
+              "_emptySlotParent": 1897,
+              "_activeSlotParent": 14634,
+              "_hoveringSlotParent": 13842,
+              "_activeSlotImage": 14634,
+              "_hoveringSlotImage": 13842,
+              "_activeNameText": 7577,
+              "_frameImage": 11138
+            },
+            {
+              "id": 71870,
+              "root": 3897,
+              "_emptySlotParent": 9850,
+              "_activeSlotParent": 5519,
+              "_hoveringSlotParent": 6782,
+              "_activeSlotImage": 5519,
+              "_hoveringSlotImage": 6782,
+              "_activeNameText": 17691,
+              "_frameImage": 790
+            },
+            {
+              "id": 78542,
+              "root": 11454,
+              "_emptySlotParent": 1185,
+              "_activeSlotParent": 13978,
+              "_hoveringSlotParent": 14770,
+              "_activeSlotImage": 13978,
+              "_hoveringSlotImage": 14770,
+              "_activeNameText": 8253,
+              "_frameImage": 10180
+            },
+            {
+              "id": 71749,
+              "root": 3773,
+              "_emptySlotParent": 9987,
+              "_activeSlotParent": 5656,
+              "_hoveringSlotParent": 6940,
+              "_activeSlotImage": 5656,
+              "_hoveringSlotImage": 6940,
+              "_activeNameText": 17554,
+              "_frameImage": 636
+            },
+            {
+              "id": 70912,
+              "root": 4852,
+              "_emptySlotParent": 11061,
+              "_activeSlotParent": 6699,
+              "_hoveringSlotParent": 5955,
+              "_activeSlotImage": 6699,
+              "_hoveringSlotImage": 5955,
+              "_activeNameText": 16453,
+              "_frameImage": 1778
+            }
+          ]
+        },
+        {
+          "id": 68505,
+          "root": 843,
+          "_heroIcon": 11946,
+          "_frameImage": 4908,
+          "_backupIconContainer": 14595,
+          "_portraitActiveContainer": 13359,
+          "_itemRowsContainer": 4426,
+          "_damageIndicatorView": 9396,
+          "_abilitiesViewContainer": 11597,
+          "rank_frames": [
+            "res://sprites/sharedassets3_402.png",
+            "res://sprites/sharedassets3_589.png",
+            "res://sprites/sharedassets3_521.png",
+            "res://sprites/sharedassets3_359.png"
+          ],
+          "equipment_slots": [
+            {
+              "id": 70969,
+              "root": 4787,
+              "_emptySlotParent": 11111,
+              "_activeSlotParent": 6753,
+              "_hoveringSlotParent": 6000,
+              "_activeSlotImage": 6753,
+              "_hoveringSlotImage": 6000,
+              "_activeNameText": 16511,
+              "_frameImage": 1849
+            },
+            {
+              "id": 65570,
+              "root": 6059,
+              "_emptySlotParent": 17235,
+              "_activeSlotParent": 4432,
+              "_hoveringSlotParent": 3081,
+              "_activeSlotImage": 4432,
+              "_hoveringSlotImage": 3081,
+              "_activeNameText": 9370,
+              "_frameImage": 9065
+            },
+            {
+              "id": 73681,
+              "root": 14127,
+              "_emptySlotParent": 8068,
+              "_activeSlotParent": 12319,
+              "_hoveringSlotParent": 13141,
+              "_activeSlotImage": 12319,
+              "_hoveringSlotImage": 13141,
+              "_activeNameText": 2403,
+              "_frameImage": 15941
+            },
+            {
+              "id": 66320,
+              "root": 5414,
+              "_emptySlotParent": 15750,
+              "_activeSlotParent": 2944,
+              "_hoveringSlotParent": 4293,
+              "_activeSlotImage": 2944,
+              "_hoveringSlotImage": 4293,
+              "_activeNameText": 10857,
+              "_frameImage": 7867
+            },
+            {
+              "id": 73817,
+              "root": 14261,
+              "_emptySlotParent": 7941,
+              "_activeSlotParent": 12179,
+              "_hoveringSlotParent": 12999,
+              "_activeSlotImage": 12179,
+              "_hoveringSlotImage": 12999,
+              "_activeNameText": 2527,
+              "_frameImage": 16090
+            },
+            {
+              "id": 72965,
+              "root": 15345,
+              "_emptySlotParent": 8974,
+              "_activeSlotParent": 13284,
+              "_hoveringSlotParent": 11957,
+              "_activeSlotImage": 13284,
+              "_hoveringSlotImage": 11957,
+              "_activeNameText": 1339,
+              "_frameImage": 17133
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "inventory": {
+    "sidebar": 14633,
+    "holder": 11857,
+    "column": 725,
+    "slot": {
+      "id": 76797,
+      "root": 9506,
+      "_emptySlotParent": 3133,
+      "_activeSlotParent": 15971,
+      "_hoveringSlotParent": 16770,
+      "_activeSlotImage": 15971,
+      "_hoveringSlotImage": 16770,
+      "_activeNameText": 6172,
+      "_frameImage": 12328
+    }
+  }
+}

@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" format=3]
+[ext_resource type="Texture2D" path="res://textures/sharedassets16_7.png" id="1"]
+[ext_resource type="Shader" path="res://materials/environment_plane_cutout.gdshader" id="2"]
+
+[resource]
+resource_name = "RuinsForest_Mat_Crystal_BossRoom"
+shader = ExtResource("2")
+shader_parameter/tint = Vector3(1.05927372, 1.05927372, 1.05927372)
+shader_parameter/main_texture = ExtResource("1")
+shader_parameter/alpha_threshold = 0.5
+metadata/unity_shader = "Shader Graphs/EnvironmentPlane_SG"

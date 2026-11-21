@@ -1,0 +1,499 @@
+[gd_scene format=3]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2803.obj" id="1"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_250.tres" id="2"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2882.obj" id="3"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2842.obj" id="4"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_251.tres" id="5"]
+
+[node name="PlantMonster" type="Node3D"]
+
+[node name="PlantMonster" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25591
+metadata/unity_name = "PlantMonster"
+
+[node name="PlantMonster_Model" type="Node3D" parent="PlantMonster"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(0.800000012, 0.800000012, 0.800000012)
+metadata/unity_id = 26772
+metadata/unity_name = "PlantMonster_Model"
+
+[node name="Body_001" type="Node3D" parent="PlantMonster/PlantMonster_Model"]
+position = Vector3(4.02331723e-09, -1.01327892e-07, 1.43050833e-08)
+quaternion = Quaternion(0.707106829, -2.12251657e-11, -1.47897545e-11, 0.707106709)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17651
+metadata/unity_name = "Body.001"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="PlantMonster/PlantMonster_Model/Body_001"]
+mesh = ExtResource("1")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="Leaves" type="Node3D" parent="PlantMonster/PlantMonster_Model"]
+position = Vector3(3.97903934e-15, -1.01327892e-07, 1.43050833e-08)
+quaternion = Quaternion(0.707106888, -2.62745067e-15, -2.56121291e-15, 0.707106709)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7706
+metadata/unity_name = "Leaves"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="PlantMonster/PlantMonster_Model/Leaves"]
+mesh = ExtResource("3")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="Plane_006" type="Node3D" parent="PlantMonster/PlantMonster_Model"]
+position = Vector3(-5.13145011e-15, -2.17556888e-08, -3.57627883e-08)
+quaternion = Quaternion(0.707106888, -1.02755176e-14, -2.08897489e-15, 0.707106709)
+scale = Vector3(1, 1, 1.00000012)
+metadata/unity_id = 24722
+metadata/unity_name = "Plane.006"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="PlantMonster/PlantMonster_Model/Plane_006"]
+mesh = ExtResource("4")
+visible = true
+surface_material_override/0 = ExtResource("5")
+
+[node name="root" type="Node3D" parent="PlantMonster/PlantMonster_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(0.707106888, -0, 0, 0.707106709)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17712
+metadata/unity_name = "root"
+
+[node name="pelvis" type="Node3D" parent="PlantMonster/PlantMonster_Model/root"]
+position = Vector3(2.71050537e-22, 2.2737367e-15, -0.427960426)
+quaternion = Quaternion(-0.70710665, 8.42936743e-08, -8.42936601e-08, 0.707106888)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20948
+metadata/unity_name = "pelvis"
+
+[node name="brow_l" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis"]
+position = Vector3(-0.177430376, 0.540847301, -0.517262578)
+quaternion = Quaternion(-0.00360825262, -0.70371455, 0.00253732363, 0.710469127)
+scale = Vector3(1, 0.999999881, 1.00000012)
+metadata/unity_id = 14744
+metadata/unity_name = "brow_l"
+
+[node name="brow_l_end" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/brow_l"]
+position = Vector3(2.98023217e-10, 0.611426175, 2.05636024e-08)
+quaternion = Quaternion(1.43700172e-08, 1.36803937e-08, 1.21901857e-08, 1)
+scale = Vector3(0.99999994, 1, 0.99999994)
+metadata/unity_id = 23820
+metadata/unity_name = "brow_l_end"
+
+[node name="brow_r" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis"]
+position = Vector3(0.177430645, 0.540847182, -0.517262578)
+quaternion = Quaternion(-0.00254683988, -0.7076208, 0.0035947687, 0.706578672)
+scale = Vector3(1.00000024, 0.999999821, 0.99999994)
+metadata/unity_id = 5441
+metadata/unity_name = "brow_r"
+
+[node name="brow_r_end" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/brow_r"]
+position = Vector3(-1.56462188e-09, 0.611425936, -3.01003453e-08)
+quaternion = Quaternion(1.45212216e-08, -1.17622694e-08, 1.25710375e-08, 1)
+scale = Vector3(0.99999994, 0.999999881, 0.99999994)
+metadata/unity_id = 10636
+metadata/unity_name = "brow_r_end"
+
+[node name="jaw" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis"]
+position = Vector3(6.34204582e-08, 0.194753543, -0.266004682)
+quaternion = Quaternion(-0.872730076, -2.77422068e-08, -2.5766829e-07, 0.488203138)
+scale = Vector3(1, 0.99999994, 1)
+metadata/unity_id = 4804
+metadata/unity_name = "jaw"
+
+[node name="jaw_end" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/jaw"]
+position = Vector3(9.09494681e-15, 0.611425877, 1.762146e-14)
+quaternion = Quaternion(-3.00926554e-36, -2.13162804e-14, -1.24344979e-14, 1)
+scale = Vector3(1, 1.00000012, 1.00000012)
+metadata/unity_id = 19077
+metadata/unity_name = "jaw_end"
+
+[node name="spine_01" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis"]
+position = Vector3(-3.69627067e-08, 0.729251444, -0.0131462011)
+quaternion = Quaternion(0.185736358, -2.18109137e-14, 1.19499186e-15, 0.982599616)
+scale = Vector3(1, 1, 0.99999994)
+metadata/unity_id = 18683
+metadata/unity_name = "spine_01"
+
+[node name="leaf_01" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/spine_01"]
+position = Vector3(9.17994836e-09, 0.255654186, 0.0390539728)
+quaternion = Quaternion(-1.26659884e-07, 2.49944669e-08, -1.96927334e-14, 1)
+scale = Vector3(1, 0.999999881, 0.999999881)
+metadata/unity_id = 12682
+metadata/unity_name = "leaf_01"
+
+[node name="leaf_02" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/spine_01/leaf_01"]
+position = Vector3(-3.0888188e-08, 0.242254764, -7.62939436e-08)
+quaternion = Quaternion(1.49011576e-08, -1.97619665e-14, 1.46549405e-14, 1)
+scale = Vector3(1, 1.00000036, 1.00000024)
+metadata/unity_id = 18978
+metadata/unity_name = "leaf_02"
+
+[node name="sheet_03" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/spine_01/leaf_01/leaf_02"]
+position = Vector3(-3.99728926e-08, 0.313504905, 1.52587873e-07)
+quaternion = Quaternion(-0.18107146, 1.1662778e-14, 2.34807799e-14, 0.983469963)
+scale = Vector3(1, 0.99999994, 1.00000024)
+metadata/unity_id = 11814
+metadata/unity_name = "sheet_03"
+
+[node name="sheet_03_end" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/spine_01/leaf_01/leaf_02/sheet_03"]
+position = Vector3(6.82121011e-15, 0.313505769, 2.62260365e-08)
+quaternion = Quaternion(1.60653144e-08, 2.8449465e-16, 8.71525074e-15, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16159
+metadata/unity_name = "sheet_03_end"
+
+[node name="leaf_a_01_l" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/spine_01"]
+position = Vector3(-0.140550569, 0.179092333, -0.0896321535)
+quaternion = Quaternion(0.012285443, 6.56490116e-08, 0.175207213, 0.98445493)
+scale = Vector3(1.00000012, 1, 1)
+metadata/unity_id = 17834
+metadata/unity_name = "leaf_a_01_l"
+
+[node name="leaf_a_02_l" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/spine_01/leaf_a_01_l"]
+position = Vector3(-9.59634789e-08, 0.242254212, 3.22610134e-08)
+quaternion = Quaternion(-1.38854318e-07, 3.2596283e-08, 6.14672757e-08, 1)
+scale = Vector3(1.00000012, 1.00000036, 1.00000036)
+metadata/unity_id = 24692
+metadata/unity_name = "leaf_a_02_l"
+
+[node name="leaf_a_03_l" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/spine_01/leaf_a_01_l/leaf_a_02_l"]
+position = Vector3(-4.7683713e-08, 0.31350565, 1.05798241e-08)
+quaternion = Quaternion(-0.180604875, 0.0670024976, 0.0129951295, 0.98118484)
+scale = Vector3(0.999999762, 0.99999994, 0.999999821)
+metadata/unity_id = 9678
+metadata/unity_name = "leaf_a_03_l"
+
+[node name="leaf_a_03_l_end" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/spine_01/leaf_a_01_l/leaf_a_02_l/leaf_a_03_l"]
+position = Vector3(1.96695318e-08, 0.313506037, -1.3476237e-08)
+quaternion = Quaternion(5.90262106e-09, 2.59773515e-07, -3.06854417e-07, 1)
+scale = Vector3(1.00000012, 1, 0.99999994)
+metadata/unity_id = 26827
+metadata/unity_name = "leaf_a_03_l_end"
+
+[node name="leaf_a_01_r" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/spine_01"]
+position = Vector3(0.140550673, 0.17909193, -0.0896320045)
+quaternion = Quaternion(0.012285322, -4.06131562e-07, -0.175207198, 0.98445493)
+scale = Vector3(0.999999821, 1.00000024, 1.00000036)
+metadata/unity_id = 6469
+metadata/unity_name = "leaf_a_01_r"
+
+[node name="leaf_a_02_r" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/spine_01/leaf_a_01_r"]
+position = Vector3(-4.17232515e-09, 0.242254481, 4.75347015e-08)
+quaternion = Quaternion(1.5515252e-07, 1.08149841e-07, -6.23986196e-08, 1)
+scale = Vector3(0.99999994, 0.999999881, 1)
+metadata/unity_id = 14196
+metadata/unity_name = "leaf_a_02_r"
+
+[node name="leaf_a_03_r" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/spine_01/leaf_a_01_r/leaf_a_02_r"]
+position = Vector3(-2.38418565e-08, 0.313505083, -1.31130218e-08)
+quaternion = Quaternion(-0.180604696, -0.0670024231, -0.012995352, 0.9811849)
+scale = Vector3(1.00000012, 1.00000012, 1.00000024)
+metadata/unity_id = 18088
+metadata/unity_name = "leaf_a_03_r"
+
+[node name="leaf_a_03_r_end" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/spine_01/leaf_a_01_r/leaf_a_02_r/leaf_a_03_r"]
+position = Vector3(3.79979603e-09, 0.313505292, -1.10408287e-08)
+quaternion = Quaternion(-1.48382256e-07, -1.43392768e-07, 2.16683503e-07, 1)
+scale = Vector3(0.99999994, 0.999999881, 0.99999994)
+metadata/unity_id = 12261
+metadata/unity_name = "leaf_a_03_r_end"
+
+[node name="leaf_b_01_l" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/spine_01"]
+position = Vector3(-0.231646985, 0.0536458381, -0.157083705)
+quaternion = Quaternion(-0.0668953732, 0.0161982086, 0.315273196, 0.946501672)
+scale = Vector3(1, 1, 1.00000012)
+metadata/unity_id = 11583
+metadata/unity_name = "leaf_b_01_l"
+
+[node name="leaf_b_02_l" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/spine_01/leaf_b_01_l"]
+position = Vector3(-7.27176683e-08, 0.242254615, 2.29477877e-08)
+quaternion = Quaternion(0.00939313322, 0.0699856058, 0.143670574, 0.987103105)
+scale = Vector3(1.00000024, 1.00000012, 0.99999994)
+metadata/unity_id = 19974
+metadata/unity_name = "leaf_b_02_l"
+
+[node name="leaf_b_03_l" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/spine_01/leaf_b_01_l/leaf_b_02_l"]
+position = Vector3(1.54972071e-08, 0.335894704, -6.19888283e-08)
+quaternion = Quaternion(-0.181198984, 0.0813033208, 0.15507552, 0.967733622)
+scale = Vector3(1.00000024, 1.00000012, 0.999999821)
+metadata/unity_id = 17604
+metadata/unity_name = "leaf_b_03_l"
+
+[node name="leaf_b_03_l_end" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/spine_01/leaf_b_01_l/leaf_b_02_l/leaf_b_03_l"]
+position = Vector3(2.64644626e-07, 0.335894614, -0)
+quaternion = Quaternion(-5.58793545e-09, -1.39698395e-08, -1.67638063e-08, 1)
+scale = Vector3(1, 1, 0.99999994)
+metadata/unity_id = 6409
+metadata/unity_name = "leaf_b_03_l_end"
+
+[node name="leaf_b_01_r" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/spine_01"]
+position = Vector3(0.231647179, 0.0536459386, -0.157083675)
+quaternion = Quaternion(-0.0668954998, -0.0161983389, -0.315273136, 0.946501672)
+scale = Vector3(0.999999821, 1.00000012, 1.00000012)
+metadata/unity_id = 12437
+metadata/unity_name = "leaf_b_01_r"
+
+[node name="leaf_b_02_r" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/spine_01/leaf_b_01_r"]
+position = Vector3(4.41074377e-08, 0.242254347, 2.68220894e-08)
+quaternion = Quaternion(0.00939325802, -0.0699854121, -0.143671006, 0.987103045)
+scale = Vector3(0.999999642, 1, 0.999999821)
+metadata/unity_id = 26560
+metadata/unity_name = "leaf_b_02_r"
+
+[node name="leaf_b_03_r" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/spine_01/leaf_b_01_r/leaf_b_02_r"]
+position = Vector3(-2.08616253e-08, 0.335894704, 1.19209282e-08)
+quaternion = Quaternion(-0.181198508, -0.0813030526, -0.155075982, 0.967733622)
+scale = Vector3(1.00000012, 1.00000036, 1.00000024)
+metadata/unity_id = 19944
+metadata/unity_name = "leaf_b_03_r"
+
+[node name="leaf_b_03_r_end" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/spine_01/leaf_b_01_r/leaf_b_02_r/leaf_b_03_r"]
+position = Vector3(-1.19209282e-08, 0.335894525, 9.53674295e-09)
+quaternion = Quaternion(-7.4505806e-09, -5.58793589e-09, -1.11758718e-08, 1)
+scale = Vector3(0.99999994, 1, 1)
+metadata/unity_id = 25577
+metadata/unity_name = "leaf_b_03_r_end"
+
+[node name="leaf_c_01_l" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/spine_01"]
+position = Vector3(-0.396647841, 0.0237600543, -0.0132365618)
+quaternion = Quaternion(-0.172235459, -0.0317814648, 0.510358453, 0.841937721)
+scale = Vector3(0.999999702, 0.999999881, 0.999999821)
+metadata/unity_id = 8767
+metadata/unity_name = "leaf_c_01_l"
+
+[node name="leaf_c_02_l" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/spine_01/leaf_c_01_l"]
+position = Vector3(2.32458106e-08, 0.207622588, -9.53674295e-09)
+quaternion = Quaternion(-0.0619861372, 0.0268060565, 0.201898932, 0.977075219)
+scale = Vector3(1.00000024, 1.00000024, 1.00000048)
+metadata/unity_id = 13446
+metadata/unity_name = "leaf_c_02_l"
+
+[node name="leaf_c_03_l" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/spine_01/leaf_c_01_l/leaf_c_02_l"]
+position = Vector3(-5.3644178e-09, 0.287426114, -9.53674295e-09)
+quaternion = Quaternion(-0.212461919, 0.121225931, 0.406232357, 0.880420029)
+scale = Vector3(1.00000012, 0.99999994, 0.999999642)
+metadata/unity_id = 22438
+metadata/unity_name = "leaf_c_03_l"
+
+[node name="leaf_c_03_l_end" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/spine_01/leaf_c_01_l/leaf_c_02_l/leaf_c_03_l"]
+position = Vector3(-1.33514405e-07, 0.287426442, -9.53674295e-09)
+quaternion = Quaternion(-8.38190175e-08, 1.35973082e-07, -1.37835727e-07, 1)
+scale = Vector3(1.00000012, 1.00000012, 1.00000012)
+metadata/unity_id = 25706
+metadata/unity_name = "leaf_c_03_l_end"
+
+[node name="leaf_c_01_r" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/spine_01"]
+position = Vector3(0.3966479, 0.0237601362, -0.0132363439)
+quaternion = Quaternion(-0.172235489, 0.0317811966, -0.510358572, 0.841937661)
+scale = Vector3(1, 0.99999994, 0.999999881)
+metadata/unity_id = 20756
+metadata/unity_name = "leaf_c_01_r"
+
+[node name="leaf_c_02_r" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/spine_01/leaf_c_01_r"]
+position = Vector3(1.18017191e-07, 0.207622528, 9.53674295e-09)
+quaternion = Quaternion(-0.0619862862, -0.0268063545, -0.201899171, 0.97707516)
+scale = Vector3(1, 0.999999821, 1)
+metadata/unity_id = 14056
+metadata/unity_name = "leaf_c_02_r"
+
+[node name="leaf_c_03_r" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/spine_01/leaf_c_01_r/leaf_c_02_r"]
+position = Vector3(1.62720681e-07, 0.287426114, -1.78813924e-08)
+quaternion = Quaternion(-0.212462187, -0.121225804, -0.406232089, 0.880420148)
+scale = Vector3(1.00000024, 1, 0.99999994)
+metadata/unity_id = 15864
+metadata/unity_name = "leaf_c_03_r"
+
+[node name="leaf_c_03_r_end" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/spine_01/leaf_c_01_r/leaf_c_02_r/leaf_c_03_r"]
+position = Vector3(-1.43051139e-07, 0.287426263, -3.81469718e-08)
+quaternion = Quaternion(-2.38418579e-07, 2.58907676e-07, -1.77635684e-15, 1)
+scale = Vector3(1, 0.99999994, 1)
+metadata/unity_id = 22459
+metadata/unity_name = "leaf_c_03_r_end"
+
+[node name="thigh_b_l" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis"]
+position = Vector3(-0.555867016, 0.168734968, 0.144432068)
+quaternion = Quaternion(-0.975825608, 0.177290455, 0.0480040833, -0.118440054)
+scale = Vector3(0.999999404, 1, 0.999999583)
+metadata/unity_id = 12528
+metadata/unity_name = "thigh_b_l"
+
+[node name="calf_b_l" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/thigh_b_l"]
+position = Vector3(7.03334777e-08, 0.285352468, 4.76837148e-09)
+quaternion = Quaternion(-0.0217419956, 0.018862525, 0.52354008, 0.851514697)
+scale = Vector3(0.999999702, 0.999999821, 1)
+metadata/unity_id = 25517
+metadata/unity_name = "calf_b_l"
+
+[node name="foot_b_l" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/thigh_b_l/calf_b_l"]
+position = Vector3(-7.62939436e-08, 0.17669116, -1.04904174e-07)
+quaternion = Quaternion(0.0161495358, 0.0196045004, -0.563172519, 0.825948894)
+scale = Vector3(1.00000036, 1, 0.99999994)
+metadata/unity_id = 7729
+metadata/unity_name = "foot_b_l"
+
+[node name="foot_b_l_end" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/thigh_b_l/calf_b_l/foot_b_l"]
+position = Vector3(3.51667389e-08, 0.176691249, 4.7683713e-08)
+quaternion = Quaternion(-1.39698431e-09, -1.58324855e-08, -4.06289473e-08, 1)
+scale = Vector3(0.99999994, 1, 0.99999994)
+metadata/unity_id = 8060
+metadata/unity_name = "foot_b_l_end"
+
+[node name="thigh_b_r" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis"]
+position = Vector3(0.555867016, 0.168734968, 0.144432396)
+quaternion = Quaternion(-0.975825608, -0.177290484, -0.0480041169, -0.118440047)
+scale = Vector3(0.999999702, 1.00000024, 0.999999821)
+metadata/unity_id = 15807
+metadata/unity_name = "thigh_b_r"
+
+[node name="calf_b_r" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/thigh_b_r"]
+position = Vector3(2.62260436e-08, 0.28535223, -0)
+quaternion = Quaternion(-0.0217426531, -0.0188624226, -0.523539722, 0.851514935)
+scale = Vector3(1.00000024, 0.999999881, 0.999999821)
+metadata/unity_id = 14708
+metadata/unity_name = "calf_b_r"
+
+[node name="foot_b_r" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/thigh_b_r/calf_b_r"]
+position = Vector3(-2.38418565e-08, 0.176690876, -1.90734859e-08)
+quaternion = Quaternion(0.0161507837, -0.0196049437, 0.563171983, 0.825949192)
+scale = Vector3(1, 0.99999994, 1.00000048)
+metadata/unity_id = 9074
+metadata/unity_name = "foot_b_r"
+
+[node name="foot_b_r_end" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/thigh_b_r/calf_b_r/foot_b_r"]
+position = Vector3(-5.66244118e-08, 0.176691145, -4.76837148e-09)
+quaternion = Quaternion(-7.1246177e-08, 5.35510516e-08, 3.81842291e-08, 1)
+scale = Vector3(0.99999994, 0.99999994, 1)
+metadata/unity_id = 23771
+metadata/unity_name = "foot_b_r_end"
+
+[node name="thigh_f_l" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis"]
+position = Vector3(-0.477361739, 0.129151002, -0.209863529)
+quaternion = Quaternion(-0.959738612, -0.00701385085, 0.0079899868, 0.280693501)
+scale = Vector3(0.99999994, 0.999999821, 0.999999762)
+metadata/unity_id = 9890
+metadata/unity_name = "thigh_f_l"
+
+[node name="calf_f_l" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/thigh_f_l"]
+position = Vector3(-4.05311589e-08, 0.254199207, -5.36441789e-08)
+quaternion = Quaternion(-0.00712470151, 0.134583905, 0.449087441, 0.883264899)
+scale = Vector3(1, 0.999999821, 1.00000012)
+metadata/unity_id = 9205
+metadata/unity_name = "calf_f_l"
+
+[node name="foot_f_l" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/thigh_f_l/calf_f_l"]
+position = Vector3(6.67572024e-08, 0.16739215, -9.53674295e-09)
+quaternion = Quaternion(0.00140653865, -0.0426625945, -0.363740683, 0.930521727)
+scale = Vector3(0.999999881, 1, 0.999999702)
+metadata/unity_id = 5235
+metadata/unity_name = "foot_f_l"
+
+[node name="foot_f_l_end" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/thigh_f_l/calf_f_l/foot_f_l"]
+position = Vector3(-6.91413859e-08, 0.167392179, 4.76837148e-09)
+quaternion = Quaternion(2.61235982e-07, -2.73808837e-07, -1.44354999e-07, 1)
+scale = Vector3(1, 1, 1.00000012)
+metadata/unity_id = 25097
+metadata/unity_name = "foot_f_l_end"
+
+[node name="thigh_f_r" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis"]
+position = Vector3(0.477361739, 0.129151002, -0.209863275)
+quaternion = Quaternion(-0.959738553, 0.00701387972, -0.00799022056, 0.280693591)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22348
+metadata/unity_name = "thigh_f_r"
+
+[node name="calf_f_r" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/thigh_f_r"]
+position = Vector3(-1.2516975e-08, 0.254199296, -2.74181353e-08)
+quaternion = Quaternion(-0.0071252319, -0.13458401, -0.449087888, 0.88326472)
+scale = Vector3(1, 1, 0.999999821)
+metadata/unity_id = 23243
+metadata/unity_name = "calf_f_r"
+
+[node name="foot_f_r" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/thigh_f_r/calf_f_r"]
+position = Vector3(-0, 0.167392343, -9.53674295e-09)
+quaternion = Quaternion(0.00140788092, 0.0426625945, 0.363740504, 0.930521786)
+scale = Vector3(0.999999821, 0.999999762, 0.99999994)
+metadata/unity_id = 19445
+metadata/unity_name = "foot_f_r"
+
+[node name="foot_f_r_end" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/thigh_f_r/calf_f_r/foot_f_r"]
+position = Vector3(4.64916212e-08, 0.167392254, 2.86102289e-08)
+quaternion = Quaternion(3.44589353e-08, 6.9569802e-07, 4.3120238e-07, 1)
+scale = Vector3(0.99999994, 1, 0.99999994)
+metadata/unity_id = 18677
+metadata/unity_name = "foot_f_r_end"
+
+[node name="upperarm_l" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis"]
+position = Vector3(-0.31229353, 0.327755719, -0.427507669)
+quaternion = Quaternion(-0.950324237, 0.0848001838, 0.10384097, 0.280908942)
+scale = Vector3(0.999999881, 1, 0.999999642)
+metadata/unity_id = 25916
+metadata/unity_name = "upperarm_l"
+
+[node name="lowerarm_l" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/upperarm_l"]
+position = Vector3(2.38418565e-08, 0.276008457, -1.90734859e-08)
+quaternion = Quaternion(0.588613212, 0.00932885054, 0.0374816395, 0.807491541)
+scale = Vector3(0.99999994, 1.00000048, 1.00000024)
+metadata/unity_id = 16705
+metadata/unity_name = "lowerarm_l"
+
+[node name="hand_l" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/upperarm_l/lowerarm_l"]
+position = Vector3(9.53674295e-09, 0.280615568, 1.90734859e-08)
+quaternion = Quaternion(-0.580298126, 0.040670298, 0.0167051684, 0.813216448)
+scale = Vector3(0.999999762, 0.999999881, 0.99999994)
+metadata/unity_id = 14283
+metadata/unity_name = "hand_l"
+
+[node name="hand_l_end" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/upperarm_l/lowerarm_l/hand_l"]
+position = Vector3(9.53674295e-09, 0.280615926, 1.23977657e-07)
+quaternion = Quaternion(6.70552254e-08, -1.43423676e-07, -9.68575478e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6119
+metadata/unity_name = "hand_l_end"
+
+[node name="upperarm_r" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis"]
+position = Vector3(0.312293798, 0.327755809, -0.42750755)
+quaternion = Quaternion(-0.950324178, -0.0848005489, -0.103841104, 0.280909121)
+scale = Vector3(0.999999821, 0.99999994, 0.999999642)
+metadata/unity_id = 13316
+metadata/unity_name = "upperarm_r"
+
+[node name="lowerarm_r" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/upperarm_r"]
+position = Vector3(-1.43051144e-08, 0.276008725, -1.4781952e-07)
+quaternion = Quaternion(0.588612974, -0.00932698417, -0.037480697, 0.807491839)
+scale = Vector3(0.999999702, 0.99999994, 1.00000012)
+metadata/unity_id = 27041
+metadata/unity_name = "lowerarm_r"
+
+[node name="hand_r" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/upperarm_r/lowerarm_r"]
+position = Vector3(1.90734859e-08, 0.280615985, -9.53674295e-09)
+quaternion = Quaternion(-0.580298066, -0.0406715237, -0.0167062506, 0.813216388)
+scale = Vector3(1.00000024, 1.00000012, 1.00000024)
+metadata/unity_id = 21145
+metadata/unity_name = "hand_r"
+
+[node name="hand_r_end" type="Node3D" parent="PlantMonster/PlantMonster_Model/root/pelvis/upperarm_r/lowerarm_r/hand_r"]
+position = Vector3(9.53674295e-09, 0.280615538, 1.001358e-07)
+quaternion = Quaternion(1.01514154e-07, -2.57045031e-07, -1.60187483e-07, 1)
+scale = Vector3(1, 1.00000012, 1)
+metadata/unity_id = 4792
+metadata/unity_name = "hand_r_end"
+
+[node name="VFXParent" type="Node3D" parent="PlantMonster"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24779
+metadata/unity_name = "VFXParent"
+
+[node name="OverheadSlot" type="Node3D" parent="PlantMonster"]
+position = Vector3(0, 2.20000005, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10651
+metadata/unity_name = "OverheadSlot"

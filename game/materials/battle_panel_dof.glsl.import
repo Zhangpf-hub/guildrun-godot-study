@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://dpikqywhhplcc"
+path="res://.godot/imported/battle_panel_dof.glsl-2a8019735dac6a3b560f02e58964f40c.res"
+
+[deps]
+
+source_file="res://materials/battle_panel_dof.glsl"
+dest_files=["res://.godot/imported/battle_panel_dof.glsl-2a8019735dac6a3b560f02e58964f40c.res"]
+
+[params]
+

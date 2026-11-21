@@ -1,0 +1,402 @@
+[gd_scene format=3]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2927.obj" id="1"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_316.tres" id="2"]
+
+[node name="Crab" type="Node3D"]
+
+[node name="Crab" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18798
+metadata/unity_name = "Crab"
+
+[node name="CrabA_Model" type="Node3D" parent="Crab"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20879
+metadata/unity_name = "CrabA_Model"
+
+[node name="Crab_Boss" type="Node3D" parent="Crab/CrabA_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(0.707106829, -0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12757
+metadata/unity_name = "Crab_Boss"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Crab/CrabA_Model/Crab_Boss"]
+mesh = ExtResource("1")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="root" type="Node3D" parent="Crab/CrabA_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(0.707106829, -0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24386
+metadata/unity_name = "root"
+
+[node name="body" type="Node3D" parent="Crab/CrabA_Model/root"]
+position = Vector3(5.21929815e-06, -0.0859776735, -0.75999701)
+quaternion = Quaternion(0.116854876, -0.695731163, -0.116306119, 0.699125171)
+scale = Vector3(0.99999994, 1, 0.99999994)
+metadata/unity_id = 19604
+metadata/unity_name = "body"
+
+[node name="clavicle_l" type="Node3D" parent="Crab/CrabA_Model/root/body"]
+position = Vector3(-0.0229746997, -0.164042354, 0.407006979)
+quaternion = Quaternion(0.339401454, 0.650076985, 0.165339261, 0.659446359)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20323
+metadata/unity_name = "clavicle_l"
+
+[node name="upperarm_l" type="Node3D" parent="Crab/CrabA_Model/root/body/clavicle_l"]
+position = Vector3(-0.0724813044, 3.81469718e-08, -3.81469718e-08)
+quaternion = Quaternion(-0.290018022, 0.218480632, -0.327831298, 0.872171104)
+scale = Vector3(1, 1, 1.00000012)
+metadata/unity_id = 16658
+metadata/unity_name = "upperarm_l"
+
+[node name="lowerarm_l" type="Node3D" parent="Crab/CrabA_Model/root/body/clavicle_l/upperarm_l"]
+position = Vector3(-0.271520287, -0.00163486472, 7.62939436e-08)
+quaternion = Quaternion(-0.145086169, -0.0974138379, 0.293138593, 0.939962924)
+scale = Vector3(1, 0.99999994, 0.99999994)
+metadata/unity_id = 6472
+metadata/unity_name = "lowerarm_l"
+
+[node name="hand_l" type="Node3D" parent="Crab/CrabA_Model/root/body/clavicle_l/upperarm_l/lowerarm_l"]
+position = Vector3(-0.420347542, -1.52587887e-07, 7.62939436e-08)
+quaternion = Quaternion(-0.101463534, 0.0221470427, -0.136446729, 0.985188842)
+scale = Vector3(1.00000012, 0.99999994, 1)
+metadata/unity_id = 17592
+metadata/unity_name = "hand_l"
+
+[node name="fingers_a_l" type="Node3D" parent="Crab/CrabA_Model/root/body/clavicle_l/upperarm_l/lowerarm_l/hand_l"]
+position = Vector3(0.0567759685, -0.193877146, -0.00788909849)
+quaternion = Quaternion(-2.35543467e-07, -5.02403914e-08, 0.208730891, 0.977973104)
+scale = Vector3(0.999999881, 1, 1)
+metadata/unity_id = 7037
+metadata/unity_name = "fingers_a_l"
+
+[node name="fingers_b_l" type="Node3D" parent="Crab/CrabA_Model/root/body/clavicle_l/upperarm_l/lowerarm_l/hand_l"]
+position = Vector3(-0.118184961, -0.184555545, -0.0119982911)
+quaternion = Quaternion(-1.18019621e-07, 2.88502444e-09, -0.0244379956, 0.999701381)
+scale = Vector3(0.99999994, 0.999999881, 1)
+metadata/unity_id = 20801
+metadata/unity_name = "fingers_b_l"
+
+[node name="clavicle_r" type="Node3D" parent="Crab/CrabA_Model/root/body"]
+position = Vector3(-0.0747203082, -0.182040513, -0.427564293)
+quaternion = Quaternion(-0.764409244, 0.545255899, 0.343970954, 0.00764781097)
+scale = Vector3(0.99999994, 1.00000012, 1.00000012)
+metadata/unity_id = 21981
+metadata/unity_name = "clavicle_r"
+
+[node name="upperarm_r" type="Node3D" parent="Crab/CrabA_Model/root/body/clavicle_r"]
+position = Vector3(0.0880071223, -0.0415515117, -1.2207031e-06)
+quaternion = Quaternion(-0.321974903, -0.0937229171, -0.524306178, 0.782720387)
+scale = Vector3(1.00000012, 1.00000012, 1)
+metadata/unity_id = 8824
+metadata/unity_name = "upperarm_r"
+
+[node name="lowerarm_r" type="Node3D" parent="Crab/CrabA_Model/root/body/clavicle_r/upperarm_r"]
+position = Vector3(0.244913176, 0.00129592896, -0.00743972743)
+quaternion = Quaternion(-0.0944853574, 0.114596538, 0.368906558, 0.917522848)
+scale = Vector3(0.999999881, 1.00000012, 1.00000012)
+metadata/unity_id = 12927
+metadata/unity_name = "lowerarm_r"
+
+[node name="hand_r" type="Node3D" parent="Crab/CrabA_Model/root/body/clavicle_r/upperarm_r/lowerarm_r"]
+position = Vector3(0.254700392, -0.0123464391, -0.020942077)
+quaternion = Quaternion(-0.281083643, 0.00526282843, 0.0179327559, 0.959501326)
+scale = Vector3(0.99999994, 1, 0.999999881)
+metadata/unity_id = 12734
+metadata/unity_name = "hand_r"
+
+[node name="fingers_a_r" type="Node3D" parent="Crab/CrabA_Model/root/body/clavicle_r/upperarm_r/lowerarm_r/hand_r"]
+position = Vector3(-0.023238143, 0.0872680247, 0.00788803119)
+quaternion = Quaternion(-6.69796485e-09, 8.827692e-08, 0.0756570101, 0.997133911)
+scale = Vector3(1.00000012, 1, 1)
+metadata/unity_id = 15774
+metadata/unity_name = "fingers_a_r"
+
+[node name="fingers_b_r" type="Node3D" parent="Crab/CrabA_Model/root/body/clavicle_r/upperarm_r/lowerarm_r/hand_r"]
+position = Vector3(0.0571171157, 0.0522651672, 0.0119971465)
+quaternion = Quaternion(-1.99763889e-07, 1.36403074e-07, -0.416370481, 0.909195065)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21711
+metadata/unity_name = "fingers_b_r"
+
+[node name="jaw" type="Node3D" parent="Crab/CrabA_Model/root/body"]
+position = Vector3(0.119555965, -0.389573395, -5.75184806e-08)
+quaternion = Quaternion(7.03185322e-07, -1.15100386e-06, -0.234768197, 0.972051382)
+scale = Vector3(0.99999994, 1, 0.99999994)
+metadata/unity_id = 11505
+metadata/unity_name = "jaw"
+
+[node name="teeth_down_01_l" type="Node3D" parent="Crab/CrabA_Model/root/body/jaw"]
+position = Vector3(0.0398581699, -0.0388751961, 0.11458119)
+quaternion = Quaternion(-0.262755722, -0.888083637, 0.234626383, -0.295325816)
+scale = Vector3(0.999999821, 0.99999994, 0.999999762)
+metadata/unity_id = 23407
+metadata/unity_name = "teeth_down_01_l"
+
+[node name="teeth_down_02_l" type="Node3D" parent="Crab/CrabA_Model/root/body/jaw/teeth_down_01_l"]
+position = Vector3(-0.0575881191, 0, 3.81469718e-08)
+quaternion = Quaternion(-1.83598349e-05, -4.21853885e-10, 2.31287249e-05, 1)
+scale = Vector3(1.00000012, 1.00000012, 1)
+metadata/unity_id = 9572
+metadata/unity_name = "teeth_down_02_l"
+
+[node name="teeth_down_01_r" type="Node3D" parent="Crab/CrabA_Model/root/body/jaw"]
+position = Vector3(0.0398581289, -0.0388753489, -0.114581332)
+quaternion = Quaternion(-0.889212728, 0.261320531, 0.296475142, 0.230466396)
+scale = Vector3(0.999999881, 0.999999821, 0.999999762)
+metadata/unity_id = 6529
+metadata/unity_name = "teeth_down_01_r"
+
+[node name="teeth_down_02_r" type="Node3D" parent="Crab/CrabA_Model/root/body/jaw/teeth_down_01_r"]
+position = Vector3(0.0575879663, -2.28881831e-07, 7.62939436e-08)
+quaternion = Quaternion(-1.60574255e-05, 1.01515901e-07, 1.95521498e-05, 1)
+scale = Vector3(0.99999994, 1, 1)
+metadata/unity_id = 10868
+metadata/unity_name = "teeth_down_02_r"
+
+[node name="leg_a_01_l" type="Node3D" parent="Crab/CrabA_Model/root/body"]
+position = Vector3(-0.0444466397, 3.81469718e-08, 0.410720825)
+quaternion = Quaternion(0.237205833, -0.841332078, 0.17937246, -0.451352805)
+scale = Vector3(1.00000012, 1, 1)
+metadata/unity_id = 21656
+metadata/unity_name = "leg_a_01_l"
+
+[node name="leg_a_02_l" type="Node3D" parent="Crab/CrabA_Model/root/body/leg_a_01_l"]
+position = Vector3(-0.0962964445, 3.81469718e-08, -7.62939436e-08)
+quaternion = Quaternion(0.00210077898, -0.27249831, 0.275635421, 0.921827197)
+scale = Vector3(1, 0.99999994, 0.99999994)
+metadata/unity_id = 5521
+metadata/unity_name = "leg_a_02_l"
+
+[node name="leg_a_03_l" type="Node3D" parent="Crab/CrabA_Model/root/body/leg_a_01_l/leg_a_02_l"]
+position = Vector3(-0.313878626, 1.90734859e-08, -7.62939436e-08)
+quaternion = Quaternion(0.0521561056, 0.393852532, -0.0145257888, 0.917577803)
+scale = Vector3(1, 0.999999881, 1.00000012)
+metadata/unity_id = 24433
+metadata/unity_name = "leg_a_03_l"
+
+[node name="leg_a_04_l" type="Node3D" parent="Crab/CrabA_Model/root/body/leg_a_01_l/leg_a_02_l/leg_a_03_l"]
+position = Vector3(-0.336968213, -0.000298080442, -0.00307434076)
+quaternion = Quaternion(0.0339056626, 0.388723016, -0.0504744388, 0.919346035)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15147
+metadata/unity_name = "leg_a_04_l"
+
+[node name="leg_a_05_l" type="Node3D" parent="Crab/CrabA_Model/root/body/leg_a_01_l/leg_a_02_l/leg_a_03_l/leg_a_04_l"]
+position = Vector3(-0.506527185, -0.00825103745, 0.00917365961)
+quaternion = Quaternion(-0.0704280585, -0.633472323, 0.0500932261, 0.768923521)
+scale = Vector3(1.00000024, 0.99999994, 1)
+metadata/unity_id = 18928
+metadata/unity_name = "leg_a_05_l"
+
+[node name="leg_a_01_r" type="Node3D" parent="Crab/CrabA_Model/root/body"]
+position = Vector3(-0.0444496162, -3.81469718e-08, -0.410720676)
+quaternion = Quaternion(-0.841326594, -0.237167224, 0.451247275, 0.179714397)
+scale = Vector3(0.999999881, 1, 1)
+metadata/unity_id = 7658
+metadata/unity_name = "leg_a_01_r"
+
+[node name="leg_a_02_r" type="Node3D" parent="Crab/CrabA_Model/root/body/leg_a_01_r"]
+position = Vector3(0.0962968245, -1.14440915e-07, -2.4414062e-06)
+quaternion = Quaternion(-0.00659603486, -0.247417897, 0.278504968, 0.927995622)
+scale = Vector3(1.00000012, 1.00000012, 1)
+metadata/unity_id = 16391
+metadata/unity_name = "leg_a_02_r"
+
+[node name="leg_a_03_r" type="Node3D" parent="Crab/CrabA_Model/root/body/leg_a_01_r/leg_a_02_r"]
+position = Vector3(0.319283813, -5.72204577e-08, -0)
+quaternion = Quaternion(0.0526445061, 0.352291614, -0.0128477272, 0.934320152)
+scale = Vector3(0.99999994, 0.99999994, 1.00000012)
+metadata/unity_id = 11164
+metadata/unity_name = "leg_a_03_r"
+
+[node name="leg_a_04_r" type="Node3D" parent="Crab/CrabA_Model/root/body/leg_a_01_r/leg_a_02_r/leg_a_03_r"]
+position = Vector3(0.320784777, 0.000763359072, 0.0083132172)
+quaternion = Quaternion(0.0335700996, 0.341089159, -0.0440360457, 0.938398659)
+scale = Vector3(1, 1, 1.00000012)
+metadata/unity_id = 20803
+metadata/unity_name = "leg_a_04_r"
+
+[node name="leg_a_05_r" type="Node3D" parent="Crab/CrabA_Model/root/body/leg_a_01_r/leg_a_02_r/leg_a_03_r/leg_a_04_r"]
+position = Vector3(0.502425015, 0.0032930756, -0.00206878665)
+quaternion = Quaternion(-0.0781069025, -0.63420403, 0.0473435856, 0.767752051)
+scale = Vector3(0.999999762, 1, 0.999999821)
+metadata/unity_id = 7227
+metadata/unity_name = "leg_a_05_r"
+
+[node name="leg_b_01_l" type="Node3D" parent="Crab/CrabA_Model/root/body"]
+position = Vector3(-0.076852262, 0.116360411, 0.345122218)
+quaternion = Quaternion(-0.216253936, 0.694143593, -0.20419921, 0.655516267)
+scale = Vector3(0.999999821, 0.99999994, 0.999999762)
+metadata/unity_id = 6799
+metadata/unity_name = "leg_b_01_l"
+
+[node name="leg_b_02_l" type="Node3D" parent="Crab/CrabA_Model/root/body/leg_b_01_l"]
+position = Vector3(-0.136030525, 7.62939436e-08, 7.62939436e-08)
+quaternion = Quaternion(-0.106635913, -0.0623990372, 0.105650671, 0.986698091)
+scale = Vector3(1.00000012, 1.00000012, 0.99999994)
+metadata/unity_id = 17359
+metadata/unity_name = "leg_b_02_l"
+
+[node name="leg_b_03_l" type="Node3D" parent="Crab/CrabA_Model/root/body/leg_b_01_l/leg_b_02_l"]
+position = Vector3(-0.297995508, 7.62939436e-08, 0.0199323259)
+quaternion = Quaternion(-7.0598773e-08, 0.29603219, 2.27659697e-07, 0.955177963)
+scale = Vector3(1.00000012, 1, 0.99999994)
+metadata/unity_id = 14778
+metadata/unity_name = "leg_b_03_l"
+
+[node name="leg_b_04_l" type="Node3D" parent="Crab/CrabA_Model/root/body/leg_b_01_l/leg_b_02_l/leg_b_03_l"]
+position = Vector3(-0.341963977, 9.5367426e-08, 0.000164871206)
+quaternion = Quaternion(2.28468679e-07, 0.286176026, -6.83016737e-08, 0.95817709)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23800
+metadata/unity_name = "leg_b_04_l"
+
+[node name="leg_b_05_l" type="Node3D" parent="Crab/CrabA_Model/root/body/leg_b_01_l/leg_b_02_l/leg_b_03_l/leg_b_04_l"]
+position = Vector3(-0.50145638, 1.52587887e-07, 4.57763662e-07)
+quaternion = Quaternion(-0.0519058555, -0.639090359, 0.0175818186, 0.767176867)
+scale = Vector3(1, 1, 1.00000012)
+metadata/unity_id = 17586
+metadata/unity_name = "leg_b_05_l"
+
+[node name="leg_b_01_r" type="Node3D" parent="Crab/CrabA_Model/root/body"]
+position = Vector3(-0.0768534094, 0.116360411, -0.34512192)
+quaternion = Quaternion(-0.702383459, -0.187749624, 0.663258672, 0.177469671)
+scale = Vector3(0.99999994, 1.00000012, 0.999999881)
+metadata/unity_id = 9984
+metadata/unity_name = "leg_b_01_r"
+
+[node name="leg_b_02_r" type="Node3D" parent="Crab/CrabA_Model/root/body/leg_b_01_r"]
+position = Vector3(0.136030272, 1.52587887e-07, 2.28881831e-07)
+quaternion = Quaternion(-0.0930484459, -0.0775180012, -0.029427018, 0.992203116)
+scale = Vector3(1, 0.99999994, 1)
+metadata/unity_id = 23132
+metadata/unity_name = "leg_b_02_r"
+
+[node name="leg_b_03_r" type="Node3D" parent="Crab/CrabA_Model/root/body/leg_b_01_r/leg_b_02_r"]
+position = Vector3(0.29053542, -1.52587887e-07, -0.0199372862)
+quaternion = Quaternion(-4.06931839e-08, 0.31252259, -2.91076141e-08, 0.949910343)
+scale = Vector3(1.00000024, 1.00000012, 1)
+metadata/unity_id = 18672
+metadata/unity_name = "leg_b_03_r"
+
+[node name="leg_b_04_r" type="Node3D" parent="Crab/CrabA_Model/root/body/leg_b_01_r/leg_b_02_r/leg_b_03_r"]
+position = Vector3(0.366368353, 1.48773188e-06, 0.00440734858)
+quaternion = Quaternion(-8.51336501e-10, 0.301932842, 2.83367441e-10, 0.953329206)
+scale = Vector3(1, 1, 1.00000012)
+metadata/unity_id = 11680
+metadata/unity_name = "leg_b_04_r"
+
+[node name="leg_b_05_r" type="Node3D" parent="Crab/CrabA_Model/root/body/leg_b_01_r/leg_b_02_r/leg_b_03_r/leg_b_04_r"]
+position = Vector3(0.501455307, 4.005432e-07, 1.52587887e-07)
+quaternion = Quaternion(-0.0519058183, -0.63909024, 0.0175817348, 0.767176867)
+scale = Vector3(1.00000012, 1.00000012, 1.00000024)
+metadata/unity_id = 26696
+metadata/unity_name = "leg_b_05_r"
+
+[node name="leg_c_01_l" type="Node3D" parent="Crab/CrabA_Model/root/body"]
+position = Vector3(-0.0982650742, 0.283780783, 0.287679106)
+quaternion = Quaternion(-0.330454439, 0.651173592, -0.309152424, 0.609259844)
+scale = Vector3(1.00000012, 1, 1.00000012)
+metadata/unity_id = 18403
+metadata/unity_name = "leg_c_01_l"
+
+[node name="leg_c_02_l" type="Node3D" parent="Crab/CrabA_Model/root/body/leg_c_01_l"]
+position = Vector3(-0.136030436, -3.81469718e-08, -2.28881831e-07)
+quaternion = Quaternion(-0.0939025879, -0.194770128, -0.161043465, 0.962970376)
+scale = Vector3(1, 1.00000012, 1.00000012)
+metadata/unity_id = 12435
+metadata/unity_name = "leg_c_02_l"
+
+[node name="leg_c_03_l" type="Node3D" parent="Crab/CrabA_Model/root/body/leg_c_01_l/leg_c_02_l"]
+position = Vector3(-0.319286257, 1.52587887e-07, 0.019932555)
+quaternion = Quaternion(4.36414273e-11, 0.361109674, 3.89861823e-11, 0.93252337)
+scale = Vector3(1, 0.99999994, 0.999999881)
+metadata/unity_id = 24786
+metadata/unity_name = "leg_c_03_l"
+
+[node name="leg_c_04_l" type="Node3D" parent="Crab/CrabA_Model/root/body/leg_c_01_l/leg_c_02_l/leg_c_03_l"]
+position = Vector3(-0.347540438, -0.000101165766, 0.00259971619)
+quaternion = Quaternion(-3.35522277e-09, 0.356376529, 1.34752998e-09, 0.934342444)
+scale = Vector3(1.00000012, 1, 1.00000012)
+metadata/unity_id = 17791
+metadata/unity_name = "leg_c_04_l"
+
+[node name="leg_c_05_l" type="Node3D" parent="Crab/CrabA_Model/root/body/leg_c_01_l/leg_c_02_l/leg_c_03_l/leg_c_04_l"]
+position = Vector3(-0.503296733, -0.00246202457, 0.00114868162)
+quaternion = Quaternion(-0.0268613547, -0.633368671, -0.000925134227, 0.773383319)
+scale = Vector3(1, 1.00000012, 1)
+metadata/unity_id = 16841
+metadata/unity_name = "leg_c_05_l"
+
+[node name="leg_c_01_r" type="Node3D" parent="Crab/CrabA_Model/root/body"]
+position = Vector3(-0.0982682034, 0.283780843, -0.287679076)
+quaternion = Quaternion(-0.65101862, -0.330367893, 0.609422565, 0.309250832)
+scale = Vector3(1, 0.999999881, 0.99999994)
+metadata/unity_id = 21184
+metadata/unity_name = "leg_c_01_r"
+
+[node name="leg_c_02_r" type="Node3D" parent="Crab/CrabA_Model/root/body/leg_c_01_r"]
+position = Vector3(0.136030048, -3.81469718e-08, -0)
+quaternion = Quaternion(-0.119291738, -0.216599703, -0.176248968, 0.952780366)
+scale = Vector3(1.00000012, 1.00000012, 1.00000012)
+metadata/unity_id = 21537
+metadata/unity_name = "leg_c_02_r"
+
+[node name="leg_c_03_r" type="Node3D" parent="Crab/CrabA_Model/root/body/leg_c_01_r/leg_c_02_r"]
+position = Vector3(0.276298523, -9.15527323e-07, -0.0199343096)
+quaternion = Quaternion(7.30142127e-11, 0.413453728, -8.31684895e-12, 0.910525143)
+scale = Vector3(1, 0.99999994, 0.999999881)
+metadata/unity_id = 18363
+metadata/unity_name = "leg_c_03_r"
+
+[node name="leg_c_04_r" type="Node3D" parent="Crab/CrabA_Model/root/body/leg_c_01_r/leg_c_02_r/leg_c_03_r"]
+position = Vector3(0.316815317, 0.000261344918, 0.0169886779)
+quaternion = Quaternion(-1.20574342e-07, 0.416596711, 2.26546661e-07, 0.909091413)
+scale = Vector3(0.99999994, 0.99999994, 1)
+metadata/unity_id = 6590
+metadata/unity_name = "leg_c_04_r"
+
+[node name="leg_c_05_r" type="Node3D" parent="Crab/CrabA_Model/root/body/leg_c_01_r/leg_c_02_r/leg_c_03_r/leg_c_04_r"]
+position = Vector3(0.509677768, 0.00643381104, -0.008436203)
+quaternion = Quaternion(0.00694619399, -0.630541861, -0.00631368626, 0.77609849)
+scale = Vector3(1.00000024, 1.00000012, 1.00000024)
+metadata/unity_id = 22799
+metadata/unity_name = "leg_c_05_r"
+
+[node name="teeth_up_01_l" type="Node3D" parent="Crab/CrabA_Model/root/body"]
+position = Vector3(0.0355200954, -0.492490023, 0.11535874)
+quaternion = Quaternion(-0.465131253, -0.855392754, 0.0339473821, -0.225396812)
+scale = Vector3(1, 0.999999881, 1.00000012)
+metadata/unity_id = 16556
+metadata/unity_name = "teeth_up_01_l"
+
+[node name="teeth_up_01_r" type="Node3D" parent="Crab/CrabA_Model/root/body"]
+position = Vector3(0.0355205536, -0.492490262, -0.11535868)
+quaternion = Quaternion(-0.855392635, 0.465131491, 0.225396752, 0.0339490026)
+scale = Vector3(1, 1.00000024, 1.00000024)
+metadata/unity_id = 20812
+metadata/unity_name = "teeth_up_01_r"
+
+[node name="OverheadSlot" type="Node3D" parent="Crab"]
+position = Vector3(0, 2, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10997
+metadata/unity_name = "OverheadSlot"
+
+[node name="VFXParent" type="Node3D" parent="Crab"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20311
+metadata/unity_name = "VFXParent"

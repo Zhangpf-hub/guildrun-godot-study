@@ -1,0 +1,17 @@
+[
+  {
+    "id": 4,
+    "portrait": "res://sprites/sharedassets1_3829.png",
+    "turtle_hp": 500
+  },
+  {
+    "id": 26,
+    "portrait": "res://sprites/sharedassets1_3712.png",
+    "turtle_hp": 550
+  },
+  {
+    "id": 14,
+    "portrait": "res://sprites/sharedassets1_3972.png",
+    "turtle_hp": 300
+  }
+]

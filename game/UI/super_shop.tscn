@@ -1,0 +1,918 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://UI/sliced_image.gd" id="SlicedImage"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets3_556.png" id="11"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets1_4561.png" id="13"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets3_376.png" id="16"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets3_515.png" id="17"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets3_432.png" id="18"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets3_538.png" id="20"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets3_567.png" id="22"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets3_411.png" id="23"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets2_127.png" id="24"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets3_494.png" id="25"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets3_391.png" id="37"]
+
+[node name="ShopPanel" type="Control"]
+layout_mode = 0
+offset_right = 1340.0
+offset_bottom = 678.0
+mouse_filter = 2
+
+[node name="Background" type="Control" parent="."]
+mouse_filter = 2
+metadata/unity_id = 3139
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -36
+offset_right = 36
+offset_top = -24
+offset_bottom = 52
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+clip_contents = true
+
+[node name="UnityImage" type="Control" parent="Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("11")
+border = Vector4(64, 64, 64, 64)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="ButtonsPanel" type="Control" parent="."]
+mouse_filter = 2
+metadata/unity_id = 6114
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 0
+offset_left = -5
+offset_right = 5
+offset_top = 8
+offset_bottom = 62
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 1)
+
+[node name="Panel_CSF" type="Control" parent="ButtonsPanel"]
+mouse_filter = 2
+metadata/unity_id = 5554
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -27
+offset_bottom = 27
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="SellingPanel" type="Control" parent="ButtonsPanel/Panel_CSF"]
+mouse_filter = 2
+metadata/unity_id = 1529
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 528
+offset_right = 808
+offset_top = -18
+offset_bottom = 72
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="InactiveFill" type="Control" parent="ButtonsPanel/Panel_CSF/SellingPanel"]
+mouse_filter = 2
+metadata/unity_id = 6885
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -45
+offset_bottom = 45
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="BottomLayer" type="Control" parent="ButtonsPanel/Panel_CSF/SellingPanel/InactiveFill"]
+mouse_filter = 2
+metadata/unity_id = 3034
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 47.9999695
+offset_right = -3.05175781e-05
+offset_top = 11.9999733
+offset_bottom = -12.0000267
+rotation = 0
+scale = Vector2(1.0002811, 1.0002811)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="Control" parent="ButtonsPanel/Panel_CSF/SellingPanel/InactiveFill/BottomLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("16")
+border = Vector4(4, 32, 180, 32)
+pixels_per_unit = 5.0999999
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="InactiveText" type="Control" parent="ButtonsPanel/Panel_CSF/SellingPanel/InactiveFill"]
+mouse_filter = 2
+metadata/unity_id = 5586
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="ButtonsPanel/Panel_CSF/SellingPanel/InactiveFill/InactiveText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Drop here to sell "
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.972549021, 0.941176474, 0.823529422, 1)
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="OpenFill" type="Control" parent="ButtonsPanel/Panel_CSF/SellingPanel"]
+mouse_filter = 2
+metadata/unity_id = 3659
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="BottomLayer" type="Control" parent="ButtonsPanel/Panel_CSF/SellingPanel/OpenFill"]
+mouse_filter = 2
+metadata/unity_id = 2961
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 48.0000019
+offset_right = -1.90734863e-06
+offset_top = 12.000001
+offset_bottom = -12.000001
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="Control" parent="ButtonsPanel/Panel_CSF/SellingPanel/OpenFill/BottomLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("16")
+border = Vector4(4, 32, 180, 32)
+pixels_per_unit = 5.0999999
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Hover" type="Control" parent="ButtonsPanel/Panel_CSF/SellingPanel/OpenFill/BottomLayer"]
+mouse_filter = 2
+metadata/unity_id = 6640
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="ButtonsPanel/Panel_CSF/SellingPanel/OpenFill/BottomLayer/Hover"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("17")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 0.400000006)
+
+[node name="ActiveFill" type="Control" parent="ButtonsPanel/Panel_CSF/SellingPanel/OpenFill"]
+mouse_filter = 2
+metadata/unity_id = 118
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="BottomLayer" type="Control" parent="ButtonsPanel/Panel_CSF/SellingPanel/OpenFill/ActiveFill"]
+mouse_filter = 2
+metadata/unity_id = 2686
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 48.0000019
+offset_right = -1.90734863e-06
+offset_top = 12.000001
+offset_bottom = -12.000001
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="Control" parent="ButtonsPanel/Panel_CSF/SellingPanel/OpenFill/ActiveFill/BottomLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("16")
+border = Vector4(4, 32, 180, 32)
+pixels_per_unit = 5.0999999
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Hover" type="Control" parent="ButtonsPanel/Panel_CSF/SellingPanel/OpenFill/ActiveFill/BottomLayer"]
+mouse_filter = 2
+metadata/unity_id = 7387
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="ButtonsPanel/Panel_CSF/SellingPanel/OpenFill/ActiveFill/BottomLayer/Hover"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("18")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 0.400000006)
+
+[node name="ActiveText" type="Control" parent="ButtonsPanel/Panel_CSF/SellingPanel/OpenFill"]
+mouse_filter = 2
+metadata/unity_id = 1027
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 108
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="ButtonsPanel/Panel_CSF/SellingPanel/OpenFill/ActiveText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "<sprite name=Shard_S>10 "
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.972549021, 0.941176474, 0.823529422, 1)
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="TopLayer" type="Control" parent="ButtonsPanel/Panel_CSF/SellingPanel"]
+mouse_filter = 2
+metadata/unity_id = 1050
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 47.9999695
+offset_right = -3.05175781e-05
+offset_top = 11.9999733
+offset_bottom = -12.0000267
+rotation = 0
+scale = Vector2(1.0002811, 1.0002811)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="Control" parent="ButtonsPanel/Panel_CSF/SellingPanel/TopLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("20")
+border = Vector4(4, 32, 180, 32)
+pixels_per_unit = 5.0999999
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Frame" type="Control" parent="ButtonsPanel/Panel_CSF/SellingPanel"]
+mouse_filter = 2
+metadata/unity_id = 276
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -0.650001526
+offset_right = 84.6500015
+offset_top = -42.9000015
+offset_bottom = 42.9000015
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+clip_contents = true
+
+[node name="UnityImage" type="TextureRect" parent="ButtonsPanel/Panel_CSF/SellingPanel/Frame"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("22")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="CartImage" type="Control" parent="ButtonsPanel/Panel_CSF/SellingPanel/Frame"]
+mouse_filter = 2
+metadata/unity_id = 4108
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 29.650013
+offset_right = 57.650013
+offset_top = -14
+offset_bottom = 14
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="ButtonsPanel/Panel_CSF/SellingPanel/Frame/CartImage"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("23")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="ProceedButton" type="Control" parent="ButtonsPanel"]
+mouse_filter = 2
+metadata/unity_id = 1205
+anchor_left = 1
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -245
+offset_right = 0
+offset_top = -32
+offset_bottom = 32
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(1, 1)
+
+[node name="BuyKeyFragmentButton" type="Control" parent="ButtonsPanel/ProceedButton"]
+mouse_filter = 2
+metadata/unity_id = 2556
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0
+anchor_bottom = 0
+offset_left = -124
+offset_right = 124
+offset_top = -91
+offset_bottom = -37
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="Control" parent="ButtonsPanel/ProceedButton/BuyKeyFragmentButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("13")
+border = Vector4(6, 6, 6, 7)
+pixels_per_unit = 4
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Button" type="Control" parent="ButtonsPanel/ProceedButton/BuyKeyFragmentButton"]
+mouse_filter = 2
+metadata/unity_id = 1664
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="UnityImage" type="Control" parent="ButtonsPanel/ProceedButton/BuyKeyFragmentButton/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("13")
+border = Vector4(6, 6, 6, 7)
+pixels_per_unit = 4
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Icon" type="Control" parent="ButtonsPanel/ProceedButton/BuyKeyFragmentButton"]
+mouse_filter = 2
+metadata/unity_id = 1059
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 12
+offset_right = 40
+offset_top = -14.0001831
+offset_bottom = 13.9998169
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="ButtonsPanel/ProceedButton/BuyKeyFragmentButton/Icon"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("24")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(0.937254965, 0.921568692, 0.82745105, 1)
+
+[node name="Text (TMP)" type="Control" parent="ButtonsPanel/ProceedButton/BuyKeyFragmentButton"]
+mouse_filter = 2
+metadata/unity_id = 6519
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 50
+offset_right = -3.05175781e-05
+offset_top = -37.5
+offset_bottom = 37.5
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="ButtonsPanel/ProceedButton/BuyKeyFragmentButton/Text (TMP)"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "key fragment [<sprite name=Shard_S>999]"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.972549021, 0.941176474, 0.823529422, 1)
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="ShopLeftPanel" type="Control" parent="ButtonsPanel/ProceedButton/BuyKeyFragmentButton"]
+mouse_filter = 2
+metadata/unity_id = 5918
+anchor_left = 1
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 0
+offset_left = -20
+offset_right = 4
+offset_top = -16
+offset_bottom = 8
+rotation = -0.785398128
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="Control" parent="ButtonsPanel/ProceedButton/BuyKeyFragmentButton/ShopLeftPanel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("25")
+border = Vector4(12, 12, 12, 12)
+pixels_per_unit = 3
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Text (TMP)" type="Control" parent="ButtonsPanel/ProceedButton/BuyKeyFragmentButton/ShopLeftPanel"]
+mouse_filter = 2
+metadata/unity_id = 1412
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0.785398128
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="ButtonsPanel/ProceedButton/BuyKeyFragmentButton/ShopLeftPanel/Text (TMP)"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "!"
+theme_override_font_sizes/font_size = 28
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CenterPanel" type="Control" parent="."]
+mouse_filter = 2
+metadata/unity_id = 5532
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = 94
+offset_bottom = 52
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+
+[node name="ItemRelicPanel" type="Control" parent="CenterPanel"]
+mouse_filter = 2
+metadata/unity_id = 7037
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -30
+offset_right = 330
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="ItemsToBuyPanel" type="Control" parent="CenterPanel/ItemRelicPanel"]
+mouse_filter = 2
+metadata/unity_id = 3870
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 24
+offset_right = -4
+offset_top = 12
+offset_bottom = 312
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+
+[node name="ItemHolderPanel" type="Control" parent="CenterPanel/ItemRelicPanel/ItemsToBuyPanel"]
+mouse_filter = 2
+metadata/unity_id = 6473
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = 23.9999971
+offset_bottom = 4.00000286
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="ShopItemView" type="Control" parent="CenterPanel/ItemRelicPanel/ItemsToBuyPanel/ItemHolderPanel"]
+mouse_filter = 2
+metadata/unity_id = 463
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 95.5
+offset_right = 143.5
+offset_top = 24.5
+offset_bottom = 108.5
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+modulate = Color(1, 1, 1, 1.0)
+metadata/offer_slot = 3
+
+[node name="ShopItemView_1" type="Control" parent="CenterPanel/ItemRelicPanel/ItemsToBuyPanel/ItemHolderPanel"]
+mouse_filter = 2
+metadata/unity_id = 5051
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 187.5
+offset_right = 235.5
+offset_top = 24.5
+offset_bottom = 108.5
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+modulate = Color(1, 1, 1, 1.0)
+metadata/offer_slot = 4
+
+[node name="ShopItemView_2" type="Control" parent="CenterPanel/ItemRelicPanel/ItemsToBuyPanel/ItemHolderPanel"]
+mouse_filter = 2
+metadata/unity_id = 5036
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 95.5
+offset_right = 143.5
+offset_top = 156.5
+offset_bottom = 240.5
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+modulate = Color(1, 1, 1, 1.0)
+metadata/offer_slot = 5
+
+[node name="ShopItemView_3" type="Control" parent="CenterPanel/ItemRelicPanel/ItemsToBuyPanel/ItemHolderPanel"]
+mouse_filter = 2
+metadata/unity_id = 7179
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 187.5
+offset_right = 235.5
+offset_top = 156.5
+offset_bottom = 240.5
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+modulate = Color(1, 1, 1, 1.0)
+metadata/offer_slot = 6
+
+[node name="RelicsToBuyPanel" type="Control" parent="CenterPanel/ItemRelicPanel"]
+mouse_filter = 2
+metadata/unity_id = 7696
+anchor_left = 0
+anchor_right = 1
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 24
+offset_right = -4
+offset_top = -340
+offset_bottom = -40
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+
+[node name="ItemHolderPanel" type="Control" parent="CenterPanel/ItemRelicPanel/RelicsToBuyPanel"]
+mouse_filter = 2
+metadata/unity_id = 4927
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 0
+offset_top = 60
+offset_bottom = 84
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="ShopRelicView" type="Control" parent="CenterPanel/ItemRelicPanel/RelicsToBuyPanel/ItemHolderPanel"]
+mouse_filter = 2
+metadata/unity_id = 6761
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 16
+offset_right = 116
+offset_top = 0
+offset_bottom = 84
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+modulate = Color(1, 1, 1, 1.0)
+metadata/offer_slot = 7
+
+[node name="ShopRelicView_1" type="Control" parent="CenterPanel/ItemRelicPanel/RelicsToBuyPanel/ItemHolderPanel"]
+mouse_filter = 2
+metadata/unity_id = 5050
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 116
+offset_right = 216
+offset_top = 0
+offset_bottom = 84
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+modulate = Color(1, 1, 1, 1.0)
+metadata/offer_slot = 8
+
+[node name="ShopRelicView_2" type="Control" parent="CenterPanel/ItemRelicPanel/RelicsToBuyPanel/ItemHolderPanel"]
+mouse_filter = 2
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 216
+offset_right = 316
+offset_top = 0
+offset_bottom = 84
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+modulate = Color(1, 1, 1, 1.0)
+metadata/offer_slot = 9
+
+[node name="HeroesPanel" type="Control" parent="CenterPanel"]
+mouse_filter = 2
+metadata/unity_id = 1774
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 327
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="HeroHolderPanel" type="Control" parent="CenterPanel/HeroesPanel"]
+mouse_filter = 2
+metadata/unity_id = 4637
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 28
+offset_right = -16
+offset_top = 80
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+
+[node name="HeroCardShopItem" type="Control" parent="CenterPanel/HeroesPanel/HeroHolderPanel"]
+mouse_filter = 2
+metadata/unity_id = 6612
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 323
+offset_top = -11
+offset_bottom = 553
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+metadata/offer_slot = 0
+
+[node name="Background" type="Control" parent="CenterPanel/HeroesPanel/HeroHolderPanel/HeroCardShopItem"]
+mouse_filter = 2
+metadata/unity_id = 1177
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -138.050003
+offset_right = 138.050003
+offset_top = -285
+offset_bottom = 239
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+
+[node name="UnityImage" type="TextureRect" parent="CenterPanel/HeroesPanel/HeroHolderPanel/HeroCardShopItem/Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("37")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 0.784313738)
+
+[node name="HeroCardShopItem_1" type="Control" parent="CenterPanel/HeroesPanel/HeroHolderPanel"]
+mouse_filter = 2
+metadata/unity_id = 2907
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 323
+offset_right = 646
+offset_top = -11
+offset_bottom = 553
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+metadata/offer_slot = 1
+
+[node name="Background" type="Control" parent="CenterPanel/HeroesPanel/HeroHolderPanel/HeroCardShopItem_1"]
+mouse_filter = 2
+metadata/unity_id = 4589
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -138.050003
+offset_right = 138.050003
+offset_top = -285
+offset_bottom = 239
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+
+[node name="UnityImage" type="TextureRect" parent="CenterPanel/HeroesPanel/HeroHolderPanel/HeroCardShopItem_1/Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("37")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 0.784313738)
+
+[node name="HeroCardShopItem_2" type="Control" parent="CenterPanel/HeroesPanel/HeroHolderPanel"]
+mouse_filter = 2
+metadata/unity_id = 7598
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 646
+offset_right = 969
+offset_top = -11
+offset_bottom = 553
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+metadata/offer_slot = 2
+
+[node name="Background" type="Control" parent="CenterPanel/HeroesPanel/HeroHolderPanel/HeroCardShopItem_2"]
+mouse_filter = 2
+metadata/unity_id = 289
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -138.050003
+offset_right = 138.050003
+offset_top = -285
+offset_bottom = 239
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+
+[node name="UnityImage" type="TextureRect" parent="CenterPanel/HeroesPanel/HeroHolderPanel/HeroCardShopItem_2/Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("37")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 0.784313738)

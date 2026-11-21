@@ -1,0 +1,107 @@
+{
+  "score_per_difficulty": 2,
+  "contracts": [
+    {
+      "name": "UI.Difficulty.Base",
+      "description": "UI.Difficulty.Base.Description",
+      "stage_index": 1,
+      "icon": "res://sprites/sharedassets2_214.png",
+      "modifiers": {}
+    },
+    {
+      "name": "UI.Difficulty.C",
+      "description": "UI.Difficulty.C.Description",
+      "stage_index": 1,
+      "icon": "res://sprites/sharedassets2_193.png",
+      "modifiers": {
+        "HeroesStartBattlesDamagedEntry": {
+          "HealthPercentage": {
+            "RawValue": 58982
+          }
+        }
+      }
+    },
+    {
+      "name": "UI.Difficulty.B",
+      "description": "UI.Difficulty.B.Description",
+      "stage_index": 2,
+      "icon": "res://sprites/sharedassets2_213.png",
+      "modifiers": {}
+    },
+    {
+      "name": "UI.Difficulty.A",
+      "description": "UI.Difficulty.A.Description",
+      "stage_index": 2,
+      "icon": "res://sprites/sharedassets2_203.png",
+      "modifiers": {
+        "SurvivingHeroRewardDeltaEntry": {
+          "RewardDelta": -1
+        }
+      }
+    },
+    {
+      "name": "UI.Difficulty.S",
+      "description": "UI.Difficulty.S.Description",
+      "stage_index": 2,
+      "icon": "res://sprites/sharedassets2_105.png",
+      "modifiers": {
+        "HeroItemSlotsPerRankEntry": {}
+      }
+    },
+    {
+      "name": "UI.Difficulty.SS",
+      "description": "UI.Difficulty.SS.Description",
+      "stage_index": 3,
+      "icon": "res://sprites/sharedassets2_162.png",
+      "modifiers": {}
+    },
+    {
+      "name": "UI.Difficulty.SSS",
+      "description": "UI.Difficulty.SSS.Description",
+      "stage_index": 3,
+      "icon": "res://sprites/sharedassets2_99.png",
+      "modifiers": {
+        "ActBossRelicEntry": {
+          "_stageRelicPairs": [
+            {
+              "StageId": 30601,
+              "RelicId": 7000
+            },
+            {
+              "StageId": 30602,
+              "RelicId": 7001
+            },
+            {
+              "StageId": 301301,
+              "RelicId": 7002
+            },
+            {
+              "StageId": 301303,
+              "RelicId": 7003
+            },
+            {
+              "StageId": 301302,
+              "RelicId": 7004
+            }
+          ],
+          "_fallbackRelicId": 7000
+        }
+      }
+    }
+  ],
+  "red_rift": {
+    "ChallengeShopTaxAct1StartValue": 10,
+    "ChallengeShopTaxAct1GrowthPerShop": 2,
+    "ChallengeShopTaxAct2StartValue": 15,
+    "ChallengeShopTaxAct2GrowthPerShop": 3,
+    "ChallengeMaxHeroDeaths": 10,
+    "ChallengeWinsPerClass": 3,
+    "_anchorItemId": 501,
+    "icon": "res://sprites/sharedassets2_127.png",
+    "anchor_icon": "res://sprites/sharedassets1_4597.png"
+  },
+  "menu_audio": [
+    "event:/MUSIC/MENUS/Main_Menu/mus_main_menu",
+    "event:/SFX/AMB/Main Menu/main_menu_loop"
+  ]
+}

@@ -1,0 +1,2555 @@
+[gd_scene format=3]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2869.obj" id="1"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_929.tres" id="2"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2788.obj" id="3"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_933.tres" id="4"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2783.obj" id="5"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2928.obj" id="6"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2955.obj" id="7"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2918.obj" id="8"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2829.obj" id="9"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2957.obj" id="10"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2934.obj" id="11"]
+
+[node name="Selkhera" type="Node3D"]
+
+[node name="Selkhera" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1.05999994, 1.05999994, 1.05999994)
+metadata/unity_id = 14867
+metadata/unity_name = "Selkhera"
+
+[node name="Selkhera_Model" type="Node3D" parent="Selkhera"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(0.950000048, 0.950000048, 0.950000048)
+metadata/unity_id = 16995
+metadata/unity_name = "Selkhera_Model"
+
+[node name="Armature" type="Node3D" parent="Selkhera/Selkhera_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16071
+metadata/unity_name = "Armature"
+
+[node name="hips" type="Node3D" parent="Selkhera/Selkhera_Model/Armature"]
+position = Vector3(-0, 1.77618873, -0.0902044252)
+quaternion = Quaternion(-1.11022302e-16, 2.77555756e-17, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18096
+metadata/unity_name = "hips"
+
+[node name="spine" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips"]
+position = Vector3(-5.42101074e-22, 0.180999994, -1.7763568e-17)
+quaternion = Quaternion(-1.11022302e-16, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9798
+metadata/unity_name = "spine"
+
+[node name="chest" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine"]
+position = Vector3(2.71050537e-22, 0.216351807, 9.04974804e-05)
+quaternion = Quaternion(-5.55111512e-17, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20390
+metadata/unity_name = "chest"
+
+[node name="neck" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest"]
+position = Vector3(7.35899511e-17, 0.374643862, 0.155182555)
+quaternion = Quaternion(-0.00758117903, 0, -0, 0.999971271)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15084
+metadata/unity_name = "neck"
+
+[node name="head" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck"]
+position = Vector3(-1.43158732e-16, 0.195387766, -5.50670624e-16)
+quaternion = Quaternion(0.00758117903, -0, -0, 0.999971271)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25024
+metadata/unity_name = "head"
+
+[node name="head_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(3.34747425e-20, 0.269999981, 3.5527136e-17)
+quaternion = Quaternion(-0.707106829, 1.79231642e-17, 4.21175784e-17, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26038
+metadata/unity_name = "head_end"
+
+[node name="jaw" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(-8.67890306e-18, -0.0411630049, -0.0396059304)
+quaternion = Quaternion(-0.88625294, 1.73849241e-33, -2.77555756e-17, 0.463201642)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23406
+metadata/unity_name = "jaw"
+
+[node name="jaw_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/jaw"]
+position = Vector3(-4.62592168e-16, 0.127185717, 5.68434176e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23937
+metadata/unity_name = "jaw_end"
+
+[node name="snake_root" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(6.95690527e-17, 1.23175994e-07, 8.00922479e-13)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25671
+metadata/unity_name = "snake_root"
+
+[node name="earrings_L_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root"]
+position = Vector3(-0.114979863, 0.0334576406, 0.0286759958)
+quaternion = Quaternion(-0, -0, 1, -6.12323426e-17)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10036
+metadata/unity_name = "earrings_L_01"
+
+[node name="earrings_L_02_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/earrings_L_01"]
+position = Vector3(5.3290704e-17, 0.183265075, 8.881784e-18)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15386
+metadata/unity_name = "earrings_L_02_end"
+
+[node name="earrings_R_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root"]
+position = Vector3(0.114978872, 0.0334576406, 0.0286759958)
+quaternion = Quaternion(-0, -0, 1, -6.12323426e-17)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26249
+metadata/unity_name = "earrings_R_01"
+
+[node name="earrings_R_02_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/earrings_R_01"]
+position = Vector3(-1.7763568e-17, 0.183265075, 8.881784e-18)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8962
+metadata/unity_name = "earrings_R_02_end"
+
+[node name="snakeA_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root"]
+position = Vector3(-9.91821253e-07, 0.21524474, 0.0351561755)
+quaternion = Quaternion(0.60876143, -0, -0, 0.793353319)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9844
+metadata/unity_name = "snakeA_01"
+
+[node name="snakeA_02" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeA_01"]
+position = Vector3(1.35525269e-22, 0.0876441747, -2.2737367e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10090
+metadata/unity_name = "snakeA_02"
+
+[node name="snakeA_03" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeA_01/snakeA_02"]
+position = Vector3(-0, 0.0876441672, 3.41060506e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21809
+metadata/unity_name = "snakeA_03"
+
+[node name="snakeA_04" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeA_01/snakeA_02/snakeA_03"]
+position = Vector3(-0, 0.0876444578, -1.13686835e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8247
+metadata/unity_name = "snakeA_04"
+
+[node name="snakeA_05" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeA_01/snakeA_02/snakeA_03/snakeA_04"]
+position = Vector3(-0, 0.0876442343, 1.13686835e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23526
+metadata/unity_name = "snakeA_05"
+
+[node name="snakeA_06" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeA_01/snakeA_02/snakeA_03/snakeA_04/snakeA_05"]
+position = Vector3(-0, 0.175288275, 1.13686835e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15808
+metadata/unity_name = "snakeA_06"
+
+[node name="snakeA_07" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeA_01/snakeA_02/snakeA_03/snakeA_04/snakeA_05/snakeA_06"]
+position = Vector3(-0, 0.175288573, 1.70530253e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23121
+metadata/unity_name = "snakeA_07"
+
+[node name="snakeA_08" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeA_01/snakeA_02/snakeA_03/snakeA_04/snakeA_05/snakeA_06/snakeA_07"]
+position = Vector3(-0, 0.175288469, -1.13686835e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18953
+metadata/unity_name = "snakeA_08"
+
+[node name="snakeA_09" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeA_01/snakeA_02/snakeA_03/snakeA_04/snakeA_05/snakeA_06/snakeA_07/snakeA_08"]
+position = Vector3(-0, 0.175288543, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7785
+metadata/unity_name = "snakeA_09"
+
+[node name="snakeA_10" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeA_01/snakeA_02/snakeA_03/snakeA_04/snakeA_05/snakeA_06/snakeA_07/snakeA_08/snakeA_09"]
+position = Vector3(-0, 0.175288543, 2.2737367e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8285
+metadata/unity_name = "snakeA_10"
+
+[node name="snakeA_11" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeA_01/snakeA_02/snakeA_03/snakeA_04/snakeA_05/snakeA_06/snakeA_07/snakeA_08/snakeA_09/snakeA_10"]
+position = Vector3(-0, 0.175288618, 1.13686835e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24493
+metadata/unity_name = "snakeA_11"
+
+[node name="snakeA_12" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeA_01/snakeA_02/snakeA_03/snakeA_04/snakeA_05/snakeA_06/snakeA_07/snakeA_08/snakeA_09/snakeA_10/snakeA_11"]
+position = Vector3(-0, 0.175288469, -5.11590748e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24802
+metadata/unity_name = "snakeA_12"
+
+[node name="snakeA_13" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeA_01/snakeA_02/snakeA_03/snakeA_04/snakeA_05/snakeA_06/snakeA_07/snakeA_08/snakeA_09/snakeA_10/snakeA_11/snakeA_12"]
+position = Vector3(-0, 0.0876443088, 3.41060506e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25196
+metadata/unity_name = "snakeA_13"
+
+[node name="snakeA_14_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeA_01/snakeA_02/snakeA_03/snakeA_04/snakeA_05/snakeA_06/snakeA_07/snakeA_08/snakeA_09/snakeA_10/snakeA_11/snakeA_12/snakeA_13"]
+position = Vector3(-0, 0.201311484, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14881
+metadata/unity_name = "snakeA_14_end"
+
+[node name="snakeA_mouth" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeA_01/snakeA_02/snakeA_03/snakeA_04/snakeA_05/snakeA_06/snakeA_07/snakeA_08/snakeA_09/snakeA_10/snakeA_11/snakeA_12/snakeA_13"]
+position = Vector3(-0, 0.0433065072, 0.0185530167)
+quaternion = Quaternion(-0.300705791, 0, -0, 0.953716934)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25811
+metadata/unity_name = "snakeA_mouth"
+
+[node name="snakeA_mouth_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeA_01/snakeA_02/snakeA_03/snakeA_04/snakeA_05/snakeA_06/snakeA_07/snakeA_08/snakeA_09/snakeA_10/snakeA_11/snakeA_12/snakeA_13/snakeA_mouth"]
+position = Vector3(-1.35525269e-22, 0.159999996, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24453
+metadata/unity_name = "snakeA_mouth_end"
+
+[node name="snakeB_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root"]
+position = Vector3(-0.11967098, 0.150344849, 0.0494661368)
+quaternion = Quaternion(0.669810474, -0.0962340087, 0.0881822258, 0.730969906)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7376
+metadata/unity_name = "snakeB_01"
+
+[node name="snakeB_02" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeB_01"]
+position = Vector3(-5.3290704e-17, 0.0733108073, 2.84217077e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5326
+metadata/unity_name = "snakeB_02"
+
+[node name="snakeB_03" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeB_01/snakeB_02"]
+position = Vector3(3.5527136e-17, 0.0726522729, -3.41060506e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11281
+metadata/unity_name = "snakeB_03"
+
+[node name="snakeB_04" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeB_01/snakeB_02/snakeB_03"]
+position = Vector3(-1.42108544e-16, 0.073969312, 1.70530253e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24829
+metadata/unity_name = "snakeB_04"
+
+[node name="snakeB_05" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeB_01/snakeB_02/snakeB_03/snakeB_04"]
+position = Vector3(-1.7763568e-17, 0.0733106956, 2.2737367e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7846
+metadata/unity_name = "snakeB_05"
+
+[node name="snakeB_06" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeB_01/snakeB_02/snakeB_03/snakeB_04/snakeB_05"]
+position = Vector3(1.06581408e-16, 0.146621376, -1.13686835e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5756
+metadata/unity_name = "snakeB_06"
+
+[node name="snakeB_07" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeB_01/snakeB_02/snakeB_03/snakeB_04/snakeB_05/snakeB_06"]
+position = Vector3(-1.59872109e-16, 0.14662163, 1.70530253e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24187
+metadata/unity_name = "snakeB_07"
+
+[node name="snakeB_08" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeB_01/snakeB_02/snakeB_03/snakeB_04/snakeB_05/snakeB_06/snakeB_07"]
+position = Vector3(-3.37507795e-16, 0.14662151, -2.84217077e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8173
+metadata/unity_name = "snakeB_08"
+
+[node name="snakeB_09" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeB_01/snakeB_02/snakeB_03/snakeB_04/snakeB_05/snakeB_06/snakeB_07/snakeB_08"]
+position = Vector3(-5.3290704e-17, 0.146621481, 5.11590748e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21447
+metadata/unity_name = "snakeB_09"
+
+[node name="snakeB_10" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeB_01/snakeB_02/snakeB_03/snakeB_04/snakeB_05/snakeB_06/snakeB_07/snakeB_08/snakeB_09"]
+position = Vector3(2.5200751e-07, 0.144922689, 9.92042715e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15121
+metadata/unity_name = "snakeB_10"
+
+[node name="snakeB_11" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeB_01/snakeB_02/snakeB_03/snakeB_04/snakeB_05/snakeB_06/snakeB_07/snakeB_08/snakeB_09/snakeB_10"]
+position = Vector3(7.47726745e-07, 0.151073039, -3.1280922e-06)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10658
+metadata/unity_name = "snakeB_11"
+
+[node name="snakeB_12" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeB_01/snakeB_02/snakeB_03/snakeB_04/snakeB_05/snakeB_06/snakeB_07/snakeB_08/snakeB_09/snakeB_10/snakeB_11"]
+position = Vector3(-2.72265083e-06, 0.144380733, 3.62492119e-06)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26821
+metadata/unity_name = "snakeB_12"
+
+[node name="snakeB_13" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeB_01/snakeB_02/snakeB_03/snakeB_04/snakeB_05/snakeB_06/snakeB_07/snakeB_08/snakeB_09/snakeB_10/snakeB_11/snakeB_12"]
+position = Vector3(5.3290704e-17, 0.0717067942, -1.0510675e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13657
+metadata/unity_name = "snakeB_13"
+
+[node name="snakeB_14_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeB_01/snakeB_02/snakeB_03/snakeB_04/snakeB_05/snakeB_06/snakeB_07/snakeB_08/snakeB_09/snakeB_10/snakeB_11/snakeB_12/snakeB_13"]
+position = Vector3(-2.30926381e-16, 0.16948089, -5.68434176e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19838
+metadata/unity_name = "snakeB_14_end"
+
+[node name="snakeB_mouth_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeB_01/snakeB_02/snakeB_03/snakeB_04/snakeB_05/snakeB_06/snakeB_07/snakeB_08/snakeB_09/snakeB_10/snakeB_11/snakeB_12/snakeB_13"]
+position = Vector3(1.72291641e-06, 0.0378561541, 0.0163486134)
+quaternion = Quaternion(-0.258819073, 0, -0, 0.965925872)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11899
+metadata/unity_name = "snakeB_mouth_01"
+
+[node name="snakeB_mouth_02_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeB_01/snakeB_02/snakeB_03/snakeB_04/snakeB_05/snakeB_06/snakeB_07/snakeB_08/snakeB_09/snakeB_10/snakeB_11/snakeB_12/snakeB_13/snakeB_mouth_01"]
+position = Vector3(-1.06581408e-16, 0.129999995, -1.42108539e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11982
+metadata/unity_name = "snakeB_mouth_02_end"
+
+[node name="snakeC_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root"]
+position = Vector3(0.119668998, 0.150344849, 0.0494661368)
+quaternion = Quaternion(0.669810474, 0.0962340087, -0.0881822258, 0.730969906)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11161
+metadata/unity_name = "snakeC_01"
+
+[node name="snakeC_02" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeC_01"]
+position = Vector3(7.1054272e-17, 0.0733108073, 4.54747341e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16021
+metadata/unity_name = "snakeC_02"
+
+[node name="snakeC_03" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeC_01/snakeC_02"]
+position = Vector3(1.06581408e-16, 0.0726522729, -5.11590748e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23911
+metadata/unity_name = "snakeC_03"
+
+[node name="snakeC_04" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeC_01/snakeC_02/snakeC_03"]
+position = Vector3(-1.7763568e-17, 0.073969312, 2.84217077e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20164
+metadata/unity_name = "snakeC_04"
+
+[node name="snakeC_05" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeC_01/snakeC_02/snakeC_03/snakeC_04"]
+position = Vector3(1.06581408e-16, 0.0733106956, 1.13686835e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9242
+metadata/unity_name = "snakeC_05"
+
+[node name="snakeC_06" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeC_01/snakeC_02/snakeC_03/snakeC_04/snakeC_05"]
+position = Vector3(1.06581408e-16, 0.146621376, -2.84217077e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25359
+metadata/unity_name = "snakeC_06"
+
+[node name="snakeC_07" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeC_01/snakeC_02/snakeC_03/snakeC_04/snakeC_05/snakeC_06"]
+position = Vector3(-1.95399251e-16, 0.14662163, -5.68434176e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23957
+metadata/unity_name = "snakeC_07"
+
+[node name="snakeC_08" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeC_01/snakeC_02/snakeC_03/snakeC_04/snakeC_05/snakeC_06/snakeC_07"]
+position = Vector3(1.95399251e-16, 0.14662151, 3.41060506e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9893
+metadata/unity_name = "snakeC_08"
+
+[node name="snakeC_09" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeC_01/snakeC_02/snakeC_03/snakeC_04/snakeC_05/snakeC_06/snakeC_07/snakeC_08"]
+position = Vector3(-1.7763568e-17, 0.146621481, -1.70530253e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23220
+metadata/unity_name = "snakeC_09"
+
+[node name="snakeC_10" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeC_01/snakeC_02/snakeC_03/snakeC_04/snakeC_05/snakeC_06/snakeC_07/snakeC_08/snakeC_09"]
+position = Vector3(2.5200751e-07, 0.144922689, 9.92042715e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23655
+metadata/unity_name = "snakeC_10"
+
+[node name="snakeC_11" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeC_01/snakeC_02/snakeC_03/snakeC_04/snakeC_05/snakeC_06/snakeC_07/snakeC_08/snakeC_09/snakeC_10"]
+position = Vector3(7.47726745e-07, 0.151073039, -3.1280922e-06)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4838
+metadata/unity_name = "snakeC_11"
+
+[node name="snakeC_12" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeC_01/snakeC_02/snakeC_03/snakeC_04/snakeC_05/snakeC_06/snakeC_07/snakeC_08/snakeC_09/snakeC_10/snakeC_11"]
+position = Vector3(-2.72265083e-06, 0.144380733, 3.62492119e-06)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21643
+metadata/unity_name = "snakeC_12"
+
+[node name="snakeC_13" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeC_01/snakeC_02/snakeC_03/snakeC_04/snakeC_05/snakeC_06/snakeC_07/snakeC_08/snakeC_09/snakeC_10/snakeC_11/snakeC_12"]
+position = Vector3(-1.24344979e-16, 0.0717067942, -1.0510675e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25336
+metadata/unity_name = "snakeC_13"
+
+[node name="snakeC_14_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeC_01/snakeC_02/snakeC_03/snakeC_04/snakeC_05/snakeC_06/snakeC_07/snakeC_08/snakeC_09/snakeC_10/snakeC_11/snakeC_12/snakeC_13"]
+position = Vector3(1.7763568e-17, 0.16948089, -2.2737367e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11547
+metadata/unity_name = "snakeC_14_end"
+
+[node name="snakeC_mouth_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeC_01/snakeC_02/snakeC_03/snakeC_04/snakeC_05/snakeC_06/snakeC_07/snakeC_08/snakeC_09/snakeC_10/snakeC_11/snakeC_12/snakeC_13"]
+position = Vector3(1.72291641e-06, 0.0378561541, 0.0163486134)
+quaternion = Quaternion(-0.300705791, 0, -0, 0.953716934)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6648
+metadata/unity_name = "snakeC_mouth_01"
+
+[node name="snakeC_mouth_02_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeC_01/snakeC_02/snakeC_03/snakeC_04/snakeC_05/snakeC_06/snakeC_07/snakeC_08/snakeC_09/snakeC_10/snakeC_11/snakeC_12/snakeC_13/snakeC_mouth_01"]
+position = Vector3(-9.59232626e-16, 0.129999995, 1.42108539e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5893
+metadata/unity_name = "snakeC_mouth_02_end"
+
+[node name="snakeD_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root"]
+position = Vector3(-0.141461, 0.0471347049, 0.0269462038)
+quaternion = Quaternion(0.788706958, -0.0877947882, 0.0979262516, 0.600536287)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12518
+metadata/unity_name = "snakeD_01"
+
+[node name="snakeD_02" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeD_01"]
+position = Vector3(3.5527136e-17, 0.043600101, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18109
+metadata/unity_name = "snakeD_02"
+
+[node name="snakeD_03" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeD_01/snakeD_02"]
+position = Vector3(1.42108544e-16, 0.0425973646, 1.13686835e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8390
+metadata/unity_name = "snakeD_03"
+
+[node name="snakeD_04" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeD_01/snakeD_02/snakeD_03"]
+position = Vector3(5.3290702e-16, 0.0859980583, 4.54747341e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14364
+metadata/unity_name = "snakeD_04"
+
+[node name="snakeD_05" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeD_01/snakeD_02/snakeD_03/snakeD_04"]
+position = Vector3(-1.06581408e-16, 0.0859980285, -1.70530253e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11299
+metadata/unity_name = "snakeD_05"
+
+[node name="snakeD_06" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeD_01/snakeD_02/snakeD_03/snakeD_04/snakeD_05"]
+position = Vector3(-2.13162816e-16, 0.0859981328, -2.2737367e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8207
+metadata/unity_name = "snakeD_06"
+
+[node name="snakeD_07" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeD_01/snakeD_02/snakeD_03/snakeD_04/snakeD_05/snakeD_06"]
+position = Vector3(2.13162816e-16, 0.0859981403, 3.97903934e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24357
+metadata/unity_name = "snakeD_07"
+
+[node name="snakeD_08" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeD_01/snakeD_02/snakeD_03/snakeD_04/snakeD_05/snakeD_06/snakeD_07"]
+position = Vector3(2.48689959e-16, 0.0859979913, 1.13686835e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21515
+metadata/unity_name = "snakeD_08"
+
+[node name="snakeD_09" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeD_01/snakeD_02/snakeD_03/snakeD_04/snakeD_05/snakeD_06/snakeD_07/snakeD_08"]
+position = Vector3(-3.83431939e-07, 0.0859981403, 1.62820697e-06)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10684
+metadata/unity_name = "snakeD_09"
+
+[node name="snakeD_10" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeD_01/snakeD_02/snakeD_03/snakeD_04/snakeD_05/snakeD_06/snakeD_07/snakeD_08/snakeD_09"]
+position = Vector3(3.83431939e-07, 0.0859981552, -1.62820697e-06)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5598
+metadata/unity_name = "snakeD_10"
+
+[node name="snakeD_11" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeD_01/snakeD_02/snakeD_03/snakeD_04/snakeD_05/snakeD_06/snakeD_07/snakeD_08/snakeD_09/snakeD_10"]
+position = Vector3(3.90798503e-16, 0.0859980583, 5.68434176e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25162
+metadata/unity_name = "snakeD_11"
+
+[node name="snakeD_12" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeD_01/snakeD_02/snakeD_03/snakeD_04/snakeD_05/snakeD_06/snakeD_07/snakeD_08/snakeD_09/snakeD_10/snakeD_11"]
+position = Vector3(2.13162816e-16, 0.0426603891, -3.41060506e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19420
+metadata/unity_name = "snakeD_12"
+
+[node name="snakeD_13_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeD_01/snakeD_02/snakeD_03/snakeD_04/snakeD_05/snakeD_06/snakeD_07/snakeD_08/snakeD_09/snakeD_10/snakeD_11/snakeD_12"]
+position = Vector3(-2.13162816e-16, 0.0969527215, 1.13686835e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12443
+metadata/unity_name = "snakeD_13_end"
+
+[node name="snakeD_mouth_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeD_01/snakeD_02/snakeD_03/snakeD_04/snakeD_05/snakeD_06/snakeD_07/snakeD_08/snakeD_09/snakeD_10/snakeD_11/snakeD_12"]
+position = Vector3(-5.3290702e-16, 0.021341553, 0.00549999997)
+quaternion = Quaternion(-0.306526065, 1.08587754e-17, -1.10827908e-17, 0.951862276)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8010
+metadata/unity_name = "snakeD_mouth_01"
+
+[node name="snakeD_mouth_02_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeD_01/snakeD_02/snakeD_03/snakeD_04/snakeD_05/snakeD_06/snakeD_07/snakeD_08/snakeD_09/snakeD_10/snakeD_11/snakeD_12/snakeD_mouth_01"]
+position = Vector3(-2.13162816e-16, 0.072290726, -2.55795374e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21030
+metadata/unity_name = "snakeD_mouth_02_end"
+
+[node name="snakeE_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root"]
+position = Vector3(0.141459018, 0.0471347049, 0.0269462038)
+quaternion = Quaternion(0.786566079, 0.0794593096, -0.103553392, 0.603553414)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21872
+metadata/unity_name = "snakeE_01"
+
+[node name="snakeE_02" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeE_01"]
+position = Vector3(-1.06581408e-16, 0.043600101, 3.41060506e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5078
+metadata/unity_name = "snakeE_02"
+
+[node name="snakeE_03" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeE_01/snakeE_02"]
+position = Vector3(1.77635673e-16, 0.0425973646, -5.68434176e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16960
+metadata/unity_name = "snakeE_03"
+
+[node name="snakeE_04" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeE_01/snakeE_02/snakeE_03"]
+position = Vector3(3.19744217e-16, 0.0859980583, 2.84217077e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5250
+metadata/unity_name = "snakeE_04"
+
+[node name="snakeE_05" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeE_01/snakeE_02/snakeE_03/snakeE_04"]
+position = Vector3(-1.95399251e-16, 0.0859980285, -5.11590748e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5817
+metadata/unity_name = "snakeE_05"
+
+[node name="snakeE_06" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeE_01/snakeE_02/snakeE_03/snakeE_04/snakeE_05"]
+position = Vector3(-1.95399251e-16, 0.0859981328, 3.41060506e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12228
+metadata/unity_name = "snakeE_06"
+
+[node name="snakeE_07" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeE_01/snakeE_02/snakeE_03/snakeE_04/snakeE_05/snakeE_06"]
+position = Vector3(3.37507795e-16, 0.0859981403, 2.84217077e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19118
+metadata/unity_name = "snakeE_07"
+
+[node name="snakeE_08" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeE_01/snakeE_02/snakeE_03/snakeE_04/snakeE_05/snakeE_06/snakeE_07"]
+position = Vector3(1.59872109e-16, 0.0859979913, -2.2737367e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15111
+metadata/unity_name = "snakeE_08"
+
+[node name="snakeE_09" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeE_01/snakeE_02/snakeE_03/snakeE_04/snakeE_05/snakeE_06/snakeE_07/snakeE_08"]
+position = Vector3(-3.83431939e-07, 0.0859981403, 1.62820697e-06)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9317
+metadata/unity_name = "snakeE_09"
+
+[node name="snakeE_10" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeE_01/snakeE_02/snakeE_03/snakeE_04/snakeE_05/snakeE_06/snakeE_07/snakeE_08/snakeE_09"]
+position = Vector3(3.83431939e-07, 0.0859981552, -1.62820697e-06)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22544
+metadata/unity_name = "snakeE_10"
+
+[node name="snakeE_11" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeE_01/snakeE_02/snakeE_03/snakeE_04/snakeE_05/snakeE_06/snakeE_07/snakeE_08/snakeE_09/snakeE_10"]
+position = Vector3(3.01980666e-16, 0.0859980583, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25249
+metadata/unity_name = "snakeE_11"
+
+[node name="snakeE_12" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeE_01/snakeE_02/snakeE_03/snakeE_04/snakeE_05/snakeE_06/snakeE_07/snakeE_08/snakeE_09/snakeE_10/snakeE_11"]
+position = Vector3(-3.5527136e-17, 0.0426603891, -1.70530253e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9603
+metadata/unity_name = "snakeE_12"
+
+[node name="snakeE_13_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeE_01/snakeE_02/snakeE_03/snakeE_04/snakeE_05/snakeE_06/snakeE_07/snakeE_08/snakeE_09/snakeE_10/snakeE_11/snakeE_12"]
+position = Vector3(1.06581408e-16, 0.0969527215, 1.13686835e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25946
+metadata/unity_name = "snakeE_13_end"
+
+[node name="snakeE_mouth_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeE_01/snakeE_02/snakeE_03/snakeE_04/snakeE_05/snakeE_06/snakeE_07/snakeE_08/snakeE_09/snakeE_10/snakeE_11/snakeE_12"]
+position = Vector3(-4.26325632e-16, 0.021341553, 0.00549999997)
+quaternion = Quaternion(-0.306526065, 0, -0, 0.951862276)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17234
+metadata/unity_name = "snakeE_mouth_01"
+
+[node name="snakeE_mouth_02_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/snake_root/snakeE_01/snakeE_02/snakeE_03/snakeE_04/snakeE_05/snakeE_06/snakeE_07/snakeE_08/snakeE_09/snakeE_10/snakeE_11/snakeE_12/snakeE_mouth_01"]
+position = Vector3(-3.5527136e-17, 0.072290726, -2.2737367e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26769
+metadata/unity_name = "snakeE_mouth_02_end"
+
+[node name="VFX_Selkhera_SkillAttack_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(0, 0, -0.372000009)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20279
+metadata/unity_name = "VFX_Selkhera_SkillAttack_01"
+
+[node name="root" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/VFX_Selkhera_SkillAttack_01"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17889
+metadata/unity_name = "root"
+
+[node name="Glow_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/VFX_Selkhera_SkillAttack_01/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, 1.49011612e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23021
+metadata/unity_name = "Glow_01"
+
+[node name="Glow_02" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/VFX_Selkhera_SkillAttack_01/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, 1.49011612e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10988
+metadata/unity_name = "Glow_02"
+
+[node name="Flare_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/VFX_Selkhera_SkillAttack_01/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, 1.49011612e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16997
+metadata/unity_name = "Flare_01"
+
+[node name="Line_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/VFX_Selkhera_SkillAttack_01/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13771
+metadata/unity_name = "Line_01"
+
+[node name="VFX_Selkhera_SkillAttack_02" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(-0, -0, -0.372000009)
+quaternion = Quaternion(-0.707106829, -0, 0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11636
+metadata/unity_name = "VFX_Selkhera_SkillAttack_02"
+
+[node name="root" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/VFX_Selkhera_SkillAttack_02"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(1.78813806e-07, 8.18241048e-08, 4.46163604e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10037
+metadata/unity_name = "root"
+
+[node name="Glow_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/VFX_Selkhera_SkillAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14368
+metadata/unity_name = "Glow_01"
+
+[node name="Glow_02" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/VFX_Selkhera_SkillAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27207
+metadata/unity_name = "Glow_02"
+
+[node name="Glow_03" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/VFX_Selkhera_SkillAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12724
+metadata/unity_name = "Glow_03"
+
+[node name="Gradient_02" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/VFX_Selkhera_SkillAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10447
+metadata/unity_name = "Gradient_02"
+
+[node name="Gradient_03" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/VFX_Selkhera_SkillAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6771
+metadata/unity_name = "Gradient_03"
+visible = false
+process_mode = 4
+
+[node name="Trails_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/VFX_Selkhera_SkillAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18848
+metadata/unity_name = "Trails_01"
+
+[node name="Rainbow_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/VFX_Selkhera_SkillAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6238
+metadata/unity_name = "Rainbow_01"
+
+[node name="Noise_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/VFX_Selkhera_SkillAttack_02/root"]
+position = Vector3(0, -0.200000003, 0)
+quaternion = Quaternion(0.707106829, 0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5433
+metadata/unity_name = "Noise_01"
+
+[node name="HolySkybeam_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/VFX_Selkhera_SkillAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25224
+metadata/unity_name = "HolySkybeam_01"
+
+[node name="Flare_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/VFX_Selkhera_SkillAttack_02/root"]
+position = Vector3(0, -0, -0)
+quaternion = Quaternion(0.707106709, -1.40114821e-07, 1.03359561e-07, 0.707106948)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17488
+metadata/unity_name = "Flare_01"
+
+[node name="Flecks_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/VFX_Selkhera_SkillAttack_02/root"]
+position = Vector3(0, 5.3499999, -0)
+quaternion = Quaternion(0.707106829, 0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5485
+metadata/unity_name = "Flecks_01"
+
+[node name="Par_Cone_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/VFX_Selkhera_SkillAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18720
+metadata/unity_name = "Par_Cone_01"
+
+[node name="Ray_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/VFX_Selkhera_SkillAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11029
+metadata/unity_name = "Ray_01"
+
+[node name="Flare_01_21785" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/VFX_Selkhera_SkillAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-5.96045453e-08, 1.8274644e-08, 2.79883405e-09, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21785
+metadata/unity_name = "Flare_01"
+
+[node name="Flare_02" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/VFX_Selkhera_SkillAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-5.96045453e-08, 1.8274644e-08, 2.79883405e-09, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17165
+metadata/unity_name = "Flare_02"
+
+[node name="Wave_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/neck/head/VFX_Selkhera_SkillAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19903
+metadata/unity_name = "Wave_01"
+
+[node name="salor_root" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest"]
+position = Vector3(-0, -2.84217088e-16, -1.24344979e-16)
+quaternion = Quaternion(-0.0392598212, 0, -0, 0.999229074)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5257
+metadata/unity_name = "salor_root"
+
+[node name="salorB_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/salor_root"]
+position = Vector3(9.12193173e-07, 0.187264442, 0.311972141)
+quaternion = Quaternion(-0.999808431, 0, 0, 0.0195725616)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24118
+metadata/unity_name = "salorB_01"
+
+[node name="salorB_02_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/salor_root/salorB_01"]
+position = Vector3(-0, 0.182115152, -5.24182104e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12730
+metadata/unity_name = "salorB_02_end"
+
+[node name="shoulder_L" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest"]
+position = Vector3(-0.0449990071, 0.309204638, 0.153659642)
+quaternion = Quaternion(-0.5, 0.5, 0.5, 0.5)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7306
+metadata/unity_name = "shoulder_L"
+
+[node name="salorA_root" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/shoulder_L"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(6.66133815e-16, 3.72770697e-17, 2.48435505e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19271
+metadata/unity_name = "salorA_root"
+
+[node name="salorA_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/shoulder_L/salorA_root"]
+position = Vector3(-0.122061476, 0.250863403, -0.0144408839)
+quaternion = Quaternion(-0.474195778, 0.566809177, -0.422761559, 0.524536312)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9672
+metadata/unity_name = "salorA_01"
+
+[node name="salorA_02_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/shoulder_L/salorA_root/salorA_01"]
+position = Vector3(-5.37764261e-18, 0.166450694, 6.661338e-18)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13645
+metadata/unity_name = "salorA_02_end"
+
+[node name="upper_arm_L" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/shoulder_L"]
+position = Vector3(-8.881784e-18, 0.219999999, -5.68434176e-16)
+quaternion = Quaternion(-7.94497931e-15, 4.27715805e-12, -5.38552448e-17, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20964
+metadata/unity_name = "upper_arm_L"
+
+[node name="lower_arm_L" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L"]
+position = Vector3(-0.000500007998, 0.370001972, 9.20815924e-10)
+quaternion = Quaternion(-0, -0, 5.55111512e-17, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23918
+metadata/unity_name = "lower_arm_L"
+
+[node name="hand_L" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L"]
+position = Vector3(0.000499994494, 0.329999983, -3.41060506e-15)
+quaternion = Quaternion(6.78555315e-17, -4.27684407e-12, 1.65401364e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23081
+metadata/unity_name = "hand_L"
+
+[node name="hand_L_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L"]
+position = Vector3(1.7763568e-17, 0.239999995, -1.42108539e-15)
+quaternion = Quaternion(-5.55111512e-17, -1.29047839e-08, 7.05727565e-09, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15518
+metadata/unity_name = "hand_L_end"
+
+[node name="shoulder_R" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest"]
+position = Vector3(0.045000989, 0.309204638, 0.153659642)
+quaternion = Quaternion(-0.5, -0.5, -0.5, 0.5)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24152
+metadata/unity_name = "shoulder_R"
+
+[node name="salorC_root" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/shoulder_R"]
+position = Vector3(-2.7755575e-19, 0, -0)
+quaternion = Quaternion(4.99600361e-16, -5.7090464e-17, -2.71620835e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5806
+metadata/unity_name = "salorC_root"
+
+[node name="salorC_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/shoulder_R/salorC_root"]
+position = Vector3(0.122061476, 0.25086242, -0.0144413365)
+quaternion = Quaternion(-0.474195778, -0.566809177, 0.422761559, 0.524536312)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9945
+metadata/unity_name = "salorC_01"
+
+[node name="salorC_02_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/shoulder_R/salorC_root/salorC_01"]
+position = Vector3(5.37764261e-18, 0.166450694, 6.661338e-18)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9437
+metadata/unity_name = "salorC_02_end"
+
+[node name="upper_arm_R" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/shoulder_R"]
+position = Vector3(8.881784e-18, 0.219999999, -5.68434176e-16)
+quaternion = Quaternion(-1.21972744e-19, 2.01459116e-09, 1.11022302e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21928
+metadata/unity_name = "upper_arm_R"
+
+[node name="lower_arm_R" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R"]
+position = Vector3(0.000500001886, 0.370000005, 1.00301154e-08)
+quaternion = Quaternion(-3.3785762e-18, 2.02502681e-09, 5.55111512e-17, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19338
+metadata/unity_name = "lower_arm_R"
+
+[node name="hand_R" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R"]
+position = Vector3(-0.000499997928, 0.329999983, 5.09818232e-09)
+quaternion = Quaternion(-1.08500844e-16, 2.00532502e-09, -6.78634615e-09, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22853
+metadata/unity_name = "hand_R"
+
+[node name="hand_R_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R"]
+position = Vector3(-0, 0.239999995, 8.52651264e-16)
+quaternion = Quaternion(-7.70371978e-34, 2.01703454e-09, -6.79272372e-09, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10205
+metadata/unity_name = "hand_R_end"
+
+[node name="tail_root" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10073
+metadata/unity_name = "tail_root"
+
+[node name="tail_chain_root" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root"]
+position = Vector3(-9.91821253e-07, -0.203337878, 0.472075492)
+quaternion = Quaternion(0.707106829, -0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14732
+metadata/unity_name = "tail_chain_root"
+
+[node name="tail_001" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root"]
+position = Vector3(-2.89062502e-13, 2.2026825e-15, 8.2422955e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7394
+metadata/unity_name = "tail_001"
+
+[node name="tail_002" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001"]
+position = Vector3(2.71050537e-22, 0.242656246, 8.52651264e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17338
+metadata/unity_name = "tail_002"
+
+[node name="tail_003" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002"]
+position = Vector3(-0, 0.224374995, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23265
+metadata/unity_name = "tail_003"
+
+[node name="tail_004" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003"]
+position = Vector3(-1.35525269e-22, 0.224531248, -2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26588
+metadata/unity_name = "tail_004"
+
+[node name="tail_005" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004"]
+position = Vector3(-0, 0.224453121, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11682
+metadata/unity_name = "tail_005"
+
+[node name="tail_006" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005"]
+position = Vector3(-0, 0.224453121, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22414
+metadata/unity_name = "tail_006"
+
+[node name="tail_007" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006"]
+position = Vector3(1.35525269e-22, 0.224374995, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18279
+metadata/unity_name = "tail_007"
+
+[node name="tail_008" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007"]
+position = Vector3(2.71050537e-22, 0.224453121, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10557
+metadata/unity_name = "tail_008"
+
+[node name="tail_009" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008"]
+position = Vector3(-0, 0.224531248, -2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21920
+metadata/unity_name = "tail_009"
+
+[node name="tail_010" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009"]
+position = Vector3(-0, 0.224531248, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26031
+metadata/unity_name = "tail_010"
+
+[node name="tail_011" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010"]
+position = Vector3(-0, 0.224453121, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9902
+metadata/unity_name = "tail_011"
+
+[node name="tail_012" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011"]
+position = Vector3(1.35525269e-22, 0.224374995, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23474
+metadata/unity_name = "tail_012"
+
+[node name="tail_013" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012"]
+position = Vector3(-0, 0.224453121, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15239
+metadata/unity_name = "tail_013"
+
+[node name="tail_014" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013"]
+position = Vector3(-0, 0.224453121, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22511
+metadata/unity_name = "tail_014"
+
+[node name="tail_015" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014"]
+position = Vector3(-0, 0.224453121, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17954
+metadata/unity_name = "tail_015"
+
+[node name="tail_016" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015"]
+position = Vector3(-1.35525269e-22, 0.224453121, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5926
+metadata/unity_name = "tail_016"
+
+[node name="tail_017" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016"]
+position = Vector3(-0, 0.224374995, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25188
+metadata/unity_name = "tail_017"
+
+[node name="tail_018" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017"]
+position = Vector3(-0, 0.224453121, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6727
+metadata/unity_name = "tail_018"
+
+[node name="tail_019" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018"]
+position = Vector3(-0, 0.224531248, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16467
+metadata/unity_name = "tail_019"
+
+[node name="tail_020" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019"]
+position = Vector3(-0, 0.224453121, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4762
+metadata/unity_name = "tail_020"
+
+[node name="tail_021" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020"]
+position = Vector3(1.35525269e-22, 0.224453121, 5.68434176e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24115
+metadata/unity_name = "tail_021"
+
+[node name="tail_022" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021"]
+position = Vector3(1.35525269e-22, 0.224453121, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18515
+metadata/unity_name = "tail_022"
+
+[node name="tail_023" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022"]
+position = Vector3(-0, 0.224453121, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19393
+metadata/unity_name = "tail_023"
+
+[node name="tail_024" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023"]
+position = Vector3(-0, 0.224453121, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14018
+metadata/unity_name = "tail_024"
+
+[node name="tail_025" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024"]
+position = Vector3(1.35525269e-22, 0.224453121, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22235
+metadata/unity_name = "tail_025"
+
+[node name="tail_026" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025"]
+position = Vector3(1.35525269e-22, 0.224453121, 5.68434176e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18328
+metadata/unity_name = "tail_026"
+
+[node name="tail_027" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026"]
+position = Vector3(-0, 0.224374995, -5.68434176e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23286
+metadata/unity_name = "tail_027"
+
+[node name="tail_028" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027"]
+position = Vector3(-0, 0.224453121, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24218
+metadata/unity_name = "tail_028"
+
+[node name="tail_029" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028"]
+position = Vector3(-0, 0.224453121, -2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14208
+metadata/unity_name = "tail_029"
+
+[node name="tail_030" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029"]
+position = Vector3(-0, 0.224531248, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8531
+metadata/unity_name = "tail_030"
+
+[node name="tail_031" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030"]
+position = Vector3(-0, 0.224531248, -2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6064
+metadata/unity_name = "tail_031"
+
+[node name="tail_032" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031"]
+position = Vector3(2.71050537e-22, 0.224374995, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11367
+metadata/unity_name = "tail_032"
+
+[node name="tail_033" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032"]
+position = Vector3(-0, 0.224453121, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14618
+metadata/unity_name = "tail_033"
+
+[node name="tail_034" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033"]
+position = Vector3(1.35525269e-22, 0.224453121, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23304
+metadata/unity_name = "tail_034"
+
+[node name="tail_035" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033/tail_034"]
+position = Vector3(-0, 0.224453121, -2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26185
+metadata/unity_name = "tail_035"
+
+[node name="tail_036" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033/tail_034/tail_035"]
+position = Vector3(-1.35525269e-22, 0.224453121, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23665
+metadata/unity_name = "tail_036"
+
+[node name="tail_037" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033/tail_034/tail_035/tail_036"]
+position = Vector3(1.35525269e-22, 0.224453121, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24048
+metadata/unity_name = "tail_037"
+
+[node name="tail_038" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033/tail_034/tail_035/tail_036/tail_037"]
+position = Vector3(-1.35525269e-22, 0.224453121, -2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10132
+metadata/unity_name = "tail_038"
+
+[node name="tail_039" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033/tail_034/tail_035/tail_036/tail_037/tail_038"]
+position = Vector3(1.35525269e-22, 0.224453121, 8.52651264e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15557
+metadata/unity_name = "tail_039"
+
+[node name="tail_040" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033/tail_034/tail_035/tail_036/tail_037/tail_038/tail_039"]
+position = Vector3(-1.35525269e-22, 0.224374995, 5.68434176e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10094
+metadata/unity_name = "tail_040"
+
+[node name="tail_041" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033/tail_034/tail_035/tail_036/tail_037/tail_038/tail_039/tail_040"]
+position = Vector3(-1.35525269e-22, 0.224609375, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9682
+metadata/unity_name = "tail_041"
+
+[node name="tail_042" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033/tail_034/tail_035/tail_036/tail_037/tail_038/tail_039/tail_040/tail_041"]
+position = Vector3(1.35525269e-22, 0.224374995, 5.68434176e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21486
+metadata/unity_name = "tail_042"
+
+[node name="tail_043" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033/tail_034/tail_035/tail_036/tail_037/tail_038/tail_039/tail_040/tail_041/tail_042"]
+position = Vector3(2.71050537e-22, 0.224453121, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8777
+metadata/unity_name = "tail_043"
+
+[node name="tail_044" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033/tail_034/tail_035/tail_036/tail_037/tail_038/tail_039/tail_040/tail_041/tail_042/tail_043"]
+position = Vector3(-0, 0.224453121, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18436
+metadata/unity_name = "tail_044"
+
+[node name="tail_045" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033/tail_034/tail_035/tail_036/tail_037/tail_038/tail_039/tail_040/tail_041/tail_042/tail_043/tail_044"]
+position = Vector3(-1.35525269e-22, 0.224453121, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7693
+metadata/unity_name = "tail_045"
+
+[node name="tail_046" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033/tail_034/tail_035/tail_036/tail_037/tail_038/tail_039/tail_040/tail_041/tail_042/tail_043/tail_044/tail_045"]
+position = Vector3(1.35525269e-22, 0.224453121, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10231
+metadata/unity_name = "tail_046"
+
+[node name="tail_047" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033/tail_034/tail_035/tail_036/tail_037/tail_038/tail_039/tail_040/tail_041/tail_042/tail_043/tail_044/tail_045/tail_046"]
+position = Vector3(1.35525269e-22, 0.224453121, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19881
+metadata/unity_name = "tail_047"
+
+[node name="tail_048" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033/tail_034/tail_035/tail_036/tail_037/tail_038/tail_039/tail_040/tail_041/tail_042/tail_043/tail_044/tail_045/tail_046/tail_047"]
+position = Vector3(1.35525269e-22, 0.224453121, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8957
+metadata/unity_name = "tail_048"
+
+[node name="tail_049" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033/tail_034/tail_035/tail_036/tail_037/tail_038/tail_039/tail_040/tail_041/tail_042/tail_043/tail_044/tail_045/tail_046/tail_047/tail_048"]
+position = Vector3(1.35525269e-22, 0.224453121, -2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9492
+metadata/unity_name = "tail_049"
+
+[node name="tail_050" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033/tail_034/tail_035/tail_036/tail_037/tail_038/tail_039/tail_040/tail_041/tail_042/tail_043/tail_044/tail_045/tail_046/tail_047/tail_048/tail_049"]
+position = Vector3(-0, 0.224453121, 5.68434176e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17224
+metadata/unity_name = "tail_050"
+
+[node name="tail_051" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033/tail_034/tail_035/tail_036/tail_037/tail_038/tail_039/tail_040/tail_041/tail_042/tail_043/tail_044/tail_045/tail_046/tail_047/tail_048/tail_049/tail_050"]
+position = Vector3(-1.35525269e-22, 0.224531248, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14481
+metadata/unity_name = "tail_051"
+
+[node name="tail_052" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033/tail_034/tail_035/tail_036/tail_037/tail_038/tail_039/tail_040/tail_041/tail_042/tail_043/tail_044/tail_045/tail_046/tail_047/tail_048/tail_049/tail_050/tail_051"]
+position = Vector3(-0, 0.224374995, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14683
+metadata/unity_name = "tail_052"
+
+[node name="tail_053" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033/tail_034/tail_035/tail_036/tail_037/tail_038/tail_039/tail_040/tail_041/tail_042/tail_043/tail_044/tail_045/tail_046/tail_047/tail_048/tail_049/tail_050/tail_051/tail_052"]
+position = Vector3(1.35525269e-22, 0.224453121, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18673
+metadata/unity_name = "tail_053"
+
+[node name="tail_054" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033/tail_034/tail_035/tail_036/tail_037/tail_038/tail_039/tail_040/tail_041/tail_042/tail_043/tail_044/tail_045/tail_046/tail_047/tail_048/tail_049/tail_050/tail_051/tail_052/tail_053"]
+position = Vector3(-0, 0.224453121, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13342
+metadata/unity_name = "tail_054"
+
+[node name="tail_055" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033/tail_034/tail_035/tail_036/tail_037/tail_038/tail_039/tail_040/tail_041/tail_042/tail_043/tail_044/tail_045/tail_046/tail_047/tail_048/tail_049/tail_050/tail_051/tail_052/tail_053/tail_054"]
+position = Vector3(1.35525269e-22, 0.224531248, 5.68434176e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13581
+metadata/unity_name = "tail_055"
+
+[node name="tail_056" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033/tail_034/tail_035/tail_036/tail_037/tail_038/tail_039/tail_040/tail_041/tail_042/tail_043/tail_044/tail_045/tail_046/tail_047/tail_048/tail_049/tail_050/tail_051/tail_052/tail_053/tail_054/tail_055"]
+position = Vector3(-0, 0.224374995, 5.68434176e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5428
+metadata/unity_name = "tail_056"
+
+[node name="tail_057" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033/tail_034/tail_035/tail_036/tail_037/tail_038/tail_039/tail_040/tail_041/tail_042/tail_043/tail_044/tail_045/tail_046/tail_047/tail_048/tail_049/tail_050/tail_051/tail_052/tail_053/tail_054/tail_055/tail_056"]
+position = Vector3(-0, 0.224453121, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11818
+metadata/unity_name = "tail_057"
+
+[node name="tail_058" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033/tail_034/tail_035/tail_036/tail_037/tail_038/tail_039/tail_040/tail_041/tail_042/tail_043/tail_044/tail_045/tail_046/tail_047/tail_048/tail_049/tail_050/tail_051/tail_052/tail_053/tail_054/tail_055/tail_056/tail_057"]
+position = Vector3(-0, 0.224453121, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23718
+metadata/unity_name = "tail_058"
+
+[node name="tail_059" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033/tail_034/tail_035/tail_036/tail_037/tail_038/tail_039/tail_040/tail_041/tail_042/tail_043/tail_044/tail_045/tail_046/tail_047/tail_048/tail_049/tail_050/tail_051/tail_052/tail_053/tail_054/tail_055/tail_056/tail_057/tail_058"]
+position = Vector3(-0, 0.224453121, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10200
+metadata/unity_name = "tail_059"
+
+[node name="tail_060" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033/tail_034/tail_035/tail_036/tail_037/tail_038/tail_039/tail_040/tail_041/tail_042/tail_043/tail_044/tail_045/tail_046/tail_047/tail_048/tail_049/tail_050/tail_051/tail_052/tail_053/tail_054/tail_055/tail_056/tail_057/tail_058/tail_059"]
+position = Vector3(1.35525269e-22, 0.224374995, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24888
+metadata/unity_name = "tail_060"
+
+[node name="tail_061" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033/tail_034/tail_035/tail_036/tail_037/tail_038/tail_039/tail_040/tail_041/tail_042/tail_043/tail_044/tail_045/tail_046/tail_047/tail_048/tail_049/tail_050/tail_051/tail_052/tail_053/tail_054/tail_055/tail_056/tail_057/tail_058/tail_059/tail_060"]
+position = Vector3(-0, 0.224531248, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18433
+metadata/unity_name = "tail_061"
+
+[node name="tail_062" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033/tail_034/tail_035/tail_036/tail_037/tail_038/tail_039/tail_040/tail_041/tail_042/tail_043/tail_044/tail_045/tail_046/tail_047/tail_048/tail_049/tail_050/tail_051/tail_052/tail_053/tail_054/tail_055/tail_056/tail_057/tail_058/tail_059/tail_060/tail_061"]
+position = Vector3(1.35525269e-22, 0.224453121, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23795
+metadata/unity_name = "tail_062"
+
+[node name="tail_063" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033/tail_034/tail_035/tail_036/tail_037/tail_038/tail_039/tail_040/tail_041/tail_042/tail_043/tail_044/tail_045/tail_046/tail_047/tail_048/tail_049/tail_050/tail_051/tail_052/tail_053/tail_054/tail_055/tail_056/tail_057/tail_058/tail_059/tail_060/tail_061/tail_062"]
+position = Vector3(-0, 0.224453121, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22585
+metadata/unity_name = "tail_063"
+
+[node name="tail_064" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033/tail_034/tail_035/tail_036/tail_037/tail_038/tail_039/tail_040/tail_041/tail_042/tail_043/tail_044/tail_045/tail_046/tail_047/tail_048/tail_049/tail_050/tail_051/tail_052/tail_053/tail_054/tail_055/tail_056/tail_057/tail_058/tail_059/tail_060/tail_061/tail_062/tail_063"]
+position = Vector3(2.71050537e-22, 0.224453121, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13658
+metadata/unity_name = "tail_064"
+
+[node name="tail_065" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033/tail_034/tail_035/tail_036/tail_037/tail_038/tail_039/tail_040/tail_041/tail_042/tail_043/tail_044/tail_045/tail_046/tail_047/tail_048/tail_049/tail_050/tail_051/tail_052/tail_053/tail_054/tail_055/tail_056/tail_057/tail_058/tail_059/tail_060/tail_061/tail_062/tail_063/tail_064"]
+position = Vector3(2.71050537e-22, 0.224453121, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14246
+metadata/unity_name = "tail_065"
+
+[node name="tail_066" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033/tail_034/tail_035/tail_036/tail_037/tail_038/tail_039/tail_040/tail_041/tail_042/tail_043/tail_044/tail_045/tail_046/tail_047/tail_048/tail_049/tail_050/tail_051/tail_052/tail_053/tail_054/tail_055/tail_056/tail_057/tail_058/tail_059/tail_060/tail_061/tail_062/tail_063/tail_064/tail_065"]
+position = Vector3(-0, 0.224453121, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11477
+metadata/unity_name = "tail_066"
+
+[node name="tail_067" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033/tail_034/tail_035/tail_036/tail_037/tail_038/tail_039/tail_040/tail_041/tail_042/tail_043/tail_044/tail_045/tail_046/tail_047/tail_048/tail_049/tail_050/tail_051/tail_052/tail_053/tail_054/tail_055/tail_056/tail_057/tail_058/tail_059/tail_060/tail_061/tail_062/tail_063/tail_064/tail_065/tail_066"]
+position = Vector3(-0, 0.224453121, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11229
+metadata/unity_name = "tail_067"
+
+[node name="tail_068" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033/tail_034/tail_035/tail_036/tail_037/tail_038/tail_039/tail_040/tail_041/tail_042/tail_043/tail_044/tail_045/tail_046/tail_047/tail_048/tail_049/tail_050/tail_051/tail_052/tail_053/tail_054/tail_055/tail_056/tail_057/tail_058/tail_059/tail_060/tail_061/tail_062/tail_063/tail_064/tail_065/tail_066/tail_067"]
+position = Vector3(1.35525269e-22, 0.224453121, 5.68434176e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17145
+metadata/unity_name = "tail_068"
+
+[node name="tail_069" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tail_chain_root/tail_001/tail_002/tail_003/tail_004/tail_005/tail_006/tail_007/tail_008/tail_009/tail_010/tail_011/tail_012/tail_013/tail_014/tail_015/tail_016/tail_017/tail_018/tail_019/tail_020/tail_021/tail_022/tail_023/tail_024/tail_025/tail_026/tail_027/tail_028/tail_029/tail_030/tail_031/tail_032/tail_033/tail_034/tail_035/tail_036/tail_037/tail_038/tail_039/tail_040/tail_041/tail_042/tail_043/tail_044/tail_045/tail_046/tail_047/tail_048/tail_049/tail_050/tail_051/tail_052/tail_053/tail_054/tail_055/tail_056/tail_057/tail_058/tail_059/tail_060/tail_061/tail_062/tail_063/tail_064/tail_065/tail_066/tail_067/tail_068"]
+position = Vector3(2.71050537e-22, 0.224531248, 5.68434176e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22157
+metadata/unity_name = "tail_069"
+
+[node name="tailacce_L_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root"]
+position = Vector3(-0.270808965, -0.282960594, 0.533919215)
+quaternion = Quaternion(4.24884729e-34, 6.9388939e-18, 1, -6.12323426e-17)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18388
+metadata/unity_name = "tailacce_L_01"
+
+[node name="tailacce_L_02_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tailacce_L_01"]
+position = Vector3(7.1054272e-17, 0.485517532, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4841
+metadata/unity_name = "tailacce_L_02_end"
+
+[node name="tailacce_R_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root"]
+position = Vector3(0.270807058, -0.28295809, 0.533919156)
+quaternion = Quaternion(4.24884729e-34, 6.9388939e-18, 1, -6.12323426e-17)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5241
+metadata/unity_name = "tailacce_R_01"
+
+[node name="tailacce_R_02_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/tail_root/tailacce_R_01"]
+position = Vector3(7.1054272e-17, 0.485520005, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17677
+metadata/unity_name = "tailacce_R_02_end"
+
+[node name="waistcloth_root" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine"]
+position = Vector3(-0, 0, -4.440892e-18)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18613
+metadata/unity_name = "waistcloth_root"
+
+[node name="waistcloth_LA_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/waistcloth_root"]
+position = Vector3(-0.154635295, -0.0509507209, -0.187808111)
+quaternion = Quaternion(0.170552641, -0.18020232, 0.968490899, 0.0215484481)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25115
+metadata/unity_name = "waistcloth_LA_01"
+
+[node name="waistcloth_LA_02" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/waistcloth_root/waistcloth_LA_01"]
+position = Vector3(8.881784e-18, 0.234823063, 1.42108544e-16)
+quaternion = Quaternion(0.0856497064, -0, -0, 0.996325314)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8695
+metadata/unity_name = "waistcloth_LA_02"
+
+[node name="waistcloth_LA_03_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/waistcloth_root/waistcloth_LA_01/waistcloth_LA_02"]
+position = Vector3(-4.44089183e-17, 0.154730424, -3.55271347e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23900
+metadata/unity_name = "waistcloth_LA_03_end"
+
+[node name="waistcloth_LB_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/waistcloth_root"]
+position = Vector3(-0.28013441, -0.0530420244, -0.122878119)
+quaternion = Quaternion(0.438351899, -0.167057991, 0.877012551, 0.103866436)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10725
+metadata/unity_name = "waistcloth_LB_01"
+
+[node name="waistcloth_LB_02" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/waistcloth_root/waistcloth_LB_01"]
+position = Vector3(3.5527136e-17, 0.232889116, 7.10542693e-16)
+quaternion = Quaternion(0.107336588, -0, -0, 0.99422276)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10337
+metadata/unity_name = "waistcloth_LB_02"
+
+[node name="waistcloth_LB_03_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/waistcloth_root/waistcloth_LB_01/waistcloth_LB_02"]
+position = Vector3(1.06581408e-16, 0.180335671, -1.42108544e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7809
+metadata/unity_name = "waistcloth_LB_03_end"
+
+[node name="waistcloth_LC_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/waistcloth_root"]
+position = Vector3(-0.303697705, -0.0571826957, 0.0111350724)
+quaternion = Quaternion(0.689232707, -0.149929836, 0.691029012, 0.157982171)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18288
+metadata/unity_name = "waistcloth_LC_01"
+
+[node name="waistcloth_LC_02" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/waistcloth_root/waistcloth_LC_01"]
+position = Vector3(8.88178367e-17, 0.232310459, -3.12638802e-15)
+quaternion = Quaternion(0.1414655, -0, -0, 0.989943206)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14020
+metadata/unity_name = "waistcloth_LC_02"
+
+[node name="waistcloth_LC_03_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/waistcloth_root/waistcloth_LC_01/waistcloth_LC_02"]
+position = Vector3(1.06581408e-16, 0.188876018, -4.26325632e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16979
+metadata/unity_name = "waistcloth_LC_03_end"
+
+[node name="waistcloth_LD_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/waistcloth_root"]
+position = Vector3(-0.287647694, -0.0479715019, 0.15118441)
+quaternion = Quaternion(-0.79457891, 0.0553243533, -0.564810395, -0.215807661)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12993
+metadata/unity_name = "waistcloth_LD_01"
+
+[node name="waistcloth_LD_02" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/waistcloth_root/waistcloth_LD_01"]
+position = Vector3(3.55271347e-16, 0.214061975, -4.26325632e-16)
+quaternion = Quaternion(0.0810271651, -0, -0, 0.99671191)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26433
+metadata/unity_name = "waistcloth_LD_02"
+
+[node name="waistcloth_LD_03_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/waistcloth_root/waistcloth_LD_01/waistcloth_LD_02"]
+position = Vector3(-7.1054272e-17, 0.141039014, 4.26325632e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13510
+metadata/unity_name = "waistcloth_LD_03_end"
+
+[node name="waistcloth_LE_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/waistcloth_root"]
+position = Vector3(-0.195945799, -0.00859462749, 0.244979396)
+quaternion = Quaternion(-0.968159556, -0, 0, -0.250333965)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21904
+metadata/unity_name = "waistcloth_LE_01"
+
+[node name="waistcloth_LE_02_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/waistcloth_root/waistcloth_LE_01"]
+position = Vector3(-7.1054272e-17, 0.21284087, 4.97379907e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22490
+metadata/unity_name = "waistcloth_LE_02_end"
+
+[node name="waistcloth_LR_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/waistcloth_root"]
+position = Vector3(0.280133992, -0.0530431941, -0.122878298)
+quaternion = Quaternion(-0.438351899, -0.167057991, 0.877012551, -0.103866436)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7741
+metadata/unity_name = "waistcloth_LR_01"
+
+[node name="waistcloth_LR_02" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/waistcloth_root/waistcloth_LR_01"]
+position = Vector3(-4.82710561e-07, 0.232886314, -1.16360093e-06)
+quaternion = Quaternion(0.107336588, 3.20640087e-17, 3.84136489e-17, 0.99422276)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7228
+metadata/unity_name = "waistcloth_LR_02"
+
+[node name="waistcloth_LR_03_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/waistcloth_root/waistcloth_LR_01/waistcloth_LR_02"]
+position = Vector3(-7.43860767e-07, 0.180333033, -5.19623995e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17494
+metadata/unity_name = "waistcloth_LR_03_end"
+
+[node name="waistcloth_RA_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/waistcloth_root"]
+position = Vector3(0.154634997, -0.0509523898, -0.187808409)
+quaternion = Quaternion(-0.170552641, -0.18020232, 0.968490899, -0.0215484481)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24815
+metadata/unity_name = "waistcloth_RA_01"
+
+[node name="waistcloth_RA_02" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/waistcloth_root/waistcloth_RA_01"]
+position = Vector3(-6.10018503e-07, 0.234819785, -1.23508551e-06)
+quaternion = Quaternion(0.0856497064, -0, -0, 0.996325314)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26590
+metadata/unity_name = "waistcloth_RA_02"
+
+[node name="waistcloth_RA_03_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/waistcloth_root/waistcloth_RA_01/waistcloth_RA_02"]
+position = Vector3(-1.32022507e-07, 0.154729143, 2.48065874e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25369
+metadata/unity_name = "waistcloth_RA_03_end"
+
+[node name="waistcloth_RC_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/waistcloth_root"]
+position = Vector3(0.303698003, -0.0571805276, 0.0111352)
+quaternion = Quaternion(-0.689232707, -0.149929836, 0.691029012, -0.157982171)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18898
+metadata/unity_name = "waistcloth_RC_01"
+
+[node name="waistcloth_RC_02" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/waistcloth_root/waistcloth_RC_01"]
+position = Vector3(-4.27029136e-07, 0.232310995, 3.56051856e-07)
+quaternion = Quaternion(0.1414655, -0, -0, 0.989943206)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26600
+metadata/unity_name = "waistcloth_RC_02"
+
+[node name="waistcloth_RC_03_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/waistcloth_root/waistcloth_RC_01/waistcloth_RC_02"]
+position = Vector3(3.87966935e-07, 0.18887575, 1.16605776e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9835
+metadata/unity_name = "waistcloth_RC_03_end"
+
+[node name="waistcloth_RD_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/waistcloth_root"]
+position = Vector3(0.287647992, -0.0479702801, 0.151184544)
+quaternion = Quaternion(-0.79457891, -0.0553243533, 0.564810395, -0.215807661)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8704
+metadata/unity_name = "waistcloth_RD_01"
+
+[node name="waistcloth_RD_02" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/waistcloth_root/waistcloth_RD_01"]
+position = Vector3(4.39208975e-07, 0.214063659, 1.21335563e-06)
+quaternion = Quaternion(0.0810271651, -0, -0, 0.99671191)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25527
+metadata/unity_name = "waistcloth_RD_02"
+
+[node name="waistcloth_RD_03_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/waistcloth_root/waistcloth_RD_01/waistcloth_RD_02"]
+position = Vector3(4.21894129e-07, 0.141039327, 8.52972946e-08)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17703
+metadata/unity_name = "waistcloth_RD_03_end"
+
+[node name="waistcloth_RE_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/waistcloth_root"]
+position = Vector3(0.195946008, -0.00774035929, 0.244503543)
+quaternion = Quaternion(-0.968159556, -0, 0, -0.250333965)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23713
+metadata/unity_name = "waistcloth_RE_01"
+
+[node name="waistcloth_RE_02_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/spine/waistcloth_root/waistcloth_RE_01"]
+position = Vector3(-1.06581408e-16, 0.212835804, -3.50934397e-06)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21942
+metadata/unity_name = "waistcloth_RE_02_end"
+
+[node name="upper_leg_L" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips"]
+position = Vector3(-0.198999986, -5.68434176e-16, 1.7763568e-17)
+quaternion = Quaternion(-1.11022302e-16, -5.55111512e-17, 1, -2.83276934e-16)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13337
+metadata/unity_name = "upper_leg_L"
+
+[node name="lower_leg_L" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L"]
+position = Vector3(-3.19744217e-16, 0.755000055, -0.000250018056)
+quaternion = Quaternion(1.38777878e-16, 1.38777878e-16, 1.94289029e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7875
+metadata/unity_name = "lower_leg_L"
+
+[node name="foot_L" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/lower_leg_L"]
+position = Vector3(3.90798503e-16, 0.710000038, 0.000250018027)
+quaternion = Quaternion(-0, 1.11022302e-16, 1.11022302e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8854
+metadata/unity_name = "foot_L"
+
+[node name="toes_L" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/lower_leg_L/foot_L"]
+position = Vector3(-1.06581408e-16, 0.246930361, -0.112331629)
+quaternion = Quaternion(-0.502218187, 1.11022302e-16, 5.55111512e-17, 0.864740908)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21423
+metadata/unity_name = "toes_L"
+
+[node name="toes_L_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/lower_leg_L/foot_L/toes_L"]
+position = Vector3(6.03961332e-16, 0.127623796, -3.5527136e-17)
+quaternion = Quaternion(5.55111512e-17, 5.55111512e-17, 5.55111512e-17, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8870
+metadata/unity_name = "toes_L_end"
+
+[node name="Magica Capsule Collider (lower_leg_L)" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/lower_leg_L"]
+position = Vector3(0, 0.400000006, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23318
+metadata/unity_name = "Magica Capsule Collider (lower_leg_L)"
+
+[node name="skirt_L_root" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L"]
+position = Vector3(1.7763568e-17, -2.84217088e-16, -1.7763568e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18044
+metadata/unity_name = "skirt_L_root"
+
+[node name="skirt_LA_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/skirt_L_root"]
+position = Vector3(-0.148002669, 0.118932247, -0.222534999)
+quaternion = Quaternion(-0.0209251773, 0.00503177661, -0.0265850239, 0.999414861)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15994
+metadata/unity_name = "skirt_LA_01"
+
+[node name="skirt_LA_02" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/skirt_L_root/skirt_LA_01"]
+position = Vector3(-4.27048406e-08, 0.196272925, 3.5527136e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13540
+metadata/unity_name = "skirt_LA_02"
+
+[node name="skirt_LA_03" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/skirt_L_root/skirt_LA_01/skirt_LA_02"]
+position = Vector3(-7.1054272e-17, 0.35314095, 1.06581408e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26239
+metadata/unity_name = "skirt_LA_03"
+
+[node name="skirt_LA_04_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/skirt_L_root/skirt_LA_01/skirt_LA_02/skirt_LA_03"]
+position = Vector3(-7.99360543e-17, 0.396591336, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10305
+metadata/unity_name = "skirt_LA_04_end"
+
+[node name="skirt_LB_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/skirt_L_root"]
+position = Vector3(-0.0538800098, 0.114473701, -0.218339652)
+quaternion = Quaternion(-0.0346557088, -0.0210833382, -0.0281718485, 0.998779655)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22761
+metadata/unity_name = "skirt_LB_01"
+
+[node name="skirt_LB_02" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/skirt_L_root/skirt_LB_01"]
+position = Vector3(-3.5527136e-17, 0.196272925, 2.13162816e-16)
+quaternion = Quaternion(0.0221624877, -0, -0, 0.999754369)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12415
+metadata/unity_name = "skirt_LB_02"
+
+[node name="skirt_LB_03_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/skirt_L_root/skirt_LB_01/skirt_LB_02"]
+position = Vector3(-1.06581408e-16, 0.35314095, -1.06581408e-16)
+quaternion = Quaternion(-0.0057588066, 0, -0, 0.99998343)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20526
+metadata/unity_name = "skirt_LB_03_end"
+
+[node name="skirt_LC_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/skirt_L_root"]
+position = Vector3(0.156012803, 0.109566316, -0.145277843)
+quaternion = Quaternion(-0.0718887821, -0.373041928, -0.00552923791, 0.925008714)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22812
+metadata/unity_name = "skirt_LC_01"
+
+[node name="skirt_LC_02" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/skirt_L_root/skirt_LC_01"]
+position = Vector3(-8.881784e-18, 0.196272925, -7.1054272e-17)
+quaternion = Quaternion(0.0562964939, -0, -0, 0.998414099)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8467
+metadata/unity_name = "skirt_LC_02"
+
+[node name="skirt_LC_03_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/skirt_L_root/skirt_LC_01/skirt_LC_02"]
+position = Vector3(3.5527136e-17, 0.354489386, 1.77635673e-16)
+quaternion = Quaternion(0.00581104401, -0, -0, 0.999983132)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14100
+metadata/unity_name = "skirt_LC_03_end"
+
+[node name="skirt_LD_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/skirt_L_root"]
+position = Vector3(0.194874913, 0.118087687, -0.0124383327)
+quaternion = Quaternion(-0.0646273792, -0.665898263, -0.0258526336, 0.742788374)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5712
+metadata/unity_name = "skirt_LD_01"
+
+[node name="skirt_LD_02" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/skirt_L_root/skirt_LD_01"]
+position = Vector3(8.43769488e-17, 0.196272925, 2.13162816e-16)
+quaternion = Quaternion(0.0675234273, -0, -0, 0.997717738)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7191
+metadata/unity_name = "skirt_LD_02"
+
+[node name="skirt_LD_03_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/skirt_L_root/skirt_LD_01/skirt_LD_02"]
+position = Vector3(-2.44249064e-17, 0.35314095, -4.61852761e-16)
+quaternion = Quaternion(-0.00726340618, 0, -0, 0.999973655)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20496
+metadata/unity_name = "skirt_LD_03_end"
+
+[node name="skirt_LE_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/skirt_L_root"]
+position = Vector3(0.19337213, 0.128268063, 0.115400128)
+quaternion = Quaternion(-0.0543562062, -0.733159006, -0.0492779836, 0.676088095)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14379
+metadata/unity_name = "skirt_LE_01"
+
+[node name="skirt_LE_02" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/skirt_L_root/skirt_LE_01"]
+position = Vector3(8.88178367e-17, 0.196272925, 7.1054272e-17)
+quaternion = Quaternion(0.0548030511, -0, -0, 0.998497188)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9416
+metadata/unity_name = "skirt_LE_02"
+
+[node name="skirt_LE_03" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/skirt_L_root/skirt_LE_01/skirt_LE_02"]
+position = Vector3(1.7763568e-17, 0.35314095, -2.84217088e-16)
+quaternion = Quaternion(-0.0107637784, 0, -0, 0.999942064)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10772
+metadata/unity_name = "skirt_LE_03"
+
+[node name="skirt_LE_04" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/skirt_L_root/skirt_LE_01/skirt_LE_02/skirt_LE_03"]
+position = Vector3(1.7763568e-17, 0.399249911, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25810
+metadata/unity_name = "skirt_LE_04"
+
+[node name="skirt_LE_05_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/skirt_L_root/skirt_LE_01/skirt_LE_02/skirt_LE_03/skirt_LE_04"]
+position = Vector3(1.06581408e-16, 0.5096699, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16759
+metadata/unity_name = "skirt_LE_05_end"
+
+[node name="skirt_LF_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/skirt_L_root"]
+position = Vector3(0.128022492, 0.140753612, 0.231290996)
+quaternion = Quaternion(-0.0417936929, -0.939149141, -0.0370036848, 0.338943839)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19566
+metadata/unity_name = "skirt_LF_01"
+
+[node name="skirt_LF_02" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/skirt_L_root/skirt_LF_01"]
+position = Vector3(1.24344979e-16, 0.196272925, 7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12294
+metadata/unity_name = "skirt_LF_02"
+
+[node name="skirt_LF_03" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/skirt_L_root/skirt_LF_01/skirt_LF_02"]
+position = Vector3(7.1054272e-17, 0.357336909, 7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23109
+metadata/unity_name = "skirt_LF_03"
+
+[node name="skirt_LF_04" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/skirt_L_root/skirt_LF_01/skirt_LF_02/skirt_LF_03"]
+position = Vector3(-5.3290704e-17, 0.399642855, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19616
+metadata/unity_name = "skirt_LF_04"
+
+[node name="skirt_LF_05_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/skirt_L_root/skirt_LF_01/skirt_LF_02/skirt_LF_03/skirt_LF_04"]
+position = Vector3(1.06581408e-16, 0.514037549, 7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24794
+metadata/unity_name = "skirt_LF_05_end"
+
+[node name="skirt_LG_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/skirt_L_root"]
+position = Vector3(-0.021928126, 0.152876005, 0.288113594)
+quaternion = Quaternion(-0.0259336326, -0.998307526, -0.0212437622, 0.0475211143)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15074
+metadata/unity_name = "skirt_LG_01"
+
+[node name="skirt_LG_02" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/skirt_L_root/skirt_LG_01"]
+position = Vector3(3.5527136e-17, 0.196272925, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23698
+metadata/unity_name = "skirt_LG_02"
+
+[node name="skirt_LG_03" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/skirt_L_root/skirt_LG_01/skirt_LG_02"]
+position = Vector3(1.24344979e-16, 0.35314095, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26303
+metadata/unity_name = "skirt_LG_03"
+
+[node name="skirt_LG_04" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/skirt_L_root/skirt_LG_01/skirt_LG_02/skirt_LG_03"]
+position = Vector3(1.7763568e-17, 0.401814491, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9680
+metadata/unity_name = "skirt_LG_04"
+
+[node name="skirt_LG_05_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/skirt_L_root/skirt_LG_01/skirt_LG_02/skirt_LG_03/skirt_LG_04"]
+position = Vector3(1.06581408e-16, 0.512635171, 7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7548
+metadata/unity_name = "skirt_LG_05_end"
+
+[node name="skirt_LH_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/skirt_L_root"]
+position = Vector3(-0.132865801, 0.158479139, 0.287570924)
+quaternion = Quaternion(-0.0308405776, -0.999208331, -0.0249023065, 0.00338624208)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6280
+metadata/unity_name = "skirt_LH_01"
+
+[node name="skirt_LH_02" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/skirt_L_root/skirt_LH_01"]
+position = Vector3(6.21724896e-17, 0.196272925, 7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24588
+metadata/unity_name = "skirt_LH_02"
+
+[node name="skirt_LH_03" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/skirt_L_root/skirt_LH_01/skirt_LH_02"]
+position = Vector3(7.99360543e-17, 0.356340885, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14942
+metadata/unity_name = "skirt_LH_03"
+
+[node name="skirt_LH_04" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/skirt_L_root/skirt_LH_01/skirt_LH_02/skirt_LH_03"]
+position = Vector3(6.21724896e-17, 0.399812579, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10065
+metadata/unity_name = "skirt_LH_04"
+
+[node name="skirt_LH_05_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L/skirt_L_root/skirt_LH_01/skirt_LH_02/skirt_LH_03/skirt_LH_04"]
+position = Vector3(1.33226755e-16, 0.512758195, 7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13340
+metadata/unity_name = "skirt_LH_05_end"
+
+[node name="Magica Capsule Collider (upper_leg_L)" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_L"]
+position = Vector3(0, 0.400000006, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27169
+metadata/unity_name = "Magica Capsule Collider (upper_leg_L)"
+
+[node name="upper_leg_R" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips"]
+position = Vector3(0.198999986, 0, -0)
+quaternion = Quaternion(-1.66533454e-16, 5.55111512e-17, 1, 6.12323426e-17)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19006
+metadata/unity_name = "upper_leg_R"
+
+[node name="lower_leg_R" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R"]
+position = Vector3(-2.48689959e-16, 0.755000055, -0.000250008859)
+quaternion = Quaternion(-0, 5.55111512e-17, -5.55111512e-17, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12804
+metadata/unity_name = "lower_leg_R"
+
+[node name="foot_R" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/lower_leg_R"]
+position = Vector3(-1.77635673e-16, 0.710000038, 0.000250026671)
+quaternion = Quaternion(5.55111512e-17, 5.55111512e-17, -5.55111512e-17, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12098
+metadata/unity_name = "foot_R"
+
+[node name="toes_R" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/lower_leg_R/foot_R"]
+position = Vector3(-0, 0.246930361, -0.112331629)
+quaternion = Quaternion(-0.502220273, -4.16333634e-17, 5.55111512e-17, 0.864739716)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19900
+metadata/unity_name = "toes_R"
+
+[node name="toes_R_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/lower_leg_R/foot_R/toes_R"]
+position = Vector3(-3.5527136e-17, 0.127623796, -1.7763568e-17)
+quaternion = Quaternion(-2.77555756e-17, 5.55111512e-17, -2.77555756e-17, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9278
+metadata/unity_name = "toes_R_end"
+
+[node name="Magica Capsule Collider (lower_leg_R)" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/lower_leg_R"]
+position = Vector3(-0, 0.400000006, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22514
+metadata/unity_name = "Magica Capsule Collider (lower_leg_R)"
+
+[node name="skirt_R_root" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R"]
+position = Vector3(1.7763568e-17, -2.84217088e-16, -1.7763568e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23075
+metadata/unity_name = "skirt_R_root"
+
+[node name="skirt_RA_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root"]
+position = Vector3(0.148002476, 0.118935898, -0.222534835)
+quaternion = Quaternion(-0.0209251773, -0.00503177661, 0.0265850239, 0.999414861)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18931
+metadata/unity_name = "skirt_RA_01"
+
+[node name="skirt_RA_02" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_RA_01"]
+position = Vector3(3.19953557e-08, 0.196272343, -2.41752844e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5036
+metadata/unity_name = "skirt_RA_02"
+
+[node name="skirt_RA_03" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_RA_01/skirt_RA_02"]
+position = Vector3(2.14498428e-08, 0.353138149, -2.56951949e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16453
+metadata/unity_name = "skirt_RA_03"
+
+[node name="skirt_RA_04_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_RA_01/skirt_RA_02/skirt_RA_03"]
+position = Vector3(1.08174989e-08, 0.396591455, 1.03276761e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7733
+metadata/unity_name = "skirt_RA_04_end"
+
+[node name="skirt_RB_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root"]
+position = Vector3(0.0538798608, 0.114477344, -0.218339726)
+quaternion = Quaternion(-0.0346557088, 0.0210833382, 0.0281718485, 0.998779655)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7802
+metadata/unity_name = "skirt_RB_01"
+
+[node name="skirt_RB_02" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_RB_01"]
+position = Vector3(1.34735515e-07, 0.19626604, -8.08782872e-08)
+quaternion = Quaternion(0.0221624877, -0, -0, 0.999754369)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10091
+metadata/unity_name = "skirt_RB_02"
+
+[node name="skirt_RB_03" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_RB_01/skirt_RB_02"]
+position = Vector3(3.16826174e-07, 0.353147894, -1.69353925e-07)
+quaternion = Quaternion(-0.0057588066, 0, -0, 0.99998343)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21160
+metadata/unity_name = "skirt_RB_03"
+
+[node name="skirt_RB_04_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_RB_01/skirt_RB_02/skirt_RB_03"]
+position = Vector3(-9.560531e-07, 0.39658767, 2.74304057e-07)
+quaternion = Quaternion(-0.00538630784, 0, -0, 0.999985516)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14597
+metadata/unity_name = "skirt_RB_04_end"
+
+[node name="skirt_RC_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root"]
+position = Vector3(-0.156012833, 0.109569944, -0.145278171)
+quaternion = Quaternion(-0.0718887821, 0.373041928, 0.00552923791, 0.925008714)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19148
+metadata/unity_name = "skirt_RC_01"
+
+[node name="skirt_RC_02" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_RC_01"]
+position = Vector3(-4.33714121e-07, 0.196267739, -1.61837107e-07)
+quaternion = Quaternion(0.0886077881, -0, -0, 0.99606657)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13598
+metadata/unity_name = "skirt_RC_02"
+
+[node name="skirt_RC_03" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_RC_01/skirt_RC_02"]
+position = Vector3(3.7741205e-07, 0.354488522, -2.04708684e-07)
+quaternion = Quaternion(-0.0330284983, 0, -0, 0.999454439)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7593
+metadata/unity_name = "skirt_RC_03"
+
+[node name="skirt_RC_04" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_RC_01/skirt_RC_02/skirt_RC_03"]
+position = Vector3(-2.45269774e-07, 0.396593481, 5.0673016e-08)
+quaternion = Quaternion(-0.014573806, 0, -0, 0.999893844)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21763
+metadata/unity_name = "skirt_RC_04"
+
+[node name="skirt_RC_05_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_RC_01/skirt_RC_02/skirt_RC_03/skirt_RC_04"]
+position = Vector3(-1.39894311e-07, 0.509670019, -2.7362654e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24410
+metadata/unity_name = "skirt_RC_05_end"
+
+[node name="skirt_RD_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root"]
+position = Vector3(-0.194875538, 0.118091293, -0.0124386139)
+quaternion = Quaternion(-0.0646273792, 0.665898263, 0.0258526336, 0.742788374)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27198
+metadata/unity_name = "skirt_RD_01"
+
+[node name="skirt_RD_02" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_RD_01"]
+position = Vector3(-7.52789759e-08, 0.196266055, 1.950837e-07)
+quaternion = Quaternion(0.0898984373, -0, -0, 0.995950937)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27059
+metadata/unity_name = "skirt_RD_02"
+
+[node name="skirt_RD_03" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_RD_01/skirt_RD_02"]
+position = Vector3(-3.00730925e-08, 0.35313952, -9.71211094e-08)
+quaternion = Quaternion(0.00856735185, -0, -0, 0.999963343)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26745
+metadata/unity_name = "skirt_RD_03"
+
+[node name="skirt_RD_04" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_RD_01/skirt_RD_02/skirt_RD_03"]
+position = Vector3(8.71468799e-08, 0.396596223, 6.9296469e-08)
+quaternion = Quaternion(-0.0638153926, 0, -0, 0.9979617)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19516
+metadata/unity_name = "skirt_RD_04"
+
+[node name="skirt_RD_05_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_RD_01/skirt_RD_02/skirt_RD_03/skirt_RD_04"]
+position = Vector3(2.65136375e-08, 0.509670079, 9.65235429e-08)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8836
+metadata/unity_name = "skirt_RD_05_end"
+
+[node name="skirt_RE_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root"]
+position = Vector3(-0.193371996, 0.128271714, 0.115399882)
+quaternion = Quaternion(-0.0543562062, 0.733159006, 0.0492779836, 0.676088095)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14986
+metadata/unity_name = "skirt_RE_01"
+
+[node name="skirt_RE_02" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_RE_01"]
+position = Vector3(-3.82598984e-08, 0.196270838, -7.2557259e-07)
+quaternion = Quaternion(0.132130519, -0, -0, 0.991232336)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17030
+metadata/unity_name = "skirt_RE_02"
+
+[node name="skirt_RE_03" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_RE_01/skirt_RE_02"]
+position = Vector3(6.90936446e-08, 0.359460294, -0.000135683862)
+quaternion = Quaternion(-0.0463198982, 0, -0, 0.998926699)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18814
+metadata/unity_name = "skirt_RE_03"
+
+[node name="skirt_RE_04" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_RE_01/skirt_RE_02/skirt_RE_03"]
+position = Vector3(-4.32752387e-07, 0.399245471, 3.47860372e-08)
+quaternion = Quaternion(-0.0440513045, 0, -0, 0.999029279)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24248
+metadata/unity_name = "skirt_RE_04"
+
+[node name="skirt_RE_05_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_RE_01/skirt_RE_02/skirt_RE_03/skirt_RE_04"]
+position = Vector3(4.85209739e-07, 0.509670675, 2.75289096e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9529
+metadata/unity_name = "skirt_RE_05_end"
+
+[node name="skirt_RF_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root"]
+position = Vector3(-0.128023162, 0.140757039, 0.231290489)
+quaternion = Quaternion(0.0151964165, -0.936384857, -0.0634742826, -0.344852984)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13889
+metadata/unity_name = "skirt_RF_01"
+
+[node name="skirt_RF_02" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_RF_01"]
+position = Vector3(-1.05924244e-06, 0.196265116, -8.82528525e-07)
+quaternion = Quaternion(0.0546945632, -0, -0, 0.998503149)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24346
+metadata/unity_name = "skirt_RF_02"
+
+[node name="skirt_RF_03" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_RF_01/skirt_RF_02"]
+position = Vector3(1.38443227e-07, 0.357337832, -1.23650182e-07)
+quaternion = Quaternion(0.032433141, -0, -0, 0.999473929)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12011
+metadata/unity_name = "skirt_RF_03"
+
+[node name="skirt_RF_04" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_RF_01/skirt_RF_02/skirt_RF_03"]
+position = Vector3(-8.37294252e-08, 0.399645954, 6.48183232e-07)
+quaternion = Quaternion(-0.0545154288, 0, -0, 0.998512924)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25303
+metadata/unity_name = "skirt_RF_04"
+
+[node name="skirt_RF_05_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_RF_01/skirt_RF_02/skirt_RF_03/skirt_RF_04"]
+position = Vector3(5.73379737e-07, 0.514038086, 1.59128192e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8082
+metadata/unity_name = "skirt_RF_05_end"
+
+[node name="skirt_RG_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root"]
+position = Vector3(0.0219281316, 0.152879447, 0.288112968)
+quaternion = Quaternion(0.0259336326, -0.998307526, -0.0212437622, -0.0475211143)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25263
+metadata/unity_name = "skirt_RG_01"
+
+[node name="skirt_RG_02" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_RG_01"]
+position = Vector3(-1.62591348e-07, 0.196272776, -4.07820551e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19955
+metadata/unity_name = "skirt_RG_02"
+
+[node name="skirt_RG_03" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_RG_01/skirt_RG_02"]
+position = Vector3(8.21414137e-09, 0.35313791, -6.96634856e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6551
+metadata/unity_name = "skirt_RG_03"
+
+[node name="skirt_RG_04" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_RG_01/skirt_RG_02/skirt_RG_03"]
+position = Vector3(-1.74620084e-07, 0.401814729, 3.55642044e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5169
+metadata/unity_name = "skirt_RG_04"
+
+[node name="skirt_RG_05_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_RG_01/skirt_RG_02/skirt_RG_03/skirt_RG_04"]
+position = Vector3(1.49782238e-07, 0.512634516, -2.11629626e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6609
+metadata/unity_name = "skirt_RG_05_end"
+
+[node name="skirt_RH_01" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root"]
+position = Vector3(0.132865623, 0.158482417, 0.287570268)
+quaternion = Quaternion(0.0308405776, -0.999208331, -0.0249023065, -0.00338624208)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4684
+metadata/unity_name = "skirt_RH_01"
+
+[node name="skirt_RH_02" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_RH_01"]
+position = Vector3(1.06610099e-08, 0.196266443, -1.00463922e-06)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9060
+metadata/unity_name = "skirt_RH_02"
+
+[node name="skirt_RH_03" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_RH_01/skirt_RH_02"]
+position = Vector3(3.14445998e-08, 0.356342793, -4.42762712e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14731
+metadata/unity_name = "skirt_RH_03"
+
+[node name="skirt_RH_04" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_RH_01/skirt_RH_02/skirt_RH_03"]
+position = Vector3(-6.93922999e-08, 0.399813861, 6.0669737e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7340
+metadata/unity_name = "skirt_RH_04"
+
+[node name="skirt_RH_05_end" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R/skirt_R_root/skirt_RH_01/skirt_RH_02/skirt_RH_03/skirt_RH_04"]
+position = Vector3(5.19650918e-08, 0.512757778, 1.52224203e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4889
+metadata/unity_name = "skirt_RH_05_end"
+
+[node name="Magica Capsule Collider (upper_leg_R)" type="Node3D" parent="Selkhera/Selkhera_Model/Armature/hips/upper_leg_R"]
+position = Vector3(0, 0.400000006, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23364
+metadata/unity_name = "Magica Capsule Collider (upper_leg_R)"
+
+[node name="Selkhera" type="Node3D" parent="Selkhera/Selkhera_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(3.77489471e-08, -0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26910
+metadata/unity_name = "Selkhera"
+
+[node name="Body_geo" type="Node3D" parent="Selkhera/Selkhera_Model/Selkhera"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9282
+metadata/unity_name = "Body_geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Selkhera/Selkhera_Model/Selkhera/Body_geo"]
+mesh = ExtResource("1")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="SnakeA_geo" type="Node3D" parent="Selkhera/Selkhera_Model/Selkhera"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18808
+metadata/unity_name = "SnakeA_geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Selkhera/Selkhera_Model/Selkhera/SnakeA_geo"]
+mesh = ExtResource("3")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="SnakeB_geo" type="Node3D" parent="Selkhera/Selkhera_Model/Selkhera"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21706
+metadata/unity_name = "SnakeB_geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Selkhera/Selkhera_Model/Selkhera/SnakeB_geo"]
+mesh = ExtResource("5")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="SnakeC_geo" type="Node3D" parent="Selkhera/Selkhera_Model/Selkhera"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6779
+metadata/unity_name = "SnakeC_geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Selkhera/Selkhera_Model/Selkhera/SnakeC_geo"]
+mesh = ExtResource("6")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="SnakeD_geo" type="Node3D" parent="Selkhera/Selkhera_Model/Selkhera"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6896
+metadata/unity_name = "SnakeD_geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Selkhera/Selkhera_Model/Selkhera/SnakeD_geo"]
+mesh = ExtResource("7")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="SnakeE_geo" type="Node3D" parent="Selkhera/Selkhera_Model/Selkhera"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14754
+metadata/unity_name = "SnakeE_geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Selkhera/Selkhera_Model/Selkhera/SnakeE_geo"]
+mesh = ExtResource("8")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="Tail_geo" type="Node3D" parent="Selkhera/Selkhera_Model/Selkhera"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-3.77489471e-08, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19821
+metadata/unity_name = "Tail_geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Selkhera/Selkhera_Model/Selkhera/Tail_geo"]
+mesh = ExtResource("9")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="Weapon_geo" type="Node3D" parent="Selkhera/Selkhera_Model/Selkhera"]
+position = Vector3(-0.733511567, -0, -0)
+quaternion = Quaternion(6.9545365e-09, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20942
+metadata/unity_name = "Weapon_geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Selkhera/Selkhera_Model/Selkhera/Weapon_geo"]
+mesh = ExtResource("10")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="WeaponB_geo" type="Node3D" parent="Selkhera/Selkhera_Model/Selkhera"]
+position = Vector3(0.733512223, -0, -0)
+quaternion = Quaternion(-3.77489471e-08, -5.62503145e-16, -1.49011612e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10605
+metadata/unity_name = "WeaponB_geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Selkhera/Selkhera_Model/Selkhera/WeaponB_geo"]
+mesh = ExtResource("11")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="Weapon" type="Node3D" parent="Selkhera/Selkhera_Model"]
+position = Vector3(-0.733511925, -0.0313683748, -0.002320759)
+quaternion = Quaternion(-2.77555756e-16, 2.77555756e-17, 4.62223187e-33, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7311
+metadata/unity_name = "Weapon"
+
+[node name="Weapon1" type="Node3D" parent="Selkhera/Selkhera_Model"]
+position = Vector3(0.316205323, 2.50449443, 0.349148244)
+quaternion = Quaternion(-0.335832447, -0.431102127, 0.665846944, -0.507952154)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5949
+metadata/unity_name = "Weapon1"
+
+[node name="Magica Cloth (skirt)" type="Node3D" parent="Selkhera/Selkhera_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18539
+metadata/unity_name = "Magica Cloth (skirt)"
+
+[node name="Magica Cloth (acce)" type="Node3D" parent="Selkhera/Selkhera_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13026
+metadata/unity_name = "Magica Cloth (acce)"
+
+[node name="Magica Cloth (waistcloth)" type="Node3D" parent="Selkhera/Selkhera_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12004
+metadata/unity_name = "Magica Cloth (waistcloth)"
+
+[node name="Magica Cloth (salor)" type="Node3D" parent="Selkhera/Selkhera_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26546
+metadata/unity_name = "Magica Cloth (salor)"
+
+[node name="Magica Cloth (snake)" type="Node3D" parent="Selkhera/Selkhera_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26686
+metadata/unity_name = "Magica Cloth (snake)"
+visible = false
+process_mode = 4
+
+[node name="OverheadSlot" type="Node3D" parent="Selkhera"]
+position = Vector3(0, 4, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6821
+metadata/unity_name = "OverheadSlot"
+
+[node name="VFXParents" type="Node3D" parent="Selkhera"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16157
+metadata/unity_name = "VFXParents"
+
+[node name="VFX_Selkhera_BasicAttack" type="Node3D" parent="Selkhera/VFXParents"]
+position = Vector3(0, 3.32399988, -1.33200002)
+quaternion = Quaternion(0.301738799, 0.927900493, -0.021374777, 0.217939451)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12773
+metadata/unity_name = "VFX_Selkhera_BasicAttack"
+
+[node name="FirstSlash" type="Node3D" parent="Selkhera/VFXParents/VFX_Selkhera_BasicAttack"]
+position = Vector3(-0.409999996, -0.930000007, -0.0799999982)
+quaternion = Quaternion(-0.0174378771, -0.418348879, 0.12075261, 0.900054991)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7550
+metadata/unity_name = "FirstSlash"
+
+[node name="Slash_01" type="Node3D" parent="Selkhera/VFXParents/VFX_Selkhera_BasicAttack/FirstSlash"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22399
+metadata/unity_name = "Slash_01"
+
+[node name="Highlight_01" type="Node3D" parent="Selkhera/VFXParents/VFX_Selkhera_BasicAttack/FirstSlash"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7084
+metadata/unity_name = "Highlight_01"
+
+[node name="Wind_01" type="Node3D" parent="Selkhera/VFXParents/VFX_Selkhera_BasicAttack/FirstSlash"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, 0.289616585, 0, 0.95714277)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12939
+metadata/unity_name = "Wind_01"
+
+[node name="SecondSlash" type="Node3D" parent="Selkhera/VFXParents/VFX_Selkhera_BasicAttack"]
+position = Vector3(-0.159999996, -0.230000004, 0.400000006)
+quaternion = Quaternion(0.247018099, -0.240814835, 0.708433092, 0.615721524)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18146
+metadata/unity_name = "SecondSlash"
+
+[node name="Slash_01" type="Node3D" parent="Selkhera/VFXParents/VFX_Selkhera_BasicAttack/SecondSlash"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22941
+metadata/unity_name = "Slash_01"
+
+[node name="Highlight_01" type="Node3D" parent="Selkhera/VFXParents/VFX_Selkhera_BasicAttack/SecondSlash"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8849
+metadata/unity_name = "Highlight_01"
+
+[node name="Wind_01" type="Node3D" parent="Selkhera/VFXParents/VFX_Selkhera_BasicAttack/SecondSlash"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, 0.326887995, 0, 0.945063055)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18816
+metadata/unity_name = "Wind_01"

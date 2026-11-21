@@ -1,0 +1,1470 @@
+{
+  "steps": {
+    "0": {
+      "flow_id": 77433,
+      "step_id": 60857,
+      "actions": [
+        {
+          "kind": "WaitForComicsFinishedFlowStateElement",
+          "source_id": 76125,
+          "lock": false
+        },
+        {
+          "kind": "SetReferencesObjectActiveElement",
+          "source_id": 77934,
+          "lock": false,
+          "setActive": 0,
+          "reference": 5
+        },
+        {
+          "kind": "SetReferencesObjectActiveElement",
+          "source_id": 76914,
+          "lock": false,
+          "setActive": 1,
+          "reference": 1
+        },
+        {
+          "kind": "DelayElement",
+          "source_id": 68840,
+          "lock": false,
+          "delaySeconds": 0.5
+        },
+        {
+          "kind": "TimedInfoFlowElement",
+          "source_id": 77356,
+          "lock": false,
+          "text": "Tutorial.NTUT-A01.InfoText1",
+          "display": 77122,
+          "hide": false,
+          "positioning": {
+            "source_id": 76046,
+            "kind": "TargetedElementPositioner",
+            "element_rect": {
+              "asset": "sharedassets3.assets",
+              "path_id": 61758,
+              "game_object": 17147,
+              "parent_path_id": 56082,
+              "anchor_min": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchor_max": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchored_position": {
+                "x": 0.0,
+                "y": -422.0
+              },
+              "size_delta": {
+                "x": 400.0,
+                "y": 99.69000244140625
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "local_scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            },
+            "alignment": 2,
+            "padding": 10.0,
+            "fallback_to_auto_mode_when_missing_space": true,
+            "target_rect": {
+              "asset": "sharedassets3.assets",
+              "path_id": 57315,
+              "game_object": 3645,
+              "parent_path_id": 62666,
+              "anchor_min": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchor_max": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchored_position": {
+                "x": 0.0,
+                "y": -300.0
+              },
+              "size_delta": {
+                "x": 100.0,
+                "y": 100.0
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "local_scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          "waitDuration": 15.0,
+          "skippable": 1,
+          "anyMouseButton": 1,
+          "specificButton": 0
+        },
+        {
+          "kind": "ReparentReferenceObjectElement",
+          "source_id": 77391,
+          "lock": false,
+          "targetParentReference": 3,
+          "reparentAll": 1,
+          "reference": 1500
+        },
+        {
+          "kind": "SetReferencesObjectActiveElement",
+          "source_id": 78518,
+          "lock": false,
+          "setActive": 1,
+          "reference": 4
+        },
+        {
+          "kind": "SetReferencesObjectActiveElement",
+          "source_id": 69748,
+          "lock": false,
+          "setActive": 1,
+          "reference": 1000
+        },
+        {
+          "kind": "TimedInfoFlowElement",
+          "source_id": 75364,
+          "lock": false,
+          "text": "Tutorial.NTUT-A01.InfoText2",
+          "display": 77122,
+          "hide": false,
+          "positioning": {
+            "source_id": 76592,
+            "kind": "TargetedElementPositioner",
+            "element_rect": {
+              "asset": "sharedassets3.assets",
+              "path_id": 61758,
+              "game_object": 17147,
+              "parent_path_id": 56082,
+              "anchor_min": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchor_max": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchored_position": {
+                "x": 0.0,
+                "y": -422.0
+              },
+              "size_delta": {
+                "x": 400.0,
+                "y": 99.69000244140625
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "local_scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            },
+            "alignment": 2,
+            "padding": 10.0,
+            "fallback_to_auto_mode_when_missing_space": true,
+            "target_rect": {
+              "asset": "sharedassets3.assets",
+              "path_id": 57315,
+              "game_object": 3645,
+              "parent_path_id": 62666,
+              "anchor_min": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchor_max": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchored_position": {
+                "x": 0.0,
+                "y": -300.0
+              },
+              "size_delta": {
+                "x": 100.0,
+                "y": 100.0
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "local_scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          "waitDuration": 15.0,
+          "skippable": 1,
+          "anyMouseButton": 1,
+          "specificButton": 0
+        },
+        {
+          "kind": "SetReferencesObjectActiveElement",
+          "source_id": 70297,
+          "lock": false,
+          "setActive": 0,
+          "reference": 1000
+        },
+        {
+          "kind": "SetReferencesObjectActiveElement",
+          "source_id": 74426,
+          "lock": false,
+          "setActive": 1,
+          "reference": 1001
+        },
+        {
+          "kind": "TimedInfoFlowElement",
+          "source_id": 76552,
+          "lock": false,
+          "text": "Tutorial.NTUT-A01.InfoText3",
+          "display": 77122,
+          "hide": true,
+          "positioning": {
+            "source_id": 74230,
+            "kind": "TargetedElementPositioner",
+            "element_rect": {
+              "asset": "sharedassets3.assets",
+              "path_id": 61758,
+              "game_object": 17147,
+              "parent_path_id": 56082,
+              "anchor_min": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchor_max": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchored_position": {
+                "x": 0.0,
+                "y": -422.0
+              },
+              "size_delta": {
+                "x": 400.0,
+                "y": 99.69000244140625
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "local_scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            },
+            "alignment": 2,
+            "padding": 30.0,
+            "fallback_to_auto_mode_when_missing_space": true,
+            "target_rect": {
+              "asset": "sharedassets3.assets",
+              "path_id": 57315,
+              "game_object": 3645,
+              "parent_path_id": 62666,
+              "anchor_min": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchor_max": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchored_position": {
+                "x": 0.0,
+                "y": -300.0
+              },
+              "size_delta": {
+                "x": 100.0,
+                "y": 100.0
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "local_scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          "waitDuration": 15.0,
+          "skippable": 1,
+          "anyMouseButton": 1,
+          "specificButton": 0
+        },
+        {
+          "kind": "SetReferencesObjectActiveElement",
+          "source_id": 77621,
+          "lock": false,
+          "setActive": 0,
+          "reference": 1001
+        },
+        {
+          "kind": "ReparentReferenceObjectElement",
+          "source_id": 77391,
+          "lock": false,
+          "targetParentReference": 3,
+          "reparentAll": 1,
+          "reference": 1500
+        },
+        {
+          "kind": "SetReferencesObjectActiveElement",
+          "source_id": 78853,
+          "lock": false,
+          "setActive": 0,
+          "reference": 1
+        },
+        {
+          "kind": "SetReferencesObjectActiveElement",
+          "source_id": 70039,
+          "lock": false,
+          "setActive": 0,
+          "reference": 4
+        },
+        {
+          "kind": "WaitForHeroPickElement",
+          "source_id": 71514,
+          "lock": false,
+          "text": "Tutorial.NTUT-A01.PromptText1",
+          "display": 65348,
+          "hide": true,
+          "positioning": {
+            "source_id": 73507,
+            "kind": "TargetedElementPositioner",
+            "element_rect": {
+              "asset": "sharedassets3.assets",
+              "path_id": 63903,
+              "game_object": 2504,
+              "parent_path_id": 63822,
+              "anchor_min": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchor_max": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchored_position": {
+                "x": 621.9998168945312,
+                "y": -253.29052734375
+              },
+              "size_delta": {
+                "x": 400.0,
+                "y": 99.69000244140625
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.0
+              },
+              "local_scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            },
+            "alignment": 2,
+            "padding": 30.0,
+            "fallback_to_auto_mode_when_missing_space": true,
+            "target_rect": {
+              "asset": "sharedassets3.assets",
+              "path_id": 57315,
+              "game_object": 3645,
+              "parent_path_id": 62666,
+              "anchor_min": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchor_max": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchored_position": {
+                "x": 0.0,
+                "y": -300.0
+              },
+              "size_delta": {
+                "x": 100.0,
+                "y": 100.0
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "local_scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          }
+        }
+      ]
+    },
+    "1": {
+      "flow_id": 75529,
+      "step_id": 60858,
+      "actions": [
+        {
+          "kind": "SetReferencesObjectActiveElement",
+          "source_id": 76914,
+          "lock": false,
+          "setActive": 1,
+          "reference": 1
+        },
+        {
+          "kind": "TimedInfoFlowElement",
+          "source_id": 75400,
+          "lock": true,
+          "text": "Tutorial.NTUT-A02.InfoText1",
+          "display": 77122,
+          "hide": false,
+          "positioning": {
+            "source_id": 69663,
+            "kind": "TargetedElementPositioner",
+            "element_rect": {
+              "asset": "sharedassets3.assets",
+              "path_id": 61758,
+              "game_object": 17147,
+              "parent_path_id": 56082,
+              "anchor_min": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchor_max": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchored_position": {
+                "x": 0.0,
+                "y": -422.0
+              },
+              "size_delta": {
+                "x": 400.0,
+                "y": 99.69000244140625
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "local_scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            },
+            "alignment": 3,
+            "padding": 20.0,
+            "fallback_to_auto_mode_when_missing_space": true,
+            "target_rect": {
+              "asset": "sharedassets3.assets",
+              "path_id": 53925,
+              "game_object": 14788,
+              "parent_path_id": 62666,
+              "anchor_min": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchor_max": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchored_position": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "size_delta": {
+                "x": 100.0,
+                "y": 100.0
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "local_scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          "waitDuration": 15.0,
+          "skippable": 1,
+          "anyMouseButton": 1,
+          "specificButton": 0
+        },
+        {
+          "kind": "SetGridVisibleElement",
+          "source_id": 69898,
+          "lock": false,
+          "visible": 1
+        },
+        {
+          "kind": "SetReferencesObjectActiveElement",
+          "source_id": 69438,
+          "lock": false,
+          "setActive": 1,
+          "reference": 1015
+        },
+        {
+          "kind": "TimedInfoFlowElement",
+          "source_id": 67508,
+          "lock": true,
+          "text": "Tutorial.NTUT-A02.InfoText2",
+          "display": 77122,
+          "hide": true,
+          "positioning": {
+            "source_id": 72985,
+            "kind": "TargetedElementPositioner",
+            "element_rect": {
+              "asset": "sharedassets3.assets",
+              "path_id": 61758,
+              "game_object": 17147,
+              "parent_path_id": 56082,
+              "anchor_min": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchor_max": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchored_position": {
+                "x": 0.0,
+                "y": -422.0
+              },
+              "size_delta": {
+                "x": 400.0,
+                "y": 99.69000244140625
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "local_scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            },
+            "alignment": 4,
+            "padding": 16.0,
+            "fallback_to_auto_mode_when_missing_space": true,
+            "target_rect": {
+              "asset": "sharedassets3.assets",
+              "path_id": 53925,
+              "game_object": 14788,
+              "parent_path_id": 62666,
+              "anchor_min": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchor_max": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchored_position": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "size_delta": {
+                "x": 100.0,
+                "y": 100.0
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "local_scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          "waitDuration": 15.0,
+          "skippable": 1,
+          "anyMouseButton": 1,
+          "specificButton": 0
+        },
+        {
+          "kind": "SetReferencesObjectActiveElement",
+          "source_id": 76571,
+          "lock": false,
+          "setActive": 0,
+          "reference": 1015
+        },
+        {
+          "kind": "SetReferencesObjectActiveElement",
+          "source_id": 78853,
+          "lock": false,
+          "setActive": 0,
+          "reference": 1
+        },
+        {
+          "kind": "SetReferencesObjectActiveElement",
+          "source_id": 71626,
+          "lock": false,
+          "setActive": 1,
+          "reference": 1002
+        },
+        {
+          "kind": "WaitForBattleFlowStateElement",
+          "source_id": 70073,
+          "lock": false,
+          "text": "Tutorial.NTUT-A02.PromptText1",
+          "display": 65348,
+          "hide": true,
+          "positioning": {
+            "source_id": 69334,
+            "kind": "ReferenceElementPositioner",
+            "element_rect": {
+              "asset": "sharedassets3.assets",
+              "path_id": 63903,
+              "game_object": 2504,
+              "parent_path_id": 63822,
+              "anchor_min": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchor_max": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchored_position": {
+                "x": 621.9998168945312,
+                "y": -253.29052734375
+              },
+              "size_delta": {
+                "x": 400.0,
+                "y": 99.69000244140625
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.0
+              },
+              "local_scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            },
+            "alignment": 1,
+            "padding": 30.0,
+            "fallback_to_auto_mode_when_missing_space": true,
+            "resolver_source_id": 71601,
+            "target_reference": 10,
+            "target_rect": {
+              "asset": "level3",
+              "path_id": 20752,
+              "game_object": 4306,
+              "parent_path_id": 19933,
+              "anchor_min": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "anchor_max": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "anchored_position": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "size_delta": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "local_scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          "state": 3
+        },
+        {
+          "kind": "SetGridVisibleElement",
+          "source_id": 71584,
+          "lock": false,
+          "visible": 0
+        },
+        {
+          "kind": "SetReferencesObjectActiveElement",
+          "source_id": 66428,
+          "lock": false,
+          "setActive": 0,
+          "reference": 1002
+        }
+      ]
+    },
+    "2": {
+      "flow_id": 75756,
+      "step_id": 60859,
+      "actions": [
+        {
+          "kind": "DelayElement",
+          "source_id": 68840,
+          "lock": false,
+          "delaySeconds": 0.5
+        },
+        {
+          "kind": "TimedInfoFlowElement",
+          "source_id": 65357,
+          "lock": false,
+          "text": "Tutorial.NTUT-A03.InfoText1",
+          "display": 77122,
+          "hide": true,
+          "positioning": {
+            "source_id": 72711,
+            "kind": "TargetedElementPositioner",
+            "element_rect": {
+              "asset": "sharedassets3.assets",
+              "path_id": 61758,
+              "game_object": 17147,
+              "parent_path_id": 56082,
+              "anchor_min": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchor_max": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchored_position": {
+                "x": 0.0,
+                "y": -422.0
+              },
+              "size_delta": {
+                "x": 400.0,
+                "y": 99.69000244140625
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "local_scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            },
+            "alignment": 4,
+            "padding": 10.0,
+            "fallback_to_auto_mode_when_missing_space": true,
+            "target_rect": {
+              "asset": "sharedassets3.assets",
+              "path_id": 53925,
+              "game_object": 14788,
+              "parent_path_id": 62666,
+              "anchor_min": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchor_max": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchored_position": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "size_delta": {
+                "x": 100.0,
+                "y": 100.0
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "local_scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          "waitDuration": 5.0,
+          "skippable": 1,
+          "anyMouseButton": 1,
+          "specificButton": 0
+        }
+      ]
+    },
+    "3": {
+      "flow_id": 76709,
+      "step_id": 60860,
+      "actions": [
+        {
+          "kind": "PauseSimulationControlElement",
+          "source_id": 71117,
+          "lock": false,
+          "setPaused": 1
+        },
+        {
+          "kind": "SetReferencesObjectActiveElement",
+          "source_id": 70979,
+          "lock": false,
+          "setActive": 1,
+          "reference": 1016
+        },
+        {
+          "kind": "TimedInfoFlowElement",
+          "source_id": 71295,
+          "lock": false,
+          "text": "Tutorial.NTUT-A04.InfoText1",
+          "display": 77122,
+          "hide": false,
+          "positioning": {
+            "source_id": 72122,
+            "kind": "ReferenceElementPositioner",
+            "element_rect": {
+              "asset": "sharedassets3.assets",
+              "path_id": 61758,
+              "game_object": 17147,
+              "parent_path_id": 56082,
+              "anchor_min": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchor_max": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchored_position": {
+                "x": 0.0,
+                "y": -422.0
+              },
+              "size_delta": {
+                "x": 400.0,
+                "y": 99.69000244140625
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "local_scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            },
+            "alignment": 4,
+            "padding": 10.0,
+            "fallback_to_auto_mode_when_missing_space": true,
+            "resolver_source_id": 79069,
+            "target_reference": 14,
+            "target_rect": {
+              "asset": "sharedassets3.assets",
+              "path_id": 59012,
+              "game_object": 10404,
+              "parent_path_id": 57673,
+              "anchor_min": {
+                "x": 1.0,
+                "y": 0.5
+              },
+              "anchor_max": {
+                "x": 1.0,
+                "y": 0.5
+              },
+              "anchored_position": {
+                "x": 78.0,
+                "y": -30.0
+              },
+              "size_delta": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "local_scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          "waitDuration": 15.0,
+          "skippable": 1,
+          "anyMouseButton": 1,
+          "specificButton": 0
+        },
+        {
+          "kind": "SetReferencesObjectActiveElement",
+          "source_id": 76011,
+          "lock": false,
+          "setActive": 0,
+          "reference": 1016
+        },
+        {
+          "kind": "TimedInfoFlowElement",
+          "source_id": 68526,
+          "lock": false,
+          "text": "Tutorial.NTUT-A04.InfoText2",
+          "display": 77122,
+          "hide": true,
+          "positioning": {
+            "source_id": 68278,
+            "kind": "ReferenceElementPositioner",
+            "element_rect": {
+              "asset": "sharedassets3.assets",
+              "path_id": 61758,
+              "game_object": 17147,
+              "parent_path_id": 56082,
+              "anchor_min": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchor_max": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchored_position": {
+                "x": 0.0,
+                "y": -422.0
+              },
+              "size_delta": {
+                "x": 400.0,
+                "y": 99.69000244140625
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "local_scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            },
+            "alignment": 4,
+            "padding": 10.0,
+            "fallback_to_auto_mode_when_missing_space": true,
+            "resolver_source_id": 74583,
+            "target_reference": 14,
+            "target_rect": {
+              "asset": "sharedassets3.assets",
+              "path_id": 59012,
+              "game_object": 10404,
+              "parent_path_id": 57673,
+              "anchor_min": {
+                "x": 1.0,
+                "y": 0.5
+              },
+              "anchor_max": {
+                "x": 1.0,
+                "y": 0.5
+              },
+              "anchored_position": {
+                "x": 78.0,
+                "y": -30.0
+              },
+              "size_delta": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "local_scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          "waitDuration": 15.0,
+          "skippable": 1,
+          "anyMouseButton": 1,
+          "specificButton": 0
+        },
+        {
+          "kind": "PauseSimulationControlElement",
+          "source_id": 77384,
+          "lock": false,
+          "setPaused": 0
+        }
+      ]
+    },
+    "4": {
+      "flow_id": 77296,
+      "step_id": 60861,
+      "actions": [
+        {
+          "kind": "DelayElement",
+          "source_id": 76609,
+          "lock": false,
+          "delaySeconds": 1.649999976158142
+        },
+        {
+          "kind": "SetReferencesObjectActiveElement",
+          "source_id": 76914,
+          "lock": false,
+          "setActive": 1,
+          "reference": 1
+        },
+        {
+          "kind": "SetReferencesObjectActiveElement",
+          "source_id": 69245,
+          "lock": false,
+          "setActive": 1,
+          "reference": 1003
+        },
+        {
+          "kind": "ReparentReferenceObjectElement",
+          "source_id": 69051,
+          "lock": false,
+          "targetParentReference": 3,
+          "reparentAll": 1,
+          "reference": 21
+        },
+        {
+          "kind": "TimedInfoFlowElement",
+          "source_id": 70367,
+          "lock": false,
+          "text": "Tutorial.NTUT-A05.InfoText2",
+          "display": 77122,
+          "hide": true,
+          "positioning": {
+            "source_id": 65652,
+            "kind": "ReferenceElementPositioner",
+            "element_rect": {
+              "asset": "sharedassets3.assets",
+              "path_id": 61758,
+              "game_object": 17147,
+              "parent_path_id": 56082,
+              "anchor_min": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchor_max": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchored_position": {
+                "x": 0.0,
+                "y": -422.0
+              },
+              "size_delta": {
+                "x": 400.0,
+                "y": 99.69000244140625
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "local_scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            },
+            "alignment": 2,
+            "padding": 24.0,
+            "fallback_to_auto_mode_when_missing_space": true,
+            "resolver_source_id": 75675,
+            "target_reference": 21,
+            "target_rect": {
+              "asset": "sharedassets3.assets",
+              "path_id": 58095,
+              "game_object": 10489,
+              "parent_path_id": 0,
+              "anchor_min": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "anchor_max": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "anchored_position": {
+                "x": 0.0,
+                "y": 0.0
+              },
+              "size_delta": {
+                "x": 373.20001220703125,
+                "y": 34.0
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "local_scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          },
+          "waitDuration": 15.0,
+          "skippable": 1,
+          "anyMouseButton": 1,
+          "specificButton": 0
+        },
+        {
+          "kind": "ReparentReferenceObjectElement",
+          "source_id": 69051,
+          "lock": false,
+          "targetParentReference": 3,
+          "reparentAll": 1,
+          "reference": 21
+        },
+        {
+          "kind": "SetReferencesObjectActiveElement",
+          "source_id": 69557,
+          "lock": false,
+          "setActive": 0,
+          "reference": 1003
+        },
+        {
+          "kind": "SetReferencesObjectActiveElement",
+          "source_id": 78853,
+          "lock": false,
+          "setActive": 0,
+          "reference": 1
+        },
+        {
+          "kind": "SetReferencesObjectActiveElement",
+          "source_id": 71988,
+          "lock": false,
+          "setActive": 1,
+          "reference": 1002
+        },
+        {
+          "kind": "InstantCompleteFlowStateElement",
+          "source_id": 76358,
+          "lock": false,
+          "text": "Tutorial.NTUT-A05.PromptText1",
+          "display": 65348,
+          "hide": false,
+          "positioning": {
+            "source_id": 76344,
+            "kind": "ReferenceElementPositioner",
+            "element_rect": {
+              "asset": "sharedassets3.assets",
+              "path_id": 63903,
+              "game_object": 2504,
+              "parent_path_id": 63822,
+              "anchor_min": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchor_max": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "anchored_position": {
+                "x": 621.9998168945312,
+                "y": -253.29052734375
+              },
+              "size_delta": {
+                "x": 400.0,
+                "y": 99.69000244140625
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.0
+              },
+              "local_scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            },
+            "alignment": 2,
+            "padding": 20.0,
+            "fallback_to_auto_mode_when_missing_space": true,
+            "resolver_source_id": 71350,
+            "target_reference": 22,
+            "target_rect": {
+              "asset": "level3",
+              "path_id": 21318,
+              "game_object": 4083,
+              "parent_path_id": 21613,
+              "anchor_min": {
+                "x": 0.0,
+                "y": 1.0
+              },
+              "anchor_max": {
+                "x": 0.0,
+                "y": 1.0
+              },
+              "anchored_position": {
+                "x": -48.0,
+                "y": -78.0
+              },
+              "size_delta": {
+                "x": 280.0,
+                "y": 68.0
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.0
+              },
+              "local_scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+              }
+            }
+          }
+        }
+      ]
+    },
+    "5": {
+      "flow_id": 75206,
+      "step_id": 60862,
+      "actions": [
+        {
+          "kind": "SetGameObjectActiveElement",
+          "source_id": 70861,
+          "lock": false,
+          "setActive": 0,
+          "objects": [
+            2504,
+            17147
+          ]
+        }
+      ]
+    }
+  },
+  "combat_tracker": {
+    "flow_id": 68067,
+    "step_id": 60864,
+    "actions": [
+      {
+        "kind": "DelayElement",
+        "source_id": 75589,
+        "lock": false,
+        "delaySeconds": 3.0
+      },
+      {
+        "kind": "SetReferencesObjectActiveElement",
+        "source_id": 74881,
+        "lock": false,
+        "setActive": 1,
+        "reference": 100
+      },
+      {
+        "kind": "SetReferencesObjectActiveElement",
+        "source_id": 76914,
+        "lock": false,
+        "setActive": 1,
+        "reference": 1
+      },
+      {
+        "kind": "SetReferencesObjectActiveElement",
+        "source_id": 69755,
+        "lock": false,
+        "setActive": 1,
+        "reference": 1019
+      },
+      {
+        "kind": "ReparentReferenceObjectElement",
+        "source_id": 67410,
+        "lock": false,
+        "targetParentReference": 3,
+        "reparentAll": 1,
+        "reference": 100
+      },
+      {
+        "kind": "TimedInfoFlowElement",
+        "source_id": 71458,
+        "lock": false,
+        "text": "Tutorial.NTUT-A08.2.InfoText1",
+        "display": 77122,
+        "hide": true,
+        "positioning": {
+          "source_id": 72339,
+          "kind": "ReferenceElementPositioner",
+          "element_rect": {
+            "asset": "sharedassets3.assets",
+            "path_id": 61758,
+            "game_object": 17147,
+            "parent_path_id": 56082,
+            "anchor_min": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchor_max": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "anchored_position": {
+              "x": 0.0,
+              "y": -422.0
+            },
+            "size_delta": {
+              "x": 400.0,
+              "y": 99.69000244140625
+            },
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "local_scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          },
+          "alignment": 3,
+          "padding": 20.0,
+          "fallback_to_auto_mode_when_missing_space": true,
+          "resolver_source_id": 74634,
+          "target_reference": 100,
+          "target_rect": {
+            "asset": "sharedassets3.assets",
+            "path_id": 60822,
+            "game_object": 11243,
+            "parent_path_id": 55235,
+            "anchor_min": {
+              "x": 1.0,
+              "y": 0.5
+            },
+            "anchor_max": {
+              "x": 1.0,
+              "y": 0.5
+            },
+            "anchored_position": {
+              "x": 0.0,
+              "y": 210.99984741210938
+            },
+            "size_delta": {
+              "x": 224.0,
+              "y": 492.0
+            },
+            "pivot": {
+              "x": 1.0,
+              "y": 1.0
+            },
+            "local_scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          }
+        },
+        "waitDuration": 15.0,
+        "skippable": 1,
+        "anyMouseButton": 1,
+        "specificButton": 0
+      },
+      {
+        "kind": "SetReferencesObjectActiveElement",
+        "source_id": 65372,
+        "lock": false,
+        "setActive": 0,
+        "reference": 1019
+      },
+      {
+        "kind": "SetReferencesObjectActiveElement",
+        "source_id": 78853,
+        "lock": false,
+        "setActive": 0,
+        "reference": 1
+      },
+      {
+        "kind": "ReparentReferenceObjectElement",
+        "source_id": 67410,
+        "lock": false,
+        "targetParentReference": 3,
+        "reparentAll": 1,
+        "reference": 100
+      }
+    ]
+  },
+  "canvas": {
+    "render_mode": 1,
+    "sorting_order": 100,
+    "reference_resolution": {
+      "x": 1920.0,
+      "y": 1080.0
+    },
+    "match_width_or_height": 0.0,
+    "aspect_ratio_threshold": 1.7999999523162842
+  },
+  "display_layouts": {
+    "65348": {
+      "container": 2504,
+      "text_component": 74154,
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "position": {
+        "x": 621.9998168945312,
+        "y": -253.29052734375
+      },
+      "size": {
+        "x": 400.0,
+        "y": 99.69000244140625
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.0
+      },
+      "background_sprite": 447,
+      "pixels_per_unit_multiplier": 1.5,
+      "padding": {
+        "m_Left": 24,
+        "m_Right": 24,
+        "m_Top": 24,
+        "m_Bottom": 24
+      },
+      "spacing": 10.0
+    },
+    "77122": {
+      "container": 17147,
+      "text_component": 69751,
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "position": {
+        "x": 0.0,
+        "y": -422.0
+      },
+      "size": {
+        "x": 400.0,
+        "y": 99.69000244140625
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "background_sprite": 447,
+      "pixels_per_unit_multiplier": 1.0,
+      "padding": {
+        "m_Left": 24,
+        "m_Right": 24,
+        "m_Top": 24,
+        "m_Bottom": 24
+      },
+      "spacing": 10.0
+    }
+  }
+}

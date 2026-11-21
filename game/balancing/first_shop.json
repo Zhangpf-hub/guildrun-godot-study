@@ -1,0 +1,123 @@
+{
+  "starting_shards": 15,
+  "surviving_hero_shards": 2,
+  "stock": {
+    "26": [
+      "Hero_3",
+      "Hero_27",
+      "Hero_14",
+      "Item_101",
+      "Item_114",
+      "Relic_1000"
+    ],
+    "14": [
+      "Hero_17",
+      "Hero_6",
+      "Hero_26",
+      "Item_114",
+      "Item_101",
+      "Relic_1006"
+    ],
+    "4": [
+      "Hero_24",
+      "Hero_13",
+      "Hero_26",
+      "Item_119",
+      "Item_104",
+      "Relic_1003"
+    ]
+  },
+  "catalog": {
+    "Hero_3": {
+      "kind": "Hero",
+      "id": 3,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3451.png"
+    },
+    "Hero_27": {
+      "kind": "Hero",
+      "id": 27,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3651.png"
+    },
+    "Hero_14": {
+      "kind": "Hero",
+      "id": 14,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_4255.png"
+    },
+    "Item_101": {
+      "kind": "Item",
+      "id": 101,
+      "price": 5,
+      "icon": "res://sprites/sharedassets1_3514.png"
+    },
+    "Item_114": {
+      "kind": "Item",
+      "id": 114,
+      "price": 5,
+      "icon": "res://sprites/sharedassets1_4285.png"
+    },
+    "Relic_1000": {
+      "kind": "Relic",
+      "id": 1000,
+      "price": 10,
+      "icon": "res://sprites/sharedassets1_4582.png"
+    },
+    "Hero_17": {
+      "kind": "Hero",
+      "id": 17,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3415.png"
+    },
+    "Hero_6": {
+      "kind": "Hero",
+      "id": 6,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3576.png"
+    },
+    "Hero_26": {
+      "kind": "Hero",
+      "id": 26,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_3401.png"
+    },
+    "Relic_1006": {
+      "kind": "Relic",
+      "id": 1006,
+      "price": 10,
+      "icon": "res://sprites/sharedassets1_4469.png"
+    },
+    "Hero_24": {
+      "kind": "Hero",
+      "id": 24,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_4546.png"
+    },
+    "Hero_13": {
+      "kind": "Hero",
+      "id": 13,
+      "price": 15,
+      "icon": "res://sprites/sharedassets1_4510.png"
+    },
+    "Item_119": {
+      "kind": "Item",
+      "id": 119,
+      "price": 5,
+      "icon": "res://sprites/sharedassets1_3659.png"
+    },
+    "Item_104": {
+      "kind": "Item",
+      "id": 104,
+      "price": 5,
+      "icon": "res://sprites/sharedassets1_4547.png"
+    },
+    "Relic_1003": {
+      "kind": "Relic",
+      "id": 1003,
+      "price": 10,
+      "icon": "res://sprites/sharedassets1_3681.png"
+    }
+  },
+  "fallbacks": {}
+}

@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[resource]
+resource_name = "VFX_Mat_Javryn_Bow_00"
+albedo_color = Color(0.576427639, 1.18089271, 1.6740092, 1)
+metadata/unity_shader = "GAP_SG/FresnelShader"

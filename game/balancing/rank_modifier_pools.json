@@ -1,0 +1,1023 @@
+{
+  "pool_holder": 60844,
+  "modifier_holder": 60845,
+  "enabled": {
+    "1": "RankModifiers.RankModifier_1.Name",
+    "2": "RankModifiers.RankModifier_2.Name",
+    "3": "RankModifiers.RankModifier_3.Name",
+    "4": "RankModifiers.RankModifier_4.Name",
+    "5": "RankModifiers.RankModifier_5.Name",
+    "6": "RankModifiers.RankModifier_6.Name",
+    "7": "RankModifiers.RankModifier_7.Name",
+    "8": "RankModifiers.RankModifier_8.Name",
+    "9": "RankModifiers.RankModifier_9.Name",
+    "10": "RankModifiers.RankModifier_10.Name",
+    "11": "RankModifiers.RankModifier_11.Name",
+    "12": "RankModifiers.RankModifier_12.Name",
+    "13": "RankModifiers.RankModifier_13.Name",
+    "14": "RankModifiers.RankModifier_14.Name",
+    "15": "RankModifiers.RankModifier_15.Name",
+    "46": "RankModifiers.RankModifier_46.Name",
+    "47": "RankModifiers.RankModifier_47.Name",
+    "48": "RankModifiers.RankModifier_48.Name",
+    "49": "RankModifiers.RankModifier_49.Name",
+    "50": "RankModifiers.RankModifier_50.Name",
+    "51": "RankModifiers.RankModifier_51.Name",
+    "52": "RankModifiers.RankModifier_52.Name",
+    "53": "RankModifiers.RankModifier_53.Name",
+    "54": "RankModifiers.RankModifier_54.Name",
+    "55": "RankModifiers.RankModifier_55.Name",
+    "56": "RankModifiers.RankModifier_56.Name",
+    "57": "RankModifiers.RankModifier_57.Name",
+    "58": "RankModifiers.RankModifier_58.Name",
+    "59": "RankModifiers.RankModifier_59.Name",
+    "60": "RankModifiers.RankModifier_60.Name",
+    "91": "RankModifiers.RankModifier_91.Name",
+    "92": "RankModifiers.RankModifier_92.Name",
+    "93": "RankModifiers.RankModifier_93.Name",
+    "94": "RankModifiers.RankModifier_94.Name",
+    "95": "RankModifiers.RankModifier_95.Name",
+    "96": "RankModifiers.RankModifier_96.Name",
+    "97": "RankModifiers.RankModifier_97.Name",
+    "98": "RankModifiers.RankModifier_98.Name",
+    "99": "RankModifiers.RankModifier_99.Name",
+    "100": "RankModifiers.RankModifier_100.Name",
+    "101": "RankModifiers.RankModifier_101.Name",
+    "102": "RankModifiers.RankModifier_102.Name",
+    "103": "RankModifiers.RankModifier_103.Name",
+    "104": "RankModifiers.RankModifier_104.Name",
+    "105": "RankModifiers.RankModifier_105.Name",
+    "136": "RankModifiers.RankModifier_136.Name",
+    "137": "RankModifiers.RankModifier_137.Name",
+    "138": "RankModifiers.RankModifier_138.Name",
+    "139": "RankModifiers.RankModifier_139.Name",
+    "140": "RankModifiers.RankModifier_140.Name",
+    "141": "RankModifiers.RankModifier_141.Name",
+    "142": "RankModifiers.RankModifier_142.Name",
+    "143": "RankModifiers.RankModifier_143.Name",
+    "144": "RankModifiers.RankModifier_144.Name",
+    "145": "RankModifiers.RankModifier_145.Name",
+    "146": "RankModifiers.RankModifier_146.Name",
+    "147": "RankModifiers.RankModifier_147.Name",
+    "148": "RankModifiers.RankModifier_148.Name",
+    "149": "RankModifiers.RankModifier_149.Name",
+    "150": "RankModifiers.RankModifier_150.Name",
+    "181": "RankModifiers.RankModifier_181.Name",
+    "182": "RankModifiers.RankModifier_182.Name",
+    "183": "RankModifiers.RankModifier_183.Name",
+    "184": "RankModifiers.RankModifier_184.Name",
+    "185": "RankModifiers.RankModifier_185.Name",
+    "186": "RankModifiers.RankModifier_186.Name",
+    "187": "RankModifiers.RankModifier_187.Name",
+    "188": "RankModifiers.RankModifier_188.Name",
+    "189": "RankModifiers.RankModifier_189.Name",
+    "190": "RankModifiers.RankModifier_190.Name",
+    "191": "RankModifiers.RankModifier_191.Name",
+    "192": "RankModifiers.RankModifier_192.Name",
+    "193": "RankModifiers.RankModifier_193.Name",
+    "194": "RankModifiers.RankModifier_194.Name",
+    "195": "RankModifiers.RankModifier_195.Name",
+    "226": "RankModifiers.RankModifier_226.Name",
+    "227": "RankModifiers.RankModifier_227.Name",
+    "228": "RankModifiers.RankModifier_228.Name",
+    "229": "RankModifiers.RankModifier_229.Name",
+    "230": "RankModifiers.RankModifier_230.Name",
+    "231": "RankModifiers.RankModifier_231.Name",
+    "232": "RankModifiers.RankModifier_232.Name",
+    "233": "RankModifiers.RankModifier_233.Name",
+    "234": "RankModifiers.RankModifier_234.Name",
+    "235": "RankModifiers.RankModifier_235.Name",
+    "236": "RankModifiers.RankModifier_236.Name",
+    "237": "RankModifiers.RankModifier_237.Name",
+    "238": "RankModifiers.RankModifier_238.Name",
+    "239": "RankModifiers.RankModifier_239.Name",
+    "240": "RankModifiers.RankModifier_240.Name",
+    "271": "RankModifiers.RankModifier_271.Name",
+    "272": "RankModifiers.RankModifier_272.Name",
+    "273": "RankModifiers.RankModifier_273.Name",
+    "274": "RankModifiers.RankModifier_274.Name",
+    "275": "RankModifiers.RankModifier_275.Name",
+    "276": "RankModifiers.RankModifier_276.Name",
+    "277": "RankModifiers.RankModifier_277.Name",
+    "278": "RankModifiers.RankModifier_278.Name",
+    "279": "RankModifiers.RankModifier_279.Name",
+    "280": "RankModifiers.RankModifier_280.Name",
+    "281": "RankModifiers.RankModifier_281.Name",
+    "282": "RankModifiers.RankModifier_282.Name",
+    "283": "RankModifiers.RankModifier_283.Name",
+    "284": "RankModifiers.RankModifier_284.Name",
+    "285": "RankModifiers.RankModifier_285.Name"
+  },
+  "pools": {
+    "5:3": {
+      "id": 1,
+      "weights": [
+        [
+          1,
+          10
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          3,
+          10
+        ],
+        [
+          4,
+          10
+        ],
+        [
+          5,
+          10
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          10
+        ],
+        [
+          12,
+          10
+        ],
+        [
+          13,
+          10
+        ],
+        [
+          14,
+          10
+        ],
+        [
+          15,
+          10
+        ]
+      ]
+    },
+    "5:4": {
+      "id": 2,
+      "weights": [
+        [
+          1,
+          10
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          3,
+          10
+        ],
+        [
+          4,
+          10
+        ],
+        [
+          5,
+          10
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          10
+        ],
+        [
+          12,
+          10
+        ],
+        [
+          13,
+          10
+        ],
+        [
+          14,
+          10
+        ],
+        [
+          15,
+          10
+        ]
+      ]
+    },
+    "1:3": {
+      "id": 4,
+      "weights": [
+        [
+          10,
+          10
+        ],
+        [
+          47,
+          10
+        ],
+        [
+          48,
+          10
+        ],
+        [
+          49,
+          10
+        ],
+        [
+          50,
+          10
+        ],
+        [
+          51,
+          10
+        ],
+        [
+          52,
+          10
+        ],
+        [
+          53,
+          10
+        ],
+        [
+          54,
+          10
+        ],
+        [
+          55,
+          10
+        ],
+        [
+          56,
+          10
+        ],
+        [
+          57,
+          10
+        ],
+        [
+          58,
+          10
+        ],
+        [
+          59,
+          10
+        ],
+        [
+          60,
+          10
+        ]
+      ]
+    },
+    "1:4": {
+      "id": 5,
+      "weights": [
+        [
+          10,
+          10
+        ],
+        [
+          47,
+          10
+        ],
+        [
+          48,
+          10
+        ],
+        [
+          49,
+          10
+        ],
+        [
+          50,
+          10
+        ],
+        [
+          51,
+          10
+        ],
+        [
+          52,
+          10
+        ],
+        [
+          53,
+          10
+        ],
+        [
+          54,
+          10
+        ],
+        [
+          55,
+          10
+        ],
+        [
+          56,
+          10
+        ],
+        [
+          57,
+          10
+        ],
+        [
+          58,
+          10
+        ],
+        [
+          59,
+          10
+        ],
+        [
+          60,
+          10
+        ]
+      ]
+    },
+    "2:3": {
+      "id": 7,
+      "weights": [
+        [
+          91,
+          10
+        ],
+        [
+          92,
+          10
+        ],
+        [
+          93,
+          10
+        ],
+        [
+          94,
+          10
+        ],
+        [
+          95,
+          10
+        ],
+        [
+          96,
+          10
+        ],
+        [
+          97,
+          10
+        ],
+        [
+          98,
+          10
+        ],
+        [
+          99,
+          10
+        ],
+        [
+          100,
+          10
+        ],
+        [
+          101,
+          10
+        ],
+        [
+          102,
+          10
+        ],
+        [
+          103,
+          10
+        ],
+        [
+          104,
+          10
+        ],
+        [
+          105,
+          10
+        ]
+      ]
+    },
+    "2:4": {
+      "id": 8,
+      "weights": [
+        [
+          91,
+          10
+        ],
+        [
+          92,
+          10
+        ],
+        [
+          93,
+          10
+        ],
+        [
+          94,
+          10
+        ],
+        [
+          95,
+          10
+        ],
+        [
+          96,
+          10
+        ],
+        [
+          97,
+          10
+        ],
+        [
+          98,
+          10
+        ],
+        [
+          99,
+          10
+        ],
+        [
+          100,
+          10
+        ],
+        [
+          101,
+          10
+        ],
+        [
+          102,
+          10
+        ],
+        [
+          103,
+          10
+        ],
+        [
+          104,
+          10
+        ],
+        [
+          105,
+          10
+        ]
+      ]
+    },
+    "6:3": {
+      "id": 10,
+      "weights": [
+        [
+          136,
+          10
+        ],
+        [
+          137,
+          10
+        ],
+        [
+          138,
+          10
+        ],
+        [
+          139,
+          10
+        ],
+        [
+          140,
+          10
+        ],
+        [
+          92,
+          10
+        ],
+        [
+          142,
+          10
+        ],
+        [
+          143,
+          10
+        ],
+        [
+          144,
+          10
+        ],
+        [
+          145,
+          10
+        ],
+        [
+          146,
+          10
+        ],
+        [
+          147,
+          10
+        ],
+        [
+          148,
+          10
+        ],
+        [
+          149,
+          10
+        ],
+        [
+          150,
+          10
+        ]
+      ]
+    },
+    "6:4": {
+      "id": 11,
+      "weights": [
+        [
+          136,
+          10
+        ],
+        [
+          137,
+          10
+        ],
+        [
+          138,
+          10
+        ],
+        [
+          139,
+          10
+        ],
+        [
+          140,
+          10
+        ],
+        [
+          92,
+          10
+        ],
+        [
+          142,
+          10
+        ],
+        [
+          143,
+          10
+        ],
+        [
+          144,
+          10
+        ],
+        [
+          145,
+          10
+        ],
+        [
+          146,
+          10
+        ],
+        [
+          147,
+          10
+        ],
+        [
+          148,
+          10
+        ],
+        [
+          149,
+          10
+        ],
+        [
+          150,
+          10
+        ]
+      ]
+    },
+    "3:3": {
+      "id": 13,
+      "weights": [
+        [
+          181,
+          10
+        ],
+        [
+          182,
+          10
+        ],
+        [
+          183,
+          10
+        ],
+        [
+          95,
+          10
+        ],
+        [
+          185,
+          10
+        ],
+        [
+          186,
+          10
+        ],
+        [
+          187,
+          10
+        ],
+        [
+          49,
+          10
+        ],
+        [
+          189,
+          10
+        ],
+        [
+          190,
+          10
+        ],
+        [
+          191,
+          10
+        ],
+        [
+          192,
+          10
+        ],
+        [
+          193,
+          10
+        ],
+        [
+          194,
+          10
+        ],
+        [
+          195,
+          10
+        ]
+      ]
+    },
+    "3:4": {
+      "id": 14,
+      "weights": [
+        [
+          181,
+          10
+        ],
+        [
+          182,
+          10
+        ],
+        [
+          183,
+          10
+        ],
+        [
+          95,
+          10
+        ],
+        [
+          185,
+          10
+        ],
+        [
+          186,
+          10
+        ],
+        [
+          187,
+          10
+        ],
+        [
+          49,
+          10
+        ],
+        [
+          189,
+          10
+        ],
+        [
+          190,
+          10
+        ],
+        [
+          191,
+          10
+        ],
+        [
+          192,
+          10
+        ],
+        [
+          193,
+          10
+        ],
+        [
+          194,
+          10
+        ],
+        [
+          195,
+          10
+        ]
+      ]
+    },
+    "4:3": {
+      "id": 16,
+      "weights": [
+        [
+          226,
+          10
+        ],
+        [
+          227,
+          10
+        ],
+        [
+          49,
+          10
+        ],
+        [
+          229,
+          10
+        ],
+        [
+          230,
+          10
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          232,
+          10
+        ],
+        [
+          233,
+          10
+        ],
+        [
+          234,
+          10
+        ],
+        [
+          235,
+          10
+        ],
+        [
+          236,
+          10
+        ],
+        [
+          237,
+          10
+        ],
+        [
+          238,
+          10
+        ],
+        [
+          239,
+          10
+        ],
+        [
+          240,
+          10
+        ]
+      ]
+    },
+    "4:4": {
+      "id": 17,
+      "weights": [
+        [
+          226,
+          10
+        ],
+        [
+          227,
+          10
+        ],
+        [
+          49,
+          10
+        ],
+        [
+          229,
+          10
+        ],
+        [
+          230,
+          10
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          232,
+          10
+        ],
+        [
+          233,
+          10
+        ],
+        [
+          234,
+          10
+        ],
+        [
+          235,
+          10
+        ],
+        [
+          236,
+          10
+        ],
+        [
+          237,
+          10
+        ],
+        [
+          238,
+          10
+        ],
+        [
+          239,
+          10
+        ],
+        [
+          240,
+          10
+        ]
+      ]
+    },
+    "7:3": {
+      "id": 19,
+      "weights": [
+        [
+          271,
+          10
+        ],
+        [
+          272,
+          10
+        ],
+        [
+          273,
+          10
+        ],
+        [
+          274,
+          10
+        ],
+        [
+          275,
+          10
+        ],
+        [
+          276,
+          10
+        ],
+        [
+          277,
+          10
+        ],
+        [
+          278,
+          10
+        ],
+        [
+          279,
+          10
+        ],
+        [
+          280,
+          10
+        ],
+        [
+          281,
+          10
+        ],
+        [
+          282,
+          10
+        ],
+        [
+          283,
+          10
+        ],
+        [
+          284,
+          10
+        ],
+        [
+          285,
+          10
+        ]
+      ]
+    },
+    "7:4": {
+      "id": 20,
+      "weights": [
+        [
+          271,
+          10
+        ],
+        [
+          272,
+          10
+        ],
+        [
+          273,
+          10
+        ],
+        [
+          274,
+          10
+        ],
+        [
+          275,
+          10
+        ],
+        [
+          276,
+          10
+        ],
+        [
+          277,
+          10
+        ],
+        [
+          278,
+          10
+        ],
+        [
+          279,
+          10
+        ],
+        [
+          280,
+          10
+        ],
+        [
+          281,
+          10
+        ],
+        [
+          282,
+          10
+        ],
+        [
+          283,
+          10
+        ],
+        [
+          284,
+          10
+        ],
+        [
+          285,
+          10
+        ]
+      ]
+    }
+  }
+}

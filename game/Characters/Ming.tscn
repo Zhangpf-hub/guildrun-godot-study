@@ -1,0 +1,1063 @@
+[gd_scene format=3]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2824.obj" id="1"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_731.tres" id="2"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2983.obj" id="3"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_735.tres" id="4"]
+
+[node name="Ming" type="Node3D"]
+
+[node name="Ming" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1.08000004, 1.08000004, 1.08000004)
+metadata/unity_id = 20859
+metadata/unity_name = "Ming"
+
+[node name="Ming_Model" type="Node3D" parent="Ming"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6987
+metadata/unity_name = "Ming_Model"
+
+[node name="Armatur" type="Node3D" parent="Ming/Ming_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13656
+metadata/unity_name = "Armatur"
+
+[node name="Hips" type="Node3D" parent="Ming/Ming_Model/Armatur"]
+position = Vector3(-1.12410098e-17, 1.24739599, 0.0434323698)
+quaternion = Quaternion(-0.0469931327, 0, -0, 0.998895228)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24922
+metadata/unity_name = "Hips"
+
+[node name="Belt_Root" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9153
+metadata/unity_name = "Belt_Root"
+
+[node name="Belt01" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/Belt_Root"]
+position = Vector3(0.0763235688, 0.109023705, -0.1270639)
+quaternion = Quaternion(-4.78193469e-05, -0.120861307, 0.992667854, 0.00176172599)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25744
+metadata/unity_name = "Belt01"
+
+[node name="Belt02" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/Belt_Root/Belt01"]
+position = Vector3(1.42108491e-16, 0.0913019702, 7.10542654e-17)
+quaternion = Quaternion(0.0131130777, -0.000237514716, 0.00174629677, 0.9999125)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22423
+metadata/unity_name = "Belt02"
+
+[node name="Belt03" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/Belt_Root/Belt01/Belt02"]
+position = Vector3(-4.44089183e-17, 0.0963529125, 1.42108491e-16)
+quaternion = Quaternion(0.0337608196, -0, -0, 0.999429941)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25734
+metadata/unity_name = "Belt03"
+
+[node name="Belt04" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/Belt_Root/Belt01/Belt02/Belt03"]
+position = Vector3(-3.00204295e-15, 0.0977596715, -0)
+quaternion = Quaternion(0.031716492, -0, -0, 0.999496937)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16203
+metadata/unity_name = "Belt04"
+
+[node name="BeltEnd" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/Belt_Root/Belt01/Belt02/Belt03/Belt04"]
+position = Vector3(-2.85993496e-15, 0.0481387191, 1.77635697e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23961
+metadata/unity_name = "BeltEnd"
+
+[node name="LeftUpperLeg" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips"]
+position = Vector3(-0.119999997, 0.00197585183, 0.00678308867)
+quaternion = Quaternion(-2.86479033e-18, -0.0469931327, 0.998895228, -6.14348364e-17)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21741
+metadata/unity_name = "LeftUpperLeg"
+
+[node name="LeftLowerLeg" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/LeftUpperLeg"]
+position = Vector3(5.32907073e-17, 0.449999988, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6239
+metadata/unity_name = "LeftLowerLeg"
+
+[node name="LeftFoot" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/LeftUpperLeg/LeftLowerLeg"]
+position = Vector3(5.32907073e-17, 0.699999988, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15172
+metadata/unity_name = "LeftFoot"
+
+[node name="LeftToes" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/LeftUpperLeg/LeftLowerLeg/LeftFoot"]
+position = Vector3(3.55271393e-17, 0.0635831282, -0.1596912)
+quaternion = Quaternion(-0.707106829, 0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22468
+metadata/unity_name = "LeftToes"
+
+[node name="LeftToesEnd" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/LeftUpperLeg/LeftLowerLeg/LeftFoot/LeftToes"]
+position = Vector3(-5.32907073e-17, 0.110891394, -1.77635697e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8723
+metadata/unity_name = "LeftToesEnd"
+
+[node name="Magica Capsule Collider (LefttUpperLeg)" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/LeftUpperLeg"]
+position = Vector3(-0.0379999988, 0.0799999759, -0.0340000056)
+quaternion = Quaternion(-0.0702264234, -0.00175845088, -0.000123795588, 0.997529507)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10172
+metadata/unity_name = "Magica Capsule Collider (LefttUpperLeg)"
+
+[node name="RightUpperLeg" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips"]
+position = Vector3(0.119999997, 0.00197585183, 0.00678308867)
+quaternion = Quaternion(-2.87749934e-18, -0.0469931327, 0.998895228, 6.11646925e-17)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9873
+metadata/unity_name = "RightUpperLeg"
+
+[node name="RightLowerLeg" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/RightUpperLeg"]
+position = Vector3(-3.55271393e-17, 0.449999988, 2.66453503e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23652
+metadata/unity_name = "RightLowerLeg"
+
+[node name="RightFoot" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/RightUpperLeg/RightLowerLeg"]
+position = Vector3(-7.10542654e-17, 0.699999988, -4.17443883e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23418
+metadata/unity_name = "RightFoot"
+
+[node name="RightToes" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/RightUpperLeg/RightLowerLeg/RightFoot"]
+position = Vector3(-5.32907073e-17, 0.0635830984, -0.159690991)
+quaternion = Quaternion(-0.707106829, 0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21752
+metadata/unity_name = "RightToes"
+
+[node name="RightToesEnd" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/RightUpperLeg/RightLowerLeg/RightFoot/RightToes"]
+position = Vector3(1.77635697e-17, 0.110891998, -1.68753898e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11398
+metadata/unity_name = "RightToesEnd"
+
+[node name="Magica Capsule Collider (RightUpperLeg)" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/RightUpperLeg"]
+position = Vector3(0.0379999988, 0.0799999982, -0.0340000018)
+quaternion = Quaternion(-0.0702264309, -0.00175845111, -0.000123795588, 0.997529507)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13373
+metadata/unity_name = "Magica Capsule Collider (RightUpperLeg)"
+
+[node name="Spine" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips"]
+position = Vector3(-1.09883893e-18, 0.186446205, -1.06581401e-16)
+quaternion = Quaternion(0.0459732153, -0, -0, 0.998942673)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9692
+metadata/unity_name = "Spine"
+
+[node name="Chest" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/Spine"]
+position = Vector3(1.38125297e-13, 0.255198598, 2.26485493e-16)
+quaternion = Quaternion(0.055211585, -0, -0, 0.998474717)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22797
+metadata/unity_name = "Chest"
+
+[node name="LeftShoulder" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/Spine/Chest"]
+position = Vector3(-0.0749999955, 0.182735279, 0.0450810455)
+quaternion = Quaternion(0.47216922, -0.47216922, 0.526361287, 0.526361287)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20612
+metadata/unity_name = "LeftShoulder"
+
+[node name="LeftUpperArm" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/Spine/Chest/LeftShoulder"]
+position = Vector3(1.77635697e-17, 0.199999988, -5.68434176e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21773
+metadata/unity_name = "LeftUpperArm"
+
+[node name="LeftLowerArm" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/Spine/Chest/LeftShoulder/LeftUpperArm"]
+position = Vector3(-0, 0.314999998, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23831
+metadata/unity_name = "LeftLowerArm"
+
+[node name="LeftHand" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/Spine/Chest/LeftShoulder/LeftUpperArm/LeftLowerArm"]
+position = Vector3(-0, 0.310000002, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22518
+metadata/unity_name = "LeftHand"
+
+[node name="LeftHandEnd" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/Spine/Chest/LeftShoulder/LeftUpperArm/LeftLowerArm/LeftHand"]
+position = Vector3(-0, 0.189999998, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7213
+metadata/unity_name = "LeftHandEnd"
+
+[node name="Neck" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/Spine/Chest"]
+position = Vector3(-5.84044834e-16, 0.21312049, 1.06581401e-16)
+quaternion = Quaternion(-0.055211585, 0, -0, 0.998474717)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26243
+metadata/unity_name = "Neck"
+
+[node name="Head" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/Spine/Chest/Neck"]
+position = Vector3(-6.13125791e-17, 0.158608794, -3.552714e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6697
+metadata/unity_name = "Head"
+
+[node name="HeadEnd" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/Spine/Chest/Neck/Head"]
+position = Vector3(-5.81290786e-17, 0.193390295, 1.398881e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11140
+metadata/unity_name = "HeadEnd"
+
+[node name="Jaw" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/Spine/Chest/Neck/Head"]
+position = Vector3(-2.4945039e-14, -0.00248886691, -0.0190558005)
+quaternion = Quaternion(2.27850101e-13, -0.395542204, 0.918447852, -5.29067241e-13)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13274
+metadata/unity_name = "Jaw"
+
+[node name="Jaw_end" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/Spine/Chest/Neck/Head/Jaw"]
+position = Vector3(2.11477293e-13, 0.1244528, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15920
+metadata/unity_name = "Jaw_end"
+
+[node name="RightShoulder" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/Spine/Chest"]
+position = Vector3(0.0749999955, 0.182735279, 0.0450810455)
+quaternion = Quaternion(0.47216922, 0.47216922, -0.526361287, 0.526361287)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17260
+metadata/unity_name = "RightShoulder"
+
+[node name="RightUpperArm" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/Spine/Chest/RightShoulder"]
+position = Vector3(-0, 0.199999988, -5.68434176e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8146
+metadata/unity_name = "RightUpperArm"
+
+[node name="RightLowerArm" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/Spine/Chest/RightShoulder/RightUpperArm"]
+position = Vector3(-8.88178367e-17, 0.314999998, 8.52651264e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5611
+metadata/unity_name = "RightLowerArm"
+
+[node name="RightHand" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/Spine/Chest/RightShoulder/RightUpperArm/RightLowerArm"]
+position = Vector3(1.42108491e-16, 0.310000002, 8.52651264e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19233
+metadata/unity_name = "RightHand"
+
+[node name="RightHandEnd" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/Spine/Chest/RightShoulder/RightUpperArm/RightLowerArm/RightHand"]
+position = Vector3(-1.95399304e-16, 0.189999998, 8.52651264e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4998
+metadata/unity_name = "RightHandEnd"
+
+[node name="Sphere_Root" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/Spine"]
+position = Vector3(1.38125297e-13, 0.255198598, 2.26485493e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6261
+metadata/unity_name = "Sphere_Root"
+
+[node name="Sphere_01" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/Spine/Sphere_Root"]
+position = Vector3(-0.194559708, -0.167310297, 0.0220951512)
+quaternion = Quaternion(-0.33002013, -0.780383527, -0.425460607, -0.317917436)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16478
+metadata/unity_name = "Sphere_01"
+
+[node name="Sphere_02" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/Spine/Sphere_Root/Sphere_01"]
+position = Vector3(-5.68434176e-16, 0.137733489, -4.26325605e-16)
+quaternion = Quaternion(0.341979504, 0.000443889789, -0.149226293, 0.927783072)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7661
+metadata/unity_name = "Sphere_02"
+
+[node name="Sphere_03" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/Spine/Sphere_Root/Sphere_01/Sphere_02"]
+position = Vector3(5.68434176e-16, 0.189767703, 1.776357e-16)
+quaternion = Quaternion(0.2173336, 0.0259728152, -0.0712298751, 0.973148406)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9658
+metadata/unity_name = "Sphere_03"
+
+[node name="Sphere_04" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/Spine/Sphere_Root/Sphere_01/Sphere_02/Sphere_03"]
+position = Vector3(1.42108491e-16, 0.187612802, 1.42108491e-16)
+quaternion = Quaternion(0.278879702, -0.0896003172, -0.0015317197, 0.95613575)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15183
+metadata/unity_name = "Sphere_04"
+
+[node name="Sphere_05" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/Spine/Sphere_Root/Sphere_01/Sphere_02/Sphere_03/Sphere_04"]
+position = Vector3(-3.552714e-16, 0.178739607, 8.52651264e-16)
+quaternion = Quaternion(0.516416848, 0.0386960208, 0.0234058648, 0.855142355)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5465
+metadata/unity_name = "Sphere_05"
+
+[node name="Sphere_06" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/Spine/Sphere_Root/Sphere_01/Sphere_02/Sphere_03/Sphere_04/Sphere_05"]
+position = Vector3(1.42108491e-16, 0.133680001, -0)
+quaternion = Quaternion(0.218618035, 0.0176268984, -0.105888776, 0.969888151)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13652
+metadata/unity_name = "Sphere_06"
+
+[node name="Sphere_07" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/Spine/Sphere_Root/Sphere_01/Sphere_02/Sphere_03/Sphere_04/Sphere_05/Sphere_06"]
+position = Vector3(-0, 0.128711089, -1.42108491e-16)
+quaternion = Quaternion(0.326008737, 0.00611721445, -0.0469640605, 0.944179714)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21119
+metadata/unity_name = "Sphere_07"
+
+[node name="Sphere_08" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/Spine/Sphere_Root/Sphere_01/Sphere_02/Sphere_03/Sphere_04/Sphere_05/Sphere_06/Sphere_07"]
+position = Vector3(-2.84217088e-16, 0.173967704, 3.55271393e-17)
+quaternion = Quaternion(0.265050024, -0.0352895819, -0.0256660432, 0.963246822)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16689
+metadata/unity_name = "Sphere_08"
+
+[node name="Sphere_09" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/Spine/Sphere_Root/Sphere_01/Sphere_02/Sphere_03/Sphere_04/Sphere_05/Sphere_06/Sphere_07/Sphere_08"]
+position = Vector3(1.42108491e-16, 0.175094798, -0)
+quaternion = Quaternion(0.220644712, -0.147329509, -0.0633008704, 0.962082624)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26192
+metadata/unity_name = "Sphere_09"
+
+[node name="Sphere_10" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/Spine/Sphere_Root/Sphere_01/Sphere_02/Sphere_03/Sphere_04/Sphere_05/Sphere_06/Sphere_07/Sphere_08/Sphere_09"]
+position = Vector3(-2.84217088e-16, 0.139543697, -6.39488541e-16)
+quaternion = Quaternion(0.21130915, -0.0425854363, -0.0468461104, 0.975366831)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13619
+metadata/unity_name = "Sphere_10"
+
+[node name="Magica Capsule Collider (Spine)" type="Node3D" parent="Ming/Ming_Model/Armatur/Hips/Spine"]
+position = Vector3(0.0219999999, 0.300000012, 0)
+quaternion = Quaternion(3.72528985e-09, 0, 0.382683367, 0.923879564)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6025
+metadata/unity_name = "Magica Capsule Collider (Spine)"
+
+[node name="Body_Geo" type="Node3D" parent="Ming/Ming_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12774
+metadata/unity_name = "Body_Geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Ming/Ming_Model/Body_Geo"]
+mesh = ExtResource("1")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="Weapon_Geo" type="Node3D" parent="Ming/Ming_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22825
+metadata/unity_name = "Weapon_Geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Ming/Ming_Model/Weapon_Geo"]
+mesh = ExtResource("3")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="Weapon_Root" type="Node3D" parent="Ming/Ming_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14908
+metadata/unity_name = "Weapon_Root"
+
+[node name="Weapon_Back1" type="Node3D" parent="Ming/Ming_Model/Weapon_Root"]
+position = Vector3(-0, 0, 0.00999999978)
+quaternion = Quaternion(0.707106829, -0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19826
+metadata/unity_name = "Weapon_Back1"
+
+[node name="Weapon_Back2" type="Node3D" parent="Ming/Ming_Model/Weapon_Root/Weapon_Back1"]
+position = Vector3(-4.65619801e-17, 0.467583984, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23453
+metadata/unity_name = "Weapon_Back2"
+
+[node name="Weapon_Back3" type="Node3D" parent="Ming/Ming_Model/Weapon_Root/Weapon_Back1/Weapon_Back2"]
+position = Vector3(-0, 0.295061111, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14458
+metadata/unity_name = "Weapon_Back3"
+
+[node name="Weapon_Back_End" type="Node3D" parent="Ming/Ming_Model/Weapon_Root/Weapon_Back1/Weapon_Back2/Weapon_Back3"]
+position = Vector3(-0, 0.523427248, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11808
+metadata/unity_name = "Weapon_Back_End"
+
+[node name="VFX_Ming_ActiveAbility_Trail" type="Node3D" parent="Ming/Ming_Model/Weapon_Root/Weapon_Back1/Weapon_Back2"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 1.31708833e-09, -4.08297502e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25566
+metadata/unity_name = "VFX_Ming_ActiveAbility_Trail"
+visible = false
+process_mode = 4
+
+[node name="Flames_01" type="Node3D" parent="Ming/Ming_Model/Weapon_Root/Weapon_Back1/Weapon_Back2/VFX_Ming_ActiveAbility_Trail"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20260
+metadata/unity_name = "Flames_01"
+
+[node name="Sparks_00" type="Node3D" parent="Ming/Ming_Model/Weapon_Root/Weapon_Back1/Weapon_Back2/VFX_Ming_ActiveAbility_Trail"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18624
+metadata/unity_name = "Sparks_00"
+
+[node name="Trail" type="Node3D" parent="Ming/Ming_Model/Weapon_Root/Weapon_Back1/Weapon_Back2/VFX_Ming_ActiveAbility_Trail"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-2.08616228e-07, -2.23905197e-08, 1.97563264e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8610
+metadata/unity_name = "Trail"
+
+[node name="VFX_Ming_ActiveAbility_Trail_1" type="Node3D" parent="Ming/Ming_Model/Weapon_Root/Weapon_Back1/Weapon_Back2"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 1.31708833e-09, -4.08297502e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14970
+metadata/unity_name = "VFX_Ming_ActiveAbility_Trail_1"
+visible = false
+process_mode = 4
+
+[node name="Flames_01" type="Node3D" parent="Ming/Ming_Model/Weapon_Root/Weapon_Back1/Weapon_Back2/VFX_Ming_ActiveAbility_Trail_1"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8409
+metadata/unity_name = "Flames_01"
+
+[node name="Sparks_00" type="Node3D" parent="Ming/Ming_Model/Weapon_Root/Weapon_Back1/Weapon_Back2/VFX_Ming_ActiveAbility_Trail_1"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5316
+metadata/unity_name = "Sparks_00"
+
+[node name="Trail" type="Node3D" parent="Ming/Ming_Model/Weapon_Root/Weapon_Back1/Weapon_Back2/VFX_Ming_ActiveAbility_Trail_1"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-2.08616228e-07, -2.23905197e-08, 1.97563264e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20645
+metadata/unity_name = "Trail"
+
+[node name="Weapon_Front1" type="Node3D" parent="Ming/Ming_Model/Weapon_Root"]
+position = Vector3(-0, 0, -0.00999999978)
+quaternion = Quaternion(4.32978063e-17, -0.707106829, 0.707106829, -4.32978063e-17)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23768
+metadata/unity_name = "Weapon_Front1"
+
+[node name="Weapon_Front2" type="Node3D" parent="Ming/Ming_Model/Weapon_Root/Weapon_Front1"]
+position = Vector3(-0, 0.467583984, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21614
+metadata/unity_name = "Weapon_Front2"
+
+[node name="Weapon_Front3" type="Node3D" parent="Ming/Ming_Model/Weapon_Root/Weapon_Front1/Weapon_Front2"]
+position = Vector3(-0, 0.295061111, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5474
+metadata/unity_name = "Weapon_Front3"
+
+[node name="Weapon_Front_End" type="Node3D" parent="Ming/Ming_Model/Weapon_Root/Weapon_Front1/Weapon_Front2/Weapon_Front3"]
+position = Vector3(-0, 0.523427248, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13967
+metadata/unity_name = "Weapon_Front_End"
+
+[node name="Magica Cloth (belt)" type="Node3D" parent="Ming/Ming_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15560
+metadata/unity_name = "Magica Cloth (belt)"
+
+[node name="Magica Cloth (sphere)" type="Node3D" parent="Ming/Ming_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21869
+metadata/unity_name = "Magica Cloth (sphere)"
+
+[node name="OverheadSlot" type="Node3D" parent="Ming"]
+position = Vector3(0, 2.29999995, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22865
+metadata/unity_name = "OverheadSlot"
+
+[node name="VFXParent" type="Node3D" parent="Ming"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26577
+metadata/unity_name = "VFXParent"
+
+[node name="VFX_Ming_ActiveAbility_L" type="Node3D" parent="Ming/VFXParent"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0.707106829, -0, 0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23892
+metadata/unity_name = "VFX_Ming_ActiveAbility_L"
+
+[node name="root" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_L"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6294
+metadata/unity_name = "root"
+
+[node name="FloorAura_00" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_L/root"]
+position = Vector3(0, 0, -0.00999999978)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15454
+metadata/unity_name = "FloorAura_00"
+
+[node name="AuraBody_00" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_L/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4759
+metadata/unity_name = "AuraBody_00"
+
+[node name="AuraBody_01" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_L/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13015
+metadata/unity_name = "AuraBody_01"
+
+[node name="CharacterAura_01" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_L/root"]
+position = Vector3(0, 0, -1.10000002)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7460
+metadata/unity_name = "CharacterAura_01"
+
+[node name="Staff_Trail_00" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_L/root"]
+position = Vector3(0.100000001, -0.170000002, -2.29999995)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12285
+metadata/unity_name = "Staff_Trail_00"
+
+[node name="Staff_Trail_01" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_L/root/Staff_Trail_00"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21686
+metadata/unity_name = "Staff_Trail_01"
+
+[node name="Staff_Trail_02" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_L/root/Staff_Trail_00"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17318
+metadata/unity_name = "Staff_Trail_02"
+
+[node name="Sparks_04" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_L/root/Staff_Trail_00"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5976
+metadata/unity_name = "Sparks_04"
+
+[node name="Sparks_05" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_L/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18520
+metadata/unity_name = "Sparks_05"
+
+[node name="Glow_00" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_L/root"]
+position = Vector3(-0.670000017, -0.180000007, 0.0649999976)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11386
+metadata/unity_name = "Glow_00"
+
+[node name="Ring" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_L/root/Glow_00"]
+position = Vector3(0, 0, -0.0169999748)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8059
+metadata/unity_name = "Ring"
+
+[node name="Glow_02" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_L/root/Glow_00"]
+position = Vector3(0, 0, -0.0649999976)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22305
+metadata/unity_name = "Glow_02"
+
+[node name="Glow_03" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_L/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25649
+metadata/unity_name = "Glow_03"
+
+[node name="Flames_01" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_L/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14660
+metadata/unity_name = "Flames_01"
+
+[node name="Flames_02" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_L/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25981
+metadata/unity_name = "Flames_02"
+
+[node name="Glow_01" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_L/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11692
+metadata/unity_name = "Glow_01"
+
+[node name="Glow_02" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_L/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25116
+metadata/unity_name = "Glow_02"
+
+[node name="Sparks_00" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_L/root"]
+position = Vector3(-0.661000013, -0.252999991, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24958
+metadata/unity_name = "Sparks_00"
+
+[node name="Sparks_01" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_L/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10928
+metadata/unity_name = "Sparks_01"
+
+[node name="Sparks_02" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_L/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17294
+metadata/unity_name = "Sparks_02"
+
+[node name="FireRing_01" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_L/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11809
+metadata/unity_name = "FireRing_01"
+
+[node name="FireRing_02" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_L/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14965
+metadata/unity_name = "FireRing_02"
+
+[node name="======ENDING" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_L/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4723
+metadata/unity_name = "======ENDING"
+visible = false
+process_mode = 4
+
+[node name="GlowRing_01" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_L/root"]
+position = Vector3(0, 0, -0.100000001)
+quaternion = Quaternion(0.303956121, 0.238909334, 0.301167428, 0.871683002)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18240
+metadata/unity_name = "GlowRing_01"
+
+[node name="Wind_01" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_L/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0.707106829, -0, 0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22031
+metadata/unity_name = "Wind_01"
+
+[node name="Sparks_03" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_L/root"]
+position = Vector3(0, 0, -0.800000012)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16611
+metadata/unity_name = "Sparks_03"
+
+[node name="Sparks_04" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_L/root/Sparks_03"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18635
+metadata/unity_name = "Sparks_04"
+
+[node name="VFX_Ming_ActiveAbility_S" type="Node3D" parent="Ming/VFXParent"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0.707106829, -0, 0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25678
+metadata/unity_name = "VFX_Ming_ActiveAbility_S"
+
+[node name="root" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_S"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11357
+metadata/unity_name = "root"
+
+[node name="Glow_02" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_S/root"]
+position = Vector3(-0.670000315, -0.180000037, 0.0650000125)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24458
+metadata/unity_name = "Glow_02"
+
+[node name="Ring" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_S/root/Glow_02"]
+position = Vector3(0, 0, -0.0199999996)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7243
+metadata/unity_name = "Ring"
+
+[node name="Sparks_00" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_S/root/Glow_02"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25714
+metadata/unity_name = "Sparks_00"
+
+[node name="Glow_02" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_S/root/Glow_02"]
+position = Vector3(0, 0, -0.0649999976)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12042
+metadata/unity_name = "Glow_02"
+
+[node name="FloorAura_00" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_S/root"]
+position = Vector3(0, 0, -0.00999999978)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19324
+metadata/unity_name = "FloorAura_00"
+
+[node name="AuraBody_00" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_S/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16287
+metadata/unity_name = "AuraBody_00"
+
+[node name="CharacterAura_01" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_S/root"]
+position = Vector3(0, 0, -1.60000002)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13250
+metadata/unity_name = "CharacterAura_01"
+
+[node name="Staff_Trail_00" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_S/root"]
+position = Vector3(0.100000001, -0.170000002, -2.29999995)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24759
+metadata/unity_name = "Staff_Trail_00"
+
+[node name="Glow_00" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_S/root"]
+position = Vector3(-0.670000017, -0.180000007, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25030
+metadata/unity_name = "Glow_00"
+
+[node name="Glow_01" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_S/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9459
+metadata/unity_name = "Glow_01"
+
+[node name="Sparks_01" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_S/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4959
+metadata/unity_name = "Sparks_01"
+
+[node name="FireRing_00" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_S/root"]
+position = Vector3(-0.64200002, -0.317000002, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12587
+metadata/unity_name = "FireRing_00"
+
+[node name="FireRing_01" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_S/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8917
+metadata/unity_name = "FireRing_01"
+
+[node name="======ENDING" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_S/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19167
+metadata/unity_name = "======ENDING"
+visible = false
+process_mode = 4
+
+[node name="GlowRing_02" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_S/root"]
+position = Vector3(0, 0, -0.100000031)
+quaternion = Quaternion(0.303956121, 0.238909349, 0.301167428, 0.871683002)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21065
+metadata/unity_name = "GlowRing_02"
+
+[node name="Wind_01" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_S/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0.707106829, 0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25602
+metadata/unity_name = "Wind_01"
+
+[node name="Sparks_04" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_S/root"]
+position = Vector3(0, 0, -0.80000025)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13559
+metadata/unity_name = "Sparks_04"
+
+[node name="Sparks_04" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility_S/root/Sparks_04"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12960
+metadata/unity_name = "Sparks_04"
+
+[node name="VFX_Ming_BasicAttack" type="Node3D" parent="Ming/VFXParent"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -1, 0, 0)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10888
+metadata/unity_name = "VFX_Ming_BasicAttack"
+
+[node name="root" type="Node3D" parent="Ming/VFXParent/VFX_Ming_BasicAttack"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7187
+metadata/unity_name = "root"
+
+[node name="WeaponSlash_00" type="Node3D" parent="Ming/VFXParent/VFX_Ming_BasicAttack/root"]
+position = Vector3(0, 1.36300004, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9268
+metadata/unity_name = "WeaponSlash_00"
+
+[node name="WindTrail" type="Node3D" parent="Ming/VFXParent/VFX_Ming_BasicAttack/root"]
+position = Vector3(0, 1.36300004, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5996
+metadata/unity_name = "WindTrail"
+
+[node name="VFX_Ming_ActiveAbility" type="Node3D" parent="Ming/VFXParent"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0.707106829, -0, 0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10844
+metadata/unity_name = "VFX_Ming_ActiveAbility"
+
+[node name="root" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22471
+metadata/unity_name = "root"
+
+[node name="Glow_02" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility/root"]
+position = Vector3(-0.670000315, -0.180000037, 0.0650000125)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19953
+metadata/unity_name = "Glow_02"
+
+[node name="Ring" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility/root/Glow_02"]
+position = Vector3(0, 0, -0.0169999748)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17172
+metadata/unity_name = "Ring"
+
+[node name="Glow_02" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility/root/Glow_02"]
+position = Vector3(0, 0, -0.0649999976)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5138
+metadata/unity_name = "Glow_02"
+
+[node name="Sparks_00" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility/root/Glow_02"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17314
+metadata/unity_name = "Sparks_00"
+
+[node name="FloorAura_00" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility/root"]
+position = Vector3(0, 0, -0.00999999978)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10550
+metadata/unity_name = "FloorAura_00"
+
+[node name="AuraBody_00" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17135
+metadata/unity_name = "AuraBody_00"
+
+[node name="CharacterAura_01" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility/root"]
+position = Vector3(0, 0, -1.60000002)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13139
+metadata/unity_name = "CharacterAura_01"
+
+[node name="Staff_Trail_00" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility/root"]
+position = Vector3(0.100000001, -0.170000002, -2.29999995)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14762
+metadata/unity_name = "Staff_Trail_00"
+
+[node name="Staff_Trail_02" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility/root/Staff_Trail_00"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23343
+metadata/unity_name = "Staff_Trail_02"
+
+[node name="GlowRing_00" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility/root"]
+position = Vector3(0, 0, -0.100000001)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15137
+metadata/unity_name = "GlowRing_00"
+
+[node name="Glow_01" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25073
+metadata/unity_name = "Glow_01"
+
+[node name="Glow_03" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7469
+metadata/unity_name = "Glow_03"
+
+[node name="Sparks_01" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8533
+metadata/unity_name = "Sparks_01"
+
+[node name="FireRing_01" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25469
+metadata/unity_name = "FireRing_01"
+
+[node name="======ENDING" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6605
+metadata/unity_name = "======ENDING"
+visible = false
+process_mode = 4
+
+[node name="GlowRing_02" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility/root"]
+position = Vector3(0, 0, -0.100000031)
+quaternion = Quaternion(0.303956121, 0.238909349, 0.301167428, 0.871683002)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25477
+metadata/unity_name = "GlowRing_02"
+
+[node name="Wind_01" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0.707106829, 0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23690
+metadata/unity_name = "Wind_01"
+
+[node name="Sparks_04" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility/root"]
+position = Vector3(0, 0, -0.80000025)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17122
+metadata/unity_name = "Sparks_04"
+
+[node name="Sparks_04" type="Node3D" parent="Ming/VFXParent/VFX_Ming_ActiveAbility/root/Sparks_04"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21653
+metadata/unity_name = "Sparks_04"

@@ -1,0 +1,84 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://sprites/sharedassets2_149.png" id="1"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets2_129.png" id="2"]
+
+[node name="battle_top_fightUI" type="Control"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="FightNode" type="Control" parent="."]
+mouse_filter = 2
+metadata/unity_id = 17227
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -11
+offset_right = 11
+offset_top = -11
+offset_bottom = 11
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = 24.0
+
+[node name="UnityImage" type="ColorRect" parent="FightNode"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(1, 1, 1, 0)
+
+[node name="FightIcon" type="Control" parent="FightNode"]
+mouse_filter = 2
+metadata/unity_id = 13991
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityImage" type="TextureRect" parent="FightNode/FightIcon"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("1")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(0.952941239, 0.929411829, 0.847058892, 1)
+
+[node name="CurrentMarker" type="Control" parent="FightNode"]
+mouse_filter = 2
+metadata/unity_id = 8816
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -5
+offset_right = 5
+offset_top = -23
+offset_bottom = -13
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityImage" type="TextureRect" parent="FightNode/CurrentMarker"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)

@@ -1,0 +1,30 @@
+[gd_resource type="ShaderMaterial" format=3]
+[ext_resource type="Shader" path="res://materials/character_toon.gdshader" id="toon"]
+[ext_resource type="Texture2D" path="res://textures/sharedassets1_2414.png" id="main_texture"]
+
+[resource]
+resource_name = "MushroomMage_Fire_Body_Mat"
+shader = ExtResource("toon")
+metadata/unity_shader = "lilToon"
+metadata/unity_material_id = 192
+metadata/unity_reflection = false
+shader_parameter/main_texture = ExtResource("main_texture")
+shader_parameter/main_transform = Vector4(1, 1, 0, 0)
+shader_parameter/tint = Color(0.858490586, 0.858490586, 0.858490586, 1)
+shader_parameter/cutoff = 0.0
+shader_parameter/use_shadow = true
+shader_parameter/shadow_color = Color(0.819999993, 0.75999999, 0.850000024, 1)
+shader_parameter/second_color = Color(0.532075405, 0.207810551, 0.41767928, 0.541999996)
+shader_parameter/shadow_border_color = Color(1, 0.0549019203, 0, 1)
+shader_parameter/shade_shape = Vector4(0.284999996, 0, 0.0560000017, 0)
+shader_parameter/shade_controls = Vector4(1, 0.0219999999, 0.196999997, 1)
+shader_parameter/shade_receivers = Vector3(0.451999992, 0.691999972, 0)
+shader_parameter/light_limits = Vector2(0, 2)
+shader_parameter/shadow_environment = 0.6909999847412109
+shader_parameter/probe_ar = Vector4(0.00725201517, -0.00568231149, -0.0125606805, 0.169953627)
+shader_parameter/probe_br = Vector4(0.00569996797, -0.00987242255, 0.0309904749, -0.010436317)
+shader_parameter/probe_ag = Vector4(0.0114032608, 0.0413438305, -0.0197532624, 0.21133415)
+shader_parameter/probe_bg = Vector4(0.00911197346, -0.0157832708, 0.043139901, -0.0152235953)
+shader_parameter/probe_ab = Vector4(0.0196566433, 0.127484947, -0.0340533927, 0.2892073)
+shader_parameter/probe_bb = Vector4(0.016365191, -0.02834915, 0.0531466585, -0.0220852569)
+shader_parameter/probe_c = Vector3(0.0250355694, 0.034436062, 0.0404654965)

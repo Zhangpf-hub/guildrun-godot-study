@@ -1,0 +1,724 @@
+[gd_scene format=3]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2905.obj" id="1"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_136.tres" id="2"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2703.obj" id="3"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2881.obj" id="4"]
+
+[node name="ForestGolem" type="Node3D"]
+
+[node name="ForestGolem" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1.5, 1.5, 1.5)
+metadata/unity_id = 22824
+metadata/unity_name = "ForestGolem"
+
+[node name="ForestGolem" type="Node3D" parent="ForestGolem"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25654
+metadata/unity_name = "ForestGolem"
+
+[node name="Meshes" type="Node3D" parent="ForestGolem/ForestGolem"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(0.707106829, -0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11518
+metadata/unity_name = "Meshes"
+
+[node name="Body" type="Node3D" parent="ForestGolem/ForestGolem/Meshes"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5537
+metadata/unity_name = "Body"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="ForestGolem/ForestGolem/Meshes/Body"]
+mesh = ExtResource("1")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="Head" type="Node3D" parent="ForestGolem/ForestGolem/Meshes"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23375
+metadata/unity_name = "Head"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="ForestGolem/ForestGolem/Meshes/Head"]
+mesh = ExtResource("3")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="Leaves" type="Node3D" parent="ForestGolem/ForestGolem/Meshes"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21355
+metadata/unity_name = "Leaves"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="ForestGolem/ForestGolem/Meshes/Leaves"]
+mesh = ExtResource("4")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="root" type="Node3D" parent="ForestGolem/ForestGolem"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(0.707106829, -0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16476
+metadata/unity_name = "root"
+
+[node name="ik_foot_root" type="Node3D" parent="ForestGolem/ForestGolem/root"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6513
+metadata/unity_name = "ik_foot_root"
+
+[node name="ik_foot_l" type="Node3D" parent="ForestGolem/ForestGolem/root/ik_foot_root"]
+position = Vector3(-0.45347631, 0.253330469, -0.127031326)
+quaternion = Quaternion(-0.108287513, -0.717104137, -0.134503677, 0.675236404)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24073
+metadata/unity_name = "ik_foot_l"
+
+[node name="ik_foot_r" type="Node3D" parent="ForestGolem/ForestGolem/root/ik_foot_root"]
+position = Vector3(0.346996695, -0.0432407409, -0.133032933)
+quaternion = Quaternion(-0.67173475, -0.13029556, 0.722362339, -0.099940598)
+scale = Vector3(1, 1, 0.99999994)
+metadata/unity_id = 14635
+metadata/unity_name = "ik_foot_r"
+
+[node name="ik_hand_root" type="Node3D" parent="ForestGolem/ForestGolem/root"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6282
+metadata/unity_name = "ik_hand_root"
+
+[node name="ik_hand_gun" type="Node3D" parent="ForestGolem/ForestGolem/root/ik_hand_root"]
+position = Vector3(0.933973014, 0.111513495, -0.758745849)
+quaternion = Quaternion(-0.537248254, -0.105933838, -0.288185596, 0.785551667)
+scale = Vector3(0.99999994, 1, 1)
+metadata/unity_id = 8355
+metadata/unity_name = "ik_hand_gun"
+
+[node name="ik_hand_l" type="Node3D" parent="ForestGolem/ForestGolem/root/ik_hand_root/ik_hand_gun"]
+position = Vector3(-1.48693621, -1.04410684, -0.421212256)
+quaternion = Quaternion(-0.59999609, -0.723684967, -0.336099565, -0.0576354489)
+scale = Vector3(0.999999881, 1, 1)
+metadata/unity_id = 19155
+metadata/unity_name = "ik_hand_l"
+
+[node name="ik_hand_r" type="Node3D" parent="ForestGolem/ForestGolem/root/ik_hand_root/ik_hand_gun"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-9.6857562e-08, 4.47034907e-08, -5.21540713e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22164
+metadata/unity_name = "ik_hand_r"
+
+[node name="pelvis" type="Node3D" parent="ForestGolem/ForestGolem/root"]
+position = Vector3(-0.000417423347, 0.197502166, -0.666290522)
+quaternion = Quaternion(-0.129186541, -0.732459605, 0.0783863291, 0.663829327)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19965
+metadata/unity_name = "pelvis"
+
+[node name="spine_01" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis"]
+position = Vector3(-0.194380492, -0.00948734302, 0.00187582965)
+quaternion = Quaternion(-0.0278744791, 0.000504126132, -0.106637761, 0.993907034)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16931
+metadata/unity_name = "spine_01"
+
+[node name="spine_02" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01"]
+position = Vector3(-0.209094465, 0.0417790227, 2.86102289e-08)
+quaternion = Quaternion(-0.00404591206, 0.0527643003, 0.155470237, 0.986422122)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9699
+metadata/unity_name = "spine_02"
+
+[node name="spine_03" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02"]
+position = Vector3(-0.172633052, 0.00515991217, 2.68220901e-07)
+quaternion = Quaternion(0.00735877315, -0.0826927274, 0.0496789142, 0.995308876)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20292
+metadata/unity_name = "spine_03"
+
+[node name="clavicle_l" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03"]
+position = Vector3(-0.103436202, -0.162237808, 0.147752553)
+quaternion = Quaternion(-0.0597013719, 0.691531301, -0.149982914, 0.704077661)
+scale = Vector3(1, 1, 1.00000012)
+metadata/unity_id = 8421
+metadata/unity_name = "clavicle_l"
+
+[node name="upperarm_l" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_l"]
+position = Vector3(-0.307740092, -0.00197416311, 0.000588302617)
+quaternion = Quaternion(-0.229974344, 0.411568642, 0.18326439, 0.862633884)
+scale = Vector3(1.00000012, 1, 0.99999994)
+metadata/unity_id = 4999
+metadata/unity_name = "upperarm_l"
+
+[node name="lowerarm_l" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l"]
+position = Vector3(-0.398873866, 0.00079528807, 0.000242309572)
+quaternion = Quaternion(0.0494054966, -0.111155123, 0.403334022, 0.906931818)
+scale = Vector3(1.00000012, 1.00000024, 1.00000012)
+metadata/unity_id = 22131
+metadata/unity_name = "lowerarm_l"
+
+[node name="hand_l" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l"]
+position = Vector3(-0.422861218, -0.000237236018, -0.000321044907)
+quaternion = Quaternion(0.790356576, 0.132837027, 0.0489525013, 0.596065879)
+scale = Vector3(1.00000012, 1.00000012, 1.00000012)
+metadata/unity_id = 6744
+metadata/unity_name = "hand_l"
+
+[node name="index_01_l" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l"]
+position = Vector3(-0.260430217, -0.0182586666, 0.0981281474)
+quaternion = Quaternion(-0.177448317, 0.140888423, 0.200477123, 0.953137696)
+scale = Vector3(0.99999994, 1.00000024, 1)
+metadata/unity_id = 6081
+metadata/unity_name = "index_01_l"
+
+[node name="index_02_l" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l"]
+position = Vector3(-0.1137738, 0.00136642449, -0.000461578369)
+quaternion = Quaternion(0.150393918, 0.0570397824, -0.288497478, 0.943873584)
+scale = Vector3(1.00000024, 0.999999881, 1.00000012)
+metadata/unity_id = 19737
+metadata/unity_name = "index_02_l"
+
+[node name="index_03_l" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l"]
+position = Vector3(-0.0932076797, 0.001790924, 0.00462051388)
+quaternion = Quaternion(-0.0186176933, 0.0278478581, -0.227930784, 0.97310096)
+scale = Vector3(1, 1.00000012, 1)
+metadata/unity_id = 6922
+metadata/unity_name = "index_03_l"
+
+[node name="middle_01_l" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l"]
+position = Vector3(-0.281753272, 0.0223256685, 0.0134238815)
+quaternion = Quaternion(-0.067300342, -0.0499774553, 0.168518215, 0.982127547)
+scale = Vector3(1.00000012, 1.00000012, 1.00000012)
+metadata/unity_id = 14055
+metadata/unity_name = "middle_01_l"
+
+[node name="middle_02_l" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l"]
+position = Vector3(-0.0958892033, 0.00339111313, 0.000765190111)
+quaternion = Quaternion(0.0247753263, 0.0571238436, -0.160945311, 0.984997332)
+scale = Vector3(1.00000012, 1.00000012, 1)
+metadata/unity_id = 16044
+metadata/unity_name = "middle_02_l"
+
+[node name="middle_03_l" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l"]
+position = Vector3(-0.088760756, 0.00103630067, -0.00121292111)
+quaternion = Quaternion(0.143965945, -0.0357769094, -0.255277008, 0.955420077)
+scale = Vector3(0.999999881, 0.999999881, 1)
+metadata/unity_id = 23080
+metadata/unity_name = "middle_03_l"
+
+[node name="pinky_01_l" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l"]
+position = Vector3(-0.199878693, 0.0987908915, -0.128382564)
+quaternion = Quaternion(0.316722959, -0.407199025, -0.029763978, 0.856148183)
+scale = Vector3(1.00000012, 0.99999994, 1.00000012)
+metadata/unity_id = 8327
+metadata/unity_name = "pinky_01_l"
+
+[node name="pinky_02_l" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l"]
+position = Vector3(-0.08363159, -0.00149063102, 0.00181037898)
+quaternion = Quaternion(-0.00742896739, -0.0122861331, -0.327370942, 0.944786847)
+scale = Vector3(1.00000012, 0.999999821, 1)
+metadata/unity_id = 11967
+metadata/unity_name = "pinky_02_l"
+
+[node name="pinky_03_l" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l"]
+position = Vector3(-0.0720208734, -0.00023742675, -0.00259197224)
+quaternion = Quaternion(0.00244535808, 0.0471848957, -0.0971909538, 0.994143665)
+scale = Vector3(0.99999994, 1, 1.00000012)
+metadata/unity_id = 15286
+metadata/unity_name = "pinky_03_l"
+
+[node name="ring_01_l" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l"]
+position = Vector3(-0.243598431, 0.0628682673, -0.0663193315)
+quaternion = Quaternion(0.0943084583, -0.128980085, 0.0763240531, 0.984197497)
+scale = Vector3(1.00000012, 1.00000024, 1.00000012)
+metadata/unity_id = 9276
+metadata/unity_name = "ring_01_l"
+
+[node name="ring_02_l" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l"]
+position = Vector3(-0.0987446159, -0.000309753406, 0.000582790351)
+quaternion = Quaternion(0.0130608585, 0.0249887612, -0.337369442, 0.940949976)
+scale = Vector3(1.00000012, 1, 0.999999881)
+metadata/unity_id = 26887
+metadata/unity_name = "ring_02_l"
+
+[node name="ring_03_l" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l"]
+position = Vector3(-0.0890436918, 0.00290985103, -0.000443201046)
+quaternion = Quaternion(-0.00274043274, 0.049605526, -0.155212551, 0.986631036)
+scale = Vector3(0.999999881, 1, 0.99999994)
+metadata/unity_id = 13609
+metadata/unity_name = "ring_03_l"
+
+[node name="thumb_01_l" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l"]
+position = Vector3(-0.0519420244, 0.0197480768, 0.144123271)
+quaternion = Quaternion(0.516670704, -0.729630291, -0.133454755, -0.427645683)
+scale = Vector3(1, 1, 1.00000012)
+metadata/unity_id = 7279
+metadata/unity_name = "thumb_01_l"
+
+[node name="thumb_02_l" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l"]
+position = Vector3(-0.0791236833, -0.000145645143, -0.00122047425)
+quaternion = Quaternion(-0.197251588, 0.00797557924, -0.272806555, 0.941596925)
+scale = Vector3(1.00000012, 0.999999881, 0.99999994)
+metadata/unity_id = 10542
+metadata/unity_name = "thumb_02_l"
+
+[node name="thumb_03_l" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l"]
+position = Vector3(-0.0943120569, -0.00118186953, -0.00110092165)
+quaternion = Quaternion(-0.0272303876, 0.126961157, -0.327839822, 0.935767293)
+scale = Vector3(0.999999881, 1, 0.999999881)
+metadata/unity_id = 19329
+metadata/unity_name = "thumb_03_l"
+
+[node name="VFX_ForestGolem_BasicAttack" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l"]
+position = Vector3(-0.134000003, 0.00600000005, -0.0540000014)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9574
+metadata/unity_name = "VFX_ForestGolem_BasicAttack"
+visible = false
+process_mode = 4
+
+[node name="root" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/VFX_ForestGolem_BasicAttack"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8075
+metadata/unity_name = "root"
+
+[node name="Glow_01" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/VFX_ForestGolem_BasicAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5382
+metadata/unity_name = "Glow_01"
+
+[node name="Dust_01" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/VFX_ForestGolem_BasicAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12644
+metadata/unity_name = "Dust_01"
+
+[node name="Sparks_01" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/VFX_ForestGolem_BasicAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22169
+metadata/unity_name = "Sparks_01"
+
+[node name="Rocks_01" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/VFX_ForestGolem_BasicAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5882
+metadata/unity_name = "Rocks_01"
+
+[node name="lowerarm_twist_01_l" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l"]
+position = Vector3(-0.255488604, 3.81469718e-08, -0)
+quaternion = Quaternion(-1.11022302e-16, 1.49011603e-08, 1.93110344e-32, 1)
+scale = Vector3(1.00000012, 1, 1.00000012)
+metadata/unity_id = 7329
+metadata/unity_name = "lowerarm_twist_01_l"
+
+[node name="upperarm_twist_01_l" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l"]
+position = Vector3(-0.00500003807, -1.52587887e-07, -0)
+quaternion = Quaternion(-0, 0, -3.7252903e-09, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5350
+metadata/unity_name = "upperarm_twist_01_l"
+
+[node name="clavicle_r" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03"]
+position = Vector3(-0.103432998, -0.162237167, -0.147751391)
+quaternion = Quaternion(-0.621045291, -0.176460713, 0.75906539, 0.0835710391)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26906
+metadata/unity_name = "clavicle_r"
+
+[node name="upperarm_r" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_r"]
+position = Vector3(0.307740211, 0.00197406765, -0.000584335299)
+quaternion = Quaternion(0.0439088605, 0.574363649, -0.0820882395, 0.813289583)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9769
+metadata/unity_name = "upperarm_r"
+
+[node name="lowerarm_r" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r"]
+position = Vector3(0.398873717, -0.000796012871, -0.000243530274)
+quaternion = Quaternion(0.0466519706, -0.129561022, 0.475376397, 0.868938923)
+scale = Vector3(0.999999881, 1.00000024, 1.00000012)
+metadata/unity_id = 20531
+metadata/unity_name = "lowerarm_r"
+
+[node name="hand_r" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r"]
+position = Vector3(0.42286101, 0.000236701962, 0.000321655272)
+quaternion = Quaternion(0.751115918, 0.00336802867, 0.0939208567, 0.653446555)
+scale = Vector3(1, 0.99999994, 1)
+metadata/unity_id = 6784
+metadata/unity_name = "hand_r"
+
+[node name="index_01_r" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r"]
+position = Vector3(0.26042679, 0.0182550047, -0.0981285647)
+quaternion = Quaternion(-0.180181473, 0.214585021, 0.0104445722, 0.959884822)
+scale = Vector3(1, 0.99999994, 0.999999881)
+metadata/unity_id = 13099
+metadata/unity_name = "index_01_r"
+
+[node name="index_02_r" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r"]
+position = Vector3(0.113773003, -0.00136108394, 0.000464897137)
+quaternion = Quaternion(0.146962717, 0.0989526585, -0.380577952, 0.907618165)
+scale = Vector3(1, 1, 0.999999881)
+metadata/unity_id = 25072
+metadata/unity_name = "index_02_r"
+
+[node name="index_03_r" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r"]
+position = Vector3(0.0932094157, -0.00179122924, -0.0046201325)
+quaternion = Quaternion(-0.0326957852, 0.07772699, -0.411831111, 0.907350361)
+scale = Vector3(1, 1.00000012, 1)
+metadata/unity_id = 21113
+metadata/unity_name = "index_03_r"
+
+[node name="middle_01_r" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r"]
+position = Vector3(0.281750381, -0.0223285668, -0.0134244151)
+quaternion = Quaternion(0.00725098792, 0.0348568559, -0.128129601, 0.991118193)
+scale = Vector3(1.00000012, 0.99999994, 1)
+metadata/unity_id = 18442
+metadata/unity_name = "middle_01_r"
+
+[node name="middle_02_r" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r"]
+position = Vector3(0.0958887488, -0.0033860777, -0.000761737814)
+quaternion = Quaternion(0.0289085191, 0.10700763, -0.253036231, 0.961086035)
+scale = Vector3(1, 1.00000012, 1)
+metadata/unity_id = 9908
+metadata/unity_name = "middle_02_r"
+
+[node name="middle_03_r" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r"]
+position = Vector3(0.0887626782, -0.00103851315, 0.00121255871)
+quaternion = Quaternion(0.114615135, 0.0275408551, -0.434336275, 0.893004417)
+scale = Vector3(1, 0.99999994, 1)
+metadata/unity_id = 7916
+metadata/unity_name = "middle_03_r"
+
+[node name="pinky_01_r" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r"]
+position = Vector3(0.199877352, -0.0987919569, 0.128381893)
+quaternion = Quaternion(0.437220216, -0.337032169, -0.36818099, 0.748124719)
+scale = Vector3(1.00000012, 1.00000012, 1)
+metadata/unity_id = 12697
+metadata/unity_name = "pinky_01_r"
+
+[node name="pinky_02_r" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r"]
+position = Vector3(0.0836315155, 0.0014910507, -0.00181037898)
+quaternion = Quaternion(0.00265497132, 0.000711457978, -0.425830364, 0.904798865)
+scale = Vector3(1, 1, 0.99999994)
+metadata/unity_id = 27057
+metadata/unity_name = "pinky_02_r"
+
+[node name="pinky_03_r" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r"]
+position = Vector3(0.0720204934, 0.000238189692, 0.00259147631)
+quaternion = Quaternion(0.0158999227, 0.0758559331, -0.292492628, 0.953121781)
+scale = Vector3(1.00000012, 1.00000012, 1.00000024)
+metadata/unity_id = 15292
+metadata/unity_name = "pinky_03_r"
+
+[node name="ring_01_r" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r"]
+position = Vector3(0.243597209, -0.0628691092, 0.0663194656)
+quaternion = Quaternion(0.124813363, -0.0150224669, -0.26142469, 0.957002163)
+scale = Vector3(1.00000012, 1, 0.99999994)
+metadata/unity_id = 26967
+metadata/unity_name = "ring_01_r"
+
+[node name="ring_02_r" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r"]
+position = Vector3(0.0987454578, 0.000306320173, -0.000583076442)
+quaternion = Quaternion(0.0212245211, 0.052175615, -0.432596624, 0.899826288)
+scale = Vector3(1.00000012, 1.00000012, 0.999999881)
+metadata/unity_id = 15392
+metadata/unity_name = "ring_02_r"
+
+[node name="ring_03_r" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r"]
+position = Vector3(0.0890414417, -0.00290718069, 0.000444145204)
+quaternion = Quaternion(0.00141865422, 0.101459295, -0.343172371, 0.933775544)
+scale = Vector3(0.99999994, 1, 1.00000012)
+metadata/unity_id = 15520
+metadata/unity_name = "ring_03_r"
+
+[node name="thumb_01_r" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r"]
+position = Vector3(0.0519415662, -0.0197483823, -0.144122392)
+quaternion = Quaternion(-0.513410807, 0.629480004, 0.142786458, 0.565487802)
+scale = Vector3(1.00000012, 1.00000012, 1)
+metadata/unity_id = 20232
+metadata/unity_name = "thumb_01_r"
+
+[node name="thumb_02_r" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r"]
+position = Vector3(0.0791239887, 0.000145759579, 0.00122039788)
+quaternion = Quaternion(-0.146969631, 0.0155246723, -0.147889256, 0.977899671)
+scale = Vector3(1.00000012, 1, 1)
+metadata/unity_id = 12975
+metadata/unity_name = "thumb_02_r"
+
+[node name="thumb_03_r" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r"]
+position = Vector3(0.0943119004, 0.00118198397, 0.0011013794)
+quaternion = Quaternion(0.0161815286, -0.00114170427, -0.337697655, 0.941114843)
+scale = Vector3(0.99999994, 1, 1)
+metadata/unity_id = 19971
+metadata/unity_name = "thumb_03_r"
+
+[node name="lowerarm_twist_01_r" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r"]
+position = Vector3(0.255490035, 2.28881831e-07, 7.62939436e-08)
+quaternion = Quaternion(0.117627174, -0, -0, 0.993057847)
+scale = Vector3(1, 1, 1.00000012)
+metadata/unity_id = 5576
+metadata/unity_name = "lowerarm_twist_01_r"
+
+[node name="upperarm_twist_01_r" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r"]
+position = Vector3(0.00500007626, 0, -0)
+quaternion = Quaternion(0.173234895, 4.02863387e-09, -7.08613779e-10, 0.984880567)
+scale = Vector3(0.99999994, 1.00000012, 1.00000012)
+metadata/unity_id = 21648
+metadata/unity_name = "upperarm_twist_01_r"
+
+[node name="neck_01" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03"]
+position = Vector3(-0.135987774, -0.10481941, 2.47955313e-07)
+quaternion = Quaternion(-0, -0, 0.163231537, 0.986587822)
+scale = Vector3(1.00000012, 1.00000012, 1)
+metadata/unity_id = 11736
+metadata/unity_name = "neck_01"
+
+[node name="head" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/spine_01/spine_02/spine_03/neck_01"]
+position = Vector3(-0.19596526, 0.00516601559, 3.81469727e-06)
+quaternion = Quaternion(0.0861376524, 0.0380163305, -0.14105922, 0.985513747)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17854
+metadata/unity_name = "head"
+
+[node name="thigh_l" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis"]
+position = Vector3(-0.0984041542, 0.0396716967, 0.150626615)
+quaternion = Quaternion(-0.327627063, -0.191904277, -0.405922592, 0.831300318)
+scale = Vector3(1, 1.00000012, 1)
+metadata/unity_id = 23545
+metadata/unity_name = "thigh_l"
+
+[node name="calf_l" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/thigh_l"]
+position = Vector3(0.430179536, -0.000215606691, 6.72149617e-05)
+quaternion = Quaternion(0.0721225515, 0.0232919808, 0.49688381, 0.864501178)
+scale = Vector3(1, 1, 0.99999994)
+metadata/unity_id = 20681
+metadata/unity_name = "calf_l"
+
+[node name="calf_twist_01_l" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/thigh_l/calf_l"]
+position = Vector3(0.204767793, -9.53674295e-09, -3.81469718e-08)
+quaternion = Quaternion(-0.00280894246, -0.00193332497, 0.00761267357, 0.99996525)
+scale = Vector3(1, 1.00000012, 1.00000012)
+metadata/unity_id = 8363
+metadata/unity_name = "calf_twist_01_l"
+
+[node name="foot_l" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/thigh_l/calf_l"]
+position = Vector3(0.414328218, -0.00037822724, 0.000223007199)
+quaternion = Quaternion(0.170859247, 0.112462334, -0.198749214, 0.95846653)
+scale = Vector3(1, 1.00000012, 1.00000012)
+metadata/unity_id = 25931
+metadata/unity_name = "foot_l"
+
+[node name="ball_01_l" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/thigh_l/calf_l/foot_l"]
+position = Vector3(0.0715732053, -0.114576288, -0.000299339299)
+quaternion = Quaternion(-0.0215792395, 0.0142294336, 0.750068843, 0.660854459)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14809
+metadata/unity_name = "ball_01_l"
+
+[node name="ball_02_l" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/thigh_l/calf_l/foot_l/ball_01_l"]
+position = Vector3(-0.138150781, -0.000361309038, -0.00246334076)
+quaternion = Quaternion(-0, -0.0152348354, -0, 0.99988395)
+scale = Vector3(1, 0.99999994, 1)
+metadata/unity_id = 15981
+metadata/unity_name = "ball_02_l"
+
+[node name="thigh_twist_01_l" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/thigh_l"]
+position = Vector3(0.220942363, 0, -0)
+quaternion = Quaternion(0.0474436916, 2.14190259e-05, 0.000491156068, 0.99887383)
+scale = Vector3(0.99999994, 1, 1)
+metadata/unity_id = 6883
+metadata/unity_name = "thigh_twist_01_l"
+
+[node name="thigh_r" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis"]
+position = Vector3(-0.0984048471, 0.0396726318, -0.150625899)
+quaternion = Quaternion(0.168826103, -0.183266416, 0.761030853, 0.598951757)
+scale = Vector3(1.00000012, 1.00000012, 1)
+metadata/unity_id = 24211
+metadata/unity_name = "thigh_r"
+
+[node name="calf_r" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/thigh_r"]
+position = Vector3(-0.430178136, 0.000216636647, -6.70433001e-05)
+quaternion = Quaternion(0.0840195864, 0.0237587877, 0.571534038, 0.815919757)
+scale = Vector3(1.00000012, 1, 1)
+metadata/unity_id = 25613
+metadata/unity_name = "calf_r"
+
+[node name="calf_twist_01_r" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/thigh_r/calf_r"]
+position = Vector3(-0.204769015, -9.53674295e-09, -0)
+quaternion = Quaternion(-0.00280727819, -0.0019337883, 0.00761243654, 0.99996525)
+scale = Vector3(0.999999881, 1, 1)
+metadata/unity_id = 10446
+metadata/unity_name = "calf_twist_01_r"
+
+[node name="foot_r" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/thigh_r/calf_r"]
+position = Vector3(-0.414328307, 0.000378284458, -0.000224418633)
+quaternion = Quaternion(-0.0439443067, 0.0239406005, -0.124247149, 0.990988612)
+scale = Vector3(0.99999994, 0.99999994, 0.999999881)
+metadata/unity_id = 15507
+metadata/unity_name = "foot_r"
+
+[node name="ball_01_r" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/thigh_r/calf_r/foot_r"]
+position = Vector3(-0.0689120591, 0.114871994, 0.0174964909)
+quaternion = Quaternion(0.03110715, -0.0334439725, 0.752933145, 0.656510115)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5910
+metadata/unity_name = "ball_01_r"
+
+[node name="ball_02_r" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/thigh_r/calf_r/foot_r/ball_01_r"]
+position = Vector3(0.138151631, 0.000361261365, 0.00246315007)
+quaternion = Quaternion(2.37070395e-07, -0.0152348354, -8.30352747e-08, 0.99988395)
+scale = Vector3(1.00000012, 1, 1)
+metadata/unity_id = 4726
+metadata/unity_name = "ball_02_r"
+
+[node name="thigh_twist_01_r" type="Node3D" parent="ForestGolem/ForestGolem/root/pelvis/thigh_r"]
+position = Vector3(-0.220942527, 0, 3.81469718e-08)
+quaternion = Quaternion(0.0474453531, 2.18961432e-05, 0.000491133309, 0.998873711)
+scale = Vector3(1.00000012, 1.00000012, 1)
+metadata/unity_id = 11122
+metadata/unity_name = "thigh_twist_01_r"
+
+[node name="OverheadSlot" type="Node3D" parent="ForestGolem"]
+position = Vector3(0, 2.5, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6031
+metadata/unity_name = "OverheadSlot"
+
+[node name="VFXParent" type="Node3D" parent="ForestGolem"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15254
+metadata/unity_name = "VFXParent"
+
+[node name="CameraShake_low" type="Node3D" parent="ForestGolem/VFXParent"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15382
+metadata/unity_name = "CameraShake_low"
+
+[node name="VFX_ForestGolem_SkillAttack" type="Node3D" parent="ForestGolem/VFXParent"]
+position = Vector3(0, 0, -0.790000021)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8183
+metadata/unity_name = "VFX_ForestGolem_SkillAttack"
+
+[node name="root" type="Node3D" parent="ForestGolem/VFXParent/VFX_ForestGolem_SkillAttack"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6178
+metadata/unity_name = "root"
+
+[node name="RockGround" type="Node3D" parent="ForestGolem/VFXParent/VFX_ForestGolem_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -1, 0, 0)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21364
+metadata/unity_name = "RockGround"
+
+[node name="RockGround_Small" type="Node3D" parent="ForestGolem/VFXParent/VFX_ForestGolem_SkillAttack/root/RockGround"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20559
+metadata/unity_name = "RockGround_Small"
+
+[node name="RockGround_Mid" type="Node3D" parent="ForestGolem/VFXParent/VFX_ForestGolem_SkillAttack/root/RockGround"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21114
+metadata/unity_name = "RockGround_Mid"
+
+[node name="RockGround_Big" type="Node3D" parent="ForestGolem/VFXParent/VFX_ForestGolem_SkillAttack/root/RockGround"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9745
+metadata/unity_name = "RockGround_Big"
+
+[node name="GroundImpact_01" type="Node3D" parent="ForestGolem/VFXParent/VFX_ForestGolem_SkillAttack/root"]
+position = Vector3(-0.0500000007, 0, -0.0500000007)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23968
+metadata/unity_name = "GroundImpact_01"
+
+[node name="Area Intro" type="Node3D" parent="ForestGolem/VFXParent/VFX_ForestGolem_SkillAttack/root"]
+position = Vector3(0, -0.699999988, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18220
+metadata/unity_name = "Area Intro"
+
+[node name="Dust_01" type="Node3D" parent="ForestGolem/VFXParent/VFX_ForestGolem_SkillAttack/root"]
+position = Vector3(-0.0500000007, 0, -0.0500000007)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6191
+metadata/unity_name = "Dust_01"
+
+[node name="Crack_01" type="Node3D" parent="ForestGolem/VFXParent/VFX_ForestGolem_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10140
+metadata/unity_name = "Crack_01"
+
+[node name="Glow_01" type="Node3D" parent="ForestGolem/VFXParent/VFX_ForestGolem_SkillAttack/root"]
+position = Vector3(-0.0500000007, 0, -0.0500000007)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22317
+metadata/unity_name = "Glow_01"
+
+[node name="Glow_02" type="Node3D" parent="ForestGolem/VFXParent/VFX_ForestGolem_SkillAttack/root"]
+position = Vector3(0.0700000003, 0, 0.439999998)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20734
+metadata/unity_name = "Glow_02"
+
+[node name="Rocks_01" type="Node3D" parent="ForestGolem/VFXParent/VFX_ForestGolem_SkillAttack/root"]
+position = Vector3(-0.0500000007, -0.159999996, -0.0500000007)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9420
+metadata/unity_name = "Rocks_01"
+
+[node name="Impact_02" type="Node3D" parent="ForestGolem/VFXParent/VFX_ForestGolem_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10779
+metadata/unity_name = "Impact_02"
+
+[node name="Smoke_01" type="Node3D" parent="ForestGolem/VFXParent/VFX_ForestGolem_SkillAttack/root"]
+position = Vector3(0, -0.5, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26285
+metadata/unity_name = "Smoke_01"

@@ -1,0 +1,1505 @@
+{
+  "entries": {
+    "1": {
+      "name": "RankModifiers.RankModifier_1.Name",
+      "description": "RankModifiers.RankModifier_1.Description",
+      "variables": {
+        "0": "1",
+        "1": "1/33",
+        "2": "10"
+      },
+      "icon": "res://sprites/sharedassets1_3727.png"
+    },
+    "2": {
+      "name": "RankModifiers.RankModifier_2.Name",
+      "description": "RankModifiers.RankModifier_2.Description",
+      "variables": {
+        "0": "2"
+      },
+      "icon": "res://sprites/sharedassets1_3806.png"
+    },
+    "3": {
+      "name": "RankModifiers.RankModifier_3.Name",
+      "description": "RankModifiers.RankModifier_3.Description",
+      "variables": {
+        "0": "1",
+        "1": "1/50",
+        "2": "6"
+      },
+      "icon": "res://sprites/sharedassets1_4117.png"
+    },
+    "4": {
+      "name": "RankModifiers.RankModifier_4.Name",
+      "description": "RankModifiers.RankModifier_4.Description",
+      "variables": {
+        "0": "2"
+      },
+      "icon": "res://sprites/sharedassets1_3719.png"
+    },
+    "5": {
+      "name": "RankModifiers.RankModifier_5.Name",
+      "description": "RankModifiers.RankModifier_5.Description",
+      "variables": {
+        "0": "1",
+        "1": "1/80",
+        "2": "6"
+      },
+      "icon": "res://sprites/sharedassets1_3926.png"
+    },
+    "6": {
+      "name": "RankModifiers.RankModifier_6.Name",
+      "description": "RankModifiers.RankModifier_6.Description",
+      "variables": {
+        "0": "2"
+      },
+      "icon": "res://sprites/sharedassets1_3781.png"
+    },
+    "7": {
+      "name": "RankModifiers.RankModifier_7.Name",
+      "description": "RankModifiers.RankModifier_7.Description",
+      "variables": {
+        "0": "1",
+        "1": "1"
+      },
+      "icon": "res://sprites/sharedassets1_3729.png"
+    },
+    "8": {
+      "name": "RankModifiers.RankModifier_8.Name",
+      "description": "RankModifiers.RankModifier_8.Description",
+      "variables": {
+        "0": "1"
+      },
+      "icon": "res://sprites/sharedassets1_4044.png"
+    },
+    "9": {
+      "name": "RankModifiers.RankModifier_9.Name",
+      "description": "RankModifiers.RankModifier_9.Description",
+      "variables": {
+        "0": "10",
+        "1": "50",
+        "2": "20",
+        "3": "50"
+      },
+      "icon": "res://sprites/sharedassets1_3910.png"
+    },
+    "10": {
+      "name": "RankModifiers.RankModifier_10.Name",
+      "description": "RankModifiers.RankModifier_10.Description",
+      "variables": {
+        "0": "0",
+        "1": "50",
+        "2": "3"
+      },
+      "icon": "res://sprites/sharedassets1_3845.png"
+    },
+    "11": {
+      "name": "RankModifiers.RankModifier_11.Name",
+      "description": "RankModifiers.RankModifier_11.Description",
+      "variables": {
+        "0": "2"
+      },
+      "icon": "res://sprites/sharedassets1_4183.png"
+    },
+    "12": {
+      "name": "RankModifiers.RankModifier_12.Name",
+      "description": "RankModifiers.RankModifier_12.Description",
+      "variables": {
+        "0": "9",
+        "1": "1"
+      },
+      "icon": "res://sprites/sharedassets1_4044.png"
+    },
+    "13": {
+      "name": "RankModifiers.RankModifier_13.Name",
+      "description": "RankModifiers.RankModifier_13.Description",
+      "variables": {
+        "0": "1",
+        "1": "40"
+      },
+      "icon": "res://sprites/sharedassets1_4194.png"
+    },
+    "14": {
+      "name": "RankModifiers.RankModifier_14.Name",
+      "description": "RankModifiers.RankModifier_14.Description",
+      "variables": {
+        "0": "25"
+      },
+      "icon": "res://sprites/sharedassets1_4186.png"
+    },
+    "15": {
+      "name": "RankModifiers.RankModifier_15.Name",
+      "description": "RankModifiers.RankModifier_15.Description",
+      "variables": {
+        "0": "1"
+      },
+      "icon": "res://sprites/sharedassets1_4035.png"
+    },
+    "46": {
+      "name": "RankModifiers.RankModifier_46.Name",
+      "description": "RankModifiers.RankModifier_46.Description",
+      "variables": {
+        "0": "0",
+        "1": "50",
+        "2": "3"
+      },
+      "icon": "res://sprites/sharedassets1_3845.png"
+    },
+    "47": {
+      "name": "RankModifiers.RankModifier_47.Name",
+      "description": "RankModifiers.RankModifier_47.Description",
+      "variables": {
+        "0": "2"
+      },
+      "icon": "res://sprites/sharedassets1_4027.png"
+    },
+    "48": {
+      "name": "RankModifiers.RankModifier_48.Name",
+      "description": "RankModifiers.RankModifier_48.Description",
+      "variables": {
+        "0": "10",
+        "1": "100"
+      },
+      "icon": "res://sprites/sharedassets1_4069.png"
+    },
+    "49": {
+      "name": "RankModifiers.RankModifier_49.Name",
+      "description": "RankModifiers.RankModifier_49.Description",
+      "variables": {
+        "0": "3"
+      },
+      "icon": "res://sprites/sharedassets1_4089.png"
+    },
+    "50": {
+      "name": "RankModifiers.RankModifier_50.Name",
+      "description": "RankModifiers.RankModifier_50.Description",
+      "variables": {
+        "0": "100",
+        "1": "20"
+      },
+      "icon": "res://sprites/sharedassets1_3731.png"
+    },
+    "51": {
+      "name": "RankModifiers.RankModifier_51.Name",
+      "description": "RankModifiers.RankModifier_51.Description",
+      "variables": {
+        "0": "25"
+      },
+      "icon": "res://sprites/sharedassets1_3872.png"
+    },
+    "52": {
+      "name": "RankModifiers.RankModifier_52.Name",
+      "description": "RankModifiers.RankModifier_52.Description",
+      "variables": {
+        "0": "8",
+        "1": "50"
+      },
+      "icon": "res://sprites/sharedassets1_4004.png"
+    },
+    "53": {
+      "name": "RankModifiers.RankModifier_53.Name",
+      "description": "RankModifiers.RankModifier_53.Description",
+      "variables": {
+        "0": "150"
+      },
+      "icon": "res://sprites/sharedassets1_3751.png"
+    },
+    "54": {
+      "name": "RankModifiers.RankModifier_54.Name",
+      "description": "RankModifiers.RankModifier_54.Description",
+      "variables": {
+        "0": "8",
+        "1": "100"
+      },
+      "icon": "res://sprites/sharedassets1_3897.png"
+    },
+    "55": {
+      "name": "RankModifiers.RankModifier_55.Name",
+      "description": "RankModifiers.RankModifier_55.Description",
+      "variables": {
+        "0": "1",
+        "1": "50"
+      },
+      "icon": "res://sprites/sharedassets1_4024.png"
+    },
+    "56": {
+      "name": "RankModifiers.RankModifier_56.Name",
+      "description": "RankModifiers.RankModifier_56.Description",
+      "variables": {
+        "0": "2"
+      },
+      "icon": "res://sprites/sharedassets1_3729.png"
+    },
+    "57": {
+      "name": "RankModifiers.RankModifier_57.Name",
+      "description": "RankModifiers.RankModifier_57.Description",
+      "variables": {
+        "0": "1000",
+        "1": "500"
+      },
+      "icon": "res://sprites/sharedassets1_3733.png"
+    },
+    "58": {
+      "name": "RankModifiers.RankModifier_58.Name",
+      "description": "RankModifiers.RankModifier_58.Description",
+      "variables": {
+        "0": "2",
+        "1": "2",
+        "2": "1"
+      },
+      "icon": "res://sprites/sharedassets1_3825.png"
+    },
+    "59": {
+      "name": "RankModifiers.RankModifier_59.Name",
+      "description": "RankModifiers.RankModifier_59.Description",
+      "variables": {
+        "0": "1",
+        "1": "8",
+        "2": "1000"
+      },
+      "icon": "res://sprites/sharedassets1_4142.png"
+    },
+    "60": {
+      "name": "RankModifiers.RankModifier_60.Name",
+      "description": "RankModifiers.RankModifier_60.Description",
+      "variables": {
+        "0": "33"
+      },
+      "icon": "res://sprites/sharedassets1_3811.png"
+    },
+    "91": {
+      "name": "RankModifiers.RankModifier_91.Name",
+      "description": "RankModifiers.RankModifier_91.Description",
+      "variables": {
+        "0": "30",
+        "1": "100",
+        "2": "100",
+        "3": "25"
+      },
+      "icon": "res://sprites/sharedassets1_3867.png"
+    },
+    "92": {
+      "name": "RankModifiers.RankModifier_92.Name",
+      "description": "RankModifiers.RankModifier_92.Description",
+      "variables": {
+        "0": "6"
+      },
+      "icon": "res://sprites/sharedassets1_3794.png"
+    },
+    "93": {
+      "name": "RankModifiers.RankModifier_93.Name",
+      "description": "RankModifiers.RankModifier_93.Description",
+      "variables": {
+        "0": "45"
+      },
+      "icon": "res://sprites/sharedassets1_3841.png"
+    },
+    "94": {
+      "name": "RankModifiers.RankModifier_94.Name",
+      "description": "RankModifiers.RankModifier_94.Description",
+      "variables": {
+        "0": "2"
+      },
+      "icon": "res://sprites/sharedassets1_3971.png"
+    },
+    "95": {
+      "name": "RankModifiers.RankModifier_95.Name",
+      "description": "RankModifiers.RankModifier_95.Description",
+      "variables": {
+        "0": "10",
+        "1": "20",
+        "2": "30",
+        "3": "40",
+        "4": "50"
+      },
+      "icon": "res://sprites/sharedassets1_3797.png"
+    },
+    "96": {
+      "name": "RankModifiers.RankModifier_96.Name",
+      "description": "RankModifiers.RankModifier_96.Description",
+      "variables": {
+        "0": "33"
+      },
+      "icon": "res://sprites/sharedassets1_4130.png"
+    },
+    "97": {
+      "name": "RankModifiers.RankModifier_97.Name",
+      "description": "RankModifiers.RankModifier_97.Description",
+      "variables": {
+        "0": "0",
+        "1": "50"
+      },
+      "icon": "res://sprites/sharedassets1_4167.png"
+    },
+    "98": {
+      "name": "RankModifiers.RankModifier_98.Name",
+      "description": "RankModifiers.RankModifier_98.Description",
+      "variables": {
+        "0": "1",
+        "1": "1",
+        "2": "2"
+      },
+      "icon": "res://sprites/sharedassets1_3803.png"
+    },
+    "99": {
+      "name": "RankModifiers.RankModifier_99.Name",
+      "description": "RankModifiers.RankModifier_99.Description",
+      "variables": {
+        "0": "1",
+        "1": "1/100",
+        "2": "6"
+      },
+      "icon": "res://sprites/sharedassets1_3964.png"
+    },
+    "100": {
+      "name": "RankModifiers.RankModifier_100.Name",
+      "description": "RankModifiers.RankModifier_100.Description",
+      "variables": {
+        "0": "2"
+      },
+      "icon": "res://sprites/sharedassets1_4017.png"
+    },
+    "101": {
+      "name": "RankModifiers.RankModifier_101.Name",
+      "description": "RankModifiers.RankModifier_101.Description",
+      "variables": {
+        "0": "1",
+        "1": "1/100",
+        "2": "6"
+      },
+      "icon": "res://sprites/sharedassets1_3884.png"
+    },
+    "102": {
+      "name": "RankModifiers.RankModifier_102.Name",
+      "description": "RankModifiers.RankModifier_102.Description",
+      "variables": {
+        "0": "2"
+      },
+      "icon": "res://sprites/sharedassets1_3977.png"
+    },
+    "103": {
+      "name": "RankModifiers.RankModifier_103.Name",
+      "description": "RankModifiers.RankModifier_103.Description",
+      "variables": {
+        "0": "33"
+      },
+      "icon": "res://sprites/sharedassets1_4140.png"
+    },
+    "104": {
+      "name": "RankModifiers.RankModifier_104.Name",
+      "description": "RankModifiers.RankModifier_104.Description",
+      "variables": {
+        "0": "20"
+      },
+      "icon": "res://sprites/sharedassets1_3985.png"
+    },
+    "105": {
+      "name": "RankModifiers.RankModifier_105.Name",
+      "description": "RankModifiers.RankModifier_105.Description",
+      "variables": {
+        "0": "75"
+      },
+      "icon": "res://sprites/sharedassets1_4140.png"
+    },
+    "136": {
+      "name": "RankModifiers.RankModifier_136.Name",
+      "description": "RankModifiers.RankModifier_136.Description",
+      "variables": {
+        "0": "1"
+      },
+      "icon": "res://sprites/sharedassets1_3701.png"
+    },
+    "137": {
+      "name": "RankModifiers.RankModifier_137.Name",
+      "description": "RankModifiers.RankModifier_137.Description",
+      "variables": {
+        "0": "3"
+      },
+      "icon": "res://sprites/sharedassets1_3962.png"
+    },
+    "138": {
+      "name": "RankModifiers.RankModifier_138.Name",
+      "description": "RankModifiers.RankModifier_138.Description",
+      "variables": {
+        "0": "5",
+        "1": "500",
+        "2": "500"
+      },
+      "icon": "res://sprites/sharedassets1_3961.png"
+    },
+    "139": {
+      "name": "RankModifiers.RankModifier_139.Name",
+      "description": "RankModifiers.RankModifier_139.Description",
+      "variables": {
+        "0": "1",
+        "1": "3"
+      },
+      "icon": "res://sprites/sharedassets1_4147.png"
+    },
+    "140": {
+      "name": "RankModifiers.RankModifier_140.Name",
+      "description": "RankModifiers.RankModifier_140.Description",
+      "variables": {
+        "0": "30",
+        "1": "5"
+      },
+      "icon": "res://sprites/sharedassets1_3969.png"
+    },
+    "141": {
+      "name": "RankModifiers.RankModifier_141.Name",
+      "description": "RankModifiers.RankModifier_141.Description",
+      "variables": {
+        "0": "6"
+      },
+      "icon": "res://sprites/sharedassets1_3729.png"
+    },
+    "142": {
+      "name": "RankModifiers.RankModifier_142.Name",
+      "description": "RankModifiers.RankModifier_142.Description",
+      "variables": {
+        "0": "50"
+      },
+      "icon": "res://sprites/sharedassets1_3894.png"
+    },
+    "143": {
+      "name": "RankModifiers.RankModifier_143.Name",
+      "description": "RankModifiers.RankModifier_143.Description",
+      "variables": {
+        "0": "0",
+        "1": "100",
+        "2": "0",
+        "3": "100"
+      },
+      "icon": "res://sprites/sharedassets1_4161.png"
+    },
+    "144": {
+      "name": "RankModifiers.RankModifier_144.Name",
+      "description": "RankModifiers.RankModifier_144.Description",
+      "variables": {
+        "0": "400",
+        "1": "250",
+        "2": "1000"
+      },
+      "icon": "res://sprites/sharedassets1_3998.png"
+    },
+    "145": {
+      "name": "RankModifiers.RankModifier_145.Name",
+      "description": "RankModifiers.RankModifier_145.Description",
+      "variables": {
+        "0": "4",
+        "1": "4",
+        "2": "50",
+        "3": "25",
+        "4": "50",
+        "5": "25"
+      },
+      "icon": "res://sprites/sharedassets1_4142.png"
+    },
+    "146": {
+      "name": "RankModifiers.RankModifier_146.Name",
+      "description": "RankModifiers.RankModifier_146.Description",
+      "variables": {
+        "0": "100",
+        "1": "500"
+      },
+      "icon": "res://sprites/sharedassets1_4093.png"
+    },
+    "147": {
+      "name": "RankModifiers.RankModifier_147.Name",
+      "description": "RankModifiers.RankModifier_147.Description",
+      "variables": {
+        "0": "4"
+      },
+      "icon": "res://sprites/sharedassets1_4172.png"
+    },
+    "148": {
+      "name": "RankModifiers.RankModifier_148.Name",
+      "description": "RankModifiers.RankModifier_148.Description",
+      "variables": {
+        "0": "0",
+        "1": "50"
+      },
+      "icon": "res://sprites/sharedassets1_3848.png"
+    },
+    "149": {
+      "name": "RankModifiers.RankModifier_149.Name",
+      "description": "RankModifiers.RankModifier_149.Description",
+      "variables": {
+        "0": "1"
+      },
+      "icon": "res://sprites/sharedassets1_3925.png"
+    },
+    "150": {
+      "name": "RankModifiers.RankModifier_150.Name",
+      "description": "RankModifiers.RankModifier_150.Description",
+      "variables": {
+        "0": "1",
+        "1": "2"
+      },
+      "icon": "res://sprites/sharedassets1_3819.png"
+    },
+    "181": {
+      "name": "RankModifiers.RankModifier_181.Name",
+      "description": "RankModifiers.RankModifier_181.Description",
+      "variables": {
+        "0": "0",
+        "1": "25"
+      },
+      "icon": "res://sprites/sharedassets1_4068.png"
+    },
+    "182": {
+      "name": "RankModifiers.RankModifier_182.Name",
+      "description": "RankModifiers.RankModifier_182.Description",
+      "variables": {
+        "0": "50",
+        "1": "0",
+        "2": "50",
+        "3": "0",
+        "4": "50"
+      },
+      "icon": "res://sprites/sharedassets1_4068.png"
+    },
+    "183": {
+      "name": "RankModifiers.RankModifier_183.Name",
+      "description": "RankModifiers.RankModifier_183.Description",
+      "variables": {
+        "0": "13",
+        "1": "10"
+      },
+      "icon": "res://sprites/sharedassets1_3800.png"
+    },
+    "184": {
+      "name": "RankModifiers.RankModifier_184.Name",
+      "description": "RankModifiers.RankModifier_184.Description",
+      "variables": {
+        "0": "0",
+        "1": "4"
+      },
+      "icon": "res://sprites/sharedassets1_3797.png"
+    },
+    "185": {
+      "name": "RankModifiers.RankModifier_185.Name",
+      "description": "RankModifiers.RankModifier_185.Description",
+      "variables": {
+        "0": "0",
+        "1": "3"
+      },
+      "icon": "res://sprites/sharedassets1_4159.png"
+    },
+    "186": {
+      "name": "RankModifiers.RankModifier_186.Name",
+      "description": "RankModifiers.RankModifier_186.Description",
+      "variables": {
+        "0": "100",
+        "1": "12",
+        "2": "10"
+      },
+      "icon": "res://sprites/sharedassets1_4105.png"
+    },
+    "187": {
+      "name": "RankModifiers.RankModifier_187.Name",
+      "description": "RankModifiers.RankModifier_187.Description",
+      "variables": {
+        "0": "12",
+        "1": "100"
+      },
+      "icon": "res://sprites/sharedassets1_4105.png"
+    },
+    "188": {
+      "name": "RankModifiers.RankModifier_188.Name",
+      "description": "RankModifiers.RankModifier_188.Description",
+      "variables": {
+        "0": "3"
+      },
+      "icon": "res://sprites/sharedassets1_4053.png"
+    },
+    "189": {
+      "name": "RankModifiers.RankModifier_189.Name",
+      "description": "RankModifiers.RankModifier_189.Description",
+      "variables": {
+        "0": "1",
+        "1": "1/800",
+        "2": "7"
+      },
+      "icon": "res://sprites/sharedassets1_3867.png"
+    },
+    "190": {
+      "name": "RankModifiers.RankModifier_190.Name",
+      "description": "RankModifiers.RankModifier_190.Description",
+      "variables": {
+        "0": "50",
+        "1": "50"
+      },
+      "icon": "res://sprites/sharedassets1_3867.png"
+    },
+    "191": {
+      "name": "RankModifiers.RankModifier_191.Name",
+      "description": "RankModifiers.RankModifier_191.Description",
+      "variables": {
+        "0": "30",
+        "1": "1/50"
+      },
+      "icon": "res://sprites/sharedassets1_3882.png"
+    },
+    "192": {
+      "name": "RankModifiers.RankModifier_192.Name",
+      "description": "RankModifiers.RankModifier_192.Description",
+      "variables": {
+        "0": "1"
+      },
+      "icon": "res://sprites/sharedassets1_3756.png"
+    },
+    "193": {
+      "name": "RankModifiers.RankModifier_193.Name",
+      "description": "RankModifiers.RankModifier_193.Description",
+      "variables": {
+        "0": "25"
+      },
+      "icon": "res://sprites/sharedassets1_4110.png"
+    },
+    "194": {
+      "name": "RankModifiers.RankModifier_194.Name",
+      "description": "RankModifiers.RankModifier_194.Description",
+      "variables": {
+        "0": "1000",
+        "1": "20"
+      },
+      "icon": "res://sprites/sharedassets1_3775.png"
+    },
+    "195": {
+      "name": "RankModifiers.RankModifier_195.Name",
+      "description": "RankModifiers.RankModifier_195.Description",
+      "variables": {
+        "0": "0",
+        "1": "66",
+        "2": "2"
+      },
+      "icon": "res://sprites/sharedassets1_3947.png"
+    },
+    "226": {
+      "name": "RankModifiers.RankModifier_226.Name",
+      "description": "RankModifiers.RankModifier_226.Description",
+      "variables": {
+        "0": "1",
+        "1": "10"
+      },
+      "icon": "res://sprites/sharedassets1_3884.png"
+    },
+    "227": {
+      "name": "RankModifiers.RankModifier_227.Name",
+      "description": "RankModifiers.RankModifier_227.Description",
+      "variables": {
+        "0": "80"
+      },
+      "icon": "res://sprites/sharedassets1_3815.png"
+    },
+    "228": {
+      "name": "RankModifiers.RankModifier_228.Name",
+      "description": "RankModifiers.RankModifier_228.Description",
+      "variables": {
+        "0": "3"
+      },
+      "icon": "res://sprites/sharedassets1_3719.png"
+    },
+    "229": {
+      "name": "RankModifiers.RankModifier_229.Name",
+      "description": "RankModifiers.RankModifier_229.Description",
+      "variables": {
+        "0": "30",
+        "1": "50"
+      },
+      "icon": "res://sprites/sharedassets1_4060.png"
+    },
+    "230": {
+      "name": "RankModifiers.RankModifier_230.Name",
+      "description": "RankModifiers.RankModifier_230.Description",
+      "variables": {
+        "0": "0",
+        "1": "250"
+      },
+      "icon": "res://sprites/sharedassets1_4028.png"
+    },
+    "231": {
+      "name": "RankModifiers.RankModifier_231.Name",
+      "description": "RankModifiers.RankModifier_231.Description",
+      "variables": {
+        "0": "0",
+        "1": "50",
+        "2": "3"
+      },
+      "icon": "res://sprites/sharedassets1_3845.png"
+    },
+    "232": {
+      "name": "RankModifiers.RankModifier_232.Name",
+      "description": "RankModifiers.RankModifier_232.Description",
+      "variables": {
+        "0": "15",
+        "1": "15",
+        "2": "15"
+      },
+      "icon": "res://sprites/sharedassets1_4027.png"
+    },
+    "233": {
+      "name": "RankModifiers.RankModifier_233.Name",
+      "description": "RankModifiers.RankModifier_233.Description",
+      "variables": {
+        "0": "1",
+        "1": "1"
+      },
+      "icon": "res://sprites/sharedassets1_3733.png"
+    },
+    "234": {
+      "name": "RankModifiers.RankModifier_234.Name",
+      "description": "RankModifiers.RankModifier_234.Description",
+      "variables": {
+        "0": "10",
+        "1": "100"
+      },
+      "icon": "res://sprites/sharedassets1_4150.png"
+    },
+    "235": {
+      "name": "RankModifiers.RankModifier_235.Name",
+      "description": "RankModifiers.RankModifier_235.Description",
+      "variables": {
+        "0": "1"
+      },
+      "icon": "res://sprites/sharedassets1_4150.png"
+    },
+    "236": {
+      "name": "RankModifiers.RankModifier_236.Name",
+      "description": "RankModifiers.RankModifier_236.Description",
+      "variables": {
+        "0": "8"
+      },
+      "icon": "res://sprites/sharedassets1_3939.png"
+    },
+    "237": {
+      "name": "RankModifiers.RankModifier_237.Name",
+      "description": "RankModifiers.RankModifier_237.Description",
+      "variables": {
+        "0": "10",
+        "1": "1"
+      },
+      "icon": "res://sprites/sharedassets1_3965.png"
+    },
+    "238": {
+      "name": "RankModifiers.RankModifier_238.Name",
+      "description": "RankModifiers.RankModifier_238.Description",
+      "variables": {
+        "0": "5",
+        "1": "5"
+      },
+      "icon": "res://sprites/sharedassets1_3825.png"
+    },
+    "239": {
+      "name": "RankModifiers.RankModifier_239.Name",
+      "description": "RankModifiers.RankModifier_239.Description",
+      "variables": {
+        "0": "100",
+        "1": "5"
+      },
+      "icon": "res://sprites/sharedassets1_3900.png"
+    },
+    "240": {
+      "name": "RankModifiers.RankModifier_240.Name",
+      "description": "RankModifiers.RankModifier_240.Description",
+      "variables": {
+        "0": "60",
+        "1": "20"
+      },
+      "icon": "res://sprites/sharedassets1_3796.png"
+    },
+    "271": {
+      "name": "RankModifiers.RankModifier_271.Name",
+      "description": "RankModifiers.RankModifier_271.Description",
+      "variables": {
+        "0": "0",
+        "1": "100"
+      },
+      "icon": "res://sprites/sharedassets1_3908.png"
+    },
+    "272": {
+      "name": "RankModifiers.RankModifier_272.Name",
+      "description": "RankModifiers.RankModifier_272.Description",
+      "variables": {
+        "0": "2",
+        "1": "33",
+        "2": "50"
+      },
+      "icon": "res://sprites/sharedassets1_3958.png"
+    },
+    "273": {
+      "name": "RankModifiers.RankModifier_273.Name",
+      "description": "RankModifiers.RankModifier_273.Description",
+      "variables": {
+        "0": "6"
+      },
+      "icon": "res://sprites/sharedassets1_4151.png"
+    },
+    "274": {
+      "name": "RankModifiers.RankModifier_274.Name",
+      "description": "RankModifiers.RankModifier_274.Description",
+      "variables": {
+        "0": "0",
+        "1": "100"
+      },
+      "icon": "res://sprites/sharedassets1_4031.png"
+    },
+    "275": {
+      "name": "RankModifiers.RankModifier_275.Name",
+      "description": "RankModifiers.RankModifier_275.Description",
+      "variables": {
+        "0": "100"
+      },
+      "icon": "res://sprites/sharedassets1_3759.png"
+    },
+    "276": {
+      "name": "RankModifiers.RankModifier_276.Name",
+      "description": "RankModifiers.RankModifier_276.Description",
+      "variables": {
+        "0": "0",
+        "1": "50"
+      },
+      "icon": "res://sprites/sharedassets1_4050.png"
+    },
+    "277": {
+      "name": "RankModifiers.RankModifier_277.Name",
+      "description": "RankModifiers.RankModifier_277.Description",
+      "variables": {
+        "0": "1",
+        "1": "3"
+      },
+      "icon": "res://sprites/sharedassets1_4114.png"
+    },
+    "278": {
+      "name": "RankModifiers.RankModifier_278.Name",
+      "description": "RankModifiers.RankModifier_278.Description",
+      "variables": {
+        "0": "20",
+        "1": "0",
+        "2": "100"
+      },
+      "icon": "res://sprites/sharedassets1_3728.png"
+    },
+    "279": {
+      "name": "RankModifiers.RankModifier_279.Name",
+      "description": "RankModifiers.RankModifier_279.Description",
+      "variables": {
+        "0": "20"
+      },
+      "icon": "res://sprites/sharedassets1_3755.png"
+    },
+    "280": {
+      "name": "RankModifiers.RankModifier_280.Name",
+      "description": "RankModifiers.RankModifier_280.Description",
+      "variables": {
+        "0": "0",
+        "1": "25"
+      },
+      "icon": "res://sprites/sharedassets1_3857.png"
+    },
+    "281": {
+      "name": "RankModifiers.RankModifier_281.Name",
+      "description": "RankModifiers.RankModifier_281.Description",
+      "variables": {
+        "0": "1",
+        "1": "5"
+      },
+      "icon": "res://sprites/sharedassets1_3850.png"
+    },
+    "282": {
+      "name": "RankModifiers.RankModifier_282.Name",
+      "description": "RankModifiers.RankModifier_282.Description",
+      "variables": {
+        "0": "20",
+        "1": "0",
+        "2": "35"
+      },
+      "icon": "res://sprites/sharedassets1_3763.png"
+    },
+    "283": {
+      "name": "RankModifiers.RankModifier_283.Name",
+      "description": "RankModifiers.RankModifier_283.Description",
+      "variables": {
+        "0": "25",
+        "1": "40"
+      },
+      "icon": "res://sprites/sharedassets1_3923.png"
+    },
+    "284": {
+      "name": "RankModifiers.RankModifier_284.Name",
+      "description": "RankModifiers.RankModifier_284.Description",
+      "variables": {
+        "0": "15",
+        "1": "30",
+        "2": "45",
+        "3": "100"
+      },
+      "icon": "res://sprites/sharedassets1_3772.png"
+    },
+    "285": {
+      "name": "RankModifiers.RankModifier_285.Name",
+      "description": "RankModifiers.RankModifier_285.Description",
+      "variables": {
+        "0": "8",
+        "1": "40"
+      },
+      "icon": "res://sprites/sharedassets1_3819.png"
+    }
+  },
+  "frames": {
+    "_rarityInnerFrameSprites": [
+      "res://sprites/sharedassets3_555.png",
+      "res://sprites/sharedassets2_104.png",
+      "res://sprites/sharedassets2_219.png",
+      "res://sprites/sharedassets3_434.png"
+    ],
+    "_rarityOuterFrameSprites": [
+      "res://sprites/sharedassets3_413.png",
+      "res://sprites/sharedassets2_206.png",
+      "res://sprites/sharedassets2_210.png",
+      "res://sprites/sharedassets3_384.png"
+    ],
+    "_rarityiconFrame": [
+      "res://sprites/sharedassets3_513.png",
+      "res://sprites/sharedassets2_111.png",
+      "res://sprites/sharedassets2_188.png",
+      "res://sprites/sharedassets3_375.png"
+    ]
+  },
+  "hero_frames": {
+    "_rankImage": {
+      "node": 16035,
+      "textures": [
+        "res://sprites/sharedassets2_175.png",
+        "res://sprites/sharedassets2_208.png",
+        "res://sprites/sharedassets2_98.png",
+        "res://sprites/sharedassets2_159.png"
+      ]
+    },
+    "_backFrame": {
+      "node": 3471,
+      "textures": [
+        "res://sprites/sharedassets3_406.png",
+        "res://sprites/sharedassets3_530.png",
+        "res://sprites/sharedassets3_595.png",
+        "res://sprites/sharedassets3_387.png"
+      ]
+    },
+    "_frontFrame": {
+      "node": 7347,
+      "textures": [
+        "res://sprites/sharedassets3_526.png",
+        "res://sprites/sharedassets3_426.png",
+        "res://sprites/sharedassets3_549.png",
+        "res://sprites/sharedassets3_395.png"
+      ]
+    }
+  },
+  "portraits": {
+    "1": {
+      "PortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_4568.png",
+        "res://sprites/sharedassets1_4557.png",
+        "res://sprites/sharedassets1_4619.png",
+        "res://sprites/sharedassets1_4472.png"
+      ],
+      "BreakoutPortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_3906.png",
+        "res://sprites/sharedassets1_4034.png",
+        "res://sprites/sharedassets1_3771.png",
+        "res://sprites/sharedassets1_3784.png"
+      ],
+      "fallback": "res://sprites/sharedassets1_3346.png"
+    },
+    "2": {
+      "PortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_3613.png",
+        "res://sprites/sharedassets1_4223.png",
+        "res://sprites/sharedassets1_4377.png",
+        "res://sprites/sharedassets1_3284.png"
+      ],
+      "BreakoutPortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_3702.png",
+        "res://sprites/sharedassets1_4121.png",
+        "res://sprites/sharedassets1_4021.png",
+        "res://sprites/sharedassets1_3724.png"
+      ],
+      "fallback": "res://sprites/sharedassets1_4549.png"
+    },
+    "3": {
+      "PortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_3451.png",
+        "res://sprites/sharedassets1_4398.png",
+        "res://sprites/sharedassets1_4525.png",
+        "res://sprites/sharedassets1_3656.png"
+      ],
+      "BreakoutPortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_3920.png",
+        "res://sprites/sharedassets1_4182.png",
+        "res://sprites/sharedassets1_3767.png",
+        "res://sprites/sharedassets1_3840.png"
+      ],
+      "fallback": "res://sprites/sharedassets1_3392.png"
+    },
+    "4": {
+      "PortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_3455.png",
+        "res://sprites/sharedassets1_4318.png",
+        "res://sprites/sharedassets1_4283.png",
+        "res://sprites/sharedassets1_4335.png"
+      ],
+      "BreakoutPortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_4111.png",
+        "res://sprites/sharedassets1_3849.png",
+        "res://sprites/sharedassets1_3877.png",
+        "res://sprites/sharedassets1_3927.png"
+      ],
+      "fallback": "res://sprites/sharedassets1_3431.png"
+    },
+    "5": {
+      "PortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_4540.png",
+        "res://sprites/sharedassets1_4253.png",
+        "res://sprites/sharedassets1_4347.png",
+        "res://sprites/sharedassets1_3398.png"
+      ],
+      "BreakoutPortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_3816.png",
+        "res://sprites/sharedassets1_3855.png",
+        "res://sprites/sharedassets1_3924.png",
+        "res://sprites/sharedassets1_3833.png"
+      ],
+      "fallback": "res://sprites/sharedassets1_4422.png"
+    },
+    "6": {
+      "PortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_3576.png",
+        "res://sprites/sharedassets1_3334.png",
+        "res://sprites/sharedassets1_4625.png",
+        "res://sprites/sharedassets1_4434.png"
+      ],
+      "BreakoutPortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_4108.png",
+        "res://sprites/sharedassets1_3984.png",
+        "res://sprites/sharedassets1_3799.png",
+        "res://sprites/sharedassets1_4195.png"
+      ],
+      "fallback": "res://sprites/sharedassets1_4308.png"
+    },
+    "7": {
+      "PortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_3594.png",
+        "res://sprites/sharedassets1_3274.png",
+        "res://sprites/sharedassets1_3684.png",
+        "res://sprites/sharedassets1_4279.png"
+      ],
+      "BreakoutPortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_3828.png",
+        "res://sprites/sharedassets1_4138.png",
+        "res://sprites/sharedassets1_4005.png",
+        "res://sprites/sharedassets1_4059.png"
+      ],
+      "fallback": "res://sprites/sharedassets1_3544.png"
+    },
+    "8": {
+      "PortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_4357.png",
+        "res://sprites/sharedassets1_3467.png",
+        "res://sprites/sharedassets1_3466.png",
+        "res://sprites/sharedassets1_3691.png"
+      ],
+      "BreakoutPortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_3938.png",
+        "res://sprites/sharedassets1_3869.png",
+        "res://sprites/sharedassets1_3953.png",
+        "res://sprites/sharedassets1_4077.png"
+      ],
+      "fallback": "res://sprites/sharedassets1_3488.png"
+    },
+    "9": {
+      "PortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_4343.png",
+        "res://sprites/sharedassets1_4417.png",
+        "res://sprites/sharedassets1_4397.png",
+        "res://sprites/sharedassets1_3331.png"
+      ],
+      "BreakoutPortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_3714.png",
+        "res://sprites/sharedassets1_4080.png",
+        "res://sprites/sharedassets1_3866.png",
+        "res://sprites/sharedassets1_4174.png"
+      ],
+      "fallback": "res://sprites/sharedassets1_3551.png"
+    },
+    "10": {
+      "PortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_4614.png",
+        "res://sprites/sharedassets1_4399.png",
+        "res://sprites/sharedassets1_4400.png",
+        "res://sprites/sharedassets1_4491.png"
+      ],
+      "BreakoutPortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_4144.png",
+        "res://sprites/sharedassets1_4052.png",
+        "res://sprites/sharedassets1_3863.png",
+        "res://sprites/sharedassets1_3762.png"
+      ],
+      "fallback": "res://sprites/sharedassets1_4380.png"
+    },
+    "11": {
+      "PortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_3675.png",
+        "res://sprites/sharedassets1_4578.png",
+        "res://sprites/sharedassets1_3642.png",
+        "res://sprites/sharedassets1_4579.png"
+      ],
+      "BreakoutPortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_3928.png",
+        "res://sprites/sharedassets1_4040.png",
+        "res://sprites/sharedassets1_4033.png",
+        "res://sprites/sharedassets1_3899.png"
+      ],
+      "fallback": "res://sprites/sharedassets1_3278.png"
+    },
+    "12": {
+      "PortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_3509.png",
+        "res://sprites/sharedassets1_4519.png",
+        "res://sprites/sharedassets1_4520.png",
+        "res://sprites/sharedassets1_4370.png"
+      ],
+      "BreakoutPortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_3981.png",
+        "res://sprites/sharedassets1_3858.png",
+        "res://sprites/sharedassets1_3921.png",
+        "res://sprites/sharedassets1_3963.png"
+      ],
+      "fallback": "res://sprites/sharedassets1_3387.png"
+    },
+    "13": {
+      "PortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_4510.png",
+        "res://sprites/sharedassets1_3406.png",
+        "res://sprites/sharedassets1_3405.png",
+        "res://sprites/sharedassets1_4225.png"
+      ],
+      "BreakoutPortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_4166.png",
+        "res://sprites/sharedassets1_3887.png",
+        "res://sprites/sharedassets1_4009.png",
+        "res://sprites/sharedassets1_3810.png"
+      ],
+      "fallback": "res://sprites/sharedassets1_3428.png"
+    },
+    "14": {
+      "PortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_4255.png",
+        "res://sprites/sharedassets1_3400.png",
+        "res://sprites/sharedassets1_4272.png",
+        "res://sprites/sharedassets1_4444.png"
+      ],
+      "BreakoutPortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_4070.png",
+        "res://sprites/sharedassets1_4045.png",
+        "res://sprites/sharedassets1_3870.png",
+        "res://sprites/sharedassets1_4023.png"
+      ],
+      "fallback": "res://sprites/sharedassets1_4348.png"
+    },
+    "15": {
+      "PortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_3541.png",
+        "res://sprites/sharedassets1_4337.png",
+        "res://sprites/sharedassets1_3553.png",
+        "res://sprites/sharedassets1_3552.png"
+      ],
+      "BreakoutPortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_3809.png",
+        "res://sprites/sharedassets1_3820.png",
+        "res://sprites/sharedassets1_4112.png",
+        "res://sprites/sharedassets1_4198.png"
+      ],
+      "fallback": "res://sprites/sharedassets1_3559.png"
+    },
+    "16": {
+      "PortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_3450.png",
+        "res://sprites/sharedassets1_4321.png",
+        "res://sprites/sharedassets1_4297.png",
+        "res://sprites/sharedassets1_3502.png"
+      ],
+      "BreakoutPortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_3766.png",
+        "res://sprites/sharedassets1_3777.png",
+        "res://sprites/sharedassets1_4173.png",
+        "res://sprites/sharedassets1_3818.png"
+      ],
+      "fallback": "res://sprites/sharedassets1_4241.png"
+    },
+    "17": {
+      "PortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_3415.png",
+        "res://sprites/sharedassets1_4573.png",
+        "res://sprites/sharedassets1_4574.png",
+        "res://sprites/sharedassets1_3446.png"
+      ],
+      "BreakoutPortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_3886.png",
+        "res://sprites/sharedassets1_3896.png",
+        "res://sprites/sharedassets1_4180.png",
+        "res://sprites/sharedassets1_3978.png"
+      ],
+      "fallback": "res://sprites/sharedassets1_4305.png"
+    },
+    "18": {
+      "PortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_3664.png",
+        "res://sprites/sharedassets1_4505.png",
+        "res://sprites/sharedassets1_4425.png",
+        "res://sprites/sharedassets1_4353.png"
+      ],
+      "BreakoutPortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_3734.png",
+        "res://sprites/sharedassets1_4065.png",
+        "res://sprites/sharedassets1_3974.png",
+        "res://sprites/sharedassets1_3760.png"
+      ],
+      "fallback": "res://sprites/sharedassets1_4471.png"
+    },
+    "20": {
+      "PortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_3518.png",
+        "res://sprites/sharedassets1_4221.png",
+        "res://sprites/sharedassets1_3657.png",
+        "res://sprites/sharedassets1_3527.png"
+      ],
+      "BreakoutPortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_3817.png",
+        "res://sprites/sharedassets1_3929.png",
+        "res://sprites/sharedassets1_3801.png",
+        "res://sprites/sharedassets1_3930.png"
+      ],
+      "fallback": "res://sprites/sharedassets1_3641.png"
+    },
+    "21": {
+      "PortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_4420.png",
+        "res://sprites/sharedassets1_4361.png",
+        "res://sprites/sharedassets1_4608.png",
+        "res://sprites/sharedassets1_4609.png"
+      ],
+      "BreakoutPortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_3743.png",
+        "res://sprites/sharedassets1_3904.png",
+        "res://sprites/sharedassets1_3853.png",
+        "res://sprites/sharedassets1_4086.png"
+      ],
+      "fallback": "res://sprites/sharedassets1_4562.png"
+    },
+    "22": {
+      "PortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_3603.png",
+        "res://sprites/sharedassets1_4483.png",
+        "res://sprites/sharedassets1_3485.png",
+        "res://sprites/sharedassets1_4611.png"
+      ],
+      "BreakoutPortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_3722.png",
+        "res://sprites/sharedassets1_3854.png",
+        "res://sprites/sharedassets1_3764.png",
+        "res://sprites/sharedassets1_3851.png"
+      ],
+      "fallback": "res://sprites/sharedassets1_3396.png"
+    },
+    "23": {
+      "PortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_3336.png",
+        "res://sprites/sharedassets1_3599.png",
+        "res://sprites/sharedassets1_3590.png",
+        "res://sprites/sharedassets1_4475.png"
+      ],
+      "BreakoutPortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_4008.png",
+        "res://sprites/sharedassets1_4193.png",
+        "res://sprites/sharedassets1_4156.png",
+        "res://sprites/sharedassets1_4038.png"
+      ],
+      "fallback": "res://sprites/sharedassets1_3271.png"
+    },
+    "24": {
+      "PortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_4546.png",
+        "res://sprites/sharedassets1_4486.png",
+        "res://sprites/sharedassets1_4487.png",
+        "res://sprites/sharedassets1_3427.png"
+      ],
+      "BreakoutPortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_3951.png",
+        "res://sprites/sharedassets1_3838.png",
+        "res://sprites/sharedassets1_4184.png",
+        "res://sprites/sharedassets1_3943.png"
+      ],
+      "fallback": "res://sprites/sharedassets1_4410.png"
+    },
+    "26": {
+      "PortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_3401.png",
+        "res://sprites/sharedassets1_4558.png",
+        "res://sprites/sharedassets1_4545.png",
+        "res://sprites/sharedassets1_3330.png"
+      ],
+      "BreakoutPortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_3753.png",
+        "res://sprites/sharedassets1_4164.png",
+        "res://sprites/sharedassets1_3839.png",
+        "res://sprites/sharedassets1_4049.png"
+      ],
+      "fallback": "res://sprites/sharedassets1_4344.png"
+    },
+    "27": {
+      "PortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_3651.png",
+        "res://sprites/sharedassets1_3631.png",
+        "res://sprites/sharedassets1_3593.png",
+        "res://sprites/sharedassets1_4586.png"
+      ],
+      "BreakoutPortraitSpritesPerRank": [
+        "res://sprites/sharedassets1_3842.png",
+        "res://sprites/sharedassets1_3934.png",
+        "res://sprites/sharedassets1_3973.png",
+        "res://sprites/sharedassets1_4169.png"
+      ],
+      "fallback": "res://sprites/sharedassets1_4352.png"
+    }
+  },
+  "keyword_colors": {
+    "magic": "#8376e0ff",
+    "poison": "#85c356ff",
+    "attack": "#db9a52ff",
+    "crit": "#cc6550ff",
+    "maxhp": "#b0e288ff",
+    "defense": "#a5a39aff",
+    "attackspeed": "#eae592ff",
+    "burn": "#ba6145ff",
+    "frost": "#9cc6e3ff",
+    "stall": "#babeecff",
+    "rush": "#f9f39aff",
+    "warrior": "#cea950ff",
+    "vanguard": "#cea950ff",
+    "assassin": "#cea950ff",
+    "tank": "#cea950ff",
+    "mage": "#cea950ff",
+    "mystic": "#cea950ff",
+    "duelist": "#cea950ff",
+    "manaregen": "#6e83dbff",
+    "shard": "#cea950ff",
+    "omnivamp": "#a9528dff",
+    "rank": "#cea950ff",
+    "stealth": "#726d89ff",
+    "shield": "#88d392ff",
+    "debuff": "#b27befff",
+    "baseattackdamage": "#db9a52ff",
+    "stun": "#b27befff",
+    "taunt": "#b27befff",
+    "startingmana": "#6e83dbff",
+    "hp/s": "#b0e288ff",
+    "mana": "#6e83dbff",
+    "health": "#85c454ff",
+    "bold": "#fffde1ff",
+    "statcalc_damage": "#ff5f5fff",
+    "damage": "#ff6060ff",
+    "statcalc_stun": "#b27aeeff",
+    "statcalc_heal": "#85c454ff",
+    "heal": "#85c454ff",
+    "statcalc_shield": "#88d392ff",
+    "statcalc_rank": "#cea950ff",
+    "statcalc_poison": "#85c356ff",
+    "statcalc_burn": "#ba6145ff",
+    "statcalc_frost": "#9cc6e3ff",
+    "statcalc_omnivamp": "#a9528dff",
+    "statcalc_damageamp": "#cc5f6aff",
+    "statcalc_defense": "#a5a39aff",
+    "attackrange": "#eae592ff",
+    "statcalc_shard": "#cea950ff",
+    "statcalc_maxhp": "#85c454ff",
+    "statcalc_attackspeed": "#eae592ff",
+    "statcalc_crit": "#cc6550ff",
+    "statcalc_attack": "#db9a52ff",
+    "datatracking": "#cea950ff",
+    "statcalc_magic": "#8376e0ff",
+    "datatracking_crit": "#cc6550ff",
+    "datatracking_omnivamp": "#a9528dff",
+    "reroll": "#eac3ddff",
+    "quest": "#fffde1ff",
+    "reward": "#fffde1ff",
+    "class": "#fffde1ff",
+    "baseattackspeed": "#eae592ff",
+    "statcalc_hps": "#85c454ff",
+    "basicstat": "#fffde1ff",
+    "reserve": "#fffde1ff",
+    "statcalc_manaregen": "#6e83dbff",
+    "generate": "#cea950ff",
+    "backup": "#247daeff",
+    "rhd": "#fffde1ff",
+    "trh": "#fffde1ff",
+    "wad": "#fffde1ff",
+    "movespeed": "#fffde1ff",
+    "shardstabilizer": "#fffde1ff",
+    "gtp": "#fffde1ff",
+    "lasting": "#88d392ff",
+    "backuponly": "#247daeff",
+    "storm": "#fffde1ff",
+    "primarystat": "#f5f0f0ff"
+  },
+  "hero_open_pose": [
+    {
+      "path": "Root/Mask/BodyPanel",
+      "property": "m_AnchoredPosition.y",
+      "value": -4.0
+    },
+    {
+      "path": "Root/Mask/BodyPanel/StatsHolderPanel",
+      "property": "m_Alpha",
+      "value": 1.0
+    },
+    {
+      "path": "Root/Mask/BodyPanel/EquipmentHolderPanel",
+      "property": "m_Alpha",
+      "value": 1.0
+    },
+    {
+      "path": "Root/Mask/BodyPanel/BarPanel",
+      "property": "m_Alpha",
+      "value": 1.0
+    },
+    {
+      "path": "Root/Mask/BodyPanel/BarPanel/RankPanel",
+      "property": "m_AnchoredPosition.x",
+      "value": -84.0
+    },
+    {
+      "path": "Root/Mask/BodyPanel/EquipmentHolderPanel",
+      "property": "m_AnchoredPosition.y",
+      "value": 38.0
+    }
+  ],
+  "spacing": 72.0,
+  "hero_gap": 64.0,
+  "movement": {
+    "duration": 0.5,
+    "ease": 4,
+    "customEase": {
+      "m_Curve": [],
+      "m_PreInfinity": 2,
+      "m_PostInfinity": 2,
+      "m_RotationOrder": 4
+    },
+    "cycles": 1,
+    "cycleMode": 0,
+    "startDelay": 0.0,
+    "endDelay": 0.0,
+    "useUnscaledTime": 0,
+    "_useFixedUpdate": 0,
+    "_updateType": 0
+  }
+}

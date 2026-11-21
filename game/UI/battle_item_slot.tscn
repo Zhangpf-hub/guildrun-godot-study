@@ -1,0 +1,725 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://UI/sliced_image.gd" id="SlicedImage"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets3_486.png" id="1"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets3_584.png" id="2"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets2_178.png" id="3"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets1_3677.png" id="4"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets2_187.png" id="5"]
+
+[node name="battle_item_slotUI" type="Control"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="ItemPlaceholderSlotReserveColumn" type="Control" parent="."]
+mouse_filter = 2
+metadata/unity_id = 9506
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -24
+offset_right = 24
+offset_top = -24
+offset_bottom = 24
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+modulate = Color(1, 1, 1, 1.0)
+
+[node name="UnityImage" type="TextureRect" parent="ItemPlaceholderSlotReserveColumn"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("1")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 0)
+
+[node name="TooltipAnchor" type="Control" parent="ItemPlaceholderSlotReserveColumn"]
+mouse_filter = 2
+metadata/unity_id = 12190
+anchor_left = 1
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 8
+offset_right = 8
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="VFX_UI_Niklas_Consume_01" type="Control" parent="ItemPlaceholderSlotReserveColumn"]
+mouse_filter = 2
+metadata/unity_id = 14903
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="VFX_Item_Appear" type="Control" parent="ItemPlaceholderSlotReserveColumn"]
+mouse_filter = 2
+metadata/unity_id = 15554
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="VFX_UI_Item_Activation_Back" type="Control" parent="ItemPlaceholderSlotReserveColumn"]
+mouse_filter = 2
+metadata/unity_id = 14550
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="VFX_UI_Item_Activated" type="Control" parent="ItemPlaceholderSlotReserveColumn"]
+mouse_filter = 2
+metadata/unity_id = 15357
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="VFX_UI_Fiona_Passive_B" type="Control" parent="ItemPlaceholderSlotReserveColumn"]
+mouse_filter = 2
+metadata/unity_id = 1088
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="Ray" type="Control" parent="ItemPlaceholderSlotReserveColumn/VFX_UI_Fiona_Passive_B"]
+mouse_filter = 2
+metadata/unity_id = 12208
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -2
+offset_right = 2
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="VFX_UI_Fiona_Passive_A" type="Control" parent="ItemPlaceholderSlotReserveColumn"]
+mouse_filter = 2
+metadata/unity_id = 16968
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="Ray" type="Control" parent="ItemPlaceholderSlotReserveColumn/VFX_UI_Fiona_Passive_A"]
+mouse_filter = 2
+metadata/unity_id = 8764
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -2
+offset_right = 2
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="Fire" type="Control" parent="ItemPlaceholderSlotReserveColumn/VFX_UI_Fiona_Passive_A"]
+mouse_filter = 2
+metadata/unity_id = 9708
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="VFX_UI_Fiona_Passive_S" type="Control" parent="ItemPlaceholderSlotReserveColumn"]
+mouse_filter = 2
+metadata/unity_id = 11116
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="Ray" type="Control" parent="ItemPlaceholderSlotReserveColumn/VFX_UI_Fiona_Passive_S"]
+mouse_filter = 2
+metadata/unity_id = 15281
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -2
+offset_right = 2
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="Fire" type="Control" parent="ItemPlaceholderSlotReserveColumn/VFX_UI_Fiona_Passive_S"]
+mouse_filter = 2
+metadata/unity_id = 11928
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="StarCloud_01" type="Control" parent="ItemPlaceholderSlotReserveColumn/VFX_UI_Fiona_Passive_S"]
+mouse_filter = 2
+metadata/unity_id = 9786
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="EmptySlotBackground" type="Control" parent="ItemPlaceholderSlotReserveColumn"]
+mouse_filter = 2
+metadata/unity_id = 3133
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -4
+offset_right = 4
+offset_top = -4
+offset_bottom = 4
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 1)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityImage" type="TextureRect" parent="ItemPlaceholderSlotReserveColumn/EmptySlotBackground"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="RankFrame" type="Control" parent="ItemPlaceholderSlotReserveColumn"]
+mouse_filter = 2
+metadata/unity_id = 12328
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -4
+offset_right = 4
+offset_top = -8
+offset_bottom = 8
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityImage" type="TextureRect" parent="ItemPlaceholderSlotReserveColumn/RankFrame"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("3")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="VFX_UI_Item_Activated_2717" type="Control" parent="ItemPlaceholderSlotReserveColumn"]
+mouse_filter = 2
+metadata/unity_id = 2717
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="VFX_UI_ItemRelic_Activation" type="Control" parent="ItemPlaceholderSlotReserveColumn"]
+mouse_filter = 2
+metadata/unity_id = 5081
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="ActiveSlot" type="Control" parent="ItemPlaceholderSlotReserveColumn"]
+mouse_filter = 2
+metadata/unity_id = 15971
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityImage" type="TextureRect" parent="ItemPlaceholderSlotReserveColumn/ActiveSlot"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("4")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="NameText" type="Control" parent="ItemPlaceholderSlotReserveColumn/ActiveSlot"]
+mouse_filter = 2
+metadata/unity_id = 6172
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 3
+offset_right = -3
+offset_top = 3
+offset_bottom = -3
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityText" type="Label" parent="ItemPlaceholderSlotReserveColumn/ActiveSlot/NameText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Very Long Item Name"
+theme_override_font_sizes/font_size = 8
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RankFrame_1" type="Control" parent="ItemPlaceholderSlotReserveColumn"]
+mouse_filter = 2
+metadata/unity_id = 4386
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -4
+offset_right = 4
+offset_top = -8
+offset_bottom = 8
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityImage" type="TextureRect" parent="ItemPlaceholderSlotReserveColumn/RankFrame_1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("3")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="VFX_UI_Item_Activation_Front" type="Control" parent="ItemPlaceholderSlotReserveColumn"]
+mouse_filter = 2
+metadata/unity_id = 16568
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="HoveringSlot" type="Control" parent="ItemPlaceholderSlotReserveColumn"]
+mouse_filter = 2
+metadata/unity_id = 16770
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityImage" type="ColorRect" parent="ItemPlaceholderSlotReserveColumn/HoveringSlot"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(1, 1, 1, 1)
+
+[node name="NameText" type="Control" parent="ItemPlaceholderSlotReserveColumn/HoveringSlot"]
+mouse_filter = 2
+metadata/unity_id = 2600
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 10
+offset_right = -10
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityText" type="Label" parent="ItemPlaceholderSlotReserveColumn/HoveringSlot/NameText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Hero Name"
+theme_override_font_sizes/font_size = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VFX_UI_Niklas_Consume_02" type="Control" parent="ItemPlaceholderSlotReserveColumn"]
+mouse_filter = 2
+metadata/unity_id = 13896
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="VFX_UI_Ratna_Passive_Lp" type="Control" parent="ItemPlaceholderSlotReserveColumn"]
+mouse_filter = 2
+metadata/unity_id = 2840
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="VFX_UI_Ratna_Passive_Burst" type="Control" parent="ItemPlaceholderSlotReserveColumn"]
+mouse_filter = 2
+metadata/unity_id = 13126
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="VFX_UI_Fiona_Passive_S_02" type="Control" parent="ItemPlaceholderSlotReserveColumn"]
+mouse_filter = 2
+metadata/unity_id = 17393
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="Rainbow" type="Control" parent="ItemPlaceholderSlotReserveColumn/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 3277
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="Glitter" type="Control" parent="ItemPlaceholderSlotReserveColumn/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 5730
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="Wave_Explode_1" type="Control" parent="ItemPlaceholderSlotReserveColumn/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 12519
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="Dust_Explode" type="Control" parent="ItemPlaceholderSlotReserveColumn/VFX_UI_Fiona_Passive_S_02"]
+mouse_filter = 2
+metadata/unity_id = 5536
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="VFX_UI_Fiona_Passive" type="Control" parent="ItemPlaceholderSlotReserveColumn"]
+mouse_filter = 2
+metadata/unity_id = 5577
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="VFX_UI_SmallFlash" type="Control" parent="ItemPlaceholderSlotReserveColumn"]
+mouse_filter = 2
+metadata/unity_id = 6402
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -50
+offset_right = 50
+offset_top = -55
+offset_bottom = 45
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="CounterPanel" type="Control" parent="ItemPlaceholderSlotReserveColumn"]
+mouse_filter = 2
+metadata/unity_id = 4101
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -15.2049999
+offset_right = 15.2049999
+offset_top = -22
+offset_bottom = 2
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+metadata/layout_spacing = 0.0
+metadata/layout_padding = Vector4(0, 0, 0, 0)
+metadata/child_alignment = 0
+
+[node name="UnityImage" type="Control" parent="ItemPlaceholderSlotReserveColumn/CounterPanel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("5")
+border = Vector4(12, 12, 12, 12)
+pixels_per_unit = 4
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Number" type="Control" parent="ItemPlaceholderSlotReserveColumn/CounterPanel"]
+mouse_filter = 2
+metadata/unity_id = 9571
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 30.4099998
+offset_top = 0
+offset_bottom = 24
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/layout_spacing = 0.0
+metadata/layout_padding = Vector4(0, 0, 0, 0)
+metadata/child_alignment = 0
+
+[node name="UnityText" type="Label" parent="ItemPlaceholderSlotReserveColumn/CounterPanel/Number"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "123"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.356862754, 0.800000012, 0.596078455, 1)
+horizontal_alignment = 1
+vertical_alignment = 1

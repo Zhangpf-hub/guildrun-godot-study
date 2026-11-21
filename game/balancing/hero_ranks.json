@@ -1,0 +1,1273 @@
+{
+  "choices": {
+    "1": [
+      {
+        "id": 101,
+        "name": "HeroSpecializations.HeroSpecialization_101.Name",
+        "class": -1,
+        "passive": -1,
+        "active": 1,
+        "description": "ActiveAbilities.ActiveAbility_1.Description",
+        "variables": {
+          "0": "10",
+          "1": "20",
+          "2": "10",
+          "3": "10"
+        },
+        "icon": "res://sprites/sharedassets1_3379.png"
+      },
+      {
+        "id": 102,
+        "name": "HeroSpecializations.HeroSpecialization_102.Name",
+        "class": -1,
+        "passive": 10102,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_10102.Description",
+        "variables": {
+          "0": "0",
+          "1": "1",
+          "2": "0",
+          "3": "1",
+          "4": "10"
+        },
+        "icon": "res://sprites/sharedassets1_3285.png"
+      },
+      {
+        "id": 103,
+        "name": "HeroSpecializations.HeroSpecialization_103.Name",
+        "class": -1,
+        "passive": 10103,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_10103.Description",
+        "variables": {},
+        "icon": "res://sprites/sharedassets1_4409.png"
+      }
+    ],
+    "2": [
+      {
+        "id": 201,
+        "name": "HeroSpecializations.HeroSpecialization_201.Name",
+        "class": 6,
+        "passive": 10201,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_10201.Description",
+        "variables": {
+          "0": "3",
+          "1": "4"
+        },
+        "icon": "res://sprites/sharedassets1_4596.png"
+      },
+      {
+        "id": 202,
+        "name": "HeroSpecializations.HeroSpecialization_202.Name",
+        "class": -1,
+        "passive": 10202,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_10202.Description",
+        "variables": {
+          "0": "50",
+          "1": "50",
+          "2": "1",
+          "3": "1",
+          "4": "1"
+        },
+        "icon": "res://sprites/sharedassets1_3296.png"
+      },
+      {
+        "id": 203,
+        "name": "HeroSpecializations.HeroSpecialization_203.Name",
+        "class": 1,
+        "passive": 10203,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_10203.Description",
+        "variables": {
+          "0": "10",
+          "1": "10",
+          "2": "3",
+          "3": "3"
+        },
+        "icon": "res://sprites/sharedassets1_4554.png"
+      }
+    ],
+    "3": [
+      {
+        "id": 301,
+        "name": "HeroSpecializations.HeroSpecialization_301.Name",
+        "class": -1,
+        "passive": 10301,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_10301.Description",
+        "variables": {
+          "0": "3",
+          "1": "8",
+          "2": "1",
+          "3": "1"
+        },
+        "icon": "res://sprites/sharedassets1_4457.png"
+      },
+      {
+        "id": 302,
+        "name": "HeroSpecializations.HeroSpecialization_302.Name",
+        "class": 3,
+        "passive": 10302,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_10302.Description",
+        "variables": {
+          "0": "33",
+          "1": "1",
+          "2": "10",
+          "3": "0",
+          "4": "50"
+        },
+        "icon": "res://sprites/sharedassets1_3425.png"
+      },
+      {
+        "id": 303,
+        "name": "HeroSpecializations.HeroSpecialization_303.Name",
+        "class": 5,
+        "passive": 10303,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_10303.Description",
+        "variables": {
+          "0": "3",
+          "1": "50",
+          "2": "225",
+          "3": "3",
+          "4": "1/5"
+        },
+        "icon": "res://sprites/sharedassets1_3470.png"
+      }
+    ],
+    "4": [
+      {
+        "id": 401,
+        "name": "HeroSpecializations.HeroSpecialization_401.Name",
+        "class": -1,
+        "passive": 10401,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_10401.Description",
+        "variables": {
+          "0": "4",
+          "1": "75",
+          "2": "40",
+          "3": "5",
+          "4": "5"
+        },
+        "icon": "res://sprites/sharedassets1_3533.png"
+      },
+      {
+        "id": 402,
+        "name": "HeroSpecializations.HeroSpecialization_402.Name",
+        "class": -1,
+        "passive": 10402,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_10402.Description",
+        "variables": {
+          "0": "1d5",
+          "1": "1"
+        },
+        "icon": "res://sprites/sharedassets1_3623.png"
+      },
+      {
+        "id": 403,
+        "name": "HeroSpecializations.HeroSpecialization_403.Name",
+        "class": -1,
+        "passive": 10403,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_10403.Description",
+        "variables": {
+          "0": "150",
+          "1": "4",
+          "2": "4"
+        },
+        "icon": "res://sprites/sharedassets1_4319.png"
+      }
+    ],
+    "5": [
+      {
+        "id": 501,
+        "name": "HeroSpecializations.HeroSpecialization_501.Name",
+        "class": -1,
+        "passive": -1,
+        "active": 5,
+        "description": "ActiveAbilities.ActiveAbility_5.Description",
+        "variables": {
+          "0": "275",
+          "1": "250",
+          "2": "2",
+          "3": "4"
+        },
+        "icon": "res://sprites/sharedassets1_3316.png"
+      },
+      {
+        "id": 502,
+        "name": "HeroSpecializations.HeroSpecialization_502.Name",
+        "class": -1,
+        "passive": 10502,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_10502.Description",
+        "variables": {
+          "0": "1",
+          "1": "1/60",
+          "2": "1/50",
+          "3": "0",
+          "4": "1"
+        },
+        "icon": "res://sprites/sharedassets1_4362.png"
+      },
+      {
+        "id": 503,
+        "name": "HeroSpecializations.HeroSpecialization_503.Name",
+        "class": -1,
+        "passive": 10503,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_10503.Description",
+        "variables": {
+          "0": "10",
+          "1": "5",
+          "2": "100",
+          "3": "50",
+          "4": "20",
+          "5": "5",
+          "6": "100",
+          "7": "50"
+        },
+        "icon": "res://sprites/sharedassets1_3501.png"
+      }
+    ],
+    "6": [
+      {
+        "id": 601,
+        "name": "HeroSpecializations.HeroSpecialization_601.Name",
+        "class": -1,
+        "passive": 10601,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_10601.Description",
+        "variables": {
+          "0": "3",
+          "1": "20",
+          "2": "40",
+          "3": "60",
+          "4": "50",
+          "5": "1"
+        },
+        "icon": "res://sprites/sharedassets1_3647.png"
+      },
+      {
+        "id": 602,
+        "name": "HeroSpecializations.HeroSpecialization_602.Name",
+        "class": -1,
+        "passive": 10602,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_10602.Description",
+        "variables": {
+          "0": "20",
+          "1": "10",
+          "2": "50"
+        },
+        "icon": "res://sprites/sharedassets1_3418.png"
+      },
+      {
+        "id": 603,
+        "name": "HeroSpecializations.HeroSpecialization_603.Name",
+        "class": 6,
+        "passive": 10603,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_10603.Description",
+        "variables": {
+          "0": "10",
+          "1": "33",
+          "2": "300"
+        },
+        "icon": "res://sprites/sharedassets1_4278.png"
+      }
+    ],
+    "7": [
+      {
+        "id": 701,
+        "name": "HeroSpecializations.HeroSpecialization_701.Name",
+        "class": 4,
+        "passive": 10701,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_10701.Description",
+        "variables": {
+          "0": "20",
+          "1": "5"
+        },
+        "icon": "res://sprites/sharedassets1_3673.png"
+      },
+      {
+        "id": 702,
+        "name": "HeroSpecializations.HeroSpecialization_702.Name",
+        "class": -1,
+        "passive": -1,
+        "active": 7,
+        "description": "ActiveAbilities.ActiveAbility_7.Description",
+        "variables": {
+          "0": "5",
+          "1": "100",
+          "2": "50",
+          "3": "33",
+          "4": "33"
+        },
+        "icon": "res://sprites/sharedassets1_3615.png"
+      },
+      {
+        "id": 703,
+        "name": "HeroSpecializations.HeroSpecialization_703.Name",
+        "class": -1,
+        "passive": 10703,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_10703.Description",
+        "variables": {
+          "0": "1",
+          "1": "1/50",
+          "2": "20",
+          "3": "1",
+          "4": "1/75",
+          "5": "30",
+          "6": "1",
+          "7": "1/100",
+          "8": "10"
+        },
+        "icon": "res://sprites/sharedassets1_3678.png"
+      }
+    ],
+    "8": [
+      {
+        "id": 801,
+        "name": "HeroSpecializations.HeroSpecialization_801.Name",
+        "class": -1,
+        "passive": 10801,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_10801.Description",
+        "variables": {
+          "0": "15",
+          "1": "1"
+        },
+        "icon": "res://sprites/sharedassets1_3608.png"
+      },
+      {
+        "id": 802,
+        "name": "HeroSpecializations.HeroSpecialization_802.Name",
+        "class": -1,
+        "passive": 10802,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_10802.Description",
+        "variables": {
+          "0": "10",
+          "1": "100",
+          "2": "30",
+          "3": "33",
+          "4": "33"
+        },
+        "icon": "res://sprites/sharedassets1_4551.png"
+      },
+      {
+        "id": 803,
+        "name": "HeroSpecializations.HeroSpecialization_803.Name",
+        "class": 7,
+        "passive": 10803,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_10803.Description",
+        "variables": {
+          "0": "20",
+          "1": "0",
+          "2": "1/33",
+          "3": "0",
+          "4": "1/25"
+        },
+        "icon": "res://sprites/sharedassets1_3362.png"
+      }
+    ],
+    "9": [
+      {
+        "id": 901,
+        "name": "HeroSpecializations.HeroSpecialization_901.Name",
+        "class": -1,
+        "passive": -1,
+        "active": 9,
+        "description": "ActiveAbilities.ActiveAbility_9.Description",
+        "variables": {
+          "0": "225",
+          "1": "25",
+          "2": "200",
+          "3": "150",
+          "4": "3",
+          "5": "4"
+        },
+        "icon": "res://sprites/sharedassets1_4332.png"
+      },
+      {
+        "id": 902,
+        "name": "HeroSpecializations.HeroSpecialization_902.Name",
+        "class": -1,
+        "passive": 10902,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_10902.Description",
+        "variables": {
+          "0": "15",
+          "1": "0",
+          "2": "33"
+        },
+        "icon": "res://sprites/sharedassets1_3313.png"
+      },
+      {
+        "id": 903,
+        "name": "HeroSpecializations.HeroSpecialization_903.Name",
+        "class": 2,
+        "passive": 10903,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_10903.Description",
+        "variables": {
+          "0": "1",
+          "1": "20"
+        },
+        "icon": "res://sprites/sharedassets1_3515.png"
+      }
+    ],
+    "10": [
+      {
+        "id": 1001,
+        "name": "HeroSpecializations.HeroSpecialization_1001.Name",
+        "class": -1,
+        "passive": 101001,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_101001.Description",
+        "variables": {
+          "0": "5",
+          "1": "2",
+          "2": "2"
+        },
+        "icon": "res://sprites/sharedassets1_3536.png"
+      },
+      {
+        "id": 1002,
+        "name": "HeroSpecializations.HeroSpecialization_1002.Name",
+        "class": 3,
+        "passive": 101002,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_101002.Description",
+        "variables": {
+          "0": "0",
+          "1": "33",
+          "2": "1",
+          "3": "1"
+        },
+        "icon": "res://sprites/sharedassets1_4604.png"
+      },
+      {
+        "id": 1003,
+        "name": "HeroSpecializations.HeroSpecialization_1003.Name",
+        "class": -1,
+        "passive": 101003,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_101003.Description",
+        "variables": {
+          "0": "5",
+          "1": "75",
+          "2": "4/1"
+        },
+        "icon": "res://sprites/sharedassets1_4589.png"
+      }
+    ],
+    "11": [
+      {
+        "id": 1101,
+        "name": "HeroSpecializations.HeroSpecialization_1101.Name",
+        "class": -1,
+        "passive": -1,
+        "active": 11,
+        "description": "ActiveAbilities.ActiveAbility_11.Description",
+        "variables": {
+          "0": "0",
+          "1": "25",
+          "2": "50",
+          "3": "25",
+          "4": "200",
+          "5": "100",
+          "6": "4"
+        },
+        "icon": "res://sprites/sharedassets1_4626.png"
+      },
+      {
+        "id": 1102,
+        "name": "HeroSpecializations.HeroSpecialization_1102.Name",
+        "class": -1,
+        "passive": 101102,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_101102.Description",
+        "variables": {
+          "0": "0",
+          "1": "3",
+          "2": "75",
+          "3": "25",
+          "4": "0",
+          "5": "1000"
+        },
+        "icon": "res://sprites/sharedassets1_3478.png"
+      },
+      {
+        "id": 1103,
+        "name": "HeroSpecializations.HeroSpecialization_1103.Name",
+        "class": -1,
+        "passive": 101103,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_101103.Description",
+        "variables": {
+          "0": "20",
+          "1": "5"
+        },
+        "icon": "res://sprites/sharedassets1_4232.png"
+      }
+    ],
+    "12": [
+      {
+        "id": 1201,
+        "name": "HeroSpecializations.HeroSpecialization_1201.Name",
+        "class": -1,
+        "passive": -1,
+        "active": 12,
+        "description": "ActiveAbilities.ActiveAbility_12.Description",
+        "variables": {
+          "0": "10",
+          "1": "10",
+          "2": "10",
+          "3": "5",
+          "4": "50",
+          "5": "100",
+          "6": "100"
+        },
+        "icon": "res://sprites/sharedassets1_3542.png"
+      },
+      {
+        "id": 1202,
+        "name": "HeroSpecializations.HeroSpecialization_1202.Name",
+        "class": -1,
+        "passive": 101202,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_101202.Description",
+        "variables": {
+          "0": "0",
+          "1": "10"
+        },
+        "icon": "res://sprites/sharedassets1_3622.png"
+      },
+      {
+        "id": 1203,
+        "name": "HeroSpecializations.HeroSpecialization_1203.Name",
+        "class": -1,
+        "passive": 101203,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_101203.Description",
+        "variables": {
+          "0": "10",
+          "1": "10",
+          "2": "10",
+          "3": "10"
+        },
+        "icon": "res://sprites/sharedassets1_3422.png"
+      }
+    ],
+    "13": [
+      {
+        "id": 1301,
+        "name": "HeroSpecializations.HeroSpecialization_1301.Name",
+        "class": -1,
+        "passive": 101301,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_101301.Description",
+        "variables": {
+          "0": "12",
+          "1": "0",
+          "2": "2",
+          "3": "0",
+          "4": "2"
+        },
+        "icon": "res://sprites/sharedassets1_4229.png"
+      },
+      {
+        "id": 1302,
+        "name": "HeroSpecializations.HeroSpecialization_1302.Name",
+        "class": -1,
+        "passive": 101302,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_101302.Description",
+        "variables": {
+          "0": "75",
+          "1": "50"
+        },
+        "icon": "res://sprites/sharedassets1_4588.png"
+      },
+      {
+        "id": 1303,
+        "name": "HeroSpecializations.HeroSpecialization_1303.Name",
+        "class": -1,
+        "passive": 101303,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_101303.Description",
+        "variables": {
+          "0": "15",
+          "1": "5",
+          "2": "40"
+        },
+        "icon": "res://sprites/sharedassets1_4302.png"
+      }
+    ],
+    "14": [
+      {
+        "id": 1401,
+        "name": "HeroSpecializations.HeroSpecialization_1401.Name",
+        "class": -1,
+        "passive": 101401,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_101401.Description",
+        "variables": {
+          "0": "1",
+          "1": "1",
+          "2": "1"
+        },
+        "icon": "res://sprites/sharedassets1_3393.png"
+      },
+      {
+        "id": 1402,
+        "name": "HeroSpecializations.HeroSpecialization_1402.Name",
+        "class": -1,
+        "passive": 101402,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_101402.Description",
+        "variables": {
+          "0": "2",
+          "1": "25",
+          "2": "1/3",
+          "3": "15"
+        },
+        "icon": "res://sprites/sharedassets1_4518.png"
+      },
+      {
+        "id": 1403,
+        "name": "HeroSpecializations.HeroSpecialization_1403.Name",
+        "class": -1,
+        "passive": 101403,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_101403.Description",
+        "variables": {
+          "0": "7",
+          "1": "7"
+        },
+        "icon": "res://sprites/sharedassets1_3561.png"
+      }
+    ],
+    "15": [
+      {
+        "id": 1501,
+        "name": "HeroSpecializations.HeroSpecialization_1501.Name",
+        "class": -1,
+        "passive": 101502,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_101502.Description",
+        "variables": {},
+        "icon": "res://sprites/sharedassets1_3340.png"
+      },
+      {
+        "id": 1502,
+        "name": "HeroSpecializations.HeroSpecialization_1502.Name",
+        "class": -1,
+        "passive": 101503,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_101503.Description",
+        "variables": {
+          "0": "10",
+          "1": "8",
+          "2": "8",
+          "3": "4",
+          "4": "4",
+          "5": "20",
+          "6": "8",
+          "7": "8",
+          "8": "4",
+          "9": "4"
+        },
+        "icon": "res://sprites/sharedassets1_4493.png"
+      },
+      {
+        "id": 1503,
+        "name": "HeroSpecializations.HeroSpecialization_1503.Name",
+        "class": -1,
+        "passive": -1,
+        "active": 15,
+        "description": "ActiveAbilities.ActiveAbility_15.Description",
+        "variables": {
+          "0": "4",
+          "1": "4",
+          "2": "4",
+          "3": "4",
+          "4": "75",
+          "5": "150",
+          "6": "150",
+          "7": "150"
+        },
+        "icon": "res://sprites/sharedassets1_3666.png"
+      }
+    ],
+    "16": [
+      {
+        "id": 1601,
+        "name": "HeroSpecializations.HeroSpecialization_1601.Name",
+        "class": -1,
+        "passive": 101601,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_101601.Description",
+        "variables": {
+          "0": "4",
+          "1": "2",
+          "2": "5",
+          "3": "30"
+        },
+        "icon": "res://sprites/sharedassets1_3683.png"
+      },
+      {
+        "id": 1602,
+        "name": "HeroSpecializations.HeroSpecialization_1602.Name",
+        "class": 2,
+        "passive": 101602,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_101602.Description",
+        "variables": {
+          "0": "0",
+          "1": "75",
+          "2": "25",
+          "3": "50",
+          "4": "2",
+          "5": "2"
+        },
+        "icon": "res://sprites/sharedassets1_4286.png"
+      },
+      {
+        "id": 1603,
+        "name": "HeroSpecializations.HeroSpecialization_1603.Name",
+        "class": -1,
+        "passive": 101603,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_101603.Description",
+        "variables": {
+          "0": "1",
+          "1": "1",
+          "2": "5"
+        },
+        "icon": "res://sprites/sharedassets1_3693.png"
+      }
+    ],
+    "17": [
+      {
+        "id": 1701,
+        "name": "HeroSpecializations.HeroSpecialization_1701.Name",
+        "class": -1,
+        "passive": 101701,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_101701.Description",
+        "variables": {
+          "0": "45",
+          "1": "3",
+          "2": "6"
+        },
+        "icon": "res://sprites/sharedassets1_4576.png"
+      },
+      {
+        "id": 1702,
+        "name": "HeroSpecializations.HeroSpecialization_1702.Name",
+        "class": 6,
+        "passive": 101702,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_101702.Description",
+        "variables": {
+          "0": "0",
+          "1": "25",
+          "2": "0",
+          "3": "25",
+          "4": "0",
+          "5": "25",
+          "6": "0",
+          "7": "25"
+        },
+        "icon": "res://sprites/sharedassets1_4264.png"
+      },
+      {
+        "id": 1703,
+        "name": "HeroSpecializations.HeroSpecialization_1703.Name",
+        "class": 4,
+        "passive": 101703,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_101703.Description",
+        "variables": {
+          "0": "2",
+          "1": "1",
+          "2": "3",
+          "3": "2",
+          "4": "4"
+        },
+        "icon": "res://sprites/sharedassets1_3479.png"
+      }
+    ],
+    "18": [
+      {
+        "id": 1801,
+        "name": "HeroSpecializations.HeroSpecialization_1801.Name",
+        "class": -1,
+        "passive": 101802,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_101802.Description",
+        "variables": {
+          "0": "33"
+        },
+        "icon": "res://sprites/sharedassets1_3569.png"
+      },
+      {
+        "id": 1802,
+        "name": "HeroSpecializations.HeroSpecialization_1802.Name",
+        "class": -1,
+        "passive": -1,
+        "active": 18,
+        "description": "ActiveAbilities.ActiveAbility_18.Description",
+        "variables": {
+          "0": "0",
+          "1": "10",
+          "2": "250",
+          "3": "5",
+          "4": "5",
+          "5": "2",
+          "6": "2"
+        },
+        "icon": "res://sprites/sharedassets1_4342.png"
+      },
+      {
+        "id": 1803,
+        "name": "HeroSpecializations.HeroSpecialization_1803.Name",
+        "class": 4,
+        "passive": 101803,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_101803.Description",
+        "variables": {
+          "0": "0",
+          "1": "50"
+        },
+        "icon": "res://sprites/sharedassets1_3655.png"
+      }
+    ],
+    "20": [
+      {
+        "id": 2001,
+        "name": "HeroSpecializations.HeroSpecialization_2001.Name",
+        "class": -1,
+        "passive": 102001,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_102001.Description",
+        "variables": {
+          "0": "1",
+          "1": "15",
+          "2": "33",
+          "3": "33",
+          "4": "40"
+        },
+        "icon": "res://sprites/sharedassets1_3674.png"
+      },
+      {
+        "id": 2002,
+        "name": "HeroSpecializations.HeroSpecialization_2002.Name",
+        "class": -1,
+        "passive": 102002,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_102002.Description",
+        "variables": {
+          "0": "2",
+          "1": "3",
+          "2": "4"
+        },
+        "icon": "res://sprites/sharedassets1_3634.png"
+      },
+      {
+        "id": 2003,
+        "name": "HeroSpecializations.HeroSpecialization_2003.Name",
+        "class": 1,
+        "passive": 102003,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_102003.Description",
+        "variables": {
+          "0": "1",
+          "1": "1/100",
+          "2": "1",
+          "3": "10"
+        },
+        "icon": "res://sprites/sharedassets1_4572.png"
+      }
+    ],
+    "21": [
+      {
+        "id": 2101,
+        "name": "HeroSpecializations.HeroSpecialization_2101.Name",
+        "class": -1,
+        "passive": -1,
+        "active": 21,
+        "description": "ActiveAbilities.ActiveAbility_21.Description",
+        "variables": {
+          "0": "100",
+          "1": "25",
+          "2": "100",
+          "3": "7",
+          "4": "3"
+        },
+        "icon": "res://sprites/sharedassets1_3335.png"
+      },
+      {
+        "id": 2102,
+        "name": "HeroSpecializations.HeroSpecialization_2102.Name",
+        "class": -1,
+        "passive": 102102,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_102102.Description",
+        "variables": {
+          "0": "15",
+          "1": "20",
+          "2": "30"
+        },
+        "icon": "res://sprites/sharedassets1_3660.png"
+      },
+      {
+        "id": 2103,
+        "name": "HeroSpecializations.HeroSpecialization_2103.Name",
+        "class": -1,
+        "passive": 102103,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_102103.Description",
+        "variables": {
+          "0": "0",
+          "1": "2",
+          "2": "1"
+        },
+        "icon": "res://sprites/sharedassets1_3504.png"
+      }
+    ],
+    "22": [
+      {
+        "id": 2201,
+        "name": "HeroSpecializations.HeroSpecialization_2201.Name",
+        "class": 5,
+        "passive": 102201,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_102201.Description",
+        "variables": {
+          "0": "2",
+          "1": "1",
+          "2": "10",
+          "3": "75"
+        },
+        "icon": "res://sprites/sharedassets1_4265.png"
+      },
+      {
+        "id": 2202,
+        "name": "HeroSpecializations.HeroSpecialization_2202.Name",
+        "class": 7,
+        "passive": 102202,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_102202.Description",
+        "variables": {
+          "0": "1",
+          "1": "15",
+          "2": "20",
+          "3": "20"
+        },
+        "icon": "res://sprites/sharedassets1_3314.png"
+      },
+      {
+        "id": 2203,
+        "name": "HeroSpecializations.HeroSpecialization_2203.Name",
+        "class": -1,
+        "passive": 102203,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_102203.Description",
+        "variables": {
+          "0": "15",
+          "1": "15"
+        },
+        "icon": "res://sprites/sharedassets1_3629.png"
+      }
+    ],
+    "23": [
+      {
+        "id": 2301,
+        "name": "HeroSpecializations.HeroSpecialization_2301.Name",
+        "class": 5,
+        "passive": 102301,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_102301.Description",
+        "variables": {
+          "0": "0",
+          "1": "1",
+          "2": "0",
+          "3": "1"
+        },
+        "icon": "res://sprites/sharedassets1_3524.png"
+      },
+      {
+        "id": 2302,
+        "name": "HeroSpecializations.HeroSpecialization_2302.Name",
+        "class": -1,
+        "passive": 102302,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_102302.Description",
+        "variables": {
+          "0": "20",
+          "1": "20"
+        },
+        "icon": "res://sprites/sharedassets1_3614.png"
+      },
+      {
+        "id": 2303,
+        "name": "HeroSpecializations.HeroSpecialization_2303.Name",
+        "class": 1,
+        "passive": 102303,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_102303.Description",
+        "variables": {
+          "0": "1",
+          "1": "1",
+          "2": "0",
+          "3": "33",
+          "4": "33"
+        },
+        "icon": "res://sprites/sharedassets1_3308.png"
+      }
+    ],
+    "24": [
+      {
+        "id": 2401,
+        "name": "HeroSpecializations.HeroSpecialization_2401.Name",
+        "class": -1,
+        "passive": 102401,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_102401.Description",
+        "variables": {
+          "0": "2",
+          "1": "1",
+          "2": "2",
+          "3": "1",
+          "4": "1",
+          "5": "1",
+          "6": "1"
+        },
+        "icon": "res://sprites/sharedassets1_4452.png"
+      },
+      {
+        "id": 2402,
+        "name": "HeroSpecializations.HeroSpecialization_2402.Name",
+        "class": 7,
+        "passive": 102402,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_102402.Description",
+        "variables": {
+          "0": "0",
+          "1": "5",
+          "2": "60",
+          "3": "4"
+        },
+        "icon": "res://sprites/sharedassets1_4521.png"
+      },
+      {
+        "id": 2403,
+        "name": "HeroSpecializations.HeroSpecialization_2403.Name",
+        "class": 3,
+        "passive": 102403,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_102403.Description",
+        "variables": {
+          "0": "8",
+          "1": "1",
+          "2": "1"
+        },
+        "icon": "res://sprites/sharedassets1_3494.png"
+      }
+    ],
+    "26": [
+      {
+        "id": 2601,
+        "name": "HeroSpecializations.HeroSpecialization_2601.Name",
+        "class": -1,
+        "passive": 102601,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_102601.Description",
+        "variables": {
+          "0": "60",
+          "1": "25",
+          "2": "9",
+          "3": "6"
+        },
+        "icon": "res://sprites/sharedassets1_4230.png"
+      },
+      {
+        "id": 2602,
+        "name": "HeroSpecializations.HeroSpecialization_2602.Name",
+        "class": 2,
+        "passive": 102602,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_102602.Description",
+        "variables": {
+          "0": "1",
+          "1": "100",
+          "2": "400",
+          "3": "15"
+        },
+        "icon": "res://sprites/sharedassets1_3663.png"
+      },
+      {
+        "id": 2603,
+        "name": "HeroSpecializations.HeroSpecialization_2603.Name",
+        "class": -1,
+        "passive": 102603,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_102603.Description",
+        "variables": {
+          "0": "6",
+          "1": "1",
+          "2": "1",
+          "3": "2",
+          "4": "1",
+          "5": "100",
+          "6": "200"
+        },
+        "icon": "res://sprites/sharedassets1_4345.png"
+      }
+    ],
+    "27": [
+      {
+        "id": 2701,
+        "name": "HeroSpecializations.HeroSpecialization_2701.Name",
+        "class": -1,
+        "passive": 102701,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_102701.Description",
+        "variables": {
+          "0": "10",
+          "1": "20",
+          "2": "40",
+          "3": "200",
+          "4": "200"
+        },
+        "icon": "res://sprites/sharedassets1_3437.png"
+      },
+      {
+        "id": 2702,
+        "name": "HeroSpecializations.HeroSpecialization_2702.Name",
+        "class": -1,
+        "passive": 102702,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_102702.Description",
+        "variables": {
+          "0": "15",
+          "1": "1",
+          "2": "1"
+        },
+        "icon": "res://sprites/sharedassets1_3539.png"
+      },
+      {
+        "id": 2703,
+        "name": "HeroSpecializations.HeroSpecialization_2703.Name",
+        "class": -1,
+        "passive": 102703,
+        "active": -1,
+        "description": "PassiveAbilities.PassiveAbility_102703.Description",
+        "variables": {
+          "0": "4",
+          "1": "4"
+        },
+        "icon": "res://sprites/sharedassets1_3526.png"
+      }
+    ]
+  },
+  "classes": {
+    "1": {
+      "primary": 6,
+      "secondary": [
+        11,
+        1,
+        9
+      ]
+    },
+    "2": {
+      "primary": 4,
+      "secondary": [
+        1,
+        7,
+        12
+      ]
+    },
+    "3": {
+      "primary": 1,
+      "secondary": [
+        4,
+        9,
+        6
+      ]
+    },
+    "4": {
+      "primary": 11,
+      "secondary": [
+        6,
+        7,
+        4
+      ]
+    },
+    "5": {
+      "primary": 9,
+      "secondary": [
+        11,
+        6,
+        1
+      ]
+    },
+    "6": {
+      "primary": 12,
+      "secondary": [
+        7,
+        9,
+        4
+      ]
+    },
+    "7": {
+      "primary": 7,
+      "secondary": [
+        12,
+        11,
+        1
+      ]
+    }
+  },
+  "growth": {
+    "base": {
+      "MaxHealth": 8192,
+      "ManaRegen": 1,
+      "Defense": 8,
+      "Attack": 6,
+      "Magic": 6,
+      "AttackSpeed": 5,
+      "Crit": 4
+    },
+    "primary": {
+      "MaxHealth": 16384,
+      "ManaRegen": 4,
+      "Defense": 30,
+      "Attack": 25,
+      "Magic": 25,
+      "AttackSpeed": 20,
+      "Crit": 15
+    },
+    "secondary": {
+      "MaxHealth": 8192,
+      "ManaRegen": 1,
+      "Defense": 8,
+      "Attack": 6,
+      "Magic": 6,
+      "AttackSpeed": 5,
+      "Crit": 4
+    }
+  }
+}

@@ -1,0 +1,75 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://battle/fight_highlight_particle.gd" id="Particle"]
+[ext_resource type="Shader" path="res://UI/fight_highlight.gdshader" id="Shader"]
+[ext_resource type="Texture2D" path="res://textures/resources_623.png" id="T623"]
+[ext_resource type="Texture2D" path="res://textures/sharedassets1_2081.png" id="Noise"]
+
+[sub_resource type="ShaderMaterial" id="Mat9535"]
+shader = ExtResource("Shader")
+shader_parameter/tex_scale = Vector2(1, 3)
+shader_parameter/tex_offset = Vector2(0, 0)
+shader_parameter/intensity = 2.9960784912109375
+
+[sub_resource type="Curve" id="Vertical9535"]
+_data = [Vector2(0, 0.652673781), 0.918137372, 0.918137372, 0, 0, Vector2(0.473007411, 0.901554108), 0.206653401, 0.206653401, 0, 0]
+point_count = 2
+
+[sub_resource type="Curve" id="Horizontal9535"]
+_data = [Vector2(0, 0.885835707), 0.164429009, 0.164429009, 0, 0, Vector2(0.48234579, 1), 0.206653401, 0.206653401, 0, 0]
+point_count = 2
+
+[sub_resource type="Curve" id="Alpha9535"]
+_data = [Vector2(0, 0), 5.08970177, 5.08970177, 0, 0, Vector2(0.196475166, 1), 5.08970177, -1.24451661, 0, 0, Vector2(1, 0), -1.24451661, -1.24451661, 0, 0]
+point_count = 3
+
+[sub_resource type="ShaderMaterial" id="Mat9536"]
+shader = ExtResource("Shader")
+shader_parameter/tex_scale = Vector2(1, 2)
+shader_parameter/tex_offset = Vector2(0, 0)
+shader_parameter/intensity = 1.4980392456054688
+shader_parameter/use_dissolve = true
+shader_parameter/dissolve_tex = ExtResource("Noise")
+shader_parameter/dissolve_scale = Vector2(2, 1)
+shader_parameter/dissolve_speed = Vector2(-0.25, 0)
+shader_parameter/dissolve_amount = 0.5
+shader_parameter/dissolve_softness = 0.800000011920929
+shader_parameter/dissolve_power = 1.5
+
+[node name="HighlightOrigin" type="Control"]
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+mouse_filter = 2
+
+[node name="Burst9535" type="Polygon2D" parent="."]
+script = ExtResource("Particle")
+texture = ExtResource("T623")
+polygon = PackedVector2Array(145.893099, 54.8049653, 0, 36.536645, 128.47022, 36.536645, 0, 54.8049653, 163.315978, 73.0733073, -128.47022, 36.536645, 0, 73.0733073, -145.893099, 54.8049653, -128.47022, -36.536645, -163.315978, 73.0733073, -145.893099, -54.8049653, 0, -36.536645, -163.315978, -73.0733073, 0, -54.8049653, 128.47022, -36.536645, 0, -73.0733073, 145.893099, -54.8049653, 128.47022, 36.536645, 163.315978, -73.0733073, 145.893099, 54.8049653, 163.315978, 73.0733073)
+uv = PackedVector2Array(0, 128, 32, 256, 0, 256, 32, 128, 0, 0, 64, 256, 32, 0, 64, 128, 128, 256, 64, 0, 128, 128, 160, 256, 128, 0, 160, 128, 192, 256, 160, 0, 192, 128, 256, 256, 192, 0, 256, 128, 256, 0)
+color = Color(0.458823532, 0.819607854, 0.709803939, 1)
+period = 1.2999999523162842
+lifetime = 1.0
+metadata/unity_particle = 9535
+metadata/unity_material = 121
+polygons = [PackedInt32Array(0, 1, 2), PackedInt32Array(0, 3, 1), PackedInt32Array(4, 3, 0), PackedInt32Array(3, 5, 1), PackedInt32Array(4, 6, 3), PackedInt32Array(3, 7, 5), PackedInt32Array(6, 7, 3), PackedInt32Array(7, 8, 5), PackedInt32Array(6, 9, 7), PackedInt32Array(7, 10, 8), PackedInt32Array(9, 10, 7), PackedInt32Array(10, 11, 8), PackedInt32Array(9, 12, 10), PackedInt32Array(10, 13, 11), PackedInt32Array(12, 13, 10), PackedInt32Array(13, 14, 11), PackedInt32Array(12, 15, 13), PackedInt32Array(13, 16, 14), PackedInt32Array(15, 16, 13), PackedInt32Array(16, 17, 14), PackedInt32Array(15, 18, 16), PackedInt32Array(16, 19, 17), PackedInt32Array(18, 19, 16), PackedInt32Array(18, 20, 19)]
+material = SubResource("Mat9535")
+metadata/unity_mesh = 314
+horizontal_size = SubResource("Horizontal9535")
+vertical_size = SubResource("Vertical9535")
+opacity = SubResource("Alpha9535")
+
+[node name="Burst9536" type="Polygon2D" parent="."]
+script = ExtResource("Particle")
+texture = ExtResource("T623")
+polygon = PackedVector2Array(-129.682755, -40.6520362, -0, -27.1013585, -114.195751, -27.1013585, -0, -40.6520362, -145.169758, -54.2027299, 114.195751, -27.1013585, -0, -54.2027299, 129.682755, -40.6520362, 114.195751, 27.1013585, 145.169758, -54.2027299, 129.682755, 40.6520362, -0, 27.1013585, 145.169758, 54.2027299, -0, 40.6520362, -114.195751, 27.1013585, -0, 54.2027299, -129.682755, 40.6520362, -114.195751, -27.1013585, -145.169758, 54.2027299, -129.682755, -40.6520362, -145.169758, -54.2027299)
+uv = PackedVector2Array(0, 128, 32, 256, 0, 256, 32, 128, 0, 0, 64, 256, 32, 0, 64, 128, 128, 256, 64, 0, 128, 128, 160, 256, 128, 0, 160, 128, 192, 256, 160, 0, 192, 128, 256, 256, 192, 0, 256, 128, 256, 0)
+color = Color(0.372552514, 0.867924511, 0.581709564, 1)
+period = 1.0
+lifetime = 1.0099999904632568
+metadata/unity_particle = 9536
+metadata/unity_material = 116
+polygons = [PackedInt32Array(0, 1, 2), PackedInt32Array(0, 3, 1), PackedInt32Array(4, 3, 0), PackedInt32Array(3, 5, 1), PackedInt32Array(4, 6, 3), PackedInt32Array(3, 7, 5), PackedInt32Array(6, 7, 3), PackedInt32Array(7, 8, 5), PackedInt32Array(6, 9, 7), PackedInt32Array(7, 10, 8), PackedInt32Array(9, 10, 7), PackedInt32Array(10, 11, 8), PackedInt32Array(9, 12, 10), PackedInt32Array(10, 13, 11), PackedInt32Array(12, 13, 10), PackedInt32Array(13, 14, 11), PackedInt32Array(12, 15, 13), PackedInt32Array(13, 16, 14), PackedInt32Array(15, 16, 13), PackedInt32Array(16, 17, 14), PackedInt32Array(15, 18, 16), PackedInt32Array(16, 19, 17), PackedInt32Array(18, 19, 16), PackedInt32Array(18, 20, 19)]
+material = SubResource("Mat9536")
+metadata/unity_mesh = 314

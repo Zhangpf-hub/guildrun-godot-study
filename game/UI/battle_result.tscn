@@ -1,0 +1,2847 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://UI/sliced_image.gd" id="SlicedImage"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets2_185.png" id="2"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets2_125.png" id="3"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets2_209.png" id="8"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets3_556.png" id="11"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets3_586.png" id="32"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets1_4160.png" id="33"]
+[ext_resource type="Texture2D" path="res://sprites/resources_967.png" id="58"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets3_490.png" id="96"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets3_436.png" id="98"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets1_4097.png" id="100"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets3_402.png" id="101"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets3_377.png" id="116"]
+[ext_resource type="Shader" path="res://materials/ui_linear_blend.gdshader" id="LinearBlend"]
+
+[sub_resource type="ShaderMaterial" id="LinearBackdrop"]
+shader = ExtResource("LinearBlend")
+
+[node name="BattleResultView" type="Control"]
+layout_mode = 0
+mouse_filter = 2
+metadata/reference_resolution = Vector2(1920, 1080)
+metadata/aspect_ratio_threshold = 1.7999999523162842
+
+[node name="CopyBeforeModal" type="BackBufferCopy" parent="."]
+copy_mode = 2
+
+[node name="Modal" type="Control" parent="."]
+mouse_filter = 2
+metadata/unity_id = 3290
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -50
+offset_right = 50
+offset_top = -50
+offset_bottom = 50
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Modal"]
+material = SubResource("LinearBackdrop")
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0.392156869)
+
+[node name="DefeatBackground" type="Control" parent="."]
+mouse_filter = 2
+metadata/unity_id = 6333
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -50
+offset_right = 50
+offset_top = -50
+offset_bottom = 50
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="TextureRect" parent="DefeatBackground"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("96")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(0.132075489, 0.0965646282, 0.0965646282, 0.101960786)
+
+[node name="CopyBeforePanel" type="BackBufferCopy" parent="."]
+copy_mode = 2
+
+[node name="Panel" type="Control" parent="."]
+mouse_filter = 2
+metadata/unity_id = 1181
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -742.167999
+offset_right = 657.832001
+offset_top = -295.150002
+offset_bottom = 360.849998
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="TitlePanel" type="Control" parent="Panel"]
+mouse_filter = 2
+metadata/unity_id = 854
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 0
+offset_left = -410
+offset_right = 410
+offset_top = -96.500061
+offset_bottom = -24.500061
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="TitleText" type="Control" parent="Panel/TitlePanel"]
+mouse_filter = 2
+metadata/unity_id = 880
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 0
+offset_top = -42.5
+offset_bottom = 42.5
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="Panel/TitlePanel/TitleText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "battle won"
+theme_override_font_sizes/font_size = 56
+theme_override_colors/font_color = Color(0.972549021, 0.941176474, 0.823529422, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BattleStatsPanel" type="Control" parent="Panel"]
+mouse_filter = 2
+metadata/unity_id = 1623
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 200
+offset_right = 1200
+offset_top = -326
+offset_bottom = -326
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0)
+
+[node name="Background" type="Control" parent="Panel/BattleStatsPanel"]
+mouse_filter = 2
+metadata/unity_id = 5494
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="Control" parent="Panel/BattleStatsPanel/Background"]
+material = SubResource("LinearBackdrop")
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("11")
+border = Vector4(64, 64, 64, 64)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="TitlePanel" type="Control" parent="Panel/BattleStatsPanel"]
+mouse_filter = 2
+metadata/unity_id = 2940
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 24
+offset_right = -24
+offset_top = 24
+offset_bottom = 108
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+
+[node name="StatsTitleText" type="Control" parent="Panel/BattleStatsPanel/TitlePanel"]
+mouse_filter = 2
+metadata/unity_id = 581
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 112.937599
+offset_top = -0
+offset_bottom = 42
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0)
+
+[node name="UnityText" type="Label" parent="Panel/BattleStatsPanel/TitlePanel/StatsTitleText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Stats"
+theme_override_font_sizes/font_size = 28
+theme_override_colors/font_color = Color(0.972549021, 0.941176474, 0.823529422, 1)
+horizontal_alignment = 0
+vertical_alignment = 0
+
+[node name="TotalDurationText" type="Control" parent="Panel/BattleStatsPanel/TitlePanel"]
+mouse_filter = 2
+metadata/unity_id = 950
+anchor_left = 1
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 0
+offset_left = -200
+offset_right = 0
+offset_top = -0
+offset_bottom = 42
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(1, 0)
+
+[node name="UnityText" type="Label" parent="Panel/BattleStatsPanel/TitlePanel/TotalDurationText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Total duration\nmm:ss"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.819607913, 0.811764777, 0.698039234, 1)
+horizontal_alignment = 2
+vertical_alignment = 0
+
+[node name="SwitchHolder" type="Control" parent="Panel/BattleStatsPanel/TitlePanel"]
+mouse_filter = 2
+metadata/unity_id = 7157
+anchor_left = 0
+anchor_right = 1
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 40
+offset_right = -40
+offset_top = -48
+offset_bottom = -12
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 1)
+
+[node name="TrackerButton" type="Control" parent="Panel/BattleStatsPanel/TitlePanel/SwitchHolder"]
+mouse_filter = 2
+metadata/unity_id = 4338
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 275
+offset_right = 435
+offset_top = 0
+offset_bottom = 36
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="Panel/BattleStatsPanel/TitlePanel/SwitchHolder/TrackerButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("98")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="EnabledGraphic" type="Control" parent="Panel/BattleStatsPanel/TitlePanel/SwitchHolder/TrackerButton"]
+mouse_filter = 2
+metadata/unity_id = 280
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="Panel/BattleStatsPanel/TitlePanel/SwitchHolder/TrackerButton/EnabledGraphic"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("98")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 0.176470593)
+
+[node name="Text (TMP)" type="Control" parent="Panel/BattleStatsPanel/TitlePanel/SwitchHolder/TrackerButton"]
+mouse_filter = 2
+metadata/unity_id = 3322
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="Panel/BattleStatsPanel/TitlePanel/SwitchHolder/TrackerButton/Text (TMP)"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "tracker"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.941176534, 0.917647123, 0.831372619, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Image" type="Control" parent="Panel/BattleStatsPanel/TitlePanel/SwitchHolder"]
+mouse_filter = 2
+metadata/unity_id = 5854
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 435
+offset_right = 437
+offset_top = 0
+offset_bottom = 36
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Panel/BattleStatsPanel/TitlePanel/SwitchHolder/Image"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.937254965, 0.913725555, 0.82745105, 1)
+
+[node name="HeroStatsButton" type="Control" parent="Panel/BattleStatsPanel/TitlePanel/SwitchHolder"]
+mouse_filter = 2
+metadata/unity_id = 6174
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 476
+offset_right = 576.889999
+offset_top = 0
+offset_bottom = 36
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="Background" type="Control" parent="Panel/BattleStatsPanel/TitlePanel/SwitchHolder/HeroStatsButton"]
+mouse_filter = 2
+metadata/unity_id = 1207
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -38
+offset_right = 38
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="Panel/BattleStatsPanel/TitlePanel/SwitchHolder/HeroStatsButton/Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("98")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="EnabledGraphic" type="Control" parent="Panel/BattleStatsPanel/TitlePanel/SwitchHolder/HeroStatsButton"]
+mouse_filter = 2
+metadata/unity_id = 585
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -38
+offset_right = 38
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="Panel/BattleStatsPanel/TitlePanel/SwitchHolder/HeroStatsButton/EnabledGraphic"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("98")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 0.176470593)
+
+[node name="Text (TMP)" type="Control" parent="Panel/BattleStatsPanel/TitlePanel/SwitchHolder/HeroStatsButton"]
+mouse_filter = 2
+metadata/unity_id = 7127
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 100.889999
+offset_top = 6.89000034
+offset_bottom = 29.1099997
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="Panel/BattleStatsPanel/TitlePanel/SwitchHolder/HeroStatsButton/Text (TMP)"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Hero Stats"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.941176534, 0.917647123, 0.831372619, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Line" type="Control" parent="Panel/BattleStatsPanel/TitlePanel"]
+mouse_filter = 2
+metadata/unity_id = 1146
+anchor_left = 0
+anchor_right = 1
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -1
+offset_bottom = 1
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Panel/BattleStatsPanel/TitlePanel/Line"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(1, 1, 1, 0.176470593)
+
+[node name="BottomPanel" type="Control" parent="Panel/BattleStatsPanel/TitlePanel"]
+mouse_filter = 2
+metadata/unity_id = 5123
+anchor_left = 0
+anchor_right = 1
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = 12
+offset_bottom = 54
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+
+[node name="CombatDurationText" type="Control" parent="Panel/BattleStatsPanel/TitlePanel/BottomPanel"]
+mouse_filter = 2
+metadata/unity_id = 6215
+anchor_left = 1
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -170.100006
+offset_right = 0
+offset_top = -24
+offset_bottom = 24
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(1, 1)
+
+[node name="UnityText" type="Label" parent="Panel/BattleStatsPanel/TitlePanel/BottomPanel/CombatDurationText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Combat duration\nmm:ss"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.819607913, 0.811764777, 0.698039234, 1)
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="VersusPortraits" type="Control" parent="Panel/BattleStatsPanel/TitlePanel/BottomPanel"]
+mouse_filter = 2
+metadata/unity_id = 6792
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 147.999878
+offset_right = -148.000122
+offset_top = -21
+offset_bottom = 21
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="PortraitsRow_Heroes" type="Control" parent="Panel/BattleStatsPanel/TitlePanel/BottomPanel/VersusPortraits"]
+mouse_filter = 2
+metadata/unity_id = 6997
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 8.91497803
+offset_right = 298.914978
+offset_top = 0
+offset_bottom = 42
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(1, 0.5)
+
+[node name="HeroRoundIconSmall" type="Control" parent="Panel/BattleStatsPanel/TitlePanel/BottomPanel/VersusPortraits/PortraitsRow_Heroes"]
+mouse_filter = 2
+metadata/unity_id = 2643
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 248
+offset_right = 290
+offset_top = 0
+offset_bottom = 42
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="PortraitPic" type="Control" parent="Panel/BattleStatsPanel/TitlePanel/BottomPanel/VersusPortraits/PortraitsRow_Heroes/HeroRoundIconSmall"]
+mouse_filter = 2
+metadata/unity_id = 4335
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Image" type="Control" parent="Panel/BattleStatsPanel/TitlePanel/BottomPanel/VersusPortraits/PortraitsRow_Heroes/HeroRoundIconSmall/PortraitPic"]
+mouse_filter = 2
+metadata/unity_id = 3803
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="Panel/BattleStatsPanel/TitlePanel/BottomPanel/VersusPortraits/PortraitsRow_Heroes/HeroRoundIconSmall/PortraitPic/Image"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("32")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="HeroRoundPortrait" type="Control" parent="Panel/BattleStatsPanel/TitlePanel/BottomPanel/VersusPortraits/PortraitsRow_Heroes/HeroRoundIconSmall/PortraitPic/Image"]
+mouse_filter = 2
+metadata/unity_id = 784
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="Panel/BattleStatsPanel/TitlePanel/BottomPanel/VersusPortraits/PortraitsRow_Heroes/HeroRoundIconSmall/PortraitPic/Image/HeroRoundPortrait"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("100")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="RoundFrame" type="Control" parent="Panel/BattleStatsPanel/TitlePanel/BottomPanel/VersusPortraits/PortraitsRow_Heroes/HeroRoundIconSmall/PortraitPic/Image"]
+mouse_filter = 2
+metadata/unity_id = 4242
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -2
+offset_right = 2
+offset_top = -2
+offset_bottom = 2
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="Panel/BattleStatsPanel/TitlePanel/BottomPanel/VersusPortraits/PortraitsRow_Heroes/HeroRoundIconSmall/PortraitPic/Image/RoundFrame"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("101")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="VS" type="Control" parent="Panel/BattleStatsPanel/TitlePanel/BottomPanel/VersusPortraits"]
+mouse_filter = 2
+metadata/unity_id = 7489
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 316.745
+offset_right = 339.255
+offset_top = 0
+offset_bottom = 42
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="Panel/BattleStatsPanel/TitlePanel/BottomPanel/VersusPortraits/VS"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "vs"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PortraitsRow_Enemies" type="Control" parent="Panel/BattleStatsPanel/TitlePanel/BottomPanel/VersusPortraits"]
+mouse_filter = 2
+metadata/unity_id = 5251
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 357.084961
+offset_right = 647.084961
+offset_top = 0
+offset_bottom = 42
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(1, 0.5)
+
+[node name="HeroRoundIconSmall_3" type="Control" parent="Panel/BattleStatsPanel/TitlePanel/BottomPanel/VersusPortraits/PortraitsRow_Enemies"]
+mouse_filter = 2
+metadata/unity_id = 1175
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 42
+offset_top = 0
+offset_bottom = 42
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="PortraitPic" type="Control" parent="Panel/BattleStatsPanel/TitlePanel/BottomPanel/VersusPortraits/PortraitsRow_Enemies/HeroRoundIconSmall_3"]
+mouse_filter = 2
+metadata/unity_id = 6833
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Image" type="Control" parent="Panel/BattleStatsPanel/TitlePanel/BottomPanel/VersusPortraits/PortraitsRow_Enemies/HeroRoundIconSmall_3/PortraitPic"]
+mouse_filter = 2
+metadata/unity_id = 501
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="Panel/BattleStatsPanel/TitlePanel/BottomPanel/VersusPortraits/PortraitsRow_Enemies/HeroRoundIconSmall_3/PortraitPic/Image"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("32")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="HeroRoundPortrait" type="Control" parent="Panel/BattleStatsPanel/TitlePanel/BottomPanel/VersusPortraits/PortraitsRow_Enemies/HeroRoundIconSmall_3/PortraitPic/Image"]
+mouse_filter = 2
+metadata/unity_id = 3157
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="Panel/BattleStatsPanel/TitlePanel/BottomPanel/VersusPortraits/PortraitsRow_Enemies/HeroRoundIconSmall_3/PortraitPic/Image/HeroRoundPortrait"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("100")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="RoundFrame" type="Control" parent="Panel/BattleStatsPanel/TitlePanel/BottomPanel/VersusPortraits/PortraitsRow_Enemies/HeroRoundIconSmall_3/PortraitPic/Image"]
+mouse_filter = 2
+metadata/unity_id = 7700
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -2
+offset_right = 2
+offset_top = -2
+offset_bottom = 2
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="Panel/BattleStatsPanel/TitlePanel/BottomPanel/VersusPortraits/PortraitsRow_Enemies/HeroRoundIconSmall_3/PortraitPic/Image/RoundFrame"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("101")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="HeroDamageIndicator" type="Control" parent="Panel/BattleStatsPanel/TitlePanel/BottomPanel/VersusPortraits/PortraitsRow_Enemies/HeroRoundIconSmall_3"]
+mouse_filter = 2
+metadata/unity_id = 7646
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = -2
+offset_right = 14
+offset_top = -6
+offset_bottom = 12
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0)
+visible = false
+
+[node name="DamageIcon" type="Control" parent="Panel/BattleStatsPanel/TitlePanel/BottomPanel/VersusPortraits/PortraitsRow_Enemies/HeroRoundIconSmall_3/HeroDamageIndicator"]
+mouse_filter = 2
+metadata/unity_id = 4630
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="Panel/BattleStatsPanel/TitlePanel/BottomPanel/VersusPortraits/PortraitsRow_Enemies/HeroRoundIconSmall_3/HeroDamageIndicator/DamageIcon"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("58")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="DetailStatsPanel" type="Control" parent="Panel/BattleStatsPanel"]
+mouse_filter = 2
+metadata/unity_id = 2252
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 48
+offset_right = -48
+offset_top = 196
+offset_bottom = -24
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+modulate = Color(1, 1, 1, 1.0)
+
+[node name="DamageTrackerSummary" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel"]
+mouse_filter = 2
+metadata/unity_id = 4049
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+
+[node name="DamageTrackerHolder" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary"]
+mouse_filter = 2
+metadata/unity_id = 2800
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+
+[node name="HeroTrackerView_BattleResult" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder"]
+mouse_filter = 2
+metadata/unity_id = 1673
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 904
+offset_top = -8
+offset_bottom = 48
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="HeroRoundIconSmall" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult"]
+mouse_filter = 2
+metadata/unity_id = 4757
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 48
+offset_top = -21
+offset_bottom = 21
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="PortraitPic" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/HeroRoundIconSmall"]
+mouse_filter = 2
+metadata/unity_id = 3027
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Image" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/HeroRoundIconSmall/PortraitPic"]
+mouse_filter = 2
+metadata/unity_id = 4096
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/HeroRoundIconSmall/PortraitPic/Image"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("32")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="HeroRoundPortrait" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/HeroRoundIconSmall/PortraitPic/Image"]
+mouse_filter = 2
+metadata/unity_id = 7140
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/HeroRoundIconSmall/PortraitPic/Image/HeroRoundPortrait"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("33")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="RoundFrame" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/HeroRoundIconSmall/PortraitPic/Image"]
+mouse_filter = 2
+metadata/unity_id = 3574
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -2
+offset_right = 2
+offset_top = -2
+offset_bottom = 2
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/HeroRoundIconSmall/PortraitPic/Image/RoundFrame"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("101")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="DamageSlidersHolder" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult"]
+mouse_filter = 2
+metadata/unity_id = 1172
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 64
+offset_right = 64
+offset_top = -24
+offset_bottom = 24
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+clip_contents = true
+
+[node name="DamageSliders_1" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder"]
+mouse_filter = 2
+metadata/unity_id = 4511
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 440
+offset_top = 2
+offset_bottom = 14
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="DamageNumber" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1"]
+mouse_filter = 2
+metadata/unity_id = 1196
+anchor_left = 1
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -32
+offset_right = 1.54000092
+offset_top = -8.30479431
+offset_bottom = 8.3052063
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="UnityText" type="Label" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1/DamageNumber"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "12312"
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.819607913, 0.811764777, 0.698039234, 1)
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="Stroke" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1"]
+mouse_filter = 2
+metadata/unity_id = 4169
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = -36
+offset_top = -6
+offset_bottom = 6
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1/Stroke"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.254901975, 0.254901975, 0.235294133, 1)
+
+[node name="Background" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1/Stroke"]
+mouse_filter = 2
+metadata/unity_id = 1594
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 2
+offset_right = -2
+offset_top = 2
+offset_bottom = -2
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1/Stroke/Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.0980392247, 0.117647067, 0.101960793, 1)
+
+[node name="Slider_1" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1"]
+mouse_filter = 2
+metadata/unity_id = 5588
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = -36
+offset_top = -6
+offset_bottom = 6
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill Area" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1/Slider_1"]
+mouse_filter = 2
+metadata/unity_id = 3906
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1/Slider_1/Fill Area"]
+mouse_filter = 2
+metadata/unity_id = 3907
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1/Slider_1/Fill Area/Fill"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0, 0.0140147209, 1, 1)
+
+[node name="Slider_2" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1"]
+mouse_filter = 2
+metadata/unity_id = 6443
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = -36
+offset_top = -6
+offset_bottom = 6
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill Area" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1/Slider_2"]
+mouse_filter = 2
+metadata/unity_id = 7207
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1/Slider_2/Fill Area"]
+mouse_filter = 2
+metadata/unity_id = 287
+anchor_left = 0
+anchor_right = 0.486999989
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1/Slider_2/Fill Area/Fill"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.98113209, 0, 0, 1)
+
+[node name="Slider_3" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1"]
+mouse_filter = 2
+metadata/unity_id = 144
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = -36
+offset_top = -6
+offset_bottom = 6
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill Area" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1/Slider_3"]
+mouse_filter = 2
+metadata/unity_id = 3720
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1/Slider_3/Fill Area"]
+mouse_filter = 2
+metadata/unity_id = 212
+anchor_left = 0
+anchor_right = 0.486999989
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1/Slider_3/Fill Area/Fill"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.98113209, 0, 0, 1)
+
+[node name="Slider_4" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1"]
+mouse_filter = 2
+metadata/unity_id = 2614
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = -36
+offset_top = -6
+offset_bottom = 6
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill Area" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1/Slider_4"]
+mouse_filter = 2
+metadata/unity_id = 2869
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1/Slider_4/Fill Area"]
+mouse_filter = 2
+metadata/unity_id = 1612
+anchor_left = 0
+anchor_right = 0.486999989
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1/Slider_4/Fill Area/Fill"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.98113209, 0, 0, 1)
+
+[node name="Slider_5" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1"]
+mouse_filter = 2
+metadata/unity_id = 5743
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = -36
+offset_top = -6
+offset_bottom = 6
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill Area" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1/Slider_5"]
+mouse_filter = 2
+metadata/unity_id = 6593
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1/Slider_5/Fill Area"]
+mouse_filter = 2
+metadata/unity_id = 6084
+anchor_left = 0
+anchor_right = 0.486999989
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1/Slider_5/Fill Area/Fill"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.98113209, 0, 0, 1)
+
+[node name="Slider_6" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1"]
+mouse_filter = 2
+metadata/unity_id = 7178
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = -36
+offset_top = -6
+offset_bottom = 6
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill Area" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1/Slider_6"]
+mouse_filter = 2
+metadata/unity_id = 3517
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1/Slider_6/Fill Area"]
+mouse_filter = 2
+metadata/unity_id = 3444
+anchor_left = 0
+anchor_right = 0.486999989
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1/Slider_6/Fill Area/Fill"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.98113209, 0, 0, 1)
+
+[node name="Slider_7" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1"]
+mouse_filter = 2
+metadata/unity_id = 2920
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = -36
+offset_top = -6
+offset_bottom = 6
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill Area" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1/Slider_7"]
+mouse_filter = 2
+metadata/unity_id = 2260
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1/Slider_7/Fill Area"]
+mouse_filter = 2
+metadata/unity_id = 1279
+anchor_left = 0
+anchor_right = 0.486999989
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1/Slider_7/Fill Area/Fill"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.98113209, 0, 0, 1)
+
+[node name="Slider_8" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1"]
+mouse_filter = 2
+metadata/unity_id = 3732
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = -36
+offset_top = -6
+offset_bottom = 6
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill Area" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1/Slider_8"]
+mouse_filter = 2
+metadata/unity_id = 4998
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1/Slider_8/Fill Area"]
+mouse_filter = 2
+metadata/unity_id = 1633
+anchor_left = 0
+anchor_right = 0.486999989
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_1/Slider_8/Fill Area/Fill"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.98113209, 0, 0, 1)
+
+[node name="DamageSliders_2" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder"]
+mouse_filter = 2
+metadata/unity_id = 2119
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 440
+offset_top = 18
+offset_bottom = 30
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="DamageNumber" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2"]
+mouse_filter = 2
+metadata/unity_id = 7442
+anchor_left = 1
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -32
+offset_right = 1.54000092
+offset_top = -8.30479431
+offset_bottom = 8.3052063
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="UnityText" type="Label" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2/DamageNumber"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "12312"
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.819607913, 0.811764777, 0.698039234, 1)
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="Stroke" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2"]
+mouse_filter = 2
+metadata/unity_id = 2509
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = -36
+offset_top = -6
+offset_bottom = 6
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2/Stroke"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.254901975, 0.254901975, 0.235294133, 1)
+
+[node name="Background" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2/Stroke"]
+mouse_filter = 2
+metadata/unity_id = 7076
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 2
+offset_right = -2
+offset_top = 2
+offset_bottom = -2
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2/Stroke/Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.0980392247, 0.117647067, 0.101960793, 1)
+
+[node name="Slider_1" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2"]
+mouse_filter = 2
+metadata/unity_id = 3020
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = -36
+offset_top = -6
+offset_bottom = 6
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill Area" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2/Slider_1"]
+mouse_filter = 2
+metadata/unity_id = 2765
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2/Slider_1/Fill Area"]
+mouse_filter = 2
+metadata/unity_id = 2771
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2/Slider_1/Fill Area/Fill"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0, 0.0140147209, 1, 1)
+
+[node name="Slider_2" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2"]
+mouse_filter = 2
+metadata/unity_id = 322
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = -36
+offset_top = -6
+offset_bottom = 6
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill Area" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2/Slider_2"]
+mouse_filter = 2
+metadata/unity_id = 1438
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2/Slider_2/Fill Area"]
+mouse_filter = 2
+metadata/unity_id = 6497
+anchor_left = 0
+anchor_right = 0.486999989
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2/Slider_2/Fill Area/Fill"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.98113209, 0, 0, 1)
+
+[node name="Slider_3" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2"]
+mouse_filter = 2
+metadata/unity_id = 6602
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = -36
+offset_top = -6
+offset_bottom = 6
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill Area" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2/Slider_3"]
+mouse_filter = 2
+metadata/unity_id = 4811
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2/Slider_3/Fill Area"]
+mouse_filter = 2
+metadata/unity_id = 6556
+anchor_left = 0
+anchor_right = 0.486999989
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2/Slider_3/Fill Area/Fill"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.98113209, 0, 0, 1)
+
+[node name="Slider_4" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2"]
+mouse_filter = 2
+metadata/unity_id = 4065
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = -36
+offset_top = -6
+offset_bottom = 6
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill Area" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2/Slider_4"]
+mouse_filter = 2
+metadata/unity_id = 3836
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2/Slider_4/Fill Area"]
+mouse_filter = 2
+metadata/unity_id = 7056
+anchor_left = 0
+anchor_right = 0.486999989
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2/Slider_4/Fill Area/Fill"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.98113209, 0, 0, 1)
+
+[node name="Slider_5" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2"]
+mouse_filter = 2
+metadata/unity_id = 954
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = -36
+offset_top = -6
+offset_bottom = 6
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill Area" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2/Slider_5"]
+mouse_filter = 2
+metadata/unity_id = 165
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2/Slider_5/Fill Area"]
+mouse_filter = 2
+metadata/unity_id = 684
+anchor_left = 0
+anchor_right = 0.486999989
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2/Slider_5/Fill Area/Fill"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.98113209, 0, 0, 1)
+
+[node name="Slider_6" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2"]
+mouse_filter = 2
+metadata/unity_id = 1476
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = -36
+offset_top = -6
+offset_bottom = 6
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill Area" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2/Slider_6"]
+mouse_filter = 2
+metadata/unity_id = 5009
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2/Slider_6/Fill Area"]
+mouse_filter = 2
+metadata/unity_id = 5099
+anchor_left = 0
+anchor_right = 0.486999989
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2/Slider_6/Fill Area/Fill"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.98113209, 0, 0, 1)
+
+[node name="Slider_7" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2"]
+mouse_filter = 2
+metadata/unity_id = 5669
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = -36
+offset_top = -6
+offset_bottom = 6
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill Area" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2/Slider_7"]
+mouse_filter = 2
+metadata/unity_id = 4383
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2/Slider_7/Fill Area"]
+mouse_filter = 2
+metadata/unity_id = 7356
+anchor_left = 0
+anchor_right = 0.486999989
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2/Slider_7/Fill Area/Fill"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.98113209, 0, 0, 1)
+
+[node name="Slider_8" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2"]
+mouse_filter = 2
+metadata/unity_id = 4783
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = -36
+offset_top = -6
+offset_bottom = 6
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill Area" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2/Slider_8"]
+mouse_filter = 2
+metadata/unity_id = 3542
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2/Slider_8/Fill Area"]
+mouse_filter = 2
+metadata/unity_id = 7018
+anchor_left = 0
+anchor_right = 0.486999989
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_2/Slider_8/Fill Area/Fill"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.98113209, 0, 0, 1)
+
+[node name="DamageSliders_3" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder"]
+mouse_filter = 2
+metadata/unity_id = 929
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 440
+offset_top = 34
+offset_bottom = 46
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="DamageNumber" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3"]
+mouse_filter = 2
+metadata/unity_id = 4771
+anchor_left = 1
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -32
+offset_right = 1.54000092
+offset_top = -8.30479431
+offset_bottom = 8.3052063
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="UnityText" type="Label" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3/DamageNumber"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "12312"
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.819607913, 0.811764777, 0.698039234, 1)
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="Stroke" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3"]
+mouse_filter = 2
+metadata/unity_id = 363
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = -36
+offset_top = -6
+offset_bottom = 6
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3/Stroke"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.254901975, 0.254901975, 0.235294133, 1)
+
+[node name="Background" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3/Stroke"]
+mouse_filter = 2
+metadata/unity_id = 5337
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 2
+offset_right = -2
+offset_top = 2
+offset_bottom = -2
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3/Stroke/Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.0980392247, 0.117647067, 0.101960793, 1)
+
+[node name="Slider_1" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3"]
+mouse_filter = 2
+metadata/unity_id = 1854
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = -36
+offset_top = -6
+offset_bottom = 6
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill Area" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3/Slider_1"]
+mouse_filter = 2
+metadata/unity_id = 204
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3/Slider_1/Fill Area"]
+mouse_filter = 2
+metadata/unity_id = 214
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3/Slider_1/Fill Area/Fill"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0, 0.0140147209, 1, 1)
+
+[node name="Slider_2" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3"]
+mouse_filter = 2
+metadata/unity_id = 2436
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = -36
+offset_top = -6
+offset_bottom = 6
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill Area" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3/Slider_2"]
+mouse_filter = 2
+metadata/unity_id = 3486
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3/Slider_2/Fill Area"]
+mouse_filter = 2
+metadata/unity_id = 3858
+anchor_left = 0
+anchor_right = 0.486999989
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3/Slider_2/Fill Area/Fill"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.98113209, 0, 0, 1)
+
+[node name="Slider_3" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3"]
+mouse_filter = 2
+metadata/unity_id = 3982
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = -36
+offset_top = -6
+offset_bottom = 6
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill Area" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3/Slider_3"]
+mouse_filter = 2
+metadata/unity_id = 7574
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3/Slider_3/Fill Area"]
+mouse_filter = 2
+metadata/unity_id = 3910
+anchor_left = 0
+anchor_right = 0.486999989
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3/Slider_3/Fill Area/Fill"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.98113209, 0, 0, 1)
+
+[node name="Slider_4" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3"]
+mouse_filter = 2
+metadata/unity_id = 6223
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = -36
+offset_top = -6
+offset_bottom = 6
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill Area" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3/Slider_4"]
+mouse_filter = 2
+metadata/unity_id = 6529
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3/Slider_4/Fill Area"]
+mouse_filter = 2
+metadata/unity_id = 5377
+anchor_left = 0
+anchor_right = 0.486999989
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3/Slider_4/Fill Area/Fill"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.98113209, 0, 0, 1)
+
+[node name="Slider_5" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3"]
+mouse_filter = 2
+metadata/unity_id = 2091
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = -36
+offset_top = -6
+offset_bottom = 6
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill Area" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3/Slider_5"]
+mouse_filter = 2
+metadata/unity_id = 2737
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3/Slider_5/Fill Area"]
+mouse_filter = 2
+metadata/unity_id = 2311
+anchor_left = 0
+anchor_right = 0.486999989
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3/Slider_5/Fill Area/Fill"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.98113209, 0, 0, 1)
+
+[node name="Slider_6" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3"]
+mouse_filter = 2
+metadata/unity_id = 3155
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = -36
+offset_top = -6
+offset_bottom = 6
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill Area" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3/Slider_6"]
+mouse_filter = 2
+metadata/unity_id = 7237
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3/Slider_6/Fill Area"]
+mouse_filter = 2
+metadata/unity_id = 7264
+anchor_left = 0
+anchor_right = 0.486999989
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3/Slider_6/Fill Area/Fill"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.98113209, 0, 0, 1)
+
+[node name="Slider_7" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3"]
+mouse_filter = 2
+metadata/unity_id = 6961
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = -36
+offset_top = -6
+offset_bottom = 6
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill Area" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3/Slider_7"]
+mouse_filter = 2
+metadata/unity_id = 6107
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3/Slider_7/Fill Area"]
+mouse_filter = 2
+metadata/unity_id = 5216
+anchor_left = 0
+anchor_right = 0.486999989
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3/Slider_7/Fill Area/Fill"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.98113209, 0, 0, 1)
+
+[node name="Slider_8" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3"]
+mouse_filter = 2
+metadata/unity_id = 7554
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = -36
+offset_top = -6
+offset_bottom = 6
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill Area" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3/Slider_8"]
+mouse_filter = 2
+metadata/unity_id = 1425
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Fill" type="Control" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3/Slider_8/Fill Area"]
+mouse_filter = 2
+metadata/unity_id = 5253
+anchor_left = 0
+anchor_right = 0.486999989
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Panel/BattleStatsPanel/DetailStatsPanel/DamageTrackerSummary/DamageTrackerHolder/HeroTrackerView_BattleResult/DamageSlidersHolder/DamageSliders_3/Slider_8/Fill Area/Fill"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.98113209, 0, 0, 1)
+
+[node name="RewardsPanel" type="Control" parent="Panel"]
+mouse_filter = 2
+metadata/unity_id = 7253
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 1012
+offset_right = 1012
+offset_top = -326
+offset_bottom = 328
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0)
+
+[node name="Background" type="Control" parent="Panel/RewardsPanel"]
+mouse_filter = 2
+metadata/unity_id = 6947
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+clip_contents = true
+
+[node name="UnityImage" type="Control" parent="Panel/RewardsPanel/Background"]
+material = SubResource("LinearBackdrop")
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("11")
+border = Vector4(64, 64, 64, 64)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Deco" type="Control" parent="Panel/RewardsPanel/Background"]
+mouse_filter = 2
+metadata/unity_id = 2903
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 0
+offset_top = 96
+offset_bottom = 596
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+
+[node name="UnityImage" type="TextureRect" parent="Panel/RewardsPanel/Background/Deco"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("116")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 0.176470593)
+
+[node name="ResultTitleText" type="Control" parent="Panel/RewardsPanel"]
+mouse_filter = 2
+metadata/unity_id = 4066
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = -163
+offset_right = 163
+offset_top = 24
+offset_bottom = 54
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="Panel/RewardsPanel/ResultTitleText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Results"
+theme_override_font_sizes/font_size = 28
+theme_override_colors/font_color = Color(0.972549021, 0.941176474, 0.823529422, 1)
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="Scroll_Rewards" type="Control" parent="Panel/RewardsPanel"]
+mouse_filter = 2
+metadata/unity_id = 2223
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = -163
+offset_right = 163
+offset_top = 78
+offset_bottom = 426
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+
+[node name="Viewport" type="Control" parent="Panel/RewardsPanel/Scroll_Rewards"]
+mouse_filter = 2
+metadata/unity_id = 999
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = -28
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0)
+clip_contents = true
+
+[node name="Content" type="Control" parent="Panel/RewardsPanel/Scroll_Rewards/Viewport"]
+mouse_filter = 2
+metadata/unity_id = 6123
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 4
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+
+[node name="Line" type="Control" parent="Panel/RewardsPanel"]
+mouse_filter = 2
+metadata/unity_id = 1254
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 0
+offset_top = 450
+offset_bottom = 452
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Panel/RewardsPanel/Line"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(1, 1, 1, 0.176470593)
+
+[node name="TotalEarnedRewardView" type="Control" parent="Panel/RewardsPanel"]
+mouse_filter = 2
+metadata/unity_id = 3692
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = -163
+offset_right = 163
+offset_top = 476
+offset_bottom = 510
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+
+[node name="RewardTitle" type="Control" parent="Panel/RewardsPanel/TotalEarnedRewardView"]
+mouse_filter = 2
+metadata/unity_id = 224
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 16
+offset_right = -100
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="Panel/RewardsPanel/TotalEarnedRewardView/RewardTitle"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "total earned"
+theme_override_font_sizes/font_size = 20
+theme_override_colors/font_color = Color(0.941176534, 0.917647123, 0.831372619, 1)
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="ShardValueText" type="Control" parent="Panel/RewardsPanel/TotalEarnedRewardView"]
+mouse_filter = 2
+metadata/unity_id = 4804
+anchor_left = 1
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -116
+offset_right = -16
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(1, 0.5)
+
+[node name="UnityText" type="Label" parent="Panel/RewardsPanel/TotalEarnedRewardView/ShardValueText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "<sprite name=Shard_S> 666"
+theme_override_font_sizes/font_size = 24
+theme_override_colors/font_color = Color(0.937254965, 0.913725555, 0.823529482, 1)
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="ButtonContainer" type="Control" parent="Panel/RewardsPanel"]
+mouse_filter = 2
+metadata/unity_id = 7446
+anchor_left = 0
+anchor_right = 1
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 48
+offset_right = -48
+offset_top = -126
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 1)
+
+[node name="ProceedButton" type="Control" parent="Panel/RewardsPanel/ButtonContainer"]
+mouse_filter = 2
+metadata/unity_id = 4083
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = -188
+offset_right = 92
+offset_top = 10
+offset_bottom = 78
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 1)
+
+[node name="UnityImage" type="Control" parent="Panel/RewardsPanel/ButtonContainer/ProceedButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("2")
+border = Vector4(68, 64, 69, 64)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Button_Graphics" type="Control" parent="Panel/RewardsPanel/ButtonContainer/ProceedButton"]
+mouse_filter = 2
+metadata/unity_id = 5601
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+clip_contents = true
+
+[node name="UnityImage" type="Control" parent="Panel/RewardsPanel/ButtonContainer/ProceedButton/Button_Graphics"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("3")
+border = Vector4(6, 6, 6, 6)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="TopLayer" type="Control" parent="Panel/RewardsPanel/ButtonContainer/ProceedButton/Button_Graphics"]
+mouse_filter = 2
+metadata/unity_id = 5626
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="Control" parent="Panel/RewardsPanel/ButtonContainer/ProceedButton/Button_Graphics/TopLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("8")
+border = Vector4(64, 58, 64, 58)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Text (TMP)" type="Control" parent="Panel/RewardsPanel/ButtonContainer/ProceedButton"]
+mouse_filter = 2
+metadata/unity_id = 5471
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="Panel/RewardsPanel/ButtonContainer/ProceedButton/Text (TMP)"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Proceed"
+theme_override_font_sizes/font_size = 28
+theme_override_colors/font_color = Color(0.972549081, 0.941176534, 0.823529482, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HighlightUI_Proceed" type="Control" parent="Panel/RewardsPanel/ButtonContainer/ProceedButton"]
+mouse_filter = 2
+metadata/unity_id = 6299
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="ColorRect" parent="Panel/RewardsPanel/ButtonContainer/ProceedButton/HighlightUI_Proceed"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.282352954, 0.737254918, 0.566557586, 0.643137276)
+
+[node name="Highlight_Rotating" type="Control" parent="Panel/RewardsPanel/ButtonContainer/ProceedButton/HighlightUI_Proceed"]
+mouse_filter = 2
+metadata/unity_id = 6187
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="Panel/RewardsPanel/ButtonContainer/ProceedButton/HighlightUI_Proceed/Highlight_Rotating"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.550729811, 0.98113209, 0.730767369, 1)

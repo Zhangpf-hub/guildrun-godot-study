@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3]
+[ext_resource type="Texture2D" path="res://textures/sharedassets1_1642.png" id="1"]
+
+[resource]
+resource_name = "VFX_Mat_Javryn_Bow_01"
+albedo_texture = ExtResource("1")
+transparency = 1
+cull_mode = 2
+albedo_color = Color(0.250425398, 0.733340502, 1.12957835, 1)
+metadata/unity_shader = "Shader Graphs/VFXTrail_SG"

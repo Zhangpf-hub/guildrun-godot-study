@@ -1,0 +1,721 @@
+[gd_scene format=3]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2758.obj" id="1"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_363.tres" id="2"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2808.obj" id="3"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_367.tres" id="4"]
+
+[node name="Cenk" type="Node3D"]
+
+[node name="Cenk" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(0.920000017, 0.920000017, 0.920000017)
+metadata/unity_id = 13653
+metadata/unity_name = "Cenk"
+
+[node name="Cenk_Model" type="Node3D" parent="Cenk"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16832
+metadata/unity_name = "Cenk_Model"
+
+[node name="Armature" type="Node3D" parent="Cenk/Cenk_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9639
+metadata/unity_name = "Armature"
+
+[node name="hips" type="Node3D" parent="Cenk/Cenk_Model/Armature"]
+position = Vector3(3.94430444e-33, 1.33583808, 5.03402588e-31)
+quaternion = Quaternion(-1.11022302e-16, 2.77555756e-17, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6410
+metadata/unity_name = "hips"
+
+[node name="spine" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips"]
+position = Vector3(1.97215215e-32, 0.263055593, -5.21684416e-17)
+quaternion = Quaternion(0.057564985, -0, -0, 0.998341799)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21324
+metadata/unity_name = "spine"
+
+[node name="chest" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/spine"]
+position = Vector3(2.44546882e-31, 0.291632771, 1.06581408e-16)
+quaternion = Quaternion(-0.057564985, 0, -0, 0.998341799)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26107
+metadata/unity_name = "chest"
+
+[node name="neck" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/spine/chest"]
+position = Vector3(-1.41994957e-31, 0.399999976, -0.00557221239)
+quaternion = Quaternion(5.02468679e-17, -0.984623194, 0.174691752, -6.73077526e-17)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13430
+metadata/unity_name = "neck"
+
+[node name="head" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/spine/chest/neck"]
+position = Vector3(-2.50473549e-17, 0.217821777, 1.42108544e-16)
+quaternion = Quaternion(-0.148268312, 0, -0, 0.988947153)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16325
+metadata/unity_name = "head"
+
+[node name="hair_1" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(-3.15161769e-17, 0.217727959, 0.167749271)
+quaternion = Quaternion(0.832456231, -0, -0, 0.554090858)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21911
+metadata/unity_name = "hair_1"
+
+[node name="hair_1_end" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/spine/chest/neck/head/hair_1"]
+position = Vector3(5.23951379e-18, 0.110848628, 5.68434176e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11621
+metadata/unity_name = "hair_1_end"
+
+[node name="hair_2" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(-3.69074027e-17, 0.272369653, 0.139731035)
+quaternion = Quaternion(0.521403968, -0, -0, 0.853310049)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13487
+metadata/unity_name = "hair_2"
+
+[node name="hair_2_end" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/spine/chest/neck/head/hair_2"]
+position = Vector3(-1.74358026e-17, 0.159999996, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10906
+metadata/unity_name = "hair_2_end"
+
+[node name="hair_3" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(-3.90982765e-17, 0.329503268, 0.0144775324)
+quaternion = Quaternion(0.144557416, 1.31738455e-17, -4.13852324e-17, 0.98949641)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15497
+metadata/unity_name = "hair_3"
+
+[node name="hair_3_end" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/spine/chest/neck/head/hair_3"]
+position = Vector3(-2.01369378e-17, 0.166773409, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6024
+metadata/unity_name = "hair_3_end"
+
+[node name="hair_4" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(-3.10107596e-17, 0.305173129, -0.131397575)
+quaternion = Quaternion(-9.47907477e-16, -0.998416662, 0.0562514514, 5.3405735e-17)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24791
+metadata/unity_name = "hair_4"
+
+[node name="hair_4_end" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/spine/chest/neck/head/hair_4"]
+position = Vector3(4.69465736e-18, 0.159322307, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4807
+metadata/unity_name = "hair_4_end"
+
+[node name="hair_5" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(-2.15007171e-17, 0.236463726, -0.172204241)
+quaternion = Quaternion(0.000702532183, -0.675426185, 0.737426937, 0.00071628968)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26674
+metadata/unity_name = "hair_5"
+
+[node name="hair_5_end" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/spine/chest/neck/head/hair_5"]
+position = Vector3(-1.06404469e-15, 0.120613389, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26975
+metadata/unity_name = "hair_5_end"
+
+[node name="head_end" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(-3.2238299e-17, 0.275352061, 7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15601
+metadata/unity_name = "head_end"
+
+[node name="NeckShackle" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/spine/chest"]
+position = Vector3(7.09550431e-33, 0.434682727, 0.006734455)
+quaternion = Quaternion(-0.200920865, 0, -0, 0.979607463)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23701
+metadata/unity_name = "NeckShackle"
+
+[node name="shoulder_L" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/spine/chest"]
+position = Vector3(-0.0799999982, 0.297402084, 0.00999999978)
+quaternion = Quaternion(-0.576405168, 0.409581631, -0.576405168, -0.409581631)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4988
+metadata/unity_name = "shoulder_L"
+
+[node name="upper_arm_L" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/spine/chest/shoulder_L"]
+position = Vector3(1.59872109e-16, 0.511934996, -2.55795374e-15)
+quaternion = Quaternion(-0.14214018, 8.92757779e-09, -6.21705425e-08, 0.989846528)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14742
+metadata/unity_name = "upper_arm_L"
+
+[node name="lower_arm_L" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L"]
+position = Vector3(0.000814593164, 0.730899572, -2.8854347e-06)
+quaternion = Quaternion(4.61870125e-17, 1.73472348e-18, 5.55111512e-17, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24179
+metadata/unity_name = "lower_arm_L"
+
+[node name="hand_L" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L"]
+position = Vector3(-0.00081457285, 0.4997679, 5.87614659e-06)
+quaternion = Quaternion(7.41594286e-17, -4.81385765e-17, -1.66533454e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23575
+metadata/unity_name = "hand_L"
+
+[node name="hand_L_end" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L"]
+position = Vector3(3.93428472e-08, 0.426360816, 1.51011375e-06)
+quaternion = Quaternion(7.74391402e-17, 8.75493254e-18, -1.66533454e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27156
+metadata/unity_name = "hand_L_end"
+
+[node name="shoulder_R" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/spine/chest"]
+position = Vector3(0.0799999982, 0.297406167, 0.0100000044)
+quaternion = Quaternion(-0.576408088, -0.409577489, 0.576408088, -0.409577489)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12654
+metadata/unity_name = "shoulder_R"
+
+[node name="upper_arm_R" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/spine/chest/shoulder_R"]
+position = Vector3(-8.881784e-18, 0.511937976, 8.52651264e-16)
+quaternion = Quaternion(-0.14214994, -9.72496039e-09, 6.77186662e-08, 0.989845157)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5376
+metadata/unity_name = "upper_arm_R"
+
+[node name="lower_arm_R" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R"]
+position = Vector3(-0.000814606086, 0.730899036, -2.78550078e-06)
+quaternion = Quaternion(5.76411958e-06, 1.98217961e-13, 3.43879947e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5338
+metadata/unity_name = "lower_arm_R"
+
+[node name="hand_R" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R"]
+position = Vector3(0.000814601779, 0.4997679, 2.78002494e-06)
+quaternion = Quaternion(4.33680869e-19, 4.33680869e-19, 1.66536842e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9779
+metadata/unity_name = "hand_R"
+
+[node name="hand_R_end" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R"]
+position = Vector3(-1.46964929e-08, 0.426360816, -1.12913494e-06)
+quaternion = Quaternion(-2.71050543e-20, 8.13151629e-20, 5.55111578e-17, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25798
+metadata/unity_name = "hand_R_end"
+
+[node name="VFX_Cenk_SkillAttack_02" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/spine"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16367
+metadata/unity_name = "VFX_Cenk_SkillAttack_02"
+
+[node name="root" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/spine/VFX_Cenk_SkillAttack_02"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, -9.31322464e-10, 5.52972723e-10, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5697
+metadata/unity_name = "root"
+
+[node name="Blood_01" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/spine/VFX_Cenk_SkillAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19614
+metadata/unity_name = "Blood_01"
+
+[node name="Glow_01" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/spine/VFX_Cenk_SkillAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27053
+metadata/unity_name = "Glow_01"
+
+[node name="CandleGlow_01" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/spine/VFX_Cenk_SkillAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26938
+metadata/unity_name = "CandleGlow_01"
+
+[node name="Dust_01" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/spine/VFX_Cenk_SkillAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14355
+metadata/unity_name = "Dust_01"
+
+[node name="Ribbon_01" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/spine/VFX_Cenk_SkillAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8504
+metadata/unity_name = "Ribbon_01"
+
+[node name="Ribbon_02" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/spine/VFX_Cenk_SkillAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21781
+metadata/unity_name = "Ribbon_02"
+
+[node name="upper_leg_L" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips"]
+position = Vector3(-0.339256138, -0.103351951, -0.0310664549)
+quaternion = Quaternion(8.60422844e-16, 3.10818251e-08, 1, 2.65167426e-08)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13379
+metadata/unity_name = "upper_leg_L"
+
+[node name="lower_leg_L" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/upper_leg_L"]
+position = Vector3(1.16940328e-06, 0.579993963, -8.96794081e-05)
+quaternion = Quaternion(4.16333634e-16, 5.55111512e-17, 2.77555756e-17, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15918
+metadata/unity_name = "lower_leg_L"
+
+[node name="foot_L" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/upper_leg_L/lower_leg_L"]
+position = Vector3(-1.37033442e-06, 0.475723296, 8.96698111e-05)
+quaternion = Quaternion(-0.568063021, -2.93509412e-08, 4.24534115e-08, 0.822985053)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6629
+metadata/unity_name = "foot_L"
+
+[node name="toes_L" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/upper_leg_L/lower_leg_L/foot_L"]
+position = Vector3(-7.1054272e-17, 0.304789126, -3.5527136e-17)
+quaternion = Quaternion(-0.102503382, 2.75849636e-08, 2.66299089e-08, 0.994732678)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23425
+metadata/unity_name = "toes_L"
+
+[node name="toes_L_end" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/upper_leg_L/lower_leg_L/foot_L/toes_L"]
+position = Vector3(-4.13033074e-09, 0.273550361, -5.3290704e-17)
+quaternion = Quaternion(-8.32667268e-17, 1.11022302e-16, 1.11022302e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24930
+metadata/unity_name = "toes_L_end"
+
+[node name="upper_leg_R" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips"]
+position = Vector3(0.339255989, -0.103348203, -0.0310664997)
+quaternion = Quaternion(-9.81802242e-16, -1, -4.01226039e-08, -2.68634484e-08)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14636
+metadata/unity_name = "upper_leg_R"
+
+[node name="lower_leg_R" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/upper_leg_R"]
+position = Vector3(-1.34724951e-06, -0.579997718, 8.95528137e-05)
+quaternion = Quaternion(-4.31046702e-16, -1.38777878e-16, -2.77555855e-17, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24498
+metadata/unity_name = "lower_leg_R"
+
+[node name="foot_R" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/upper_leg_R/lower_leg_R"]
+position = Vector3(1.34456866e-06, -0.475723296, -8.9810208e-05)
+quaternion = Quaternion(0.822985172, 3.53391414e-08, -8.2007956e-09, 0.568062842)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21033
+metadata/unity_name = "foot_R"
+
+[node name="toes_R" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/upper_leg_R/lower_leg_R/foot_R"]
+position = Vector3(6.39488435e-16, 0.304789454, 1.77635673e-16)
+quaternion = Quaternion(-0.102503434, -2.64115574e-08, -2.03742303e-08, 0.994732678)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13865
+metadata/unity_name = "toes_R"
+
+[node name="toes_R_end" type="Node3D" parent="Cenk/Cenk_Model/Armature/hips/upper_leg_R/lower_leg_R/foot_R/toes_R"]
+position = Vector3(-2.99671332e-09, 0.273549944, -1.77635673e-16)
+quaternion = Quaternion(2.77555756e-17, -1.94289029e-16, -2.77555756e-17, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10934
+metadata/unity_name = "toes_R_end"
+
+[node name="weapon_Heart" type="Node3D" parent="Cenk/Cenk_Model/Armature"]
+position = Vector3(-0, 0.358594835, -0)
+quaternion = Quaternion(-0.707106829, 0.707106829, -8.56922e-09, -8.45821724e-09)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26175
+metadata/unity_name = "weapon_Heart"
+
+[node name="VFX_Cenk_SkilLAttack_01" type="Node3D" parent="Cenk/Cenk_Model/Armature/weapon_Heart"]
+position = Vector3(0.280000001, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17247
+metadata/unity_name = "VFX_Cenk_SkilLAttack_01"
+
+[node name="root" type="Node3D" parent="Cenk/Cenk_Model/Armature/weapon_Heart/VFX_Cenk_SkilLAttack_01"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25296
+metadata/unity_name = "root"
+
+[node name="Glow_01" type="Node3D" parent="Cenk/Cenk_Model/Armature/weapon_Heart/VFX_Cenk_SkilLAttack_01/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9200
+metadata/unity_name = "Glow_01"
+
+[node name="Blood_01" type="Node3D" parent="Cenk/Cenk_Model/Armature/weapon_Heart/VFX_Cenk_SkilLAttack_01/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, 5.03157899e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6644
+metadata/unity_name = "Blood_01"
+
+[node name="Blood_02" type="Node3D" parent="Cenk/Cenk_Model/Armature/weapon_Heart/VFX_Cenk_SkilLAttack_01/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, 5.03157899e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11545
+metadata/unity_name = "Blood_02"
+
+[node name="VFX_Cenk_SkilAttack_Aura_Heart" type="Node3D" parent="Cenk/Cenk_Model/Armature/weapon_Heart"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15255
+metadata/unity_name = "VFX_Cenk_SkilAttack_Aura_Heart"
+visible = false
+process_mode = 4
+
+[node name="root" type="Node3D" parent="Cenk/Cenk_Model/Armature/weapon_Heart/VFX_Cenk_SkilAttack_Aura_Heart"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19441
+metadata/unity_name = "root"
+
+[node name="Trail" type="Node3D" parent="Cenk/Cenk_Model/Armature/weapon_Heart/VFX_Cenk_SkilAttack_Aura_Heart/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24751
+metadata/unity_name = "Trail"
+
+[node name="Fresnel" type="Node3D" parent="Cenk/Cenk_Model/Armature/weapon_Heart/VFX_Cenk_SkilAttack_Aura_Heart/root"]
+position = Vector3(0.352999985, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11819
+metadata/unity_name = "Fresnel"
+
+[node name="weapon_Sword" type="Node3D" parent="Cenk/Cenk_Model/Armature"]
+position = Vector3(-0, 0.429999977, -0)
+quaternion = Quaternion(-0.487353355, 0.512334585, 0.487353355, 0.512334585)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13181
+metadata/unity_name = "weapon_Sword"
+
+[node name="Body_GEO" type="Node3D" parent="Cenk/Cenk_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4888
+metadata/unity_name = "Body_GEO"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Cenk/Cenk_Model/Body_GEO"]
+mesh = ExtResource("1")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="Weapon_GEO" type="Node3D" parent="Cenk/Cenk_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19558
+metadata/unity_name = "Weapon_GEO"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Cenk/Cenk_Model/Weapon_GEO"]
+mesh = ExtResource("3")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="Magica Cloth (hair)" type="Node3D" parent="Cenk/Cenk_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20052
+metadata/unity_name = "Magica Cloth (hair)"
+
+[node name="OverheadSlot" type="Node3D" parent="Cenk"]
+position = Vector3(0, 3.5, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19689
+metadata/unity_name = "OverheadSlot"
+
+[node name="VFXParent" type="Node3D" parent="Cenk"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26197
+metadata/unity_name = "VFXParent"
+
+[node name="VFX_Cenk_BasicAttack_01" type="Node3D" parent="Cenk/VFXParent"]
+position = Vector3(0.0799999982, 1.74000001, -0.0700000003)
+quaternion = Quaternion(-0.283171833, 0.24642244, 0.92685765, -0.00495522423)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11755
+metadata/unity_name = "VFX_Cenk_BasicAttack_01"
+
+[node name="root" type="Node3D" parent="Cenk/VFXParent/VFX_Cenk_BasicAttack_01"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23055
+metadata/unity_name = "root"
+
+[node name="Slash_01" type="Node3D" parent="Cenk/VFXParent/VFX_Cenk_BasicAttack_01/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21358
+metadata/unity_name = "Slash_01"
+
+[node name="Slash_03_Wind" type="Node3D" parent="Cenk/VFXParent/VFX_Cenk_BasicAttack_01/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17579
+metadata/unity_name = "Slash_03_Wind"
+
+[node name="VFX_Cenk_SkillAttack_03" type="Node3D" parent="Cenk/VFXParent"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17932
+metadata/unity_name = "VFX_Cenk_SkillAttack_03"
+
+[node name="root" type="Node3D" parent="Cenk/VFXParent/VFX_Cenk_SkillAttack_03"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, -9.31322464e-10, 5.52972723e-10, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16710
+metadata/unity_name = "root"
+
+[node name="Ring_01" type="Node3D" parent="Cenk/VFXParent/VFX_Cenk_SkillAttack_03/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20598
+metadata/unity_name = "Ring_01"
+
+[node name="Glow_01" type="Node3D" parent="Cenk/VFXParent/VFX_Cenk_SkillAttack_03/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23125
+metadata/unity_name = "Glow_01"
+
+[node name="Glow_02" type="Node3D" parent="Cenk/VFXParent/VFX_Cenk_SkillAttack_03/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11179
+metadata/unity_name = "Glow_02"
+
+[node name="Gradient_01" type="Node3D" parent="Cenk/VFXParent/VFX_Cenk_SkillAttack_03/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13899
+metadata/unity_name = "Gradient_01"
+
+[node name="Impact_01" type="Node3D" parent="Cenk/VFXParent/VFX_Cenk_SkillAttack_03/root"]
+position = Vector3(0, 0.649999976, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20733
+metadata/unity_name = "Impact_01"
+
+[node name="Pillar_01" type="Node3D" parent="Cenk/VFXParent/VFX_Cenk_SkillAttack_03/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(1, 0, -0, 0)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8501
+metadata/unity_name = "Pillar_01"
+
+[node name="Flash_01" type="Node3D" parent="Cenk/VFXParent/VFX_Cenk_SkillAttack_03/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26006
+metadata/unity_name = "Flash_01"
+
+[node name="Impact_01_13202" type="Node3D" parent="Cenk/VFXParent/VFX_Cenk_SkillAttack_03/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13202
+metadata/unity_name = "Impact_01"
+
+[node name="Impact_02" type="Node3D" parent="Cenk/VFXParent/VFX_Cenk_SkillAttack_03/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13009
+metadata/unity_name = "Impact_02"
+
+[node name="Crack_00" type="Node3D" parent="Cenk/VFXParent/VFX_Cenk_SkillAttack_03/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5700
+metadata/unity_name = "Crack_00"
+
+[node name="Pillar_02" type="Node3D" parent="Cenk/VFXParent/VFX_Cenk_SkillAttack_03/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21583
+metadata/unity_name = "Pillar_02"
+
+[node name="VFX_Cenk_BasicAttack_02" type="Node3D" parent="Cenk/VFXParent"]
+position = Vector3(-0.519999981, 1.62, -0.629999995)
+quaternion = Quaternion(-0.151346207, 0.0639715791, 0.760890126, 0.627732635)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22294
+metadata/unity_name = "VFX_Cenk_BasicAttack_02"
+visible = false
+process_mode = 4
+
+[node name="root" type="Node3D" parent="Cenk/VFXParent/VFX_Cenk_BasicAttack_02"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12492
+metadata/unity_name = "root"
+
+[node name="Slash_01" type="Node3D" parent="Cenk/VFXParent/VFX_Cenk_BasicAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9478
+metadata/unity_name = "Slash_01"
+
+[node name="Slash_03_Wind" type="Node3D" parent="Cenk/VFXParent/VFX_Cenk_BasicAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6949
+metadata/unity_name = "Slash_03_Wind"
+
+[node name="VFX_Cenk_SkillAttack_Aura" type="Node3D" parent="Cenk/VFXParent"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18645
+metadata/unity_name = "VFX_Cenk_SkillAttack_Aura"
+
+[node name="root" type="Node3D" parent="Cenk/VFXParent/VFX_Cenk_SkillAttack_Aura"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14153
+metadata/unity_name = "root"
+
+[node name="Smoke" type="Node3D" parent="Cenk/VFXParent/VFX_Cenk_SkillAttack_Aura/root"]
+position = Vector3(0, 1.5, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16912
+metadata/unity_name = "Smoke"
+
+[node name="VFX_Cenk_SkillAttack_Aura_L" type="Node3D" parent="Cenk/VFXParent"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12361
+metadata/unity_name = "VFX_Cenk_SkillAttack_Aura_L"
+
+[node name="root" type="Node3D" parent="Cenk/VFXParent/VFX_Cenk_SkillAttack_Aura_L"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19468
+metadata/unity_name = "root"
+
+[node name="Glow_01" type="Node3D" parent="Cenk/VFXParent/VFX_Cenk_SkillAttack_Aura_L/root"]
+position = Vector3(0, -0.5, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17757
+metadata/unity_name = "Glow_01"
+
+[node name="Rainbow" type="Node3D" parent="Cenk/VFXParent/VFX_Cenk_SkillAttack_Aura_L/root"]
+position = Vector3(0, 2, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14836
+metadata/unity_name = "Rainbow"
+
+[node name="Glow_02" type="Node3D" parent="Cenk/VFXParent/VFX_Cenk_SkillAttack_Aura_L/root"]
+position = Vector3(0, 1.60000002, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12795
+metadata/unity_name = "Glow_02"
+
+[node name="Glow_03" type="Node3D" parent="Cenk/VFXParent/VFX_Cenk_SkillAttack_Aura_L/root"]
+position = Vector3(0, 0.100000001, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26145
+metadata/unity_name = "Glow_03"
+
+[node name="VFX_Cenk_SkillAttack_Aura_M" type="Node3D" parent="Cenk/VFXParent"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22790
+metadata/unity_name = "VFX_Cenk_SkillAttack_Aura_M"
+
+[node name="root" type="Node3D" parent="Cenk/VFXParent/VFX_Cenk_SkillAttack_Aura_M"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5199
+metadata/unity_name = "root"
+
+[node name="Dots" type="Node3D" parent="Cenk/VFXParent/VFX_Cenk_SkillAttack_Aura_M/root"]
+position = Vector3(0, 1.5, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19958
+metadata/unity_name = "Dots"
+
+[node name="Fleks" type="Node3D" parent="Cenk/VFXParent/VFX_Cenk_SkillAttack_Aura_M/root"]
+position = Vector3(0, 1, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14292
+metadata/unity_name = "Fleks"
+
+[node name="Aura" type="Node3D" parent="Cenk/VFXParent/VFX_Cenk_SkillAttack_Aura_M/root"]
+position = Vector3(0, 1.60000002, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13134
+metadata/unity_name = "Aura"
+
+[node name="CameraShake_low" type="Node3D" parent="Cenk/VFXParent"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10112
+metadata/unity_name = "CameraShake_low"

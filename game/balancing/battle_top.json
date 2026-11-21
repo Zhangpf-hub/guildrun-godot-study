@@ -1,0 +1,27 @@
+{
+  "icons": {
+    "fight": "res://sprites/sharedassets3_374.png",
+    "actBoss": "res://sprites/sharedassets3_576.png",
+    "miniBoss": "res://sprites/sharedassets3_575.png",
+    "event": "res://sprites/sharedassets3_495.png",
+    "fightEvent": "res://sprites/sharedassets3_566.png",
+    "mining": "res://sprites/sharedassets3_462.png",
+    "campfire": "res://sprites/sharedassets3_599.png"
+  },
+  "colors": {
+    "past": "5b5b5bff",
+    "current": "56b389ff",
+    "next": "f3edd8ff",
+    "future": "a1a091ff",
+    "bossNext": "b13434ff",
+    "bossFuture": "825b5dff",
+    "other": "d1cfb2ff"
+  },
+  "templates": {
+    "fight": "res://UI/battle_top_fight.tscn",
+    "large": "res://UI/battle_top_large.tscn",
+    "boss": "res://UI/battle_top_boss.tscn",
+    "connector": "res://UI/battle_top_connector.tscn",
+    "dots": "res://UI/battle_top_dots.tscn"
+  }
+}

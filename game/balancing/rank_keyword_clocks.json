@@ -1,0 +1,1018 @@
+{
+  "duration_modifiers": {
+    "49": [
+      {
+        "keyword": 1,
+        "shift_q16": 196608,
+        "reserve": false
+      },
+      {
+        "keyword": 1,
+        "shift_q16": 196608,
+        "reserve": true
+      }
+    ],
+    "92": [
+      {
+        "keyword": 2,
+        "shift_q16": -393216,
+        "reserve": false
+      },
+      {
+        "keyword": 2,
+        "shift_q16": -393216,
+        "reserve": true
+      }
+    ],
+    "141": [
+      {
+        "keyword": 2,
+        "shift_q16": -393216,
+        "reserve": false
+      },
+      {
+        "keyword": 2,
+        "shift_q16": -393216,
+        "reserve": true
+      }
+    ],
+    "188": [
+      {
+        "keyword": 1,
+        "shift_q16": 196608,
+        "reserve": false
+      },
+      {
+        "keyword": 1,
+        "shift_q16": 196608,
+        "reserve": true
+      }
+    ],
+    "228": [
+      {
+        "keyword": 1,
+        "shift_q16": 196608,
+        "reserve": false
+      },
+      {
+        "keyword": 1,
+        "shift_q16": 196608,
+        "reserve": true
+      }
+    ],
+    "273": [
+      {
+        "keyword": 2,
+        "shift_q16": -393216,
+        "reserve": false
+      },
+      {
+        "keyword": 2,
+        "shift_q16": -393216,
+        "reserve": true
+      }
+    ]
+  },
+  "clocks": {
+    "9": [
+      {
+        "effect": 0,
+        "keyword": 1,
+        "duration_q16": 655360,
+        "reserve": false,
+        "trigger": 1,
+        "target": 1,
+        "target_class": 0,
+        "action": {
+          "kind": "percent",
+          "stat": 11,
+          "value_q16": 32768
+        }
+      },
+      {
+        "effect": 1,
+        "keyword": 2,
+        "duration_q16": 1310720,
+        "reserve": false,
+        "trigger": 1
+      }
+    ],
+    "48": [
+      {
+        "effect": 0,
+        "keyword": 1,
+        "duration_q16": 655360,
+        "reserve": false,
+        "trigger": 1,
+        "target": 1,
+        "target_class": 0,
+        "action": {
+          "kind": "percent",
+          "stat": 11,
+          "value_q16": 65536
+        }
+      }
+    ],
+    "52": [
+      {
+        "effect": 0,
+        "keyword": 1,
+        "duration_q16": 524288,
+        "reserve": false,
+        "trigger": 30,
+        "target": 1,
+        "target_class": 0,
+        "action": {
+          "kind": "damage_shield",
+          "ratio_q16": 32768,
+          "duration_q16": 65470464
+        }
+      }
+    ],
+    "54": [
+      {
+        "effect": 0,
+        "keyword": 1,
+        "duration_q16": 524288,
+        "reserve": false,
+        "trigger": 2,
+        "target": 1,
+        "target_class": 0,
+        "action": {
+          "kind": "percent",
+          "stat": 6,
+          "value_q16": 65536
+        }
+      }
+    ],
+    "91": [
+      {
+        "effect": 0,
+        "keyword": 2,
+        "duration_q16": 1966080,
+        "reserve": false,
+        "trigger": 1
+      }
+    ],
+    "95": [
+      {
+        "effect": 0,
+        "keyword": 2,
+        "duration_q16": 655360,
+        "reserve": false,
+        "trigger": 1
+      },
+      {
+        "effect": 1,
+        "keyword": 2,
+        "duration_q16": 1310720,
+        "reserve": false,
+        "trigger": 1
+      },
+      {
+        "effect": 2,
+        "keyword": 2,
+        "duration_q16": 1966080,
+        "reserve": false,
+        "trigger": 1
+      },
+      {
+        "effect": 3,
+        "keyword": 2,
+        "duration_q16": 2621440,
+        "reserve": false,
+        "trigger": 1
+      },
+      {
+        "effect": 4,
+        "keyword": 2,
+        "duration_q16": 3276800,
+        "reserve": false,
+        "trigger": 1
+      }
+    ],
+    "140": [
+      {
+        "effect": 0,
+        "keyword": 2,
+        "duration_q16": 1966080,
+        "reserve": false,
+        "trigger": 1
+      }
+    ],
+    "187": [
+      {
+        "effect": 0,
+        "keyword": 1,
+        "duration_q16": 786432,
+        "reserve": false,
+        "trigger": 1,
+        "target": 1,
+        "target_class": 0,
+        "action": {
+          "kind": "percent",
+          "stat": 1,
+          "value_q16": 65536
+        }
+      }
+    ],
+    "234": [
+      {
+        "effect": 0,
+        "keyword": 1,
+        "duration_q16": 655360,
+        "reserve": false,
+        "trigger": 1,
+        "target": 1,
+        "target_class": 0,
+        "action": {
+          "kind": "percent",
+          "stat": 11,
+          "value_q16": 65536
+        }
+      }
+    ],
+    "237": [
+      {
+        "effect": 0,
+        "keyword": 1,
+        "duration_q16": 655360,
+        "reserve": false,
+        "trigger": 1,
+        "target": 5,
+        "target_class": 4,
+        "action": {
+          "kind": "wallet_stat",
+          "stat": 11,
+          "value_q16": 65536,
+          "interval_q16": 65536
+        }
+      },
+      {
+        "effect": 1,
+        "keyword": 1,
+        "duration_q16": 655360,
+        "reserve": true,
+        "trigger": 1,
+        "target": 5,
+        "target_class": 4,
+        "action": {
+          "kind": "wallet_stat",
+          "stat": 11,
+          "value_q16": 65536,
+          "interval_q16": 65536
+        }
+      }
+    ],
+    "278": [
+      {
+        "effect": 0,
+        "keyword": 2,
+        "duration_q16": 1310720,
+        "reserve": false,
+        "trigger": 1
+      }
+    ],
+    "282": [
+      {
+        "effect": 0,
+        "keyword": 2,
+        "duration_q16": 1310720,
+        "reserve": false,
+        "trigger": 1
+      }
+    ],
+    "283": [
+      {
+        "effect": 0,
+        "keyword": 2,
+        "duration_q16": 1638400,
+        "reserve": false,
+        "trigger": 1
+      }
+    ],
+    "284": [
+      {
+        "effect": 0,
+        "keyword": 2,
+        "duration_q16": 983040,
+        "reserve": false,
+        "trigger": 1
+      },
+      {
+        "effect": 1,
+        "keyword": 2,
+        "duration_q16": 1966080,
+        "reserve": false,
+        "trigger": 1
+      },
+      {
+        "effect": 2,
+        "keyword": 2,
+        "duration_q16": 2949120,
+        "reserve": false,
+        "trigger": 1
+      }
+    ]
+  },
+  "sources": {
+    "ability": {
+      "22": [
+        {
+          "keyword": 2,
+          "duration_q16": 983040,
+          "reserve": false
+        }
+      ]
+    },
+    "passive": {
+      "10101": [
+        {
+          "keyword": 2,
+          "duration_q16": 983040,
+          "reserve": false
+        }
+      ],
+      "10102": [
+        {
+          "keyword": 2,
+          "duration_q16": 655360,
+          "reserve": false
+        },
+        {
+          "keyword": 2,
+          "duration_q16": 655360,
+          "reserve": true
+        }
+      ],
+      "10301": [
+        {
+          "keyword": 1,
+          "duration_q16": 524288,
+          "reserve": false
+        },
+        {
+          "keyword": 1,
+          "duration_q16": 524288,
+          "reserve": true
+        }
+      ],
+      "10503": [
+        {
+          "keyword": 1,
+          "duration_q16": 655360,
+          "reserve": false
+        },
+        {
+          "keyword": 2,
+          "duration_q16": 1310720,
+          "reserve": false
+        }
+      ],
+      "10601": [
+        {
+          "keyword": 2,
+          "duration_q16": 1310720,
+          "reserve": false
+        },
+        {
+          "keyword": 2,
+          "duration_q16": 2621440,
+          "reserve": false
+        },
+        {
+          "keyword": 2,
+          "duration_q16": 3932160,
+          "reserve": false
+        }
+      ],
+      "10702": [
+        {
+          "keyword": 1,
+          "duration_q16": 327680,
+          "reserve": false
+        }
+      ],
+      "10703": [
+        {
+          "keyword": 2,
+          "duration_q16": 655360,
+          "reserve": false
+        },
+        {
+          "keyword": 2,
+          "duration_q16": 1310720,
+          "reserve": false
+        },
+        {
+          "keyword": 2,
+          "duration_q16": 1966080,
+          "reserve": false
+        }
+      ],
+      "10801": [
+        {
+          "keyword": 2,
+          "duration_q16": 983040,
+          "reserve": false
+        }
+      ],
+      "10802": [
+        {
+          "keyword": 2,
+          "duration_q16": 655360,
+          "reserve": false
+        },
+        {
+          "keyword": 2,
+          "duration_q16": 1966080,
+          "reserve": false
+        },
+        {
+          "keyword": 2,
+          "duration_q16": 1966080,
+          "reserve": true
+        }
+      ],
+      "10803": [
+        {
+          "keyword": 2,
+          "duration_q16": 1310720,
+          "reserve": false
+        }
+      ],
+      "10901": [
+        {
+          "keyword": 1,
+          "duration_q16": 917504,
+          "reserve": false
+        }
+      ],
+      "10902": [
+        {
+          "keyword": 1,
+          "duration_q16": 983040,
+          "reserve": false
+        }
+      ],
+      "10903": [
+        {
+          "keyword": 1,
+          "duration_q16": 1310720,
+          "reserve": false
+        },
+        {
+          "keyword": 1,
+          "duration_q16": 1310720,
+          "reserve": true
+        }
+      ],
+      "101101": [
+        {
+          "keyword": 2,
+          "duration_q16": 655360,
+          "reserve": false
+        }
+      ],
+      "101201": [
+        {
+          "keyword": 2,
+          "duration_q16": 655360,
+          "reserve": false
+        }
+      ],
+      "101301": [
+        {
+          "keyword": 1,
+          "duration_q16": 786432,
+          "reserve": false
+        },
+        {
+          "keyword": 1,
+          "duration_q16": 786432,
+          "reserve": true
+        }
+      ],
+      "101402": [
+        {
+          "keyword": 2,
+          "duration_q16": 983040,
+          "reserve": false
+        }
+      ],
+      "101503": [
+        {
+          "keyword": 1,
+          "duration_q16": 655360,
+          "reserve": false
+        },
+        {
+          "keyword": 2,
+          "duration_q16": 1310720,
+          "reserve": false
+        },
+        {
+          "keyword": 1,
+          "duration_q16": 655360,
+          "reserve": true
+        },
+        {
+          "keyword": 2,
+          "duration_q16": 1310720,
+          "reserve": true
+        }
+      ],
+      "101602": [
+        {
+          "keyword": 2,
+          "duration_q16": 1638400,
+          "reserve": false
+        },
+        {
+          "keyword": 2,
+          "duration_q16": 3276800,
+          "reserve": false
+        }
+      ],
+      "101801": [
+        {
+          "keyword": 1,
+          "duration_q16": 655360,
+          "reserve": false
+        }
+      ],
+      "102001": [
+        {
+          "keyword": 2,
+          "duration_q16": 983040,
+          "reserve": false
+        }
+      ],
+      "102101": [
+        {
+          "keyword": 1,
+          "duration_q16": 465306,
+          "reserve": false
+        }
+      ],
+      "102102": [
+        {
+          "keyword": 1,
+          "duration_q16": 983040,
+          "reserve": false
+        },
+        {
+          "keyword": 1,
+          "duration_q16": 983040,
+          "reserve": true
+        }
+      ],
+      "102103": [
+        {
+          "keyword": 1,
+          "duration_q16": 65536,
+          "reserve": false
+        }
+      ],
+      "102202": [
+        {
+          "keyword": 2,
+          "duration_q16": 983040,
+          "reserve": false
+        },
+        {
+          "keyword": 2,
+          "duration_q16": 983040,
+          "reserve": true
+        }
+      ],
+      "102403": [
+        {
+          "keyword": 1,
+          "duration_q16": 524288,
+          "reserve": false
+        },
+        {
+          "keyword": 1,
+          "duration_q16": 524288,
+          "reserve": true
+        }
+      ],
+      "102602": [
+        {
+          "keyword": 2,
+          "duration_q16": 983040,
+          "reserve": false
+        }
+      ],
+      "102603": [
+        {
+          "keyword": 1,
+          "duration_q16": 393216,
+          "reserve": false
+        }
+      ],
+      "102701": [
+        {
+          "keyword": 2,
+          "duration_q16": 655360,
+          "reserve": false
+        },
+        {
+          "keyword": 2,
+          "duration_q16": 1310720,
+          "reserve": true
+        },
+        {
+          "keyword": 2,
+          "duration_q16": 2621440,
+          "reserve": true
+        }
+      ],
+      "102702": [
+        {
+          "keyword": 2,
+          "duration_q16": 983040,
+          "reserve": false
+        }
+      ]
+    },
+    "item": {
+      "725": [
+        {
+          "keyword": 2,
+          "duration_q16": 2621440,
+          "reserve": false
+        }
+      ],
+      "728": [
+        {
+          "keyword": 1,
+          "duration_q16": 458752,
+          "reserve": false
+        }
+      ],
+      "609": [
+        {
+          "keyword": 2,
+          "duration_q16": 1966080,
+          "reserve": false
+        }
+      ],
+      "622": [
+        {
+          "keyword": 2,
+          "duration_q16": 1310720,
+          "reserve": false
+        }
+      ],
+      "624": [
+        {
+          "keyword": 2,
+          "duration_q16": 1310720,
+          "reserve": false
+        }
+      ],
+      "627": [
+        {
+          "keyword": 1,
+          "duration_q16": 524288,
+          "reserve": false
+        }
+      ]
+    },
+    "relic": {
+      "1007": [
+        {
+          "keyword": 2,
+          "duration_q16": 655360,
+          "reserve": false
+        },
+        {
+          "keyword": 2,
+          "duration_q16": 1310720,
+          "reserve": false
+        }
+      ],
+      "1009": [
+        {
+          "keyword": 1,
+          "duration_q16": 655360,
+          "reserve": false
+        }
+      ],
+      "1011": [
+        {
+          "keyword": 2,
+          "duration_q16": 1310720,
+          "reserve": false
+        }
+      ],
+      "1012": [
+        {
+          "keyword": 1,
+          "duration_q16": 655360,
+          "reserve": false
+        }
+      ],
+      "3001": [
+        {
+          "keyword": 1,
+          "duration_q16": 524288,
+          "reserve": false
+        }
+      ],
+      "3003": [
+        {
+          "keyword": 2,
+          "duration_q16": 1310720,
+          "reserve": false
+        }
+      ],
+      "3005": [
+        {
+          "keyword": 1,
+          "duration_q16": 524288,
+          "reserve": false
+        }
+      ],
+      "3007": [
+        {
+          "keyword": 1,
+          "duration_q16": 655360,
+          "reserve": false
+        }
+      ],
+      "3009": [
+        {
+          "keyword": 2,
+          "duration_q16": 655360,
+          "reserve": false
+        }
+      ],
+      "3010": [
+        {
+          "keyword": 1,
+          "duration_q16": 655360,
+          "reserve": false
+        }
+      ],
+      "3012": [
+        {
+          "keyword": 2,
+          "duration_q16": 983040,
+          "reserve": false
+        }
+      ],
+      "3021": [
+        {
+          "keyword": 2,
+          "duration_q16": 1638400,
+          "reserve": false
+        },
+        {
+          "keyword": 2,
+          "duration_q16": 3276800,
+          "reserve": false
+        },
+        {
+          "keyword": 2,
+          "duration_q16": 4915200,
+          "reserve": false
+        }
+      ],
+      "3022": [
+        {
+          "keyword": 2,
+          "duration_q16": 983040,
+          "reserve": false
+        },
+        {
+          "keyword": 2,
+          "duration_q16": 1966080,
+          "reserve": false
+        },
+        {
+          "keyword": 2,
+          "duration_q16": 2949120,
+          "reserve": false
+        }
+      ],
+      "3023": [
+        {
+          "keyword": 2,
+          "duration_q16": 983040,
+          "reserve": false
+        },
+        {
+          "keyword": 2,
+          "duration_q16": 1966080,
+          "reserve": false
+        },
+        {
+          "keyword": 2,
+          "duration_q16": 2949120,
+          "reserve": false
+        }
+      ],
+      "3024": [
+        {
+          "keyword": 2,
+          "duration_q16": 1966080,
+          "reserve": false
+        },
+        {
+          "keyword": 2,
+          "duration_q16": 3932160,
+          "reserve": false
+        }
+      ],
+      "3026": [
+        {
+          "keyword": 1,
+          "duration_q16": 131072,
+          "reserve": false
+        }
+      ],
+      "3029": [
+        {
+          "keyword": 1,
+          "duration_q16": 1310720,
+          "reserve": false
+        }
+      ],
+      "3030": [
+        {
+          "keyword": 1,
+          "duration_q16": 786432,
+          "reserve": false
+        }
+      ],
+      "3036": [
+        {
+          "keyword": 2,
+          "duration_q16": 1310720,
+          "reserve": false
+        }
+      ],
+      "4023": [
+        {
+          "keyword": 2,
+          "duration_q16": 2949120,
+          "reserve": false
+        }
+      ],
+      "4024": [
+        {
+          "keyword": 2,
+          "duration_q16": 5898240,
+          "reserve": false
+        }
+      ],
+      "4025": [
+        {
+          "keyword": 1,
+          "duration_q16": 524288,
+          "reserve": false
+        }
+      ],
+      "4026": [
+        {
+          "keyword": 1,
+          "duration_q16": 65536,
+          "reserve": false
+        }
+      ],
+      "4035": [
+        {
+          "keyword": 2,
+          "duration_q16": 1310720,
+          "reserve": false
+        },
+        {
+          "keyword": 2,
+          "duration_q16": 2621440,
+          "reserve": false
+        }
+      ],
+      "2025": [
+        {
+          "keyword": 1,
+          "duration_q16": 655360,
+          "reserve": false
+        }
+      ],
+      "2028": [
+        {
+          "keyword": 2,
+          "duration_q16": 1966080,
+          "reserve": false
+        }
+      ],
+      "2031": [
+        {
+          "keyword": 2,
+          "duration_q16": 983040,
+          "reserve": false
+        }
+      ],
+      "2034": [
+        {
+          "keyword": 2,
+          "duration_q16": 983040,
+          "reserve": false
+        },
+        {
+          "keyword": 2,
+          "duration_q16": 1966080,
+          "reserve": false
+        },
+        {
+          "keyword": 2,
+          "duration_q16": 2949120,
+          "reserve": false
+        }
+      ],
+      "2037": [
+        {
+          "keyword": 1,
+          "duration_q16": 983040,
+          "reserve": false
+        }
+      ],
+      "2039": [
+        {
+          "keyword": 2,
+          "duration_q16": 983040,
+          "reserve": false
+        }
+      ],
+      "2040": [
+        {
+          "keyword": 1,
+          "duration_q16": 786432,
+          "reserve": false
+        }
+      ],
+      "2043": [
+        {
+          "keyword": 2,
+          "duration_q16": 983040,
+          "reserve": false
+        }
+      ],
+      "2057": [
+        {
+          "keyword": 2,
+          "duration_q16": 983040,
+          "reserve": false
+        },
+        {
+          "keyword": 2,
+          "duration_q16": 1966080,
+          "reserve": false
+        }
+      ],
+      "511": [
+        {
+          "keyword": 1,
+          "duration_q16": 655360,
+          "reserve": false
+        }
+      ],
+      "521": [
+        {
+          "keyword": 2,
+          "duration_q16": 983040,
+          "reserve": false
+        }
+      ],
+      "538": [
+        {
+          "keyword": 1,
+          "duration_q16": 655360,
+          "reserve": false
+        }
+      ],
+      "601": [
+        {
+          "keyword": 2,
+          "duration_q16": 983040,
+          "reserve": false
+        }
+      ],
+      "604": [
+        {
+          "keyword": 2,
+          "duration_q16": 983040,
+          "reserve": false
+        },
+        {
+          "keyword": 2,
+          "duration_q16": 1966080,
+          "reserve": false
+        }
+      ]
+    }
+  }
+}

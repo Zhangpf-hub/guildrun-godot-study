@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3]
+[ext_resource type="Texture2D" path="res://textures/sharedassets10_24.png" id="1"]
+
+[resource]
+resource_name = "RuinsForest_Mat_Crystal_02_BossRoom_Shine"
+albedo_texture = ExtResource("1")
+transparency = 1
+cull_mode = 2
+albedo_color = Color(0.749019682, 0.590942204, 0.293248266, 0)
+metadata/unity_shader = "Shader Graphs/VFXTrail_SG"

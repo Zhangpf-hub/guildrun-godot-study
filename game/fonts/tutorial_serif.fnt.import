@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://cutu5n1qx0t8y"
+path="res://.godot/imported/tutorial_serif.fnt-e2f062ae788f20a078754516901c20c2.fontdata"
+
+[deps]
+
+source_file="res://fonts/tutorial_serif.fnt"
+dest_files=["res://.godot/imported/tutorial_serif.fnt-e2f062ae788f20a078754516901c20c2.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2

@@ -1,0 +1,22 @@
+{
+  "id": 53,
+  "paths": [
+    [
+      [
+        601,
+        1
+      ]
+    ]
+  ],
+  "events": {
+    "601": {
+      "kind": "choice",
+      "icon": "",
+      "art": "res://sprites/sharedassets1_4199.png"
+    }
+  },
+  "pools": {
+    "max_rank": 2,
+    "rested": 5106
+  }
+}

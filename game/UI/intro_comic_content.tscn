@@ -1,0 +1,1393 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://UI/sliced_image.gd" id="SlicedImage"]
+[ext_resource type="Texture2D" path="res://sprites/resources_944.png" id="1"]
+[ext_resource type="Texture2D" path="res://sprites/resources_914.png" id="2"]
+[ext_resource type="Texture2D" path="res://sprites/resources_956.png" id="3"]
+[ext_resource type="Texture2D" path="res://sprites/resources_1001.png" id="4"]
+[ext_resource type="Texture2D" path="res://sprites/resources_993.png" id="5"]
+[ext_resource type="Texture2D" path="res://sprites/resources_992.png" id="6"]
+[ext_resource type="Texture2D" path="res://sprites/resources_987.png" id="7"]
+[ext_resource type="Texture2D" path="res://sprites/resources_902.png" id="8"]
+[ext_resource type="Texture2D" path="res://sprites/resources_1000.png" id="9"]
+[ext_resource type="Texture2D" path="res://sprites/resources_875.png" id="10"]
+[ext_resource type="Texture2D" path="res://sprites/resources_973.png" id="11"]
+[ext_resource type="Texture2D" path="res://sprites/resources_911.png" id="12"]
+[ext_resource type="Texture2D" path="res://sprites/resources_963.png" id="13"]
+[ext_resource type="Texture2D" path="res://sprites/resources_932.png" id="14"]
+[ext_resource type="Texture2D" path="res://sprites/resources_907.png" id="15"]
+[ext_resource type="Texture2D" path="res://sprites/resources_954.png" id="16"]
+[ext_resource type="Texture2D" path="res://sprites/resources_982.png" id="17"]
+[ext_resource type="Texture2D" path="res://sprites/resources_898.png" id="18"]
+[ext_resource type="Texture2D" path="res://sprites/resources_947.png" id="19"]
+[ext_resource type="Texture2D" path="res://sprites/resources_980.png" id="20"]
+[ext_resource type="Texture2D" path="res://sprites/resources_983.png" id="21"]
+[ext_resource type="Texture2D" path="res://sprites/resources_939.png" id="22"]
+[ext_resource type="Texture2D" path="res://sprites/resources_878.png" id="23"]
+[ext_resource type="Texture2D" path="res://sprites/resources_942.png" id="24"]
+[ext_resource type="Texture2D" path="res://sprites/resources_990.png" id="25"]
+[ext_resource type="Texture2D" path="res://sprites/resources_889.png" id="26"]
+[ext_resource type="Texture2D" path="res://sprites/resources_881.png" id="27"]
+[ext_resource type="Texture2D" path="res://sprites/resources_1018.png" id="28"]
+[ext_resource type="Texture2D" path="res://sprites/resources_929.png" id="29"]
+
+[node name="intro_comic_contentUI" type="Control"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="ComicIntro" type="Control" parent="."]
+mouse_filter = 2
+metadata/unity_id = 1714
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Reference" type="Control" parent="ComicIntro"]
+mouse_filter = 2
+metadata/unity_id = 1780
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -341.311523
+offset_right = 341.311523
+offset_top = -20
+offset_bottom = 20
+rotation = 0
+scale = Vector2(1.00007999, 1.00007999)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+
+[node name="UnityImage" type="TextureRect" parent="ComicIntro/Reference"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("1")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Background" type="Control" parent="ComicIntro"]
+mouse_filter = 2
+metadata/unity_id = 1655
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -20
+offset_right = 20
+offset_top = -20
+offset_bottom = 20
+rotation = 0
+scale = Vector2(1.00007999, 1.00007999)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="ColorRect" parent="ComicIntro/Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Panels" type="Control" parent="ComicIntro"]
+mouse_filter = 2
+metadata/unity_id = 1293
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -960
+offset_right = 960
+offset_top = 80
+offset_bottom = -80
+rotation = 0
+scale = Vector2(1.00007999, 1.00007999)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Panel_06" type="Control" parent="ComicIntro/Panels"]
+mouse_filter = 2
+metadata/unity_id = 1622
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 153
+offset_right = 959
+offset_top = -540
+offset_bottom = 540
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+modulate = Color(1, 1, 1, 0.0)
+
+[node name="Mask" type="Control" parent="ComicIntro/Panels/Panel_06"]
+mouse_filter = 2
+metadata/unity_id = 1448
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+modulate = Color(1, 1, 1, 0.0)
+clip_contents = true
+
+[node name="Layer_01" type="Control" parent="ComicIntro/Panels/Panel_06/Mask"]
+mouse_filter = 2
+metadata/unity_id = 1319
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -899.819969
+offset_right = 1149.35996
+offset_top = -606.170017
+offset_bottom = 546.490017
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="ComicIntro/Panels/Panel_06/Mask/Layer_01"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="PortalMask" type="Control" parent="ComicIntro/Panels/Panel_06"]
+mouse_filter = 2
+metadata/unity_id = 1567
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -271.934692
+offset_right = 509.934692
+offset_top = -605.019547
+offset_bottom = 290.360275
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+modulate = Color(1, 1, 1, 0.0)
+clip_contents = true
+
+[node name="UnityImage" type="TextureRect" parent="ComicIntro/Panels/Panel_06/PortalMask"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("3")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Layer_02" type="Control" parent="ComicIntro/Panels/Panel_06/PortalMask"]
+mouse_filter = 2
+metadata/unity_id = 1897
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -566.17395
+offset_right = 546.17395
+offset_top = -256.268265
+offset_bottom = 369.427536
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="ComicIntro/Panels/Panel_06/PortalMask/Layer_02"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("4")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Layer_03" type="Control" parent="ComicIntro/Panels/Panel_06/PortalMask"]
+mouse_filter = 2
+metadata/unity_id = 1883
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -435.034393
+offset_right = 395.034393
+offset_top = -60.1300964
+offset_bottom = 418.789398
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="ComicIntro/Panels/Panel_06/PortalMask/Layer_03"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("5")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Layer_04" type="Control" parent="ComicIntro/Panels/Panel_06/PortalMask"]
+mouse_filter = 2
+metadata/unity_id = 1230
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -431.645054
+offset_right = 467.438564
+offset_top = -466.912811
+offset_bottom = 561.997956
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.49999997, 0.809543446)
+
+[node name="UnityImage" type="TextureRect" parent="ComicIntro/Panels/Panel_06/PortalMask/Layer_04"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("6")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Layer_05" type="Control" parent="ComicIntro/Panels/Panel_06"]
+mouse_filter = 2
+metadata/unity_id = 1509
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -499.080017
+offset_right = 592.919983
+offset_top = -697.831482
+offset_bottom = 551.831482
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="ComicIntro/Panels/Panel_06/Layer_05"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("7")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 0)
+
+[node name="VFX_Portal" type="Control" parent="ComicIntro/Panels/Panel_06"]
+mouse_filter = 2
+metadata/unity_id = 1287
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 116
+offset_right = 216
+offset_top = -229
+offset_bottom = -129
+rotation = -0
+scale = Vector2(0, 0)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Layer_06" type="Control" parent="ComicIntro/Panels/Panel_06"]
+mouse_filter = 2
+metadata/unity_id = 1415
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -80.9700012
+offset_right = 582.970001
+offset_top = -258.470001
+offset_bottom = 501.350006
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="ComicIntro/Panels/Panel_06/Layer_06"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("8")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 0)
+
+[node name="Layer_07" type="Control" parent="ComicIntro/Panels/Panel_06"]
+mouse_filter = 2
+metadata/unity_id = 1887
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -473.535004
+offset_right = 487.535004
+offset_top = -451.554985
+offset_bottom = 648.294991
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="ComicIntro/Panels/Panel_06/Layer_07"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("9")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Panel_01" type="Control" parent="ComicIntro/Panels"]
+mouse_filter = 2
+metadata/unity_id = 1739
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -905.710022
+offset_right = -295.309998
+offset_top = -491.679993
+offset_bottom = -130.619995
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+modulate = Color(1, 1, 1, 0.0)
+clip_contents = true
+
+[node name="Mask" type="Control" parent="ComicIntro/Panels/Panel_01"]
+mouse_filter = 2
+metadata/unity_id = 1575
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 3
+offset_right = -3
+offset_top = 3
+offset_bottom = -3
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+clip_contents = true
+
+[node name="Layer_01" type="Control" parent="ComicIntro/Panels/Panel_01/Mask"]
+mouse_filter = 2
+metadata/unity_id = 1252
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -312
+offset_right = 312
+offset_top = -178
+offset_bottom = 188
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="ComicIntro/Panels/Panel_01/Mask/Layer_01"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("10")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="VFX_Ray" type="Control" parent="ComicIntro/Panels/Panel_01/Mask"]
+mouse_filter = 2
+metadata/unity_id = 1892
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -60.7999992
+offset_right = -60.7999992
+offset_top = -184
+offset_bottom = -184
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Layer_02" type="Control" parent="ComicIntro/Panels/Panel_01"]
+mouse_filter = 2
+metadata/unity_id = 1879
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="ComicIntro/Panels/Panel_01/Layer_02"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("11")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Panel_02" type="Control" parent="ComicIntro/Panels"]
+mouse_filter = 2
+metadata/unity_id = 1642
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -898.970001
+offset_right = -295.310028
+offset_top = -113.660004
+offset_bottom = 483.839996
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+modulate = Color(1, 1, 1, 0.0)
+
+[node name="Mask" type="Control" parent="ComicIntro/Panels/Panel_02"]
+mouse_filter = 2
+metadata/unity_id = 1397
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 2
+offset_right = -2
+offset_top = 2
+offset_bottom = -2
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+clip_contents = true
+
+[node name="Layer_01" type="Control" parent="ComicIntro/Panels/Panel_02/Mask"]
+mouse_filter = 2
+metadata/unity_id = 1841
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -489.342593
+offset_right = 331.34271
+offset_top = -309.99988
+offset_bottom = 303.457335
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.544875145, 0.720124245)
+
+[node name="UnityImage" type="TextureRect" parent="ComicIntro/Panels/Panel_02/Mask/Layer_01"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("12")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 0)
+
+[node name="VFX_Portal" type="Control" parent="ComicIntro/Panels/Panel_02/Mask"]
+mouse_filter = 2
+metadata/unity_id = 1554
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -80
+offset_right = 20
+offset_top = -49
+offset_bottom = 51
+rotation = 0
+scale = Vector2(0, 0)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Layer_02" type="Control" parent="ComicIntro/Panels/Panel_02/Mask"]
+mouse_filter = 2
+metadata/unity_id = 1757
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -313.504732
+offset_right = 312.495268
+offset_top = -313.169353
+offset_bottom = 310.830647
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="ComicIntro/Panels/Panel_02/Mask/Layer_02"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("13")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Box" type="Control" parent="ComicIntro/Panels/Panel_02"]
+mouse_filter = 2
+metadata/unity_id = 1469
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="Control" parent="ComicIntro/Panels/Panel_02/Box"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("14")
+border = Vector4(1, 1, 1, 1)
+pixels_per_unit = 0.25
+draw_center = true
+self_modulate = Color(0, 0, 0, 1)
+
+[node name="Layer_03" type="Control" parent="ComicIntro/Panels/Panel_02"]
+mouse_filter = 2
+metadata/unity_id = 1502
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -363.868103
+offset_right = -184.131897
+offset_top = -33.5890045
+offset_bottom = 145.589005
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="ComicIntro/Panels/Panel_02/Layer_03"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("15")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 0)
+
+[node name="Layer_04_TealVFX" type="Control" parent="ComicIntro/Panels/Panel_02"]
+mouse_filter = 2
+metadata/unity_id = 1855
+anchor_left = 0.420000017
+anchor_right = 0.420000017
+anchor_top = 0.642833412
+anchor_bottom = 0.642833412
+offset_left = -502.341151
+offset_right = 377.658849
+offset_top = -378.08999
+offset_bottom = 281.91001
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.580936253, 0.695816308)
+
+[node name="UnityImage" type="TextureRect" parent="ComicIntro/Panels/Panel_02/Layer_04_TealVFX"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("16")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 0)
+
+[node name="Panel_03" type="Control" parent="ComicIntro/Panels"]
+mouse_filter = 2
+metadata/unity_id = 1504
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -264.501476
+offset_right = 262.969716
+offset_top = -504.505005
+offset_bottom = -254.85498
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+modulate = Color(1, 1, 1, 0.0)
+
+[node name="Mask" type="Control" parent="ComicIntro/Panels/Panel_03"]
+mouse_filter = 2
+metadata/unity_id = 1919
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 2.00000048
+offset_right = -2.00000048
+offset_top = 2
+offset_bottom = -2
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+clip_contents = true
+
+[node name="Layer_01" type="Control" parent="ComicIntro/Panels/Panel_03/Mask"]
+mouse_filter = 2
+metadata/unity_id = 1390
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -18.7491493
+offset_right = 18.7491493
+offset_top = -8.79845047
+offset_bottom = 8.79845047
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="ComicIntro/Panels/Panel_03/Mask/Layer_01"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("17")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Layer_02" type="Control" parent="ComicIntro/Panels/Panel_03/Mask"]
+mouse_filter = 2
+metadata/unity_id = 1447
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -78.3999939
+offset_right = -74.3999939
+offset_top = 44.5
+offset_bottom = 48.5
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="ComicIntro/Panels/Panel_03/Mask/Layer_02"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("18")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Layer_04_TealVFX" type="Control" parent="ComicIntro/Panels/Panel_03/Mask"]
+mouse_filter = 2
+metadata/unity_id = 1579
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -61.3349991
+offset_right = 126.935005
+offset_top = -17.0049934
+offset_bottom = 74.2050056
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="ComicIntro/Panels/Panel_03/Mask/Layer_04_TealVFX"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("19")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Layer_03" type="Control" parent="ComicIntro/Panels/Panel_03/Mask"]
+mouse_filter = 2
+metadata/unity_id = 1497
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -2
+offset_right = 2
+offset_top = -2
+offset_bottom = 2
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="ComicIntro/Panels/Panel_03/Mask/Layer_03"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("20")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Box" type="Control" parent="ComicIntro/Panels/Panel_03"]
+mouse_filter = 2
+metadata/unity_id = 1410
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1.00007987, 1.00007987)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="Control" parent="ComicIntro/Panels/Panel_03/Box"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("14")
+border = Vector4(1, 1, 1, 1)
+pixels_per_unit = 0.25
+draw_center = true
+self_modulate = Color(0, 0, 0, 1)
+
+[node name="Panel_05" type="Control" parent="ComicIntro/Panels"]
+mouse_filter = 2
+metadata/unity_id = 1258
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -224.684998
+offset_right = 523.825012
+offset_top = -77.2299805
+offset_bottom = 539.98999
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+modulate = Color(1, 1, 1, 0.0)
+
+[node name="Layer_01" type="Control" parent="ComicIntro/Panels/Panel_05"]
+mouse_filter = 2
+metadata/unity_id = 1422
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -577.159302
+offset_right = 267.159302
+offset_top = -326.789307
+offset_bottom = 370.789307
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="ComicIntro/Panels/Panel_05/Layer_01"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("21")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 0)
+
+[node name="Layer_04_Red" type="Control" parent="ComicIntro/Panels/Panel_05"]
+mouse_filter = 2
+metadata/unity_id = 1305
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 22.7845465
+offset_right = 447.174561
+offset_top = -397.858893
+offset_bottom = 308.611078
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.511829793, 0.389852226)
+
+[node name="UnityImage" type="TextureRect" parent="ComicIntro/Panels/Panel_05/Layer_04_Red"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("22")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="VFX_Comic_Ray" type="Control" parent="ComicIntro/Panels/Panel_05"]
+mouse_filter = 2
+metadata/unity_id = 1727
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 293
+offset_right = 293
+offset_top = -84
+offset_bottom = -84
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Layer_02" type="Control" parent="ComicIntro/Panels/Panel_05"]
+mouse_filter = 2
+metadata/unity_id = 1273
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -442.599941
+offset_right = 337.466343
+offset_top = -335.883613
+offset_bottom = 308.609612
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="ComicIntro/Panels/Panel_05/Layer_02"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("23")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="VFX_Comic_Fleck" type="Control" parent="ComicIntro/Panels/Panel_05"]
+mouse_filter = 2
+metadata/unity_id = 1610
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 265
+offset_right = 265
+offset_top = -2
+offset_bottom = -2
+rotation = 2.82219733
+scale = Vector2(0, 0)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Layer_06_Red" type="Control" parent="ComicIntro/Panels/Panel_05"]
+mouse_filter = 2
+metadata/unity_id = 1692
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -307.035004
+offset_right = 555.035004
+offset_top = -397.858994
+offset_bottom = 314.380997
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="ComicIntro/Panels/Panel_05/Layer_06_Red"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("24")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Panel_04" type="Control" parent="ComicIntro/Panels"]
+mouse_filter = 2
+metadata/unity_id = 1840
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -248.203541
+offset_right = 288.32954
+offset_top = -246.219986
+offset_bottom = 5.81999207
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+modulate = Color(1, 1, 1, 0.0)
+
+[node name="Mask" type="Control" parent="ComicIntro/Panels/Panel_04"]
+mouse_filter = 2
+metadata/unity_id = 1523
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 9.33999348
+offset_right = -13.5400057
+offset_top = 3.18080139
+offset_bottom = -7.56919861
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+clip_contents = true
+
+[node name="Layer_01" type="Control" parent="ComicIntro/Panels/Panel_04/Mask"]
+mouse_filter = 2
+metadata/unity_id = 1406
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -21.1121006
+offset_right = 21.1121006
+offset_top = -9.9175806
+offset_bottom = 9.91751957
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="ComicIntro/Panels/Panel_04/Mask/Layer_01"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("25")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Layer_02" type="Control" parent="ComicIntro/Panels/Panel_04/Mask"]
+mouse_filter = 2
+metadata/unity_id = 1580
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -656.559998
+offset_right = -143.440002
+offset_top = -115.625
+offset_bottom = 125.625
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="ComicIntro/Panels/Panel_04/Mask/Layer_02"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("26")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Layer_03" type="Control" parent="ComicIntro/Panels/Panel_04/Mask"]
+mouse_filter = 2
+metadata/unity_id = 1759
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -27.5213833
+offset_right = 3.46321678
+offset_top = -6.48498535e-05
+offset_bottom = 16.6752357
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityImage" type="TextureRect" parent="ComicIntro/Panels/Panel_04/Mask/Layer_03"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("27")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="VFX_Comic_Portal" type="Control" parent="ComicIntro/Panels/Panel_04/Mask"]
+mouse_filter = 2
+metadata/unity_id = 1696
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -246
+offset_right = -246
+offset_top = 8
+offset_bottom = 8
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Layer_04" type="Control" parent="ComicIntro/Panels/Panel_04/Mask"]
+mouse_filter = 2
+metadata/unity_id = 1649
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -318.16601
+offset_right = 194.953985
+offset_top = -121.884999
+offset_bottom = 119.365001
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.0500000007, 0.530000001)
+
+[node name="UnityImage" type="TextureRect" parent="ComicIntro/Panels/Panel_04/Mask/Layer_04"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("28")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Bar_Bot" type="Control" parent="ComicIntro/Panels"]
+mouse_filter = 2
+metadata/unity_id = 1277
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0
+anchor_bottom = 0
+offset_left = -1060
+offset_right = 1060
+offset_top = 1060
+offset_bottom = 1160
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+
+[node name="UnityImage" type="ColorRect" parent="ComicIntro/Panels/Bar_Bot"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Textbox_01" type="Control" parent="ComicIntro/Panels"]
+mouse_filter = 2
+metadata/unity_id = 1427
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -920.700012
+offset_right = -920.700012
+offset_top = -504.5
+offset_bottom = -504.5
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0)
+modulate = Color(1, 1, 1, 0.0)
+
+[node name="UnityImage" type="Control" parent="ComicIntro/Panels/Textbox_01"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("29")
+border = Vector4(4, 4, 4, 4)
+pixels_per_unit = 0.5
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Text" type="Control" parent="ComicIntro/Panels/Textbox_01"]
+mouse_filter = 2
+metadata/unity_id = 1743
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="ComicIntro/Panels/Textbox_01/Text"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Когда‑то жизнь была нормальной..."
+theme_override_font_sizes/font_size = 24
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="Textbox_02" type="Control" parent="ComicIntro/Panels"]
+mouse_filter = 2
+metadata/unity_id = 1433
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -741.013062
+offset_right = -741.013062
+offset_top = 418.219208
+offset_bottom = 418.219208
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0)
+modulate = Color(1, 1, 1, 0.0)
+
+[node name="UnityImage" type="Control" parent="ComicIntro/Panels/Textbox_02"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("29")
+border = Vector4(4, 4, 4, 4)
+pixels_per_unit = 0.5
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Text" type="Control" parent="ComicIntro/Panels/Textbox_02"]
+mouse_filter = 2
+metadata/unity_id = 1779
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="ComicIntro/Panels/Textbox_02/Text"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "...пока не начали появляться разломы."
+theme_override_font_sizes/font_size = 24
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="Textbox_03" type="Control" parent="ComicIntro/Panels"]
+mouse_filter = 2
+metadata/unity_id = 1918
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -253.164429
+offset_right = -253.164429
+offset_top = -286.399994
+offset_bottom = -286.399994
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0)
+modulate = Color(1, 1, 1, 0.0)
+
+[node name="UnityImage" type="Control" parent="ComicIntro/Panels/Textbox_03"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("29")
+border = Vector4(4, 4, 4, 4)
+pixels_per_unit = 0.5
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Text" type="Control" parent="ComicIntro/Panels/Textbox_03"]
+mouse_filter = 2
+metadata/unity_id = 1507
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="ComicIntro/Panels/Textbox_03/Text"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Las grietas nunca se mantienen estables mucho tiempo"
+theme_override_font_sizes/font_size = 24
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="Textbox_04" type="Control" parent="ComicIntro/Panels"]
+mouse_filter = 2
+metadata/unity_id = 1336
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -264.501587
+offset_right = -264.501587
+offset_top = -28.7824097
+offset_bottom = -28.7824097
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0)
+modulate = Color(1, 1, 1, 0.0)
+
+[node name="UnityImage" type="Control" parent="ComicIntro/Panels/Textbox_04"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("29")
+border = Vector4(4, 4, 4, 4)
+pixels_per_unit = 0.5
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Text" type="Control" parent="ComicIntro/Panels/Textbox_04"]
+mouse_filter = 2
+metadata/unity_id = 1661
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="ComicIntro/Panels/Textbox_04/Text"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "и когда они прорываются, из них выходят монстры."
+theme_override_font_sizes/font_size = 24
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="Textbox_05" type="Control" parent="ComicIntro/Panels"]
+mouse_filter = 2
+metadata/unity_id = 1710
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 372
+offset_right = 372
+offset_top = -510.079987
+offset_bottom = -510.079987
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0)
+modulate = Color(1, 1, 1, 0.0)
+
+[node name="UnityImage" type="Control" parent="ComicIntro/Panels/Textbox_05"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("29")
+border = Vector4(4, 4, 4, 4)
+pixels_per_unit = 0.5
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Text" type="Control" parent="ComicIntro/Panels/Textbox_05"]
+mouse_filter = 2
+metadata/unity_id = 1290
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="ComicIntro/Panels/Textbox_05/Text"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Pero algunos de nosotros hemos despertado. Los despertados son personas normales y corrientes que han desarrollado poderes inexplicables. El mundo los llama rompedores."
+theme_override_font_sizes/font_size = 24
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="Textbox_06" type="Control" parent="ComicIntro/Panels"]
+mouse_filter = 2
+metadata/unity_id = 1885
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 465
+offset_right = 465
+offset_top = 435
+offset_bottom = 435
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0)
+modulate = Color(1, 1, 1, 0.0)
+
+[node name="UnityImage" type="Control" parent="ComicIntro/Panels/Textbox_06"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("29")
+border = Vector4(4, 4, 4, 4)
+pixels_per_unit = 0.5
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Text" type="Control" parent="ComicIntro/Panels/Textbox_06"]
+mouse_filter = 2
+metadata/unity_id = 1470
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="UnityText" type="Label" parent="ComicIntro/Panels/Textbox_06/Text"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Они входят в разломы, чтобы закрыть их."
+theme_override_font_sizes/font_size = 24
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+horizontal_alignment = 0
+vertical_alignment = 1

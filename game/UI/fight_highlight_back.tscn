@@ -1,0 +1,33 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://battle/fight_highlight_particle.gd" id="Particle"]
+[ext_resource type="Texture2D" path="res://UI/textures/fight_highlight_quad_mask.png" id="T59"]
+
+[sub_resource type="Curve" id="Vertical10391"]
+_data = [Vector2(0.00133514404, 0.875471175), 0.164429009, 0.164429009, 0, 0, Vector2(0.48234579, 1), 0.206653401, 0.206653401, 0, 0]
+point_count = 2
+
+[sub_resource type="Curve" id="Alpha10391"]
+_data = [Vector2(0, 0), 9.74353256, 9.74353256, 0, 0, Vector2(0.102632181, 1), 9.74353256, -1.11437025, 0, 0, Vector2(1, 0), -1.11437025, -1.11437025, 0, 0]
+point_count = 3
+
+[node name="HighlightOrigin" type="Control"]
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+mouse_filter = 2
+
+[node name="Burst10391" type="Polygon2D" parent="."]
+script = ExtResource("Particle")
+texture = ExtResource("T59")
+polygon = PackedVector2Array(-170, -47.5, 170, -47.5, 170, 47.5, -170, 47.5)
+uv = PackedVector2Array(0, 0, 128, 0, 128, 128, 0, 128)
+color = Color(0.431372553, 0.886274517, 0.674509823, 0.454901963)
+period = 1.2999999523162842
+lifetime = 1.2999999523162842
+metadata/unity_particle = 10391
+metadata/unity_material = 28
+horizontal_size = SubResource("Vertical10391")
+vertical_size = SubResource("Vertical10391")
+opacity = SubResource("Alpha10391")

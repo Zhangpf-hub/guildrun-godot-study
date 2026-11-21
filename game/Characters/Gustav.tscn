@@ -1,0 +1,737 @@
+[gd_scene format=3]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2782.obj" id="1"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_500.tres" id="2"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2948.obj" id="3"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_504.tres" id="4"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2786.obj" id="5"]
+
+[node name="Gustav" type="Node3D"]
+
+[node name="Gustav" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20462
+metadata/unity_name = "Gustav"
+
+[node name="Gustav_Model" type="Node3D" parent="Gustav"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12489
+metadata/unity_name = "Gustav_Model"
+
+[node name="Armature" type="Node3D" parent="Gustav/Gustav_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13605
+metadata/unity_name = "Armature"
+
+[node name="hips" type="Node3D" parent="Gustav/Gustav_Model/Armature"]
+position = Vector3(-0, 1.00721729, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6933
+metadata/unity_name = "hips"
+
+[node name="spine" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips"]
+position = Vector3(-7.09550431e-33, 0.0624840111, -3.5527136e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12826
+metadata/unity_name = "spine"
+
+[node name="chest" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine"]
+position = Vector3(-0, 0.239631042, -0)
+quaternion = Quaternion(0.0726891235, 0, -0, 0.997354686)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21851
+metadata/unity_name = "chest"
+
+[node name="neck" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest"]
+position = Vector3(-0, 0.233275101, 7.99360543e-17)
+quaternion = Quaternion(-0.173844263, 0, -0, 0.984773159)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23914
+metadata/unity_name = "neck"
+
+[node name="head" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest/neck"]
+position = Vector3(3.15544355e-32, 0.0938056633, -4.19626078e-17)
+quaternion = Quaternion(0.090744786, -0, -0, 0.995874166)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22642
+metadata/unity_name = "head"
+
+[node name="hair_root" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(-7.93428418e-18, 0.0774555132, -9.61337992e-17)
+quaternion = Quaternion(-0.398281872, -0.306705356, 0.510526419, 0.69761461)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12891
+metadata/unity_name = "hair_root"
+
+[node name="hair_B_1" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(-0.06677939, -0.118405953, 0.0430946201)
+quaternion = Quaternion(0.509802341, -0.025928447, 0.802883744, 0.307907432)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15824
+metadata/unity_name = "hair_B_1"
+
+[node name="hair_B_2" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_B_1"]
+position = Vector3(-8.42029696e-17, 0.0966926441, -1.18085432e-16)
+quaternion = Quaternion(-0.0760450438, 0, -0, 0.997104406)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24150
+metadata/unity_name = "hair_B_2"
+
+[node name="hair_B_3_end" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_B_1/hair_B_2"]
+position = Vector3(-1.90923662e-16, 0.105829008, -1.64491323e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21568
+metadata/unity_name = "hair_B_3_end"
+
+[node name="hair_FL_1" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(3.34768299e-17, 0.105760381, 1.86873435e-17)
+quaternion = Quaternion(0.379160047, -0.334252536, 0.632517338, 0.586885631)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23084
+metadata/unity_name = "hair_FL_1"
+
+[node name="hair_FL_2" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_FL_1"]
+position = Vector3(1.98155649e-17, 0.0603347532, -3.05976052e-18)
+quaternion = Quaternion(0.13653256, -0.045539327, -0.196873724, 0.969807088)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25913
+metadata/unity_name = "hair_FL_2"
+
+[node name="hair_FL_3_end" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_FL_1/hair_FL_2"]
+position = Vector3(-1.08933989e-16, 0.0711737871, 1.18528174e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6950
+metadata/unity_name = "hair_FL_3_end"
+
+[node name="hair_FR_1" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(0.0265698191, 0.0427606329, -0.092778258)
+quaternion = Quaternion(0.122833803, -0.237921983, 0.95653218, 0.115547128)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7222
+metadata/unity_name = "hair_FR_1"
+
+[node name="hair_FR_2" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_FR_1"]
+position = Vector3(1.5914055e-16, 0.0583900139, -1.41185794e-16)
+quaternion = Quaternion(0.257242203, 0.326873958, 0.280706972, 0.864975989)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17833
+metadata/unity_name = "hair_FR_2"
+
+[node name="hair_FR_3_end" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_FR_1/hair_FR_2"]
+position = Vector3(4.01340456e-17, 0.0681834742, -2.16601412e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12427
+metadata/unity_name = "hair_FR_3_end"
+
+[node name="hair_L2_1" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(0.0304742996, 0.0918374211, -0.00923522748)
+quaternion = Quaternion(0.746780634, 0.0280989558, -0.134677261, 0.650685191)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24760
+metadata/unity_name = "hair_L2_1"
+
+[node name="hair_L2_2" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_L2_1"]
+position = Vector3(1.84015757e-17, 0.0404138975, 7.1874046e-18)
+quaternion = Quaternion(0.118886009, 0.150565192, 0.155140102, 0.969086051)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12288
+metadata/unity_name = "hair_L2_2"
+
+[node name="hair_L2_3_end" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_L2_1/hair_L2_2"]
+position = Vector3(2.9515096e-16, 0.0686995685, 2.36641868e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5219
+metadata/unity_name = "hair_L2_3_end"
+
+[node name="hair_L3_1" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(-0.0946798399, 0.0455567911, 0.017160235)
+quaternion = Quaternion(0.278507292, -0.439458668, 0.644414067, 0.560392976)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26974
+metadata/unity_name = "hair_L3_1"
+
+[node name="hair_L3_2" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_L3_1"]
+position = Vector3(3.47580665e-17, 0.0540415794, -3.82989322e-17)
+quaternion = Quaternion(-0.195969179, -0.012530922, 0.0360344611, 0.979867637)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13640
+metadata/unity_name = "hair_L3_2"
+
+[node name="hair_L3_3_end" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_L3_1/hair_L3_2"]
+position = Vector3(-4.07702865e-17, 0.0671499148, -6.70962458e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10218
+metadata/unity_name = "hair_L3_3_end"
+
+[node name="hair_L_1" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(-0.0616379157, 0.0489394367, 0.0554730371)
+quaternion = Quaternion(-0.740862489, 0.0236792602, -0.484710932, -0.464346319)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20979
+metadata/unity_name = "hair_L_1"
+
+[node name="hair_L_2_end" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_L_1"]
+position = Vector3(1.00703886e-16, 0.0713927075, 2.83043769e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16837
+metadata/unity_name = "hair_L_2_end"
+
+[node name="hair_R3_1" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(-0.0581950955, -0.0381853767, -0.084064275)
+quaternion = Quaternion(0.156162009, -0.581357062, 0.592490792, 0.535342932)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13118
+metadata/unity_name = "hair_R3_1"
+
+[node name="hair_R3_2" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_R3_1"]
+position = Vector3(4.1711039e-17, 0.0499560386, 7.85020011e-17)
+quaternion = Quaternion(-0.0199543033, 0.0227361619, -0.0404508673, 0.998723507)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23129
+metadata/unity_name = "hair_R3_2"
+
+[node name="hair_R3_3_end" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_R3_1/hair_R3_2"]
+position = Vector3(3.73491204e-17, 0.0671521351, 9.64637516e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21850
+metadata/unity_name = "hair_R3_3_end"
+
+[node name="hair_R_1" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(0.0869352818, -0.0241628624, -0.0127456086)
+quaternion = Quaternion(-0.27185151, -0.206835687, 0.907121241, -0.24585934)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11846
+metadata/unity_name = "hair_R_1"
+
+[node name="hair_R_2_end" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_R_1"]
+position = Vector3(1.07898677e-16, 0.0362873077, -1.25441728e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16211
+metadata/unity_name = "hair_R_2_end"
+
+[node name="head_end" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(-1.76830221e-17, 0.169998065, 0.000809985388)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18975
+metadata/unity_name = "head_end"
+
+[node name="jaw" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(6.8615793e-09, -0.000362200313, -0.0208956786)
+quaternion = Quaternion(2.45757601e-08, -0.46919933, 0.883092284, -4.62546765e-08)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23485
+metadata/unity_name = "jaw"
+
+[node name="jaw_end" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest/neck/head/jaw"]
+position = Vector3(-1.88289023e-10, 0.0824496448, -3.76277148e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17856
+metadata/unity_name = "jaw_end"
+
+[node name="shoulder_L" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest"]
+position = Vector3(-0.049999997, 0.187565759, 0.00687682116)
+quaternion = Quaternion(0.462332785, -0.462332755, 0.535021901, 0.535021901)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5490
+metadata/unity_name = "shoulder_L"
+
+[node name="upper_arm_L" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest/shoulder_L"]
+position = Vector3(-2.8906511e-08, 0.170000002, -1.13686835e-15)
+quaternion = Quaternion(0.4617486, -2.90378708e-08, -5.57812356e-08, 0.887010872)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12943
+metadata/unity_name = "upper_arm_L"
+
+[node name="lower_arm_L" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L"]
+position = Vector3(-5.18116039e-09, 0.25, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6462
+metadata/unity_name = "lower_arm_L"
+
+[node name="hand_L" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L"]
+position = Vector3(-2.26000427e-10, 0.269999981, 1.39948364e-09)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17784
+metadata/unity_name = "hand_L"
+
+[node name="hand_L_end" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L"]
+position = Vector3(-1.3322676e-17, 0.149999991, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26867
+metadata/unity_name = "hand_L_end"
+
+[node name="shoulder_R" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest"]
+position = Vector3(0.050000675, 0.187565759, 0.00687682116)
+quaternion = Quaternion(0.462336361, 0.462329179, -0.535025001, 0.535018802)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10303
+metadata/unity_name = "shoulder_R"
+
+[node name="upper_arm_R" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest/shoulder_R"]
+position = Vector3(9.32587312e-17, 0.170000002, 2.84217088e-16)
+quaternion = Quaternion(0.46174863, 1.10736687e-06, -5.76458717e-07, 0.887010872)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24452
+metadata/unity_name = "upper_arm_R"
+
+[node name="lower_arm_R" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R"]
+position = Vector3(-4.440892e-18, 0.25, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8956
+metadata/unity_name = "lower_arm_R"
+
+[node name="hand_R" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R"]
+position = Vector3(4.440892e-18, 0.269999981, 7.10542693e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5948
+metadata/unity_name = "hand_R"
+
+[node name="hand_R_end" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R"]
+position = Vector3(-8.881784e-18, 0.149999991, 5.68434176e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19454
+metadata/unity_name = "hand_R_end"
+
+[node name="Magica Sphere Collider (chest)" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/chest"]
+position = Vector3(0, 0.166199997, 0.0736000016)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14926
+metadata/unity_name = "Magica Sphere Collider (chest)"
+
+[node name="coat_root" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine"]
+position = Vector3(-0, 0.143570036, -7.88860888e-33)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22358
+metadata/unity_name = "coat_root"
+
+[node name="coat_B_1" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/coat_root"]
+position = Vector3(1.8502714e-08, 0.00150489807, 0.161820039)
+quaternion = Quaternion(-0.998523474, -0, 0, -0.0543220043)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17179
+metadata/unity_name = "coat_B_1"
+
+[node name="coat_B_2" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/coat_root/coat_B_1"]
+position = Vector3(2.11758232e-24, 0.314677417, -0.0202430729)
+quaternion = Quaternion(-0.0428527184, 0, -0, 0.999081433)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11400
+metadata/unity_name = "coat_B_2"
+
+[node name="coat_B_3" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/coat_root/coat_B_1/coat_B_2"]
+position = Vector3(-2.11758232e-24, 0.321081221, -1.87141058e-08)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9956
+metadata/unity_name = "coat_B_3"
+
+[node name="coat_B_4_end" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/coat_root/coat_B_1/coat_B_2/coat_B_3"]
+position = Vector3(-0, 0.321081191, -7.37024308e-09)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6780
+metadata/unity_name = "coat_B_4_end"
+
+[node name="coat_L_1" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/coat_root"]
+position = Vector3(-0.192422539, 0.00104537967, 0.0168770719)
+quaternion = Quaternion(0.703205407, -0.0741764978, 0.704451025, 0.0612272397)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24547
+metadata/unity_name = "coat_L_1"
+
+[node name="coat_L_2" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/coat_root/coat_L_1"]
+position = Vector3(0.0118366536, 0.337926805, 0.00208096323)
+quaternion = Quaternion(0.002379396, -2.37215835e-20, -0.0196781699, 0.999803543)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11902
+metadata/unity_name = "coat_L_2"
+
+[node name="coat_L_3" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/coat_root/coat_L_1/coat_L_2"]
+position = Vector3(1.56061344e-06, 0.351336867, 5.70317013e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5317
+metadata/unity_name = "coat_L_3"
+
+[node name="coat_L_4_end" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/coat_root/coat_L_1/coat_L_2/coat_L_3"]
+position = Vector3(1.55235853e-06, 0.351336926, 5.99697728e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15863
+metadata/unity_name = "coat_L_4_end"
+
+[node name="coat_LB_1" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/coat_root"]
+position = Vector3(-0.116333924, 0.00165321352, 0.144127399)
+quaternion = Quaternion(-0.962731898, 0.0236629397, -0.254061252, -0.0896676183)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20984
+metadata/unity_name = "coat_LB_1"
+
+[node name="coat_LB_2" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/coat_root/coat_LB_1"]
+position = Vector3(-4.88281221e-05, 0.319291145, 2.13162816e-16)
+quaternion = Quaternion(-0.010018087, 0.0144226272, 0.00286001479, 0.99984175)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16523
+metadata/unity_name = "coat_LB_2"
+
+[node name="coat_LB_3" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/coat_root/coat_LB_1/coat_LB_2"]
+position = Vector3(-2.92968743e-05, 0.326458991, -4.57763662e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14320
+metadata/unity_name = "coat_LB_3"
+
+[node name="coat_LB_4_end" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/coat_root/coat_LB_1/coat_LB_2/coat_LB_3"]
+position = Vector3(9.76562478e-06, 0.326458842, 1.2207031e-06)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24345
+metadata/unity_name = "coat_LB_4_end"
+
+[node name="coat_LF_1" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/coat_root"]
+position = Vector3(-0.122353673, 0.00104537967, -0.086605899)
+quaternion = Quaternion(-0.00204828731, -0.046179872, 0.997949898, 0.0442636162)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9583
+metadata/unity_name = "coat_LF_1"
+
+[node name="coat_LF_2" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/coat_root/coat_LF_1"]
+position = Vector3(0.00261597382, 0.348810673, 0.00142455392)
+quaternion = Quaternion(0.00347725418, 0.000513057457, -0.00574905984, 0.999977291)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14929
+metadata/unity_name = "coat_LF_2"
+
+[node name="coat_LF_3" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/coat_root/coat_LF_1/coat_LF_2"]
+position = Vector3(-2.39744269e-09, 0.368679732, -6.77632062e-10)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11188
+metadata/unity_name = "coat_LF_3"
+
+[node name="coat_LF_4_end" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/coat_root/coat_LF_1/coat_LF_2/coat_LF_3"]
+position = Vector3(-1.46977266e-08, 0.368679672, -6.51471943e-09)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20541
+metadata/unity_name = "coat_LF_4_end"
+
+[node name="coat_R_1" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/coat_root"]
+position = Vector3(0.192422584, 0.00104537967, 0.0168770719)
+quaternion = Quaternion(-0.703205407, -0.074177146, 0.704451025, -0.0612274632)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4749
+metadata/unity_name = "coat_R_1"
+
+[node name="coat_R_2" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/coat_root/coat_R_1"]
+position = Vector3(-0.0118368566, 0.337926805, 0.0020813765)
+quaternion = Quaternion(0.00238023791, 1.0166393e-20, 0.019678561, 0.999803543)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12140
+metadata/unity_name = "coat_R_2"
+
+[node name="coat_R_3" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/coat_root/coat_R_1/coat_R_2"]
+position = Vector3(-1.49609025e-06, 0.351336867, 4.08267823e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13369
+metadata/unity_name = "coat_R_3"
+
+[node name="coat_R_4_end" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/coat_root/coat_R_1/coat_R_2/coat_R_3"]
+position = Vector3(-1.48783533e-06, 0.351336926, 4.37648509e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26806
+metadata/unity_name = "coat_R_4_end"
+
+[node name="coat_RB_1" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/coat_root"]
+position = Vector3(0.116333961, 0.00165321352, 0.144127399)
+quaternion = Quaternion(-0.962731898, -0.0236629397, 0.254061252, -0.0896676183)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18605
+metadata/unity_name = "coat_RB_1"
+
+[node name="coat_RB_2" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/coat_root/coat_RB_1"]
+position = Vector3(-3.5527136e-17, 0.319291145, -0)
+quaternion = Quaternion(-0.010018087, -0.0144226272, -0.00286001479, 0.99984175)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6895
+metadata/unity_name = "coat_RB_2"
+
+[node name="coat_RB_3" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/coat_root/coat_RB_1/coat_RB_2"]
+position = Vector3(6.88338254e-16, 0.326458871, -2.06057387e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18281
+metadata/unity_name = "coat_RB_3"
+
+[node name="coat_RB_4_end" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/coat_root/coat_RB_1/coat_RB_2/coat_RB_3"]
+position = Vector3(-9.89515136e-09, 0.326458961, -3.72701536e-10)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7557
+metadata/unity_name = "coat_RB_4_end"
+
+[node name="coat_RF_1" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/coat_root"]
+position = Vector3(0.122353703, 0.00104537967, -0.086605899)
+quaternion = Quaternion(-0.00204733922, -0.0463600717, 0.997950017, -0.044071164)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6589
+metadata/unity_name = "coat_RF_1"
+
+[node name="coat_RF_2" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/coat_root/coat_RF_1"]
+position = Vector3(-0.00262937183, 0.348810673, 0.00140227925)
+quaternion = Quaternion(0.00342764659, -0.000323312997, 0.00578070013, 0.99997741)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23325
+metadata/unity_name = "coat_RF_2"
+
+[node name="coat_RF_3" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/coat_root/coat_RF_1/coat_RF_2"]
+position = Vector3(1.02498689e-07, 0.368679732, 9.13098077e-08)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12805
+metadata/unity_name = "coat_RF_3"
+
+[node name="coat_RF_4_end" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/spine/coat_root/coat_RF_1/coat_RF_2/coat_RF_3"]
+position = Vector3(7.68915811e-08, 0.368679672, 8.55785558e-08)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10773
+metadata/unity_name = "coat_RF_4_end"
+
+[node name="upper_leg_L" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips"]
+position = Vector3(-0.0879999995, 0.00641917018, -7.61880442e-32)
+quaternion = Quaternion(-0, -0, 1, 2.65167426e-08)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24085
+metadata/unity_name = "upper_leg_L"
+
+[node name="lower_leg_L" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/upper_leg_L"]
+position = Vector3(-6.03398087e-09, 0.423776805, -7.0727828e-09)
+quaternion = Quaternion(-6.6174449e-24, 4.26838152e-23, 6.86636247e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4909
+metadata/unity_name = "lower_leg_L"
+
+[node name="foot_L" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/upper_leg_L/lower_leg_L"]
+position = Vector3(-5.38323031e-09, 0.492304265, -6.30999919e-09)
+quaternion = Quaternion(-1.43152027e-39, 1.17332347e-23, 1.22005633e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22591
+metadata/unity_name = "foot_L"
+
+[node name="toes_L" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/upper_leg_L/lower_leg_L/foot_L"]
+position = Vector3(-8.88178367e-17, 0.0608206913, -0.129951835)
+quaternion = Quaternion(-0.680687606, 0.00333200558, 0.0030961046, 0.732559741)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12334
+metadata/unity_name = "toes_L"
+
+[node name="toes_L_end" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/upper_leg_L/lower_leg_L/foot_L/toes_L"]
+position = Vector3(1.7763568e-17, 0.120194979, -1.7763568e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9086
+metadata/unity_name = "toes_L_end"
+
+[node name="Magica Capsule Collider (lower_leg_L)" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/upper_leg_L/lower_leg_L"]
+position = Vector3(0.0350000001, 0.240999997, 0.0170000009)
+quaternion = Quaternion(0.0292267203, -0.000501994044, -0.0348958895, 0.998963416)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19255
+metadata/unity_name = "Magica Capsule Collider (lower_leg_L)"
+
+[node name="Magica Capsule Collider (upper_leg_L)" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/upper_leg_L"]
+position = Vector3(0.0051677702, 0.231942162, -0.0640413389)
+quaternion = Quaternion(0.0292267203, -0.000501994044, -0.0348958895, 0.998963416)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11742
+metadata/unity_name = "Magica Capsule Collider (upper_leg_L)"
+
+[node name="upper_leg_R" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips"]
+position = Vector3(0.0879999995, 0.00641917577, -0)
+quaternion = Quaternion(-0, -0, 1, -6.12323426e-17)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10064
+metadata/unity_name = "upper_leg_R"
+
+[node name="lower_leg_R" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/upper_leg_R"]
+position = Vector3(8.88178367e-17, 0.423776805, -3.37507795e-16)
+quaternion = Quaternion(-0, 0, -5.24410327e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25882
+metadata/unity_name = "lower_leg_R"
+
+[node name="foot_R" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/upper_leg_R/lower_leg_R"]
+position = Vector3(1.7763568e-17, 0.492304265, 2.52435484e-31)
+quaternion = Quaternion(-0, 1.60237371e-31, 4.31769274e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6992
+metadata/unity_name = "foot_R"
+
+[node name="toes_R" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/upper_leg_R/lower_leg_R/foot_R"]
+position = Vector3(-1.91846542e-14, 0.0608206913, -0.129951835)
+quaternion = Quaternion(-0.680687606, -0.00333189988, -0.00309597002, 0.732559741)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24328
+metadata/unity_name = "toes_R"
+
+[node name="toes_R_end" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/upper_leg_R/lower_leg_R/foot_R/toes_R"]
+position = Vector3(5.3290704e-17, 0.120194986, 1.7763568e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6167
+metadata/unity_name = "toes_R_end"
+
+[node name="Magica Capsule Collider (lower_leg_R)" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/upper_leg_R/lower_leg_R"]
+position = Vector3(-0.0340000018, 0.240999997, 0.0170000009)
+quaternion = Quaternion(0.0292267203, 0.000502021227, 0.0348958932, 0.998963416)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17977
+metadata/unity_name = "Magica Capsule Collider (lower_leg_R)"
+
+[node name="Magica Capsule Collider (upper_leg_R)" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips/upper_leg_R"]
+position = Vector3(-0.00516776741, 0.231939793, -0.0640412867)
+quaternion = Quaternion(0.0292267203, 0.000502021227, 0.0348958932, 0.998963416)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5887
+metadata/unity_name = "Magica Capsule Collider (upper_leg_R)"
+
+[node name="Magica Capsule Collider (hips)" type="Node3D" parent="Gustav/Gustav_Model/Armature/hips"]
+position = Vector3(0, 0.0309566259, -0.0650122836)
+quaternion = Quaternion(-0.0292445328, 0, -0, 0.999572277)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20869
+metadata/unity_name = "Magica Capsule Collider (hips)"
+
+[node name="body_geo" type="Node3D" parent="Gustav/Gustav_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5925
+metadata/unity_name = "body_geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Gustav/Gustav_Model/body_geo"]
+mesh = ExtResource("1")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="cloak_geo" type="Node3D" parent="Gustav/Gustav_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16381
+metadata/unity_name = "cloak_geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Gustav/Gustav_Model/cloak_geo"]
+mesh = ExtResource("3")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="weapon_geo" type="Node3D" parent="Gustav/Gustav_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8751
+metadata/unity_name = "weapon_geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Gustav/Gustav_Model/weapon_geo"]
+mesh = ExtResource("5")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="weaponA_01" type="Node3D" parent="Gustav/Gustav_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(4.32978063e-17, -0.707106829, 0.707106829, -4.32978063e-17)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15626
+metadata/unity_name = "weaponA_01"
+
+[node name="weaponA_02" type="Node3D" parent="Gustav/Gustav_Model/weaponA_01"]
+position = Vector3(6.58877945e-17, 0, 0.53011179)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22573
+metadata/unity_name = "weaponA_02"
+
+[node name="weaponA_03" type="Node3D" parent="Gustav/Gustav_Model/weaponA_01/weaponA_02"]
+position = Vector3(4.34388936e-17, 0, 0.594705462)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23029
+metadata/unity_name = "weaponA_03"
+
+[node name="weaponA_04" type="Node3D" parent="Gustav/Gustav_Model/weaponA_01/weaponA_02/weaponA_03"]
+position = Vector3(1.84881005e-17, 0, 0.390966803)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8853
+metadata/unity_name = "weaponA_04"
+
+[node name="weaponA_05_end" type="Node3D" parent="Gustav/Gustav_Model/weaponA_01/weaponA_02/weaponA_03/weaponA_04"]
+position = Vector3(1.09464113e-16, 2.28850885e-16, 0.421745181)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13969
+metadata/unity_name = "weaponA_05_end"
+
+[node name="Magica Cloth (backhair)" type="Node3D" parent="Gustav/Gustav_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17049
+metadata/unity_name = "Magica Cloth (backhair)"
+
+[node name="Magica Cloth (fronthair)" type="Node3D" parent="Gustav/Gustav_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10777
+metadata/unity_name = "Magica Cloth (fronthair)"
+
+[node name="Magica Cloth (coat)" type="Node3D" parent="Gustav/Gustav_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4679
+metadata/unity_name = "Magica Cloth (coat)"
+
+[node name="OverheadSlot" type="Node3D" parent="Gustav"]
+position = Vector3(0, 2, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16380
+metadata/unity_name = "OverheadSlot"
+
+[node name="VFXParent" type="Node3D" parent="Gustav"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5105
+metadata/unity_name = "VFXParent"

@@ -1,0 +1,785 @@
+[gd_scene format=3]
+[ext_resource type="ArrayMesh" path="res://meshes/unity_default_resources_10209.obj" id="1"]
+[ext_resource type="ShaderMaterial" path="res://materials/sharedassets7_10.tres" id="2"]
+[ext_resource type="ShaderMaterial" path="res://materials/sharedassets18_6.tres" id="3"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets18_13.obj" id="4"]
+[ext_resource type="ShaderMaterial" path="res://materials/sharedassets20_2.tres" id="5"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets18_29.png" id="6"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets18_28.png" id="7"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets1_4632.png" id="8"]
+[ext_resource type="ArrayMesh" path="res://meshes/unity_default_resources_10202.obj" id="9"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_1167.tres" id="10"]
+[ext_resource type="Shader" path="res://materials/forest_light_shafts.gdshader" id="11"]
+[ext_resource type="Texture2D" path="res://textures/sharedassets12_15.png" id="12"]
+[ext_resource type="Texture2D" path="res://textures/sharedassets1_1728.png" id="13"]
+[ext_resource type="Script" path="res://materials/forest_glow_emitter.gd" id="14"]
+[ext_resource type="Texture2D" path="res://textures/resources_623.png" id="15"]
+[ext_resource type="Shader" path="res://materials/forest_glow.gdshader" id="16"]
+[ext_resource type="Texture2D" path="res://textures/sharedassets1_1218.png" id="17"]
+[ext_resource type="Texture2D" path="res://textures/resources_544.png" id="18"]
+[ext_resource type="Texture2D" path="res://textures/resources_580.png" id="19"]
+[ext_resource type="Texture2D" path="res://textures/sharedassets12_10.png" id="20"]
+[ext_resource type="Texture2D" path="res://textures/sharedassets1_2469.png" id="21"]
+
+[sub_resource type="ShaderMaterial" id="Shaft36"]
+render_priority = 1
+shader = ExtResource("11")
+shader_parameter/intensity = 1.5
+shader_parameter/additive = true
+shader_parameter/fade_distance = 3
+shader_parameter/beam_texture = ExtResource("12")
+shader_parameter/beam_uv = Vector4(1, 1, 0.0500000007, 0)
+shader_parameter/beam_is_srgb = true
+shader_parameter/beam_mask = ExtResource("13")
+shader_parameter/mask_uv = Vector4(1, 1, -0.0199999996, 0)
+
+[sub_resource type="QuadMesh" id="ShaftMesh36"]
+material = SubResource("Shaft36")
+size = Vector2(1, 3.52999997)
+center_offset = Vector3(0, 1.5, 0)
+
+[sub_resource type="Gradient" id="ForestGlowAlpha36"]
+offsets = PackedFloat32Array(0, 0.195407034, 1)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="ShaderMaterial" id="Shaft22"]
+render_priority = 1
+shader = ExtResource("11")
+shader_parameter/intensity = 1
+shader_parameter/additive = false
+shader_parameter/fade_distance = 3
+shader_parameter/beam_texture = ExtResource("15")
+shader_parameter/beam_uv = Vector4(1, 1, 0, 0)
+shader_parameter/beam_mask = ExtResource("13")
+shader_parameter/mask_uv = Vector4(1, 1, -0.0500000007, 0)
+
+[sub_resource type="QuadMesh" id="ShaftMesh22"]
+material = SubResource("Shaft22")
+size = Vector2(1, 3.52999997)
+center_offset = Vector3(0, 1.5, 0)
+
+[sub_resource type="Gradient" id="ForestGlowAlpha22"]
+offsets = PackedFloat32Array(0, 0.195407034, 1)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="ShaderMaterial" id="Shaft33"]
+render_priority = 1
+shader = ExtResource("11")
+shader_parameter/intensity = 1.5
+shader_parameter/additive = true
+shader_parameter/fade_distance = 3
+shader_parameter/beam_texture = ExtResource("12")
+shader_parameter/beam_uv = Vector4(1, 1, 0.0500000007, 0)
+shader_parameter/beam_is_srgb = true
+shader_parameter/beam_mask = ExtResource("13")
+shader_parameter/mask_uv = Vector4(1, 1, -0.0199999996, 0)
+
+[sub_resource type="QuadMesh" id="ShaftMesh33"]
+material = SubResource("Shaft33")
+size = Vector2(1, 3.52999997)
+center_offset = Vector3(0, 1.35000002, 0)
+
+[sub_resource type="Gradient" id="ForestGlowAlpha33"]
+offsets = PackedFloat32Array(0, 0.195407034, 1)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="ShaderMaterial" id="Shaft39"]
+render_priority = 1
+shader = ExtResource("11")
+shader_parameter/intensity = 1
+shader_parameter/additive = false
+shader_parameter/fade_distance = 3
+shader_parameter/beam_texture = ExtResource("15")
+shader_parameter/beam_uv = Vector4(1, 1, 0, 0)
+shader_parameter/beam_mask = ExtResource("13")
+shader_parameter/mask_uv = Vector4(1, 1, -0.0500000007, 0)
+
+[sub_resource type="QuadMesh" id="ShaftMesh39"]
+material = SubResource("Shaft39")
+size = Vector2(1, 3.52999997)
+center_offset = Vector3(0, 1.5, 0)
+
+[sub_resource type="Gradient" id="ForestGlowAlpha39"]
+offsets = PackedFloat32Array(0, 0.195407034, 1)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="Gradient" id="ForestGlowAlpha28"]
+offsets = PackedFloat32Array(0, 0.129304952, 1)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="ShaderMaterial" id="ForestGlow_sharedassets10_10_0"]
+shader = ExtResource("16")
+shader_parameter/alignment = 0
+shader_parameter/intensity = 1
+shader_parameter/additive = false
+shader_parameter/fade_distance = 4
+shader_parameter/main_texture = ExtResource("17")
+shader_parameter/main_uv = Vector4(1, 1, 0, -0.00999999978)
+
+[sub_resource type="QuadMesh" id="ForestGlowQuad_sharedassets10_10_0"]
+material = SubResource("ForestGlow_sharedassets10_10_0")
+size = Vector2(1, 1)
+
+[sub_resource type="Gradient" id="ForestGlowAlpha41"]
+offsets = PackedFloat32Array(0.149431601, 0.330464637, 0.502876326, 0.686778058, 0.847699702, 1)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0.698039234, 1, 1, 1, 1, 1, 1, 1, 0.607843161, 1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="ShaderMaterial" id="ForestGlow_sharedassets12_6_2"]
+shader = ExtResource("16")
+shader_parameter/alignment = 2
+shader_parameter/intensity = 1
+shader_parameter/additive = true
+shader_parameter/material_tint = Vector3(1.41421354, 1.41421354, 1.41421354)
+shader_parameter/alpha_cutoff = 0.00700000022
+shader_parameter/animated_ground = true
+shader_parameter/double_opacity = true
+shader_parameter/dissolve_amount = 0.25
+shader_parameter/distortion_amount = 0.0500000007
+shader_parameter/dissolve_speed = Vector2(0.00999999978, -0.00999999978)
+shader_parameter/main_texture = ExtResource("18")
+shader_parameter/main_uv = Vector4(1, 1, 0, 0)
+shader_parameter/mask_texture = ExtResource("19")
+shader_parameter/mask_uv = Vector4(2, 1, 0, 0)
+shader_parameter/dissolve_texture = ExtResource("20")
+shader_parameter/dissolve_uv = Vector4(2, 1, 0, 0)
+shader_parameter/distortion_texture = ExtResource("21")
+shader_parameter/distortion_uv = Vector4(0, 0, 0, -4)
+
+[sub_resource type="QuadMesh" id="ForestGlowQuad_sharedassets12_6_2"]
+material = SubResource("ForestGlow_sharedassets12_6_2")
+size = Vector2(1, 1)
+
+[sub_resource type="Gradient" id="ForestGlowAlpha38"]
+offsets = PackedFloat32Array(0.149431601, 0.330464637, 0.502876326, 0.686778058, 0.847699702, 1)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0.698039234, 1, 1, 1, 1, 1, 1, 1, 0.607843161, 1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="Gradient" id="ForestGlowAlpha26"]
+offsets = PackedFloat32Array(0.149431601, 0.330464637, 0.502876326, 0.686778058, 0.847699702, 1)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0.698039234, 1, 1, 1, 1, 1, 1, 1, 0.607843161, 1, 1, 1, 1, 1, 1, 1, 0)
+
+[node name="Environment_FightScenarioRoom_Morning" type="Node3D"]
+
+[node name="ShadowPlane" type="Node3D" parent="."]
+position = Vector3(9.69999981, 0.100000001, -6.30000019)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(2.5, 2.5, 2.5)
+metadata/unity_id = 1
+metadata/unity_name = "ShadowPlane"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="ShadowPlane"]
+mesh = ExtResource("1")
+visible = true
+surface_material_override/0 = ExtResource("2")
+cast_shadow = 0
+
+[node name="PostProcessing" type="Node3D" parent="."]
+position = Vector3(58.9327431, -11.2559824, -10.263546)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 2
+metadata/unity_name = "PostProcessing"
+
+[node name="LocalVolume" type="Node3D" parent="."]
+position = Vector3(16.7000008, 29.4101543, 34.7999992)
+quaternion = Quaternion(-0.295718223, 0.0832255185, 0.0258774292, 0.951291025)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 3
+metadata/unity_name = "LocalVolume"
+
+[node name="=====Timeline" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5
+metadata/unity_name = "=====Timeline"
+
+[node name="BackgroundPlanes" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7
+metadata/unity_name = "BackgroundPlanes"
+
+[node name="Foreground" type="Node3D" parent="BackgroundPlanes"]
+position = Vector3(32, 12, 25)
+quaternion = Quaternion(-0.277308047, 0.0913352966, -0.00289992429, 0.956425488)
+scale = Vector3(0.5, 0.5, 0.5)
+metadata/unity_id = 17
+metadata/unity_name = "Foreground"
+
+[node name="Grid" type="Node3D" parent="BackgroundPlanes"]
+position = Vector3(9.73999977, 0.100000001, -6.09000015)
+quaternion = Quaternion(0, -1, -0, 0)
+scale = Vector3(2.21199989, 0, 2.21199989)
+metadata/unity_id = 4
+metadata/unity_name = "Grid"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="BackgroundPlanes/Grid"]
+mesh = ExtResource("1")
+visible = true
+surface_material_override/0 = ExtResource("3")
+cast_shadow = 0
+
+[node name="Crystals_FightRoom_Dusk" type="Node3D" parent="BackgroundPlanes"]
+position = Vector3(-3.4000001, -0.545300007, -4)
+quaternion = Quaternion(-0.257834226, 0.084186025, 0.0225575808, 0.962250173)
+scale = Vector3(1.18391228, 1.18391204, 1.18391204)
+metadata/unity_id = 32
+metadata/unity_name = "Crystals_FightRoom_Dusk"
+
+[node name="Crystals_0" type="Node3D" parent="BackgroundPlanes/Crystals_FightRoom_Dusk"]
+position = Vector3(-11.1999998, 9.42000008, -10.2799997)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(2.77577066, 2.77577066, 2.77577066)
+metadata/unity_id = 30
+metadata/unity_name = "Crystals_0"
+
+[node name="Crystals_1" type="Node3D" parent="BackgroundPlanes/Crystals_FightRoom_Dusk"]
+position = Vector3(5.0999999, 14.1999998, -22.3999996)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1.42429996, 1.42429996, 1.42429996)
+metadata/unity_id = 31
+metadata/unity_name = "Crystals_1"
+
+[node name="Crystals_2" type="Node3D" parent="BackgroundPlanes/Crystals_FightRoom_Dusk"]
+position = Vector3(-3.11678529, -4.02901602, 10.5835571)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(3.39969444, 3.39968729, 3.39969563)
+metadata/unity_id = 11
+metadata/unity_name = "Crystals_2"
+
+[node name="Crystals_3" type="Node3D" parent="BackgroundPlanes/Crystals_FightRoom_Dusk"]
+position = Vector3(21.8299999, -4.1500001, 7.19999981)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25
+metadata/unity_name = "Crystals_3"
+
+[node name="Crystals_4" type="Node3D" parent="BackgroundPlanes/Crystals_FightRoom_Dusk"]
+position = Vector3(26.7000008, 9, -17)
+quaternion = Quaternion(0.257834226, -0.084186025, -0.0225575808, 0.962250173)
+scale = Vector3(0.679325879, 0.679325879, 0.679325879)
+metadata/unity_id = 20
+metadata/unity_name = "Crystals_4"
+
+[node name="Crystals_5" type="Node3D" parent="BackgroundPlanes/Crystals_FightRoom_Dusk"]
+position = Vector3(23.7999992, 10.1999998, -19)
+quaternion = Quaternion(0.257834226, -0.084186025, -0.0225575808, 0.962250173)
+scale = Vector3(0.867021799, 0.867021799, 0.867021799)
+metadata/unity_id = 27
+metadata/unity_name = "Crystals_5"
+
+[node name="Crystals_6" type="Node3D" parent="BackgroundPlanes/Crystals_FightRoom_Dusk"]
+position = Vector3(29.2000008, 8.60000038, -14.8999996)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(4.7791543, 4.77915621, 4.77915621)
+metadata/unity_id = 8
+metadata/unity_name = "Crystals_6"
+
+[node name="PlayStage" type="Node3D" parent="BackgroundPlanes"]
+position = Vector3(7.82000065, -2.08739996, -16.3600006)
+quaternion = Quaternion(0, -1, -0, 0)
+scale = Vector3(1.20486522, 1.20486522, 1.20486522)
+metadata/unity_id = 19
+metadata/unity_name = "PlayStage"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="BackgroundPlanes/PlayStage"]
+mesh = ExtResource("4")
+visible = true
+surface_material_override/0 = ExtResource("5")
+cast_shadow = 0
+
+[node name="Bridge" type="Node3D" parent="BackgroundPlanes"]
+position = Vector3(-30.6000004, -109.900002, -234)
+quaternion = Quaternion(-0.257834226, 0.084186025, 0.0225575808, 0.962250173)
+scale = Vector3(3, 3, 3)
+metadata/unity_id = 10
+metadata/unity_name = "Bridge"
+
+[node name="UnitySprite" type="Sprite3D" parent="BackgroundPlanes/Bridge"]
+texture = ExtResource("6")
+pixel_size = 0.029475236580308563
+visible = true
+flip_h = false
+flip_v = false
+modulate = Color(1, 0.905882359, 0.788235307, 1)
+offset = Vector2(0, 213.038025)
+
+[node name="Background" type="Node3D" parent="BackgroundPlanes"]
+position = Vector3(-40, -133.300003, -273)
+quaternion = Quaternion(-0.257834226, 0.084186025, 0.0225575808, 0.962250173)
+scale = Vector3(3.5, 3.5, 3.5)
+metadata/unity_id = 15
+metadata/unity_name = "Background"
+
+[node name="UnitySprite" type="Sprite3D" parent="BackgroundPlanes/Background"]
+texture = ExtResource("7")
+pixel_size = 0.029475236580308563
+visible = true
+flip_h = false
+flip_v = false
+modulate = Color(1, 0.941176474, 0.815686285, 1)
+offset = Vector2(0, 16.5380363)
+
+[node name="Square" type="Node3D" parent="BackgroundPlanes"]
+position = Vector3(7.5494194, -109.599998, -326.399994)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(300, 300, 300)
+metadata/unity_id = 14
+metadata/unity_name = "Square"
+
+[node name="UnitySprite" type="Sprite3D" parent="BackgroundPlanes/Square"]
+texture = ExtResource("8")
+pixel_size = 0.00390625
+visible = true
+flip_h = false
+flip_v = false
+modulate = Color(0.847058833, 0.925490201, 0.674509823, 1)
+
+[node name="Directional Light" type="Node3D" parent="."]
+position = Vector3(0, 3, -0)
+quaternion = Quaternion(-0.39999947, 0.27805841, 0.766180456, 0.419108063)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9
+metadata/unity_name = "Directional Light"
+
+[node name="UnityLight" type="DirectionalLight3D" parent="Directional Light"]
+light_color = Color(0.542452812, 0.636149346, 0.809189819, 1)
+light_energy = 4.0
+visible = true
+shadow_enabled = true
+directional_shadow_mode = 0
+directional_shadow_max_distance = 150.0
+shadow_opacity = 1
+metadata/unity_color_temperature = 5000
+
+[node name="CameraRig" type="Node3D" parent="."]
+position = Vector3(27.1000004, 55, 84.9000015)
+quaternion = Quaternion(-0.257834226, 0.084186025, 0.0225575808, 0.962250173)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13
+metadata/unity_name = "CameraRig"
+visible = false
+process_mode = 4
+
+[node name="Main Camera" type="Node3D" parent="CameraRig"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6
+metadata/unity_name = "Main Camera"
+
+[node name="UnityCamera" type="Camera3D" parent="CameraRig/Main Camera"]
+fov = 15.189287185668945
+near = 0.009999999776482582
+far = 1000.0
+
+[node name="FadeIn" type="Node3D" parent="CameraRig/Main Camera"]
+position = Vector3(0, 0, -9.80000019)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16
+metadata/unity_name = "FadeIn"
+
+[node name="FadeOut" type="Node3D" parent="CameraRig/Main Camera"]
+position = Vector3(0, 0, -9.80000019)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12
+metadata/unity_name = "FadeOut"
+visible = false
+process_mode = 4
+
+[node name="IntroWaypoints" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 35
+metadata/unity_name = "IntroWaypoints"
+
+[node name="FirstTimeIntroWaypoint" type="Node3D" parent="IntroWaypoints"]
+position = Vector3(9.14000034, 0, 6.6960001)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 40
+metadata/unity_name = "FirstTimeIntroWaypoint"
+
+[node name="Cube" type="Node3D" parent="IntroWaypoints/FirstTimeIntroWaypoint"]
+position = Vector3(-2.00999999, 0, 0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 34
+metadata/unity_name = "Cube"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="IntroWaypoints/FirstTimeIntroWaypoint/Cube"]
+mesh = ExtResource("9")
+visible = false
+surface_material_override/0 = ExtResource("10")
+
+[node name="Cube_1" type="Node3D" parent="IntroWaypoints/FirstTimeIntroWaypoint"]
+position = Vector3(2.04999995, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24
+metadata/unity_name = "Cube_1"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="IntroWaypoints/FirstTimeIntroWaypoint/Cube_1"]
+mesh = ExtResource("9")
+visible = false
+surface_material_override/0 = ExtResource("10")
+
+[node name="RegularIntroWaypoint" type="Node3D" parent="IntroWaypoints"]
+position = Vector3(9.14000034, 0, 6.6960001)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21
+metadata/unity_name = "RegularIntroWaypoint"
+
+[node name="Cube" type="Node3D" parent="IntroWaypoints/RegularIntroWaypoint"]
+position = Vector3(-2.00999999, 0, 0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18
+metadata/unity_name = "Cube"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="IntroWaypoints/RegularIntroWaypoint/Cube"]
+mesh = ExtResource("9")
+visible = false
+surface_material_override/0 = ExtResource("10")
+
+[node name="Cube_1" type="Node3D" parent="IntroWaypoints/RegularIntroWaypoint"]
+position = Vector3(2.04999995, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 29
+metadata/unity_name = "Cube_1"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="IntroWaypoints/RegularIntroWaypoint/Cube_1"]
+mesh = ExtResource("9")
+visible = false
+surface_material_override/0 = ExtResource("10")
+
+[node name="VFX_Rays" type="Node3D" parent="."]
+position = Vector3(-7, 23.7000008, -10.5)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 37
+metadata/unity_name = "VFX_Rays"
+
+[node name="Rays_01" type="Node3D" parent="VFX_Rays"]
+position = Vector3(2.39511967, 0.219999999, 25.3548679)
+quaternion = Quaternion(-0, 0.258819014, 0, 0.965925872)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 36
+metadata/unity_name = "Rays_01"
+script = ExtResource("14")
+source_seed = -1
+duration = 5
+simulation_speed = 1
+prewarm = true
+looping = true
+births_per_second = 1
+burst_count = 0
+alpha_curve = SubResource("ForestGlowAlpha36")
+independent_height = true
+metadata/unity_particle_material = "sharedassets12.assets:5"
+speed_range = Vector2(0.00999999978, 0.00999999978)
+width_range = Vector2(2, 6)
+height_range = Vector2(5, 10)
+spin_range = Vector2(0, 0)
+lifetime_range = Vector2(8, 12)
+tint_min = Color(1, 0.860304773, 0.636792421, 0.168627456)
+tint_max = Color(1, 0.721303105, 0.25, 0.0941176489)
+emission_direction = Vector3(0.5, -0.866025404, -3.061617e-17)
+emission_cylinder = Vector2(5, 2)
+
+[node name="UnityLightShaft1" type="MeshInstance3D" parent="VFX_Rays/Rays_01"]
+mesh = SubResource("ShaftMesh36")
+quaternion = Quaternion(-5.91458986e-17, 0, -0.965925826, 0.258819045)
+visible = false
+cast_shadow = 0
+extra_cull_margin = 32.6499999
+
+[node name="UnityLightShaft2" type="MeshInstance3D" parent="VFX_Rays/Rays_01"]
+mesh = SubResource("ShaftMesh36")
+quaternion = Quaternion(-5.91458986e-17, 0, -0.965925826, 0.258819045)
+visible = false
+cast_shadow = 0
+extra_cull_margin = 32.6499999
+
+[node name="Rays_01_Blurry" type="Node3D" parent="VFX_Rays/Rays_01"]
+position = Vector3(0, -0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22
+metadata/unity_name = "Rays_01_Blurry"
+script = ExtResource("14")
+source_seed = -1
+duration = 5
+simulation_speed = 1
+prewarm = true
+looping = true
+births_per_second = 1
+burst_count = 0
+alpha_curve = SubResource("ForestGlowAlpha22")
+independent_height = true
+metadata/unity_particle_material = "sharedassets8.assets:21"
+speed_range = Vector2(0.00999999978, 0.00999999978)
+width_range = Vector2(2, 6)
+height_range = Vector2(5, 10)
+spin_range = Vector2(0, 0)
+lifetime_range = Vector2(8, 12)
+tint_min = Color(0.575471699, 0.465140849, 0.290450335, 0.168627456)
+tint_max = Color(0.792452812, 0.634950578, 0.370060503, 0.211764708)
+emission_direction = Vector3(0.5, -0.866025404, -3.061617e-17)
+emission_cylinder = Vector2(5, 2)
+
+[node name="UnityLightShaft1" type="MeshInstance3D" parent="VFX_Rays/Rays_01/Rays_01_Blurry"]
+mesh = SubResource("ShaftMesh22")
+quaternion = Quaternion(-5.91458986e-17, 0, -0.965925826, 0.258819045)
+visible = false
+cast_shadow = 0
+extra_cull_margin = 32.6499999
+
+[node name="UnityLightShaft2" type="MeshInstance3D" parent="VFX_Rays/Rays_01/Rays_01_Blurry"]
+mesh = SubResource("ShaftMesh22")
+quaternion = Quaternion(-5.91458986e-17, 0, -0.965925826, 0.258819045)
+visible = false
+cast_shadow = 0
+extra_cull_margin = 32.6499999
+
+[node name="Rays_02" type="Node3D" parent="VFX_Rays"]
+position = Vector3(7.36000013, -1.69000006, 10.046936)
+quaternion = Quaternion(-0, 0.258819014, 0, 0.965925872)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 33
+metadata/unity_name = "Rays_02"
+script = ExtResource("14")
+source_seed = -1
+duration = 5
+simulation_speed = 1
+prewarm = true
+looping = true
+births_per_second = 2
+burst_count = 0
+alpha_curve = SubResource("ForestGlowAlpha33")
+independent_height = true
+metadata/unity_particle_material = "sharedassets12.assets:5"
+speed_range = Vector2(0.00999999978, 0.00999999978)
+width_range = Vector2(4, 7)
+height_range = Vector2(8, 12)
+spin_range = Vector2(0, 0)
+lifetime_range = Vector2(8, 12)
+tint_min = Color(0.867924511, 0.649218261, 0.307048768, 0.219607845)
+tint_max = Color(0.679245293, 0.570056796, 0.342826635, 0.156862751)
+emission_direction = Vector3(0.5, -0.866025404, -3.061617e-17)
+emission_cylinder = Vector2(5, 2)
+
+[node name="UnityLightShaft1" type="MeshInstance3D" parent="VFX_Rays/Rays_02"]
+mesh = SubResource("ShaftMesh33")
+quaternion = Quaternion(-5.91458986e-17, 0, -0.965925826, 0.258819045)
+visible = false
+cast_shadow = 0
+extra_cull_margin = 37.3800001
+
+[node name="UnityLightShaft2" type="MeshInstance3D" parent="VFX_Rays/Rays_02"]
+mesh = SubResource("ShaftMesh33")
+quaternion = Quaternion(-5.91458986e-17, 0, -0.965925826, 0.258819045)
+visible = false
+cast_shadow = 0
+extra_cull_margin = 37.3800001
+
+[node name="Rays_02_Blurry" type="Node3D" parent="VFX_Rays/Rays_02"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 39
+metadata/unity_name = "Rays_02_Blurry"
+script = ExtResource("14")
+source_seed = -1
+duration = 5
+simulation_speed = 1
+prewarm = true
+looping = true
+births_per_second = 1
+burst_count = 0
+alpha_curve = SubResource("ForestGlowAlpha39")
+independent_height = true
+metadata/unity_particle_material = "sharedassets8.assets:21"
+speed_range = Vector2(0.00999999978, 0.00999999978)
+width_range = Vector2(4, 7)
+height_range = Vector2(8, 12)
+spin_range = Vector2(0, 0)
+lifetime_range = Vector2(8, 12)
+tint_min = Color(0.575471699, 0.465140849, 0.290450335, 0.168627456)
+tint_max = Color(0.792452812, 0.634950578, 0.370060503, 0.211764708)
+emission_direction = Vector3(0.5, -0.866025404, -3.061617e-17)
+emission_cylinder = Vector2(5, 2)
+
+[node name="UnityLightShaft1" type="MeshInstance3D" parent="VFX_Rays/Rays_02/Rays_02_Blurry"]
+mesh = SubResource("ShaftMesh39")
+quaternion = Quaternion(-5.91458986e-17, 0, -0.965925826, 0.258819045)
+visible = false
+cast_shadow = 0
+extra_cull_margin = 39.1799998
+
+[node name="UnityLightShaft2" type="MeshInstance3D" parent="VFX_Rays/Rays_02/Rays_02_Blurry"]
+mesh = SubResource("ShaftMesh39")
+quaternion = Quaternion(-5.91458986e-17, 0, -0.965925826, 0.258819045)
+visible = false
+cast_shadow = 0
+extra_cull_margin = 39.1799998
+
+[node name="Gradient_01" type="Node3D" parent="VFX_Rays"]
+position = Vector3(14.7283058, -6.54044342, 21.9599991)
+quaternion = Quaternion(0, 0, 0.130525962, 0.991444886)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 28
+metadata/unity_name = "Gradient_01"
+script = ExtResource("14")
+source_seed = 28
+duration = 5
+simulation_speed = 0.5
+prewarm = true
+looping = true
+births_per_second = 1
+burst_count = 1
+alpha_curve = SubResource("ForestGlowAlpha28")
+independent_height = true
+metadata/unity_particle_material = "sharedassets10.assets:10"
+speed_range = Vector2(0.00999999978, 0.00999999978)
+width_range = Vector2(30, 30)
+height_range = Vector2(20, 20)
+spin_range = Vector2(0, 0)
+lifetime_range = Vector2(4, 5)
+tint_min = Color(0.613207579, 0.420338631, 0.118592024, 0.0862745121)
+tint_max = Color(0.801886797, 0.658251882, 0.359336048, 0.129411772)
+
+[node name="UnityGlow1" type="MeshInstance3D" parent="VFX_Rays/Gradient_01"]
+mesh = SubResource("ForestGlowQuad_sharedassets10_10_0")
+visible = false
+cast_shadow = 0
+extra_cull_margin = 30
+
+[node name="UnityGlow2" type="MeshInstance3D" parent="VFX_Rays/Gradient_01"]
+mesh = SubResource("ForestGlowQuad_sharedassets10_10_0")
+visible = false
+cast_shadow = 0
+extra_cull_margin = 30
+
+[node name="Ground_Glow_Left" type="Node3D" parent="VFX_Rays"]
+position = Vector3(14.8000002, -24.3500004, 2.43000031)
+quaternion = Quaternion(0, -0.544650197, -0, 0.83866334)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 41
+metadata/unity_name = "Ground_Glow_Left"
+script = ExtResource("14")
+source_seed = 41
+duration = 5
+simulation_speed = 1
+prewarm = false
+looping = false
+births_per_second = 0
+burst_count = 2
+alpha_curve = SubResource("ForestGlowAlpha41")
+independent_height = false
+metadata/unity_particle_material = "sharedassets12.assets:6"
+speed_range = Vector2(0, 0)
+width_range = Vector2(10, 15)
+height_range = Vector2(10, 15)
+spin_range = Vector2(0, 4.36332321)
+tint_min = Color(0.735849023, 0.556421697, 0.295033813, 0.0431372561)
+tint_max = Color(0.48113209, 0.405063123, 0.238296553, 0.200000003)
+ground_half_extents = Vector2(0.870000005, 6.69999981)
+atlas_columns = 2
+start_frame_range = Vector2(0, 0.5)
+
+[node name="UnityGlow1" type="MeshInstance3D" parent="VFX_Rays/Ground_Glow_Left"]
+mesh = SubResource("ForestGlowQuad_sharedassets12_6_2")
+visible = false
+cast_shadow = 0
+extra_cull_margin = 15
+
+[node name="UnityGlow2" type="MeshInstance3D" parent="VFX_Rays/Ground_Glow_Left"]
+mesh = SubResource("ForestGlowQuad_sharedassets12_6_2")
+visible = false
+cast_shadow = 0
+extra_cull_margin = 15
+
+[node name="Ground_Glow_Right" type="Node3D" parent="VFX_Rays"]
+position = Vector3(20.5499992, -24.3500004, 5.1500001)
+quaternion = Quaternion(0, -0.385817021, -0, 0.922575355)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 38
+metadata/unity_name = "Ground_Glow_Right"
+script = ExtResource("14")
+source_seed = 38
+duration = 5
+simulation_speed = 1
+prewarm = false
+looping = false
+births_per_second = 0
+burst_count = 2
+alpha_curve = SubResource("ForestGlowAlpha38")
+independent_height = false
+metadata/unity_particle_material = "sharedassets12.assets:6"
+speed_range = Vector2(0, 0)
+width_range = Vector2(15, 15)
+height_range = Vector2(10, 15)
+spin_range = Vector2(0, 6.28318501)
+tint_min = Color(0.735849023, 0.556421697, 0.295033813, 0.0431372561)
+tint_max = Color(0.48113209, 0.405063123, 0.238296553, 0.0862745121)
+ground_half_extents = Vector2(0.25, 6.69999981)
+atlas_columns = 2
+start_frame_range = Vector2(0, 0.5)
+
+[node name="UnityGlow1" type="MeshInstance3D" parent="VFX_Rays/Ground_Glow_Right"]
+mesh = SubResource("ForestGlowQuad_sharedassets12_6_2")
+visible = false
+cast_shadow = 0
+extra_cull_margin = 15
+
+[node name="UnityGlow2" type="MeshInstance3D" parent="VFX_Rays/Ground_Glow_Right"]
+mesh = SubResource("ForestGlowQuad_sharedassets12_6_2")
+visible = false
+cast_shadow = 0
+extra_cull_margin = 15
+
+[node name="Ground_Glow_Back" type="Node3D" parent="VFX_Rays"]
+position = Vector3(8.97999954, -23.3299999, 8.27000046)
+quaternion = Quaternion(0, 0.962195754, -0, 0.272358924)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26
+metadata/unity_name = "Ground_Glow_Back"
+script = ExtResource("14")
+source_seed = 26
+duration = 5
+simulation_speed = 1
+prewarm = false
+looping = false
+births_per_second = 0
+burst_count = 1
+alpha_curve = SubResource("ForestGlowAlpha26")
+independent_height = false
+metadata/unity_particle_material = "sharedassets12.assets:6"
+speed_range = Vector2(0, 0)
+width_range = Vector2(17, 20)
+height_range = Vector2(10, 15)
+spin_range = Vector2(0, 6.28318501)
+tint_min = Color(0.735849023, 0.556421697, 0.295033813, 0.141176477)
+tint_max = Color(0.48113209, 0.405063123, 0.238296553, 0.200000003)
+atlas_columns = 2
+start_frame_range = Vector2(0, 0.5)
+
+[node name="UnityGlow1" type="MeshInstance3D" parent="VFX_Rays/Ground_Glow_Back"]
+mesh = SubResource("ForestGlowQuad_sharedassets12_6_2")
+visible = false
+cast_shadow = 0
+extra_cull_margin = 20
+
+[node name="Dust" type="Node3D" parent="VFX_Rays"]
+position = Vector3(10.5, -12, 5)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23
+metadata/unity_name = "Dust"

@@ -1,0 +1,360 @@
+[gd_scene format=3]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2890.obj" id="1"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_291.tres" id="2"]
+
+[node name="Spider" type="Node3D"]
+
+[node name="Spider" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11549
+metadata/unity_name = "Spider"
+
+[node name="Spider_Model" type="Node3D" parent="Spider"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(0.899999976, 0.899999976, 0.899999976)
+metadata/unity_id = 23623
+metadata/unity_name = "Spider_Model"
+
+[node name="ForestSpider" type="Node3D" parent="Spider/Spider_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(0.707106829, -0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21520
+metadata/unity_name = "ForestSpider"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Spider/Spider_Model/ForestSpider"]
+mesh = ExtResource("1")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="root" type="Node3D" parent="Spider/Spider_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(0.707106829, -0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21435
+metadata/unity_name = "root"
+
+[node name="pelvis" type="Node3D" parent="Spider/Spider_Model/root"]
+position = Vector3(2.14465908e-05, -0.0854818821, -0.519591451)
+quaternion = Quaternion(0.560040176, -0.431646466, 0.431654632, -0.560098708)
+scale = Vector3(1.00000012, 1.00000012, 1.00000012)
+metadata/unity_id = 17811
+metadata/unity_name = "pelvis"
+
+[node name="hip" type="Node3D" parent="Spider/Spider_Model/root/pelvis"]
+position = Vector3(-0.378730923, 7.62939436e-08, 0.000318353501)
+quaternion = Quaternion(0.00106808904, -0.00415056525, -0.265663207, 0.964056373)
+scale = Vector3(0.999999821, 1.00000024, 1)
+metadata/unity_id = 8795
+metadata/unity_name = "hip"
+
+[node name="leg_back_01_l" type="Node3D" parent="Spider/Spider_Model/root/pelvis/hip"]
+position = Vector3(-0.226293489, -0.134975299, -0.411967397)
+quaternion = Quaternion(-0.452254504, -0.13153486, 0.849299133, -0.238443941)
+scale = Vector3(1, 1.00000048, 0.999999762)
+metadata/unity_id = 9982
+metadata/unity_name = "leg_back_01_l"
+
+[node name="leg_back_02_l" type="Node3D" parent="Spider/Spider_Model/root/pelvis/hip/leg_back_01_l"]
+position = Vector3(0.247304842, -0.519218445, 0.00048700333)
+quaternion = Quaternion(6.08181945e-05, -0.0874963999, -0.00207392662, 0.996162713)
+scale = Vector3(0.999999821, 0.999999762, 1)
+metadata/unity_id = 13841
+metadata/unity_name = "leg_back_02_l"
+
+[node name="leg_back_03_l" type="Node3D" parent="Spider/Spider_Model/root/pelvis/hip/leg_back_01_l/leg_back_02_l"]
+position = Vector3(0.372744203, 0.342488468, -0.00331158144)
+quaternion = Quaternion(0.00802670512, -0.000489149825, -0.000581462693, 0.999967515)
+scale = Vector3(1.00000036, 1.00000024, 1.00000036)
+metadata/unity_id = 16808
+metadata/unity_name = "leg_back_03_l"
+
+[node name="leg_back_01_r" type="Node3D" parent="Spider/Spider_Model/root/pelvis/hip"]
+position = Vector3(-0.221924514, -0.132371113, 0.415176809)
+quaternion = Quaternion(-0.133823782, 0.456252664, 0.236823767, 0.847253919)
+scale = Vector3(1, 1.00000036, 0.999999762)
+metadata/unity_id = 11650
+metadata/unity_name = "leg_back_01_r"
+
+[node name="leg_back_02_r" type="Node3D" parent="Spider/Spider_Model/root/pelvis/hip/leg_back_01_r"]
+position = Vector3(-0.247304603, 0.519220173, -0.000485496508)
+quaternion = Quaternion(1.0429553e-07, -0.0874965563, 1.18788444e-06, 0.996164858)
+scale = Vector3(1.00000048, 1.00000024, 1.00000024)
+metadata/unity_id = 26010
+metadata/unity_name = "leg_back_02_r"
+
+[node name="leg_back_03_r" type="Node3D" parent="Spider/Spider_Model/root/pelvis/hip/leg_back_01_r/leg_back_02_r"]
+position = Vector3(-0.372744143, -0.342488855, 0.00331204874)
+quaternion = Quaternion(0.00839281175, -0.000611218798, -0.000612062577, 0.999964416)
+scale = Vector3(1.00000024, 1.00000012, 0.99999994)
+metadata/unity_id = 19455
+metadata/unity_name = "leg_back_03_r"
+
+[node name="tail_01" type="Node3D" parent="Spider/Spider_Model/root/pelvis/hip"]
+position = Vector3(-0.4291448, 0.0676358044, -0.000442727789)
+quaternion = Quaternion(-0.00457770191, 0.0169072766, 0.265633821, 0.963914871)
+scale = Vector3(1.00000012, 0.999999821, 0.999999762)
+metadata/unity_id = 16975
+metadata/unity_name = "tail_01"
+
+[node name="tail_02" type="Node3D" parent="Spider/Spider_Model/root/pelvis/hip/tail_01"]
+position = Vector3(-0.273741156, -0.121362761, 0.00146236294)
+quaternion = Quaternion(3.05535366e-07, -0.999908447, 3.02667031e-05, -0.0135332393)
+scale = Vector3(1.00000012, 1.00000024, 0.99999994)
+metadata/unity_id = 15956
+metadata/unity_name = "tail_02"
+
+[node name="VFX_Spider_SkillAttack_Tail" type="Node3D" parent="Spider/Spider_Model/root/pelvis/hip/tail_01/tail_02"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15318
+metadata/unity_name = "VFX_Spider_SkillAttack_Tail"
+
+[node name="root" type="Node3D" parent="Spider/Spider_Model/root/pelvis/hip/tail_01/tail_02/VFX_Spider_SkillAttack_Tail"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20412
+metadata/unity_name = "root"
+
+[node name="Hit_00" type="Node3D" parent="Spider/Spider_Model/root/pelvis/hip/tail_01/tail_02/VFX_Spider_SkillAttack_Tail/root"]
+position = Vector3(0.159999996, 0.0790000036, 0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11314
+metadata/unity_name = "Hit_00"
+
+[node name="Line_00" type="Node3D" parent="Spider/Spider_Model/root/pelvis/hip/tail_01/tail_02/VFX_Spider_SkillAttack_Tail/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24834
+metadata/unity_name = "Line_00"
+
+[node name="leg_middle_01_l" type="Node3D" parent="Spider/Spider_Model/root/pelvis"]
+position = Vector3(-0.148603246, 0.032406617, -0.425252318)
+quaternion = Quaternion(-0.512663722, -0.00423371373, 0.858552635, -0.0067357868)
+scale = Vector3(1, 0.999999821, 1)
+metadata/unity_id = 25308
+metadata/unity_name = "leg_middle_01_l"
+
+[node name="leg_middle_02_l" type="Node3D" parent="Spider/Spider_Model/root/pelvis/leg_middle_01_l"]
+position = Vector3(0.265585214, -0.477978021, -0.158264115)
+quaternion = Quaternion(7.25486302e-08, 0.482497692, 3.96537104e-07, 0.875897229)
+scale = Vector3(1.00000024, 0.99999994, 0.999999762)
+metadata/unity_id = 16062
+metadata/unity_name = "leg_middle_02_l"
+
+[node name="leg_middle_03_l" type="Node3D" parent="Spider/Spider_Model/root/pelvis/leg_middle_01_l/leg_middle_02_l"]
+position = Vector3(0.25468719, 0.3365798, 0.172960579)
+quaternion = Quaternion(0.00628779829, 0.12497247, 0.00488206744, 0.992128313)
+scale = Vector3(1.00000012, 1.00000036, 1.00000012)
+metadata/unity_id = 18048
+metadata/unity_name = "leg_middle_03_l"
+
+[node name="leg_middle_01_r" type="Node3D" parent="Spider/Spider_Model/root/pelvis"]
+position = Vector3(-0.150619939, 0.0324049369, 0.424540818)
+quaternion = Quaternion(-0.00424154662, 0.510605812, 0.00671482272, 0.859778225)
+scale = Vector3(1, 1, 1.00000012)
+metadata/unity_id = 15827
+metadata/unity_name = "leg_middle_01_r"
+
+[node name="leg_middle_02_r" type="Node3D" parent="Spider/Spider_Model/root/pelvis/leg_middle_01_r"]
+position = Vector3(-0.265583307, 0.477980405, 0.158268198)
+quaternion = Quaternion(1.66342502e-07, 0.482497633, 4.90324396e-07, 0.875897288)
+scale = Vector3(0.999999821, 0.999999881, 0.999999583)
+metadata/unity_id = 22643
+metadata/unity_name = "leg_middle_02_r"
+
+[node name="leg_middle_03_r" type="Node3D" parent="Spider/Spider_Model/root/pelvis/leg_middle_01_r/leg_middle_02_r"]
+position = Vector3(-0.254686892, -0.336578965, -0.172963515)
+quaternion = Quaternion(0.00628735637, 0.124972329, 0.00488189235, 0.992128313)
+scale = Vector3(0.999999702, 0.999999821, 1)
+metadata/unity_id = 9345
+metadata/unity_name = "leg_middle_03_r"
+
+[node name="neck_01" type="Node3D" parent="Spider/Spider_Model/root/pelvis"]
+position = Vector3(0.385590047, -7.62939436e-08, -2.02483116e-05)
+quaternion = Quaternion(1.51752289e-07, -0.999999225, 7.03331389e-05, -0.00123330962)
+scale = Vector3(1.00000012, 1, 1.00000012)
+metadata/unity_id = 4727
+metadata/unity_name = "neck_01"
+
+[node name="head" type="Node3D" parent="Spider/Spider_Model/root/pelvis/neck_01"]
+position = Vector3(-0.16596882, 0.16399993, 2.30908381e-06)
+quaternion = Quaternion(-4.18410679e-07, -0.244727969, -6.50488573e-07, 0.969591796)
+scale = Vector3(1.00000024, 0.999999881, 1.00000012)
+metadata/unity_id = 6761
+metadata/unity_name = "head"
+
+[node name="mandible_l" type="Node3D" parent="Spider/Spider_Model/root/pelvis/neck_01/head"]
+position = Vector3(-0.22172153, -0.084580116, 0.280240804)
+quaternion = Quaternion(-0.512516797, -5.46479839e-07, 0.858677089, 0.000548481185)
+scale = Vector3(0.999999821, 1.00000048, 0.999999702)
+metadata/unity_id = 23709
+metadata/unity_name = "mandible_l"
+
+[node name="mandible_r" type="Node3D" parent="Spider/Spider_Model/root/pelvis/neck_01/head"]
+position = Vector3(-0.355935782, -0.0845809951, 0.0313405618)
+quaternion = Quaternion(-4.92177094e-07, 0.858668685, 1.61977553e-07, 0.512531042)
+scale = Vector3(0.999999702, 1.00000024, 0.99999994)
+metadata/unity_id = 5373
+metadata/unity_name = "mandible_r"
+
+[node name="leg_front_01_l" type="Node3D" parent="Spider/Spider_Model/root/pelvis/neck_01"]
+position = Vector3(-0.0130209727, 0.00654907199, 0.311620235)
+quaternion = Quaternion(-0.777510405, 0.00623038271, -0.628827333, -0.0038655207)
+scale = Vector3(1.00000012, 1, 0.99999994)
+metadata/unity_id = 7270
+metadata/unity_name = "leg_front_01_l"
+
+[node name="leg_front_02_l" type="Node3D" parent="Spider/Spider_Model/root/pelvis/neck_01/leg_front_01_l"]
+position = Vector3(0.172763556, -0.469444007, -0.118616179)
+quaternion = Quaternion(6.08150731e-05, 0.453291506, 0.00222704187, 0.891359568)
+scale = Vector3(1.00000012, 0.999999881, 0.999999762)
+metadata/unity_id = 11589
+metadata/unity_name = "leg_front_02_l"
+
+[node name="leg_front_03_l" type="Node3D" parent="Spider/Spider_Model/root/pelvis/neck_01/leg_front_01_l/leg_front_02_l"]
+position = Vector3(0.265327603, 0.297255158, 0.139400095)
+quaternion = Quaternion(0.00619570119, 0.14978376, 0.0040285727, 0.988691151)
+scale = Vector3(1.00000024, 0.99999994, 1)
+metadata/unity_id = 25292
+metadata/unity_name = "leg_front_03_l"
+
+[node name="leg_front_01_r" type="Node3D" parent="Spider/Spider_Model/root/pelvis/neck_01"]
+position = Vector3(-0.0130309295, 0.00654796604, -0.311619818)
+quaternion = Quaternion(-0.00695917103, -0.777794361, -0.00274567888, 0.628474414)
+scale = Vector3(1, 0.99999994, 1)
+metadata/unity_id = 12690
+metadata/unity_name = "leg_front_01_r"
+
+[node name="leg_front_02_r" type="Node3D" parent="Spider/Spider_Model/root/pelvis/neck_01/leg_front_01_r"]
+position = Vector3(-0.172756895, 0.469446361, 0.118618429)
+quaternion = Quaternion(-3.59073766e-07, 0.453383297, -8.08098321e-07, 0.891315699)
+scale = Vector3(1.0000006, 1.0000006, 1.00000024)
+metadata/unity_id = 26253
+metadata/unity_name = "leg_front_02_r"
+
+[node name="leg_front_03_r" type="Node3D" parent="Spider/Spider_Model/root/pelvis/neck_01/leg_front_01_r/leg_front_02_r"]
+position = Vector3(-0.265328586, -0.297255784, -0.139397964)
+quaternion = Quaternion(0.00625643926, 0.149783581, 0.00408985466, 0.988690555)
+scale = Vector3(1.00000048, 1.00000024, 0.99999994)
+metadata/unity_id = 27204
+metadata/unity_name = "leg_front_03_r"
+
+[node name="shell_01" type="Node3D" parent="Spider/Spider_Model/root/pelvis"]
+position = Vector3(0.357411325, 0.238414451, -0.0045615891)
+quaternion = Quaternion(-1.24497701e-09, -0.00115966774, -7.15413591e-07, 0.999999344)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25014
+metadata/unity_name = "shell_01"
+
+[node name="shell_02" type="Node3D" parent="Spider/Spider_Model/root/pelvis"]
+position = Vector3(0.153645843, 0.328484803, -0.0050451532)
+quaternion = Quaternion(-9.68474745e-10, -0.00115966774, -4.76937771e-07, 0.999999344)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13691
+metadata/unity_name = "shell_02"
+
+[node name="shell_03" type="Node3D" parent="Spider/Spider_Model/root/pelvis"]
+position = Vector3(-0.0887529552, 0.416286826, -0.00562036363)
+quaternion = Quaternion(-2.4427456e-07, -1, -2.44379607e-05, 0.000236755019)
+scale = Vector3(0.999999881, 1.00000012, 1.00000012)
+metadata/unity_id = 21915
+metadata/unity_name = "shell_03"
+
+[node name="VfxForceField" type="Node3D" parent="Spider/Spider_Model/root/pelvis"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18060
+metadata/unity_name = "VfxForceField"
+
+[node name="OverheadSlot" type="Node3D" parent="Spider"]
+position = Vector3(0, 2, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6591
+metadata/unity_name = "OverheadSlot"
+
+[node name="VFXParent" type="Node3D" parent="Spider"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19743
+metadata/unity_name = "VFXParent"
+
+[node name="VFX_Spider_SkillAttack" type="Node3D" parent="Spider/VFXParent"]
+position = Vector3(-0, 0.810000002, -2.1500001)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19443
+metadata/unity_name = "VFX_Spider_SkillAttack"
+
+[node name="root" type="Node3D" parent="Spider/VFXParent/VFX_Spider_SkillAttack"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16269
+metadata/unity_name = "root"
+
+[node name="Blood_01" type="Node3D" parent="Spider/VFXParent/VFX_Spider_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6972
+metadata/unity_name = "Blood_01"
+
+[node name="SlashLine_01" type="Node3D" parent="Spider/VFXParent/VFX_Spider_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9789
+metadata/unity_name = "SlashLine_01"
+
+[node name="LightCone_01" type="Node3D" parent="Spider/VFXParent/VFX_Spider_SkillAttack/root"]
+position = Vector3(0, -0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17308
+metadata/unity_name = "LightCone_01"
+
+[node name="Lines_01" type="Node3D" parent="Spider/VFXParent/VFX_Spider_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12330
+metadata/unity_name = "Lines_01"
+
+[node name="Circle_01" type="Node3D" parent="Spider/VFXParent/VFX_Spider_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21006
+metadata/unity_name = "Circle_01"
+
+[node name="Circle_02" type="Node3D" parent="Spider/VFXParent/VFX_Spider_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10697
+metadata/unity_name = "Circle_02"
+
+[node name="Lines_02" type="Node3D" parent="Spider/VFXParent/VFX_Spider_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12794
+metadata/unity_name = "Lines_02"
+
+[node name="HitCenter_01" type="Node3D" parent="Spider/VFXParent/VFX_Spider_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20857
+metadata/unity_name = "HitCenter_01"

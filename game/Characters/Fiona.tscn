@@ -1,0 +1,1381 @@
+[gd_scene format=3]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2729.obj" id="1"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_421.tres" id="2"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2873.obj" id="3"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_420.tres" id="4"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2959.obj" id="5"]
+
+[node name="Fiona" type="Node3D"]
+
+[node name="Fiona" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1.05999994, 1.05999994, 1.05999994)
+metadata/unity_id = 6321
+metadata/unity_name = "Fiona"
+
+[node name="Fiona_Model" type="Node3D" parent="Fiona"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21786
+metadata/unity_name = "Fiona_Model"
+
+[node name="Armature" type="Node3D" parent="Fiona/Fiona_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17463
+metadata/unity_name = "Armature"
+
+[node name="hips" type="Node3D" parent="Fiona/Fiona_Model/Armature"]
+position = Vector3(4.73316515e-31, 1.01016009, 0.0293580554)
+quaternion = Quaternion(-0.0439158082, 0, -0, 0.999035239)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16339
+metadata/unity_name = "hips"
+
+[node name="spine" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips"]
+position = Vector3(-9.7818753e-31, 0.112475477, -9.76996256e-17)
+quaternion = Quaternion(-0, -1.11022302e-16, -2.3869795e-15, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22416
+metadata/unity_name = "spine"
+
+[node name="chest" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine"]
+position = Vector3(2.31677954e-17, 0.190610722, -1.37667656e-16)
+quaternion = Quaternion(5.55111512e-17, 3.60822483e-16, -2.30371278e-15, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24206
+metadata/unity_name = "chest"
+
+[node name="neck" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest"]
+position = Vector3(8.83524218e-31, 0.225394204, 0.10107553)
+quaternion = Quaternion(-0.0375700593, -2.22044631e-16, -2.44249087e-15, 0.999294043)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25465
+metadata/unity_name = "neck"
+
+[node name="head" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck"]
+position = Vector3(6.43467728e-18, 0.0997083336, -0)
+quaternion = Quaternion(0.0375683643, 1.66533467e-16, -2.27595741e-15, 0.999294102)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10795
+metadata/unity_name = "head"
+
+[node name="earring_root" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(-3.94430444e-33, 0, 7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6678
+metadata/unity_name = "earring_root"
+
+[node name="earring_L_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/earring_root"]
+position = Vector3(-0.0600633658, 0.000507632096, -0.012726807)
+quaternion = Quaternion(-0.707106829, 4.32978063e-17, -0.707106829, -4.32978063e-17)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6694
+metadata/unity_name = "earring_L_01"
+
+[node name="earring_L_02_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/earring_root/earring_L_01"]
+position = Vector3(2.84217088e-16, 0.0468313508, 8.88178367e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22636
+metadata/unity_name = "earring_L_02_end"
+
+[node name="earring_R_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/earring_root"]
+position = Vector3(0.0600633621, 0.000507633318, -0.0127268219)
+quaternion = Quaternion(-0.707106829, -4.32978063e-17, 0.707106829, -4.32978063e-17)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11880
+metadata/unity_name = "earring_R_01"
+
+[node name="earring_R_02_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/earring_root/earring_R_01"]
+position = Vector3(-2.84217088e-16, 0.0468283072, -8.881784e-18)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22669
+metadata/unity_name = "earring_R_02_end"
+
+[node name="hair_root" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(-2.96024747e-17, -2.84217088e-16, -6.92779142e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9224
+metadata/unity_name = "hair_root"
+
+[node name="hair_B_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(2.31331578e-05, 0.0277183875, 0.0870527402)
+quaternion = Quaternion(-0.99117291, -0.00118251052, -0.000158162293, -0.132570654)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26276
+metadata/unity_name = "hair_B_01"
+
+[node name="hair_B_02" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_B_01"]
+position = Vector3(-3.5527136e-17, 0.0567676909, -0)
+quaternion = Quaternion(0.177629694, -0, -0, 0.984097421)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13820
+metadata/unity_name = "hair_B_02"
+
+[node name="hair_B_brchA_03" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_B_01/hair_B_02"]
+position = Vector3(-0.0119869122, 0.0386988334, 0.0115645668)
+quaternion = Quaternion(-0.00142877665, -0.000254186394, 0.175154492, 0.984539926)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20969
+metadata/unity_name = "hair_B_brchA_03"
+
+[node name="hair_B_brchA_04_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_B_01/hair_B_02/hair_B_brchA_03"]
+position = Vector3(-7.1054272e-17, 0.063809678, -3.55271347e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7911
+metadata/unity_name = "hair_B_brchA_04_end"
+
+[node name="hair_B_brchB_03" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_B_01/hair_B_02"]
+position = Vector3(0.011282959, 0.0389673971, 0.0112395054)
+quaternion = Quaternion(-0.00989826582, 0.00160589558, -0.160138071, 0.987043738)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6572
+metadata/unity_name = "hair_B_brchB_03"
+
+[node name="hair_B_brchB_04_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_B_01/hair_B_02/hair_B_brchB_03"]
+position = Vector3(6.39488435e-16, 0.0604732148, -5.3290702e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20788
+metadata/unity_name = "hair_B_brchB_04_end"
+
+[node name="hair_FA_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(-0.00733457785, 0.112290122, -0.0916344896)
+quaternion = Quaternion(-0.307968915, -0.318090856, 0.811486363, -0.381396472)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19351
+metadata/unity_name = "hair_FA_01"
+
+[node name="hair_FA_02" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_FA_01"]
+position = Vector3(-0, 0.0346626788, -0)
+quaternion = Quaternion(0.249687865, 0.0284384489, -0.00811221264, 0.967874706)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21319
+metadata/unity_name = "hair_FA_02"
+
+[node name="hair_FA_03" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_FA_01/hair_FA_02"]
+position = Vector3(-4.85949003e-10, 0.0355505049, -5.85105187e-10)
+quaternion = Quaternion(0.200215027, -0, -0, 0.979752004)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22534
+metadata/unity_name = "hair_FA_03"
+
+[node name="hair_FA_04" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_FA_01/hair_FA_02/hair_FA_03"]
+position = Vector3(-1.85083157e-10, 0.0453016646, -8.88178367e-17)
+quaternion = Quaternion(0.0992273912, 0.00740529224, 0.074053213, 0.992277801)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23609
+metadata/unity_name = "hair_FA_04"
+
+[node name="hair_FA_05" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_FA_01/hair_FA_02/hair_FA_03/hair_FA_04"]
+position = Vector3(-0.00156299514, 0.0507637411, -0.000119779208)
+quaternion = Quaternion(-0.108418673, 0.0836452097, 0.0929370448, 0.986210763)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6538
+metadata/unity_name = "hair_FA_05"
+
+[node name="hair_FA_06" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_FA_01/hair_FA_02/hair_FA_03/hair_FA_04/hair_FA_05"]
+position = Vector3(-2.22254923e-10, 0.0348715261, -6.08921746e-10)
+quaternion = Quaternion(-0.0940394327, 2.38955877e-09, 2.2571299e-10, 0.995568514)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12350
+metadata/unity_name = "hair_FA_06"
+
+[node name="hair_FA_07_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_FA_01/hair_FA_02/hair_FA_03/hair_FA_04/hair_FA_05/hair_FA_06"]
+position = Vector3(-3.12635529e-10, 0.0436662622, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25551
+metadata/unity_name = "hair_FA_07_end"
+
+[node name="hair_FB_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(-0.0614260472, 0.0560324937, -0.0656387061)
+quaternion = Quaternion(0.566884041, 0.110502608, 0.814483345, 0.0552137643)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24516
+metadata/unity_name = "hair_FB_01"
+
+[node name="hair_FB_02" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_FB_01"]
+position = Vector3(7.1054272e-17, 0.0391563997, -3.5527136e-17)
+quaternion = Quaternion(0.0315667763, -0.00235425727, -0.0743364096, 0.996730745)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19869
+metadata/unity_name = "hair_FB_02"
+
+[node name="hair_FB_03" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_FB_01/hair_FB_02"]
+position = Vector3(2.84217088e-16, 0.0390393063, -1.7763568e-17)
+quaternion = Quaternion(-0, 0, -0.101684906, 0.994816661)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19302
+metadata/unity_name = "hair_FB_03"
+
+[node name="hair_FB_04_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_FB_01/hair_FB_02/hair_FB_03"]
+position = Vector3(-7.19424522e-16, 0.056713108, -1.72778459e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20173
+metadata/unity_name = "hair_FB_04_end"
+
+[node name="hair_FC_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(0.0629691035, 0.050057631, -0.0334198736)
+quaternion = Quaternion(-0.639069796, -0.123835735, 0.752908945, 0.0968644992)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18852
+metadata/unity_name = "hair_FC_01"
+
+[node name="hair_FC_02" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_FC_01"]
+position = Vector3(-3.0300093e-10, 0.0497142933, -1.25533384e-09)
+quaternion = Quaternion(-0.0131888855, -0.177341774, 0.0851075575, 0.98037374)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19665
+metadata/unity_name = "hair_FC_02"
+
+[node name="hair_FC_03" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_FC_01/hair_FC_02"]
+position = Vector3(0.000251447986, 0.049586758, 0.00287406356)
+quaternion = Quaternion(-0.048156485, -0.0463142954, 0.0945905969, 0.993271649)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5983
+metadata/unity_name = "hair_FC_03"
+
+[node name="hair_FC_04_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_FC_01/hair_FC_02/hair_FC_03"]
+position = Vector3(7.1054272e-17, 0.0547826216, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13121
+metadata/unity_name = "hair_FC_04_end"
+
+[node name="hair_in_A_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(-0.0401029848, -0.0335040689, 0.0270658564)
+quaternion = Quaternion(-0.845367312, -0.0160966609, -0.507321656, -0.166492373)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22627
+metadata/unity_name = "hair_in_A_01"
+
+[node name="hair_in_A_02_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_in_A_01"]
+position = Vector3(7.02216055e-17, 0.0735629499, 4.440892e-18)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5782
+metadata/unity_name = "hair_in_A_02_end"
+
+[node name="hair_in_B_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(-0.0277860332, -0.0383987315, 0.0462797284)
+quaternion = Quaternion(-0.970758379, -0.0331615731, -0.14734979, -0.186591953)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20238
+metadata/unity_name = "hair_in_B_01"
+
+[node name="hair_in_B_02_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_in_B_01"]
+position = Vector3(2.84217088e-16, 0.06447009, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23462
+metadata/unity_name = "hair_in_B_02_end"
+
+[node name="hair_in_C_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(-0.00969989412, -0.0340635106, 0.0536754988)
+quaternion = Quaternion(-0.983167827, -0.0233861674, -0.0516061895, -0.173697889)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7541
+metadata/unity_name = "hair_in_C_01"
+
+[node name="hair_in_C_02_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_in_C_01"]
+position = Vector3(9.1905649e-17, 0.0723686367, -4.46309654e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8566
+metadata/unity_name = "hair_in_C_02_end"
+
+[node name="hair_in_D_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(0.00865343492, -0.03659546, 0.0531943366)
+quaternion = Quaternion(-0.985658705, 0.0364515856, 0.0159830172, -0.163989961)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4898
+metadata/unity_name = "hair_in_D_01"
+
+[node name="hair_in_D_02_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_in_D_01"]
+position = Vector3(-3.21097319e-17, 0.0784049556, -2.7117196e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21437
+metadata/unity_name = "hair_in_D_02_end"
+
+[node name="hair_in_E_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(0.0255135912, -0.0357596762, 0.0410014652)
+quaternion = Quaternion(-0.964342773, -0.0344182216, 0.147821292, -0.216811776)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22355
+metadata/unity_name = "hair_in_E_01"
+
+[node name="hair_in_E_02_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_in_E_01"]
+position = Vector3(-2.30926381e-16, 0.0689735413, -2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14411
+metadata/unity_name = "hair_in_E_02_end"
+
+[node name="hair_in_F_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(0.0384765454, -0.0331545509, 0.0287463516)
+quaternion = Quaternion(-0.854210913, -0.017630659, 0.480588198, -0.197605342)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20290
+metadata/unity_name = "hair_in_F_01"
+
+[node name="hair_in_F_02_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_in_F_01"]
+position = Vector3(-1.00197625e-16, 0.0734509155, -3.21409564e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27075
+metadata/unity_name = "hair_in_F_02_end"
+
+[node name="hair_LA_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(-0.0665869862, 0.0433642939, 0.00510700932)
+quaternion = Quaternion(0.669988096, 0.0306638032, 0.739727497, -0.0545794331)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10549
+metadata/unity_name = "hair_LA_01"
+
+[node name="hair_LA_brchA_02" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LA_01"]
+position = Vector3(-0.00147466233, 0.0507692434, 0.000249145203)
+quaternion = Quaternion(-0.132740915, -0.0194615629, 0.0905346721, 0.986815393)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20945
+metadata/unity_name = "hair_LA_brchA_02"
+
+[node name="hair_LA_brchA_03" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LA_01/hair_LA_brchA_02"]
+position = Vector3(1.7763568e-17, 0.0625058785, 1.77635673e-16)
+quaternion = Quaternion(-0.142507404, 0.0349608548, -0.235682502, 0.960688889)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15026
+metadata/unity_name = "hair_LA_brchA_03"
+
+[node name="hair_LA_brchA_04_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LA_01/hair_LA_brchA_02/hair_LA_brchA_03"]
+position = Vector3(1.80411235e-17, 0.042169895, 1.83169445e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19981
+metadata/unity_name = "hair_LA_brchA_04_end"
+
+[node name="hair_LA_brchB_02" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LA_01"]
+position = Vector3(0.00396261783, 0.0515151955, -0.00385232316)
+quaternion = Quaternion(-0.363572985, -0.0190002266, 0.0273707602, 0.930969656)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4695
+metadata/unity_name = "hair_LA_brchB_02"
+
+[node name="hair_LA_brchB_03" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LA_01/hair_LA_brchB_02"]
+position = Vector3(1.68753898e-16, 0.0658572465, 5.68434176e-16)
+quaternion = Quaternion(0.104718387, -0.00663690269, -0.0629025027, 0.992488444)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22489
+metadata/unity_name = "hair_LA_brchB_03"
+
+[node name="hair_LA_brchB_04_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LA_01/hair_LA_brchB_02/hair_LA_brchB_03"]
+position = Vector3(-4.82426609e-16, 0.0351129323, -6.50816177e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25971
+metadata/unity_name = "hair_LA_brchB_04_end"
+
+[node name="hair_LA_brchC_02" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LA_01"]
+position = Vector3(0.0130378874, 0.0517433286, 0.00238843053)
+quaternion = Quaternion(-0.139532834, -0.128122196, 0.0272830371, 0.981514633)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21873
+metadata/unity_name = "hair_LA_brchC_02"
+
+[node name="hair_LA_brchC_03" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LA_01/hair_LA_brchC_02"]
+position = Vector3(3.55271347e-16, 0.0660311282, -2.84217088e-16)
+quaternion = Quaternion(-0.0999070629, -0.00620532408, 0.061680153, 0.993063807)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9381
+metadata/unity_name = "hair_LA_brchC_03"
+
+[node name="hair_LA_brchC_04_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LA_01/hair_LA_brchC_02/hair_LA_brchC_03"]
+position = Vector3(1.7763568e-17, 0.0513180345, -2.13162816e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21021
+metadata/unity_name = "hair_LA_brchC_04_end"
+
+[node name="hair_LA_brchD_02" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LA_01"]
+position = Vector3(0.0213456266, 0.0525774434, -0.00407394348)
+quaternion = Quaternion(-0.220706657, -0.0355248116, -0.0036335648, 0.974686265)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15289
+metadata/unity_name = "hair_LA_brchD_02"
+
+[node name="hair_LA_brchD_03" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LA_01/hair_LA_brchD_02"]
+position = Vector3(1.77635673e-16, 0.0697062314, -2.13162816e-16)
+quaternion = Quaternion(-0.15902774, -0.0245658085, -0.150674805, 0.975399315)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10148
+metadata/unity_name = "hair_LA_brchD_03"
+
+[node name="hair_LA_brchD_04" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LA_01/hair_LA_brchD_02/hair_LA_brchD_03"]
+position = Vector3(-0, 0.0457972698, 1.13686835e-15)
+quaternion = Quaternion(-0.0604779869, 0.0174896866, -0.274681181, 0.95947212)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6439
+metadata/unity_name = "hair_LA_brchD_04"
+
+[node name="hair_LA_brchD_05_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LA_01/hair_LA_brchD_02/hair_LA_brchD_03/hair_LA_brchD_04"]
+position = Vector3(5.68434176e-16, 0.0289217439, -1.13686835e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17785
+metadata/unity_name = "hair_LA_brchD_05_end"
+
+[node name="hair_LB_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(-0.0513692982, -0.00846604537, 0.00416888902)
+quaternion = Quaternion(0.605006158, -0.063208811, 0.790791929, -0.0679730773)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11418
+metadata/unity_name = "hair_LB_01"
+
+[node name="hair_LB_02" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LB_01"]
+position = Vector3(2.40779229e-07, 0.0382926911, -4.31291554e-08)
+quaternion = Quaternion(-0.020892309, -0.123971544, 0.157930732, 0.979414344)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25546
+metadata/unity_name = "hair_LB_02"
+
+[node name="hair_LB_03" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LB_01/hair_LB_02"]
+position = Vector3(-1.91352092e-06, 0.0545150824, 1.31126725e-07)
+quaternion = Quaternion(0.0855170414, 0.022089161, 0.257091284, 0.962342441)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26060
+metadata/unity_name = "hair_LB_03"
+
+[node name="hair_LB_04_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LB_01/hair_LB_02/hair_LB_03"]
+position = Vector3(3.03512934e-06, 0.0329089724, -4.33874249e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16479
+metadata/unity_name = "hair_LB_04_end"
+
+[node name="hair_LC_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(-0.0573769324, 0.035756804, 0.0455116443)
+quaternion = Quaternion(-0.875081956, -0.0113053778, -0.482050151, 0.0416104756)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27197
+metadata/unity_name = "hair_LC_01"
+
+[node name="hair_LC_02" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LC_01"]
+position = Vector3(-3.5527136e-17, 0.0463404246, 7.1054272e-17)
+quaternion = Quaternion(-0.135597214, 0, -0, 0.990764081)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13287
+metadata/unity_name = "hair_LC_02"
+
+[node name="hair_LC_brchA_03" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LC_01/hair_LC_02"]
+position = Vector3(-0.00367732369, 0.066180639, -0.00318231224)
+quaternion = Quaternion(-0.157249004, -0.134914339, -0.0755079761, 0.975381732)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26896
+metadata/unity_name = "hair_LC_brchA_03"
+
+[node name="hair_LC_brchA_04_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LC_01/hair_LC_02/hair_LC_brchA_03"]
+position = Vector3(2.13162816e-16, 0.0644334927, -2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26846
+metadata/unity_name = "hair_LC_brchA_04_end"
+
+[node name="hair_LC_brchB_03" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LC_01/hair_LC_02"]
+position = Vector3(0.00838372763, 0.059903495, 0.00283434987)
+quaternion = Quaternion(-0.153513595, -0.167093575, -0.0641518757, 0.971801341)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22066
+metadata/unity_name = "hair_LC_brchB_03"
+
+[node name="hair_LC_brchB_04_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LC_01/hair_LC_02/hair_LC_brchB_03"]
+position = Vector3(-3.73034925e-16, 0.0544705763, -2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12835
+metadata/unity_name = "hair_LC_brchB_04_end"
+
+[node name="hair_LD_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(-0.0325008854, 0.0296544526, 0.0762304515)
+quaternion = Quaternion(-0.954936862, 0.00188819563, -0.293988198, 0.0407791846)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5944
+metadata/unity_name = "hair_LD_01"
+
+[node name="hair_LD_02" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LD_01"]
+position = Vector3(-3.5527136e-17, 0.0502460413, -3.5527136e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26081
+metadata/unity_name = "hair_LD_02"
+
+[node name="hair_LD_brchA_03" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LD_01/hair_LD_02"]
+position = Vector3(-0.0138202077, 0.0503027961, -0.0119470824)
+quaternion = Quaternion(-0.214102224, 0.0440691896, -0.196730569, 0.95577991)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26744
+metadata/unity_name = "hair_LD_brchA_03"
+
+[node name="hair_LD_brchA_04_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LD_01/hair_LD_02/hair_LD_brchA_03"]
+position = Vector3(1.42108544e-16, 0.0549066961, -8.52651264e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14366
+metadata/unity_name = "hair_LD_brchA_04_end"
+
+[node name="hair_LD_brchB_03" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LD_01/hair_LD_02"]
+position = Vector3(0.0112794824, 0.0466735847, -0.00651229359)
+quaternion = Quaternion(-0.25082773, -0.0405850932, -0.204703674, 0.945269644)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23802
+metadata/unity_name = "hair_LD_brchB_03"
+
+[node name="hair_LD_brchB_04_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LD_01/hair_LD_02/hair_LD_brchB_03"]
+position = Vector3(2.84217088e-16, 0.0505523272, -9.94759834e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5328
+metadata/unity_name = "hair_LD_brchB_04_end"
+
+[node name="hair_LE_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(-0.0806565285, 0.0407786369, 0.0106996018)
+quaternion = Quaternion(-0.706720054, 0.0162000787, -0.706199706, 0.0395773612)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26296
+metadata/unity_name = "hair_LE_01"
+
+[node name="hair_LE_02" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LE_01"]
+position = Vector3(-3.5527136e-17, 0.0418721959, -5.28466132e-16)
+quaternion = Quaternion(-0.224379003, 0.00687022787, -0.0298234187, 0.974021256)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17733
+metadata/unity_name = "hair_LE_02"
+
+[node name="hair_LE_03_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LE_01/hair_LE_02"]
+position = Vector3(-7.1054272e-17, 0.0368907191, -2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8134
+metadata/unity_name = "hair_LE_03_end"
+
+[node name="hair_RA_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(0.0656241253, 0.0406525172, 0.0180697311)
+quaternion = Quaternion(-0.716566384, -0.0472386703, 0.695230782, 0.0309076253)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18527
+metadata/unity_name = "hair_RA_01"
+
+[node name="hair_RA_brchA_02" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RA_01"]
+position = Vector3(0.0094753094, 0.0498628542, 0.00817625411)
+quaternion = Quaternion(-0.0334924161, -0.00735031255, -0.116296031, 0.992622554)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19813
+metadata/unity_name = "hair_RA_brchA_02"
+
+[node name="hair_RA_brchA_03" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RA_01/hair_RA_brchA_02"]
+position = Vector3(1.42108544e-16, 0.0473246984, -2.48689959e-16)
+quaternion = Quaternion(-0.16170375, -0.0533882044, 0.199423879, 0.96500349)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23253
+metadata/unity_name = "hair_RA_brchA_03"
+
+[node name="hair_RA_brchA_04_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RA_01/hair_RA_brchA_02/hair_RA_brchA_03"]
+position = Vector3(-7.1054272e-17, 0.0539823696, 5.68434176e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8104
+metadata/unity_name = "hair_RA_brchA_04_end"
+
+[node name="hair_RA_brchB_02" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RA_01"]
+position = Vector3(-0.000850050303, 0.0521026589, -0.000917114899)
+quaternion = Quaternion(-0.27045235, -0.0960987806, -0.0530069992, 0.956457436)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9581
+metadata/unity_name = "hair_RA_brchB_02"
+
+[node name="hair_RA_brchB_03" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RA_01/hair_RA_brchB_02"]
+position = Vector3(0.00334883761, 0.046006456, -0.00118890952)
+quaternion = Quaternion(0.00949506555, -0.00705055939, 0.117884651, 0.992956877)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24361
+metadata/unity_name = "hair_RA_brchB_03"
+
+[node name="hair_RA_brchB_04_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RA_01/hair_RA_brchB_02/hair_RA_brchB_03"]
+position = Vector3(0.0026662196, 0.0490851961, 0.00487912633)
+quaternion = Quaternion(-0, -0.707106829, 0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19485
+metadata/unity_name = "hair_RA_brchB_04_end"
+
+[node name="hair_RA_brchC_02" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RA_01"]
+position = Vector3(-0.00389448018, 0.049737487, 0.00566921476)
+quaternion = Quaternion(-0.052379135, -0.0163113698, 0.0240310486, 0.998204827)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13903
+metadata/unity_name = "hair_RA_brchC_02"
+
+[node name="hair_RA_brchC_03" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RA_01/hair_RA_brchC_02"]
+position = Vector3(2.6645351e-16, 0.0650692657, 3.5527136e-17)
+quaternion = Quaternion(-0.11245691, 0.0144990943, -0.0587994531, 0.991809368)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27145
+metadata/unity_name = "hair_RA_brchC_03"
+
+[node name="hair_RA_brchC_04_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RA_01/hair_RA_brchC_02/hair_RA_brchC_03"]
+position = Vector3(1.24344979e-16, 0.0487713031, -7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17936
+metadata/unity_name = "hair_RA_brchC_04_end"
+
+[node name="hair_RA_brchD_02" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RA_01"]
+position = Vector3(-0.0138790179, 0.0509839803, -0.000170269675)
+quaternion = Quaternion(-0.127953932, -0.0181830768, 0.023348622, 0.991338491)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8883
+metadata/unity_name = "hair_RA_brchD_02"
+
+[node name="hair_RA_brchD_03" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RA_01/hair_RA_brchD_02"]
+position = Vector3(2.48689959e-16, 0.0487972423, -7.1054272e-17)
+quaternion = Quaternion(-0.126798049, -0.0337546766, 0.078021206, 0.988279104)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9489
+metadata/unity_name = "hair_RA_brchD_03"
+
+[node name="hair_RA_brchD_04" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RA_01/hair_RA_brchD_02/hair_RA_brchD_03"]
+position = Vector3(-3.55271347e-16, 0.0524492674, -0)
+quaternion = Quaternion(-0.0658748299, -0.022030903, 0.316402555, 0.946078539)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25021
+metadata/unity_name = "hair_RA_brchD_04"
+
+[node name="hair_RA_brchD_05_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RA_01/hair_RA_brchD_02/hair_RA_brchD_03/hair_RA_brchD_04"]
+position = Vector3(-0.000508668134, 0.0437992513, 2.1143378e-05)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6581
+metadata/unity_name = "hair_RA_brchD_05_end"
+
+[node name="hair_RB_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(0.0513692908, -0.0084658917, 0.00416887645)
+quaternion = Quaternion(-0.605006158, -0.063208811, 0.790791929, 0.0679730773)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25193
+metadata/unity_name = "hair_RB_01"
+
+[node name="hair_RB_02" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RB_01"]
+position = Vector3(-0, 0.0382895879, 2.22044592e-17)
+quaternion = Quaternion(-0.020892309, 0.123971544, -0.157930732, 0.979414344)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22337
+metadata/unity_name = "hair_RB_02"
+
+[node name="hair_RB_03" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RB_01/hair_RB_02"]
+position = Vector3(-1.42108544e-16, 0.054519441, -6.32827116e-17)
+quaternion = Quaternion(0.0855170414, -0.022089161, -0.257091284, 0.962342441)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15553
+metadata/unity_name = "hair_RB_03"
+
+[node name="hair_RB_04_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RB_01/hair_RB_02/hair_RB_03"]
+position = Vector3(-0, 0.0329068303, -3.5527136e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26942
+metadata/unity_name = "hair_RB_04_end"
+
+[node name="hair_RC_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(0.0551433563, 0.0353152938, 0.0441819616)
+quaternion = Quaternion(-0.897743464, 0.0301958695, 0.435012937, 0.0625194237)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18435
+metadata/unity_name = "hair_RC_01"
+
+[node name="hair_RC_02" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RC_01"]
+position = Vector3(-6.98914704e-10, 0.0435154028, 8.77137918e-10)
+quaternion = Quaternion(-0.130526185, 0, -0, 0.991444886)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21633
+metadata/unity_name = "hair_RC_02"
+
+[node name="hair_RC_brchA_03" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RC_01/hair_RC_02"]
+position = Vector3(0.0120392907, 0.0681073219, -0.00937536079)
+quaternion = Quaternion(-0.159320533, -0.00815469865, 0.0504626706, 0.985902667)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22930
+metadata/unity_name = "hair_RC_brchA_03"
+
+[node name="hair_RC_brchA_04_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RC_01/hair_RC_02/hair_RC_brchA_03"]
+position = Vector3(0.000303304958, 0.0651778281, -0.000629262882)
+quaternion = Quaternion(-0.0722388774, -0.00119216018, -0.0347127579, 0.996782422)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9998
+metadata/unity_name = "hair_RC_brchA_04_end"
+
+[node name="hair_RC_brchB_03" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RC_01/hair_RC_02"]
+position = Vector3(-0.00512651866, 0.0642387718, -0.00259461673)
+quaternion = Quaternion(-0.165329427, -0.00855776761, 0.0509794205, 0.984882772)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20672
+metadata/unity_name = "hair_RC_brchB_03"
+
+[node name="hair_RC_brchB_04_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RC_01/hair_RC_02/hair_RC_brchB_03"]
+position = Vector3(-0.00128494529, 0.0529679433, 1.42108544e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20266
+metadata/unity_name = "hair_RC_brchB_04_end"
+
+[node name="hair_RD_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(0.0315982439, 0.0317453332, 0.0731050298)
+quaternion = Quaternion(-0.957126915, -0.00658640219, 0.276133835, 0.0872631073)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14301
+metadata/unity_name = "hair_RD_01"
+
+[node name="hair_RD_02" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RD_01"]
+position = Vector3(-0, 0.0460806936, -0)
+quaternion = Quaternion(-0.107309207, -0.00463912077, 0.00777273485, 0.994184494)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21476
+metadata/unity_name = "hair_RD_02"
+
+[node name="hair_RD_brchA_03" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RD_01/hair_RD_02"]
+position = Vector3(0.0137121221, 0.0588267185, -0.00295884698)
+quaternion = Quaternion(-0.242636651, -0.0227032043, 0.0903531164, 0.965633631)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18666
+metadata/unity_name = "hair_RD_brchA_03"
+
+[node name="hair_RD_brchA_04_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RD_01/hair_RD_02/hair_RD_brchA_03"]
+position = Vector3(-2.13162816e-16, 0.0547774285, 1.42108544e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12171
+metadata/unity_name = "hair_RD_brchA_04_end"
+
+[node name="hair_RD_brchB_03" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RD_01/hair_RD_02"]
+position = Vector3(-0.0085888328, 0.0517198406, -0.000665090571)
+quaternion = Quaternion(-0.220349431, -0.00408586115, 0.0180836171, 0.97524482)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23173
+metadata/unity_name = "hair_RD_brchB_03"
+
+[node name="hair_RD_brchB_04_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RD_01/hair_RD_02/hair_RD_brchB_03"]
+position = Vector3(-3.78516657e-17, 0.0589912459, 1.62647664e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17772
+metadata/unity_name = "hair_RD_brchB_04_end"
+
+[node name="hair_RE_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(0.0814331993, 0.0411018357, 0.0245457236)
+quaternion = Quaternion(-0.807845533, 0.0773898885, 0.583921611, -0.020784257)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26766
+metadata/unity_name = "hair_RE_01"
+
+[node name="hair_RE_02" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RE_01"]
+position = Vector3(-2.13162816e-16, 0.0465100035, -3.01980666e-16)
+quaternion = Quaternion(-0.269054502, -0.0214824043, 0.00351924705, 0.962878942)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19654
+metadata/unity_name = "hair_RE_02"
+
+[node name="hair_RE_03" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RE_01/hair_RE_02"]
+position = Vector3(2.47441456e-10, 0.0425981767, -8.91880458e-10)
+quaternion = Quaternion(-0.143561527, -2.87981572e-09, -3.35252515e-09, 0.989641428)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15402
+metadata/unity_name = "hair_RE_03"
+
+[node name="hair_RE_04_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RE_01/hair_RE_02/hair_RE_03"]
+position = Vector3(3.64380387e-10, 0.0488284566, 1.42108544e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12046
+metadata/unity_name = "hair_RE_04_end"
+
+[node name="head_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(1.84670454e-17, 0.163535327, 8.88178367e-17)
+quaternion = Quaternion(5.55111512e-17, -1.66533454e-16, -2.3869795e-15, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21929
+metadata/unity_name = "head_end"
+
+[node name="jaw" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(2.65876632e-18, -0.00309678097, -0.0229104664)
+quaternion = Quaternion(-0.884655714, -6.9388939e-17, -1.34614542e-15, 0.466244876)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5549
+metadata/unity_name = "jaw"
+
+[node name="jaw_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/neck/head/jaw"]
+position = Vector3(1.53046744e-17, 0.0898974314, -0)
+quaternion = Quaternion(8.32667268e-17, 9.99200722e-16, -5.82867088e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18313
+metadata/unity_name = "jaw_end"
+
+[node name="shoulder_L" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest"]
+position = Vector3(-0.0221302006, 0.137255594, 0.100353442)
+quaternion = Quaternion(-0.578284979, 0.456096381, -0.540348172, -0.406923264)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26306
+metadata/unity_name = "shoulder_L"
+
+[node name="upper_arm_L" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/shoulder_L"]
+position = Vector3(8.88178367e-17, 0.149554789, 2.84217088e-16)
+quaternion = Quaternion(0.504450798, 0.00880522095, 0.0150683299, 0.863264024)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8803
+metadata/unity_name = "upper_arm_L"
+
+[node name="lower_arm_L" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L"]
+position = Vector3(-0, 0.172851995, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19475
+metadata/unity_name = "lower_arm_L"
+
+[node name="hand_L" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L"]
+position = Vector3(-0, 0.25929898, 7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24377
+metadata/unity_name = "hand_L"
+
+[node name="hand_L_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L"]
+position = Vector3(-1.06303852e-16, 0.149000987, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16665
+metadata/unity_name = "hand_L_end"
+
+[node name="shoulder_R" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest"]
+position = Vector3(0.0221301671, 0.137257576, 0.100353651)
+quaternion = Quaternion(-0.578284979, -0.456096381, 0.540348172, -0.406923264)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18296
+metadata/unity_name = "shoulder_R"
+
+[node name="shouldershield_root" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/shoulder_R"]
+position = Vector3(3.5527136e-17, 0.149554923, 5.68434176e-16)
+quaternion = Quaternion(0.504527628, 2.60208521e-18, -1.9420747e-18, 0.863395572)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8411
+metadata/unity_name = "shouldershield_root"
+
+[node name="shouldershieldA_root" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/shoulder_R/shouldershield_root"]
+position = Vector3(1.7763568e-17, 5.68434176e-16, -1.42108544e-16)
+quaternion = Quaternion(-0.834454894, 1.51968251e-08, 4.4791836e-08, 0.551076233)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21004
+metadata/unity_name = "shouldershieldA_root"
+
+[node name="shouldershieldA" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/shoulder_R/shouldershield_root/shouldershieldA_root"]
+position = Vector3(1.83268707e-08, 0.122621298, -9.94759834e-16)
+quaternion = Quaternion(-7.73759581e-08, -0.999984324, 4.72691823e-07, -0.00560591277)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24795
+metadata/unity_name = "shouldershieldA"
+
+[node name="shouldershieldB_root" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/shoulder_R/shouldershield_root/shouldershieldA_root/shouldershieldA"]
+position = Vector3(-9.59124273e-12, 2.25372592e-08, 1.95636645e-08)
+quaternion = Quaternion(-0.884042323, 0.00335607748, -0.000589304022, -0.467394441)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4734
+metadata/unity_name = "shouldershieldB_root"
+
+[node name="shouldershieldB" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/shoulder_R/shouldershield_root/shouldershieldA_root/shouldershieldA/shouldershieldB_root"]
+position = Vector3(3.5527136e-17, 0.122250982, -5.68434176e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17716
+metadata/unity_name = "shouldershieldB"
+
+[node name="shouldershieldC_root" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/shoulder_R/shouldershield_root/shouldershieldA_root/shouldershieldA"]
+position = Vector3(-9.59124273e-12, 2.25372592e-08, 1.95636645e-08)
+quaternion = Quaternion(-0.0144878384, -0.383868426, 0.92327255, 0.00171332911)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21790
+metadata/unity_name = "shouldershieldC_root"
+
+[node name="shouldershieldC" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/shoulder_R/shouldershield_root/shouldershieldA_root/shouldershieldA/shouldershieldC_root"]
+position = Vector3(2.13162816e-16, 0.18479687, -4.33431079e-15)
+quaternion = Quaternion(-0.00804168638, -0.000669698115, -0.00582925882, 0.999950469)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7580
+metadata/unity_name = "shouldershieldC"
+
+[node name="upper_arm_R" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/shoulder_R"]
+position = Vector3(-2.55351284e-17, 0.149554923, 2.84217088e-16)
+quaternion = Quaternion(0.504450798, -0.00880522095, -0.0150683299, 0.863264024)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11466
+metadata/unity_name = "upper_arm_R"
+
+[node name="lower_arm_R" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R"]
+position = Vector3(1.06581408e-16, 0.172852248, 8.52651264e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16316
+metadata/unity_name = "lower_arm_R"
+
+[node name="hand_R" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R"]
+position = Vector3(-1.7763568e-17, 0.259298354, 7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14941
+metadata/unity_name = "hand_R"
+
+[node name="hand_R_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R"]
+position = Vector3(3.02535783e-17, 0.149001628, -2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17478
+metadata/unity_name = "hand_R_end"
+
+[node name="VFX_Fiona_SkillAttack" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16928
+metadata/unity_name = "VFX_Fiona_SkillAttack"
+
+[node name="root" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Fiona_SkillAttack"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17779
+metadata/unity_name = "root"
+
+[node name="Glow_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Fiona_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19094
+metadata/unity_name = "Glow_01"
+
+[node name="Trail_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Fiona_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0.707106829, -0, 0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26244
+metadata/unity_name = "Trail_01"
+
+[node name="Dot_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Fiona_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10875
+metadata/unity_name = "Dot_01"
+
+[node name="MistOrb_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Fiona_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6369
+metadata/unity_name = "MistOrb_01"
+
+[node name="HolySkybeam_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Fiona_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-4.47034623e-08, -8.94069245e-08, 8.1956351e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24792
+metadata/unity_name = "HolySkybeam_01"
+
+[node name="Impact_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Fiona_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-4.47034623e-08, -8.94069245e-08, 8.1956351e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10862
+metadata/unity_name = "Impact_01"
+
+[node name="Flash_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Fiona_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-4.47034623e-08, -8.94069245e-08, 8.1956351e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25476
+metadata/unity_name = "Flash_01"
+
+[node name="Flecks_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Fiona_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-4.47034623e-08, -8.94069245e-08, 8.1956351e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12286
+metadata/unity_name = "Flecks_01"
+
+[node name="Flecks_02" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Fiona_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-4.47034623e-08, -8.94069245e-08, 8.1956351e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25723
+metadata/unity_name = "Flecks_02"
+
+[node name="BeamGlow_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Fiona_SkillAttack/root"]
+position = Vector3(0, 1.27000022, 0)
+quaternion = Quaternion(-4.47034623e-08, -8.94069245e-08, 8.1956351e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9288
+metadata/unity_name = "BeamGlow_01"
+
+[node name="Heat_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Fiona_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-4.47034623e-08, -8.94069245e-08, 8.1956351e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8028
+metadata/unity_name = "Heat_01"
+
+[node name="handshield_root" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R"]
+position = Vector3(-0, 0, 7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14727
+metadata/unity_name = "handshield_root"
+
+[node name="handshield" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/handshield_root"]
+position = Vector3(-0, 0.182557598, -0.113701738)
+quaternion = Quaternion(1.88748428e-16, 8.60177641e-17, 0.707106829, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19235
+metadata/unity_name = "handshield"
+
+[node name="coat_root" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine"]
+position = Vector3(-0, -6.46309666e-13, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7854
+metadata/unity_name = "coat_root"
+
+[node name="coat_B_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/coat_root"]
+position = Vector3(-8.14953979e-34, 0.0406489372, 0.11125771)
+quaternion = Quaternion(-0.975453556, -0, 0, -0.220205218)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21833
+metadata/unity_name = "coat_B_01"
+
+[node name="coat_B_02_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/coat_root/coat_B_01"]
+position = Vector3(-5.98987386e-23, 0.0905912593, 7.11798595e-18)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10535
+metadata/unity_name = "coat_B_02_end"
+
+[node name="coat_L_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/coat_root"]
+position = Vector3(-0.132447988, 0.0532904081, -0.00885079615)
+quaternion = Quaternion(0.673216045, -0.126814187, 0.710929096, 0.158991411)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21426
+metadata/unity_name = "coat_L_01"
+
+[node name="coat_L_02" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/coat_root/coat_L_01"]
+position = Vector3(-3.85047336e-08, 0.102835014, -5.26680815e-08)
+quaternion = Quaternion(0.0291167032, -2.02960939e-16, -5.65644764e-17, 0.999576032)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5592
+metadata/unity_name = "coat_L_02"
+
+[node name="coat_L_03_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/coat_root/coat_L_01/coat_L_02"]
+position = Vector3(-6.87670536e-07, 0.0509119742, 1.9817453e-06)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18560
+metadata/unity_name = "coat_L_03_end"
+
+[node name="coat_LB_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/coat_root"]
+position = Vector3(-0.116674989, 0.0457008779, 0.0795883089)
+quaternion = Quaternion(-0.91316098, 0.105433278, -0.32761842, -0.218373895)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20892
+metadata/unity_name = "coat_LB_01"
+
+[node name="coat_LB_02_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/coat_root/coat_LB_01"]
+position = Vector3(1.41970759e-07, 0.112592123, 7.24264225e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6862
+metadata/unity_name = "coat_LB_02_end"
+
+[node name="coat_LF_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/coat_root"]
+position = Vector3(-0.0469803996, 0.0547657721, -0.0996765271)
+quaternion = Quaternion(0.204672709, -0.105555825, 0.967141569, 0.107723176)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8913
+metadata/unity_name = "coat_LF_01"
+
+[node name="coat_LF_02" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/coat_root/coat_LF_01"]
+position = Vector3(1.45875125e-08, 0.0986140892, 1.1791284e-07)
+quaternion = Quaternion(0.0130895954, -0, -0, 0.999914348)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22586
+metadata/unity_name = "coat_LF_02"
+
+[node name="coat_LF_03_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/coat_root/coat_LF_01/coat_LF_02"]
+position = Vector3(-4.83113581e-07, 0.0849701688, 2.67089547e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12402
+metadata/unity_name = "coat_LF_03_end"
+
+[node name="coat_R_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/coat_root"]
+position = Vector3(0.132447749, 0.0532872565, -0.00885107275)
+quaternion = Quaternion(-0.673216045, -0.126814187, 0.710929096, -0.158991411)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20995
+metadata/unity_name = "coat_R_01"
+
+[node name="coat_R_02" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/coat_root/coat_R_01"]
+position = Vector3(-1.72387418e-17, 0.102834553, -9.85255448e-19)
+quaternion = Quaternion(0.0291167032, -0, -0, 0.999576032)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11904
+metadata/unity_name = "coat_R_02"
+
+[node name="coat_R_03_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/coat_root/coat_R_01/coat_R_02"]
+position = Vector3(-2.07744856e-17, 0.0509075671, 1.43519873e-16)
+quaternion = Quaternion(-0, -0.0482539758, -0, 0.998835087)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11109
+metadata/unity_name = "coat_R_03_end"
+
+[node name="coat_RB_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/coat_root"]
+position = Vector3(0.116674908, 0.0457032397, 0.0795885623)
+quaternion = Quaternion(-0.91316098, -0.105433278, 0.32761842, -0.218373895)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24349
+metadata/unity_name = "coat_RB_01"
+
+[node name="coat_RB_02_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/coat_root/coat_RB_01"]
+position = Vector3(-1.46549432e-16, 0.112591356, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15788
+metadata/unity_name = "coat_RB_02_end"
+
+[node name="coat_RF_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/coat_root"]
+position = Vector3(0.0469804369, 0.0547631346, -0.0996767133)
+quaternion = Quaternion(-0.204672709, -0.105555825, 0.967141569, -0.107723176)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15615
+metadata/unity_name = "coat_RF_01"
+
+[node name="coat_RF_02" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/coat_root/coat_RF_01"]
+position = Vector3(-3.5527136e-17, 0.0986138582, -3.5527136e-17)
+quaternion = Quaternion(0.0130895954, -0, -0, 0.999914348)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18726
+metadata/unity_name = "coat_RF_02"
+
+[node name="coat_RF_03_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/spine/coat_root/coat_RF_01/coat_RF_02"]
+position = Vector3(-7.1054272e-17, 0.0849678293, -1.42108544e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17700
+metadata/unity_name = "coat_RF_03_end"
+
+[node name="upper_leg_L" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips"]
+position = Vector3(-0.101176992, -1.31723993e-07, 4.33669882e-08)
+quaternion = Quaternion(-0.000341165811, -0.0325777456, 0.999414325, 0.0104662254)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22781
+metadata/unity_name = "upper_leg_L"
+
+[node name="lower_leg_L" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/upper_leg_L"]
+position = Vector3(-0, 0.379979998, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26641
+metadata/unity_name = "lower_leg_L"
+
+[node name="foot_L" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/upper_leg_L/lower_leg_L"]
+position = Vector3(-1.7763568e-17, 0.464375973, 4.44089183e-17)
+quaternion = Quaternion(-0.0113437744, -0.000118796073, 0.0104711102, 0.99988085)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6008
+metadata/unity_name = "foot_L"
+
+[node name="toes_L" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/upper_leg_L/lower_leg_L/foot_L"]
+position = Vector3(-0.00370363588, 0.138757974, -0.0423799567)
+quaternion = Quaternion(-0.646992147, 1.99069498e-16, 1.6891404e-16, 0.76249671)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17820
+metadata/unity_name = "toes_L"
+
+[node name="toes_L_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/upper_leg_L/lower_leg_L/foot_L/toes_L"]
+position = Vector3(-2.47080079e-10, 0.123550691, 1.7763568e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9822
+metadata/unity_name = "toes_L_end"
+
+[node name="upper_leg_R" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips"]
+position = Vector3(0.101177201, 2.84217088e-16, 8.881784e-18)
+quaternion = Quaternion(0.000341165811, -0.0325777456, 0.999414325, -0.0104662254)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26016
+metadata/unity_name = "upper_leg_R"
+
+[node name="bag_root" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/upper_leg_R"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10221
+metadata/unity_name = "bag_root"
+
+[node name="bag_01" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/upper_leg_R/bag_root"]
+position = Vector3(-0.0868213847, 0.14004828, -0.0212150291)
+quaternion = Quaternion(0.0345718153, 0.590269744, 0.0305800904, 0.805885494)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20819
+metadata/unity_name = "bag_01"
+
+[node name="bag_02end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/upper_leg_R/bag_root/bag_01"]
+position = Vector3(1.7763568e-17, 0.0797491074, -1.7763568e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18171
+metadata/unity_name = "bag_02end"
+
+[node name="belt_02" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/upper_leg_R/bag_root/bag_01"]
+position = Vector3(-0.000876080303, -0.0260129683, -0.0509229116)
+quaternion = Quaternion(-0.192666262, 0.00431757839, -0.00816291757, 0.981220901)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10998
+metadata/unity_name = "belt_02"
+
+[node name="belt_03_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/upper_leg_R/bag_root/bag_01/belt_02"]
+position = Vector3(1.7763568e-17, 0.0937683955, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6958
+metadata/unity_name = "belt_03_end"
+
+[node name="lower_leg_R" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/upper_leg_R"]
+position = Vector3(-3.5527136e-17, 0.379980624, -8.881784e-18)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10913
+metadata/unity_name = "lower_leg_R"
+
+[node name="foot_R" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/upper_leg_R/lower_leg_R"]
+position = Vector3(1.7763568e-17, 0.464375526, -5.68696002e-17)
+quaternion = Quaternion(-0.0113437744, 0.000118796073, -0.0104711102, 0.99988085)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15346
+metadata/unity_name = "foot_R"
+
+[node name="toes_R" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/upper_leg_R/lower_leg_R/foot_R"]
+position = Vector3(0.00370262563, 0.138753191, -0.04238322)
+quaternion = Quaternion(-0.646992147, 2.03037649e-16, 1.72281102e-16, 0.76249665)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18467
+metadata/unity_name = "toes_R"
+
+[node name="toes_R_end" type="Node3D" parent="Fiona/Fiona_Model/Armature/hips/upper_leg_R/lower_leg_R/foot_R/toes_R"]
+position = Vector3(-5.3290704e-17, 0.12354999, -1.18127723e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21189
+metadata/unity_name = "toes_R_end"
+
+[node name="BagRoot" type="Node3D" parent="Fiona/Fiona_Model"]
+position = Vector3(-0, -0.0234104153, -1.19209287e-09)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12973
+metadata/unity_name = "BagRoot"
+
+[node name="Fiona" type="Node3D" parent="Fiona/Fiona_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13834
+metadata/unity_name = "Fiona"
+
+[node name="Armor_geo" type="Node3D" parent="Fiona/Fiona_Model/Fiona"]
+position = Vector3(0.260498911, 1.31055331, 0.0901600495)
+quaternion = Quaternion(-0.0913117453, 0.701186299, 0.0913117453, 0.701186299)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9832
+metadata/unity_name = "Armor_geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Fiona/Fiona_Model/Fiona/Armor_geo"]
+mesh = ExtResource("1")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="Body_geo" type="Node3D" parent="Fiona/Fiona_Model/Fiona"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6573
+metadata/unity_name = "Body_geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Fiona/Fiona_Model/Fiona/Body_geo"]
+mesh = ExtResource("3")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="Weapon_geo" type="Node3D" parent="Fiona/Fiona_Model/Fiona"]
+position = Vector3(-0, 0, -1.32348895e-25)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6707
+metadata/unity_name = "Weapon_geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Fiona/Fiona_Model/Fiona/Weapon_geo"]
+mesh = ExtResource("5")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="Magica Cloth (bag)" type="Node3D" parent="Fiona/Fiona_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16016
+metadata/unity_name = "Magica Cloth (bag)"
+
+[node name="Magica Cloth (coat)" type="Node3D" parent="Fiona/Fiona_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10741
+metadata/unity_name = "Magica Cloth (coat)"
+
+[node name="Magica Cloth (hair)" type="Node3D" parent="Fiona/Fiona_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22291
+metadata/unity_name = "Magica Cloth (hair)"
+
+[node name="Magica Cloth (earring)" type="Node3D" parent="Fiona/Fiona_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4683
+metadata/unity_name = "Magica Cloth (earring)"
+
+[node name="OverheadSlot" type="Node3D" parent="Fiona"]
+position = Vector3(0, 2.20000005, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15404
+metadata/unity_name = "OverheadSlot"
+
+[node name="VFXParent" type="Node3D" parent="Fiona"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26084
+metadata/unity_name = "VFXParent"

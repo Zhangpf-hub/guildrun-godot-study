@@ -1,0 +1,17 @@
+[gd_resource type="ShaderMaterial" format=3]
+[ext_resource type="Shader" path="res://materials/forest_ray.gdshader" id="Ray"]
+[ext_resource type="Texture2D" path="res://textures/resources_549.png" id="beam"]
+[ext_resource type="Texture2D" path="res://textures/resources_641.png" id="mask"]
+[ext_resource type="Texture2D" path="res://textures/sharedassets1_2255.png" id="distortion"]
+
+[resource]
+shader = ExtResource("Ray")
+shader_parameter/distortion_amount = 0.0500000007
+shader_parameter/distortion_speed = Vector2(-0.200000003, -0.100000001)
+metadata/unity_material = "sharedassets7.assets:8"
+shader_parameter/beam_texture = ExtResource("beam")
+shader_parameter/beam_uv = Vector4(1, 1, 0, -0.0199999996)
+shader_parameter/beam_mask = ExtResource("mask")
+shader_parameter/mask_uv = Vector4(1.50999999, 1, -0.829999983, 0)
+shader_parameter/distortion_texture = ExtResource("distortion")
+shader_parameter/distortion_uv = Vector4(1, 1, 0, 0)

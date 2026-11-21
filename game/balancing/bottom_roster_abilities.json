@@ -1,0 +1,3976 @@
+{
+  "slots": {
+    "count": 4,
+    "starting": 0,
+    "specialization": 1,
+    "rank_modifier_index_offset": -1
+  },
+  "views": {
+    "deployed": {
+      "show_abilities": true,
+      "asset_file": "sharedassets3.assets",
+      "panel_game_object": 11399,
+      "bottom_hero_view": 75114,
+      "abilities_view": 74286,
+      "ability_views": [
+        69473,
+        74876,
+        72437,
+        74458
+      ],
+      "slot_render": [
+        {
+          "ability_view": {
+            "asset_file": "sharedassets3.assets",
+            "path_id": 69473
+          },
+          "frame_target": {
+            "asset_file": "sharedassets3.assets",
+            "path_id": 74560,
+            "game_object": 8333,
+            "authored_sprite": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 453,
+              "texture": "res://sprites/sharedassets3_453.png"
+            }
+          },
+          "icon_target": {
+            "asset_file": "sharedassets3.assets",
+            "path_id": 71762,
+            "game_object": 11026,
+            "authored_sprite": {
+              "asset_file": "sharedassets1.assets",
+              "path_id": 3286,
+              "texture": "res://sprites/sharedassets1_3286.png"
+            }
+          },
+          "frames": {
+            "empty": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 453,
+              "texture": "res://sprites/sharedassets3_453.png"
+            },
+            "active": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 469,
+              "texture": "res://sprites/sharedassets3_469.png"
+            },
+            "passive": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 469,
+              "texture": "res://sprites/sharedassets3_469.png"
+            },
+            "rank_modifier": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 469,
+              "texture": "res://sprites/sharedassets3_469.png"
+            }
+          }
+        },
+        {
+          "ability_view": {
+            "asset_file": "sharedassets3.assets",
+            "path_id": 74876
+          },
+          "frame_target": {
+            "asset_file": "sharedassets3.assets",
+            "path_id": 69580,
+            "game_object": 10289,
+            "authored_sprite": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 453,
+              "texture": "res://sprites/sharedassets3_453.png"
+            }
+          },
+          "icon_target": {
+            "asset_file": "sharedassets3.assets",
+            "path_id": 72422,
+            "game_object": 7466,
+            "authored_sprite": {
+              "asset_file": "sharedassets1.assets",
+              "path_id": 3286,
+              "texture": "res://sprites/sharedassets1_3286.png"
+            }
+          },
+          "frames": {
+            "empty": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 453,
+              "texture": "res://sprites/sharedassets3_453.png"
+            },
+            "active": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 469,
+              "texture": "res://sprites/sharedassets3_469.png"
+            },
+            "passive": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 469,
+              "texture": "res://sprites/sharedassets3_469.png"
+            },
+            "rank_modifier": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 469,
+              "texture": "res://sprites/sharedassets3_469.png"
+            }
+          }
+        },
+        {
+          "ability_view": {
+            "asset_file": "sharedassets3.assets",
+            "path_id": 72437
+          },
+          "frame_target": {
+            "asset_file": "sharedassets3.assets",
+            "path_id": 70801,
+            "game_object": 13068,
+            "authored_sprite": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 453,
+              "texture": "res://sprites/sharedassets3_453.png"
+            }
+          },
+          "icon_target": {
+            "asset_file": "sharedassets3.assets",
+            "path_id": 74870,
+            "game_object": 6267,
+            "authored_sprite": {
+              "asset_file": "sharedassets1.assets",
+              "path_id": 3286,
+              "texture": "res://sprites/sharedassets1_3286.png"
+            }
+          },
+          "frames": {
+            "empty": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 453,
+              "texture": "res://sprites/sharedassets3_453.png"
+            },
+            "active": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 469,
+              "texture": "res://sprites/sharedassets3_469.png"
+            },
+            "passive": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 469,
+              "texture": "res://sprites/sharedassets3_469.png"
+            },
+            "rank_modifier": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 469,
+              "texture": "res://sprites/sharedassets3_469.png"
+            }
+          }
+        },
+        {
+          "ability_view": {
+            "asset_file": "sharedassets3.assets",
+            "path_id": 74458
+          },
+          "frame_target": {
+            "asset_file": "sharedassets3.assets",
+            "path_id": 69155,
+            "game_object": 10805,
+            "authored_sprite": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 453,
+              "texture": "res://sprites/sharedassets3_453.png"
+            }
+          },
+          "icon_target": {
+            "asset_file": "sharedassets3.assets",
+            "path_id": 73735,
+            "game_object": 8955,
+            "authored_sprite": {
+              "asset_file": "sharedassets1.assets",
+              "path_id": 3286,
+              "texture": "res://sprites/sharedassets1_3286.png"
+            }
+          },
+          "frames": {
+            "empty": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 453,
+              "texture": "res://sprites/sharedassets3_453.png"
+            },
+            "active": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 469,
+              "texture": "res://sprites/sharedassets3_469.png"
+            },
+            "passive": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 469,
+              "texture": "res://sprites/sharedassets3_469.png"
+            },
+            "rank_modifier": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 469,
+              "texture": "res://sprites/sharedassets3_469.png"
+            }
+          }
+        }
+      ]
+    },
+    "reserve": {
+      "show_abilities": true,
+      "asset_file": "sharedassets3.assets",
+      "panel_game_object": 9576,
+      "bottom_hero_view": 74584,
+      "abilities_view": 75392,
+      "ability_views": [
+        69826,
+        74366,
+        73859,
+        74758
+      ],
+      "slot_render": [
+        {
+          "ability_view": {
+            "asset_file": "sharedassets3.assets",
+            "path_id": 69826
+          },
+          "frame_target": {
+            "asset_file": "sharedassets3.assets",
+            "path_id": 75140,
+            "game_object": 7658,
+            "authored_sprite": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 453,
+              "texture": "res://sprites/sharedassets3_453.png"
+            }
+          },
+          "icon_target": {
+            "asset_file": "sharedassets3.assets",
+            "path_id": 70560,
+            "game_object": 9418,
+            "authored_sprite": {
+              "asset_file": "sharedassets1.assets",
+              "path_id": 3286,
+              "texture": "res://sprites/sharedassets1_3286.png"
+            }
+          },
+          "frames": {
+            "empty": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 453,
+              "texture": "res://sprites/sharedassets3_453.png"
+            },
+            "active": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 469,
+              "texture": "res://sprites/sharedassets3_469.png"
+            },
+            "passive": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 469,
+              "texture": "res://sprites/sharedassets3_469.png"
+            },
+            "rank_modifier": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 469,
+              "texture": "res://sprites/sharedassets3_469.png"
+            }
+          }
+        },
+        {
+          "ability_view": {
+            "asset_file": "sharedassets3.assets",
+            "path_id": 74366
+          },
+          "frame_target": {
+            "asset_file": "sharedassets3.assets",
+            "path_id": 69292,
+            "game_object": 10660,
+            "authored_sprite": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 453,
+              "texture": "res://sprites/sharedassets3_453.png"
+            }
+          },
+          "icon_target": {
+            "asset_file": "sharedassets3.assets",
+            "path_id": 73847,
+            "game_object": 9117,
+            "authored_sprite": {
+              "asset_file": "sharedassets1.assets",
+              "path_id": 3286,
+              "texture": "res://sprites/sharedassets1_3286.png"
+            }
+          },
+          "frames": {
+            "empty": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 453,
+              "texture": "res://sprites/sharedassets3_453.png"
+            },
+            "active": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 469,
+              "texture": "res://sprites/sharedassets3_469.png"
+            },
+            "passive": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 469,
+              "texture": "res://sprites/sharedassets3_469.png"
+            },
+            "rank_modifier": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 469,
+              "texture": "res://sprites/sharedassets3_469.png"
+            }
+          }
+        },
+        {
+          "ability_view": {
+            "asset_file": "sharedassets3.assets",
+            "path_id": 73859
+          },
+          "frame_target": {
+            "asset_file": "sharedassets3.assets",
+            "path_id": 72031,
+            "game_object": 11586,
+            "authored_sprite": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 453,
+              "texture": "res://sprites/sharedassets3_453.png"
+            }
+          },
+          "icon_target": {
+            "asset_file": "sharedassets3.assets",
+            "path_id": 74343,
+            "game_object": 5532,
+            "authored_sprite": {
+              "asset_file": "sharedassets1.assets",
+              "path_id": 3286,
+              "texture": "res://sprites/sharedassets1_3286.png"
+            }
+          },
+          "frames": {
+            "empty": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 453,
+              "texture": "res://sprites/sharedassets3_453.png"
+            },
+            "active": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 469,
+              "texture": "res://sprites/sharedassets3_469.png"
+            },
+            "passive": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 469,
+              "texture": "res://sprites/sharedassets3_469.png"
+            },
+            "rank_modifier": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 469,
+              "texture": "res://sprites/sharedassets3_469.png"
+            }
+          }
+        },
+        {
+          "ability_view": {
+            "asset_file": "sharedassets3.assets",
+            "path_id": 74758
+          },
+          "frame_target": {
+            "asset_file": "sharedassets3.assets",
+            "path_id": 69687,
+            "game_object": 10155,
+            "authored_sprite": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 453,
+              "texture": "res://sprites/sharedassets3_453.png"
+            }
+          },
+          "icon_target": {
+            "asset_file": "sharedassets3.assets",
+            "path_id": 72555,
+            "game_object": 7585,
+            "authored_sprite": {
+              "asset_file": "sharedassets1.assets",
+              "path_id": 3286,
+              "texture": "res://sprites/sharedassets1_3286.png"
+            }
+          },
+          "frames": {
+            "empty": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 453,
+              "texture": "res://sprites/sharedassets3_453.png"
+            },
+            "active": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 469,
+              "texture": "res://sprites/sharedassets3_469.png"
+            },
+            "passive": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 469,
+              "texture": "res://sprites/sharedassets3_469.png"
+            },
+            "rank_modifier": {
+              "asset_file": "sharedassets3.assets",
+              "path_id": 469,
+              "texture": "res://sprites/sharedassets3_469.png"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "heroes": {
+    "1": {
+      "starting": {
+        "kind": "passive",
+        "id": 10101
+      },
+      "specialization_ids": [
+        101,
+        102,
+        103
+      ]
+    },
+    "2": {
+      "starting": {
+        "kind": "active",
+        "id": 2
+      },
+      "specialization_ids": [
+        201,
+        202,
+        203
+      ]
+    },
+    "3": {
+      "starting": {
+        "kind": "active",
+        "id": 3
+      },
+      "specialization_ids": [
+        301,
+        302,
+        303
+      ]
+    },
+    "4": {
+      "starting": {
+        "kind": "active",
+        "id": 4
+      },
+      "specialization_ids": [
+        401,
+        402,
+        403
+      ]
+    },
+    "5": {
+      "starting": {
+        "kind": "passive",
+        "id": 10501
+      },
+      "specialization_ids": [
+        501,
+        502,
+        503
+      ]
+    },
+    "6": {
+      "starting": {
+        "kind": "active",
+        "id": 6
+      },
+      "specialization_ids": [
+        601,
+        602,
+        603
+      ]
+    },
+    "7": {
+      "starting": {
+        "kind": "passive",
+        "id": 10702
+      },
+      "specialization_ids": [
+        701,
+        702,
+        703
+      ]
+    },
+    "8": {
+      "starting": {
+        "kind": "active",
+        "id": 8
+      },
+      "specialization_ids": [
+        801,
+        802,
+        803
+      ]
+    },
+    "9": {
+      "starting": {
+        "kind": "passive",
+        "id": 10901
+      },
+      "specialization_ids": [
+        901,
+        902,
+        903
+      ]
+    },
+    "10": {
+      "starting": {
+        "kind": "active",
+        "id": 10
+      },
+      "specialization_ids": [
+        1001,
+        1002,
+        1003
+      ]
+    },
+    "11": {
+      "starting": {
+        "kind": "passive",
+        "id": 101101
+      },
+      "specialization_ids": [
+        1101,
+        1102,
+        1103
+      ]
+    },
+    "12": {
+      "starting": {
+        "kind": "passive",
+        "id": 101201
+      },
+      "specialization_ids": [
+        1201,
+        1202,
+        1203
+      ]
+    },
+    "13": {
+      "starting": {
+        "kind": "active",
+        "id": 13
+      },
+      "specialization_ids": [
+        1301,
+        1302,
+        1303
+      ]
+    },
+    "14": {
+      "starting": {
+        "kind": "active",
+        "id": 14
+      },
+      "specialization_ids": [
+        1401,
+        1402,
+        1403
+      ]
+    },
+    "15": {
+      "starting": {
+        "kind": "passive",
+        "id": 101501
+      },
+      "specialization_ids": [
+        1501,
+        1502,
+        1503
+      ]
+    },
+    "16": {
+      "starting": {
+        "kind": "active",
+        "id": 16
+      },
+      "specialization_ids": [
+        1601,
+        1602,
+        1603
+      ]
+    },
+    "17": {
+      "starting": {
+        "kind": "active",
+        "id": 17
+      },
+      "specialization_ids": [
+        1701,
+        1702,
+        1703
+      ]
+    },
+    "18": {
+      "starting": {
+        "kind": "passive",
+        "id": 101801
+      },
+      "specialization_ids": [
+        1801,
+        1802,
+        1803
+      ]
+    },
+    "20": {
+      "starting": {
+        "kind": "active",
+        "id": 20
+      },
+      "specialization_ids": [
+        2001,
+        2002,
+        2003
+      ]
+    },
+    "21": {
+      "starting": {
+        "kind": "passive",
+        "id": 102101
+      },
+      "specialization_ids": [
+        2101,
+        2102,
+        2103
+      ]
+    },
+    "22": {
+      "starting": {
+        "kind": "active",
+        "id": 22
+      },
+      "specialization_ids": [
+        2201,
+        2202,
+        2203
+      ]
+    },
+    "23": {
+      "starting": {
+        "kind": "active",
+        "id": 23
+      },
+      "specialization_ids": [
+        2301,
+        2302,
+        2303
+      ]
+    },
+    "24": {
+      "starting": {
+        "kind": "active",
+        "id": 24
+      },
+      "specialization_ids": [
+        2401,
+        2402,
+        2403
+      ]
+    },
+    "26": {
+      "starting": {
+        "kind": "active",
+        "id": 28
+      },
+      "specialization_ids": [
+        2601,
+        2602,
+        2603
+      ]
+    },
+    "27": {
+      "starting": {
+        "kind": "active",
+        "id": 29
+      },
+      "specialization_ids": [
+        2701,
+        2702,
+        2703
+      ]
+    }
+  },
+  "specializations": {
+    "101": {
+      "display": {
+        "kind": "active",
+        "id": 1
+      },
+      "active": 1,
+      "passive": -1
+    },
+    "102": {
+      "display": {
+        "kind": "passive",
+        "id": 10102
+      },
+      "active": -1,
+      "passive": 10102
+    },
+    "103": {
+      "display": {
+        "kind": "passive",
+        "id": 10103
+      },
+      "active": -1,
+      "passive": 10103
+    },
+    "201": {
+      "display": {
+        "kind": "passive",
+        "id": 10201
+      },
+      "active": -1,
+      "passive": 10201
+    },
+    "202": {
+      "display": {
+        "kind": "passive",
+        "id": 10202
+      },
+      "active": -1,
+      "passive": 10202
+    },
+    "203": {
+      "display": {
+        "kind": "passive",
+        "id": 10203
+      },
+      "active": -1,
+      "passive": 10203
+    },
+    "301": {
+      "display": {
+        "kind": "passive",
+        "id": 10301
+      },
+      "active": -1,
+      "passive": 10301
+    },
+    "302": {
+      "display": {
+        "kind": "passive",
+        "id": 10302
+      },
+      "active": -1,
+      "passive": 10302
+    },
+    "303": {
+      "display": {
+        "kind": "passive",
+        "id": 10303
+      },
+      "active": -1,
+      "passive": 10303
+    },
+    "401": {
+      "display": {
+        "kind": "passive",
+        "id": 10401
+      },
+      "active": -1,
+      "passive": 10401
+    },
+    "402": {
+      "display": {
+        "kind": "passive",
+        "id": 10402
+      },
+      "active": -1,
+      "passive": 10402
+    },
+    "403": {
+      "display": {
+        "kind": "passive",
+        "id": 10403
+      },
+      "active": -1,
+      "passive": 10403
+    },
+    "501": {
+      "display": {
+        "kind": "active",
+        "id": 5
+      },
+      "active": 5,
+      "passive": -1
+    },
+    "502": {
+      "display": {
+        "kind": "passive",
+        "id": 10502
+      },
+      "active": -1,
+      "passive": 10502
+    },
+    "503": {
+      "display": {
+        "kind": "passive",
+        "id": 10503
+      },
+      "active": -1,
+      "passive": 10503
+    },
+    "601": {
+      "display": {
+        "kind": "passive",
+        "id": 10601
+      },
+      "active": -1,
+      "passive": 10601
+    },
+    "602": {
+      "display": {
+        "kind": "passive",
+        "id": 10602
+      },
+      "active": -1,
+      "passive": 10602
+    },
+    "603": {
+      "display": {
+        "kind": "passive",
+        "id": 10603
+      },
+      "active": -1,
+      "passive": 10603
+    },
+    "701": {
+      "display": {
+        "kind": "passive",
+        "id": 10701
+      },
+      "active": -1,
+      "passive": 10701
+    },
+    "702": {
+      "display": {
+        "kind": "active",
+        "id": 7
+      },
+      "active": 7,
+      "passive": -1
+    },
+    "703": {
+      "display": {
+        "kind": "passive",
+        "id": 10703
+      },
+      "active": -1,
+      "passive": 10703
+    },
+    "801": {
+      "display": {
+        "kind": "passive",
+        "id": 10801
+      },
+      "active": -1,
+      "passive": 10801
+    },
+    "802": {
+      "display": {
+        "kind": "passive",
+        "id": 10802
+      },
+      "active": -1,
+      "passive": 10802
+    },
+    "803": {
+      "display": {
+        "kind": "passive",
+        "id": 10803
+      },
+      "active": -1,
+      "passive": 10803
+    },
+    "901": {
+      "display": {
+        "kind": "active",
+        "id": 9
+      },
+      "active": 9,
+      "passive": -1
+    },
+    "902": {
+      "display": {
+        "kind": "passive",
+        "id": 10902
+      },
+      "active": -1,
+      "passive": 10902
+    },
+    "903": {
+      "display": {
+        "kind": "passive",
+        "id": 10903
+      },
+      "active": -1,
+      "passive": 10903
+    },
+    "1001": {
+      "display": {
+        "kind": "passive",
+        "id": 101001
+      },
+      "active": -1,
+      "passive": 101001
+    },
+    "1002": {
+      "display": {
+        "kind": "passive",
+        "id": 101002
+      },
+      "active": -1,
+      "passive": 101002
+    },
+    "1003": {
+      "display": {
+        "kind": "passive",
+        "id": 101003
+      },
+      "active": -1,
+      "passive": 101003
+    },
+    "1101": {
+      "display": {
+        "kind": "active",
+        "id": 11
+      },
+      "active": 11,
+      "passive": -1
+    },
+    "1102": {
+      "display": {
+        "kind": "passive",
+        "id": 101102
+      },
+      "active": -1,
+      "passive": 101102
+    },
+    "1103": {
+      "display": {
+        "kind": "passive",
+        "id": 101103
+      },
+      "active": -1,
+      "passive": 101103
+    },
+    "1201": {
+      "display": {
+        "kind": "active",
+        "id": 12
+      },
+      "active": 12,
+      "passive": -1
+    },
+    "1202": {
+      "display": {
+        "kind": "passive",
+        "id": 101202
+      },
+      "active": -1,
+      "passive": 101202
+    },
+    "1203": {
+      "display": {
+        "kind": "passive",
+        "id": 101203
+      },
+      "active": -1,
+      "passive": 101203
+    },
+    "1301": {
+      "display": {
+        "kind": "passive",
+        "id": 101301
+      },
+      "active": -1,
+      "passive": 101301
+    },
+    "1302": {
+      "display": {
+        "kind": "passive",
+        "id": 101302
+      },
+      "active": -1,
+      "passive": 101302
+    },
+    "1303": {
+      "display": {
+        "kind": "passive",
+        "id": 101303
+      },
+      "active": -1,
+      "passive": 101303
+    },
+    "1401": {
+      "display": {
+        "kind": "passive",
+        "id": 101401
+      },
+      "active": -1,
+      "passive": 101401
+    },
+    "1402": {
+      "display": {
+        "kind": "passive",
+        "id": 101402
+      },
+      "active": -1,
+      "passive": 101402
+    },
+    "1403": {
+      "display": {
+        "kind": "passive",
+        "id": 101403
+      },
+      "active": -1,
+      "passive": 101403
+    },
+    "1501": {
+      "display": {
+        "kind": "passive",
+        "id": 101502
+      },
+      "active": -1,
+      "passive": 101502
+    },
+    "1502": {
+      "display": {
+        "kind": "passive",
+        "id": 101503
+      },
+      "active": -1,
+      "passive": 101503
+    },
+    "1503": {
+      "display": {
+        "kind": "active",
+        "id": 15
+      },
+      "active": 15,
+      "passive": -1
+    },
+    "1601": {
+      "display": {
+        "kind": "passive",
+        "id": 101601
+      },
+      "active": -1,
+      "passive": 101601
+    },
+    "1602": {
+      "display": {
+        "kind": "passive",
+        "id": 101602
+      },
+      "active": -1,
+      "passive": 101602
+    },
+    "1603": {
+      "display": {
+        "kind": "passive",
+        "id": 101603
+      },
+      "active": -1,
+      "passive": 101603
+    },
+    "1701": {
+      "display": {
+        "kind": "passive",
+        "id": 101701
+      },
+      "active": -1,
+      "passive": 101701
+    },
+    "1702": {
+      "display": {
+        "kind": "passive",
+        "id": 101702
+      },
+      "active": -1,
+      "passive": 101702
+    },
+    "1703": {
+      "display": {
+        "kind": "passive",
+        "id": 101703
+      },
+      "active": -1,
+      "passive": 101703
+    },
+    "1801": {
+      "display": {
+        "kind": "passive",
+        "id": 101802
+      },
+      "active": -1,
+      "passive": 101802
+    },
+    "1802": {
+      "display": {
+        "kind": "active",
+        "id": 18
+      },
+      "active": 18,
+      "passive": -1
+    },
+    "1803": {
+      "display": {
+        "kind": "passive",
+        "id": 101803
+      },
+      "active": -1,
+      "passive": 101803
+    },
+    "2001": {
+      "display": {
+        "kind": "passive",
+        "id": 102001
+      },
+      "active": -1,
+      "passive": 102001
+    },
+    "2002": {
+      "display": {
+        "kind": "passive",
+        "id": 102002
+      },
+      "active": -1,
+      "passive": 102002
+    },
+    "2003": {
+      "display": {
+        "kind": "passive",
+        "id": 102003
+      },
+      "active": -1,
+      "passive": 102003
+    },
+    "2101": {
+      "display": {
+        "kind": "active",
+        "id": 21
+      },
+      "active": 21,
+      "passive": -1
+    },
+    "2102": {
+      "display": {
+        "kind": "passive",
+        "id": 102102
+      },
+      "active": -1,
+      "passive": 102102
+    },
+    "2103": {
+      "display": {
+        "kind": "passive",
+        "id": 102103
+      },
+      "active": -1,
+      "passive": 102103
+    },
+    "2201": {
+      "display": {
+        "kind": "passive",
+        "id": 102201
+      },
+      "active": -1,
+      "passive": 102201
+    },
+    "2202": {
+      "display": {
+        "kind": "passive",
+        "id": 102202
+      },
+      "active": -1,
+      "passive": 102202
+    },
+    "2203": {
+      "display": {
+        "kind": "passive",
+        "id": 102203
+      },
+      "active": -1,
+      "passive": 102203
+    },
+    "2301": {
+      "display": {
+        "kind": "passive",
+        "id": 102301
+      },
+      "active": -1,
+      "passive": 102301
+    },
+    "2302": {
+      "display": {
+        "kind": "passive",
+        "id": 102302
+      },
+      "active": -1,
+      "passive": 102302
+    },
+    "2303": {
+      "display": {
+        "kind": "passive",
+        "id": 102303
+      },
+      "active": -1,
+      "passive": 102303
+    },
+    "2401": {
+      "display": {
+        "kind": "passive",
+        "id": 102401
+      },
+      "active": -1,
+      "passive": 102401
+    },
+    "2402": {
+      "display": {
+        "kind": "passive",
+        "id": 102402
+      },
+      "active": -1,
+      "passive": 102402
+    },
+    "2403": {
+      "display": {
+        "kind": "passive",
+        "id": 102403
+      },
+      "active": -1,
+      "passive": 102403
+    },
+    "2601": {
+      "display": {
+        "kind": "passive",
+        "id": 102601
+      },
+      "active": -1,
+      "passive": 102601
+    },
+    "2602": {
+      "display": {
+        "kind": "passive",
+        "id": 102602
+      },
+      "active": -1,
+      "passive": 102602
+    },
+    "2603": {
+      "display": {
+        "kind": "passive",
+        "id": 102603
+      },
+      "active": -1,
+      "passive": 102603
+    },
+    "2701": {
+      "display": {
+        "kind": "passive",
+        "id": 102701
+      },
+      "active": -1,
+      "passive": 102701
+    },
+    "2702": {
+      "display": {
+        "kind": "passive",
+        "id": 102702
+      },
+      "active": -1,
+      "passive": 102702
+    },
+    "2703": {
+      "display": {
+        "kind": "passive",
+        "id": 102703
+      },
+      "active": -1,
+      "passive": 102703
+    }
+  },
+  "icons": {
+    "active": {
+      "1": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60826,
+          "entry_id": 1,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3379,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3379
+        },
+        "icon": "res://sprites/sharedassets1_3379.png"
+      },
+      "2": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60826,
+          "entry_id": 2,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3269,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3269
+        },
+        "icon": "res://sprites/sharedassets1_3269.png"
+      },
+      "3": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60826,
+          "entry_id": 3,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4450,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4450
+        },
+        "icon": "res://sprites/sharedassets1_4450.png"
+      },
+      "4": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60826,
+          "entry_id": 4,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4539,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4539
+        },
+        "icon": "res://sprites/sharedassets1_4539.png"
+      },
+      "5": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60826,
+          "entry_id": 5,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3316,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3316
+        },
+        "icon": "res://sprites/sharedassets1_3316.png"
+      },
+      "6": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60826,
+          "entry_id": 6,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3286,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3286
+        },
+        "icon": "res://sprites/sharedassets1_3286.png"
+      },
+      "7": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60826,
+          "entry_id": 7,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3615,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3615
+        },
+        "icon": "res://sprites/sharedassets1_3615.png"
+      },
+      "8": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60826,
+          "entry_id": 8,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4315,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4315
+        },
+        "icon": "res://sprites/sharedassets1_4315.png"
+      },
+      "9": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60826,
+          "entry_id": 9,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4332,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4332
+        },
+        "icon": "res://sprites/sharedassets1_4332.png"
+      },
+      "10": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60826,
+          "entry_id": 10,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4461,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4461
+        },
+        "icon": "res://sprites/sharedassets1_4461.png"
+      },
+      "11": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60826,
+          "entry_id": 11,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4626,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4626
+        },
+        "icon": "res://sprites/sharedassets1_4626.png"
+      },
+      "12": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60826,
+          "entry_id": 12,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3542,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3542
+        },
+        "icon": "res://sprites/sharedassets1_3542.png"
+      },
+      "13": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60826,
+          "entry_id": 13,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4242,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4242
+        },
+        "icon": "res://sprites/sharedassets1_4242.png"
+      },
+      "14": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60826,
+          "entry_id": 14,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4339,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4339
+        },
+        "icon": "res://sprites/sharedassets1_4339.png"
+      },
+      "15": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60826,
+          "entry_id": 15,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3666,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3666
+        },
+        "icon": "res://sprites/sharedassets1_3666.png"
+      },
+      "16": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60826,
+          "entry_id": 16,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3266,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3266
+        },
+        "icon": "res://sprites/sharedassets1_3266.png"
+      },
+      "17": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60826,
+          "entry_id": 17,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3293,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3293
+        },
+        "icon": "res://sprites/sharedassets1_3293.png"
+      },
+      "18": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60826,
+          "entry_id": 18,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4342,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4342
+        },
+        "icon": "res://sprites/sharedassets1_4342.png"
+      },
+      "20": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60826,
+          "entry_id": 20,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4528,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4528
+        },
+        "icon": "res://sprites/sharedassets1_4528.png"
+      },
+      "21": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60826,
+          "entry_id": 21,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3335,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3335
+        },
+        "icon": "res://sprites/sharedassets1_3335.png"
+      },
+      "22": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60826,
+          "entry_id": 22,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3395,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3395
+        },
+        "icon": "res://sprites/sharedassets1_3395.png"
+      },
+      "23": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60826,
+          "entry_id": 23,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4617,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4617
+        },
+        "icon": "res://sprites/sharedassets1_4617.png"
+      },
+      "24": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60826,
+          "entry_id": 24,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3264,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3264
+        },
+        "icon": "res://sprites/sharedassets1_3264.png"
+      },
+      "28": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60826,
+          "entry_id": 28,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4511,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4511
+        },
+        "icon": "res://sprites/sharedassets1_4511.png"
+      },
+      "29": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60826,
+          "entry_id": 29,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3366,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3366
+        },
+        "icon": "res://sprites/sharedassets1_3366.png"
+      }
+    },
+    "passive": {
+      "10101": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 10101,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3648,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3648
+        },
+        "icon": "res://sprites/sharedassets1_3648.png"
+      },
+      "10102": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 10102,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3285,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3285
+        },
+        "icon": "res://sprites/sharedassets1_3285.png"
+      },
+      "10103": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 10103,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4409,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4409
+        },
+        "icon": "res://sprites/sharedassets1_4409.png"
+      },
+      "10201": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 10201,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4596,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4596
+        },
+        "icon": "res://sprites/sharedassets1_4596.png"
+      },
+      "10202": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 10202,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3296,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3296
+        },
+        "icon": "res://sprites/sharedassets1_3296.png"
+      },
+      "10203": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 10203,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4554,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4554
+        },
+        "icon": "res://sprites/sharedassets1_4554.png"
+      },
+      "10301": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 10301,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4457,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4457
+        },
+        "icon": "res://sprites/sharedassets1_4457.png"
+      },
+      "10302": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 10302,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3425,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3425
+        },
+        "icon": "res://sprites/sharedassets1_3425.png"
+      },
+      "10303": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 10303,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3470,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3470
+        },
+        "icon": "res://sprites/sharedassets1_3470.png"
+      },
+      "10401": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 10401,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3533,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3533
+        },
+        "icon": "res://sprites/sharedassets1_3533.png"
+      },
+      "10402": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 10402,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3623,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3623
+        },
+        "icon": "res://sprites/sharedassets1_3623.png"
+      },
+      "10403": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 10403,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4319,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4319
+        },
+        "icon": "res://sprites/sharedassets1_4319.png"
+      },
+      "10501": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 10501,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3563,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3563
+        },
+        "icon": "res://sprites/sharedassets1_3563.png"
+      },
+      "10502": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 10502,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4362,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4362
+        },
+        "icon": "res://sprites/sharedassets1_4362.png"
+      },
+      "10503": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 10503,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3501,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3501
+        },
+        "icon": "res://sprites/sharedassets1_3501.png"
+      },
+      "10601": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 10601,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3647,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3647
+        },
+        "icon": "res://sprites/sharedassets1_3647.png"
+      },
+      "10602": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 10602,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3418,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3418
+        },
+        "icon": "res://sprites/sharedassets1_3418.png"
+      },
+      "10603": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 10603,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4278,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4278
+        },
+        "icon": "res://sprites/sharedassets1_4278.png"
+      },
+      "10701": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 10701,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3673,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3673
+        },
+        "icon": "res://sprites/sharedassets1_3673.png"
+      },
+      "10702": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 10702,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3477,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3477
+        },
+        "icon": "res://sprites/sharedassets1_3477.png"
+      },
+      "10703": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 10703,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3678,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3678
+        },
+        "icon": "res://sprites/sharedassets1_3678.png"
+      },
+      "10801": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 10801,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3608,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3608
+        },
+        "icon": "res://sprites/sharedassets1_3608.png"
+      },
+      "10802": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 10802,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4551,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4551
+        },
+        "icon": "res://sprites/sharedassets1_4551.png"
+      },
+      "10803": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 10803,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3362,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3362
+        },
+        "icon": "res://sprites/sharedassets1_3362.png"
+      },
+      "10901": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 10901,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4210,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4210
+        },
+        "icon": "res://sprites/sharedassets1_4210.png"
+      },
+      "10902": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 10902,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3313,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3313
+        },
+        "icon": "res://sprites/sharedassets1_3313.png"
+      },
+      "10903": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 10903,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3515,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3515
+        },
+        "icon": "res://sprites/sharedassets1_3515.png"
+      },
+      "101001": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 101001,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3536,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3536
+        },
+        "icon": "res://sprites/sharedassets1_3536.png"
+      },
+      "101002": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 101002,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4604,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4604
+        },
+        "icon": "res://sprites/sharedassets1_4604.png"
+      },
+      "101003": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 101003,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4589,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4589
+        },
+        "icon": "res://sprites/sharedassets1_4589.png"
+      },
+      "101101": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 101101,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4592,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4592
+        },
+        "icon": "res://sprites/sharedassets1_4592.png"
+      },
+      "101102": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 101102,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3478,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3478
+        },
+        "icon": "res://sprites/sharedassets1_3478.png"
+      },
+      "101103": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 101103,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4232,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4232
+        },
+        "icon": "res://sprites/sharedassets1_4232.png"
+      },
+      "101201": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 101201,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3531,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3531
+        },
+        "icon": "res://sprites/sharedassets1_3531.png"
+      },
+      "101202": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 101202,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3622,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3622
+        },
+        "icon": "res://sprites/sharedassets1_3622.png"
+      },
+      "101203": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 101203,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3422,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3422
+        },
+        "icon": "res://sprites/sharedassets1_3422.png"
+      },
+      "101301": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 101301,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4229,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4229
+        },
+        "icon": "res://sprites/sharedassets1_4229.png"
+      },
+      "101302": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 101302,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4588,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4588
+        },
+        "icon": "res://sprites/sharedassets1_4588.png"
+      },
+      "101303": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 101303,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4302,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4302
+        },
+        "icon": "res://sprites/sharedassets1_4302.png"
+      },
+      "101401": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 101401,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3393,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3393
+        },
+        "icon": "res://sprites/sharedassets1_3393.png"
+      },
+      "101402": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 101402,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4518,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4518
+        },
+        "icon": "res://sprites/sharedassets1_4518.png"
+      },
+      "101403": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 101403,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3561,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3561
+        },
+        "icon": "res://sprites/sharedassets1_3561.png"
+      },
+      "101501": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 101501,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3411,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3411
+        },
+        "icon": "res://sprites/sharedassets1_3411.png"
+      },
+      "101502": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 101502,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3340,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3340
+        },
+        "icon": "res://sprites/sharedassets1_3340.png"
+      },
+      "101503": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 101503,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4493,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4493
+        },
+        "icon": "res://sprites/sharedassets1_4493.png"
+      },
+      "101601": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 101601,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3683,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3683
+        },
+        "icon": "res://sprites/sharedassets1_3683.png"
+      },
+      "101602": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 101602,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4286,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4286
+        },
+        "icon": "res://sprites/sharedassets1_4286.png"
+      },
+      "101603": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 101603,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3693,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3693
+        },
+        "icon": "res://sprites/sharedassets1_3693.png"
+      },
+      "101701": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 101701,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4576,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4576
+        },
+        "icon": "res://sprites/sharedassets1_4576.png"
+      },
+      "101702": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 101702,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4264,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4264
+        },
+        "icon": "res://sprites/sharedassets1_4264.png"
+      },
+      "101703": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 101703,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3479,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3479
+        },
+        "icon": "res://sprites/sharedassets1_3479.png"
+      },
+      "101801": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 101801,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3654,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3654
+        },
+        "icon": "res://sprites/sharedassets1_3654.png"
+      },
+      "101802": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 101802,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3569,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3569
+        },
+        "icon": "res://sprites/sharedassets1_3569.png"
+      },
+      "101803": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 101803,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3655,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3655
+        },
+        "icon": "res://sprites/sharedassets1_3655.png"
+      },
+      "102001": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 102001,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3674,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3674
+        },
+        "icon": "res://sprites/sharedassets1_3674.png"
+      },
+      "102002": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 102002,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3634,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3634
+        },
+        "icon": "res://sprites/sharedassets1_3634.png"
+      },
+      "102003": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 102003,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4572,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4572
+        },
+        "icon": "res://sprites/sharedassets1_4572.png"
+      },
+      "102101": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 102101,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3672,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3672
+        },
+        "icon": "res://sprites/sharedassets1_3672.png"
+      },
+      "102102": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 102102,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3660,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3660
+        },
+        "icon": "res://sprites/sharedassets1_3660.png"
+      },
+      "102103": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 102103,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3504,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3504
+        },
+        "icon": "res://sprites/sharedassets1_3504.png"
+      },
+      "102201": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 102201,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4265,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4265
+        },
+        "icon": "res://sprites/sharedassets1_4265.png"
+      },
+      "102202": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 102202,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3314,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3314
+        },
+        "icon": "res://sprites/sharedassets1_3314.png"
+      },
+      "102203": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 102203,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3629,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3629
+        },
+        "icon": "res://sprites/sharedassets1_3629.png"
+      },
+      "102301": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 102301,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3524,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3524
+        },
+        "icon": "res://sprites/sharedassets1_3524.png"
+      },
+      "102302": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 102302,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3614,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3614
+        },
+        "icon": "res://sprites/sharedassets1_3614.png"
+      },
+      "102303": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 102303,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3308,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3308
+        },
+        "icon": "res://sprites/sharedassets1_3308.png"
+      },
+      "102401": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 102401,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4452,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4452
+        },
+        "icon": "res://sprites/sharedassets1_4452.png"
+      },
+      "102402": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 102402,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4521,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4521
+        },
+        "icon": "res://sprites/sharedassets1_4521.png"
+      },
+      "102403": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 102403,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3494,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3494
+        },
+        "icon": "res://sprites/sharedassets1_3494.png"
+      },
+      "102601": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 102601,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4230,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4230
+        },
+        "icon": "res://sprites/sharedassets1_4230.png"
+      },
+      "102602": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 102602,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3663,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3663
+        },
+        "icon": "res://sprites/sharedassets1_3663.png"
+      },
+      "102603": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 102603,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4345,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4345
+        },
+        "icon": "res://sprites/sharedassets1_4345.png"
+      },
+      "102701": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 102701,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3437,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3437
+        },
+        "icon": "res://sprites/sharedassets1_3437.png"
+      },
+      "102702": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 102702,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3539,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3539
+        },
+        "icon": "res://sprites/sharedassets1_3539.png"
+      },
+      "102703": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60843,
+          "entry_id": 102703,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3526,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3526
+        },
+        "icon": "res://sprites/sharedassets1_3526.png"
+      }
+    },
+    "rank_modifier": {
+      "1": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 1,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3727,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3727
+        },
+        "icon": "res://sprites/sharedassets1_3727.png"
+      },
+      "2": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 2,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3806,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3806
+        },
+        "icon": "res://sprites/sharedassets1_3806.png"
+      },
+      "3": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 3,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4117,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4117
+        },
+        "icon": "res://sprites/sharedassets1_4117.png"
+      },
+      "4": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 4,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3719,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3719
+        },
+        "icon": "res://sprites/sharedassets1_3719.png"
+      },
+      "5": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 5,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3926,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3926
+        },
+        "icon": "res://sprites/sharedassets1_3926.png"
+      },
+      "6": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 6,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3781,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3781
+        },
+        "icon": "res://sprites/sharedassets1_3781.png"
+      },
+      "7": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 7,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3729,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3729
+        },
+        "icon": "res://sprites/sharedassets1_3729.png"
+      },
+      "8": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 8,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4044,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4044
+        },
+        "icon": "res://sprites/sharedassets1_4044.png"
+      },
+      "9": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 9,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3910,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3910
+        },
+        "icon": "res://sprites/sharedassets1_3910.png"
+      },
+      "10": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 10,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3845,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3845
+        },
+        "icon": "res://sprites/sharedassets1_3845.png"
+      },
+      "11": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 11,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4183,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4183
+        },
+        "icon": "res://sprites/sharedassets1_4183.png"
+      },
+      "12": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 12,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4044,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4044
+        },
+        "icon": "res://sprites/sharedassets1_4044.png"
+      },
+      "13": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 13,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4194,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4194
+        },
+        "icon": "res://sprites/sharedassets1_4194.png"
+      },
+      "14": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 14,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4186,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4186
+        },
+        "icon": "res://sprites/sharedassets1_4186.png"
+      },
+      "15": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 15,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4035,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4035
+        },
+        "icon": "res://sprites/sharedassets1_4035.png"
+      },
+      "46": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 46,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3845,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3845
+        },
+        "icon": "res://sprites/sharedassets1_3845.png"
+      },
+      "47": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 47,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4027,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4027
+        },
+        "icon": "res://sprites/sharedassets1_4027.png"
+      },
+      "48": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 48,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4069,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4069
+        },
+        "icon": "res://sprites/sharedassets1_4069.png"
+      },
+      "49": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 49,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4089,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4089
+        },
+        "icon": "res://sprites/sharedassets1_4089.png"
+      },
+      "50": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 50,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3731,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3731
+        },
+        "icon": "res://sprites/sharedassets1_3731.png"
+      },
+      "51": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 51,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3872,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3872
+        },
+        "icon": "res://sprites/sharedassets1_3872.png"
+      },
+      "52": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 52,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4004,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4004
+        },
+        "icon": "res://sprites/sharedassets1_4004.png"
+      },
+      "53": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 53,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3751,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3751
+        },
+        "icon": "res://sprites/sharedassets1_3751.png"
+      },
+      "54": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 54,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3897,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3897
+        },
+        "icon": "res://sprites/sharedassets1_3897.png"
+      },
+      "55": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 55,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4024,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4024
+        },
+        "icon": "res://sprites/sharedassets1_4024.png"
+      },
+      "56": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 56,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3729,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3729
+        },
+        "icon": "res://sprites/sharedassets1_3729.png"
+      },
+      "57": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 57,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3733,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3733
+        },
+        "icon": "res://sprites/sharedassets1_3733.png"
+      },
+      "58": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 58,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3825,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3825
+        },
+        "icon": "res://sprites/sharedassets1_3825.png"
+      },
+      "59": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 59,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4142,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4142
+        },
+        "icon": "res://sprites/sharedassets1_4142.png"
+      },
+      "60": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 60,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3811,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3811
+        },
+        "icon": "res://sprites/sharedassets1_3811.png"
+      },
+      "91": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 91,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3867,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3867
+        },
+        "icon": "res://sprites/sharedassets1_3867.png"
+      },
+      "92": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 92,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3794,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3794
+        },
+        "icon": "res://sprites/sharedassets1_3794.png"
+      },
+      "93": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 93,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3841,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3841
+        },
+        "icon": "res://sprites/sharedassets1_3841.png"
+      },
+      "94": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 94,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3971,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3971
+        },
+        "icon": "res://sprites/sharedassets1_3971.png"
+      },
+      "95": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 95,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3797,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3797
+        },
+        "icon": "res://sprites/sharedassets1_3797.png"
+      },
+      "96": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 96,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4130,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4130
+        },
+        "icon": "res://sprites/sharedassets1_4130.png"
+      },
+      "97": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 97,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4167,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4167
+        },
+        "icon": "res://sprites/sharedassets1_4167.png"
+      },
+      "98": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 98,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3803,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3803
+        },
+        "icon": "res://sprites/sharedassets1_3803.png"
+      },
+      "99": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 99,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3964,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3964
+        },
+        "icon": "res://sprites/sharedassets1_3964.png"
+      },
+      "100": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 100,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4017,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4017
+        },
+        "icon": "res://sprites/sharedassets1_4017.png"
+      },
+      "101": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 101,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3884,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3884
+        },
+        "icon": "res://sprites/sharedassets1_3884.png"
+      },
+      "102": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 102,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3977,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3977
+        },
+        "icon": "res://sprites/sharedassets1_3977.png"
+      },
+      "103": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 103,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4140,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4140
+        },
+        "icon": "res://sprites/sharedassets1_4140.png"
+      },
+      "104": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 104,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3985,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3985
+        },
+        "icon": "res://sprites/sharedassets1_3985.png"
+      },
+      "105": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 105,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4140,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4140
+        },
+        "icon": "res://sprites/sharedassets1_4140.png"
+      },
+      "136": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 136,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3701,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3701
+        },
+        "icon": "res://sprites/sharedassets1_3701.png"
+      },
+      "137": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 137,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3962,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3962
+        },
+        "icon": "res://sprites/sharedassets1_3962.png"
+      },
+      "138": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 138,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3961,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3961
+        },
+        "icon": "res://sprites/sharedassets1_3961.png"
+      },
+      "139": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 139,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4147,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4147
+        },
+        "icon": "res://sprites/sharedassets1_4147.png"
+      },
+      "140": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 140,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3969,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3969
+        },
+        "icon": "res://sprites/sharedassets1_3969.png"
+      },
+      "141": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 141,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3729,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3729
+        },
+        "icon": "res://sprites/sharedassets1_3729.png"
+      },
+      "142": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 142,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3894,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3894
+        },
+        "icon": "res://sprites/sharedassets1_3894.png"
+      },
+      "143": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 143,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4161,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4161
+        },
+        "icon": "res://sprites/sharedassets1_4161.png"
+      },
+      "144": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 144,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3998,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3998
+        },
+        "icon": "res://sprites/sharedassets1_3998.png"
+      },
+      "145": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 145,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4142,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4142
+        },
+        "icon": "res://sprites/sharedassets1_4142.png"
+      },
+      "146": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 146,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4093,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4093
+        },
+        "icon": "res://sprites/sharedassets1_4093.png"
+      },
+      "147": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 147,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4172,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4172
+        },
+        "icon": "res://sprites/sharedassets1_4172.png"
+      },
+      "148": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 148,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3848,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3848
+        },
+        "icon": "res://sprites/sharedassets1_3848.png"
+      },
+      "149": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 149,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3925,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3925
+        },
+        "icon": "res://sprites/sharedassets1_3925.png"
+      },
+      "150": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 150,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3819,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3819
+        },
+        "icon": "res://sprites/sharedassets1_3819.png"
+      },
+      "181": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 181,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4068,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4068
+        },
+        "icon": "res://sprites/sharedassets1_4068.png"
+      },
+      "182": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 182,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4068,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4068
+        },
+        "icon": "res://sprites/sharedassets1_4068.png"
+      },
+      "183": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 183,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3800,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3800
+        },
+        "icon": "res://sprites/sharedassets1_3800.png"
+      },
+      "184": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 184,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3797,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3797
+        },
+        "icon": "res://sprites/sharedassets1_3797.png"
+      },
+      "185": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 185,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4159,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4159
+        },
+        "icon": "res://sprites/sharedassets1_4159.png"
+      },
+      "186": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 186,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4105,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4105
+        },
+        "icon": "res://sprites/sharedassets1_4105.png"
+      },
+      "187": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 187,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4105,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4105
+        },
+        "icon": "res://sprites/sharedassets1_4105.png"
+      },
+      "188": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 188,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4053,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4053
+        },
+        "icon": "res://sprites/sharedassets1_4053.png"
+      },
+      "189": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 189,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3867,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3867
+        },
+        "icon": "res://sprites/sharedassets1_3867.png"
+      },
+      "190": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 190,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3867,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3867
+        },
+        "icon": "res://sprites/sharedassets1_3867.png"
+      },
+      "191": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 191,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3882,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3882
+        },
+        "icon": "res://sprites/sharedassets1_3882.png"
+      },
+      "192": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 192,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3756,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3756
+        },
+        "icon": "res://sprites/sharedassets1_3756.png"
+      },
+      "193": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 193,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4110,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4110
+        },
+        "icon": "res://sprites/sharedassets1_4110.png"
+      },
+      "194": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 194,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3775,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3775
+        },
+        "icon": "res://sprites/sharedassets1_3775.png"
+      },
+      "195": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 195,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3947,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3947
+        },
+        "icon": "res://sprites/sharedassets1_3947.png"
+      },
+      "226": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 226,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3884,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3884
+        },
+        "icon": "res://sprites/sharedassets1_3884.png"
+      },
+      "227": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 227,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3815,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3815
+        },
+        "icon": "res://sprites/sharedassets1_3815.png"
+      },
+      "228": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 228,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3719,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3719
+        },
+        "icon": "res://sprites/sharedassets1_3719.png"
+      },
+      "229": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 229,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4060,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4060
+        },
+        "icon": "res://sprites/sharedassets1_4060.png"
+      },
+      "230": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 230,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4028,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4028
+        },
+        "icon": "res://sprites/sharedassets1_4028.png"
+      },
+      "231": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 231,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3845,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3845
+        },
+        "icon": "res://sprites/sharedassets1_3845.png"
+      },
+      "232": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 232,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4027,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4027
+        },
+        "icon": "res://sprites/sharedassets1_4027.png"
+      },
+      "233": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 233,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3733,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3733
+        },
+        "icon": "res://sprites/sharedassets1_3733.png"
+      },
+      "234": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 234,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4150,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4150
+        },
+        "icon": "res://sprites/sharedassets1_4150.png"
+      },
+      "235": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 235,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4150,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4150
+        },
+        "icon": "res://sprites/sharedassets1_4150.png"
+      },
+      "236": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 236,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3939,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3939
+        },
+        "icon": "res://sprites/sharedassets1_3939.png"
+      },
+      "237": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 237,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3965,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3965
+        },
+        "icon": "res://sprites/sharedassets1_3965.png"
+      },
+      "238": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 238,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3825,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3825
+        },
+        "icon": "res://sprites/sharedassets1_3825.png"
+      },
+      "239": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 239,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3900,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3900
+        },
+        "icon": "res://sprites/sharedassets1_3900.png"
+      },
+      "240": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 240,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3796,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3796
+        },
+        "icon": "res://sprites/sharedassets1_3796.png"
+      },
+      "271": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 271,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3908,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3908
+        },
+        "icon": "res://sprites/sharedassets1_3908.png"
+      },
+      "272": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 272,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3958,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3958
+        },
+        "icon": "res://sprites/sharedassets1_3958.png"
+      },
+      "273": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 273,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4151,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4151
+        },
+        "icon": "res://sprites/sharedassets1_4151.png"
+      },
+      "274": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 274,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4031,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4031
+        },
+        "icon": "res://sprites/sharedassets1_4031.png"
+      },
+      "275": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 275,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3759,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3759
+        },
+        "icon": "res://sprites/sharedassets1_3759.png"
+      },
+      "276": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 276,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4050,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4050
+        },
+        "icon": "res://sprites/sharedassets1_4050.png"
+      },
+      "277": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 277,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 4114,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 4114
+        },
+        "icon": "res://sprites/sharedassets1_4114.png"
+      },
+      "278": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 278,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3728,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3728
+        },
+        "icon": "res://sprites/sharedassets1_3728.png"
+      },
+      "279": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 279,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3755,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3755
+        },
+        "icon": "res://sprites/sharedassets1_3755.png"
+      },
+      "280": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 280,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3857,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3857
+        },
+        "icon": "res://sprites/sharedassets1_3857.png"
+      },
+      "281": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 281,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3850,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3850
+        },
+        "icon": "res://sprites/sharedassets1_3850.png"
+      },
+      "282": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 282,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3763,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3763
+        },
+        "icon": "res://sprites/sharedassets1_3763.png"
+      },
+      "283": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 283,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3923,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3923
+        },
+        "icon": "res://sprites/sharedassets1_3923.png"
+      },
+      "284": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 284,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3772,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3772
+        },
+        "icon": "res://sprites/sharedassets1_3772.png"
+      },
+      "285": {
+        "ref": {
+          "owner_file": "sharedassets1.assets",
+          "holder_path_id": 60845,
+          "entry_id": 285,
+          "field": "<Icon>k__BackingField",
+          "file_id": 0,
+          "path_id": 3819,
+          "asset_file": "sharedassets1.assets",
+          "asset_path_id": 3819
+        },
+        "icon": "res://sprites/sharedassets1_3819.png"
+      }
+    }
+  }
+}

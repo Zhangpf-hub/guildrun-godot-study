@@ -1,0 +1,738 @@
+[gd_scene format=3]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2780.obj" id="1"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_462.tres" id="2"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2785.obj" id="3"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_463.tres" id="4"]
+
+[node name="Funke" type="Node3D"]
+
+[node name="Funke" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1.04999995, 1.04999995, 1.04999995)
+metadata/unity_id = 20460
+metadata/unity_name = "Funke"
+
+[node name="Funke_Model" type="Node3D" parent="Funke"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22887
+metadata/unity_name = "Funke_Model"
+
+[node name="Armature" type="Node3D" parent="Funke/Funke_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8174
+metadata/unity_name = "Armature"
+
+[node name="hips" type="Node3D" parent="Funke/Funke_Model/Armature"]
+position = Vector3(-0, 1.12045693, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23048
+metadata/unity_name = "hips"
+
+[node name="chain_Root" type="Node3D" parent="Funke/Funke_Model/Armature/hips"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15968
+metadata/unity_name = "chain_Root"
+
+[node name="chain_01" type="Node3D" parent="Funke/Funke_Model/Armature/hips/chain_Root"]
+position = Vector3(-0.148000002, 0.0354684591, -0)
+quaternion = Quaternion(0, 0, 0.965925872, 0.258819073)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11639
+metadata/unity_name = "chain_01"
+
+[node name="chain_end" type="Node3D" parent="Funke/Funke_Model/Armature/hips/chain_Root/chain_01"]
+position = Vector3(-0, 0.179999992, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14255
+metadata/unity_name = "chain_end"
+
+[node name="spine" type="Node3D" parent="Funke/Funke_Model/Armature/hips"]
+position = Vector3(-7.09550431e-33, 0.164777994, -3.5527136e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25274
+metadata/unity_name = "spine"
+
+[node name="chest" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine"]
+position = Vector3(-0, 0.166053623, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23656
+metadata/unity_name = "chest"
+
+[node name="collar_LB_01" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest"]
+position = Vector3(-0.0534784347, 0.307353884, 0.11906635)
+quaternion = Quaternion(0.0771793202, -0.867979288, -0.0442704558, -0.488564759)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8042
+metadata/unity_name = "collar_LB_01"
+
+[node name="collar_LB_end" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/collar_LB_01"]
+position = Vector3(1.06581408e-16, 0.0879999995, 7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8691
+metadata/unity_name = "collar_LB_end"
+
+[node name="collar_LF_01" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest"]
+position = Vector3(-0.0703444257, 0.241081446, -0.0402001664)
+quaternion = Quaternion(-0.276726216, 0.750620663, 0.206387937, 0.563378453)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23784
+metadata/unity_name = "collar_LF_01"
+
+[node name="collar_LF_end" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/collar_LF_01"]
+position = Vector3(4.26325632e-16, 0.129999995, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18647
+metadata/unity_name = "collar_LF_end"
+
+[node name="collar_RB_01" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest"]
+position = Vector3(0.0534783974, 0.30735144, 0.119066)
+quaternion = Quaternion(-0.0771793202, -0.867979288, -0.0442704558, 0.488564759)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19281
+metadata/unity_name = "collar_RB_01"
+
+[node name="collar_RB_end" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/collar_RB_01"]
+position = Vector3(7.01851604e-07, 0.0880032629, 2.0019624e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5064
+metadata/unity_name = "collar_RB_end"
+
+[node name="collar_RF_01" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest"]
+position = Vector3(0.0703443959, 0.241081461, -0.0402001999)
+quaternion = Quaternion(-0.276726216, -0.750620663, -0.206387937, 0.563378453)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8950
+metadata/unity_name = "collar_RF_01"
+
+[node name="collar_RF_end" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/collar_RF_01"]
+position = Vector3(-8.32111596e-07, 0.129996225, -3.04638274e-06)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5207
+metadata/unity_name = "collar_RF_end"
+
+[node name="jacket_base_01" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest"]
+position = Vector3(-0, 0.0445086882, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22104
+metadata/unity_name = "jacket_base_01"
+
+[node name="jacket_LB_01" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/jacket_base_01"]
+position = Vector3(-0.0952782035, -0.11438974, 0.102767207)
+quaternion = Quaternion(-0.966703475, 0.0662254468, -0.131033078, -0.209592208)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18589
+metadata/unity_name = "jacket_LB_01"
+
+[node name="jacket_LB_end" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/jacket_base_01/jacket_LB_01"]
+position = Vector3(-3.19744217e-16, 0.119999997, -5.68434176e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17331
+metadata/unity_name = "jacket_LB_end"
+
+[node name="jacket_LF_01" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/jacket_base_01"]
+position = Vector3(-0.136228204, -0.0628496334, -0.112501383)
+quaternion = Quaternion(0.152634084, -0.141118988, 0.978137493, 0.00594250392)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24123
+metadata/unity_name = "jacket_LF_01"
+
+[node name="jacket_LF_end" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/jacket_base_01/jacket_LF_01"]
+position = Vector3(0.00267037656, 0.243668228, 0.0158469696)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26552
+metadata/unity_name = "jacket_LF_end"
+
+[node name="jacket_LS_01" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/jacket_base_01"]
+position = Vector3(-0.17727451, -0.101204596, -0.000115084062)
+quaternion = Quaternion(-0.775831342, 0.0424013361, -0.626053333, -0.0659172907)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17616
+metadata/unity_name = "jacket_LS_01"
+
+[node name="jacket_LS_end" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/jacket_base_01/jacket_LS_01"]
+position = Vector3(-4.21884744e-17, 0.128894463, -7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23689
+metadata/unity_name = "jacket_LS_end"
+
+[node name="jacket_RB_01" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/jacket_base_01"]
+position = Vector3(0.095278196, -0.114387237, 0.102766998)
+quaternion = Quaternion(-0.966703475, -0.0662254468, 0.131033078, -0.209592208)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18101
+metadata/unity_name = "jacket_RB_01"
+
+[node name="jacket_RB_end" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/jacket_base_01/jacket_RB_01"]
+position = Vector3(-8.36198296e-07, 0.120005094, 2.05110541e-06)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24026
+metadata/unity_name = "jacket_RB_end"
+
+[node name="jacket_RF_01" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/jacket_base_01"]
+position = Vector3(0.136227995, -0.0628472343, -0.112501554)
+quaternion = Quaternion(-0.152634084, -0.141118988, 0.978137493, -0.00594250392)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5916
+metadata/unity_name = "jacket_RF_01"
+
+[node name="jacket_RF_end" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/jacket_base_01/jacket_RF_01"]
+position = Vector3(-0.00267064245, 0.243673086, 0.0158483647)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25211
+metadata/unity_name = "jacket_RF_end"
+
+[node name="jacket_RS_01" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/jacket_base_01"]
+position = Vector3(0.177275002, -0.101207234, -0.000115083996)
+quaternion = Quaternion(-0.775831342, -0.0424013361, 0.626053333, -0.0659172907)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21231
+metadata/unity_name = "jacket_RS_01"
+
+[node name="jacket_RS_end" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/jacket_base_01/jacket_RS_01"]
+position = Vector3(-1.58878279e-07, 0.128893495, 5.04241996e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14000
+metadata/unity_name = "jacket_RS_end"
+
+[node name="neck" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest"]
+position = Vector3(-0, 0.233569756, 0.0399999991)
+quaternion = Quaternion(5.71187139e-17, -0.997846544, 0.0655915216, -6.45910599e-17)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25327
+metadata/unity_name = "neck"
+
+[node name="head" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/neck"]
+position = Vector3(-1.65480112e-17, 0.136297539, -3.19744217e-16)
+quaternion = Quaternion(6.10942763e-17, -0.997745275, 0.0671145618, -4.10958176e-18)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10474
+metadata/unity_name = "head"
+
+[node name="hair_root" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(1.99680403e-31, 0.0699244514, -0.0113994349)
+quaternion = Quaternion(-0.00152640359, 0, -0, 0.999998868)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21771
+metadata/unity_name = "hair_root"
+
+[node name="hair_CTA_01" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(0.0268230345, 0.119585536, -0.0446035601)
+quaternion = Quaternion(-0.398661762, -0.526549399, 0.685620666, -0.30616799)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6575
+metadata/unity_name = "hair_CTA_01"
+
+[node name="hair_CTA_end" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_CTA_01"]
+position = Vector3(3.33066907e-16, 0.105385177, 1.13686835e-15)
+quaternion = Quaternion(-0, -0.683303118, -0, 0.730134845)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13241
+metadata/unity_name = "hair_CTA_end"
+
+[node name="hair_CTB_01" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(-0.00966884475, 0.0934239402, -0.0645640865)
+quaternion = Quaternion(-0.123729967, 0.216509834, -0.587594509, 0.769770801)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5988
+metadata/unity_name = "hair_CTB_01"
+
+[node name="hair_CTB_end" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_CTB_01"]
+position = Vector3(-5.68434155e-15, 0.0768589601, -2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25805
+metadata/unity_name = "hair_CTB_end"
+
+[node name="hair_CTC_01" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(-0.00359653286, 0.114331268, -0.00494246464)
+quaternion = Quaternion(-0.225472972, -0.766660869, 0.357859999, -0.483041704)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20740
+metadata/unity_name = "hair_CTC_01"
+
+[node name="hair_CTC_end" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_CTC_01"]
+position = Vector3(5.05151444e-16, 0.0998310819, 1.70530253e-15)
+quaternion = Quaternion(-0, -0.677013278, -0, 0.735970795)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22179
+metadata/unity_name = "hair_CTC_end"
+
+[node name="hair_LFA_01" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(-0.016026495, 0.0722443014, -0.0845934451)
+quaternion = Quaternion(-0.186822131, -0.766495645, 0.558408856, -0.256439984)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9199
+metadata/unity_name = "hair_LFA_01"
+
+[node name="hair_LFA_end" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LFA_01"]
+position = Vector3(-2.93098864e-16, 0.0601228848, -1.13686835e-15)
+quaternion = Quaternion(8.09612024e-17, -0.911994636, 8.09612024e-17, 0.410202175)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25640
+metadata/unity_name = "hair_LFA_end"
+
+[node name="hair_RFA_01" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(0.064200975, 0.0767517611, -0.0796394646)
+quaternion = Quaternion(-0.706201613, -0.238612354, 0.605776608, -0.278169245)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25676
+metadata/unity_name = "hair_RFA_01"
+
+[node name="hair_RFA_end" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RFA_01"]
+position = Vector3(-8.88178367e-17, 0.0508900248, 1.13686835e-15)
+quaternion = Quaternion(8.6425134e-17, -0.750062048, 8.6425134e-17, 0.661367476)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5635
+metadata/unity_name = "hair_RFA_end"
+
+[node name="hair_RFB_01" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(0.00808250904, 0.0658374205, -0.0929009393)
+quaternion = Quaternion(-0.4070566, -0.592231154, 0.510220766, -0.472484887)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22403
+metadata/unity_name = "hair_RFB_01"
+
+[node name="hair_RFB_end" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RFB_01"]
+position = Vector3(-3.55271347e-16, 0.0394340046, 3.97903934e-15)
+quaternion = Quaternion(-0, -0.106269866, -0, 0.99433732)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6920
+metadata/unity_name = "hair_RFB_end"
+
+[node name="head_end" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(1.95243064e-31, 0.200000927, -2.68673954e-16)
+quaternion = Quaternion(-0.00152640359, 0, -0, 0.999998868)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19593
+metadata/unity_name = "head_end"
+
+[node name="jaw" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(-8.06526732e-05, -0.0204742402, -0.00776422443)
+quaternion = Quaternion(1.54784757e-07, -0.518214166, 0.855250895, -3.13668842e-08)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19693
+metadata/unity_name = "jaw"
+
+[node name="jaw_end" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/neck/head/jaw"]
+position = Vector3(-5.25621208e-18, 0.0914419666, -2.55795374e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10156
+metadata/unity_name = "jaw_end"
+
+[node name="shoulder_L" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest"]
+position = Vector3(-0.0350000001, 0.180729479, 0.0359999985)
+quaternion = Quaternion(0.5, -0.5, 0.5, 0.5)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18693
+metadata/unity_name = "shoulder_L"
+
+[node name="upper_arm_L" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/shoulder_L"]
+position = Vector3(-3.32038965e-08, 0.176000595, 0.00221942365)
+quaternion = Quaternion(1.04599082e-15, 1.73004828e-08, -6.04602093e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6825
+metadata/unity_name = "upper_arm_L"
+
+[node name="lower_arm_L" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L"]
+position = Vector3(-1.45538319e-08, 0.317699164, -0.00221942365)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11417
+metadata/unity_name = "lower_arm_L"
+
+[node name="hand_L" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L"]
+position = Vector3(-3.1599876e-09, 0.275300235, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17089
+metadata/unity_name = "hand_L"
+
+[node name="hand_L_end" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L"]
+position = Vector3(5.77315952e-17, 0.149999991, 3.97903934e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26188
+metadata/unity_name = "hand_L_end"
+
+[node name="shoulder_R" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest"]
+position = Vector3(0.0350000001, 0.18073146, 0.0359999985)
+quaternion = Quaternion(-0.5, 0.5, 0.5, 0.5)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7453
+metadata/unity_name = "shoulder_R"
+
+[node name="upper_arm_R" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/shoulder_R"]
+position = Vector3(-0, -0.176000997, -0.00221999991)
+quaternion = Quaternion(1.04599082e-15, 1.73004828e-08, -6.04602093e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26576
+metadata/unity_name = "upper_arm_R"
+
+[node name="lower_arm_R" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R"]
+position = Vector3(3.83394863e-08, -0.317698985, 0.00221999991)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26133
+metadata/unity_name = "lower_arm_R"
+
+[node name="hand_R" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R"]
+position = Vector3(3.32893926e-08, -0.275299996, -8.52651264e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4945
+metadata/unity_name = "hand_R"
+
+[node name="hand_R_end" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R"]
+position = Vector3(1.81380635e-08, -0.149999991, -4.47034587e-09)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18754
+metadata/unity_name = "hand_R_end"
+
+[node name="VFX_Funke_SkillAttack_Charge" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R"]
+position = Vector3(0, -0.239999995, -0.330000013)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24252
+metadata/unity_name = "VFX_Funke_SkillAttack_Charge"
+
+[node name="root" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Funke_SkillAttack_Charge"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22269
+metadata/unity_name = "root"
+
+[node name="Core_01" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Funke_SkillAttack_Charge/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19025
+metadata/unity_name = "Core_01"
+
+[node name="Charge_01" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Funke_SkillAttack_Charge/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12369
+metadata/unity_name = "Charge_01"
+
+[node name="Flare_01" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Funke_SkillAttack_Charge/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22714
+metadata/unity_name = "Flare_01"
+
+[node name="Dust_01" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Funke_SkillAttack_Charge/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0.00872656703, 0, -0, 0.999961972)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13093
+metadata/unity_name = "Dust_01"
+
+[node name="Ray_01" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Funke_SkillAttack_Charge/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(2, 2, 2)
+metadata/unity_id = 22376
+metadata/unity_name = "Ray_01"
+
+[node name="Line_01" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Funke_SkillAttack_Charge/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0.707106829, 0, -0, 0.707106829)
+scale = Vector3(1.39999998, 1.39999962, 1.39999962)
+metadata/unity_id = 18648
+metadata/unity_name = "Line_01"
+
+[node name="Glow_01" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Funke_SkillAttack_Charge/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26845
+metadata/unity_name = "Glow_01"
+
+[node name="VFX_Funke_SkillAttack_Base" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R"]
+position = Vector3(0, -0.239999995, -0.330000013)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14475
+metadata/unity_name = "VFX_Funke_SkillAttack_Base"
+
+[node name="root" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Funke_SkillAttack_Base"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8459
+metadata/unity_name = "root"
+
+[node name="Circle_01" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Funke_SkillAttack_Base/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26203
+metadata/unity_name = "Circle_01"
+
+[node name="HorizontalFlare_01" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Funke_SkillAttack_Base/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5342
+metadata/unity_name = "HorizontalFlare_01"
+
+[node name="Flare_01" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Funke_SkillAttack_Base/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0.00872656703, 0, -0, 0.999961972)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10470
+metadata/unity_name = "Flare_01"
+
+[node name="Fire_01" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Funke_SkillAttack_Base/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19175
+metadata/unity_name = "Fire_01"
+
+[node name="Dust_01" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Funke_SkillAttack_Base/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17263
+metadata/unity_name = "Dust_01"
+
+[node name="Dust_02" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Funke_SkillAttack_Base/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19417
+metadata/unity_name = "Dust_02"
+
+[node name="Glow_01" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Funke_SkillAttack_Base/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9264
+metadata/unity_name = "Glow_01"
+
+[node name="Glow_02" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Funke_SkillAttack_Base/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26822
+metadata/unity_name = "Glow_02"
+
+[node name="Line_01" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Funke_SkillAttack_Base/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17190
+metadata/unity_name = "Line_01"
+
+[node name="Smoke_01" type="Node3D" parent="Funke/Funke_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Funke_SkillAttack_Base/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5828
+metadata/unity_name = "Smoke_01"
+
+[node name="upper_leg_L" type="Node3D" parent="Funke/Funke_Model/Armature/hips"]
+position = Vector3(-0.114999995, -0.00935877208, -2.29672437e-09)
+quaternion = Quaternion(1.38968448e-09, 3.10818251e-08, 1, 2.65167426e-08)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10448
+metadata/unity_name = "upper_leg_L"
+
+[node name="lower_leg_L" type="Node3D" parent="Funke/Funke_Model/Armature/hips/upper_leg_L"]
+position = Vector3(-4.13657908e-09, 0.496946394, -4.84872631e-09)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11268
+metadata/unity_name = "lower_leg_L"
+
+[node name="foot_L" type="Node3D" parent="Funke/Funke_Model/Armature/hips/upper_leg_L/lower_leg_L"]
+position = Vector3(1.56157154e-09, 0.459910959, 8.96709373e-10)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10840
+metadata/unity_name = "foot_L"
+
+[node name="toes_L" type="Node3D" parent="Funke/Funke_Model/Armature/hips/upper_leg_L/lower_leg_L/foot_L"]
+position = Vector3(2.05942197e-09, 0.090963155, -0.122629777)
+quaternion = Quaternion(-0.58070296, 0, -0, 0.814115524)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22125
+metadata/unity_name = "toes_L"
+
+[node name="toes_L_end" type="Node3D" parent="Funke/Funke_Model/Armature/hips/upper_leg_L/lower_leg_L/foot_L/toes_L"]
+position = Vector3(1.82859648e-18, 0.142999992, -5.24808064e-09)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7375
+metadata/unity_name = "toes_L_end"
+
+[node name="Magica Capsule Collider (upper_leg_L)" type="Node3D" parent="Funke/Funke_Model/Armature/hips/upper_leg_L"]
+position = Vector3(-0, 0.100000001, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12626
+metadata/unity_name = "Magica Capsule Collider (upper_leg_L)"
+
+[node name="Magica Capsule Collider (upper_leg_L) (1)" type="Node3D" parent="Funke/Funke_Model/Armature/hips/upper_leg_L"]
+position = Vector3(0.0869999975, 0.100000001, 0.123999998)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5777
+metadata/unity_name = "Magica Capsule Collider (upper_leg_L) (1)"
+
+[node name="upper_leg_R" type="Node3D" parent="Funke/Funke_Model/Armature/hips"]
+position = Vector3(0.114999995, -0.00935876649, 8.47032928e-24)
+quaternion = Quaternion(-3.204653e-18, -3.46944695e-18, 1, -6.12323426e-17)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7500
+metadata/unity_name = "upper_leg_R"
+
+[node name="lower_leg_R" type="Node3D" parent="Funke/Funke_Model/Armature/hips/upper_leg_R"]
+position = Vector3(1.42108544e-16, 0.496946394, -3.37507822e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19857
+metadata/unity_name = "lower_leg_R"
+
+[node name="foot_R" type="Node3D" parent="Funke/Funke_Model/Armature/hips/upper_leg_R/lower_leg_R"]
+position = Vector3(1.93213613e-18, 0.459910959, 1.57871204e-18)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7156
+metadata/unity_name = "foot_R"
+
+[node name="toes_R" type="Node3D" parent="Funke/Funke_Model/Armature/hips/upper_leg_R/lower_leg_R/foot_R"]
+position = Vector3(-1.89714899e-14, 0.0909631625, -0.122629777)
+quaternion = Quaternion(-0.58070296, 0, -0, 0.814115524)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21673
+metadata/unity_name = "toes_R"
+
+[node name="toes_R_end" type="Node3D" parent="Funke/Funke_Model/Armature/hips/upper_leg_R/lower_leg_R/foot_R/toes_R"]
+position = Vector3(-3.5527136e-17, 0.142999992, 1.95399251e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8801
+metadata/unity_name = "toes_R_end"
+
+[node name="Funke" type="Node3D" parent="Funke/Funke_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23026
+metadata/unity_name = "Funke"
+
+[node name="body_geo" type="Node3D" parent="Funke/Funke_Model/Funke"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22217
+metadata/unity_name = "body_geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Funke/Funke_Model/Funke/body_geo"]
+mesh = ExtResource("1")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="weapon_01" type="Node3D" parent="Funke/Funke_Model"]
+position = Vector3(8.90443598e-16, 1.57168388, 0.276768714)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10497
+metadata/unity_name = "weapon_01"
+
+[node name="Flames_00" type="Node3D" parent="Funke/Funke_Model/weapon_01"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23963
+metadata/unity_name = "Flames_00"
+
+[node name="weapon_end" type="Node3D" parent="Funke/Funke_Model/weapon_01"]
+position = Vector3(-0, 0.670229912, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21501
+metadata/unity_name = "weapon_end"
+
+[node name="weapon_geo" type="Node3D" parent="Funke/Funke_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22413
+metadata/unity_name = "weapon_geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Funke/Funke_Model/weapon_geo"]
+mesh = ExtResource("3")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="Magica Cloth (chain)" type="Node3D" parent="Funke/Funke_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5941
+metadata/unity_name = "Magica Cloth (chain)"
+
+[node name="Magica Cloth (collar)" type="Node3D" parent="Funke/Funke_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6743
+metadata/unity_name = "Magica Cloth (collar)"
+
+[node name="Magica Cloth (jacket)" type="Node3D" parent="Funke/Funke_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8040
+metadata/unity_name = "Magica Cloth (jacket)"
+
+[node name="Magica Cloth (hair)" type="Node3D" parent="Funke/Funke_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11257
+metadata/unity_name = "Magica Cloth (hair)"
+
+[node name="OverheadSlot" type="Node3D" parent="Funke"]
+position = Vector3(0, 2, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16378
+metadata/unity_name = "OverheadSlot"
+
+[node name="VFXParent" type="Node3D" parent="Funke"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5103
+metadata/unity_name = "VFXParent"

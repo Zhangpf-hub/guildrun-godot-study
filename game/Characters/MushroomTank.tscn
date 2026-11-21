@@ -1,0 +1,661 @@
+[gd_scene format=3]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2888.obj" id="1"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_234.tres" id="2"]
+
+[node name="MushroomTank" type="Node3D"]
+
+[node name="MushroomTank" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23825
+metadata/unity_name = "MushroomTank"
+
+[node name="MushroomGuardian_Model" type="Node3D" parent="MushroomTank"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1.70000005, 1.70000005, 1.70000005)
+metadata/unity_id = 13713
+metadata/unity_name = "MushroomGuardian_Model"
+
+[node name="MG_Mesh" type="Node3D" parent="MushroomTank/MushroomGuardian_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(0.707106829, -0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23126
+metadata/unity_name = "MG_Mesh"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="MushroomTank/MushroomGuardian_Model/MG_Mesh"]
+mesh = ExtResource("1")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="root" type="Node3D" parent="MushroomTank/MushroomGuardian_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(0.707106829, -0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5945
+metadata/unity_name = "root"
+
+[node name="ik_foot_root" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18585
+metadata/unity_name = "ik_foot_root"
+
+[node name="ik_foot_l" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/ik_foot_root"]
+position = Vector3(-0.29072687, -0.0540197343, -0.0083478149)
+quaternion = Quaternion(-0.0105108283, -0.691198885, -0.0717993379, 0.719012141)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12071
+metadata/unity_name = "ik_foot_l"
+
+[node name="ik_foot_r" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/ik_foot_root"]
+position = Vector3(0.295074224, -0.00235915417, -0.00814065337)
+quaternion = Quaternion(-0.714673102, -0.109141544, 0.689323843, -0.0465094745)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26489
+metadata/unity_name = "ik_foot_r"
+
+[node name="ik_hand_root" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18293
+metadata/unity_name = "ik_hand_root"
+
+[node name="ik_hand_gun" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/ik_hand_root"]
+position = Vector3(0.631830871, 0.0667654946, -0.533238769)
+quaternion = Quaternion(-0.580855608, -0.284617692, -0.359324306, 0.672670484)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18923
+metadata/unity_name = "ik_hand_gun"
+
+[node name="ik_hand_l" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/ik_hand_root/ik_hand_gun"]
+position = Vector3(-0.72083497, -1.01267624, -0.0366515256)
+quaternion = Quaternion(-0.581884325, -0.812862635, -0.0253470875, -0.00474709738)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8650
+metadata/unity_name = "ik_hand_l"
+
+[node name="ik_hand_r" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/ik_hand_root/ik_hand_gun"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, 5.40167022e-08, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11632
+metadata/unity_name = "ik_hand_r"
+
+[node name="pelvis" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root"]
+position = Vector3(0.0109510636, 0.0131485388, -0.484639317)
+quaternion = Quaternion(-0.0329960957, -0.705021441, 0.0324950591, 0.707672298)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8019
+metadata/unity_name = "pelvis"
+
+[node name="spine_01" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis"]
+position = Vector3(-0.165207103, 0.0328618027, 1.07288356e-08)
+quaternion = Quaternion(-4.14379748e-08, -1.07180244e-10, 0.00258755405, 0.999996662)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4990
+metadata/unity_name = "spine_01"
+
+[node name="spine_02" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01"]
+position = Vector3(-0.107234493, 0.0175905321, -5.96583061e-10)
+quaternion = Quaternion(-0, 0, -0.122419812, 0.99247843)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20248
+metadata/unity_name = "spine_02"
+
+[node name="spine_03" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02"]
+position = Vector3(-0.0825717896, 0.00524822716, 1.76809039e-08)
+quaternion = Quaternion(1.83787527e-08, -2.37708804e-07, 0.0770866722, 0.997024417)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9834
+metadata/unity_name = "spine_03"
+
+[node name="clavicle_l" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03"]
+position = Vector3(0.0274940487, -0.219434977, 0.147010386)
+quaternion = Quaternion(-0.33364886, 0.49453333, -0.286244392, 0.749786198)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19041
+metadata/unity_name = "clavicle_l"
+
+[node name="upperarm_l" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l"]
+position = Vector3(-0.312458843, -0.000444393139, 0.00643173186)
+quaternion = Quaternion(-0.0772552416, 0.59848702, 0.232331157, 0.762802243)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16926
+metadata/unity_name = "upperarm_l"
+
+[node name="lowerarm_l" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l"]
+position = Vector3(-0.286415488, 0.00135776517, 0.00137817382)
+quaternion = Quaternion(0.0209372211, 0.0339183658, 0.226585329, 0.973175347)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11685
+metadata/unity_name = "lowerarm_l"
+
+[node name="hand_l" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l"]
+position = Vector3(-0.213295519, 0.00146121974, 0.000703506463)
+quaternion = Quaternion(0.581511736, -0.0286303554, -0.0770250261, 0.809377313)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18708
+metadata/unity_name = "hand_l"
+
+[node name="index_01_l" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l"]
+position = Vector3(-0.114709891, -0.00734611508, 0.0378408991)
+quaternion = Quaternion(-0.133306429, 0.0468450449, -0.0726639032, 0.98729682)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18140
+metadata/unity_name = "index_01_l"
+
+[node name="index_02_l" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l"]
+position = Vector3(-0.100552902, 0.000536727894, -0.000532817852)
+quaternion = Quaternion(-0.00771915261, 0.013460407, -0.204957247, 0.978647947)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7719
+metadata/unity_name = "index_02_l"
+
+[node name="index_03_l" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l"]
+position = Vector3(-0.0774583444, -0.000325546251, 0.00143987651)
+quaternion = Quaternion(-0.102037333, -0.0837468505, 0.158438042, 0.978505075)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17471
+metadata/unity_name = "index_03_l"
+
+[node name="middle_01_l" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l"]
+position = Vector3(-0.0822660029, 0.0113588711, -0.0731205195)
+quaternion = Quaternion(-0.0714245364, -0.162226796, -0.0744442046, 0.981345594)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24639
+metadata/unity_name = "middle_01_l"
+
+[node name="middle_02_l" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l"]
+position = Vector3(-0.0996817946, 0.00167427061, 0.00190189353)
+quaternion = Quaternion(0.052540835, 0.0886059105, -0.220410705, 0.969952345)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5487
+metadata/unity_name = "middle_02_l"
+
+[node name="middle_03_l" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l"]
+position = Vector3(-0.0640898123, -0.00251579285, 0.000112485883)
+quaternion = Quaternion(0.00690882048, -0.0503867194, 0.00980430469, 0.998657763)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12496
+metadata/unity_name = "middle_03_l"
+
+[node name="thumb_01_l" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l"]
+position = Vector3(-0.019054221, 0.0323097967, 0.0666313469)
+quaternion = Quaternion(-0.551344573, 0.509618521, 0.186458215, 0.633673012)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17828
+metadata/unity_name = "thumb_01_l"
+
+[node name="thumb_02_l" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l"]
+position = Vector3(-0.0688212737, 0.000494308479, -0.000517501845)
+quaternion = Quaternion(-0.0490179993, -0.0183222014, -0.215289533, 0.975147128)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22562
+metadata/unity_name = "thumb_02_l"
+
+[node name="thumb_03_l" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l"]
+position = Vector3(-0.0862492323, -0.000599307998, 0.00664138794)
+quaternion = Quaternion(-0.0214059018, 0.00190706935, 0.107819267, 0.993938208)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8832
+metadata/unity_name = "thumb_03_l"
+
+[node name="lowerarm_twist_01_l" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l"]
+position = Vector3(-0.139999956, -5.72204577e-08, -0)
+quaternion = Quaternion(-0, 7.45058237e-09, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17965
+metadata/unity_name = "lowerarm_twist_01_l"
+
+[node name="upperarm_twist_01_l" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l"]
+position = Vector3(-0.00499999989, 9.53674295e-09, 7.62939436e-08)
+quaternion = Quaternion(-3.7252903e-09, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17264
+metadata/unity_name = "upperarm_twist_01_l"
+
+[node name="clavicle_r" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03"]
+position = Vector3(0.0274940487, -0.219434872, -0.147009939)
+quaternion = Quaternion(-0.498041481, -0.33360669, 0.748346448, 0.283969879)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14916
+metadata/unity_name = "clavicle_r"
+
+[node name="upperarm_r" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r"]
+position = Vector3(0.312459558, 0.000444450357, -0.00643135048)
+quaternion = Quaternion(-0.0766012371, 0.598967612, 0.234086856, 0.761953771)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20201
+metadata/unity_name = "upperarm_r"
+
+[node name="lowerarm_r" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r"]
+position = Vector3(0.286415637, -0.00135786051, -0.0013784027)
+quaternion = Quaternion(0.0208765846, 0.034716852, 0.230180308, 0.972304463)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9935
+metadata/unity_name = "lowerarm_r"
+
+[node name="hand_r" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r"]
+position = Vector3(0.213295683, -0.00146116258, -0.000703353842)
+quaternion = Quaternion(0.580233634, -0.0258125309, -0.0772070512, 0.810371339)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17420
+metadata/unity_name = "hand_r"
+
+[node name="index_01_r" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r"]
+position = Vector3(0.114709623, 0.00734649645, -0.0378410853)
+quaternion = Quaternion(-0.130167216, 0.065934673, -0.0716207996, 0.986701369)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23649
+metadata/unity_name = "index_01_r"
+
+[node name="index_02_r" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r"]
+position = Vector3(0.100552998, -0.000536804204, 0.000532779668)
+quaternion = Quaternion(-0.00750475656, 0.0172687788, -0.223483756, 0.974525809)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14453
+metadata/unity_name = "index_02_r"
+
+[node name="index_03_r" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r"]
+position = Vector3(0.0774581879, 0.000325546251, -0.00143974298)
+quaternion = Quaternion(0.0423611477, 0.0133166015, -0.058514975, 0.997298479)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9156
+metadata/unity_name = "index_03_r"
+
+[node name="middle_01_r" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r"]
+position = Vector3(0.0822654292, -0.0113594057, 0.0731203035)
+quaternion = Quaternion(-0.0724762008, -0.144454122, -0.0475216843, 0.985708833)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6483
+metadata/unity_name = "middle_01_r"
+
+[node name="middle_02_r" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r"]
+position = Vector3(0.0996817946, -0.00167419435, -0.00190183637)
+quaternion = Quaternion(0.0498922132, 0.11780192, -0.295083582, 0.946868122)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20404
+metadata/unity_name = "middle_02_r"
+
+[node name="middle_03_r" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r"]
+position = Vector3(0.0640895814, 0.00251556397, -0.000112490648)
+quaternion = Quaternion(0.00463280128, -0.0386144742, -0.026995901, 0.998878717)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19894
+metadata/unity_name = "middle_03_r"
+
+[node name="thumb_01_r" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r"]
+position = Vector3(0.0190543365, -0.0323099494, -0.0666312873)
+quaternion = Quaternion(-0.536019683, 0.439953893, 0.244554117, 0.67772913)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9724
+metadata/unity_name = "thumb_01_r"
+
+[node name="thumb_02_r" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r"]
+position = Vector3(0.0688213557, -0.000494308479, 0.000517425535)
+quaternion = Quaternion(-0.0485942885, -0.020876281, -0.196417645, 0.979092896)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23610
+metadata/unity_name = "thumb_02_r"
+
+[node name="thumb_03_r" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r"]
+position = Vector3(0.0862500742, 0.000599403342, -0.00664169295)
+quaternion = Quaternion(-0.016624067, -0.0143762017, 0.188557222, 0.981816292)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8018
+metadata/unity_name = "thumb_03_r"
+
+[node name="lowerarm_twist_01_r" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r"]
+position = Vector3(0.140000015, 2.86102278e-07, 1.52587887e-07)
+quaternion = Quaternion(0.117627174, 4.38197145e-10, -1.10982858e-08, 0.993057847)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16127
+metadata/unity_name = "lowerarm_twist_01_r"
+
+[node name="upperarm_twist_01_r" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r"]
+position = Vector3(0.00500007626, -2.86102289e-08, -0)
+quaternion = Quaternion(0.173234895, 8.06687661e-10, -1.70324491e-10, 0.984880567)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11112
+metadata/unity_name = "upperarm_twist_01_r"
+
+[node name="neck_01" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03"]
+position = Vector3(-0.0927140042, -0.051926855, 3.09944141e-08)
+quaternion = Quaternion(6.9182046e-05, 7.78155481e-06, 0.111774504, 0.993733585)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22263
+metadata/unity_name = "neck_01"
+
+[node name="head" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/neck_01"]
+position = Vector3(-0.186720654, 0.00767839421, -0)
+quaternion = Quaternion(-2.19276699e-05, -4.36842629e-06, 0.0143587422, 0.999896944)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7264
+metadata/unity_name = "head"
+
+[node name="eye_l" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/neck_01/head"]
+position = Vector3(-0.00775001524, -0.120309234, 0.110223681)
+quaternion = Quaternion(-0.000174731118, -0.0019108773, -0.00027565108, 0.999998152)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13701
+metadata/unity_name = "eye_l"
+
+[node name="eye_r" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/neck_01/head"]
+position = Vector3(-0.0077484129, -0.120308891, -0.110223949)
+quaternion = Quaternion(1.60338659e-05, -0.00187612406, -0.000476336689, 0.999998152)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25045
+metadata/unity_name = "eye_r"
+
+[node name="eyelid_lower_l" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/neck_01/head"]
+position = Vector3(-0.00478416448, -0.112337023, 0.104114346)
+quaternion = Quaternion(-0.529469609, -0.374146938, 0.709858954, 0.275274843)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19114
+metadata/unity_name = "eyelid_lower_l"
+
+[node name="eyelid_lower_r" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/neck_01/head"]
+position = Vector3(-0.00478172302, -0.112336822, -0.104113959)
+quaternion = Quaternion(-0.374146819, 0.529469669, -0.275178462, 0.709896386)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21548
+metadata/unity_name = "eyelid_lower_r"
+
+[node name="eyelid_upper_l" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/neck_01/head"]
+position = Vector3(-0.0121672815, -0.111466065, 0.10328833)
+quaternion = Quaternion(0.43794924, 0.461224854, 0.28019613, 0.719000876)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13001
+metadata/unity_name = "eyelid_upper_l"
+
+[node name="eyelid_upper_r" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/neck_01/head"]
+position = Vector3(-0.0121630095, -0.11146602, -0.103287943)
+quaternion = Quaternion(-0.461225152, 0.437948912, 0.718961835, -0.280296445)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9975
+metadata/unity_name = "eyelid_upper_r"
+
+[node name="hat_01" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/neck_01/head"]
+position = Vector3(-0.155024558, -0.0281654727, -1.31130218e-08)
+quaternion = Quaternion(-2.22489582e-08, 6.04644379e-09, -0.262244433, 0.965001523)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22335
+metadata/unity_name = "hat_01"
+
+[node name="hat_02" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/neck_01/head/hat_01"]
+position = Vector3(-0.233908758, 0.00104011537, -6.55651107e-08)
+quaternion = Quaternion(-4.01032662e-14, -3.52566175e-13, -0.0963085294, 0.995351553)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23038
+metadata/unity_name = "hat_02"
+
+[node name="hat_03" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/neck_01/head/hat_01/hat_02"]
+position = Vector3(-0.229015499, 0.00371475215, -4.05311589e-08)
+quaternion = Quaternion(-1.33550138e-09, -2.38414486e-07, -0.00560146384, 0.999984324)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14825
+metadata/unity_name = "hat_03"
+
+[node name="jaw" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/spine_01/spine_02/spine_03/neck_01/head"]
+position = Vector3(0.163499072, -0.140738755, 2.98023224e-08)
+quaternion = Quaternion(-0.000553317077, -9.53420022e-05, -0.30378136, 0.952741623)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27180
+metadata/unity_name = "jaw"
+
+[node name="thigh_l" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis"]
+position = Vector3(-0.0696125403, 0.00635506632, 0.217913046)
+quaternion = Quaternion(-0.155313283, -0.0675278902, -0.224171683, 0.959721267)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13045
+metadata/unity_name = "thigh_l"
+
+[node name="calf_l" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/thigh_l"]
+position = Vector3(0.276076108, -0.00344009395, 0.000567626965)
+quaternion = Quaternion(0.0518712476, -0.00522915926, 0.214373067, 0.975359559)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10113
+metadata/unity_name = "calf_l"
+
+[node name="calf_twist_01_l" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/thigh_l/calf_l"]
+position = Vector3(0.144769967, 0, -1.90734859e-08)
+quaternion = Quaternion(-0.00280894502, -0.00193332497, 0.00761267357, 0.99996525)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18908
+metadata/unity_name = "calf_twist_01_l"
+
+[node name="foot_l" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/thigh_l/calf_l"]
+position = Vector3(0.293719947, -4.18281561e-05, -0.000279235828)
+quaternion = Quaternion(0.0557513423, 0.0792708695, -0.0750958771, 0.99245584)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15370
+metadata/unity_name = "foot_l"
+
+[node name="thigh_twist_01_l" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/thigh_l"]
+position = Vector3(0.13094002, 0, 3.81469718e-08)
+quaternion = Quaternion(0.0474436916, 2.14190259e-05, 0.000491156068, 0.99887383)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17509
+metadata/unity_name = "thigh_twist_01_l"
+
+[node name="thigh_r" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis"]
+position = Vector3(-0.0696122721, 0.00635504723, -0.217912778)
+quaternion = Quaternion(0.060943827, -0.205025807, 0.957443118, 0.193785787)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12269
+metadata/unity_name = "thigh_r"
+
+[node name="calf_r" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/thigh_r"]
+position = Vector3(-0.276075661, 0.0034399603, -0.000565242779)
+quaternion = Quaternion(0.0512544774, -0.00572931301, 0.24608098, 0.967876196)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13762
+metadata/unity_name = "calf_r"
+
+[node name="calf_twist_01_r" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/thigh_r/calf_r"]
+position = Vector3(-0.144770011, 0, 1.90734859e-08)
+quaternion = Quaternion(-0.00280727982, -0.0019337883, 0.00761243654, 0.99996525)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22470
+metadata/unity_name = "calf_twist_01_r"
+
+[node name="foot_r" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/thigh_r/calf_r"]
+position = Vector3(-0.293720633, 4.20284268e-05, 0.000278491963)
+quaternion = Quaternion(0.0550408661, 0.0687943324, -0.133688018, 0.987099469)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26134
+metadata/unity_name = "foot_r"
+
+[node name="thigh_twist_01_r" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/pelvis/thigh_r"]
+position = Vector3(-0.130939975, -1.90734859e-08, 1.90734859e-08)
+quaternion = Quaternion(0.0474453531, 2.18961432e-05, 0.000491133309, 0.998873711)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21634
+metadata/unity_name = "thigh_twist_01_r"
+
+[node name="VFX_MushroomTank_SkillAttack_02" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9656
+metadata/unity_name = "VFX_MushroomTank_SkillAttack_02"
+
+[node name="root" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/VFX_MushroomTank_SkillAttack_02"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5762
+metadata/unity_name = "root"
+
+[node name="Glow_01" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/VFX_MushroomTank_SkillAttack_02/root"]
+position = Vector3(0, -0, -0.699999988)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20485
+metadata/unity_name = "Glow_01"
+
+[node name="Lines_01" type="Node3D" parent="MushroomTank/MushroomGuardian_Model/root/VFX_MushroomTank_SkillAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14048
+metadata/unity_name = "Lines_01"
+
+[node name="OverheadSlot" type="Node3D" parent="MushroomTank"]
+position = Vector3(0, 2.5, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6571
+metadata/unity_name = "OverheadSlot"
+
+[node name="VFXParent" type="Node3D" parent="MushroomTank"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16318
+metadata/unity_name = "VFXParent"
+
+[node name="VFX_MushroomTank_SkillAttack" type="Node3D" parent="MushroomTank/VFXParent"]
+position = Vector3(0, 0.100000001, -1.83000004)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16226
+metadata/unity_name = "VFX_MushroomTank_SkillAttack"
+
+[node name="root" type="Node3D" parent="MushroomTank/VFXParent/VFX_MushroomTank_SkillAttack"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10602
+metadata/unity_name = "root"
+
+[node name="Crack_01" type="Node3D" parent="MushroomTank/VFXParent/VFX_MushroomTank_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11274
+metadata/unity_name = "Crack_01"
+
+[node name="BottomCircle_01" type="Node3D" parent="MushroomTank/VFXParent/VFX_MushroomTank_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19556
+metadata/unity_name = "BottomCircle_01"
+
+[node name="Vertical_01" type="Node3D" parent="MushroomTank/VFXParent/VFX_MushroomTank_SkillAttack/root"]
+position = Vector3(-0.165000007, 0, -0.169)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25881
+metadata/unity_name = "Vertical_01"
+
+[node name="Lines_01" type="Node3D" parent="MushroomTank/VFXParent/VFX_MushroomTank_SkillAttack/root"]
+position = Vector3(0, 0.629999995, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16651
+metadata/unity_name = "Lines_01"
+
+[node name="Lines_02" type="Node3D" parent="MushroomTank/VFXParent/VFX_MushroomTank_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13814
+metadata/unity_name = "Lines_02"
+
+[node name="Spike_01" type="Node3D" parent="MushroomTank/VFXParent/VFX_MushroomTank_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0.275241762, 0.253863186, -0.0756075233, 0.924163938)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10685
+metadata/unity_name = "Spike_01"
+
+[node name="GroundSpike_01" type="Node3D" parent="MushroomTank/VFXParent/VFX_MushroomTank_SkillAttack/root"]
+position = Vector3(0, 0.0700000003, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23491
+metadata/unity_name = "GroundSpike_01"
+
+[node name="Impact_01" type="Node3D" parent="MushroomTank/VFXParent/VFX_MushroomTank_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0.00729541434, -0.991506457, 0.0640309677, 0.112967998)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19395
+metadata/unity_name = "Impact_01"
+
+[node name="Impact_02" type="Node3D" parent="MushroomTank/VFXParent/VFX_MushroomTank_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26454
+metadata/unity_name = "Impact_02"
+
+[node name="Impact_03" type="Node3D" parent="MushroomTank/VFXParent/VFX_MushroomTank_SkillAttack/root"]
+position = Vector3(0, -1.27999997, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10805
+metadata/unity_name = "Impact_03"
+
+[node name="Smoke_01" type="Node3D" parent="MushroomTank/VFXParent/VFX_MushroomTank_SkillAttack/root"]
+position = Vector3(0, 0.200000018, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8944
+metadata/unity_name = "Smoke_01"
+
+[node name="Smoke_02" type="Node3D" parent="MushroomTank/VFXParent/VFX_MushroomTank_SkillAttack/root"]
+position = Vector3(0, 0.100000001, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17867
+metadata/unity_name = "Smoke_02"
+
+[node name="VFX_MushroomTank_BasicAttack" type="Node3D" parent="MushroomTank/VFXParent"]
+position = Vector3(0.289999992, 0.850000024, -1.09000003)
+quaternion = Quaternion(-0.859302044, -0.212602571, 0.465030581, 0.0121148154)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15821
+metadata/unity_name = "VFX_MushroomTank_BasicAttack"
+
+[node name="root" type="Node3D" parent="MushroomTank/VFXParent/VFX_MushroomTank_BasicAttack"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, -9.31322575e-09, -7.4505806e-09, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20731
+metadata/unity_name = "root"
+
+[node name="Slash_01" type="Node3D" parent="MushroomTank/VFXParent/VFX_MushroomTank_BasicAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(2.77555756e-17, -3.7252903e-09, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26983
+metadata/unity_name = "Slash_01"
+
+[node name="Slash_02_Highlight" type="Node3D" parent="MushroomTank/VFXParent/VFX_MushroomTank_BasicAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-2.77555756e-17, 3.7252903e-09, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15699
+metadata/unity_name = "Slash_02_Highlight"
+
+[node name="Slash_03_Wind" type="Node3D" parent="MushroomTank/VFXParent/VFX_MushroomTank_BasicAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-2.77555756e-17, 3.7252903e-09, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8789
+metadata/unity_name = "Slash_03_Wind"
+
+[node name="CameraShake_low" type="Node3D" parent="MushroomTank/VFXParent"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12157
+metadata/unity_name = "CameraShake_low"

@@ -1,0 +1,333 @@
+[gd_scene format=3]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2913.obj" id="1"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_310.tres" id="2"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2749.obj" id="3"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_311.tres" id="4"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2793.obj" id="5"]
+
+[node name="Turtle" type="Node3D"]
+
+[node name="Turtle" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10109
+metadata/unity_name = "Turtle"
+
+[node name="Turtle_Animations" type="Node3D" parent="Turtle"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15775
+metadata/unity_name = "Turtle_Animations"
+
+[node name="Body_Mesh" type="Node3D" parent="Turtle/Turtle_Animations"]
+position = Vector3(-0, 0.57476598, -0.0457949042)
+quaternion = Quaternion(0.707106829, -0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26746
+metadata/unity_name = "Body_Mesh"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Turtle/Turtle_Animations/Body_Mesh"]
+mesh = ExtResource("1")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="root" type="Node3D" parent="Turtle/Turtle_Animations"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(0.707106829, -0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6654
+metadata/unity_name = "root"
+
+[node name="pelvis" type="Node3D" parent="Turtle/Turtle_Animations/root"]
+position = Vector3(-0.00653024018, 0.587938786, -0.611903727)
+quaternion = Quaternion(-0.0495816469, -0.705367088, 0.0495830551, 0.705365479)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10162
+metadata/unity_name = "pelvis"
+
+[node name="spine_01" type="Node3D" parent="Turtle/Turtle_Animations/root/pelvis"]
+position = Vector3(-0.00178946997, -0.303744078, -6.99999987e-08)
+quaternion = Quaternion(-0.00998941343, 0.000733984925, 0.682344317, 0.730962336)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7104
+metadata/unity_name = "spine_01"
+
+[node name="shell" type="Node3D" parent="Turtle/Turtle_Animations/root/pelvis/spine_01"]
+position = Vector3(-0.153333202, 0.125996858, 3.99999998e-08)
+quaternion = Quaternion(0.0012260325, -0.00126016012, -0.146109864, 0.989266813)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10642
+metadata/unity_name = "shell"
+
+[node name="spine_02" type="Node3D" parent="Turtle/Turtle_Animations/root/pelvis/spine_01"]
+position = Vector3(-0.369730383, 3.99999998e-08, 3.57999988e-06)
+quaternion = Quaternion(-0, -0, -0.0576170757, 0.998338759)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19517
+metadata/unity_name = "spine_02"
+
+[node name="spine_03" type="Node3D" parent="Turtle/Turtle_Animations/root/pelvis/spine_01/spine_02"]
+position = Vector3(-0.334868431, -3.99999998e-08, 3.46999991e-06)
+quaternion = Quaternion(-0, -0, 0.0407422222, 0.999169707)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7708
+metadata/unity_name = "spine_03"
+
+[node name="clavicle_l" type="Node3D" parent="Turtle/Turtle_Animations/root/pelvis/spine_01/spine_02/spine_03"]
+position = Vector3(0.032825239, 0.0655273348, 0.197170153)
+quaternion = Quaternion(-0.485172361, -0.767029464, 0.163371816, -0.386759907)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21105
+metadata/unity_name = "clavicle_l"
+
+[node name="upperarm_l" type="Node3D" parent="Turtle/Turtle_Animations/root/pelvis/spine_01/spine_02/spine_03/clavicle_l"]
+position = Vector3(-0.161252558, -0.00318906992, 0.00753783993)
+quaternion = Quaternion(0.161850393, -0.980450451, -0.0157916956, 0.110779226)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17674
+metadata/unity_name = "upperarm_l"
+
+[node name="lowerarm_l" type="Node3D" parent="Turtle/Turtle_Animations/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l"]
+position = Vector3(0.26697433, 1.12999999e-06, 6.09999972e-07)
+quaternion = Quaternion(-3.26151458e-05, 3.92110051e-05, -0.221807256, 0.975090563)
+scale = Vector3(1.00000095, 1, 1)
+metadata/unity_id = 12380
+metadata/unity_name = "lowerarm_l"
+
+[node name="hand_l" type="Node3D" parent="Turtle/Turtle_Animations/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l"]
+position = Vector3(0.228130773, 9.59999966e-07, 1.89999994e-07)
+quaternion = Quaternion(-0.321731597, 0.0265172757, -0.501425028, 0.802719474)
+scale = Vector3(1.00000095, 1, 1)
+metadata/unity_id = 16555
+metadata/unity_name = "hand_l"
+
+[node name="fingers_01_l" type="Node3D" parent="Turtle/Turtle_Animations/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l"]
+position = Vector3(0.230454966, 5.99999979e-08, -2.24999985e-06)
+quaternion = Quaternion(0.0083048474, -0.0175733026, 0.0186468549, 0.999637187)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23068
+metadata/unity_name = "fingers_01_l"
+
+[node name="fingers_02_l" type="Node3D" parent="Turtle/Turtle_Animations/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/fingers_01_l"]
+position = Vector3(-0.00264385017, -0.01116098, -0.000111769994)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(0.999998987, 0.999998987, 1)
+metadata/unity_id = 14848
+metadata/unity_name = "fingers_02_l"
+
+[node name="clavicle_r" type="Node3D" parent="Turtle/Turtle_Animations/root/pelvis/spine_01/spine_02/spine_03"]
+position = Vector3(0.032825198, 0.0655268058, -0.197169811)
+quaternion = Quaternion(0.373684824, -0.182313651, 0.774706125, 0.476394653)
+scale = Vector3(1.00000095, 1, 1)
+metadata/unity_id = 14211
+metadata/unity_name = "clavicle_r"
+
+[node name="upperarm_r" type="Node3D" parent="Turtle/Turtle_Animations/root/pelvis/spine_01/spine_02/spine_03/clavicle_r"]
+position = Vector3(-0.161458224, 1.69999993e-07, 3.79999989e-07)
+quaternion = Quaternion(-0.0447185449, 0.107832342, -0.194144726, 0.974002242)
+scale = Vector3(1.00000095, 1, 1)
+metadata/unity_id = 19482
+metadata/unity_name = "upperarm_r"
+
+[node name="lowerarm_r" type="Node3D" parent="Turtle/Turtle_Animations/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r"]
+position = Vector3(-0.266983569, 3.30000012e-06, 8.93000015e-06)
+quaternion = Quaternion(-9.52384744e-06, 1.14147424e-05, -0.137211263, 0.990541816)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7786
+metadata/unity_name = "lowerarm_r"
+
+[node name="hand_r" type="Node3D" parent="Turtle/Turtle_Animations/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r"]
+position = Vector3(-0.228118762, 3.87999989e-06, 7.77999958e-06)
+quaternion = Quaternion(-0.320711523, 0.0412598662, -0.535570741, 0.780131876)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16713
+metadata/unity_name = "hand_r"
+
+[node name="fingers_01_r" type="Node3D" parent="Turtle/Turtle_Animations/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r"]
+position = Vector3(-0.230457678, -5.99999979e-08, 2.86e-06)
+quaternion = Quaternion(0.00539970025, -0.00842031464, 0.0267037842, 0.999593377)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21370
+metadata/unity_name = "fingers_01_r"
+
+[node name="fingers_02_r" type="Node3D" parent="Turtle/Turtle_Animations/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/fingers_01_r"]
+position = Vector3(0.00264393003, 0.01116098, 0.000111539994)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9080
+metadata/unity_name = "fingers_02_r"
+
+[node name="neck_01" type="Node3D" parent="Turtle/Turtle_Animations/root/pelvis/spine_01/spine_02/spine_03"]
+position = Vector3(-0.165240318, 0.0289172698, 1.98999987e-06)
+quaternion = Quaternion(0.0218508765, 0.00227555982, -0.245216489, 0.969219387)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24372
+metadata/unity_name = "neck_01"
+
+[node name="neck_02" type="Node3D" parent="Turtle/Turtle_Animations/root/pelvis/spine_01/spine_02/spine_03/neck_01"]
+position = Vector3(-0.159050524, -2.09999996e-07, -2.34999993e-06)
+quaternion = Quaternion(-0.00729418593, 0.000758082664, -0.0286872834, 0.999561548)
+scale = Vector3(1.00000095, 1, 1)
+metadata/unity_id = 20400
+metadata/unity_name = "neck_02"
+
+[node name="head" type="Node3D" parent="Turtle/Turtle_Animations/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02"]
+position = Vector3(-0.167351529, -2.69999987e-07, -5.10000007e-07)
+quaternion = Quaternion(-0, 0, -0.203314543, 0.97911346)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9995
+metadata/unity_name = "head"
+
+[node name="jaw" type="Node3D" parent="Turtle/Turtle_Animations/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/head"]
+position = Vector3(0.168408349, -0.114690512, -2.41999987e-06)
+quaternion = Quaternion(-0, -0, -0.815308928, 0.579026222)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22311
+metadata/unity_name = "jaw"
+
+[node name="tail_01" type="Node3D" parent="Turtle/Turtle_Animations/root/pelvis"]
+position = Vector3(0.0438091271, 0.221319035, 4.9999997e-08)
+quaternion = Quaternion(0.00392889977, 0.00131457113, 0.948316991, -0.317297518)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15418
+metadata/unity_name = "tail_01"
+
+[node name="tail_02" type="Node3D" parent="Turtle/Turtle_Animations/root/pelvis/tail_01"]
+position = Vector3(-0.17452392, -2.29999998e-07, 2.32999992e-06)
+quaternion = Quaternion(-1.00854173e-13, 2.61477645e-11, 0.223273531, 0.974755824)
+scale = Vector3(1, 1.00000095, 1)
+metadata/unity_id = 6046
+metadata/unity_name = "tail_02"
+
+[node name="tail_03" type="Node3D" parent="Turtle/Turtle_Animations/root/pelvis/tail_01/tail_02"]
+position = Vector3(-0.160812601, -3.0999999e-07, 3.60000001e-07)
+quaternion = Quaternion(-0.00566955423, 0.0343588404, 0.162328154, 0.986122191)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26840
+metadata/unity_name = "tail_03"
+
+[node name="thigh_l" type="Node3D" parent="Turtle/Turtle_Animations/root/pelvis"]
+position = Vector3(0.1626596, 0.07038223, 0.273964554)
+quaternion = Quaternion(-0.367396355, -0.301331639, -0.408299476, 0.779429793)
+scale = Vector3(1, 1.00000095, 1)
+metadata/unity_id = 10920
+metadata/unity_name = "thigh_l"
+
+[node name="calf_l" type="Node3D" parent="Turtle/Turtle_Animations/root/pelvis/thigh_l"]
+position = Vector3(0.334755003, 1.09999995e-07, -1.49999991e-07)
+quaternion = Quaternion(-4.51328106e-06, -1.37123743e-06, 0.753624856, 0.657304764)
+scale = Vector3(0.999998987, 1.00000095, 1)
+metadata/unity_id = 7978
+metadata/unity_name = "calf_l"
+
+[node name="foot_l" type="Node3D" parent="Turtle/Turtle_Animations/root/pelvis/thigh_l/calf_l"]
+position = Vector3(0.254210711, -8.39999984e-07, 3.0999999e-07)
+quaternion = Quaternion(0.160774708, 0.0728183538, -0.819330692, 0.545478046)
+scale = Vector3(1, 1.00000095, 1)
+metadata/unity_id = 13305
+metadata/unity_name = "foot_l"
+
+[node name="ball_l" type="Node3D" parent="Turtle/Turtle_Animations/root/pelvis/thigh_l/calf_l/foot_l"]
+position = Vector3(0.168269485, 1.09999995e-07, -8.39999984e-07)
+quaternion = Quaternion(-0.00909286272, -0.0220002215, -0.156744167, 0.987352312)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26007
+metadata/unity_name = "ball_l"
+
+[node name="thigh_r" type="Node3D" parent="Turtle/Turtle_Animations/root/pelvis"]
+position = Vector3(0.162659645, 0.070382461, -0.273964614)
+quaternion = Quaternion(0.309289366, -0.366094291, 0.776546001, 0.409012645)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11565
+metadata/unity_name = "thigh_r"
+
+[node name="calf_r" type="Node3D" parent="Turtle/Turtle_Animations/root/pelvis/thigh_r"]
+position = Vector3(-0.334755391, 7.99999995e-08, -3.79999989e-07)
+quaternion = Quaternion(4.16114108e-06, 1.63856691e-06, 0.743827581, 0.668371558)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15818
+metadata/unity_name = "calf_r"
+
+[node name="foot_r" type="Node3D" parent="Turtle/Turtle_Animations/root/pelvis/thigh_r/calf_r"]
+position = Vector3(-0.254213959, -1.02999991e-06, 6.89999979e-07)
+quaternion = Quaternion(0.160250232, 0.073762022, -0.812799692, 0.555189908)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25388
+metadata/unity_name = "foot_r"
+
+[node name="ball_r" type="Node3D" parent="Turtle/Turtle_Animations/root/pelvis/thigh_r/calf_r/foot_r"]
+position = Vector3(-0.16827032, 0, -7.59999978e-07)
+quaternion = Quaternion(-0.017702464, -0.0173684638, -0.151186883, 0.988194108)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7062
+metadata/unity_name = "ball_r"
+
+[node name="Shell_01_Mesh" type="Node3D" parent="Turtle/Turtle_Animations"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(0.707106829, -0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8007
+metadata/unity_name = "Shell_01_Mesh"
+visible = false
+process_mode = 4
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Turtle/Turtle_Animations/Shell_01_Mesh"]
+mesh = ExtResource("3")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="Shell_02_Mesh" type="Node3D" parent="Turtle/Turtle_Animations"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(0.707106829, -0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19980
+metadata/unity_name = "Shell_02_Mesh"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Turtle/Turtle_Animations/Shell_02_Mesh"]
+mesh = ExtResource("5")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="OverheadSlot" type="Node3D" parent="Turtle"]
+position = Vector3(0, 2, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25885
+metadata/unity_name = "OverheadSlot"
+
+[node name="VFXParent" type="Node3D" parent="Turtle"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24803
+metadata/unity_name = "VFXParent"
+
+[node name="VFX_Turtle_BaseAttack" type="Node3D" parent="Turtle/VFXParent"]
+position = Vector3(-0.0270000007, 0.572000027, -1.77999997)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22838
+metadata/unity_name = "VFX_Turtle_BaseAttack"
+
+[node name="root" type="Node3D" parent="Turtle/VFXParent/VFX_Turtle_BaseAttack"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14202
+metadata/unity_name = "root"
+
+[node name="Impact_01" type="Node3D" parent="Turtle/VFXParent/VFX_Turtle_BaseAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18957
+metadata/unity_name = "Impact_01"
+
+[node name="Impact_02" type="Node3D" parent="Turtle/VFXParent/VFX_Turtle_BaseAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25884
+metadata/unity_name = "Impact_02"

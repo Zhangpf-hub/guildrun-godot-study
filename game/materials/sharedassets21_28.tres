@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3]
+[ext_resource type="Texture2D" path="res://textures/sharedassets21_57.png" id="1"]
+
+[resource]
+resource_name = "Material_Grass_darked"
+albedo_texture = ExtResource("1")
+transparency = 1
+cull_mode = 2
+albedo_color = Color(1, 1, 1, 1)
+metadata/unity_shader = "Universal Render Pipeline/Lit"

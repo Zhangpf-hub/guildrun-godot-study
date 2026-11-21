@@ -1,0 +1,729 @@
+[gd_scene format=3]
+
+[node name="SandboxBattle" type="Node3D"]
+
+[node name="EventSystem" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10
+metadata/unity_name = "EventSystem"
+
+[node name="==== Cameras & Light =====" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 28
+metadata/unity_name = "==== Cameras & Light ====="
+
+[node name="SandboxBattleScope" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 37
+metadata/unity_name = "SandboxBattleScope"
+
+[node name="==== UI ================" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 40
+metadata/unity_name = "==== UI ================"
+
+[node name="==== Environment ========" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 48
+metadata/unity_name = "==== Environment ========"
+
+[node name="SandboxBattleUIController" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 55
+metadata/unity_name = "SandboxBattleUIController"
+
+[node name="==== Controllers ==========" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 57
+metadata/unity_name = "==== Controllers ========== "
+
+[node name="UICamera" type="Node3D" parent="."]
+position = Vector3(-43.3199997, 34.0499992, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 63
+metadata/unity_name = "UICamera"
+
+[node name="UnityCamera" type="Camera3D" parent="UICamera"]
+fov = 60.0
+near = 0.30000001192092896
+far = 1000.0
+projection = 1
+size = 10.0
+
+[node name="Canvas" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(0, 0, 0)
+metadata/unity_id = 70
+metadata/unity_name = "Canvas"
+
+[node name="Background" type="Node3D" parent="Canvas"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 49
+metadata/unity_name = "Background"
+
+[node name="RelicsContainer" type="Node3D" parent="Canvas"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19
+metadata/unity_name = "RelicsContainer"
+
+[node name="TitleText" type="Node3D" parent="Canvas/RelicsContainer"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 36
+metadata/unity_name = "TitleText"
+
+[node name="ItemsContainer" type="Node3D" parent="Canvas"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 62
+metadata/unity_name = "ItemsContainer"
+
+[node name="TitleText" type="Node3D" parent="Canvas/ItemsContainer"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 2
+metadata/unity_name = "TitleText"
+
+[node name="Controls" type="Node3D" parent="Canvas"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18
+metadata/unity_name = "Controls"
+
+[node name="Reset" type="Node3D" parent="Canvas/Controls"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 71
+metadata/unity_name = "Reset"
+
+[node name="Label" type="Node3D" parent="Canvas/Controls/Reset"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 46
+metadata/unity_name = "Label"
+
+[node name="Copy" type="Node3D" parent="Canvas/Controls"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22
+metadata/unity_name = "Copy"
+
+[node name="Label" type="Node3D" parent="Canvas/Controls/Copy"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 83
+metadata/unity_name = "Label"
+
+[node name="Paste" type="Node3D" parent="Canvas/Controls"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 41
+metadata/unity_name = "Paste"
+
+[node name="Label" type="Node3D" parent="Canvas/Controls/Paste"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26
+metadata/unity_name = "Label"
+
+[node name="Spacer" type="Node3D" parent="Canvas/Controls"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15
+metadata/unity_name = "Spacer"
+
+[node name="Seed" type="Node3D" parent="Canvas/Controls"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 30
+metadata/unity_name = "Seed"
+
+[node name="Title" type="Node3D" parent="Canvas/Controls/Seed"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25
+metadata/unity_name = "Title"
+
+[node name="Text Area" type="Node3D" parent="Canvas/Controls/Seed"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 53
+metadata/unity_name = "Text Area"
+
+[node name="Placeholder" type="Node3D" parent="Canvas/Controls/Seed/Text Area"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 32
+metadata/unity_name = "Placeholder"
+
+[node name="Text" type="Node3D" parent="Canvas/Controls/Seed/Text Area"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 68
+metadata/unity_name = "Text"
+
+[node name="ModeDropdown" type="Node3D" parent="Canvas/Controls"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20
+metadata/unity_name = "ModeDropdown"
+
+[node name="Title" type="Node3D" parent="Canvas/Controls/ModeDropdown"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17
+metadata/unity_name = "Title"
+
+[node name="Label" type="Node3D" parent="Canvas/Controls/ModeDropdown"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9
+metadata/unity_name = "Label"
+
+[node name="Arrow" type="Node3D" parent="Canvas/Controls/ModeDropdown"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 84
+metadata/unity_name = "Arrow"
+
+[node name="Template" type="Node3D" parent="Canvas/Controls/ModeDropdown"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24
+metadata/unity_name = "Template"
+visible = false
+process_mode = 4
+
+[node name="Viewport" type="Node3D" parent="Canvas/Controls/ModeDropdown/Template"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 75
+metadata/unity_name = "Viewport"
+
+[node name="Content" type="Node3D" parent="Canvas/Controls/ModeDropdown/Template/Viewport"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 45
+metadata/unity_name = "Content"
+
+[node name="Item" type="Node3D" parent="Canvas/Controls/ModeDropdown/Template/Viewport/Content"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 56
+metadata/unity_name = "Item"
+
+[node name="Item Background" type="Node3D" parent="Canvas/Controls/ModeDropdown/Template/Viewport/Content/Item"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4
+metadata/unity_name = "Item Background"
+
+[node name="Item Checkmark" type="Node3D" parent="Canvas/Controls/ModeDropdown/Template/Viewport/Content/Item"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 65
+metadata/unity_name = "Item Checkmark"
+
+[node name="Item Label" type="Node3D" parent="Canvas/Controls/ModeDropdown/Template/Viewport/Content/Item"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 87
+metadata/unity_name = "Item Label"
+
+[node name="Scrollbar" type="Node3D" parent="Canvas/Controls/ModeDropdown/Template"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 33
+metadata/unity_name = "Scrollbar"
+
+[node name="Sliding Area" type="Node3D" parent="Canvas/Controls/ModeDropdown/Template/Scrollbar"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 81
+metadata/unity_name = "Sliding Area"
+
+[node name="Handle" type="Node3D" parent="Canvas/Controls/ModeDropdown/Template/Scrollbar/Sliding Area"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 61
+metadata/unity_name = "Handle"
+
+[node name="StageDropdown" type="Node3D" parent="Canvas/Controls"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16
+metadata/unity_name = "StageDropdown"
+
+[node name="Title" type="Node3D" parent="Canvas/Controls/StageDropdown"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14
+metadata/unity_name = "Title"
+
+[node name="Label" type="Node3D" parent="Canvas/Controls/StageDropdown"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 35
+metadata/unity_name = "Label"
+
+[node name="Arrow" type="Node3D" parent="Canvas/Controls/StageDropdown"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 74
+metadata/unity_name = "Arrow"
+
+[node name="Template" type="Node3D" parent="Canvas/Controls/StageDropdown"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 80
+metadata/unity_name = "Template"
+visible = false
+process_mode = 4
+
+[node name="Viewport" type="Node3D" parent="Canvas/Controls/StageDropdown/Template"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 82
+metadata/unity_name = "Viewport"
+
+[node name="Content" type="Node3D" parent="Canvas/Controls/StageDropdown/Template/Viewport"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8
+metadata/unity_name = "Content"
+
+[node name="Item" type="Node3D" parent="Canvas/Controls/StageDropdown/Template/Viewport/Content"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12
+metadata/unity_name = "Item"
+
+[node name="Item Background" type="Node3D" parent="Canvas/Controls/StageDropdown/Template/Viewport/Content/Item"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 34
+metadata/unity_name = "Item Background"
+
+[node name="Item Checkmark" type="Node3D" parent="Canvas/Controls/StageDropdown/Template/Viewport/Content/Item"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 86
+metadata/unity_name = "Item Checkmark"
+
+[node name="Item Label" type="Node3D" parent="Canvas/Controls/StageDropdown/Template/Viewport/Content/Item"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 85
+metadata/unity_name = "Item Label"
+
+[node name="Scrollbar" type="Node3D" parent="Canvas/Controls/StageDropdown/Template"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 72
+metadata/unity_name = "Scrollbar"
+
+[node name="Sliding Area" type="Node3D" parent="Canvas/Controls/StageDropdown/Template/Scrollbar"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 3
+metadata/unity_name = "Sliding Area"
+
+[node name="Handle" type="Node3D" parent="Canvas/Controls/StageDropdown/Template/Scrollbar/Sliding Area"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 66
+metadata/unity_name = "Handle"
+
+[node name="FightModeDropdown" type="Node3D" parent="Canvas/Controls"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 88
+metadata/unity_name = "FightModeDropdown"
+visible = false
+process_mode = 4
+
+[node name="Title" type="Node3D" parent="Canvas/Controls/FightModeDropdown"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 42
+metadata/unity_name = "Title"
+
+[node name="Label" type="Node3D" parent="Canvas/Controls/FightModeDropdown"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 64
+metadata/unity_name = "Label"
+
+[node name="Arrow" type="Node3D" parent="Canvas/Controls/FightModeDropdown"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5
+metadata/unity_name = "Arrow"
+
+[node name="Template" type="Node3D" parent="Canvas/Controls/FightModeDropdown"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 29
+metadata/unity_name = "Template"
+visible = false
+process_mode = 4
+
+[node name="Viewport" type="Node3D" parent="Canvas/Controls/FightModeDropdown/Template"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 73
+metadata/unity_name = "Viewport"
+
+[node name="Content" type="Node3D" parent="Canvas/Controls/FightModeDropdown/Template/Viewport"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 39
+metadata/unity_name = "Content"
+
+[node name="Item" type="Node3D" parent="Canvas/Controls/FightModeDropdown/Template/Viewport/Content"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 78
+metadata/unity_name = "Item"
+
+[node name="Item Background" type="Node3D" parent="Canvas/Controls/FightModeDropdown/Template/Viewport/Content/Item"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7
+metadata/unity_name = "Item Background"
+
+[node name="Item Checkmark" type="Node3D" parent="Canvas/Controls/FightModeDropdown/Template/Viewport/Content/Item"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 31
+metadata/unity_name = "Item Checkmark"
+
+[node name="Item Label" type="Node3D" parent="Canvas/Controls/FightModeDropdown/Template/Viewport/Content/Item"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6
+metadata/unity_name = "Item Label"
+
+[node name="Scrollbar" type="Node3D" parent="Canvas/Controls/FightModeDropdown/Template"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21
+metadata/unity_name = "Scrollbar"
+
+[node name="Sliding Area" type="Node3D" parent="Canvas/Controls/FightModeDropdown/Template/Scrollbar"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 47
+metadata/unity_name = "Sliding Area"
+
+[node name="Handle" type="Node3D" parent="Canvas/Controls/FightModeDropdown/Template/Scrollbar/Sliding Area"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 43
+metadata/unity_name = "Handle"
+
+[node name="StartButton" type="Node3D" parent="Canvas/Controls"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 38
+metadata/unity_name = "StartButton"
+
+[node name="Label" type="Node3D" parent="Canvas/Controls/StartButton"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 60
+metadata/unity_name = "Label"
+
+[node name="Netcode" type="Node3D" parent="Canvas"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 54
+metadata/unity_name = "Netcode"
+
+[node name="StatusLabel" type="Node3D" parent="Canvas/Netcode"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 51
+metadata/unity_name = "StatusLabel"
+
+[node name="StartHostButton" type="Node3D" parent="Canvas/Netcode"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1.00000012, 1.00000012, 1.00000012)
+metadata/unity_id = 23
+metadata/unity_name = "StartHostButton"
+
+[node name="Label" type="Node3D" parent="Canvas/Netcode/StartHostButton"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(0.99999994, 0.99999994, 0.99999994)
+metadata/unity_id = 50
+metadata/unity_name = "Label"
+
+[node name="ConnectClientButton" type="Node3D" parent="Canvas/Netcode"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1.00000012, 1.00000012, 1.00000012)
+metadata/unity_id = 79
+metadata/unity_name = "ConnectClientButton"
+
+[node name="Label" type="Node3D" parent="Canvas/Netcode/ConnectClientButton"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(0.99999994, 0.99999994, 0.99999994)
+metadata/unity_id = 69
+metadata/unity_name = "Label"
+
+[node name="DisconnectButton" type="Node3D" parent="Canvas/Netcode"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 77
+metadata/unity_name = "DisconnectButton"
+
+[node name="Label" type="Node3D" parent="Canvas/Netcode/DisconnectButton"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(0.99999994, 0.99999994, 0.99999994)
+metadata/unity_id = 44
+metadata/unity_name = "Label"
+
+[node name="HeroesContainer" type="Node3D" parent="Canvas"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 59
+metadata/unity_name = "HeroesContainer"
+
+[node name="Scroll View" type="Node3D" parent="Canvas/HeroesContainer"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11
+metadata/unity_name = "Scroll View"
+
+[node name="Viewport" type="Node3D" parent="Canvas/HeroesContainer/Scroll View"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13
+metadata/unity_name = "Viewport"
+
+[node name="Content" type="Node3D" parent="Canvas/HeroesContainer/Scroll View/Viewport"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 52
+metadata/unity_name = "Content"
+
+[node name="Scrollbar Horizontal" type="Node3D" parent="Canvas/HeroesContainer/Scroll View"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27
+metadata/unity_name = "Scrollbar Horizontal"
+
+[node name="Sliding Area" type="Node3D" parent="Canvas/HeroesContainer/Scroll View/Scrollbar Horizontal"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 76
+metadata/unity_name = "Sliding Area"
+
+[node name="Handle" type="Node3D" parent="Canvas/HeroesContainer/Scroll View/Scrollbar Horizontal/Sliding Area"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 67
+metadata/unity_name = "Handle"
+
+[node name="TitleText" type="Node3D" parent="Canvas/HeroesContainer"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 58
+metadata/unity_name = "TitleText"
+
+[node name="ErrorDialog" type="Node3D" parent="Canvas"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 97
+metadata/unity_name = "ErrorDialog"
+visible = false
+process_mode = 4
+
+[node name="ModalBackground" type="Node3D" parent="Canvas/ErrorDialog"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 90
+metadata/unity_name = "ModalBackground"
+
+[node name="DialogPanel" type="Node3D" parent="Canvas/ErrorDialog"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 89
+metadata/unity_name = "DialogPanel"
+
+[node name="DialogTitleText" type="Node3D" parent="Canvas/ErrorDialog/DialogPanel"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 99
+metadata/unity_name = "DialogTitleText"
+
+[node name="DialogText" type="Node3D" parent="Canvas/ErrorDialog/DialogPanel"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 98
+metadata/unity_name = "DialogText"
+
+[node name="StackStrackText" type="Node3D" parent="Canvas/ErrorDialog/DialogPanel"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 95
+metadata/unity_name = "StackStrackText"
+
+[node name="Text Area" type="Node3D" parent="Canvas/ErrorDialog/DialogPanel/StackStrackText"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 94
+metadata/unity_name = "Text Area"
+
+[node name="Placeholder" type="Node3D" parent="Canvas/ErrorDialog/DialogPanel/StackStrackText/Text Area"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 93
+metadata/unity_name = "Placeholder"
+
+[node name="Text" type="Node3D" parent="Canvas/ErrorDialog/DialogPanel/StackStrackText/Text Area"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 91
+metadata/unity_name = "Text"
+
+[node name="ButtonPanel" type="Node3D" parent="Canvas/ErrorDialog/DialogPanel"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 96
+metadata/unity_name = "ButtonPanel"
+
+[node name="CancelButton" type="Node3D" parent="Canvas/ErrorDialog/DialogPanel/ButtonPanel"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 101
+metadata/unity_name = "CancelButton"
+visible = false
+process_mode = 4
+
+[node name="Text (TMP)" type="Node3D" parent="Canvas/ErrorDialog/DialogPanel/ButtonPanel/CancelButton"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 92
+metadata/unity_name = "Text (TMP)"
+
+[node name="OkButton" type="Node3D" parent="Canvas/ErrorDialog/DialogPanel/ButtonPanel"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 100
+metadata/unity_name = "OkButton"
+
+[node name="Text" type="Node3D" parent="Canvas/ErrorDialog/DialogPanel/ButtonPanel/OkButton"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 102
+metadata/unity_name = "Text"

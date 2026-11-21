@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3]
+[ext_resource type="Texture2D" path="res://textures/sharedassets21_30.png" id="1"]
+
+[resource]
+resource_name = "M_Debris_Pile_01"
+albedo_texture = ExtResource("1")
+transparency = 1
+cull_mode = 2
+albedo_color = Color(0.509433985, 0.491171241, 0.491171241, 1)
+metadata/unity_shader = "lilToon"

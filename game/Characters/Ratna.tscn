@@ -1,0 +1,1672 @@
+[gd_scene format=3]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2977.obj" id="1"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_825.tres" id="2"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2737.obj" id="3"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_829.tres" id="4"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2980.obj" id="5"]
+
+[node name="Ratna" type="Node3D"]
+
+[node name="Ratna" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1.20000005, 1.20000005, 1.20000005)
+metadata/unity_id = 20461
+metadata/unity_name = "Ratna"
+
+[node name="Ratna_Model" type="Node3D" parent="Ratna"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12240
+metadata/unity_name = "Ratna_Model"
+
+[node name="armature" type="Node3D" parent="Ratna/Ratna_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19311
+metadata/unity_name = "armature"
+
+[node name="hips" type="Node3D" parent="Ratna/Ratna_Model/armature"]
+position = Vector3(-0, 0.821141899, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25752
+metadata/unity_name = "hips"
+
+[node name="skirt_B_A" type="Node3D" parent="Ratna/Ratna_Model/armature/hips"]
+position = Vector3(-0, 0.04054695, 0.0952826738)
+quaternion = Quaternion(-0.995672345, -0, 0, -0.0929331779)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9210
+metadata/unity_name = "skirt_B_A"
+
+[node name="skirt_B_B" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_B_A"]
+position = Vector3(-0, 0.0834736302, 7.1054272e-17)
+quaternion = Quaternion(0.113555223, -0, -0, 0.993531704)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13468
+metadata/unity_name = "skirt_B_B"
+
+[node name="skirt_B_C" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_B_A/skirt_B_B"]
+position = Vector3(-5.36178899e-33, 0.0821024328, -1.42108544e-16)
+quaternion = Quaternion(-0.0319882296, 0, -0, 0.999488294)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7486
+metadata/unity_name = "skirt_B_C"
+
+[node name="skirt_B_D" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_B_A/skirt_B_B/skirt_B_C"]
+position = Vector3(2.71067302e-17, 0.126540571, -7.1054272e-17)
+quaternion = Quaternion(-0.0278756768, 0, -0, 0.999611378)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11221
+metadata/unity_name = "skirt_B_D"
+
+[node name="skirt_B_E" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_B_A/skirt_B_B/skirt_B_C/skirt_B_D"]
+position = Vector3(-3.15187805e-18, 0.146909565, -7.1054272e-17)
+quaternion = Quaternion(-0.015893992, 0, -0, 0.999873698)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15101
+metadata/unity_name = "skirt_B_E"
+
+[node name="skirt_B_F" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_B_A/skirt_B_B/skirt_B_C/skirt_B_D/skirt_B_E"]
+position = Vector3(-4.37752541e-18, 0.149942935, -3.55271347e-16)
+quaternion = Quaternion(0.000301569991, -0, -0, 0.99999994)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12231
+metadata/unity_name = "skirt_B_F"
+
+[node name="skirt_B_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_B_A/skirt_B_B/skirt_B_C/skirt_B_D/skirt_B_E/skirt_B_F"]
+position = Vector3(-3.62167259e-18, 0.124678858, -2.13162808e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18017
+metadata/unity_name = "skirt_B_End"
+
+[node name="skirt_F_A" type="Node3D" parent="Ratna/Ratna_Model/armature/hips"]
+position = Vector3(-0, 0.04054695, -0.0997333303)
+quaternion = Quaternion(6.2712632e-17, -0.0258444399, 0.999665976, -5.96314834e-17)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21344
+metadata/unity_name = "skirt_F_A"
+
+[node name="skirt_F_B" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_F_A"]
+position = Vector3(1.0045996e-17, 0.0821415111, 1.7763568e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8410
+metadata/unity_name = "skirt_F_B"
+
+[node name="skirt_F_C" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_F_A/skirt_F_B"]
+position = Vector3(1.82390959e-17, 0.0821415856, -5.58177193e-09)
+quaternion = Quaternion(0.000408309366, -0, -0, 0.99999994)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17664
+metadata/unity_name = "skirt_F_C"
+
+[node name="skirt_F_D" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_F_A/skirt_F_B/skirt_F_C"]
+position = Vector3(2.81556332e-17, 0.126672402, 3.03757005e-15)
+quaternion = Quaternion(0.0109173497, -0, -0, 0.999940395)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23023
+metadata/unity_name = "skirt_F_D"
+
+[node name="skirt_F_E" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_F_A/skirt_F_B/skirt_F_C/skirt_F_D"]
+position = Vector3(9.21119999e-19, 0.146521479, 2.6645351e-16)
+quaternion = Quaternion(0.0130223772, -0, -0, 0.999915242)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14161
+metadata/unity_name = "skirt_F_E"
+
+[node name="skirt_F_F" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_F_A/skirt_F_B/skirt_F_C/skirt_F_D/skirt_F_E"]
+position = Vector3(2.01360721e-18, 0.149036229, 6.21724883e-16)
+quaternion = Quaternion(0.0060071405, -0, -0, 0.999981999)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24153
+metadata/unity_name = "skirt_F_F"
+
+[node name="skirt_F_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_F_A/skirt_F_B/skirt_F_C/skirt_F_D/skirt_F_E/skirt_F_F"]
+position = Vector3(2.08717211e-18, 0.123937644, -1.59872109e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11491
+metadata/unity_name = "skirt_F_End"
+
+[node name="skirt_L1_A" type="Node3D" parent="Ratna/Ratna_Model/armature/hips"]
+position = Vector3(-0.070518516, 0.04054695, -0.0863715932)
+quaternion = Quaternion(0.171116441, -0.0410904512, 0.982324183, 0.0637958422)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17342
+metadata/unity_name = "skirt_L1_A"
+
+[node name="skirt_L1_B" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_L1_A"]
+position = Vector3(-3.5527136e-17, 0.0829875246, -0)
+quaternion = Quaternion(0.0248794798, -0.00159925711, 0.0284980517, 0.999282897)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24274
+metadata/unity_name = "skirt_L1_B"
+
+[node name="skirt_L1_C" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_L1_A/skirt_L1_B"]
+position = Vector3(3.5527136e-17, 0.0822711959, -1.7763568e-17)
+quaternion = Quaternion(0.0036130459, -0.000477431517, 0.0140488595, 0.999894679)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20271
+metadata/unity_name = "skirt_L1_C"
+
+[node name="skirt_L1_D" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_L1_A/skirt_L1_B/skirt_L1_C"]
+position = Vector3(-1.68753898e-16, 0.126687765, -3.5527136e-17)
+quaternion = Quaternion(0.0100885537, -0.0436167903, -0.00417877221, 0.998988688)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7473
+metadata/unity_name = "skirt_L1_D"
+
+[node name="skirt_L1_E" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_L1_A/skirt_L1_B/skirt_L1_C/skirt_L1_D"]
+position = Vector3(-2.3152591e-12, 0.146591827, 2.38522093e-12)
+quaternion = Quaternion(0.0120242871, 0.0436156914, -0.00498066843, 0.998963594)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8052
+metadata/unity_name = "skirt_L1_E"
+
+[node name="skirt_L1_F" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_L1_A/skirt_L1_B/skirt_L1_C/skirt_L1_D/skirt_L1_E"]
+position = Vector3(-2.50389921e-12, 0.149171546, 6.37374593e-13)
+quaternion = Quaternion(0.00554325711, -0.0436186008, -0.00229607802, 0.999030232)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5509
+metadata/unity_name = "skirt_L1_F"
+
+[node name="skirt_L1_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_L1_A/skirt_L1_B/skirt_L1_C/skirt_L1_D/skirt_L1_E/skirt_L1_F"]
+position = Vector3(-4.65901102e-12, 0.124074571, -4.65654154e-13)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17078
+metadata/unity_name = "skirt_L1_End"
+
+[node name="skirt_L2_A" type="Node3D" parent="Ratna/Ratna_Model/armature/hips"]
+position = Vector3(-0.122141644, 0.04054695, -0.0607173853)
+quaternion = Quaternion(0.423160464, -0.0821488127, 0.897502303, 0.0931471512)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7461
+metadata/unity_name = "skirt_L2_A"
+
+[node name="skirt_L2_B" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_L2_A"]
+position = Vector3(-1.06581408e-16, 0.0846429914, 4.26325632e-16)
+quaternion = Quaternion(0.0719332471, 0.00744211581, 0.00679829577, 0.997358561)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24839
+metadata/unity_name = "skirt_L2_B"
+
+[node name="skirt_L2_C" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_L2_A/skirt_L2_B"]
+position = Vector3(-8.88178367e-17, 0.0826314613, 7.1054272e-17)
+quaternion = Quaternion(0.0385837741, 0.00288454071, -0.00717809889, 0.999225438)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5659
+metadata/unity_name = "skirt_L2_C"
+
+[node name="skirt_L2_D" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_L2_A/skirt_L2_B/skirt_L2_C"]
+position = Vector3(-2.6645351e-16, 0.127163067, 2.84217088e-16)
+quaternion = Quaternion(-0.0240167864, -0.00261373702, 0.0284749269, 0.999302566)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24447
+metadata/unity_name = "skirt_L2_D"
+
+[node name="skirt_L2_E" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_L2_A/skirt_L2_B/skirt_L2_C/skirt_L2_D"]
+position = Vector3(-3.55271347e-16, 0.146820843, 5.3290702e-16)
+quaternion = Quaternion(0.00998649932, 0.00109003228, -0.011876991, 0.999879003)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23639
+metadata/unity_name = "skirt_L2_E"
+
+[node name="skirt_L2_F" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_L2_A/skirt_L2_B/skirt_L2_C/skirt_L2_D/skirt_L2_E"]
+position = Vector3(8.88178367e-17, 0.149470016, 2.84217088e-16)
+quaternion = Quaternion(0.00385839725, 0.000420205004, -0.00457476219, 0.999981999)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7249
+metadata/unity_name = "skirt_L2_F"
+
+[node name="skirt_L2_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_L2_A/skirt_L2_B/skirt_L2_C/skirt_L2_D/skirt_L2_E/skirt_L2_F"]
+position = Vector3(3.37507795e-16, 0.124347381, 2.48689959e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15493
+metadata/unity_name = "skirt_L2_End"
+
+[node name="skirt_L3_A" type="Node3D" parent="Ratna/Ratna_Model/armature/hips"]
+position = Vector3(-0.141037032, 0.04054695, -0)
+quaternion = Quaternion(-0.700741291, 0.0991046429, -0.700127363, -0.0946663767)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23440
+metadata/unity_name = "skirt_L3_A"
+
+[node name="skirt_L3_B" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_L3_A"]
+position = Vector3(2.22044592e-17, 0.0852337554, -3.48165926e-15)
+quaternion = Quaternion(0.0682949796, -0, -0, 0.997665226)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12483
+metadata/unity_name = "skirt_L3_B"
+
+[node name="skirt_L3_C" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_L3_A/skirt_L3_B"]
+position = Vector3(4.83427798e-10, 0.0828232169, 1.42108544e-16)
+quaternion = Quaternion(0.0286311023, 0.00177925988, -0.0161743388, 0.999457598)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15992
+metadata/unity_name = "skirt_L3_C"
+
+[node name="skirt_L3_D" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_L3_A/skirt_L3_B/skirt_L3_C"]
+position = Vector3(2.220446e-18, 0.12696746, -2.13162816e-16)
+quaternion = Quaternion(1.40203801e-05, 0.000441469485, -0.00544427335, 0.999985099)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6479
+metadata/unity_name = "skirt_L3_D"
+
+[node name="skirt_L3_E" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_L3_A/skirt_L3_B/skirt_L3_C/skirt_L3_D"]
+position = Vector3(-1.68753898e-16, 0.147041619, 1.42108544e-16)
+quaternion = Quaternion(3.94248527e-05, 0.000834470557, -0.0102976589, 0.999946654)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14771
+metadata/unity_name = "skirt_L3_E"
+
+[node name="skirt_L3_F" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_L3_A/skirt_L3_B/skirt_L3_C/skirt_L3_D/skirt_L3_E"]
+position = Vector3(5.86197727e-16, 0.149773702, -7.1054272e-17)
+quaternion = Quaternion(3.07605114e-05, 0.000482811447, -0.00596326077, 0.999982119)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8714
+metadata/unity_name = "skirt_L3_F"
+
+[node name="skirt_L3_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_L3_A/skirt_L3_B/skirt_L3_C/skirt_L3_D/skirt_L3_E/skirt_L3_F"]
+position = Vector3(-2.57571734e-16, 0.124641016, 1.06581408e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17751
+metadata/unity_name = "skirt_L3_End"
+
+[node name="skirt_L4_A" type="Node3D" parent="Ratna/Ratna_Model/armature/hips"]
+position = Vector3(-0.122141644, 0.04054695, 0.0498666652)
+quaternion = Quaternion(-0.876369298, 0.079961814, -0.463587582, -0.103293508)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17995
+metadata/unity_name = "skirt_L4_A"
+
+[node name="skirt_L4_B" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_L4_A"]
+position = Vector3(-8.88178367e-17, 0.084930189, -7.1054272e-17)
+quaternion = Quaternion(0.0831034854, -0.0109699992, 0.0158164296, 0.996354997)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6268
+metadata/unity_name = "skirt_L4_B"
+
+[node name="skirt_L4_C" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_L4_A/skirt_L4_B"]
+position = Vector3(-2.84217088e-16, 0.082631804, -1.77635673e-16)
+quaternion = Quaternion(0.00364858727, 0.00277949939, -0.0381752066, 0.999260545)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14694
+metadata/unity_name = "skirt_L4_C"
+
+[node name="skirt_L4_D" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_L4_A/skirt_L4_B/skirt_L4_C"]
+position = Vector3(5.3290704e-17, 0.126951531, -2.13162816e-16)
+quaternion = Quaternion(0.000325241708, -3.99809614e-05, 0.000467629026, 0.999999881)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6108
+metadata/unity_name = "skirt_L4_D"
+
+[node name="skirt_L4_E" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_L4_A/skirt_L4_B/skirt_L4_C/skirt_L4_D"]
+position = Vector3(2.93098864e-16, 0.146965086, -3.90798503e-16)
+quaternion = Quaternion(-0.0103964601, 0.0012788357, -0.0149873346, 0.999832869)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22071
+metadata/unity_name = "skirt_L4_E"
+
+[node name="skirt_L4_F" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_L4_A/skirt_L4_B/skirt_L4_C/skirt_L4_D/skirt_L4_E"]
+position = Vector3(-2.22044605e-16, 0.149892077, -3.90798503e-16)
+quaternion = Quaternion(-0.00338159548, 0.000416280265, -0.00489253365, 0.999982238)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26712
+metadata/unity_name = "skirt_L4_F"
+
+[node name="skirt_L4_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_L4_A/skirt_L4_B/skirt_L4_C/skirt_L4_D/skirt_L4_E/skirt_L4_F"]
+position = Vector3(9.10382859e-16, 0.124773875, -1.06581408e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26348
+metadata/unity_name = "skirt_L4_End"
+
+[node name="skirt_L5_A" type="Node3D" parent="Ratna/Ratna_Model/armature/hips"]
+position = Vector3(-0.070518516, 0.04054695, 0.0863715932)
+quaternion = Quaternion(-0.979633093, 0.0533752069, -0.166464448, -0.0987915769)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10052
+metadata/unity_name = "skirt_L5_A"
+
+[node name="skirt_L5_B" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_L5_A"]
+position = Vector3(8.88178367e-17, 0.0841539279, -0)
+quaternion = Quaternion(0.117958322, 0.00224863202, 0.0054175714, 0.993001223)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24882
+metadata/unity_name = "skirt_L5_B"
+
+[node name="skirt_L5_C" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_L5_A/skirt_L5_B"]
+position = Vector3(-1.7763568e-17, 0.0823300704, -1.06581408e-16)
+quaternion = Quaternion(-0.0324762017, 0.0434601754, -0.0290869735, 0.99810344)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9260
+metadata/unity_name = "skirt_L5_C"
+
+[node name="skirt_L5_D" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_L5_A/skirt_L5_B/skirt_L5_C"]
+position = Vector3(1.7763568e-17, 0.126681462, -5.3290704e-17)
+quaternion = Quaternion(-0.0109159537, 1.44494183e-09, -0.00509023666, 0.999927461)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7466
+metadata/unity_name = "skirt_L5_D"
+
+[node name="skirt_L5_E" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_L5_A/skirt_L5_B/skirt_L5_C/skirt_L5_D"]
+position = Vector3(3.29102067e-12, 0.146819279, 4.40873987e-12)
+quaternion = Quaternion(-0.0216575898, -0.0436074026, -0.00897082221, 0.998773694)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15490
+metadata/unity_name = "skirt_L5_E"
+
+[node name="skirt_L5_F" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_L5_A/skirt_L5_B/skirt_L5_C/skirt_L5_D/skirt_L5_E"]
+position = Vector3(1.06679111e-13, 0.149967968, -8.9151438e-12)
+quaternion = Quaternion(-0.00222429167, 9.19407467e-11, -0.00080958975, 0.999997199)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22682
+metadata/unity_name = "skirt_L5_F"
+
+[node name="skirt_L5_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_L5_A/skirt_L5_B/skirt_L5_C/skirt_L5_D/skirt_L5_E/skirt_L5_F"]
+position = Vector3(1.04852481e-11, 0.124770999, -3.87728955e-12)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26966
+metadata/unity_name = "skirt_L5_End"
+
+[node name="skirt_R1_A" type="Node3D" parent="Ratna/Ratna_Model/armature/hips"]
+position = Vector3(0.0705184937, 0.0405471064, -0.0863716006)
+quaternion = Quaternion(-0.171116441, -0.0410904512, 0.982324183, -0.0637958422)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6970
+metadata/unity_name = "skirt_R1_A"
+
+[node name="skirt_R1_B" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_R1_A"]
+position = Vector3(5.69123326e-09, 0.0829877481, -1.471511e-08)
+quaternion = Quaternion(0.0248794798, 0.00159925711, -0.0284980517, 0.999282897)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20663
+metadata/unity_name = "skirt_R1_B"
+
+[node name="skirt_R1_C" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_R1_A/skirt_R1_B"]
+position = Vector3(2.34702036e-08, 0.0822713375, 3.03806402e-08)
+quaternion = Quaternion(0.0036130459, 0.000477431517, -0.0140488595, 0.999894679)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23516
+metadata/unity_name = "skirt_R1_C"
+
+[node name="skirt_R1_D" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_R1_A/skirt_R1_B/skirt_R1_C"]
+position = Vector3(-4.66081325e-08, 0.126687288, -3.28598588e-08)
+quaternion = Quaternion(0.0100885537, 0.0436167903, 0.00417877221, 0.998988688)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10288
+metadata/unity_name = "skirt_R1_D"
+
+[node name="skirt_R1_E" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_R1_A/skirt_R1_B/skirt_R1_C/skirt_R1_D"]
+position = Vector3(-4.80056066e-08, 0.14659214, 8.78234729e-08)
+quaternion = Quaternion(0.0120242871, -0.0436156914, 0.00498066843, 0.998963594)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9152
+metadata/unity_name = "skirt_R1_E"
+
+[node name="skirt_R1_F" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_R1_A/skirt_R1_B/skirt_R1_C/skirt_R1_D/skirt_R1_E"]
+position = Vector3(-2.53966959e-07, 0.149171978, -1.71841648e-07)
+quaternion = Quaternion(0.00554325711, 0.0436186008, 0.00229607802, 0.999030232)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7258
+metadata/unity_name = "skirt_R1_F"
+
+[node name="skirt_R1_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_R1_A/skirt_R1_B/skirt_R1_C/skirt_R1_D/skirt_R1_E/skirt_R1_F"]
+position = Vector3(3.05527408e-07, 0.124073945, 1.62190915e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5468
+metadata/unity_name = "skirt_R1_End"
+
+[node name="skirt_R2_A" type="Node3D" parent="Ratna/Ratna_Model/armature/hips"]
+position = Vector3(0.122141995, 0.0405471064, -0.0607174002)
+quaternion = Quaternion(-0.423160464, -0.0821488127, 0.897502303, -0.0931471512)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4675
+metadata/unity_name = "skirt_R2_A"
+
+[node name="skirt_R2_B" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_R2_A"]
+position = Vector3(1.71580261e-09, 0.0846431926, 7.97124216e-08)
+quaternion = Quaternion(0.0719332471, -0.00744211581, -0.00679829577, 0.997358561)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19476
+metadata/unity_name = "skirt_R2_B"
+
+[node name="skirt_R2_C" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_R2_A/skirt_R2_B"]
+position = Vector3(2.93972903e-07, 0.0826315582, 2.70098923e-07)
+quaternion = Quaternion(0.0385837741, -0.00288454071, 0.00717809889, 0.999225438)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14776
+metadata/unity_name = "skirt_R2_C"
+
+[node name="skirt_R2_D" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_R2_A/skirt_R2_B/skirt_R2_C"]
+position = Vector3(-3.18391926e-07, 0.12716262, -2.51036113e-07)
+quaternion = Quaternion(-0.0240167864, 0.00261373702, -0.0284749269, 0.999302566)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13137
+metadata/unity_name = "skirt_R2_D"
+
+[node name="skirt_R2_E" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_R2_A/skirt_R2_B/skirt_R2_C/skirt_R2_D"]
+position = Vector3(3.36663788e-07, 0.146821111, 3.08035254e-07)
+quaternion = Quaternion(0.00998649932, -0.00109003228, 0.011876991, 0.999879003)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23976
+metadata/unity_name = "skirt_R2_E"
+
+[node name="skirt_R2_F" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_R2_A/skirt_R2_B/skirt_R2_C/skirt_R2_D/skirt_R2_E"]
+position = Vector3(-3.35712627e-07, 0.149470493, -4.33760135e-07)
+quaternion = Quaternion(0.00385839725, -0.000420205004, 0.00457476219, 0.999981999)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25300
+metadata/unity_name = "skirt_R2_F"
+
+[node name="skirt_R2_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_R2_A/skirt_R2_B/skirt_R2_C/skirt_R2_D/skirt_R2_E/skirt_R2_F"]
+position = Vector3(3.27476187e-07, 0.124346733, 5.25142241e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25762
+metadata/unity_name = "skirt_R2_End"
+
+[node name="skirt_R3_A" type="Node3D" parent="Ratna/Ratna_Model/armature/hips"]
+position = Vector3(0.141036987, 0.0405471064, -0)
+quaternion = Quaternion(-0.700741291, -0.0991046429, 0.700127363, -0.0946663767)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14302
+metadata/unity_name = "skirt_R3_A"
+
+[node name="skirt_R3_B" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_R3_A"]
+position = Vector3(-1.78607129e-09, 0.0852340311, -1.91880929e-07)
+quaternion = Quaternion(0.0682949796, -0, -0, 0.997665226)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15387
+metadata/unity_name = "skirt_R3_B"
+
+[node name="skirt_R3_C" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_R3_A/skirt_R3_B"]
+position = Vector3(-1.78607129e-09, 0.082823351, 6.44265086e-08)
+quaternion = Quaternion(0.0286311023, -0.00177925988, 0.0161743388, 0.999457598)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9310
+metadata/unity_name = "skirt_R3_C"
+
+[node name="skirt_R3_D" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_R3_A/skirt_R3_B/skirt_R3_C"]
+position = Vector3(-1.45660373e-08, 0.126967013, -3.091167e-07)
+quaternion = Quaternion(1.4020382e-05, -0.000441469485, 0.00544427335, 0.999985099)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8809
+metadata/unity_name = "skirt_R3_D"
+
+[node name="skirt_R3_E" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_R3_A/skirt_R3_B/skirt_R3_C/skirt_R3_D"]
+position = Vector3(1.44889372e-08, 0.147041887, 3.85888796e-07)
+quaternion = Quaternion(3.94248491e-05, -0.000834470557, 0.0102976589, 0.999946654)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10071
+metadata/unity_name = "skirt_R3_E"
+
+[node name="skirt_R3_F" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_R3_A/skirt_R3_B/skirt_R3_C/skirt_R3_D/skirt_R3_E"]
+position = Vector3(6.23579268e-08, 0.149774104, 4.03046158e-07)
+quaternion = Quaternion(3.07605114e-05, -0.000482811447, 0.00596326077, 0.999982119)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17059
+metadata/unity_name = "skirt_R3_F"
+
+[node name="skirt_R3_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_R3_A/skirt_R3_B/skirt_R3_C/skirt_R3_D/skirt_R3_E/skirt_R3_F"]
+position = Vector3(-1.05090912e-07, 0.124640435, -3.06950056e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18249
+metadata/unity_name = "skirt_R3_End"
+
+[node name="skirt_R4_A" type="Node3D" parent="Ratna/Ratna_Model/armature/hips"]
+position = Vector3(0.122141995, 0.0405471064, 0.0498666987)
+quaternion = Quaternion(-0.876369298, -0.079961814, 0.463587582, -0.103293508)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10919
+metadata/unity_name = "skirt_R4_A"
+
+[node name="skirt_R4_B" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_R4_A"]
+position = Vector3(-8.82264217e-09, 0.0849303901, 6.97060187e-08)
+quaternion = Quaternion(0.0831034854, 0.0109699992, -0.0158164296, 0.996354997)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23499
+metadata/unity_name = "skirt_R4_B"
+
+[node name="skirt_R4_C" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_R4_A/skirt_R4_B"]
+position = Vector3(-2.2867961e-07, 0.0826318935, 3.23237003e-07)
+quaternion = Quaternion(0.00364858727, -0.00277949939, 0.0381752066, 0.999260545)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9838
+metadata/unity_name = "skirt_R4_C"
+
+[node name="skirt_R4_D" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_R4_A/skirt_R4_B/skirt_R4_C"]
+position = Vector3(2.5736108e-07, 0.126951069, -3.050516e-07)
+quaternion = Quaternion(0.000325241708, 3.99809614e-05, -0.000467629026, 0.999999881)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12440
+metadata/unity_name = "skirt_R4_D"
+
+[node name="skirt_R4_E" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_R4_A/skirt_R4_B/skirt_R4_C/skirt_R4_D"]
+position = Vector3(-2.85110019e-07, 0.14696537, 3.52723788e-07)
+quaternion = Quaternion(-0.0103964601, -0.0012788357, 0.0149873346, 0.999832869)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12687
+metadata/unity_name = "skirt_R4_E"
+
+[node name="skirt_R4_F" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_R4_A/skirt_R4_B/skirt_R4_C/skirt_R4_D/skirt_R4_E"]
+position = Vector3(3.30544424e-07, 0.149892554, -4.37712117e-07)
+quaternion = Quaternion(-0.00338159548, -0.000416280265, 0.00489253365, 0.999982238)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15893
+metadata/unity_name = "skirt_R4_F"
+
+[node name="skirt_R4_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_R4_A/skirt_R4_B/skirt_R4_C/skirt_R4_D/skirt_R4_E/skirt_R4_F"]
+position = Vector3(-4.11678002e-07, 0.124773227, 4.60089325e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9378
+metadata/unity_name = "skirt_R4_End"
+
+[node name="skirt_R5_A" type="Node3D" parent="Ratna/Ratna_Model/armature/hips"]
+position = Vector3(0.0705184937, 0.0405471064, 0.0863716006)
+quaternion = Quaternion(-0.979633093, -0.0533752069, 0.166464448, -0.0987915769)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6879
+metadata/unity_name = "skirt_R5_A"
+
+[node name="skirt_R5_B" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_R5_A"]
+position = Vector3(-1.42229917e-08, 0.0841541588, -3.81559246e-08)
+quaternion = Quaternion(0.117958322, -0.00224863202, -0.0054175714, 0.993001223)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13821
+metadata/unity_name = "skirt_R5_B"
+
+[node name="skirt_R5_C" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_R5_A/skirt_R5_B"]
+position = Vector3(-1.44935508e-09, 0.082330212, 9.08824234e-08)
+quaternion = Quaternion(-0.0324762017, -0.0434601754, 0.0290869735, 0.99810344)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5399
+metadata/unity_name = "skirt_R5_C"
+
+[node name="skirt_R5_D" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_R5_A/skirt_R5_B/skirt_R5_C"]
+position = Vector3(-7.92826498e-08, 0.126680985, -3.00248615e-07)
+quaternion = Quaternion(-0.0109159537, -1.44494228e-09, 0.00509023666, 0.999927461)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15331
+metadata/unity_name = "skirt_R5_D"
+
+[node name="skirt_R5_E" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_R5_A/skirt_R5_B/skirt_R5_C/skirt_R5_D"]
+position = Vector3(1.04697733e-07, 0.146819562, 2.09402273e-07)
+quaternion = Quaternion(-0.0216575898, 0.0436074026, 0.00897082221, 0.998773694)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17710
+metadata/unity_name = "skirt_R5_E"
+
+[node name="skirt_R5_F" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_R5_A/skirt_R5_B/skirt_R5_C/skirt_R5_D/skirt_R5_E"]
+position = Vector3(3.51422898e-07, 0.149968401, 9.59037934e-08)
+quaternion = Quaternion(-0.00222429167, -9.19398863e-11, 0.00080958975, 0.999997199)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12283
+metadata/unity_name = "skirt_R5_F"
+
+[node name="skirt_R5_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/skirt_R5_A/skirt_R5_B/skirt_R5_C/skirt_R5_D/skirt_R5_E/skirt_R5_F"]
+position = Vector3(-5.23945687e-07, 0.124770425, -4.29499579e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9806
+metadata/unity_name = "skirt_R5_End"
+
+[node name="spine" type="Node3D" parent="Ratna/Ratna_Model/armature/hips"]
+position = Vector3(-0, 0.0798688456, -0)
+quaternion = Quaternion(-0.00748162344, 0, -0, 0.999972045)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6904
+metadata/unity_name = "spine"
+
+[node name="chest" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine"]
+position = Vector3(-0, 0.103375167, -0)
+quaternion = Quaternion(-0.00748162344, 0, -0, 0.999972045)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16672
+metadata/unity_name = "chest"
+
+[node name="mant_B_A" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest"]
+position = Vector3(-0, -0.102907971, 0.132077366)
+quaternion = Quaternion(-0.997411847, 1.23579383e-32, -1.54410761e-15, -0.071900636)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6944
+metadata/unity_name = "mant_B_A"
+
+[node name="mant_B_B" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/mant_B_A"]
+position = Vector3(-3.63034682e-17, 0.163496286, 3.5527136e-17)
+quaternion = Quaternion(-0.0165055543, 0, -0, 0.999863803)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22458
+metadata/unity_name = "mant_B_B"
+
+[node name="mant_B_C" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/mant_B_A/mant_B_B"]
+position = Vector3(-5.88251081e-17, 0.179856449, 2.84217088e-16)
+quaternion = Quaternion(-0.042495653, 0, -0, 0.999096632)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6546
+metadata/unity_name = "mant_B_C"
+
+[node name="mant_B_D" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/mant_B_A/mant_B_B/mant_B_C"]
+position = Vector3(-9.78617398e-17, 0.167520687, -1.42108544e-16)
+quaternion = Quaternion(-0.143716112, 0, -0, 0.989618957)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9760
+metadata/unity_name = "mant_B_D"
+
+[node name="mant_B_E" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/mant_B_A/mant_B_B/mant_B_C/mant_B_D"]
+position = Vector3(-1.10631006e-16, 0.181587055, -6.14676854e-17)
+quaternion = Quaternion(-0.159724176, 0, -0, 0.987161696)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22847
+metadata/unity_name = "mant_B_E"
+
+[node name="mant_B_F" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/mant_B_A/mant_B_B/mant_B_C/mant_B_D/mant_B_E"]
+position = Vector3(-9.51651773e-17, 0.154779673, 5.38702764e-17)
+quaternion = Quaternion(-0.140919879, 0, -0, 0.99002099)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7268
+metadata/unity_name = "mant_B_F"
+
+[node name="mant_B_G" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/mant_B_A/mant_B_B/mant_B_C/mant_B_D/mant_B_E/mant_B_F"]
+position = Vector3(-6.32807926e-17, 0.167979643, 1.41746944e-17)
+quaternion = Quaternion(-0.143861115, 0, -0, 0.989597917)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16112
+metadata/unity_name = "mant_B_G"
+
+[node name="mant_B_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/mant_B_A/mant_B_B/mant_B_C/mant_B_D/mant_B_E/mant_B_F/mant_B_G"]
+position = Vector3(-8.73104952e-17, 0.156049043, 8.66246202e-18)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15119
+metadata/unity_name = "mant_B_End"
+
+[node name="mant_L_A" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest"]
+position = Vector3(-0.179374382, -0.102907971, 0.115496807)
+quaternion = Quaternion(-0.996520579, -0.0698420033, 0.00317999604, -0.0453728698)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9091
+metadata/unity_name = "mant_L_A"
+
+[node name="mant_L_B" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/mant_L_A"]
+position = Vector3(-5.80528853e-17, 0.164082155, -1.96593502e-17)
+quaternion = Quaternion(-0.0277091432, -0.00173312321, 0.0773699358, 0.996615827)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18766
+metadata/unity_name = "mant_L_B"
+
+[node name="mant_L_C" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/mant_L_A/mant_L_B"]
+position = Vector3(2.22016302e-17, 0.17898652, -3.70969726e-17)
+quaternion = Quaternion(-0.0527738072, 0.00607540226, 0.0993002951, 0.993638515)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23767
+metadata/unity_name = "mant_L_C"
+
+[node name="mant_L_D" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/mant_L_A/mant_L_B/mant_L_C"]
+position = Vector3(5.39019938e-17, 0.171028078, 8.67456301e-17)
+quaternion = Quaternion(-0.0478278212, 0.0127496608, 0.0462204739, 0.997704208)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14561
+metadata/unity_name = "mant_L_D"
+
+[node name="mant_L_E" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/mant_L_A/mant_L_B/mant_L_C/mant_L_D"]
+position = Vector3(-5.32693032e-17, 0.20735763, -5.88754404e-17)
+quaternion = Quaternion(-0.173386753, 0.0732215345, 0.090984568, 0.977904618)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7775
+metadata/unity_name = "mant_L_E"
+
+[node name="mant_L_F" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/mant_L_A/mant_L_B/mant_L_C/mant_L_D/mant_L_E"]
+position = Vector3(-3.71878301e-17, 0.210791603, 2.21006745e-17)
+quaternion = Quaternion(-0.254347533, 0.150275633, 0.0394375734, 0.954551876)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13627
+metadata/unity_name = "mant_L_F"
+
+[node name="mant_L_G" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/mant_L_A/mant_L_B/mant_L_C/mant_L_D/mant_L_E/mant_L_F"]
+position = Vector3(6.91614511e-17, 0.202006683, 1.86229276e-17)
+quaternion = Quaternion(-0.109928988, 0.0649726391, -0.0407849737, 0.990974665)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17417
+metadata/unity_name = "mant_L_G"
+
+[node name="mant_L_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/mant_L_A/mant_L_B/mant_L_C/mant_L_D/mant_L_E/mant_L_F/mant_L_G"]
+position = Vector3(-1.69611224e-18, 0.215117827, -2.48475725e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11725
+metadata/unity_name = "mant_L_End"
+
+[node name="mant_R_A" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest"]
+position = Vector3(0.179374009, -0.102907903, 0.115496993)
+quaternion = Quaternion(-0.996520698, 0.0698411688, -0.00317994086, -0.0453726277)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8550
+metadata/unity_name = "mant_R_A"
+
+[node name="mant_R_B" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/mant_R_A"]
+position = Vector3(-1.84789936e-18, 0.164082289, -2.36365305e-17)
+quaternion = Quaternion(-0.0277100857, 0.00173314149, -0.0773697197, 0.996615827)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5496
+metadata/unity_name = "mant_R_B"
+
+[node name="mant_R_C" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/mant_R_A/mant_R_B"]
+position = Vector3(3.19561675e-17, 0.178986147, -5.62566196e-17)
+quaternion = Quaternion(-0.0527712144, -0.00607506791, -0.0992984325, 0.993638813)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11458
+metadata/unity_name = "mant_R_C"
+
+[node name="mant_R_D" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/mant_R_A/mant_R_B/mant_R_C"]
+position = Vector3(-3.99174434e-17, 0.171028003, -5.25699948e-17)
+quaternion = Quaternion(-0.04783158, -0.0127506061, -0.0462218933, 0.997703969)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5796
+metadata/unity_name = "mant_R_D"
+
+[node name="mant_R_E" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/mant_R_A/mant_R_B/mant_R_C/mant_R_D"]
+position = Vector3(8.43128258e-17, 0.207357675, 3.39293043e-17)
+quaternion = Quaternion(-0.173384398, -0.0732205138, -0.090984188, 0.977905154)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6536
+metadata/unity_name = "mant_R_E"
+
+[node name="mant_R_F" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/mant_R_A/mant_R_B/mant_R_C/mant_R_D/mant_R_E"]
+position = Vector3(-2.86969779e-18, 0.210791931, 1.27875745e-17)
+quaternion = Quaternion(-0.254348367, -0.150275975, -0.0394377224, 0.954551578)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26403
+metadata/unity_name = "mant_R_F"
+
+[node name="mant_R_G" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/mant_R_A/mant_R_B/mant_R_C/mant_R_D/mant_R_E/mant_R_F"]
+position = Vector3(4.64385731e-18, 0.202006638, -4.94716574e-17)
+quaternion = Quaternion(-0.10992866, -0.0649724081, 0.0407850258, 0.990974724)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9707
+metadata/unity_name = "mant_R_G"
+
+[node name="mant_R_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/mant_R_A/mant_R_B/mant_R_C/mant_R_D/mant_R_E/mant_R_F/mant_R_G"]
+position = Vector3(-7.95994249e-17, 0.215117767, -1.19356744e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24511
+metadata/unity_name = "mant_R_End"
+
+[node name="neck" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest"]
+position = Vector3(-0, 0.224306002, 0.0482360721)
+quaternion = Quaternion(-0.181011274, 0, -0, 0.98348105)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11141
+metadata/unity_name = "neck"
+
+[node name="head" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/neck"]
+position = Vector3(-0, 0.106548756, 1.42108544e-16)
+quaternion = Quaternion(0.166275367, -0, -0, 0.986079395)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12754
+metadata/unity_name = "head"
+
+[node name="earring_L" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/neck/head"]
+position = Vector3(-0.0693913251, 0.00959554501, -0.00728678331)
+quaternion = Quaternion(0.608513951, 0.00708427653, 0.793305278, 0.018093342)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16403
+metadata/unity_name = "earring_L"
+
+[node name="earring_L_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/neck/head/earring_L"]
+position = Vector3(-3.5527136e-17, 0.050820712, 2.30926381e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5859
+metadata/unity_name = "earring_L_End"
+
+[node name="earring_R" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/neck/head"]
+position = Vector3(0.0693912953, 0.00959498808, -0.00728678377)
+quaternion = Quaternion(-0.608513951, 0.00708427653, 0.793305278, -0.018093342)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4897
+metadata/unity_name = "earring_R"
+
+[node name="earring_R_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/neck/head/earring_R"]
+position = Vector3(-9.86935333e-08, 0.0508183762, -7.33680992e-08)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9128
+metadata/unity_name = "earring_R_End"
+
+[node name="hair_L1_A" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/neck/head"]
+position = Vector3(-0.051803086, 0.0860578865, -0.0931434706)
+quaternion = Quaternion(0.548257589, 0.192103758, 0.796120107, 0.169418275)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5027
+metadata/unity_name = "hair_L1_A"
+
+[node name="hair_L1_B" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/neck/head/hair_L1_A"]
+position = Vector3(-0, 0.0518060811, 1.06581408e-16)
+quaternion = Quaternion(-0.0954407528, 0.0384323113, -0.00349666993, 0.994686782)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14171
+metadata/unity_name = "hair_L1_B"
+
+[node name="hair_L1_C" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/neck/head/hair_L1_A/hair_L1_B"]
+position = Vector3(1.42108544e-16, 0.0464450866, -7.1054272e-17)
+quaternion = Quaternion(0.117690198, -0.00861118175, 0.464458376, 0.877697766)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8606
+metadata/unity_name = "hair_L1_C"
+
+[node name="hair_L1_D" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/neck/head/hair_L1_A/hair_L1_B/hair_L1_C"]
+position = Vector3(7.1054272e-17, 0.0513373204, -1.42108544e-16)
+quaternion = Quaternion(-0.274485677, -0.039123863, -0.357111871, 0.891963005)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9357
+metadata/unity_name = "hair_L1_D"
+
+[node name="hair_L1_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/neck/head/hair_L1_A/hair_L1_B/hair_L1_C/hair_L1_D"]
+position = Vector3(2.48689959e-16, 0.0362747312, 7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16554
+metadata/unity_name = "hair_L1_End"
+
+[node name="hair_L2" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/neck/head"]
+position = Vector3(-0.067651026, 0.0188751686, -0.0244165249)
+quaternion = Quaternion(-0.705640793, -0.101080313, -0.699844837, 0.0455091447)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5418
+metadata/unity_name = "hair_L2"
+
+[node name="hair_L2_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/neck/head/hair_L2"]
+position = Vector3(-0, 0.0517029688, -3.5527136e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27003
+metadata/unity_name = "hair_L2_End"
+
+[node name="hair_L3" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/neck/head"]
+position = Vector3(-0.0429128893, 0.14565219, 0.0631694719)
+quaternion = Quaternion(0.117847435, 0.512727916, 0.486939579, 0.697217345)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22212
+metadata/unity_name = "hair_L3"
+
+[node name="hair_L3_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/neck/head/hair_L3"]
+position = Vector3(-0, 0.0561235957, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12706
+metadata/unity_name = "hair_L3_End"
+
+[node name="hair_R1_A" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/neck/head"]
+position = Vector3(0.0484856516, 0.0860578865, -0.11063914)
+quaternion = Quaternion(-0.443176419, 0.194262311, 0.865225852, -0.131305143)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18318
+metadata/unity_name = "hair_R1_A"
+
+[node name="hair_R1_B" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/neck/head/hair_R1_A"]
+position = Vector3(7.1054272e-17, 0.0570541807, -0)
+quaternion = Quaternion(-0.105490834, 0.00893519726, -0.00377139845, 0.994373024)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26475
+metadata/unity_name = "hair_R1_B"
+
+[node name="hair_R1_C" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/neck/head/hair_R1_A/hair_R1_B"]
+position = Vector3(-1.42108544e-16, 0.0536422879, -7.99360543e-17)
+quaternion = Quaternion(0.124039695, 0.338217586, -0.220772117, 0.906356812)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6042
+metadata/unity_name = "hair_R1_C"
+
+[node name="hair_R1_D" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/neck/head/hair_R1_A/hair_R1_B/hair_R1_C"]
+position = Vector3(-2.6645352e-17, 0.0416111015, -5.3290704e-17)
+quaternion = Quaternion(0.246186152, 0.110644378, 0.107386418, 0.956879497)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15764
+metadata/unity_name = "hair_R1_D"
+
+[node name="hair_R1_E" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/neck/head/hair_R1_A/hair_R1_B/hair_R1_C/hair_R1_D"]
+position = Vector3(3.5527136e-17, 0.042845048, 1.42108544e-16)
+quaternion = Quaternion(-0.671839535, 0.17492713, 0.159428403, 0.701865196)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11896
+metadata/unity_name = "hair_R1_E"
+
+[node name="hair_R1_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/neck/head/hair_R1_A/hair_R1_B/hair_R1_C/hair_R1_D/hair_R1_E"]
+position = Vector3(-1.42108544e-16, 0.0268753562, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12787
+metadata/unity_name = "hair_R1_End"
+
+[node name="hair_R2" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/neck/head"]
+position = Vector3(0.0676509961, 0.0188749861, -0.0244165529)
+quaternion = Quaternion(-0.705640793, 0.101080313, 0.699844837, 0.0455091447)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14738
+metadata/unity_name = "hair_R2"
+
+[node name="hair_R2_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/neck/head/hair_R2"]
+position = Vector3(-2.05292082e-07, 0.0517007448, 4.86266515e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23366
+metadata/unity_name = "hair_R2_End"
+
+[node name="hair_R3" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/neck/head"]
+position = Vector3(0.0227455292, 0.159022629, 0.0410940014)
+quaternion = Quaternion(0.168683141, -0.175911814, -0.271180868, 0.931161642)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7073
+metadata/unity_name = "hair_R3"
+
+[node name="hair_R3_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/neck/head/hair_R3"]
+position = Vector3(-0, 0.058897119, -2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5004
+metadata/unity_name = "hair_R3_End"
+
+[node name="hair_R4" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/neck/head"]
+position = Vector3(0.0365866683, 0.115841307, 0.087894015)
+quaternion = Quaternion(-0.00366588891, -0.531723261, -0.647268593, 0.546168745)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25795
+metadata/unity_name = "hair_R4"
+
+[node name="hair_R4_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/neck/head/hair_R4"]
+position = Vector3(-4.26325632e-16, 0.0574928932, 1.42108544e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13329
+metadata/unity_name = "hair_R4_End"
+
+[node name="head_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/neck/head"]
+position = Vector3(-0, 0.170836255, 7.54951665e-17)
+quaternion = Quaternion(-0.00748162344, 0, -0, 0.999972045)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22154
+metadata/unity_name = "head_End"
+
+[node name="jaw" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/neck/head"]
+position = Vector3(-0, 0.00235481025, -0.0198649522)
+quaternion = Quaternion(2.58779054e-17, -0.42261827, 0.906307817, -5.54953455e-17)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13170
+metadata/unity_name = "jaw"
+
+[node name="jaw_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/neck/head/jaw"]
+position = Vector3(6.2790664e-18, 0.0797657967, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25694
+metadata/unity_name = "jaw_End"
+
+[node name="Magica Sphere Collider (head)" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/neck/head"]
+position = Vector3(0, 0.0132999998, -0.0226000007)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21395
+metadata/unity_name = "Magica Sphere Collider (head)"
+
+[node name="shoulder_L" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest"]
+position = Vector3(-0.0237277243, 0.205563277, 0.0700000003)
+quaternion = Quaternion(-0.579227984, 0.405579776, -0.579227984, -0.405579776)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23938
+metadata/unity_name = "shoulder_L"
+
+[node name="upperarm_L" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/shoulder_L"]
+position = Vector3(-0, 0.109999999, -0)
+quaternion = Quaternion(0.446197808, -0, -0, 0.894934356)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9562
+metadata/unity_name = "upperarm_L"
+
+[node name="lowerarm_L" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/shoulder_L/upperarm_L"]
+position = Vector3(-0, 0.164999992, 1.42108544e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25540
+metadata/unity_name = "lowerarm_L"
+
+[node name="armring_L_A" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/shoulder_L/upperarm_L/lowerarm_L"]
+position = Vector3(-8.881784e-18, 0.0949999988, -0)
+quaternion = Quaternion(3.47895966e-16, -0.688464582, 0.725269973, -3.6649456e-16)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6233
+metadata/unity_name = "armring_L_A"
+
+[node name="armring_L_B" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/shoulder_L/upperarm_L/lowerarm_L/armring_L_A"]
+position = Vector3(2.6645352e-17, 0.0240000002, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24325
+metadata/unity_name = "armring_L_B"
+
+[node name="armring_L_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/shoulder_L/upperarm_L/lowerarm_L/armring_L_A/armring_L_B"]
+position = Vector3(1.7763568e-17, 0.0714173838, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22979
+metadata/unity_name = "armring_L_End"
+
+[node name="hand_L" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/shoulder_L/upperarm_L/lowerarm_L"]
+position = Vector3(-0, 0.204999998, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21404
+metadata/unity_name = "hand_L"
+
+[node name="hand_L_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/shoulder_L/upperarm_L/lowerarm_L/hand_L"]
+position = Vector3(-0, 0.099999994, 4.26325632e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24713
+metadata/unity_name = "hand_L_End"
+
+[node name="shoulder_R" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest"]
+position = Vector3(0.0237277001, 0.205564097, 0.0700000003)
+quaternion = Quaternion(-0.579227984, -0.405579776, 0.579227984, -0.405579776)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23930
+metadata/unity_name = "shoulder_R"
+
+[node name="upperarm_R" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/shoulder_R"]
+position = Vector3(-0, 0.11000029, -7.10542693e-16)
+quaternion = Quaternion(0.446197808, -0, -0, 0.894934356)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8642
+metadata/unity_name = "upperarm_R"
+
+[node name="lowerarm_R" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/shoulder_R/upperarm_R"]
+position = Vector3(-0, 0.164999992, -9.94759834e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10753
+metadata/unity_name = "lowerarm_R"
+
+[node name="armring_R_A" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/shoulder_R/upperarm_R/lowerarm_R"]
+position = Vector3(-0, 0.0949999988, -5.68434176e-16)
+quaternion = Quaternion(4.21562971e-17, -0.688464582, 0.725269973, -4.44099771e-17)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10556
+metadata/unity_name = "armring_R_A"
+
+[node name="armring_R_B" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/shoulder_R/upperarm_R/lowerarm_R/armring_R_A"]
+position = Vector3(-0, 0.0240025185, 7.43152597e-08)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10388
+metadata/unity_name = "armring_R_B"
+
+[node name="armring_R_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/shoulder_R/upperarm_R/lowerarm_R/armring_R_A/armring_R_B"]
+position = Vector3(-1.7763568e-17, 0.0714167356, -3.55231897e-08)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12749
+metadata/unity_name = "armring_R_End"
+
+[node name="hand_R" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/shoulder_R/upperarm_R/lowerarm_R"]
+position = Vector3(-0, 0.204999998, -7.10542693e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24762
+metadata/unity_name = "hand_R"
+
+[node name="hand_R_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/shoulder_R/upperarm_R/lowerarm_R/hand_R"]
+position = Vector3(-0, 0.099999994, -9.94759834e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24468
+metadata/unity_name = "hand_R_End"
+
+[node name="VFX_Ratna_SkillAttack_Hand" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/shoulder_R/upperarm_R/lowerarm_R/hand_R"]
+position = Vector3(-0.0680000037, 0.0719999969, 0.0759999976)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11966
+metadata/unity_name = "VFX_Ratna_SkillAttack_Hand"
+
+[node name="root" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/shoulder_R/upperarm_R/lowerarm_R/hand_R/VFX_Ratna_SkillAttack_Hand"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24261
+metadata/unity_name = "root"
+
+[node name="Glow_01" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/shoulder_R/upperarm_R/lowerarm_R/hand_R/VFX_Ratna_SkillAttack_Hand/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5093
+metadata/unity_name = "Glow_01"
+
+[node name="Ball" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/shoulder_R/upperarm_R/lowerarm_R/hand_R/VFX_Ratna_SkillAttack_Hand/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26011
+metadata/unity_name = "Ball"
+
+[node name="Ball_1" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/shoulder_R/upperarm_R/lowerarm_R/hand_R/VFX_Ratna_SkillAttack_Hand/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8502
+metadata/unity_name = "Ball_1"
+
+[node name="Lightning_01" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/shoulder_R/upperarm_R/lowerarm_R/hand_R/VFX_Ratna_SkillAttack_Hand/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21159
+metadata/unity_name = "Lightning_01"
+
+[node name="LightningLine_01" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/shoulder_R/upperarm_R/lowerarm_R/hand_R/VFX_Ratna_SkillAttack_Hand/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17344
+metadata/unity_name = "LightningLine_01"
+
+[node name="LightningLine_02" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/shoulder_R/upperarm_R/lowerarm_R/hand_R/VFX_Ratna_SkillAttack_Hand/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15466
+metadata/unity_name = "LightningLine_02"
+
+[node name="Glow_04" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/spine/chest/shoulder_R/upperarm_R/lowerarm_R/hand_R/VFX_Ratna_SkillAttack_Hand/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23971
+metadata/unity_name = "Glow_04"
+
+[node name="upperleg_L" type="Node3D" parent="Ratna/Ratna_Model/armature/hips"]
+position = Vector3(-0.0861266628, -0.00476020807, -0)
+quaternion = Quaternion(0.000266495452, 0.030537352, 0.999495566, 0.00872246642)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18905
+metadata/unity_name = "upperleg_L"
+
+[node name="lowerleg_L" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/upperleg_L"]
+position = Vector3(3.5527136e-17, 0.394999981, 1.11022296e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9078
+metadata/unity_name = "lowerleg_L"
+
+[node name="foot_L" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/upperleg_L/lowerleg_L"]
+position = Vector3(5.3290704e-17, 0.349999994, -1.110223e-18)
+quaternion = Quaternion(-0, -0, 0.00872653536, 0.999961913)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13643
+metadata/unity_name = "foot_L"
+
+[node name="toes_L" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/upperleg_L/lowerleg_L/foot_L"]
+position = Vector3(1.7763568e-17, 0.0416309536, -0.102634601)
+quaternion = Quaternion(-0.707106829, 0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18702
+metadata/unity_name = "toes_L"
+
+[node name="toes_L_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/upperleg_L/lowerleg_L/foot_L/toes_L"]
+position = Vector3(-0, 0.0727069825, -3.99680272e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11745
+metadata/unity_name = "toes_L_End"
+
+[node name="Magica Capsule Collider (foot_L)" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/upperleg_L/lowerleg_L/foot_L"]
+position = Vector3(0, 0.00899999961, 0.147)
+quaternion = Quaternion(-0.18478319, 6.01436386e-06, 0.000196876892, 0.982779384)
+scale = Vector3(0.999999762, 0.999999881, 1.00000012)
+metadata/unity_id = 7157
+metadata/unity_name = "Magica Capsule Collider (foot_L)"
+
+[node name="Magica Capsule Collider (lowerleg_L)" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/upperleg_L/lowerleg_L"]
+position = Vector3(-0.0027011421, 0.163005203, -0.0100003174)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(0.999999881, 0.999999881, 1.00000012)
+metadata/unity_id = 14299
+metadata/unity_name = "Magica Capsule Collider (lowerleg_L)"
+
+[node name="string_Inside_L" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/upperleg_L"]
+position = Vector3(-0.00392676191, 0.310743868, -0.078615196)
+quaternion = Quaternion(-0.0577542447, 0.000417861156, 0.207224548, 0.976587057)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14821
+metadata/unity_name = "string_Inside_L"
+
+[node name="string_Inside_L_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/upperleg_L/string_Inside_L"]
+position = Vector3(-1.7763568e-17, 0.0909415111, -1.7763568e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25264
+metadata/unity_name = "string_Inside_L_End"
+
+[node name="string_Outside_L" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/upperleg_L"]
+position = Vector3(0.0095312912, 0.311538637, -0.0786638111)
+quaternion = Quaternion(0.00152956974, -0.00901195128, -0.143698663, 0.98957932)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6792
+metadata/unity_name = "string_Outside_L"
+
+[node name="string_Outside_L_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/upperleg_L/string_Outside_L"]
+position = Vector3(-3.5527136e-17, 0.10440883, -8.881784e-18)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18227
+metadata/unity_name = "string_Outside_L_End"
+
+[node name="Magica Capsule Collider (upperleg_L)" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/upperleg_L"]
+position = Vector3(-0.00300000003, 0.208000004, -0.0130000003)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(0.999999881, 0.999999881, 1.00000012)
+metadata/unity_id = 8602
+metadata/unity_name = "Magica Capsule Collider (upperleg_L)"
+
+[node name="upperleg_R" type="Node3D" parent="Ratna/Ratna_Model/armature/hips"]
+position = Vector3(0.0861267, -0.00475989142, -0)
+quaternion = Quaternion(-0.000266495452, 0.030537352, 0.999495566, -0.00872246642)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22041
+metadata/unity_name = "upperleg_R"
+
+[node name="lowerleg_R" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/upperleg_R"]
+position = Vector3(5.3290704e-17, 0.394999981, 1.1102199e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25463
+metadata/unity_name = "lowerleg_R"
+
+[node name="foot_R" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/upperleg_R/lowerleg_R"]
+position = Vector3(7.1054272e-17, 0.350000292, -1.11019002e-18)
+quaternion = Quaternion(-0, 0, -0.00872653536, 0.999961913)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25389
+metadata/unity_name = "foot_R"
+
+[node name="toes_R" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/upperleg_R/lowerleg_R/foot_R"]
+position = Vector3(-3.5527136e-17, 0.0416309983, -0.102634996)
+quaternion = Quaternion(-0.707106829, -0, 0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12055
+metadata/unity_name = "toes_R"
+
+[node name="toes_R_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/upperleg_R/lowerleg_R/foot_R/toes_R"]
+position = Vector3(-3.5527136e-17, 0.0727069974, 3.10862448e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20058
+metadata/unity_name = "toes_R_End"
+
+[node name="Magica Capsule Collider (foot_R)" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/upperleg_R/lowerleg_R/foot_R"]
+position = Vector3(-0, 0.00899999961, 0.147)
+quaternion = Quaternion(-0.18478319, -6.01436386e-06, -0.000196876892, 0.982779384)
+scale = Vector3(0.999999762, 0.999999881, 1.00000012)
+metadata/unity_id = 5044
+metadata/unity_name = "Magica Capsule Collider (foot_R)"
+
+[node name="Magica Capsule Collider (lowerleg_R)" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/upperleg_R/lowerleg_R"]
+position = Vector3(0.00300000003, 0.163000003, -0.00999999978)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(0.999999881, 0.999999881, 1.00000012)
+metadata/unity_id = 7547
+metadata/unity_name = "Magica Capsule Collider (lowerleg_R)"
+
+[node name="string_Inside_R" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/upperleg_R"]
+position = Vector3(0.00392676797, 0.31074369, -0.0786151811)
+quaternion = Quaternion(-0.0577542447, -0.000417861156, -0.207224548, 0.976587057)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12767
+metadata/unity_name = "string_Inside_R"
+
+[node name="string_Inside_R_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/upperleg_R/string_Inside_R"]
+position = Vector3(-1.32903551e-07, 0.0909418687, 4.6283585e-08)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25644
+metadata/unity_name = "string_Inside_R_End"
+
+[node name="string_Outside_R" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/upperleg_R"]
+position = Vector3(-0.00953097176, 0.311539173, -0.0786638334)
+quaternion = Quaternion(0.00152956974, 0.00901195128, 0.143698663, 0.98957932)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11760
+metadata/unity_name = "string_Outside_R"
+
+[node name="string_Outside_R_End" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/upperleg_R/string_Outside_R"]
+position = Vector3(-3.77058626e-07, 0.104408413, -1.17181775e-08)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9028
+metadata/unity_name = "string_Outside_R_End"
+
+[node name="Magica Capsule Collider (upperleg_R)" type="Node3D" parent="Ratna/Ratna_Model/armature/hips/upperleg_R"]
+position = Vector3(0.00400000019, 0.208000004, -0.0130000003)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(0.999999881, 0.999999881, 1.00000012)
+metadata/unity_id = 24479
+metadata/unity_name = "Magica Capsule Collider (upperleg_R)"
+
+[node name="Magica Capsule Collider (hips)" type="Node3D" parent="Ratna/Ratna_Model/armature/hips"]
+position = Vector3(0, -0.0379999988, 0.0599999987)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14218
+metadata/unity_name = "Magica Capsule Collider (hips)"
+
+[node name="Magica Capsule Collider (hips)_Skirt" type="Node3D" parent="Ratna/Ratna_Model/armature/hips"]
+position = Vector3(0, -0.00340002775, 0.0355000012)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14664
+metadata/unity_name = "Magica Capsule Collider (hips)_Skirt"
+
+[node name="Ratna" type="Node3D" parent="Ratna/Ratna_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16247
+metadata/unity_name = "Ratna"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Ratna/Ratna_Model/Ratna"]
+mesh = ExtResource("1")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="Shield_Geo" type="Node3D" parent="Ratna/Ratna_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5661
+metadata/unity_name = "Shield_Geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Ratna/Ratna_Model/Shield_Geo"]
+mesh = ExtResource("3")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="Shield_Root" type="Node3D" parent="Ratna/Ratna_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24467
+metadata/unity_name = "Shield_Root"
+
+[node name="Shield_L_A" type="Node3D" parent="Ratna/Ratna_Model/Shield_Root"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(0.5, -0.5, 0.5, 0.5)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6863
+metadata/unity_name = "Shield_L_A"
+
+[node name="Shield_L_B" type="Node3D" parent="Ratna/Ratna_Model/Shield_Root/Shield_L_A"]
+position = Vector3(-0, 0.399999976, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11421
+metadata/unity_name = "Shield_L_B"
+
+[node name="Shield_L_End" type="Node3D" parent="Ratna/Ratna_Model/Shield_Root/Shield_L_A/Shield_L_B"]
+position = Vector3(-0, 0.049999997, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14866
+metadata/unity_name = "Shield_L_End"
+
+[node name="Shield_R_A" type="Node3D" parent="Ratna/Ratna_Model/Shield_Root"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(0.5, 0.5, -0.5, 0.5)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27114
+metadata/unity_name = "Shield_R_A"
+
+[node name="Shield_R_B" type="Node3D" parent="Ratna/Ratna_Model/Shield_Root/Shield_R_A"]
+position = Vector3(-0, 0.399999976, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8234
+metadata/unity_name = "Shield_R_B"
+
+[node name="Shield_R_End" type="Node3D" parent="Ratna/Ratna_Model/Shield_Root/Shield_R_A/Shield_R_B"]
+position = Vector3(-6.12323385e-18, 0.049999997, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26980
+metadata/unity_name = "Shield_R_End"
+
+[node name="Weapon_Geo" type="Node3D" parent="Ratna/Ratna_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11721
+metadata/unity_name = "Weapon_Geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Ratna/Ratna_Model/Weapon_Geo"]
+mesh = ExtResource("5")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="weapon_Root" type="Node3D" parent="Ratna/Ratna_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24094
+metadata/unity_name = "weapon_Root"
+
+[node name="Page_C" type="Node3D" parent="Ratna/Ratna_Model/weapon_Root"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(0.707106829, -0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23707
+metadata/unity_name = "Page_C"
+
+[node name="Page_L" type="Node3D" parent="Ratna/Ratna_Model/weapon_Root/Page_C"]
+position = Vector3(-0.0799999982, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15320
+metadata/unity_name = "Page_L"
+
+[node name="BookBelt_A" type="Node3D" parent="Ratna/Ratna_Model/weapon_Root/Page_C/Page_L"]
+position = Vector3(-0.00999999978, 0.370000035, -0)
+quaternion = Quaternion(-0, -0, -0.707106829, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12150
+metadata/unity_name = "BookBelt_A"
+
+[node name="BookBelt_B" type="Node3D" parent="Ratna/Ratna_Model/weapon_Root/Page_C/Page_L/BookBelt_A"]
+position = Vector3(-7.1054272e-17, 0.179999992, -1.55431221e-16)
+quaternion = Quaternion(-0, -0, -0.707106829, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15271
+metadata/unity_name = "BookBelt_B"
+
+[node name="BookBelt_C" type="Node3D" parent="Ratna/Ratna_Model/weapon_Root/Page_C/Page_L/BookBelt_A/BookBelt_B"]
+position = Vector3(-1.7763568e-17, 0.127070889, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6905
+metadata/unity_name = "BookBelt_C"
+
+[node name="BookBelt_End" type="Node3D" parent="Ratna/Ratna_Model/weapon_Root/Page_C/Page_L/BookBelt_A/BookBelt_B/BookBelt_C"]
+position = Vector3(1.7763568e-17, 0.109997921, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13218
+metadata/unity_name = "BookBelt_End"
+
+[node name="Page_L_End" type="Node3D" parent="Ratna/Ratna_Model/weapon_Root/Page_C/Page_L"]
+position = Vector3(-0, 0.349999994, -1.55431221e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22227
+metadata/unity_name = "Page_L_End"
+
+[node name="Page_R" type="Node3D" parent="Ratna/Ratna_Model/weapon_Root/Page_C"]
+position = Vector3(0.0799999982, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4866
+metadata/unity_name = "Page_R"
+
+[node name="Page_R_End" type="Node3D" parent="Ratna/Ratna_Model/weapon_Root/Page_C/Page_R"]
+position = Vector3(-0, 0.349999994, -1.55431221e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18996
+metadata/unity_name = "Page_R_End"
+
+[node name="Magica Cloth (skirt)" type="Node3D" parent="Ratna/Ratna_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15955
+metadata/unity_name = "Magica Cloth (skirt)"
+
+[node name="Magica Cloth (mant)" type="Node3D" parent="Ratna/Ratna_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15364
+metadata/unity_name = "Magica Cloth (mant)"
+
+[node name="Magica Cloth (accessory)" type="Node3D" parent="Ratna/Ratna_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9497
+metadata/unity_name = "Magica Cloth (accessory)"
+
+[node name="Magica Cloth (hair)" type="Node3D" parent="Ratna/Ratna_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26943
+metadata/unity_name = "Magica Cloth (hair)"
+
+[node name="Magica Cloth (hair2)" type="Node3D" parent="Ratna/Ratna_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12212
+metadata/unity_name = "Magica Cloth (hair2)"
+
+[node name="Magica Cloth (string)" type="Node3D" parent="Ratna/Ratna_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24635
+metadata/unity_name = "Magica Cloth (string)"
+
+[node name="OverheadSlot" type="Node3D" parent="Ratna"]
+position = Vector3(0, 2, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16379
+metadata/unity_name = "OverheadSlot"
+
+[node name="Magica Plane Collider (Plane)" type="Node3D" parent="Ratna"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9228
+metadata/unity_name = "Magica Plane Collider (Plane)"
+
+[node name="VFXParent" type="Node3D" parent="Ratna"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5104
+metadata/unity_name = "VFXParent"
+
+[node name="VFX_Ratna_SkillAttack_Ground" type="Node3D" parent="Ratna/VFXParent"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15365
+metadata/unity_name = "VFX_Ratna_SkillAttack_Ground"
+visible = false
+process_mode = 4
+
+[node name="root" type="Node3D" parent="Ratna/VFXParent/VFX_Ratna_SkillAttack_Ground"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20723
+metadata/unity_name = "root"
+
+[node name="Lightning_01" type="Node3D" parent="Ratna/VFXParent/VFX_Ratna_SkillAttack_Ground/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22649
+metadata/unity_name = "Lightning_01"
+visible = false
+process_mode = 4
+
+[node name="LightningGlow_01" type="Node3D" parent="Ratna/VFXParent/VFX_Ratna_SkillAttack_Ground/root/Lightning_01"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14377
+metadata/unity_name = "LightningGlow_01"
+
+[node name="Line_01" type="Node3D" parent="Ratna/VFXParent/VFX_Ratna_SkillAttack_Ground/root/Lightning_01"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18406
+metadata/unity_name = "Line_01"
+
+[node name="Aura_01" type="Node3D" parent="Ratna/VFXParent/VFX_Ratna_SkillAttack_Ground/root"]
+position = Vector3(0, 2, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13505
+metadata/unity_name = "Aura_01"
+
+[node name="Fresnel_01" type="Node3D" parent="Ratna/VFXParent/VFX_Ratna_SkillAttack_Ground/root"]
+position = Vector3(0, 0.699999988, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20577
+metadata/unity_name = "Fresnel_01"
+
+[node name="Glow_02" type="Node3D" parent="Ratna/VFXParent/VFX_Ratna_SkillAttack_Ground/root"]
+position = Vector3(0, 2, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6340
+metadata/unity_name = "Glow_02"
+
+[node name="Glow_03" type="Node3D" parent="Ratna/VFXParent/VFX_Ratna_SkillAttack_Ground/root"]
+position = Vector3(0, 0.100000001, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17486
+metadata/unity_name = "Glow_03"
+
+[node name="Magica Wind Zone" type="Node3D" parent="Ratna/VFXParent/VFX_Ratna_SkillAttack_Ground/root"]
+position = Vector3(0, 1.29999995, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10885
+metadata/unity_name = "Magica Wind Zone"

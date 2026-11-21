@@ -1,0 +1,29 @@
+[gd_resource type="ShaderMaterial" format=3]
+[ext_resource type="Shader" path="res://materials/character_toon.gdshader" id="toon"]
+[ext_resource type="Texture2D" path="res://textures/sharedassets1_1784.png" id="main_texture"]
+[ext_resource type="Texture2D" path="res://textures/sharedassets1_2487.png" id="emission_texture"]
+
+[resource]
+resource_name = "Lizard_Mat_Body"
+shader = ExtResource("toon")
+metadata/unity_shader = "lilToon"
+metadata/unity_material_id = 156
+metadata/unity_reflection = false
+shader_parameter/main_texture = ExtResource("main_texture")
+shader_parameter/main_transform = Vector4(1, 1, 0, 0)
+shader_parameter/tint = Color(0.858490586, 0.858490586, 0.858490586, 1)
+shader_parameter/cutoff = 0.0
+shader_parameter/use_shadow = true
+shader_parameter/shadow_color = Color(0.819999993, 0.75999999, 0.850000024, 1)
+shader_parameter/second_color = Color(0.680000007, 0.659999967, 0.789999962, 0)
+shader_parameter/shadow_border_color = Color(1, 0.0999999419, 0, 1)
+shader_parameter/shade_shape = Vector4(0.689999998, 0, 0.109999999, 0.100000001)
+shader_parameter/shade_controls = Vector4(1, 0, 0, 1)
+shader_parameter/shade_receivers = Vector3(0, 0, 0)
+shader_parameter/light_limits = Vector2(0, 2)
+shader_parameter/use_emission = true
+shader_parameter/emission_texture = ExtResource("emission_texture")
+shader_parameter/emission_transform = Vector4(1, 1, 0, 0)
+shader_parameter/emission_color = Color(4.47149134, 0.653850138, 0.653850138, 1)
+shader_parameter/emission_blink = Vector4(0.739000022, 0, 6.28318548, 0)
+shader_parameter/emission_controls = Vector3(1, 1, 0)

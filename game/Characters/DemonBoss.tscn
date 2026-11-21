@@ -1,0 +1,1255 @@
+[gd_scene format=3]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2805.obj" id="1"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_78.tres" id="2"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2892.obj" id="3"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2828.obj" id="4"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_80.tres" id="5"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2945.obj" id="6"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_79.tres" id="7"]
+
+[node name="DemonBoss" type="Node3D"]
+
+[node name="DemonBoss" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16083
+metadata/unity_name = "DemonBoss"
+
+[node name="DemonBoss_Model" type="Node3D" parent="DemonBoss"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(2.25, 2.25, 2.25)
+metadata/unity_id = 15696
+metadata/unity_name = "DemonBoss_Model"
+
+[node name="Belt_Low" type="Node3D" parent="DemonBoss/DemonBoss_Model"]
+position = Vector3(9.53674295e-09, -4.76837547e-09, 3.21492557e-08)
+quaternion = Quaternion(0.707106829, 3.29272254e-09, 6.25617513e-09, 0.707106709)
+scale = Vector3(1, 0.999999881, 1)
+metadata/unity_id = 20120
+metadata/unity_name = "Belt_Low"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="DemonBoss/DemonBoss_Model/Belt_Low"]
+mesh = ExtResource("1")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="Body_002" type="Node3D" parent="DemonBoss/DemonBoss_Model"]
+position = Vector3(8.58306848e-08, -2.33059879e-14, 1.43051139e-07)
+quaternion = Quaternion(0.707106829, 8.49522479e-08, -1.97563317e-08, 0.707106709)
+scale = Vector3(1, 0.999999881, 0.999999881)
+metadata/unity_id = 12655
+metadata/unity_name = "Body.002"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="DemonBoss/DemonBoss_Model/Body_002"]
+mesh = ExtResource("3")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="Body_003" type="Node3D" parent="DemonBoss/DemonBoss_Model"]
+position = Vector3(8.58306848e-08, -2.33059879e-14, 1.43051139e-07)
+quaternion = Quaternion(0.707106829, 8.49522479e-08, -1.97563317e-08, 0.707106709)
+scale = Vector3(1, 0.999999881, 0.999999881)
+metadata/unity_id = 13689
+metadata/unity_name = "Body.003"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="DemonBoss/DemonBoss_Model/Body_003"]
+mesh = ExtResource("4")
+visible = true
+surface_material_override/0 = ExtResource("5")
+
+[node name="root" type="Node3D" parent="DemonBoss/DemonBoss_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(0.707106888, -0, 0, 0.707106709)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6577
+metadata/unity_name = "root"
+
+[node name="pelvis" type="Node3D" parent="DemonBoss/DemonBoss_Model/root"]
+position = Vector3(9.69164087e-15, 0.893473327, -0.606547058)
+quaternion = Quaternion(-0.70710665, -3.86709877e-14, 1.79146282e-14, 0.707106888)
+scale = Vector3(1, 1.00000024, 1.00000024)
+metadata/unity_id = 10220
+metadata/unity_name = "pelvis"
+
+[node name="belt" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis"]
+position = Vector3(4.99999793e-08, -0.0172766559, -0.208868563)
+quaternion = Quaternion(-0.999109447, -3.54749623e-13, -3.15394087e-12, 0.0421937145)
+scale = Vector3(1, 0.99999994, 1.00001264)
+metadata/unity_id = 25769
+metadata/unity_name = "belt"
+
+[node name="tabard_01_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/belt"]
+position = Vector3(-0.109463841, -0.00415988453, -0.0188534688)
+quaternion = Quaternion(-0.0471360944, 0.000270021468, 0.00572355697, 0.998872042)
+scale = Vector3(1, 1, 0.999999702)
+metadata/unity_id = 20223
+metadata/unity_name = "tabard_01_l"
+
+[node name="tabard_02_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/belt/tabard_01_l"]
+position = Vector3(-1.41840424e-08, 0.104045704, 2.60228763e-08)
+quaternion = Quaternion(0.00119670713, 0.00204670848, -0.00935741235, 0.999953449)
+scale = Vector3(1, 1, 1.00000012)
+metadata/unity_id = 9978
+metadata/unity_name = "tabard_02_l"
+
+[node name="tabard_03_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/belt/tabard_01_l/tabard_02_l"]
+position = Vector3(1.01327897e-08, 0.104683235, 1.69128178e-08)
+quaternion = Quaternion(0.141736448, -0.0359284282, -0.217153922, 0.965123892)
+scale = Vector3(0.99999994, 1.00000083, 0.999999225)
+metadata/unity_id = 18196
+metadata/unity_name = "tabard_03_l"
+
+[node name="tabard_03_l_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/belt/tabard_01_l/tabard_02_l/tabard_03_l"]
+position = Vector3(6.55651089e-09, 0.104683228, -5.72204577e-08)
+quaternion = Quaternion(6.81728068e-07, -5.07105142e-07, -8.52742232e-08, 1)
+scale = Vector3(1, 1.00000012, 1.00000012)
+metadata/unity_id = 5695
+metadata/unity_name = "tabard_03_l_end"
+
+[node name="tabard_03_l_end_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/belt/tabard_01_l/tabard_02_l/tabard_03_l/tabard_03_l_end"]
+position = Vector3(-0, 0.104683317, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25970
+metadata/unity_name = "tabard_03_l_end_end"
+
+[node name="tabard_01_m" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/belt"]
+position = Vector3(-1.03290639e-15, 0.139628515, 4.29153424e-08)
+quaternion = Quaternion(-0.0471366979, -1.07665552e-13, -6.97167611e-14, 0.998888433)
+scale = Vector3(1, 1, 0.999999821)
+metadata/unity_id = 24714
+metadata/unity_name = "tabard_01_m"
+
+[node name="tabard_02_m" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/belt/tabard_01_m"]
+position = Vector3(-2.15223838e-14, 0.10403873, -1.35898588e-07)
+quaternion = Quaternion(0.00873687491, -3.88223199e-13, -1.57783224e-13, 0.999961853)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12252
+metadata/unity_name = "tabard_02_m"
+
+[node name="tabard_02_m_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/belt/tabard_01_m/tabard_02_m"]
+position = Vector3(3.82522789e-15, 0.104038768, 8.85128983e-08)
+quaternion = Quaternion(3.03567972e-37, 2.13960319e-14, -6.82966901e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22827
+metadata/unity_name = "tabard_02_m_end"
+
+[node name="tabard_02_m_end_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/belt/tabard_01_m/tabard_02_m/tabard_02_m_end"]
+position = Vector3(-0, 0.104038782, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20622
+metadata/unity_name = "tabard_02_m_end_end"
+
+[node name="tabard_01_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/belt"]
+position = Vector3(0.109463893, -0.00415987941, -0.0188533925)
+quaternion = Quaternion(-0.047136113, -0.000271012512, -0.00572360167, 0.998872042)
+scale = Vector3(1, 0.999999881, 0.999999762)
+metadata/unity_id = 8268
+metadata/unity_name = "tabard_01_r"
+
+[node name="tabard_02_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/belt/tabard_01_r"]
+position = Vector3(5.14090059e-09, 0.104045779, 1.69294072e-08)
+quaternion = Quaternion(0.0011963523, -0.00204730988, 0.00935731828, 0.999953449)
+scale = Vector3(1.00000012, 1.00000024, 1.00000024)
+metadata/unity_id = 25536
+metadata/unity_name = "tabard_02_r"
+
+[node name="tabard_03_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/belt/tabard_01_r/tabard_02_r"]
+position = Vector3(5.66244118e-09, 0.104683131, 6.47082885e-08)
+quaternion = Quaternion(0.141736552, 0.0359288007, 0.217154101, 0.965123832)
+scale = Vector3(1, 1.0000006, 0.999999464)
+metadata/unity_id = 5172
+metadata/unity_name = "tabard_03_r"
+
+[node name="tabard_03_r_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/belt/tabard_01_r/tabard_02_r/tabard_03_r"]
+position = Vector3(-1.40070915e-08, 0.104683228, -2.02655794e-08)
+quaternion = Quaternion(2.60770339e-08, 5.12576662e-07, 5.94300253e-08, 1)
+scale = Vector3(1, 0.99999994, 1)
+metadata/unity_id = 25759
+metadata/unity_name = "tabard_03_r_end"
+
+[node name="tabard_03_r_end_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/belt/tabard_01_r/tabard_02_r/tabard_03_r/tabard_03_r_end"]
+position = Vector3(-0, 0.10468331, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16954
+metadata/unity_name = "tabard_03_r_end_end"
+
+[node name="spine_01" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis"]
+position = Vector3(-3.69409127e-14, 0.247929037, -0.00595945399)
+quaternion = Quaternion(-0.43261531, 5.82790245e-14, 5.22075161e-14, 0.901578605)
+scale = Vector3(1, 0.999999762, 0.999999762)
+metadata/unity_id = 6829
+metadata/unity_name = "spine_01"
+
+[node name="spine_02" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01"]
+position = Vector3(-1.64130929e-14, 0.360221505, 2.28881831e-07)
+quaternion = Quaternion(-0.111369975, -1.15156582e-13, 8.12357384e-14, 0.993779063)
+scale = Vector3(1, 0.999999881, 0.999999881)
+metadata/unity_id = 19815
+metadata/unity_name = "spine_02"
+
+[node name="spine_03" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02"]
+position = Vector3(2.73086336e-14, 0.331360936, -8.58306848e-08)
+quaternion = Quaternion(-0.135208368, 1.23022447e-12, 3.26113343e-14, 0.990817189)
+scale = Vector3(1, 1.00000012, 0.999999821)
+metadata/unity_id = 7768
+metadata/unity_name = "spine_03"
+
+[node name="clavicle_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03"]
+position = Vector3(-0.114189871, 0.373531491, -0.204026178)
+quaternion = Quaternion(-0.933206677, 0.343414217, -0.0260208733, -0.10254208)
+scale = Vector3(0.999999821, 0.999999642, 1)
+metadata/unity_id = 21040
+metadata/unity_name = "clavicle_l"
+
+[node name="upperarm_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l"]
+position = Vector3(-0.01063863, 0.419812888, -0.00835531019)
+quaternion = Quaternion(0.00849808939, 0.744419694, 0.409835428, 0.52706933)
+scale = Vector3(0.99999994, 0.999999464, 0.999999821)
+metadata/unity_id = 17345
+metadata/unity_name = "upperarm_l"
+
+[node name="lowerarm_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l"]
+position = Vector3(-1.54972071e-08, 0.414989948, -1.90734859e-08)
+quaternion = Quaternion(-0.371479511, 0.140538514, 0.120421924, 0.90980798)
+scale = Vector3(1, 1.00000012, 0.999999762)
+metadata/unity_id = 12295
+metadata/unity_name = "lowerarm_l"
+
+[node name="hand_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l"]
+position = Vector3(-4.29153424e-08, 0.509707451, 3.81469718e-08)
+quaternion = Quaternion(-0.0403131992, 0.017868828, 0.0734571889, 0.996323049)
+scale = Vector3(0.999999821, 1.00000012, 1.00000036)
+metadata/unity_id = 16284
+metadata/unity_name = "hand_l"
+
+[node name="index_01_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l"]
+position = Vector3(-0.00885976292, 0.258184344, -0.109262198)
+quaternion = Quaternion(-0.117820568, 0.817831695, 0.0916689113, 0.555757523)
+scale = Vector3(0.999999523, 0.999999762, 0.999999642)
+metadata/unity_id = 16262
+metadata/unity_name = "index_01_l"
+
+[node name="index_02_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l"]
+position = Vector3(2.86102289e-08, 0.0599532835, 4.76837148e-09)
+quaternion = Quaternion(-0.0911798924, -0.00923003256, -0.0200002398, 0.995590806)
+scale = Vector3(1.00000024, 1.00000048, 0.999999821)
+metadata/unity_id = 9772
+metadata/unity_name = "index_02_l"
+
+[node name="index_03_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l"]
+position = Vector3(-6.91413859e-08, 0.0549000166, 8.82148754e-08)
+quaternion = Quaternion(-0.0805567503, 0.0182611104, -0.00187771174, 0.996580958)
+scale = Vector3(0.999999881, 1, 0.999999762)
+metadata/unity_id = 16838
+metadata/unity_name = "index_03_l"
+
+[node name="index_03_l_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l/index_03_l"]
+position = Vector3(-2.86102289e-08, 0.0549000874, 3.87430177e-09)
+quaternion = Quaternion(-8.21659341e-07, -7.70145505e-07, -2.91503966e-07, 1)
+scale = Vector3(1.00000012, 1, 1)
+metadata/unity_id = 19111
+metadata/unity_name = "index_03_l_end"
+
+[node name="index_03_l_end_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l/index_03_l/index_03_l_end"]
+position = Vector3(-0, 0.0549000874, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19415
+metadata/unity_name = "index_03_l_end_end"
+
+[node name="middle_01_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l"]
+position = Vector3(0.0113867018, 0.253161818, 0.00576193305)
+quaternion = Quaternion(-0.0496671833, 0.674914598, 0.177207991, 0.714577377)
+scale = Vector3(0.999999881, 1.00000024, 0.999999523)
+metadata/unity_id = 26630
+metadata/unity_name = "middle_01_l"
+
+[node name="middle_02_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l"]
+position = Vector3(-7.15255721e-09, 0.0636028051, -1.43051144e-08)
+quaternion = Quaternion(-0.0851307064, 0.00160096143, 0.00728161167, 0.996341884)
+scale = Vector3(1, 1, 0.999999702)
+metadata/unity_id = 6297
+metadata/unity_name = "middle_02_l"
+
+[node name="middle_03_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l"]
+position = Vector3(-2.38418565e-08, 0.0663290471, -1.4781952e-07)
+quaternion = Quaternion(-0.0267076641, 0.0301387031, -0.013626432, 0.999095917)
+scale = Vector3(0.999999881, 1, 0.999999881)
+metadata/unity_id = 10665
+metadata/unity_name = "middle_03_l"
+
+[node name="middle_03_l_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l/middle_03_l"]
+position = Vector3(-9.53674295e-09, 0.0663290545, 1.09337265e-07)
+quaternion = Quaternion(1.56575697e-06, 1.96001565e-06, 7.34347907e-07, 1)
+scale = Vector3(0.99999994, 1, 1)
+metadata/unity_id = 23615
+metadata/unity_name = "middle_03_l_end"
+
+[node name="middle_03_l_end_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l/middle_03_l/middle_03_l_end"]
+position = Vector3(-0, 0.0663290024, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7043
+metadata/unity_name = "middle_03_l_end_end"
+
+[node name="ring_01_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l"]
+position = Vector3(-0.023070544, 0.210173681, 0.103208572)
+quaternion = Quaternion(0.0826402307, 0.607835948, 0.196798593, 0.764837503)
+scale = Vector3(0.999999702, 0.99999994, 0.999999285)
+metadata/unity_id = 18801
+metadata/unity_name = "ring_01_l"
+
+[node name="ring_02_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l"]
+position = Vector3(1.16229053e-08, 0.0628475323, 3.93390636e-08)
+quaternion = Quaternion(-0.146675095, -0.0148443468, -0.00776690943, 0.989042878)
+scale = Vector3(0.999999881, 1.00000024, 0.999999821)
+metadata/unity_id = 14492
+metadata/unity_name = "ring_02_l"
+
+[node name="ring_03_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l"]
+position = Vector3(-2.01910737e-08, 0.0598241687, 1.13248824e-08)
+quaternion = Quaternion(-0.0823076367, -0.0181240048, 0.00881786458, 0.996403158)
+scale = Vector3(1, 1, 0.999999762)
+metadata/unity_id = 26399
+metadata/unity_name = "ring_03_l"
+
+[node name="ring_03_l_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l/ring_03_l"]
+position = Vector3(7.30156868e-09, 0.0598242395, -4.05311589e-08)
+quaternion = Quaternion(1.95577741e-06, 1.86220871e-06, -1.20606273e-07, 1)
+scale = Vector3(1, 1, 0.99999994)
+metadata/unity_id = 12849
+metadata/unity_name = "ring_03_l_end"
+
+[node name="ring_03_l_end_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/ring_01_l/ring_02_l/ring_03_l/ring_03_l_end"]
+position = Vector3(-0, 0.0598242097, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10917
+metadata/unity_name = "ring_03_l_end_end"
+
+[node name="thumb_01_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l"]
+position = Vector3(-0.0690358356, 0.0734624192, -0.112017937)
+quaternion = Quaternion(0.329306126, -0.869440138, 0.366527885, -0.0358977132)
+scale = Vector3(0.999999285, 0.999999702, 1.00000036)
+metadata/unity_id = 17194
+metadata/unity_name = "thumb_01_l"
+
+[node name="thumb_02_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l"]
+position = Vector3(1.02519984e-07, 0.0988763124, 9.53674295e-09)
+quaternion = Quaternion(-0.205803141, -0.00902900286, -0.0171244908, 0.978401899)
+scale = Vector3(1.00000012, 1.0000006, 0.999999821)
+metadata/unity_id = 23197
+metadata/unity_name = "thumb_02_l"
+
+[node name="thumb_03_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l"]
+position = Vector3(-7.15255721e-09, 0.0621634088, -9.53674295e-09)
+quaternion = Quaternion(-0.0590318516, -0.00434183329, 0.0106184613, 0.998190224)
+scale = Vector3(1, 1.00000036, 0.99999994)
+metadata/unity_id = 9456
+metadata/unity_name = "thumb_03_l"
+
+[node name="thumb_03_l_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l/thumb_03_l"]
+position = Vector3(-2.62260436e-08, 0.0621633977, 3.33786012e-08)
+quaternion = Quaternion(-5.51342964e-07, 2.37021595e-07, -3.62284482e-07, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9894
+metadata/unity_name = "thumb_03_l_end"
+
+[node name="thumb_03_l_end_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l/thumb_03_l/thumb_03_l_end"]
+position = Vector3(-0, 0.0621634237, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19161
+metadata/unity_name = "thumb_03_l_end_end"
+
+[node name="clavicle_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03"]
+position = Vector3(0.114189997, 0.373531401, -0.20402585)
+quaternion = Quaternion(-0.933206797, -0.343414068, 0.0260206312, -0.102542005)
+scale = Vector3(1.00000072, 1.00000024, 0.99999994)
+metadata/unity_id = 14454
+metadata/unity_name = "clavicle_r"
+
+[node name="upperarm_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r"]
+position = Vector3(0.0106387483, 0.419812918, -0.0083549628)
+quaternion = Quaternion(0.00849766657, -0.744419754, -0.409835637, 0.527069092)
+scale = Vector3(0.999999583, 1, 1.00000036)
+metadata/unity_id = 19755
+metadata/unity_name = "upperarm_r"
+
+[node name="lowerarm_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r"]
+position = Vector3(-5.3644178e-09, 0.41498974, 1.90734859e-08)
+quaternion = Quaternion(-0.371480197, -0.14053838, -0.120421886, 0.909807682)
+scale = Vector3(1, 0.999999881, 1)
+metadata/unity_id = 7499
+metadata/unity_name = "lowerarm_r"
+
+[node name="hand_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r"]
+position = Vector3(5.72204577e-08, 0.509707868, -1.28746024e-07)
+quaternion = Quaternion(-0.0403135121, -0.0178648587, -0.0734597147, 0.99632293)
+scale = Vector3(1.00000024, 1.00000012, 1)
+metadata/unity_id = 16992
+metadata/unity_name = "hand_r"
+
+[node name="index_01_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r"]
+position = Vector3(0.00886091683, 0.25818482, -0.109261997)
+quaternion = Quaternion(-0.117819153, -0.817833781, -0.0916692987, 0.55575484)
+scale = Vector3(0.999999881, 0.999999702, 1.0000006)
+metadata/unity_id = 22693
+metadata/unity_name = "index_01_r"
+
+[node name="index_02_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r"]
+position = Vector3(4.29153424e-08, 0.0599532835, 4.76837148e-09)
+quaternion = Quaternion(-0.0911788121, 0.00922940485, 0.0199998636, 0.995590925)
+scale = Vector3(1, 0.999999821, 0.999999583)
+metadata/unity_id = 14915
+metadata/unity_name = "index_02_r"
+
+[node name="index_03_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r"]
+position = Vector3(-3.57627847e-08, 0.0548999682, -9.53674295e-09)
+quaternion = Quaternion(-0.08055868, -0.018261075, 0.00187605969, 0.996580839)
+scale = Vector3(0.999999821, 0.99999994, 1)
+metadata/unity_id = 8344
+metadata/unity_name = "index_03_r"
+
+[node name="index_03_r_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r/index_03_r"]
+position = Vector3(-9.53674295e-09, 0.0549000651, -6.10947595e-08)
+quaternion = Quaternion(6.789341e-07, -7.43602754e-07, -4.09781876e-07, 1)
+scale = Vector3(1.00000012, 1.00000012, 1.00000012)
+metadata/unity_id = 6090
+metadata/unity_name = "index_03_r_end"
+
+[node name="index_03_r_end_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r/index_03_r/index_03_r_end"]
+position = Vector3(-0, 0.0549000353, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23716
+metadata/unity_name = "index_03_r_end_end"
+
+[node name="middle_01_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r"]
+position = Vector3(-0.0113864494, 0.253161907, 0.00576180452)
+quaternion = Quaternion(-0.0496655703, -0.674916685, -0.177207857, 0.714575529)
+scale = Vector3(1.00000036, 0.999999762, 1.00000036)
+metadata/unity_id = 6048
+metadata/unity_name = "middle_01_r"
+
+[node name="middle_02_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r"]
+position = Vector3(-1.04904174e-07, 0.0636026114, 2.88486461e-07)
+quaternion = Quaternion(-0.0851323903, -0.00159913313, -0.00728103844, 0.996341765)
+scale = Vector3(0.999999762, 1, 0.99999994)
+metadata/unity_id = 19605
+metadata/unity_name = "middle_02_r"
+
+[node name="middle_03_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r"]
+position = Vector3(7.86781271e-08, 0.0663289353, 6.85453401e-08)
+quaternion = Quaternion(-0.026703842, -0.0301436856, 0.013623395, 0.999095917)
+scale = Vector3(1, 1.00000036, 1.00000024)
+metadata/unity_id = 20837
+metadata/unity_name = "middle_03_r"
+
+[node name="middle_03_r_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r/middle_03_r"]
+position = Vector3(3.75509259e-08, 0.0663288608, -3.29036247e-08)
+quaternion = Quaternion(-3.73780551e-07, 6.66943436e-07, 4.81959489e-07, 1)
+scale = Vector3(0.99999994, 0.999999881, 0.99999994)
+metadata/unity_id = 11390
+metadata/unity_name = "middle_03_r_end"
+
+[node name="middle_03_r_end_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r/middle_03_r/middle_03_r_end"]
+position = Vector3(-0, 0.0663288981, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19483
+metadata/unity_name = "middle_03_r_end_end"
+
+[node name="ring_01_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r"]
+position = Vector3(0.0230701044, 0.210173845, 0.10320852)
+quaternion = Quaternion(0.0826421455, -0.60783875, -0.196797401, 0.764835358)
+scale = Vector3(1.00000036, 1.00000024, 0.999999881)
+metadata/unity_id = 14406
+metadata/unity_name = "ring_01_r"
+
+[node name="ring_02_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r"]
+position = Vector3(2.83122059e-08, 0.0628473088, 3.57627847e-08)
+quaternion = Quaternion(-0.146674007, 0.0148429973, 0.00776649732, 0.989043057)
+scale = Vector3(1, 0.999999523, 1)
+metadata/unity_id = 25253
+metadata/unity_name = "ring_02_r"
+
+[node name="ring_03_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r"]
+position = Vector3(1.04308127e-08, 0.0598240979, -5.12599918e-08)
+quaternion = Quaternion(-0.0823064595, 0.0181229785, -0.00881600659, 0.996403277)
+scale = Vector3(0.999999642, 1, 0.999999821)
+metadata/unity_id = 25120
+metadata/unity_name = "ring_03_r"
+
+[node name="ring_03_r_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r/ring_03_r"]
+position = Vector3(2.6822089e-09, 0.0598241426, 2.503395e-08)
+quaternion = Quaternion(-1.05705112e-07, 2.01398507e-08, -6.27944246e-07, 1)
+scale = Vector3(0.99999994, 1, 1)
+metadata/unity_id = 26311
+metadata/unity_name = "ring_03_r_end"
+
+[node name="ring_03_r_end_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/ring_01_r/ring_02_r/ring_03_r/ring_03_r_end"]
+position = Vector3(-0, 0.0598241612, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11807
+metadata/unity_name = "ring_03_r_end_end"
+
+[node name="thumb_01_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r"]
+position = Vector3(0.0690375268, 0.0734633654, -0.11201743)
+quaternion = Quaternion(-0.329306275, -0.869440675, 0.366526604, 0.0358965881)
+scale = Vector3(1.00000107, 0.99999994, 1.00000048)
+metadata/unity_id = 7823
+metadata/unity_name = "thumb_01_r"
+
+[node name="thumb_02_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r"]
+position = Vector3(-7.15255721e-09, 0.0988759995, -0)
+quaternion = Quaternion(-0.205802798, 0.0090298485, 0.0171251167, 0.978401959)
+scale = Vector3(1.00000012, 0.999999762, 1)
+metadata/unity_id = 22822
+metadata/unity_name = "thumb_02_r"
+
+[node name="thumb_03_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r"]
+position = Vector3(-1.90734859e-08, 0.0621636957, -2.86102289e-08)
+quaternion = Quaternion(-0.0590345785, 0.00433872733, -0.0106191337, 0.998190045)
+scale = Vector3(0.999999821, 1, 0.999999821)
+metadata/unity_id = 10227
+metadata/unity_name = "thumb_03_r"
+
+[node name="thumb_03_r_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r/thumb_03_r"]
+position = Vector3(4.29153424e-08, 0.0621635728, -3.81469718e-08)
+quaternion = Quaternion(8.49366188e-07, 9.68109816e-07, 1.43423676e-07, 1)
+scale = Vector3(0.99999994, 1, 1)
+metadata/unity_id = 24132
+metadata/unity_name = "thumb_03_r_end"
+
+[node name="thumb_03_r_end_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r/thumb_03_r/thumb_03_r_end"]
+position = Vector3(-0, 0.0621635765, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18590
+metadata/unity_name = "thumb_03_r_end_end"
+
+[node name="neck_01" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03"]
+position = Vector3(-9.99983474e-09, 0.409312874, -0.0393185131)
+quaternion = Quaternion(-0.337431192, -5.75377961e-13, -6.56939455e-13, 0.941350222)
+scale = Vector3(1, 1.00000024, 1.00000012)
+metadata/unity_id = 24110
+metadata/unity_name = "neck_01"
+
+[node name="neck_02" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/neck_01"]
+position = Vector3(-1.81806694e-14, 0.247667447, 2.19345083e-07)
+quaternion = Quaternion(-0.0605059452, -6.88093842e-13, 1.63779106e-13, 0.998167872)
+scale = Vector3(1, 0.999999762, 0.999999762)
+metadata/unity_id = 20298
+metadata/unity_name = "neck_02"
+
+[node name="head" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02"]
+position = Vector3(-7.00210696e-14, 0.208505467, -1.52587887e-07)
+quaternion = Quaternion(0.628085136, 7.28826111e-14, -3.58475131e-13, 0.778144598)
+scale = Vector3(1, 1, 0.999999583)
+metadata/unity_id = 9762
+metadata/unity_name = "head"
+
+[node name="eye_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/head"]
+position = Vector3(-0.0688080788, 0.0660161227, -0.0820668042)
+quaternion = Quaternion(2.31983478e-07, -0.932837248, 0.360298127, -0.000234669176)
+scale = Vector3(1.00000036, 1.00000036, 1.00000012)
+metadata/unity_id = 9916
+metadata/unity_name = "eye_l"
+
+[node name="eye_l_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/head/eye_l"]
+position = Vector3(-1.88127158e-09, 0.109205909, -4.18210391e-08)
+quaternion = Quaternion(-1.05935214e-07, -1.58306079e-09, 1.3128159e-08, 1)
+scale = Vector3(1, 0.99999994, 1)
+metadata/unity_id = 25957
+metadata/unity_name = "eye_l_end"
+
+[node name="eye_l_end_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/head/eye_l/eye_l_end"]
+position = Vector3(-0, 0.109205857, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13414
+metadata/unity_name = "eye_l_end_end"
+
+[node name="eye_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/head"]
+position = Vector3(0.0688081533, 0.0660162345, -0.0820666105)
+quaternion = Quaternion(-6.39245457e-07, -0.932837188, 0.360298157, -0.000232415783)
+scale = Vector3(1.00000036, 1.00000012, 1.00000024)
+metadata/unity_id = 20300
+metadata/unity_name = "eye_r"
+
+[node name="eye_r_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/head/eye_r"]
+position = Vector3(2.0023434e-09, 0.109205805, 8.09691798e-08)
+quaternion = Quaternion(-1.0291059e-07, -2.68099996e-08, 1.30683588e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23457
+metadata/unity_name = "eye_r_end"
+
+[node name="eye_r_end_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/head/eye_r/eye_r_end"]
+position = Vector3(-0, 0.109205775, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8065
+metadata/unity_name = "eye_r_end_end"
+
+[node name="jaw" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/head"]
+position = Vector3(3.00000202e-08, -0.0569787584, -0.0493692011)
+quaternion = Quaternion(-0.80207032, -2.63302157e-13, 5.7050431e-13, 0.597229719)
+scale = Vector3(1, 0.999999881, 1.00000024)
+metadata/unity_id = 22582
+metadata/unity_name = "jaw"
+
+[node name="jaw_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/head/jaw"]
+position = Vector3(2.00988531e-15, 0.109205797, -3.81469718e-08)
+quaternion = Quaternion(-1.17550468e-35, 1.42108784e-14, -2.08206424e-14, 1)
+scale = Vector3(1, 0.99999994, 0.99999994)
+metadata/unity_id = 17413
+metadata/unity_name = "jaw_end"
+
+[node name="jaw_end_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/head/jaw/jaw_end"]
+position = Vector3(-0, 0.109205768, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8339
+metadata/unity_name = "jaw_end_end"
+
+[node name="tongue_01" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/head"]
+position = Vector3(6.00000618e-08, -0.0259292591, -0.106711082)
+quaternion = Quaternion(-0.768347561, -1.46339497e-13, 2.53807473e-13, 0.640032828)
+scale = Vector3(1, 0.999999821, 1)
+metadata/unity_id = 14837
+metadata/unity_name = "tongue_01"
+
+[node name="tongue_02" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/head/tongue_01"]
+position = Vector3(-6.5121172e-15, 0.0406200588, 7.62939436e-08)
+quaternion = Quaternion(0.0135295149, -4.31363895e-14, 2.24395748e-14, 0.999908507)
+scale = Vector3(1, 0.99999994, 0.999999762)
+metadata/unity_id = 10252
+metadata/unity_name = "tongue_02"
+
+[node name="tongue_03" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/head/tongue_01/tongue_02"]
+position = Vector3(-3.40887033e-15, 0.0477338769, -3.81469718e-08)
+quaternion = Quaternion(0.0589671098, -2.62329356e-13, -2.86856964e-13, 0.998259962)
+scale = Vector3(1, 1.00000012, 1.00000024)
+metadata/unity_id = 25175
+metadata/unity_name = "tongue_03"
+
+[node name="tongue_04" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/head/tongue_01/tongue_02/tongue_03"]
+position = Vector3(-4.59524776e-15, 0.0493046753, -3.81469718e-08)
+quaternion = Quaternion(0.0093649216, 2.62594742e-13, 4.80940049e-13, 0.999956191)
+scale = Vector3(1, 1.00000012, 1)
+metadata/unity_id = 26969
+metadata/unity_name = "tongue_04"
+
+[node name="tongue_05" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/head/tongue_01/tongue_02/tongue_03/tongue_04"]
+position = Vector3(6.83802837e-15, 0.0247652046, -3.81469718e-08)
+quaternion = Quaternion(-0.233056948, 2.904189e-14, -3.44436475e-13, 0.972463071)
+scale = Vector3(1, 0.999999642, 0.999999881)
+metadata/unity_id = 7089
+metadata/unity_name = "tongue_05"
+
+[node name="tongue_05_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/head/tongue_01/tongue_02/tongue_03/tongue_04/tongue_05"]
+position = Vector3(4.51721976e-17, 0.024765214, -0)
+quaternion = Quaternion(7.67409801e-07, 1.95399456e-14, 3.55770209e-13, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12417
+metadata/unity_name = "tongue_05_end"
+
+[node name="tongue_05_end_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/spine_03/neck_01/neck_02/head/tongue_01/tongue_02/tongue_03/tongue_04/tongue_05/tongue_05_end"]
+position = Vector3(-0, 0.0247652214, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5384
+metadata/unity_name = "tongue_05_end_end"
+
+[node name="wing_01_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02"]
+position = Vector3(-0.116771035, 0.0991902724, 0.31551668)
+quaternion = Quaternion(0.212773263, 0.134924293, 0.65425396, 0.713074148)
+scale = Vector3(1, 0.999999821, 0.999999821)
+metadata/unity_id = 9591
+metadata/unity_name = "wing_01_l"
+
+[node name="wing_02_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/wing_01_l"]
+position = Vector3(2.38418565e-08, 0.329203337, 3.81469718e-08)
+quaternion = Quaternion(-0.222937584, -0.00157935917, -0.233297929, 0.946503282)
+scale = Vector3(0.999999881, 0.999999642, 0.99999994)
+metadata/unity_id = 17381
+metadata/unity_name = "wing_02_l"
+
+[node name="wing_03_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/wing_01_l/wing_02_l"]
+position = Vector3(-3.81469718e-08, 0.382495612, 4.7683713e-08)
+quaternion = Quaternion(-0.0304945149, 0.020403184, -0.142461598, 0.989120066)
+scale = Vector3(1.00000012, 1.00000024, 0.999999881)
+metadata/unity_id = 6411
+metadata/unity_name = "wing_03_l"
+
+[node name="wing_04_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/wing_01_l/wing_02_l/wing_03_l"]
+position = Vector3(-5.72204577e-08, 0.391783208, 5.72204577e-08)
+quaternion = Quaternion(0.0325792469, -0.0487462766, -0.656883061, 0.751709402)
+scale = Vector3(0.999999762, 0.99999994, 0.999999583)
+metadata/unity_id = 9614
+metadata/unity_name = "wing_04_l"
+
+[node name="wing_b_01_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/wing_01_l/wing_02_l/wing_03_l/wing_04_l"]
+position = Vector3(0.0409056097, -0.101683788, 0.000119395256)
+quaternion = Quaternion(-0.245376527, -0.0885951445, 0.926356912, -0.271669179)
+scale = Vector3(0.999999464, 1.00000012, 1.00000012)
+metadata/unity_id = 8364
+metadata/unity_name = "wing_b_01_l"
+
+[node name="wing_b_02_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/wing_01_l/wing_02_l/wing_03_l/wing_04_l/wing_b_01_l"]
+position = Vector3(-4.29153424e-08, 0.435667604, 1.14440915e-07)
+quaternion = Quaternion(-0.217330158, 0.00469508907, -0.000829088094, 0.976086557)
+scale = Vector3(0.999999762, 0.99999994, 0.999999821)
+metadata/unity_id = 18881
+metadata/unity_name = "wing_b_02_l"
+
+[node name="wing_b_03_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/wing_01_l/wing_02_l/wing_03_l/wing_04_l/wing_b_01_l/wing_b_02_l"]
+position = Vector3(-4.76837148e-09, 0.280186832, 1.14440915e-07)
+quaternion = Quaternion(-0.157606646, -0.00146937068, 0.0284406543, 0.987091243)
+scale = Vector3(1, 0.999999881, 1)
+metadata/unity_id = 25117
+metadata/unity_name = "wing_b_03_l"
+
+[node name="wing_b_03_l_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/wing_01_l/wing_02_l/wing_03_l/wing_04_l/wing_b_01_l/wing_b_02_l/wing_b_03_l"]
+position = Vector3(-1.04904174e-07, 0.280186504, 3.81469718e-08)
+quaternion = Quaternion(-3.42726707e-07, -7.45058015e-09, -8.94069672e-08, 1)
+scale = Vector3(1, 1, 1.00000012)
+metadata/unity_id = 24814
+metadata/unity_name = "wing_b_03_l_end"
+
+[node name="wing_b_03_l_end_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/wing_01_l/wing_02_l/wing_03_l/wing_04_l/wing_b_01_l/wing_b_02_l/wing_b_03_l/wing_b_03_l_end"]
+position = Vector3(-0, 0.280186445, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13144
+metadata/unity_name = "wing_b_03_l_end_end"
+
+[node name="wing_c_01_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/wing_01_l/wing_02_l/wing_03_l/wing_04_l"]
+position = Vector3(-0.135286197, -0.0667780265, -0.0459786206)
+quaternion = Quaternion(-0.230823562, -0.214402393, 0.949071169, -0.00399834709)
+scale = Vector3(0.999999642, 0.999999821, 0.99999851)
+metadata/unity_id = 7936
+metadata/unity_name = "wing_c_01_l"
+
+[node name="wing_c_02_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/wing_01_l/wing_02_l/wing_03_l/wing_04_l/wing_c_01_l"]
+position = Vector3(-1.52587887e-07, 0.472331762, -4.7683713e-08)
+quaternion = Quaternion(-0.116946273, -0.0105466004, -0.00821990054, 0.993048251)
+scale = Vector3(1.00000024, 0.99999994, 0.999999702)
+metadata/unity_id = 23230
+metadata/unity_name = "wing_c_02_l"
+
+[node name="wing_c_03_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/wing_01_l/wing_02_l/wing_03_l/wing_04_l/wing_c_01_l/wing_c_02_l"]
+position = Vector3(1.62124635e-07, 0.472266048, 1.52587887e-07)
+quaternion = Quaternion(-0.263351589, 0.0020344262, -0.0294334143, 0.964248657)
+scale = Vector3(1.00000012, 1.00000024, 1.00000048)
+metadata/unity_id = 8319
+metadata/unity_name = "wing_c_03_l"
+
+[node name="wing_c_03_l_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/wing_01_l/wing_02_l/wing_03_l/wing_04_l/wing_c_01_l/wing_c_02_l/wing_c_03_l"]
+position = Vector3(-8.82148754e-08, 0.472265691, -7.21216153e-08)
+quaternion = Quaternion(-3.90049593e-07, -1.15280287e-07, -2.56113736e-07, 1)
+scale = Vector3(0.99999994, 0.99999994, 0.99999994)
+metadata/unity_id = 7483
+metadata/unity_name = "wing_c_03_l_end"
+
+[node name="wing_c_03_l_end_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/wing_01_l/wing_02_l/wing_03_l/wing_04_l/wing_c_01_l/wing_c_02_l/wing_c_03_l/wing_c_03_l_end"]
+position = Vector3(-0, 0.47226584, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15186
+metadata/unity_name = "wing_c_03_l_end_end"
+
+[node name="wing_a_01_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/wing_01_l"]
+position = Vector3(2.38418565e-08, 0.329203337, 3.81469718e-08)
+quaternion = Quaternion(-0.272215188, 0.0915971473, 0.58877337, 0.755549312)
+scale = Vector3(0.999999702, 0.99999994, 1.00000012)
+metadata/unity_id = 16635
+metadata/unity_name = "wing_a_01_l"
+
+[node name="wing_a_02_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/wing_01_l/wing_a_01_l"]
+position = Vector3(7.62939436e-08, 0.254009008, -1.76429751e-07)
+quaternion = Quaternion(-0.146204919, -0.00794931874, 0.0986561179, 0.9842906)
+scale = Vector3(1, 0.999999881, 1)
+metadata/unity_id = 25828
+metadata/unity_name = "wing_a_02_l"
+
+[node name="wing_a_02_l_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/wing_01_l/wing_a_01_l/wing_a_02_l"]
+position = Vector3(-5.24520871e-08, 0.254009217, 1.4781952e-07)
+quaternion = Quaternion(-3.91155446e-08, 2.24448726e-07, -4.30271001e-07, 1)
+scale = Vector3(1, 1.00000012, 1.00000012)
+metadata/unity_id = 4709
+metadata/unity_name = "wing_a_02_l_end"
+
+[node name="wing_a_02_l_end_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/wing_01_l/wing_a_01_l/wing_a_02_l/wing_a_02_l_end"]
+position = Vector3(-0, 0.254009217, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13783
+metadata/unity_name = "wing_a_02_l_end_end"
+
+[node name="wing_01_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02"]
+position = Vector3(0.116770588, 0.0991901979, 0.31551671)
+quaternion = Quaternion(0.212773666, -0.134925485, -0.65425396, 0.71307379)
+scale = Vector3(0.999999881, 0.999999702, 0.99999994)
+metadata/unity_id = 17000
+metadata/unity_name = "wing_01_r"
+
+[node name="wing_02_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/wing_01_r"]
+position = Vector3(4.7683713e-08, 0.329203039, -1.33514405e-07)
+quaternion = Quaternion(-0.222937927, 0.00157947512, 0.233298749, 0.946502984)
+scale = Vector3(0.999999881, 0.999999404, 1.00000024)
+metadata/unity_id = 7543
+metadata/unity_name = "wing_02_r"
+
+[node name="wing_03_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/wing_01_r/wing_02_r"]
+position = Vector3(-1.90734859e-08, 0.382495731, -3.33786012e-08)
+quaternion = Quaternion(-0.0304941013, -0.0204038955, 0.142461926, 0.989120007)
+scale = Vector3(0.999999762, 1.00000024, 1)
+metadata/unity_id = 26099
+metadata/unity_name = "wing_03_r"
+
+[node name="wing_04_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/wing_01_r/wing_02_r/wing_03_r"]
+position = Vector3(5.72204577e-08, 0.391783148, 5.72204577e-08)
+quaternion = Quaternion(0.0325798988, 0.0487448052, 0.656882942, 0.75170958)
+scale = Vector3(0.999999762, 1.00000024, 0.999999881)
+metadata/unity_id = 18485
+metadata/unity_name = "wing_04_r"
+
+[node name="wing_b_01_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/wing_01_r/wing_02_r/wing_03_r/wing_04_r"]
+position = Vector3(-0.0409057625, -0.101684228, 0.000119585988)
+quaternion = Quaternion(0.245379522, -0.0885955989, 0.926356077, 0.271669209)
+scale = Vector3(0.999999166, 1.00000107, 0.999999881)
+metadata/unity_id = 25786
+metadata/unity_name = "wing_b_01_r"
+
+[node name="wing_b_02_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/wing_01_r/wing_02_r/wing_03_r/wing_04_r/wing_b_01_r"]
+position = Vector3(-6.19888283e-08, 0.435667902, -1.14440915e-07)
+quaternion = Quaternion(-0.217330188, -0.00469490234, 0.00082952698, 0.976086557)
+scale = Vector3(0.999999881, 0.999999762, 0.999999762)
+metadata/unity_id = 19104
+metadata/unity_name = "wing_b_02_r"
+
+[node name="wing_b_03_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/wing_01_r/wing_02_r/wing_03_r/wing_04_r/wing_b_01_r/wing_b_02_r"]
+position = Vector3(-7.62939436e-08, 0.28018707, 3.81469718e-08)
+quaternion = Quaternion(-0.157607228, 0.00146964833, -0.0284397975, 0.987091184)
+scale = Vector3(0.99999994, 1.00000012, 1.00000036)
+metadata/unity_id = 16810
+metadata/unity_name = "wing_b_03_r"
+
+[node name="wing_b_03_r_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/wing_01_r/wing_02_r/wing_03_r/wing_04_r/wing_b_01_r/wing_b_02_r/wing_b_03_r"]
+position = Vector3(2.86102289e-08, 0.280186951, -1.52587887e-07)
+quaternion = Quaternion(9.68575478e-08, 1.15483999e-07, -1.67638063e-07, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8269
+metadata/unity_name = "wing_b_03_r_end"
+
+[node name="wing_b_03_r_end_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/wing_01_r/wing_02_r/wing_03_r/wing_04_r/wing_b_01_r/wing_b_02_r/wing_b_03_r/wing_b_03_r_end"]
+position = Vector3(-0, 0.280187041, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20396
+metadata/unity_name = "wing_b_03_r_end_end"
+
+[node name="wing_c_01_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/wing_01_r/wing_02_r/wing_03_r/wing_04_r"]
+position = Vector3(0.135286406, -0.0667779595, -0.045978751)
+quaternion = Quaternion(0.230825558, -0.2144036, 0.949070513, 0.00399272097)
+scale = Vector3(0.99999994, 0.999999821, 0.999998987)
+metadata/unity_id = 8177
+metadata/unity_name = "wing_c_01_r"
+
+[node name="wing_c_02_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/wing_01_r/wing_02_r/wing_03_r/wing_04_r/wing_c_01_r"]
+position = Vector3(1.14440915e-07, 0.472332597, -1.90734859e-08)
+quaternion = Quaternion(-0.116945475, 0.0105462363, 0.00822054129, 0.99304831)
+scale = Vector3(1, 0.999999821, 0.999999881)
+metadata/unity_id = 17559
+metadata/unity_name = "wing_c_02_r"
+
+[node name="wing_c_03_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/wing_01_r/wing_02_r/wing_03_r/wing_04_r/wing_c_01_r/wing_c_02_r"]
+position = Vector3(-9.53674295e-09, 0.472265691, -3.81469718e-08)
+quaternion = Quaternion(-0.263352513, -0.00203320966, 0.029433405, 0.964248419)
+scale = Vector3(1, 1.00000012, 0.999999762)
+metadata/unity_id = 7241
+metadata/unity_name = "wing_c_03_r"
+
+[node name="wing_c_03_r_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/wing_01_r/wing_02_r/wing_03_r/wing_04_r/wing_c_01_r/wing_c_02_r/wing_c_03_r"]
+position = Vector3(9.05990589e-08, 0.472265959, -5.27501101e-08)
+quaternion = Quaternion(1.10478133e-07, -1.27070962e-07, 1.17346644e-07, 1)
+scale = Vector3(1, 1, 1.00000012)
+metadata/unity_id = 10456
+metadata/unity_name = "wing_c_03_r_end"
+
+[node name="wing_c_03_r_end_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/wing_01_r/wing_02_r/wing_03_r/wing_04_r/wing_c_01_r/wing_c_02_r/wing_c_03_r/wing_c_03_r_end"]
+position = Vector3(-0, 0.472265452, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8587
+metadata/unity_name = "wing_c_03_r_end_end"
+
+[node name="wing_a_01_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/wing_01_r"]
+position = Vector3(4.7683713e-08, 0.329203039, -1.33514405e-07)
+quaternion = Quaternion(-0.272215277, -0.0915965214, -0.588773131, 0.75554955)
+scale = Vector3(0.999999404, 0.99999994, 1.00000036)
+metadata/unity_id = 20280
+metadata/unity_name = "wing_a_01_r"
+
+[node name="wing_a_02_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/wing_01_r/wing_a_01_r"]
+position = Vector3(1.90734859e-08, 0.254008681, 8.10623177e-08)
+quaternion = Quaternion(-0.14620474, 0.00794939324, -0.0986558795, 0.984290659)
+scale = Vector3(0.99999994, 0.999999583, 0.999999821)
+metadata/unity_id = 14098
+metadata/unity_name = "wing_a_02_r"
+
+[node name="wing_a_02_r_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/wing_01_r/wing_a_01_r/wing_a_02_r"]
+position = Vector3(-1.43051144e-08, 0.254008949, 4.76837148e-09)
+quaternion = Quaternion(-3.49245965e-08, -1.61118805e-07, 3.27825546e-07, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24163
+metadata/unity_name = "wing_a_02_r_end"
+
+[node name="wing_a_02_r_end_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/spine_01/spine_02/wing_01_r/wing_a_01_r/wing_a_02_r/wing_a_02_r_end"]
+position = Vector3(-0, 0.254008949, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18158
+metadata/unity_name = "wing_a_02_r_end_end"
+
+[node name="tail_01" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis"]
+position = Vector3(-5.99999908e-08, 0.112390026, 0.241307661)
+quaternion = Quaternion(0.831214964, -4.42054128e-15, 1.06524032e-14, 0.555951178)
+scale = Vector3(1, 1.00000012, 1.00000024)
+metadata/unity_id = 15339
+metadata/unity_name = "tail_01"
+
+[node name="tail_02" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/tail_01"]
+position = Vector3(-3.99999642e-08, 0.28851223, -1.90734852e-07)
+quaternion = Quaternion(-0.0104453377, -1.10429664e-13, 1.64022255e-14, 0.999945462)
+scale = Vector3(1, 1.00000012, 0.99999994)
+metadata/unity_id = 5760
+metadata/unity_name = "tail_02"
+
+[node name="tail_03" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/tail_01/tail_02"]
+position = Vector3(-4.00000069e-08, 0.297143757, 3.81469718e-08)
+quaternion = Quaternion(-0.0165057946, -6.37424751e-14, -7.54155852e-14, 0.999863803)
+scale = Vector3(1, 1, 1.00000012)
+metadata/unity_id = 27115
+metadata/unity_name = "tail_03"
+
+[node name="tail_04" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/tail_01/tail_02/tail_03"]
+position = Vector3(-2.0000007e-08, 0.258591175, -0)
+quaternion = Quaternion(-0.0129176462, 7.00742438e-15, 9.17580898e-14, 0.999916553)
+scale = Vector3(1, 0.999999642, 0.999999881)
+metadata/unity_id = 9777
+metadata/unity_name = "tail_04"
+
+[node name="tail_05" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/tail_01/tail_02/tail_03/tail_04"]
+position = Vector3(-9.99995731e-09, 0.214779526, -1.90734852e-07)
+quaternion = Quaternion(-0.0177630261, 8.00252131e-14, 3.67121156e-14, 0.999842227)
+scale = Vector3(1, 1.00000012, 0.99999994)
+metadata/unity_id = 14063
+metadata/unity_name = "tail_05"
+
+[node name="tail_06" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/tail_01/tail_02/tail_03/tail_04/tail_05"]
+position = Vector3(3.20244014e-14, 0.169069707, -1.90734859e-08)
+quaternion = Quaternion(-0.023558991, -1.0427876e-14, -1.83514608e-13, 0.999722481)
+scale = Vector3(1, 0.999999821, 0.999999821)
+metadata/unity_id = 20587
+metadata/unity_name = "tail_06"
+
+[node name="tail_07" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/tail_01/tail_02/tail_03/tail_04/tail_05/tail_06"]
+position = Vector3(-5.60829595e-14, 0.128812507, 1.7166137e-07)
+quaternion = Quaternion(-0.00939083938, -1.30585687e-13, 2.42304464e-14, 0.999955893)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9444
+metadata/unity_name = "tail_07"
+
+[node name="tail_07_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/tail_01/tail_02/tail_03/tail_04/tail_05/tail_06/tail_07"]
+position = Vector3(4.17347575e-15, 0.12881273, -1.90734859e-08)
+quaternion = Quaternion(1.7136334e-07, 2.8421723e-14, 2.029923e-13, 1)
+scale = Vector3(1, 1.00000012, 1.00000012)
+metadata/unity_id = 17646
+metadata/unity_name = "tail_07_end"
+
+[node name="tail_07_end_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/tail_01/tail_02/tail_03/tail_04/tail_05/tail_06/tail_07/tail_07_end"]
+position = Vector3(-0, 0.128812641, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16295
+metadata/unity_name = "tail_07_end_end"
+
+[node name="thigh_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis"]
+position = Vector3(-0.150997981, 0.110865839, 0.0570920296)
+quaternion = Quaternion(-0.913162649, 0.23424001, 0.111507893, 0.314374954)
+scale = Vector3(1, 0.999999702, 0.999999762)
+metadata/unity_id = 10867
+metadata/unity_name = "thigh_l"
+
+[node name="calf_01_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/thigh_l"]
+position = Vector3(-0, 0.423634797, -6.91413859e-08)
+quaternion = Quaternion(-0.662683845, 0.116500251, -0.00694476441, 0.73974967)
+scale = Vector3(0.999999583, 1.00000012, 0.999999762)
+metadata/unity_id = 9376
+metadata/unity_name = "calf_01_l"
+
+[node name="calf_02_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/thigh_l/calf_01_l"]
+position = Vector3(-9.53674295e-09, 0.220286071, 9.5367426e-08)
+quaternion = Quaternion(0.326647073, 0.0990514383, -0.0471112728, 0.93876034)
+scale = Vector3(0.99999994, 0.999999702, 1.00000012)
+metadata/unity_id = 10744
+metadata/unity_name = "calf_02_l"
+
+[node name="foot_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/thigh_l/calf_01_l/calf_02_l"]
+position = Vector3(1.54972071e-08, 0.153998286, -2.74181353e-08)
+quaternion = Quaternion(0.692221522, -0.0799887255, -0.0314349532, 0.716549397)
+scale = Vector3(0.999999881, 1.00000024, 0.999999583)
+metadata/unity_id = 11684
+metadata/unity_name = "foot_l"
+
+[node name="ball_l" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/thigh_l/calf_01_l/calf_02_l/foot_l"]
+position = Vector3(3.76999374e-08, 0.206876233, 7.74860354e-09)
+quaternion = Quaternion(0.0359363668, 0.000401709374, -0.00727917347, 0.999327481)
+scale = Vector3(0.999999821, 0.999999404, 1)
+metadata/unity_id = 9311
+metadata/unity_name = "ball_l"
+
+[node name="ball_l_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/thigh_l/calf_01_l/calf_02_l/foot_l/ball_l"]
+position = Vector3(2.22027303e-08, 0.206876174, 7.4505806e-09)
+quaternion = Quaternion(1.14319832e-07, 2.57533975e-06, 1.95868779e-07, 1)
+scale = Vector3(0.99999994, 1.00000012, 1.00000012)
+metadata/unity_id = 14325
+metadata/unity_name = "ball_l_end"
+
+[node name="ball_l_end_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/thigh_l/calf_01_l/calf_02_l/foot_l/ball_l/ball_l_end"]
+position = Vector3(-0, 0.206876084, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11336
+metadata/unity_name = "ball_l_end_end"
+
+[node name="thigh_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis"]
+position = Vector3(0.150997877, 0.110865839, 0.0570921078)
+quaternion = Quaternion(-0.913162529, -0.234240428, -0.111507885, 0.314375043)
+scale = Vector3(0.99999994, 0.999999583, 0.999999285)
+metadata/unity_id = 11627
+metadata/unity_name = "thigh_r"
+
+[node name="calf_01_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/thigh_r"]
+position = Vector3(1.90734859e-08, 0.423634946, -1.90734859e-08)
+quaternion = Quaternion(-0.662683487, -0.116500497, 0.00694522215, 0.739749968)
+scale = Vector3(1, 1.00000012, 1.00000012)
+metadata/unity_id = 20522
+metadata/unity_name = "calf_01_r"
+
+[node name="calf_02_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/thigh_r/calf_01_r"]
+position = Vector3(-4.7683713e-08, 0.220285714, 1.04904174e-07)
+quaternion = Quaternion(0.326646626, -0.0990516841, 0.0471107811, 0.938760519)
+scale = Vector3(0.999999821, 0.999999285, 0.999999523)
+metadata/unity_id = 17571
+metadata/unity_name = "calf_02_r"
+
+[node name="foot_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/thigh_r/calf_01_r/calf_02_r"]
+position = Vector3(-1.96695318e-08, 0.153998032, -1.15633007e-07)
+quaternion = Quaternion(0.692220688, 0.0799922347, 0.0314397402, 0.716549575)
+scale = Vector3(0.999999821, 1.00000012, 1.00000012)
+metadata/unity_id = 17574
+metadata/unity_name = "foot_r"
+
+[node name="ball_r" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/thigh_r/calf_01_r/calf_02_r/foot_r"]
+position = Vector3(7.22706304e-08, 0.206875667, -1.04308127e-08)
+quaternion = Quaternion(0.0359364636, -0.00041109958, 0.00727767544, 0.999327481)
+scale = Vector3(0.999999821, 0.999999464, 0.999999821)
+metadata/unity_id = 25956
+metadata/unity_name = "ball_r"
+
+[node name="ball_r_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/thigh_r/calf_01_r/calf_02_r/foot_r/ball_r"]
+position = Vector3(-6.04987136e-08, 0.206875816, -5.96046434e-10)
+quaternion = Quaternion(2.35333545e-07, -1.63307413e-06, 2.39815563e-08, 1)
+scale = Vector3(0.99999994, 1.00000012, 1.00000012)
+metadata/unity_id = 11516
+metadata/unity_name = "ball_r_end"
+
+[node name="ball_r_end_end" type="Node3D" parent="DemonBoss/DemonBoss_Model/root/pelvis/thigh_r/calf_01_r/calf_02_r/foot_r/ball_r/ball_r_end"]
+position = Vector3(-0, 0.206875801, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10609
+metadata/unity_name = "ball_r_end_end"
+
+[node name="Wings_2Sided" type="Node3D" parent="DemonBoss/DemonBoss_Model"]
+position = Vector3(9.53674295e-09, 7.15255943e-09, -2.51084558e-08)
+quaternion = Quaternion(0.707106829, 3.95126687e-09, 4.93908425e-09, 0.707106709)
+scale = Vector3(1, 0.999999881, 1)
+metadata/unity_id = 25167
+metadata/unity_name = "Wings_2Sided"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="DemonBoss/DemonBoss_Model/Wings_2Sided"]
+mesh = ExtResource("6")
+visible = true
+surface_material_override/0 = ExtResource("7")
+
+[node name="OverheadSlot" type="Node3D" parent="DemonBoss"]
+position = Vector3(0, 5, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25409
+metadata/unity_name = "OverheadSlot"
+
+[node name="VFXParent" type="Node3D" parent="DemonBoss"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20553
+metadata/unity_name = "VFXParent"
+
+[node name="VFX_DemonBoss_BasicAttack" type="Node3D" parent="DemonBoss/VFXParent"]
+position = Vector3(-0.0299999993, 0.810000002, 0.0399999991)
+quaternion = Quaternion(-0.854097903, -0.321618289, -0.154227182, 0.37853992)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25326
+metadata/unity_name = "VFX_DemonBoss_BasicAttack"
+
+[node name="root" type="Node3D" parent="DemonBoss/VFXParent/VFX_DemonBoss_BasicAttack"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15338
+metadata/unity_name = "root"
+
+[node name="Slash_01_White" type="Node3D" parent="DemonBoss/VFXParent/VFX_DemonBoss_BasicAttack/root"]
+position = Vector3(0.839999974, -0.970000029, 1.70999968)
+quaternion = Quaternion(0.116294615, 0.158255279, 0.00176419853, 0.980524182)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20003
+metadata/unity_name = "Slash_01_White"
+
+[node name="Slash_02" type="Node3D" parent="DemonBoss/VFXParent/VFX_DemonBoss_BasicAttack/root"]
+position = Vector3(0.839999974, -0.970000029, 1.70999968)
+quaternion = Quaternion(0.116294615, 0.158255279, 0.00176419853, 0.980524182)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20842
+metadata/unity_name = "Slash_02"
+
+[node name="Slash_03_Dark" type="Node3D" parent="DemonBoss/VFXParent/VFX_DemonBoss_BasicAttack/root"]
+position = Vector3(0.839999974, -0.970000029, 1.70999968)
+quaternion = Quaternion(0.116294615, 0.158255279, 0.00176419853, 0.980524182)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18609
+metadata/unity_name = "Slash_03_Dark"
+
+[node name="Leaves_01" type="Node3D" parent="DemonBoss/VFXParent/VFX_DemonBoss_BasicAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10103
+metadata/unity_name = "Leaves_01"
+
+[node name="CameraShake_low" type="Node3D" parent="DemonBoss/VFXParent"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18099
+metadata/unity_name = "CameraShake_low"
+
+[node name="VFX_DemonBoss_SkillAttack" type="Node3D" parent="DemonBoss/VFXParent"]
+position = Vector3(0.230000004, 0.100000001, -2.1500001)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14518
+metadata/unity_name = "VFX_DemonBoss_SkillAttack"
+
+[node name="root" type="Node3D" parent="DemonBoss/VFXParent/VFX_DemonBoss_SkillAttack"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14834
+metadata/unity_name = "root"
+
+[node name="Leaf_01" type="Node3D" parent="DemonBoss/VFXParent/VFX_DemonBoss_SkillAttack/root"]
+position = Vector3(-0, 5.01999998, -0)
+quaternion = Quaternion(0, 0, -2.98023224e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23674
+metadata/unity_name = "Leaf_01"
+
+[node name="Impact_01" type="Node3D" parent="DemonBoss/VFXParent/VFX_DemonBoss_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9082
+metadata/unity_name = "Impact_01"
+
+[node name="Vertical_01" type="Node3D" parent="DemonBoss/VFXParent/VFX_DemonBoss_SkillAttack/root"]
+position = Vector3(-0.159999996, 0, -0.159999996)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15030
+metadata/unity_name = "Vertical_01"
+
+[node name="Vertical_02" type="Node3D" parent="DemonBoss/VFXParent/VFX_DemonBoss_SkillAttack/root"]
+position = Vector3(2.63000011, 0, 2.57999992)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10208
+metadata/unity_name = "Vertical_02"
+
+[node name="Vertical_03" type="Node3D" parent="DemonBoss/VFXParent/VFX_DemonBoss_SkillAttack/root"]
+position = Vector3(2.11999989, 0, -1.50999999)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7353
+metadata/unity_name = "Vertical_03"
+
+[node name="Vertical_04" type="Node3D" parent="DemonBoss/VFXParent/VFX_DemonBoss_SkillAttack/root"]
+position = Vector3(-1.76999998, 0, 0.0199999996)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23228
+metadata/unity_name = "Vertical_04"
+
+[node name="Vertical_05" type="Node3D" parent="DemonBoss/VFXParent/VFX_DemonBoss_SkillAttack/root"]
+position = Vector3(-2.74600005, 0, 2.03900003)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18838
+metadata/unity_name = "Vertical_05"
+
+[node name="Impact_02" type="Node3D" parent="DemonBoss/VFXParent/VFX_DemonBoss_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8848
+metadata/unity_name = "Impact_02"
+
+[node name="Lines_01" type="Node3D" parent="DemonBoss/VFXParent/VFX_DemonBoss_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14569
+metadata/unity_name = "Lines_01"
+
+[node name="Ground_01_Black" type="Node3D" parent="DemonBoss/VFXParent/VFX_DemonBoss_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15423
+metadata/unity_name = "Ground_01_Black"
+
+[node name="Ground_02" type="Node3D" parent="DemonBoss/VFXParent/VFX_DemonBoss_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5502
+metadata/unity_name = "Ground_02"
+
+[node name="SmokeRing_01" type="Node3D" parent="DemonBoss/VFXParent/VFX_DemonBoss_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12371
+metadata/unity_name = "SmokeRing_01"

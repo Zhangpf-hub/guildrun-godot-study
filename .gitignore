@@ -1,0 +1,4 @@
+.godot/
+__pycache__/
+build/
+/game/addons/fmod/libs/windows/~*.TMP

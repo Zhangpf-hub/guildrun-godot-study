@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3]
+[ext_resource type="Texture2D" path="res://textures/sharedassets7_16.png" id="1"]
+
+[resource]
+resource_name = "LifeShrine_Mat"
+albedo_texture = ExtResource("1")
+cull_mode = 2
+albedo_color = Color(0.749019563, 0.749019563, 0.749019563, 1)
+metadata/unity_shader = "Hidden/lilToonOutline"

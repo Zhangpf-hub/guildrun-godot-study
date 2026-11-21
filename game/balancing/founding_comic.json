@@ -1,0 +1,575 @@
+{
+  "duration": 16.999999821186066,
+  "tracks": [
+    {
+      "node": 1773,
+      "property": "group_alpha",
+      "start": 0.0,
+      "duration": 0.30000001192092896,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1750,
+      "property": "group_alpha",
+      "start": 0.4000000059604645,
+      "duration": 0.30000001192092896,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1486,
+      "property": "group_alpha",
+      "start": 1.5,
+      "duration": 0.30000001192092896,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1842,
+      "property": "scale",
+      "start": 1.5,
+      "duration": 3.0,
+      "ease": -1,
+      "from": [
+        0.800000011920929,
+        0.0
+      ],
+      "to": [
+        1.100000023841858,
+        0.0
+      ]
+    },
+    {
+      "node": 1343,
+      "property": "group_alpha",
+      "start": 5.199999988079071,
+      "duration": 0.30000001192092896,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1382,
+      "property": "group_alpha",
+      "start": 5.199999988079071,
+      "duration": 0.30000001192092896,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1783,
+      "property": "image_alpha",
+      "start": 6.0,
+      "duration": 0.8999999761581421,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1364,
+      "property": "group_alpha",
+      "start": 6.0,
+      "duration": 0.4000000059604645,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1386,
+      "property": "group_alpha",
+      "start": 6.099999964237213,
+      "duration": 0.30000001192092896,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1563,
+      "property": "group_alpha",
+      "start": 6.999999940395355,
+      "duration": 0.30000001192092896,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1797,
+      "property": "group_alpha",
+      "start": 7.799999892711639,
+      "duration": 0.30000001192092896,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1636,
+      "property": "group_alpha",
+      "start": 8.79999989271164,
+      "duration": 0.30000001192092896,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1548,
+      "property": "image_alpha",
+      "start": 8.79999989271164,
+      "duration": 0.6000000238418579,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1771,
+      "property": "image_alpha",
+      "start": 8.899999894201756,
+      "duration": 0.5,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1418,
+      "property": "group_alpha",
+      "start": 8.899999894201756,
+      "duration": 0.5,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1592,
+      "property": "group_alpha",
+      "start": 9.599999904632568,
+      "duration": 0.4000000059604645,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1689,
+      "property": "group_alpha",
+      "start": 10.699999898672104,
+      "duration": 0.4000000059604645,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1442,
+      "property": "group_alpha",
+      "start": 11.79999989271164,
+      "duration": 0.6000000238418579,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1323,
+      "property": "group_alpha",
+      "start": 14.099999904632568,
+      "duration": 0.30000001192092896,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1719,
+      "property": "scale",
+      "start": 14.099999904632568,
+      "duration": 2.5,
+      "ease": 0,
+      "from": [
+        1.0,
+        0.0
+      ],
+      "to": [
+        1.2999999523162842,
+        0.0
+      ]
+    },
+    {
+      "node": 1799,
+      "property": "scale",
+      "start": 14.2999999076128,
+      "duration": 2.5,
+      "ease": 0,
+      "from": [
+        1.0499999523162842,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1324,
+      "property": "group_alpha",
+      "start": 14.2999999076128,
+      "duration": 0.30000001192092896,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1289,
+      "property": "image_alpha",
+      "start": 14.399999916553497,
+      "duration": 0.30000001192092896,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1487,
+      "property": "image_alpha",
+      "start": 14.399999916553497,
+      "duration": 0.30000001192092896,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1316,
+      "property": "image_alpha",
+      "start": 14.399999916553497,
+      "duration": 0.30000001192092896,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1289,
+      "property": "scale",
+      "start": 14.399999916553497,
+      "duration": 2.5,
+      "ease": 0,
+      "from": [
+        0.8999999761581421,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1487,
+      "property": "scale",
+      "start": 14.399999916553497,
+      "duration": 2.5,
+      "ease": 0,
+      "from": [
+        0.8999999761581421,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1522,
+      "property": "group_alpha",
+      "start": 15.599999904632568,
+      "duration": 0.30000001192092896,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node": 1726,
+      "property": "group_alpha",
+      "start": 16.699999809265137,
+      "duration": 0.30000001192092896,
+      "ease": 0,
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "captions": {
+    "1249": {
+      "key": "Comics.GuildSignup.Panel4.3",
+      "width": 237.0,
+      "padding": [
+        28,
+        18,
+        28,
+        18
+      ],
+      "spacing": 0.0
+    },
+    "1843": {
+      "key": "Comics.GuildSignup.Panel4.2",
+      "width": 259.0,
+      "padding": [
+        28,
+        18,
+        28,
+        18
+      ],
+      "spacing": 0.0
+    },
+    "1641": {
+      "key": "Comics.GuildSignup.Panel4.1",
+      "width": -1.0,
+      "padding": [
+        28,
+        18,
+        28,
+        18
+      ],
+      "spacing": 0.0
+    },
+    "1274": {
+      "key": "Comics.GuildSignup.Panel3.5",
+      "width": 462.3999938964844,
+      "padding": [
+        24,
+        18,
+        24,
+        18
+      ],
+      "spacing": 0.0
+    },
+    "1766": {
+      "key": "Comics.GuildSignup.Panel3.4",
+      "width": 462.3999938964844,
+      "padding": [
+        24,
+        18,
+        24,
+        18
+      ],
+      "spacing": 0.0
+    },
+    "1276": {
+      "key": "Comics.GuildSignup.Panel3.3",
+      "width": 300.0,
+      "padding": [
+        28,
+        18,
+        28,
+        18
+      ],
+      "spacing": 0.0
+    },
+    "1379": {
+      "key": "Comics.GuildSignup.Panel3.1",
+      "width": 205.0,
+      "padding": [
+        28,
+        18,
+        28,
+        18
+      ],
+      "spacing": 0.0
+    },
+    "1468": {
+      "key": "Comics.GuildSignup.Panel2.4",
+      "width": 228.0,
+      "padding": [
+        28,
+        18,
+        28,
+        18
+      ],
+      "spacing": 0.0
+    },
+    "1774": {
+      "key": "Comics.GuildSignup.Panel2.3",
+      "width": -1.0,
+      "padding": [
+        28,
+        18,
+        28,
+        18
+      ],
+      "spacing": 0.0
+    },
+    "1876": {
+      "key": "Comics.GuildSignup.Panel2.2",
+      "width": -1.0,
+      "padding": [
+        28,
+        18,
+        28,
+        18
+      ],
+      "spacing": 0.0
+    },
+    "1878": {
+      "key": "Comics.GuildSignup.Panel2.1",
+      "width": -1.0,
+      "padding": [
+        28,
+        18,
+        28,
+        18
+      ],
+      "spacing": 0.0
+    },
+    "1530": {
+      "key": "Comics.GuildSignup.Panel1.1",
+      "width": 280.0,
+      "padding": [
+        28,
+        18,
+        28,
+        18
+      ],
+      "spacing": 0.0
+    }
+  },
+  "sound": "event:/SFX/COMICS/comic_02"
+}

@@ -1,0 +1,625 @@
+{
+  "source": {
+    "controller": [
+      "level3",
+      26860
+    ],
+    "prefab": [
+      "sharedassets3.assets",
+      3346,
+      74693
+    ],
+    "material": [
+      "sharedassets3.assets",
+      12
+    ]
+  },
+  "reference": [
+    1920.0,
+    1080.0
+  ],
+  "scale_match": 0.0,
+  "offset": 20.0,
+  "death_delay": 1.0,
+  "health_value_current_only": false,
+  "damage_duration": 0.30000001192092896,
+  "health_per_divider": 500,
+  "minor_dividers_per_major": 10,
+  "minor_thickness": 1.0,
+  "major_thickness": 2.0,
+  "colors": {
+    "defaultManaBarColor": [
+      0.3450980484485626,
+      0.5176470875740051,
+      0.886274516582489,
+      1.0
+    ],
+    "abilityReadyManaBarColor": [
+      0.24313725531101227,
+      0.5529412031173706,
+      0.9333333373069763,
+      1.0
+    ],
+    "playerPrimaryColor": [
+      0.2666666805744171,
+      0.5843137502670288,
+      0.2549019753932953,
+      1.0
+    ],
+    "playerSecondaryColor": [
+      0.9960784316062927,
+      0.9960784316062927,
+      0.4313725531101227,
+      1.0
+    ],
+    "playerShieldColor": [
+      0.5960784554481506,
+      0.6196078658103943,
+      0.6431372761726379,
+      1.0
+    ],
+    "enemyPrimaryColor": [
+      0.5943396091461182,
+      0.14297790825366974,
+      0.14297790825366974,
+      1.0
+    ],
+    "enemySecondaryColor": [
+      0.9137254953384399,
+      0.1411764770746231,
+      0.1411764770746231,
+      1.0
+    ],
+    "enemyShieldColor": [
+      0.5960784554481506,
+      0.6196078658103943,
+      0.6431372761726379,
+      1.0
+    ],
+    "background": [
+      0.06699997931718826,
+      0.12899994850158691,
+      0.06299997866153717,
+      1.0
+    ],
+    "separator": [
+      0.0,
+      0.0,
+      0.0,
+      0.6392157077789307
+    ]
+  },
+  "sockets": {
+    "60897": {
+      "source": [
+        "sharedassets1.assets",
+        28361
+      ],
+      "position": [
+        0.0,
+        5.0,
+        -0.0
+      ]
+    },
+    "60898": {
+      "source": [
+        "sharedassets1.assets",
+        27555
+      ],
+      "position": [
+        0.0,
+        5.0,
+        -0.0
+      ]
+    },
+    "60899": {
+      "source": [
+        "sharedassets1.assets",
+        48544
+      ],
+      "position": [
+        0.0,
+        5.0,
+        -0.0
+      ]
+    },
+    "60900": {
+      "source": [
+        "sharedassets1.assets",
+        48545
+      ],
+      "position": [
+        0.0,
+        5.0,
+        -0.0
+      ]
+    },
+    "60901": {
+      "source": [
+        "sharedassets1.assets",
+        39210
+      ],
+      "position": [
+        0.0,
+        2.5,
+        -0.0
+      ]
+    },
+    "60902": {
+      "source": [
+        "sharedassets1.assets",
+        30987
+      ],
+      "position": [
+        0.0,
+        4.5,
+        -0.0
+      ]
+    },
+    "60903": {
+      "source": [
+        "sharedassets1.assets",
+        40794
+      ],
+      "position": [
+        0.0,
+        2.0,
+        -0.0
+      ]
+    },
+    "60904": {
+      "source": [
+        "sharedassets1.assets",
+        35766
+      ],
+      "position": [
+        0.0,
+        2.5,
+        -0.0
+      ]
+    },
+    "60905": {
+      "source": [
+        "sharedassets1.assets",
+        39182
+      ],
+      "position": [
+        0.0,
+        2.5,
+        -0.0
+      ]
+    },
+    "60906": {
+      "source": [
+        "sharedassets1.assets",
+        29100
+      ],
+      "position": [
+        0.0,
+        2.5,
+        -0.0
+      ]
+    },
+    "60907": {
+      "source": [
+        "sharedassets1.assets",
+        49238
+      ],
+      "position": [
+        0.0,
+        2.5,
+        -0.0
+      ]
+    },
+    "60908": {
+      "source": [
+        "sharedassets1.assets",
+        41714
+      ],
+      "position": [
+        0.0,
+        2.200000047683716,
+        -0.0
+      ]
+    },
+    "60909": {
+      "source": [
+        "sharedassets1.assets",
+        29781
+      ],
+      "position": [
+        0.0,
+        2.0,
+        -0.0
+      ]
+    },
+    "60910": {
+      "source": [
+        "sharedassets1.assets",
+        37801
+      ],
+      "position": [
+        0.0,
+        2.0,
+        -0.0
+      ]
+    },
+    "60911": {
+      "source": [
+        "sharedassets1.assets",
+        44708
+      ],
+      "position": [
+        0.0,
+        2.0,
+        -0.0
+      ]
+    },
+    "60912": {
+      "source": [
+        "sharedassets1.assets",
+        38602
+      ],
+      "position": [
+        0.0,
+        2.0,
+        -0.0
+      ]
+    },
+    "60913": {
+      "source": [
+        "sharedassets1.assets",
+        35454
+      ],
+      "position": [
+        0.0,
+        2.0,
+        -0.0
+      ]
+    },
+    "60914": {
+      "source": [
+        "sharedassets1.assets",
+        27530
+      ],
+      "position": [
+        0.0,
+        2.0,
+        -0.0
+      ]
+    },
+    "60915": {
+      "source": [
+        "sharedassets1.assets",
+        48996
+      ],
+      "position": [
+        0.0,
+        3.5,
+        -0.0
+      ]
+    },
+    "60916": {
+      "source": [
+        "sharedassets1.assets",
+        39382
+      ],
+      "position": [
+        0.0,
+        2.0,
+        -0.0
+      ]
+    },
+    "60917": {
+      "source": [
+        "sharedassets1.assets",
+        37891
+      ],
+      "position": [
+        0.0,
+        2.200000047683716,
+        -0.0
+      ]
+    },
+    "60918": {
+      "source": [
+        "sharedassets1.assets",
+        37892
+      ],
+      "position": [
+        0.0,
+        2.200000047683716,
+        -0.0
+      ]
+    },
+    "60919": {
+      "source": [
+        "sharedassets1.assets",
+        29426
+      ],
+      "position": [
+        0.0,
+        2.0,
+        -0.0
+      ]
+    },
+    "60920": {
+      "source": [
+        "sharedassets1.assets",
+        29428
+      ],
+      "position": [
+        0.0,
+        2.0,
+        -0.0
+      ]
+    },
+    "60921": {
+      "source": [
+        "sharedassets1.assets",
+        41862
+      ],
+      "position": [
+        0.0,
+        2.0,
+        -0.0
+      ]
+    },
+    "60922": {
+      "source": [
+        "sharedassets1.assets",
+        43395
+      ],
+      "position": [
+        0.0,
+        2.0,
+        -0.0
+      ]
+    },
+    "60923": {
+      "source": [
+        "sharedassets1.assets",
+        47188
+      ],
+      "position": [
+        0.0,
+        1.5,
+        -0.0
+      ]
+    },
+    "60924": {
+      "source": [
+        "sharedassets1.assets",
+        46871
+      ],
+      "position": [
+        0.0,
+        2.0,
+        -0.0
+      ]
+    },
+    "60925": {
+      "source": [
+        "sharedassets1.assets",
+        37890
+      ],
+      "position": [
+        0.0,
+        2.200000047683716,
+        -0.0
+      ]
+    },
+    "60926": {
+      "source": [
+        "sharedassets1.assets",
+        39381
+      ],
+      "position": [
+        0.0,
+        2.0,
+        -0.0
+      ]
+    },
+    "60927": {
+      "source": [
+        "sharedassets1.assets",
+        29491
+      ],
+      "position": [
+        0.0,
+        2.299999952316284,
+        -0.0
+      ]
+    },
+    "60928": {
+      "source": [
+        "sharedassets1.assets",
+        32680
+      ],
+      "position": [
+        0.0,
+        2.5,
+        -0.0
+      ]
+    },
+    "60929": {
+      "source": [
+        "sharedassets1.assets",
+        49107
+      ],
+      "position": [
+        0.0,
+        1.2000000476837158,
+        -0.0
+      ]
+    },
+    "60930": {
+      "source": [
+        "sharedassets1.assets",
+        47181
+      ],
+      "position": [
+        0.0,
+        2.5,
+        -0.0
+      ]
+    },
+    "60931": {
+      "source": [
+        "sharedassets1.assets",
+        29427
+      ],
+      "position": [
+        0.0,
+        2.0,
+        -0.0
+      ]
+    },
+    "60932": {
+      "source": [
+        "sharedassets1.assets",
+        39863
+      ],
+      "position": [
+        0.0,
+        2.5,
+        -0.0
+      ]
+    },
+    "60933": {
+      "source": [
+        "sharedassets1.assets",
+        46872
+      ],
+      "position": [
+        0.0,
+        2.5,
+        -0.0
+      ]
+    },
+    "60934": {
+      "source": [
+        "sharedassets1.assets",
+        43394
+      ],
+      "position": [
+        0.0,
+        2.0,
+        -0.0
+      ]
+    },
+    "60935": {
+      "source": [
+        "sharedassets1.assets",
+        41727
+      ],
+      "position": [
+        0.0,
+        4.0,
+        -0.0
+      ]
+    },
+    "60936": {
+      "source": [
+        "sharedassets1.assets",
+        39502
+      ],
+      "position": [
+        0.0,
+        2.5999999046325684,
+        -0.0
+      ]
+    },
+    "60937": {
+      "source": [
+        "sharedassets1.assets",
+        42086
+      ],
+      "position": [
+        0.0,
+        2.0,
+        -0.0
+      ]
+    },
+    "60938": {
+      "source": [
+        "sharedassets1.assets",
+        46581
+      ],
+      "position": [
+        0.0,
+        2.0,
+        -0.0
+      ]
+    }
+  },
+  "equipment_parent": 17429,
+  "equipment_slots": [
+    {
+      "id": 74174,
+      "root": 16750,
+      "_emptySlotParent": 6479,
+      "_activeSlotParent": 10882,
+      "_hoveringSlotParent": 9516,
+      "_activeSlotImage": 10882,
+      "_hoveringSlotImage": 9516,
+      "_activeNameText": 2963,
+      "_frameImage": 15459
+    },
+    {
+      "id": 76095,
+      "root": 11154,
+      "_emptySlotParent": 4720,
+      "_activeSlotParent": 17480,
+      "_hoveringSlotParent": 16663,
+      "_activeSlotImage": 17480,
+      "_hoveringSlotImage": 16663,
+      "_activeNameText": 5889,
+      "_frameImage": 12572
+    },
+    {
+      "id": 69551,
+      "root": 975,
+      "_emptySlotParent": 11580,
+      "_activeSlotParent": 7228,
+      "_hoveringSlotParent": 8544,
+      "_activeSlotImage": 7228,
+      "_hoveringSlotImage": 8544,
+      "_activeNameText": 14893,
+      "_frameImage": 3470
+    },
+    {
+      "id": 77288,
+      "root": 9942,
+      "_emptySlotParent": 3795,
+      "_activeSlotParent": 16530,
+      "_hoveringSlotParent": 17353,
+      "_activeSlotImage": 16530,
+      "_hoveringSlotImage": 17353,
+      "_activeNameText": 6775,
+      "_frameImage": 11903
+    },
+    {
+      "id": 69654,
+      "root": 1123,
+      "_emptySlotParent": 11479,
+      "_activeSlotParent": 7095,
+      "_hoveringSlotParent": 8423,
+      "_activeSlotImage": 7095,
+      "_hoveringSlotImage": 8423,
+      "_activeNameText": 15042,
+      "_frameImage": 3600
+    },
+    {
+      "id": 68826,
+      "root": 2320,
+      "_emptySlotParent": 12457,
+      "_activeSlotParent": 8199,
+      "_hoveringSlotParent": 7401,
+      "_activeSlotImage": 8199,
+      "_hoveringSlotImage": 7401,
+      "_activeNameText": 13923,
+      "_frameImage": 4639
+    }
+  ]
+}

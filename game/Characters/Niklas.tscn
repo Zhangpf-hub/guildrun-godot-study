@@ -1,0 +1,939 @@
+[gd_scene format=3]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2754.obj" id="1"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_765.tres" id="2"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2720.obj" id="3"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_769.tres" id="4"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2725.obj" id="5"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2899.obj" id="6"]
+
+[node name="Niklas" type="Node3D"]
+
+[node name="Niklas" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1.10000002, 1.10000002, 1.10000002)
+metadata/unity_id = 26150
+metadata/unity_name = "Niklas"
+
+[node name="Niklas_Model" type="Node3D" parent="Niklas"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13676
+metadata/unity_name = "Niklas_Model"
+
+[node name="Armature" type="Node3D" parent="Niklas/Niklas_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25270
+metadata/unity_name = "Armature"
+
+[node name="hips" type="Node3D" parent="Niklas/Niklas_Model/Armature"]
+position = Vector3(-0, 1.15719748, -0.0666774288)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22060
+metadata/unity_name = "hips"
+
+[node name="coat_B_root" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15713
+metadata/unity_name = "coat_B_root"
+
+[node name="coat_B_1" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/coat_B_root"]
+position = Vector3(-2.77684802e-15, 0.069679819, 0.150033757)
+quaternion = Quaternion(-0.988146067, -0, 0, -0.153516769)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21523
+metadata/unity_name = "coat_B_1"
+
+[node name="coat_B_2" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/coat_B_root/coat_B_1"]
+position = Vector3(-2.20663647e-17, 0.209514305, -2.86923246e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23725
+metadata/unity_name = "coat_B_2"
+
+[node name="coat_B_end" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/coat_B_root/coat_B_1/coat_B_2"]
+position = Vector3(-3.61524392e-20, 0.224301904, -1.35287018e-14)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26860
+metadata/unity_name = "coat_B_end"
+
+[node name="coat_LB_1" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/coat_B_root"]
+position = Vector3(-0.156159222, 0.0659094453, 0.0899470672)
+quaternion = Quaternion(-0.875088692, 0.0815315768, -0.44991678, -0.158579007)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19863
+metadata/unity_name = "coat_LB_1"
+
+[node name="coat_LB_2" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/coat_B_root/coat_LB_1"]
+position = Vector3(2.47154718e-17, 0.232341364, -1.18238745e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8396
+metadata/unity_name = "coat_LB_2"
+
+[node name="coat_LB_end" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/coat_B_root/coat_LB_1/coat_LB_2"]
+position = Vector3(-8.91521553e-16, 0.249363765, -1.26424146e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23259
+metadata/unity_name = "coat_LB_end"
+
+[node name="coat_RB_1" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/coat_B_root"]
+position = Vector3(0.156159222, 0.0659094453, 0.0899470672)
+quaternion = Quaternion(-0.875088453, -0.0815308541, 0.449918002, -0.158577144)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8406
+metadata/unity_name = "coat_RB_1"
+
+[node name="coat_RB_2" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/coat_B_root/coat_RB_1"]
+position = Vector3(-5.61529971e-17, 0.232344761, -7.82707214e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13818
+metadata/unity_name = "coat_RB_2"
+
+[node name="coat_RB_end" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/coat_B_root/coat_RB_1/coat_RB_2"]
+position = Vector3(6.69649107e-16, 0.249360904, -8.23842297e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20484
+metadata/unity_name = "coat_RB_end"
+
+[node name="spine" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips"]
+position = Vector3(-7.09550431e-33, 0.129999995, -3.5527136e-17)
+quaternion = Quaternion(0.0174436066, -0, -0, 0.999847889)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23736
+metadata/unity_name = "spine"
+
+[node name="chest" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine"]
+position = Vector3(-0, 0.183730617, 7.24975605e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10624
+metadata/unity_name = "chest"
+
+[node name="neck" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest"]
+position = Vector3(-0, 0.347665966, 0.0307676382)
+quaternion = Quaternion(-0.125302866, 0, -0, 0.992118537)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5213
+metadata/unity_name = "neck"
+
+[node name="collar_B_1" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/neck"]
+position = Vector3(-2.77684802e-15, 0.0495592244, 0.0763085559)
+quaternion = Quaternion(-2.18159002e-09, -0.974987745, -0.222258657, 3.67848727e-16)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5368
+metadata/unity_name = "collar_B_1"
+
+[node name="collar_B_end" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/neck/collar_B_1"]
+position = Vector3(-5.55096191e-10, 0.144791722, -7.2294626e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13613
+metadata/unity_name = "collar_B_end"
+
+[node name="head" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/neck"]
+position = Vector3(-7.57436469e-29, 0.110690512, -2.6253495e-17)
+quaternion = Quaternion(0.107977673, -0, -0, 0.994153321)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16195
+metadata/unity_name = "head"
+
+[node name="hair_root" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(-2.65416969e-15, 0.0945774689, -0.103313975)
+quaternion = Quaternion(-1.01135459e-15, -1.78329102e-16, -0.173648193, 0.984807789)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16978
+metadata/unity_name = "hair_root"
+
+[node name="hair_bangs_FA_1" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(5.68434176e-16, -2.84217088e-16, 2.13162816e-16)
+quaternion = Quaternion(-0.209670529, -0.290448666, 0.093355529, 0.92895782)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10431
+metadata/unity_name = "hair_bangs_FA_1"
+
+[node name="hair_bangs_FA_2" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_bangs_FA_1"]
+position = Vector3(-4.35207408e-16, 0.0400939249, 1.42108544e-16)
+quaternion = Quaternion(0.527052701, -0.0336009264, 0.0949150696, 0.843846917)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15586
+metadata/unity_name = "hair_bangs_FA_2"
+
+[node name="hair_bangs_FA_end" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_bangs_FA_1/hair_bangs_FA_2"]
+position = Vector3(-7.1054272e-17, 0.0393297821, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18909
+metadata/unity_name = "hair_bangs_FA_end"
+
+[node name="hair_bangs_FB_1" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(5.68434176e-16, -2.84217088e-16, 2.13162816e-16)
+quaternion = Quaternion(-0.176239103, 0.0345940366, -0.189482659, 0.965318263)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23584
+metadata/unity_name = "hair_bangs_FB_1"
+
+[node name="hair_bangs_FB_2" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_bangs_FB_1"]
+position = Vector3(-0, 0.037201412, -2.13162816e-16)
+quaternion = Quaternion(0.468680948, -0.0206004176, 0.179980889, 0.864592791)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15816
+metadata/unity_name = "hair_bangs_FB_2"
+
+[node name="hair_bangs_FB_3" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_bangs_FB_1/hair_bangs_FB_2"]
+position = Vector3(-0, 0.0317083783, -0)
+quaternion = Quaternion(0.211380839, 0.0537741072, 0.103133589, 0.970458686)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14815
+metadata/unity_name = "hair_bangs_FB_3"
+
+[node name="hair_bangs_RB_end" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_bangs_FB_1/hair_bangs_FB_2/hair_bangs_FB_3"]
+position = Vector3(2.84217088e-16, 0.0533254035, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5340
+metadata/unity_name = "hair_bangs_RB_end"
+
+[node name="head_end" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(1.60446834e-17, 0.177730873, -8.39766662e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10515
+metadata/unity_name = "head_end"
+
+[node name="jaw" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(7.03775094e-10, -0.0055202865, -0.0372432359)
+quaternion = Quaternion(-0.898466885, 2.22220873e-08, 1.95609843e-07, 0.439041287)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5989
+metadata/unity_name = "jaw"
+
+[node name="jaw_end" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/neck/head/jaw"]
+position = Vector3(2.11758232e-24, 0.124724977, 4.41646486e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15642
+metadata/unity_name = "jaw_end"
+
+[node name="necklace_root" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest"]
+position = Vector3(3.64153149e-16, 0, -0)
+quaternion = Quaternion(-0.0266787335, 1.84776336e-08, -1.51650886e-10, 0.999644101)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23175
+metadata/unity_name = "necklace_root"
+
+[node name="necklace_1" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/necklace_root"]
+position = Vector3(2.20114833e-12, 0.34636867, -7.409543e-16)
+quaternion = Quaternion(2.38374938e-07, -0.429163158, 0.903227031, -3.7968384e-08)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5299
+metadata/unity_name = "necklace_1"
+
+[node name="necklace_2" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/necklace_root/necklace_1"]
+position = Vector3(-5.8455274e-18, 0.150713682, 3.36637098e-17)
+quaternion = Quaternion(0.165725917, 4.19389667e-25, -1.74115282e-08, 0.986171842)
+scale = Vector3(1, 0.99999994, 0.999999881)
+metadata/unity_id = 20244
+metadata/unity_name = "necklace_2"
+
+[node name="necklace_end" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/necklace_root/necklace_1/necklace_2"]
+position = Vector3(1.75433779e-10, 0.0930000022, 2.8424144e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1.00000012, 1.00000012)
+metadata/unity_id = 10792
+metadata/unity_name = "necklace_end"
+
+[node name="shoulder_L" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest"]
+position = Vector3(-0.0376641974, 0.277408123, 0.0437359288)
+quaternion = Quaternion(0.558159292, -0.410245717, 0.585880637, 0.420595467)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26606
+metadata/unity_name = "shoulder_L"
+
+[node name="collar_L_root" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/shoulder_L"]
+position = Vector3(-0, 7.1054272e-17, -0)
+quaternion = Quaternion(-1.03805853e-14, 4.20670443e-17, 1.37043155e-16, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27089
+metadata/unity_name = "collar_L_root"
+
+[node name="collar_L_1" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/shoulder_L/collar_L_root"]
+position = Vector3(-0.0257495269, 0.0610732175, -0.122478895)
+quaternion = Quaternion(-0.163309082, -0.683336139, 0.668557286, 0.243747905)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5604
+metadata/unity_name = "collar_L_1"
+
+[node name="collar_L_end" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/shoulder_L/collar_L_root/collar_L_1"]
+position = Vector3(-0, 0.131080717, 7.1054272e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4728
+metadata/unity_name = "collar_L_end"
+
+[node name="collar_LF_1" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/shoulder_L/collar_L_root"]
+position = Vector3(-0.135841563, 0.117024817, -0.0590761751)
+quaternion = Quaternion(-0.0979776531, -0.733227372, 0.62673068, 0.244921729)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11709
+metadata/unity_name = "collar_LF_1"
+
+[node name="collar_LF_end" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/shoulder_L/collar_L_root/collar_LF_1"]
+position = Vector3(-0, 0.162026331, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17992
+metadata/unity_name = "collar_LF_end"
+
+[node name="upper_arm_L" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/shoulder_L"]
+position = Vector3(-6.07847122e-17, 0.274600238, -1.20126128e-15)
+quaternion = Quaternion(0.387732446, 0.00538675254, -0.0315416083, 0.921216428)
+scale = Vector3(1, 0.99999994, 0.99999994)
+metadata/unity_id = 22785
+metadata/unity_name = "upper_arm_L"
+
+[node name="armshield_root" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L"]
+position = Vector3(0.00994783267, 0.0602216609, -0.228017882)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 0.99999994, 0.99999994)
+metadata/unity_id = 24694
+metadata/unity_name = "armshield_root"
+
+[node name="lower_arm_L" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L"]
+position = Vector3(2.53493827e-16, 0.249998987, 8.77589793e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 0.99999994, 0.99999994)
+metadata/unity_id = 11548
+metadata/unity_name = "lower_arm_L"
+
+[node name="hand_L" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L"]
+position = Vector3(-0.00049957633, 0.25, -4.4049068e-07)
+quaternion = Quaternion(0.156239882, 0.104185797, -0.0273083039, 0.981829286)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16645
+metadata/unity_name = "hand_L"
+
+[node name="hand_L_end" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L"]
+position = Vector3(-1.56829874e-08, 0.250001699, 1.28420072e-06)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26748
+metadata/unity_name = "hand_L_end"
+
+[node name="shoulder_R" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest"]
+position = Vector3(0.037664175, 0.277410209, 0.0437358506)
+quaternion = Quaternion(-0.558159292, -0.410245717, 0.585880637, -0.420595467)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6805
+metadata/unity_name = "shoulder_R"
+
+[node name="collar_R_root" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/shoulder_R"]
+position = Vector3(1.110223e-18, -7.1054272e-17, 2.84217088e-16)
+quaternion = Quaternion(2.85882429e-15, -3.2959746e-17, -1.73472348e-17, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26008
+metadata/unity_name = "collar_R_root"
+
+[node name="collar_R_1" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/shoulder_R/collar_R_root"]
+position = Vector3(0.0257495251, 0.0610738806, -0.12247692)
+quaternion = Quaternion(0.163309067, -0.683336139, 0.668557286, -0.24374792)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17633
+metadata/unity_name = "collar_R_1"
+
+[node name="collar_R_end" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/shoulder_R/collar_R_root/collar_R_1"]
+position = Vector3(-1.42108544e-16, 0.131080717, -1.42108544e-16)
+quaternion = Quaternion(-0.0114012668, -0.99165082, 0.036989063, 0.123006143)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7252
+metadata/unity_name = "collar_R_end"
+
+[node name="collar_RF_1" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/shoulder_R/collar_R_root"]
+position = Vector3(0.135841563, 0.117025509, -0.0590742007)
+quaternion = Quaternion(0.0979776531, -0.733227313, 0.62673074, -0.244921699)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17354
+metadata/unity_name = "collar_RF_1"
+
+[node name="collar_RF_end" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/shoulder_R/collar_R_root/collar_RF_1"]
+position = Vector3(-7.1054272e-17, 0.162026301, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23285
+metadata/unity_name = "collar_RF_end"
+
+[node name="upper_arm_R" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/shoulder_R"]
+position = Vector3(5.72139455e-17, 0.274600774, -2.10343586e-15)
+quaternion = Quaternion(0.387732446, -0.00538638839, 0.0315423682, 0.921216369)
+scale = Vector3(1, 0.99999994, 0.99999994)
+metadata/unity_id = 22753
+metadata/unity_name = "upper_arm_R"
+
+[node name="lower_arm_R" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R"]
+position = Vector3(-2.85180535e-16, 0.25, 3.78908463e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 0.99999994, 0.99999994)
+metadata/unity_id = 12057
+metadata/unity_name = "lower_arm_R"
+
+[node name="hand_R" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R"]
+position = Vector3(-3.39764205e-17, 0.25, 1.67199645e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18154
+metadata/unity_name = "hand_R"
+
+[node name="hand_R_end" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R"]
+position = Vector3(1.21859833e-09, 0.25, -8.15397083e-09)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12284
+metadata/unity_name = "hand_R_end"
+
+[node name="Magica Capsule Collider (chest)" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/chest"]
+position = Vector3(0, 0.189999998, -0.0900000036)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27042
+metadata/unity_name = "Magica Capsule Collider (chest)"
+
+[node name="coat_F_root" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0.0174436066, 0, -0, 0.999847889)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15348
+metadata/unity_name = "coat_F_root"
+
+[node name="coat_L_1" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/coat_F_root"]
+position = Vector3(-0.190679997, -0.00148746872, -0.0366245694)
+quaternion = Quaternion(0.595173299, -0.0874430984, 0.789352179, 0.122661009)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11008
+metadata/unity_name = "coat_L_1"
+
+[node name="coat_L_2" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/coat_F_root/coat_L_1"]
+position = Vector3(-0, 0.0687000006, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9271
+metadata/unity_name = "coat_L_2"
+
+[node name="coat_L_3" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/coat_F_root/coat_L_1/coat_L_2"]
+position = Vector3(-0, 0.257999986, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6116
+metadata/unity_name = "coat_L_3"
+
+[node name="coat_L_end" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/coat_F_root/coat_L_1/coat_L_2/coat_L_3"]
+position = Vector3(-0, 0.280000001, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12989
+metadata/unity_name = "coat_L_end"
+
+[node name="coat_LF_1" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/coat_F_root"]
+position = Vector3(-0.129701003, 0.105522528, -0.170245573)
+quaternion = Quaternion(0.118113905, 0.0923677534, 0.988633156, -0.0110353529)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5538
+metadata/unity_name = "coat_LF_1"
+
+[node name="coat_LF_2" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/coat_F_root/coat_LF_1"]
+position = Vector3(-0, 0.181165457, -8.65973927e-17)
+quaternion = Quaternion(-0.152531832, -0.0203917902, -0.0847229585, 0.984449208)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26093
+metadata/unity_name = "coat_LF_2"
+
+[node name="coat_LF_3" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/coat_F_root/coat_LF_1/coat_LF_2"]
+position = Vector3(-1.42108544e-16, 0.278585285, 2.13162816e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21144
+metadata/unity_name = "coat_LF_3"
+
+[node name="coat_LF_end" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/coat_F_root/coat_LF_1/coat_LF_2/coat_LF_3"]
+position = Vector3(6.04033119e-07, 0.306973785, -1.21445771e-06)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16859
+metadata/unity_name = "coat_LF_end"
+
+[node name="coat_R_1" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/coat_F_root"]
+position = Vector3(0.190680385, -0.0014841205, -0.0366245136)
+quaternion = Quaternion(-0.595173597, -0.0874408782, 0.789352417, -0.122659348)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19479
+metadata/unity_name = "coat_R_1"
+
+[node name="coat_R_2" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/coat_F_root/coat_R_1"]
+position = Vector3(-2.8915458e-19, 0.0687000006, 1.47228906e-15)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23889
+metadata/unity_name = "coat_R_2"
+
+[node name="coat_R_3" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/coat_F_root/coat_R_1/coat_R_2"]
+position = Vector3(4.71047959e-17, 0.257999986, -5.91562649e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7120
+metadata/unity_name = "coat_R_3"
+
+[node name="coat_R_end" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/coat_F_root/coat_R_1/coat_R_2/coat_R_3"]
+position = Vector3(1.03985142e-15, 0.280000001, -3.41931848e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22901
+metadata/unity_name = "coat_R_end"
+
+[node name="coat_RF_1" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/coat_F_root"]
+position = Vector3(0.129700989, 0.105520427, -0.170245782)
+quaternion = Quaternion(-0.11811661, 0.0923714638, 0.9886325, 0.011036057)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5874
+metadata/unity_name = "coat_RF_1"
+
+[node name="coat_RF_2" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/coat_F_root/coat_RF_1"]
+position = Vector3(-0, 0.18115966, -3.10862448e-17)
+quaternion = Quaternion(-0.152529165, 0.0203874726, 0.0847264826, 0.984449446)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5058
+metadata/unity_name = "coat_RF_2"
+
+[node name="coat_RF_3" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/coat_F_root/coat_RF_1/coat_RF_2"]
+position = Vector3(7.1054272e-17, 0.278589457, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8807
+metadata/unity_name = "coat_RF_3"
+
+[node name="coat_RF_end" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/spine/coat_F_root/coat_RF_1/coat_RF_2/coat_RF_3"]
+position = Vector3(3.19744217e-16, 0.306973636, -5.68434176e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11777
+metadata/unity_name = "coat_RF_end"
+
+[node name="upper_leg_L" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips"]
+position = Vector3(-0.108989999, -0.00652746856, -0)
+quaternion = Quaternion(0.00443817163, 0.05097818, 0.997708261, 0.0442692898)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17601
+metadata/unity_name = "upper_leg_L"
+
+[node name="lower_leg_L" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/upper_leg_L"]
+position = Vector3(-0, 0.458052933, 3.99680272e-17)
+quaternion = Quaternion(0.0435367897, -0, -0, 0.999051869)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9733
+metadata/unity_name = "lower_leg_L"
+
+[node name="foot_L" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/upper_leg_L/lower_leg_L"]
+position = Vector3(-0, 0.592846751, -0)
+quaternion = Quaternion(-0.0943709388, 0.00803992711, 0.0437587462, 0.99454242)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23496
+metadata/unity_name = "foot_L"
+
+[node name="toes_L" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/upper_leg_L/lower_leg_L/foot_L"]
+position = Vector3(-7.15684356e-09, 0.0902877897, -0.19846639)
+quaternion = Quaternion(-0.591827571, -6.82549653e-05, 9.29627349e-05, 0.806064606)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9192
+metadata/unity_name = "toes_L"
+
+[node name="toes_L_end" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/upper_leg_L/lower_leg_L/foot_L/toes_L"]
+position = Vector3(-8.47050258e-16, 0.0878848508, -9.99200679e-18)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24528
+metadata/unity_name = "toes_L_end"
+
+[node name="Magica Capsule Collider (upper_leg_L)" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/upper_leg_L"]
+position = Vector3(0, 0.400000006, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1.00000012, 1)
+metadata/unity_id = 15840
+metadata/unity_name = "Magica Capsule Collider (upper_leg_L)"
+
+[node name="upper_leg_R" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips"]
+position = Vector3(0.108989999, -0.00652746856, -0)
+quaternion = Quaternion(-0.00443817163, 0.05097818, 0.997708261, -0.0442692898)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7212
+metadata/unity_name = "upper_leg_R"
+
+[node name="lower_leg_R" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/upper_leg_R"]
+position = Vector3(1.42108544e-16, 0.458052844, -7.1054272e-17)
+quaternion = Quaternion(0.0435367897, -0, -0, 0.999051869)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11134
+metadata/unity_name = "lower_leg_R"
+
+[node name="foot_R" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/upper_leg_R/lower_leg_R"]
+position = Vector3(8.10356231e-13, 0.592847228, 3.5527136e-17)
+quaternion = Quaternion(-0.0934683606, 0.0128727667, -0.0425882638, 0.994627714)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23587
+metadata/unity_name = "foot_R"
+
+[node name="toes_R" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/upper_leg_R/lower_leg_R/foot_R"]
+position = Vector3(-7.09643889e-12, 0.090287447, -0.198466137)
+quaternion = Quaternion(-0.591827571, 6.82551836e-05, -9.2963026e-05, 0.806064606)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14025
+metadata/unity_name = "toes_R"
+
+[node name="toes_R_end" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/upper_leg_R/lower_leg_R/foot_R/toes_R"]
+position = Vector3(-0, 0.0878854543, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21269
+metadata/unity_name = "toes_R_end"
+
+[node name="Magica Capsule Collider (upper_leg_R)" type="Node3D" parent="Niklas/Niklas_Model/Armature/hips/upper_leg_R"]
+position = Vector3(0, 0.400000006, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1.00000012, 1)
+metadata/unity_id = 6123
+metadata/unity_name = "Magica Capsule Collider (upper_leg_R)"
+
+[node name="Niklas" type="Node3D" parent="Niklas/Niklas_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9958
+metadata/unity_name = "Niklas"
+
+[node name="Body_GEO" type="Node3D" parent="Niklas/Niklas_Model/Niklas"]
+position = Vector3(-2.13162816e-16, 0, 9.43689581e-18)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23271
+metadata/unity_name = "Body_GEO"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Niklas/Niklas_Model/Niklas/Body_GEO"]
+mesh = ExtResource("1")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="Weapon_A_GEO" type="Node3D" parent="Niklas/Niklas_Model/Niklas"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9793
+metadata/unity_name = "Weapon_A_GEO"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Niklas/Niklas_Model/Niklas/Weapon_A_GEO"]
+mesh = ExtResource("3")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="Weapon_B_GEO" type="Node3D" parent="Niklas/Niklas_Model/Niklas"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25936
+metadata/unity_name = "Weapon_B_GEO"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Niklas/Niklas_Model/Niklas/Weapon_B_GEO"]
+mesh = ExtResource("5")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="Weapon_C_GEO" type="Node3D" parent="Niklas/Niklas_Model/Niklas"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8877
+metadata/unity_name = "Weapon_C_GEO"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Niklas/Niklas_Model/Niklas/Weapon_C_GEO"]
+mesh = ExtResource("6")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="Weapon_A" type="Node3D" parent="Niklas/Niklas_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, -0, 1, -6.12323426e-17)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14041
+metadata/unity_name = "Weapon_A"
+
+[node name="Weapon_A_end" type="Node3D" parent="Niklas/Niklas_Model/Weapon_A"]
+position = Vector3(-0, 0.459939808, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18506
+metadata/unity_name = "Weapon_A_end"
+
+[node name="Weapon_B_1" type="Node3D" parent="Niklas/Niklas_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-1, 0, 0, 6.12323426e-17)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21493
+metadata/unity_name = "Weapon_B_1"
+
+[node name="Weapon_B_2" type="Node3D" parent="Niklas/Niklas_Model/Weapon_B_1"]
+position = Vector3(-0, 0.244230032, -3.15544355e-32)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4696
+metadata/unity_name = "Weapon_B_2"
+
+[node name="Weapon_B_3" type="Node3D" parent="Niklas/Niklas_Model/Weapon_B_1/Weapon_B_2"]
+position = Vector3(-0, 0.397357315, -1.57772178e-32)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25583
+metadata/unity_name = "Weapon_B_3"
+
+[node name="Weapon_B_4" type="Node3D" parent="Niklas/Niklas_Model/Weapon_B_1/Weapon_B_2/Weapon_B_3"]
+position = Vector3(1.42108544e-16, 0.44709, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16738
+metadata/unity_name = "Weapon_B_4"
+
+[node name="Weapon_B_end" type="Node3D" parent="Niklas/Niklas_Model/Weapon_B_1/Weapon_B_2/Weapon_B_3/Weapon_B_4"]
+position = Vector3(-0, 0.567503154, 4.12436005e-33)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17745
+metadata/unity_name = "Weapon_B_end"
+
+[node name="Weapon_C" type="Node3D" parent="Niklas/Niklas_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, -0, 1, -6.12323426e-17)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20736
+metadata/unity_name = "Weapon_C"
+
+[node name="Weapon_C_end" type="Node3D" parent="Niklas/Niklas_Model/Weapon_C"]
+position = Vector3(1.15368055e-17, 0.0942051709, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17836
+metadata/unity_name = "Weapon_C_end"
+
+[node name="Magica Cloth (coat)" type="Node3D" parent="Niklas/Niklas_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20078
+metadata/unity_name = "Magica Cloth (coat)"
+
+[node name="Magica Cloth (necklace)" type="Node3D" parent="Niklas/Niklas_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13454
+metadata/unity_name = "Magica Cloth (necklace)"
+
+[node name="Magica Cloth (bangs)" type="Node3D" parent="Niklas/Niklas_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14326
+metadata/unity_name = "Magica Cloth (bangs)"
+
+[node name="Magica Cloth (collar)" type="Node3D" parent="Niklas/Niklas_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7724
+metadata/unity_name = "Magica Cloth (collar)"
+
+[node name="OverheadSlot" type="Node3D" parent="Niklas"]
+position = Vector3(0, 2.5, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18440
+metadata/unity_name = "OverheadSlot"
+
+[node name="VFXParent" type="Node3D" parent="Niklas"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10455
+metadata/unity_name = "VFXParent"
+
+[node name="VFX_Niklas_BasicAttack" type="Node3D" parent="Niklas/VFXParent"]
+position = Vector3(-0.159999996, 1.83000004, -0.140000001)
+quaternion = Quaternion(0.548107684, 0.0259168074, -0.835325241, -0.0337334387)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5289
+metadata/unity_name = "VFX_Niklas_BasicAttack"
+
+[node name="root" type="Node3D" parent="Niklas/VFXParent/VFX_Niklas_BasicAttack"]
+position = Vector3(1.64999998, 0.460000008, -0.899999976)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6259
+metadata/unity_name = "root"
+
+[node name="Slash_01" type="Node3D" parent="Niklas/VFXParent/VFX_Niklas_BasicAttack/root"]
+position = Vector3(-0.629999995, -0, 0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6651
+metadata/unity_name = "Slash_01"
+
+[node name="Slash_02_Highlight" type="Node3D" parent="Niklas/VFXParent/VFX_Niklas_BasicAttack/root"]
+position = Vector3(-0.629999697, -5.58793545e-08, -5.96046448e-08)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7102
+metadata/unity_name = "Slash_02_Highlight"
+
+[node name="VFX_Niklas_SkillAttack_01" type="Node3D" parent="Niklas/VFXParent"]
+position = Vector3(-0, 0, 0.159999996)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1.10000002, 1.10000002, 1.10000002)
+metadata/unity_id = 18084
+metadata/unity_name = "VFX_Niklas_SkillAttack_01"
+
+[node name="root" type="Node3D" parent="Niklas/VFXParent/VFX_Niklas_SkillAttack_01"]
+position = Vector3(0.529999971, 0, -2.83999991)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17148
+metadata/unity_name = "root"
+
+[node name="Slash_01_White" type="Node3D" parent="Niklas/VFXParent/VFX_Niklas_SkillAttack_01/root"]
+position = Vector3(0, 0.709999979, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8307
+metadata/unity_name = "Slash_01_White"
+
+[node name="Slash_02_Red" type="Node3D" parent="Niklas/VFXParent/VFX_Niklas_SkillAttack_01/root"]
+position = Vector3(0, 1.63999999, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5356
+metadata/unity_name = "Slash_02_Red"
+
+[node name="Smoke_00" type="Node3D" parent="Niklas/VFXParent/VFX_Niklas_SkillAttack_01/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24451
+metadata/unity_name = "Smoke_00"
+
+[node name="Crack_00" type="Node3D" parent="Niklas/VFXParent/VFX_Niklas_SkillAttack_01/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5651
+metadata/unity_name = "Crack_00"
+
+[node name="Impact_00" type="Node3D" parent="Niklas/VFXParent/VFX_Niklas_SkillAttack_01/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7737
+metadata/unity_name = "Impact_00"
+
+[node name="Splash_00" type="Node3D" parent="Niklas/VFXParent/VFX_Niklas_SkillAttack_01/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24185
+metadata/unity_name = "Splash_00"
+
+[node name="particle" type="Node3D" parent="Niklas/VFXParent/VFX_Niklas_SkillAttack_01/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21321
+metadata/unity_name = "particle"
+
+[node name="particle_add" type="Node3D" parent="Niklas/VFXParent/VFX_Niklas_SkillAttack_01/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6818
+metadata/unity_name = "particle_add"
+
+[node name="Glow_01" type="Node3D" parent="Niklas/VFXParent/VFX_Niklas_SkillAttack_01/root"]
+position = Vector3(0, -0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20776
+metadata/unity_name = "Glow_01"
+
+[node name="CameraShake_low" type="Node3D" parent="Niklas/VFXParent"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20564
+metadata/unity_name = "CameraShake_low"
+
+[node name="VFX_Niklas_SkillAttack_02" type="Node3D" parent="Niklas/VFXParent"]
+position = Vector3(0.25999999, 1.22000003, -1.64999998)
+quaternion = Quaternion(-0.0444410332, 0.989088535, 0.134961605, 0.0389135219)
+scale = Vector3(1.10000002, 1.10000002, 1.10000002)
+metadata/unity_id = 10176
+metadata/unity_name = "VFX_Niklas_SkillAttack_02"
+
+[node name="root" type="Node3D" parent="Niklas/VFXParent/VFX_Niklas_SkillAttack_02"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8995
+metadata/unity_name = "root"
+
+[node name="Stab_01" type="Node3D" parent="Niklas/VFXParent/VFX_Niklas_SkillAttack_02/root"]
+position = Vector3(-0, 0, -1.60000002)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19012
+metadata/unity_name = "Stab_01"
+
+[node name="Stab_02" type="Node3D" parent="Niklas/VFXParent/VFX_Niklas_SkillAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5380
+metadata/unity_name = "Stab_02"
+
+[node name="Stab_03" type="Node3D" parent="Niklas/VFXParent/VFX_Niklas_SkillAttack_02/root"]
+position = Vector3(0, -0, 0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14512
+metadata/unity_name = "Stab_03"
+
+[node name="Ring_01" type="Node3D" parent="Niklas/VFXParent/VFX_Niklas_SkillAttack_02/root"]
+position = Vector3(0, -0, 0.899999976)
+quaternion = Quaternion(0.707106829, -0, 0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21230
+metadata/unity_name = "Ring_01"
+
+[node name="emitter" type="Node3D" parent="Niklas/VFXParent/VFX_Niklas_SkillAttack_02/root"]
+position = Vector3(-0, 0, 1.48000002)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21813
+metadata/unity_name = "emitter"
+
+[node name="black_dust" type="Node3D" parent="Niklas/VFXParent/VFX_Niklas_SkillAttack_02/root/emitter"]
+position = Vector3(0, -0, 0.910000026)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20608
+metadata/unity_name = "black_dust"

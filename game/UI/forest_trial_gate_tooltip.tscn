@@ -1,0 +1,112 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://UI/sliced_image.gd" id="SlicedImage"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets2_205.png" id="1"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets2_180.png" id="2"]
+
+[node name="forest_trial_gate_tooltipUI" type="Control"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="ComplexTooltip_01" type="Control" parent="."]
+mouse_filter = 2
+metadata/unity_id = 66
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -160
+offset_right = 160
+offset_top = 75
+offset_bottom = 75
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 1)
+metadata/unity_file = "level12"
+metadata/layout_spacing = 6.0
+metadata/layout_padding = Vector4(16, 16, 16, 16)
+modulate = Color(1, 1, 1, 1.0)
+
+[node name="UnityImage" type="Control" parent="ComplexTooltip_01"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("1")
+border = Vector4(4, 4, 4, 4)
+pixels_per_unit = 1
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="DescriptionWorldSpace" type="Control" parent="ComplexTooltip_01"]
+mouse_filter = 2
+metadata/unity_id = 57
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "level12"
+metadata/layout_spacing = 0.0
+metadata/layout_padding = Vector4(0, 0, 0, 0)
+
+[node name="MainText" type="Control" parent="ComplexTooltip_01/DescriptionWorldSpace"]
+mouse_filter = 2
+metadata/unity_id = 55
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "level12"
+
+[node name="UnityText" type="Label" parent="ComplexTooltip_01/DescriptionWorldSpace/MainText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "This is a very long description of this item that the tooltip is showing for you right here. That's a lot of information!\n(<sprite index=1>)(<sprite index=25>+1)(123123<sprite name=omnivamp>)(123123<sprite name=damageamp>)(123123<sprite name=basetruedamage>)(123123<sprite name=bonustruedamage>)(123123<sprite name=frost><sprite name=burn><sprite name=poison><sprite name=heal>)"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.858490586, 0.823537171, 0.692461729, 1)
+horizontal_alignment = 0
+vertical_alignment = 0
+
+[node name="OuterFrame" type="Control" parent="ComplexTooltip_01"]
+mouse_filter = 2
+metadata/unity_id = 23
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -2
+offset_right = 2
+offset_top = -2
+offset_bottom = 2
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "level12"
+
+[node name="UnityImage" type="Control" parent="ComplexTooltip_01/OuterFrame"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("2")
+border = Vector4(88, 88, 88, 88)
+pixels_per_unit = 1.5
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)

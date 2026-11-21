@@ -1,0 +1,16 @@
+[gd_resource type="ShaderMaterial" format=3]
+[ext_resource type="Shader" path="res://materials/forest_crystal_shine.gdshader" id="Shine"]
+[ext_resource type="Texture2D" path="res://textures/sharedassets10_24.png" id="sweep_texture"]
+[ext_resource type="Texture2D" path="res://textures/sharedassets10_21.png" id="crystal_mask"]
+
+[resource]
+resource_name = "RuinsForest_Crystal_Mat_Default_Shine"
+shader = ExtResource("Shine")
+shader_parameter/tint = Vector3(0.749019682, 0.590942204, 0.293248266)
+shader_parameter/intensity = 0.400000006
+shader_parameter/sweep_speed = Vector2(0.00999999978, -0)
+metadata/unity_shader = "Shader Graphs/VFXTrail_SG"
+shader_parameter/sweep_texture = ExtResource("sweep_texture")
+shader_parameter/sweep_uv = Vector4(1, 1, 0, 0)
+shader_parameter/crystal_mask = ExtResource("crystal_mask")
+shader_parameter/mask_uv = Vector4(1, 1, 0, 0)

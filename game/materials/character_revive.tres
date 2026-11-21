@@ -1,0 +1,14 @@
+[gd_resource type="ShaderMaterial" format=3]
+
+[ext_resource type="Shader" path="res://materials/character_revive.gdshader" id="1"]
+
+[resource]
+shader = ExtResource("1")
+shader_parameter/tint = Color(0.621173024, 0.933962286, 0.893964708, 1)
+shader_parameter/rim_tint = Color(2, 2, 2, 1)
+shader_parameter/rim_profile = Vector3(3.5, 0.5, 0.649999976)
+shader_parameter/light_limits = Vector2(0.0500000007, 1)
+shader_parameter/antialias_strength = 1
+metadata/revive_delay = 0.449999988
+metadata/revive_duration = 0.100000001
+metadata/unity_material = "sharedassets1.assets:9"

@@ -1,0 +1,451 @@
+[gd_scene format=3]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2950.obj" id="1"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_273.tres" id="2"]
+
+[node name="Snake" type="Node3D"]
+
+[node name="Snake" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13148
+metadata/unity_name = "Snake"
+
+[node name="Snake" type="Node3D" parent="Snake"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(0.600000024, 0.600000024, 0.600000024)
+metadata/unity_id = 12265
+metadata/unity_name = "Snake"
+
+[node name="root" type="Node3D" parent="Snake/Snake"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(0.707106829, -0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10098
+metadata/unity_name = "root"
+
+[node name="pelvis" type="Node3D" parent="Snake/Snake/root"]
+position = Vector3(-0, 1.40834348e-17, -0.229999989)
+quaternion = Quaternion(0.00267752702, 0.0125322063, -0.364605159, 0.931074083)
+scale = Vector3(0.999999881, 0.999999702, 0.999999821)
+metadata/unity_id = 6620
+metadata/unity_name = "pelvis"
+
+[node name="spine_01" type="Node3D" parent="Snake/Snake/root/pelvis"]
+position = Vector3(1.49011612e-08, -0.407341003, 0.0215220265)
+quaternion = Quaternion(0.295646936, 0.0177243836, 0.266153008, 0.917301118)
+scale = Vector3(0.999999881, 1, 0.999999881)
+metadata/unity_id = 8968
+metadata/unity_name = "spine_01"
+
+[node name="spine_02" type="Node3D" parent="Snake/Snake/root/pelvis/spine_01"]
+position = Vector3(-7.62939436e-08, -0.374294341, -0)
+quaternion = Quaternion(0.192595944, 0.00784147717, 0.0252284314, 0.980922461)
+scale = Vector3(1, 0.999999881, 0.999999881)
+metadata/unity_id = 16222
+metadata/unity_name = "spine_02"
+
+[node name="spine_03" type="Node3D" parent="Snake/Snake/root/pelvis/spine_01/spine_02"]
+position = Vector3(-9.5367426e-08, -0.260488361, 0.00588378916)
+quaternion = Quaternion(0.19072862, -0.00628222758, -0.0286825486, 0.981203616)
+scale = Vector3(1, 0.99999994, 1)
+metadata/unity_id = 5532
+metadata/unity_name = "spine_03"
+
+[node name="spine_04" type="Node3D" parent="Snake/Snake/root/pelvis/spine_01/spine_02/spine_03"]
+position = Vector3(1.90734859e-08, -0.272316128, -7.62939436e-08)
+quaternion = Quaternion(0.294967204, -0.0683634728, -0.0334455222, 0.952471614)
+scale = Vector3(1, 1, 0.99999994)
+metadata/unity_id = 16364
+metadata/unity_name = "spine_04"
+
+[node name="spine_05" type="Node3D" parent="Snake/Snake/root/pelvis/spine_01/spine_02/spine_03/spine_04"]
+position = Vector3(-5.24520871e-08, -0.354579389, -1.52587887e-07)
+quaternion = Quaternion(0.277034044, -0.0157048386, -0.131213903, 0.951729178)
+scale = Vector3(1, 0.999999881, 0.99999994)
+metadata/unity_id = 8539
+metadata/unity_name = "spine_05"
+
+[node name="spine_06" type="Node3D" parent="Snake/Snake/root/pelvis/spine_01/spine_02/spine_03/spine_04/spine_05"]
+position = Vector3(-3.81469718e-08, -0.385103077, -0.0171768181)
+quaternion = Quaternion(-0.178657308, 0.0967980847, 0.0489888154, 0.977912009)
+scale = Vector3(1.00000012, 1.00000012, 0.99999994)
+metadata/unity_id = 12733
+metadata/unity_name = "spine_06"
+
+[node name="spine_07" type="Node3D" parent="Snake/Snake/root/pelvis/spine_01/spine_02/spine_03/spine_04/spine_05/spine_06"]
+position = Vector3(-1.90734859e-08, -0.348837286, 0.0132092284)
+quaternion = Quaternion(-0.393408269, 0.0124948341, 0.0469571464, 0.918078899)
+scale = Vector3(0.999999881, 0.999999881, 1)
+metadata/unity_id = 14457
+metadata/unity_name = "spine_07"
+
+[node name="spine_08" type="Node3D" parent="Snake/Snake/root/pelvis/spine_01/spine_02/spine_03/spine_04/spine_05/spine_06/spine_07"]
+position = Vector3(-3.81469718e-08, -0.334191263, -0.0234396923)
+quaternion = Quaternion(-0.329292566, 0.0171248578, 0.0120278588, 0.943996012)
+scale = Vector3(0.999999881, 1.00000012, 0.99999994)
+metadata/unity_id = 25614
+metadata/unity_name = "spine_08"
+
+[node name="spine_09" type="Node3D" parent="Snake/Snake/root/pelvis/spine_01/spine_02/spine_03/spine_04/spine_05/spine_06/spine_07/spine_08"]
+position = Vector3(7.62939436e-08, -0.357767016, -0.0642451495)
+quaternion = Quaternion(-0.33539328, -0.0101118432, 0.0579020232, 0.940242767)
+scale = Vector3(0.999999881, 0.99999994, 0.999999881)
+metadata/unity_id = 14516
+metadata/unity_name = "spine_09"
+
+[node name="spine_10" type="Node3D" parent="Snake/Snake/root/pelvis/spine_01/spine_02/spine_03/spine_04/spine_05/spine_06/spine_07/spine_08/spine_09"]
+position = Vector3(0, -0.255983502, 1.52587887e-07)
+quaternion = Quaternion(-0.0332901217, 0.000397801661, -0.0201980565, 0.999241531)
+scale = Vector3(0.999999881, 0.999999821, 0.999999821)
+metadata/unity_id = 17865
+metadata/unity_name = "spine_10"
+
+[node name="neck_01" type="Node3D" parent="Snake/Snake/root/pelvis/spine_01/spine_02/spine_03/spine_04/spine_05/spine_06/spine_07/spine_08/spine_09/spine_10"]
+position = Vector3(-3.81469718e-08, -0.276364446, -0.0198274218)
+quaternion = Quaternion(-0.415748626, 0.0179781448, 0.0600136556, 0.907319248)
+scale = Vector3(1.00000012, 1, 0.99999994)
+metadata/unity_id = 16698
+metadata/unity_name = "neck_01"
+
+[node name="head" type="Node3D" parent="Snake/Snake/root/pelvis/spine_01/spine_02/spine_03/spine_04/spine_05/spine_06/spine_07/spine_08/spine_09/spine_10/neck_01"]
+position = Vector3(-7.62939436e-08, -0.168931887, -0.0278240964)
+quaternion = Quaternion(0.462483287, 0.0255866218, -0.0552103817, 0.884537339)
+scale = Vector3(1.00000012, 1, 1.00000012)
+metadata/unity_id = 15280
+metadata/unity_name = "head"
+
+[node name="eye_l" type="Node3D" parent="Snake/Snake/root/pelvis/spine_01/spine_02/spine_03/spine_04/spine_05/spine_06/spine_07/spine_08/spine_09/spine_10/neck_01/head"]
+position = Vector3(-0.109370917, -0.462183595, -0.128270566)
+quaternion = Quaternion(-1, 1.74623316e-10, 4.65050006e-17, -2.66316107e-07)
+scale = Vector3(1.00000012, 0.999999821, 0.999999821)
+metadata/unity_id = 5284
+metadata/unity_name = "eye_l"
+
+[node name="eye_r" type="Node3D" parent="Snake/Snake/root/pelvis/spine_01/spine_02/spine_03/spine_04/spine_05/spine_06/spine_07/spine_08/spine_09/spine_10/neck_01/head"]
+position = Vector3(0.109370984, -0.462186486, -0.128271326)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1.00000012, 1.00000012, 1.00000012)
+metadata/unity_id = 11727
+metadata/unity_name = "eye_r"
+
+[node name="jaw" type="Node3D" parent="Snake/Snake/root/pelvis/spine_01/spine_02/spine_03/spine_04/spine_05/spine_06/spine_07/spine_08/spine_09/spine_10/neck_01/head"]
+position = Vector3(3.81469718e-08, -0.0354692079, 0.0664085373)
+quaternion = Quaternion(0.130504683, 0.00389993913, 0.00541374972, 0.991425216)
+scale = Vector3(1.00000012, 1, 1)
+metadata/unity_id = 23315
+metadata/unity_name = "jaw"
+
+[node name="tongue_01" type="Node3D" parent="Snake/Snake/root/pelvis/spine_01/spine_02/spine_03/spine_04/spine_05/spine_06/spine_07/spine_08/spine_09/spine_10/neck_01/head"]
+position = Vector3(3.81469718e-08, 0.0533157326, 0.146169424)
+quaternion = Quaternion(0.223861888, -0.00201450964, -0.00221317937, 0.974616289)
+scale = Vector3(1.00000012, 1.00000596, 1)
+metadata/unity_id = 21860
+metadata/unity_name = "tongue_01"
+
+[node name="tongue_02" type="Node3D" parent="Snake/Snake/root/pelvis/spine_01/spine_02/spine_03/spine_04/spine_05/spine_06/spine_07/spine_08/spine_09/spine_10/neck_01/head/tongue_01"]
+position = Vector3(0.000175743102, -0.0986148044, -0.0356511697)
+quaternion = Quaternion(-0.135659859, 0.00122031395, 0.00135610462, 0.990753829)
+scale = Vector3(0.999999881, 1, 0.99999994)
+metadata/unity_id = 9133
+metadata/unity_name = "tongue_02"
+
+[node name="tongue_03" type="Node3D" parent="Snake/Snake/root/pelvis/spine_01/spine_02/spine_03/spine_04/spine_05/spine_06/spine_07/spine_08/spine_09/spine_10/neck_01/head/tongue_01/tongue_02"]
+position = Vector3(0.000416698458, -0.223613128, 0.055390317)
+quaternion = Quaternion(-0.280437768, -0.00809028465, 0.0032875936, 0.959832489)
+scale = Vector3(0.99999994, 1, 0.999999881)
+metadata/unity_id = 8297
+metadata/unity_name = "tongue_03"
+
+[node name="tongue_04" type="Node3D" parent="Snake/Snake/root/pelvis/spine_01/spine_02/spine_03/spine_04/spine_05/spine_06/spine_07/spine_08/spine_09/spine_10/neck_01/head/tongue_01/tongue_02/tongue_03"]
+position = Vector3(0.000849094358, -0.150570363, 0.0410681143)
+quaternion = Quaternion(0.0565146953, -0.037375547, 0.0314272828, 0.997206867)
+scale = Vector3(0.999999881, 1, 0.999999821)
+metadata/unity_id = 11822
+metadata/unity_name = "tongue_04"
+
+[node name="tongue_05" type="Node3D" parent="Snake/Snake/root/pelvis/spine_01/spine_02/spine_03/spine_04/spine_05/spine_06/spine_07/spine_08/spine_09/spine_10/neck_01/head/tongue_01/tongue_02/tongue_03/tongue_04"]
+position = Vector3(0.00705036148, -0.152385399, 0.0443060286)
+quaternion = Quaternion(0.204746887, 0.0579250492, -0.00869978778, 0.977060795)
+scale = Vector3(0.999999821, 1, 0.999999821)
+metadata/unity_id = 23723
+metadata/unity_name = "tongue_05"
+
+[node name="tongue_06" type="Node3D" parent="Snake/Snake/root/pelvis/spine_01/spine_02/spine_03/spine_04/spine_05/spine_06/spine_07/spine_08/spine_09/spine_10/neck_01/head/tongue_01/tongue_02/tongue_03/tongue_04/tongue_05"]
+position = Vector3(0.00372379296, -0.100968778, 0.0187236015)
+quaternion = Quaternion(-0.476969361, -0.0441493914, -0.0142056029, 0.877695441)
+scale = Vector3(1, 1, 0.99999994)
+metadata/unity_id = 17901
+metadata/unity_name = "tongue_06"
+
+[node name="tongue_07" type="Node3D" parent="Snake/Snake/root/pelvis/spine_01/spine_02/spine_03/spine_04/spine_05/spine_06/spine_07/spine_08/spine_09/spine_10/neck_01/head/tongue_01/tongue_02/tongue_03/tongue_04/tongue_05/tongue_06"]
+position = Vector3(0.00113559724, -0.163894877, 0.0208946224)
+quaternion = Quaternion(0.550827205, -0.0234415215, -0.00492140697, 0.834275544)
+scale = Vector3(1, 1.00000024, 0.999999881)
+metadata/unity_id = 22665
+metadata/unity_name = "tongue_07"
+
+[node name="tongue_08" type="Node3D" parent="Snake/Snake/root/pelvis/spine_01/spine_02/spine_03/spine_04/spine_05/spine_06/spine_07/spine_08/spine_09/spine_10/neck_01/head/tongue_01/tongue_02/tongue_03/tongue_04/tongue_05/tongue_06/tongue_07"]
+position = Vector3(0.00722545618, -0.0955299363, 0.00646171533)
+quaternion = Quaternion(-0.418679923, 0.000148471372, -0.0130473683, 0.908040106)
+scale = Vector3(0.999999881, 1, 1)
+metadata/unity_id = 14780
+metadata/unity_name = "tongue_08"
+
+[node name="tail_01" type="Node3D" parent="Snake/Snake/root/pelvis"]
+position = Vector3(3.695488e-08, 0.48004055, 0.0133970445)
+quaternion = Quaternion(0.00455503119, 0.0303720683, 0.450517923, 0.892239034)
+scale = Vector3(0.99999994, 0.99999994, 0.99999994)
+metadata/unity_id = 11949
+metadata/unity_name = "tail_01"
+
+[node name="tail_02" type="Node3D" parent="Snake/Snake/root/pelvis/tail_01"]
+position = Vector3(-0, 0.369747549, 0.0208398812)
+quaternion = Quaternion(-0.0513245985, 0.0113184964, 0.407044828, 0.911894858)
+scale = Vector3(1, 0.99999994, 0.999999821)
+metadata/unity_id = 7884
+metadata/unity_name = "tail_02"
+
+[node name="tail_03" type="Node3D" parent="Snake/Snake/root/pelvis/tail_01/tail_02"]
+position = Vector3(-7.62939436e-08, 0.335609347, 2.86102289e-08)
+quaternion = Quaternion(-0.0390712097, -0.0354499407, 0.31906417, 0.946263611)
+scale = Vector3(0.999999881, 0.999999821, 1)
+metadata/unity_id = 23699
+metadata/unity_name = "tail_03"
+
+[node name="tail_04" type="Node3D" parent="Snake/Snake/root/pelvis/tail_01/tail_02/tail_03"]
+position = Vector3(-2.28881831e-07, 0.353593141, 0.0410560407)
+quaternion = Quaternion(0.00233391137, -0.00601882115, 0.268374115, 0.963293135)
+scale = Vector3(0.999999821, 0.99999994, 0.999999881)
+metadata/unity_id = 6226
+metadata/unity_name = "tail_04"
+
+[node name="tail_05" type="Node3D" parent="Snake/Snake/root/pelvis/tail_01/tail_02/tail_03/tail_04"]
+position = Vector3(7.62939436e-08, 0.305095404, -9.53674295e-09)
+quaternion = Quaternion(-0.0176883023, 0.136405185, 0.2469953, 0.959204972)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10590
+metadata/unity_name = "tail_05"
+
+[node name="tail_06" type="Node3D" parent="Snake/Snake/root/pelvis/tail_01/tail_02/tail_03/tail_04/tail_05"]
+position = Vector3(3.05175774e-07, 0.340041697, 0.0486579984)
+quaternion = Quaternion(-0.0275833029, -0.00461353827, 0.11019814, 0.993516147)
+scale = Vector3(1, 1, 0.99999994)
+metadata/unity_id = 18458
+metadata/unity_name = "tail_06"
+
+[node name="tail_07" type="Node3D" parent="Snake/Snake/root/pelvis/tail_01/tail_02/tail_03/tail_04/tail_05/tail_06"]
+position = Vector3(0, 0.266520143, 0.0198949426)
+quaternion = Quaternion(-0.083724238, -0.0723485127, 0.171238601, 0.978996038)
+scale = Vector3(0.999999881, 0.999999881, 0.999999762)
+metadata/unity_id = 7277
+metadata/unity_name = "tail_07"
+
+[node name="tail_08" type="Node3D" parent="Snake/Snake/root/pelvis/tail_01/tail_02/tail_03/tail_04/tail_05/tail_06/tail_07"]
+position = Vector3(7.62939436e-08, 0.339142144, -0.0139351748)
+quaternion = Quaternion(0.0162092205, 0.0201060828, 0.195493996, 0.980364799)
+scale = Vector3(0.999999821, 1, 0.99999994)
+metadata/unity_id = 26656
+metadata/unity_name = "tail_08"
+
+[node name="tail_09" type="Node3D" parent="Snake/Snake/root/pelvis/tail_01/tail_02/tail_03/tail_04/tail_05/tail_06/tail_07/tail_08"]
+position = Vector3(3.81469704e-07, 0.206904501, 4.7683713e-08)
+quaternion = Quaternion(-0.037704803, -0.140882269, 0.0841123611, 0.985725999)
+scale = Vector3(0.999999881, 1, 0.999999821)
+metadata/unity_id = 6396
+metadata/unity_name = "tail_09"
+
+[node name="tail_10" type="Node3D" parent="Snake/Snake/root/pelvis/tail_01/tail_02/tail_03/tail_04/tail_05/tail_06/tail_07/tail_08/tail_09"]
+position = Vector3(7.62939436e-08, 0.309576154, 0.0167401116)
+quaternion = Quaternion(0.0336628556, -0.0484825782, 0.0717534944, 0.995674491)
+scale = Vector3(1, 0.999999762, 0.999999881)
+metadata/unity_id = 24015
+metadata/unity_name = "tail_10"
+
+[node name="tail_11" type="Node3D" parent="Snake/Snake/root/pelvis/tail_01/tail_02/tail_03/tail_04/tail_05/tail_06/tail_07/tail_08/tail_09/tail_10"]
+position = Vector3(7.62939436e-08, 0.220931232, 0.0182615649)
+quaternion = Quaternion(0.0307885725, 0.00472906232, 0.167762622, 0.985335171)
+scale = Vector3(1, 1, 0.999999881)
+metadata/unity_id = 15735
+metadata/unity_name = "tail_11"
+
+[node name="tail_12" type="Node3D" parent="Snake/Snake/root/pelvis/tail_01/tail_02/tail_03/tail_04/tail_05/tail_06/tail_07/tail_08/tail_09/tail_10/tail_11"]
+position = Vector3(1.52587887e-07, 0.24895525, 0.00962909684)
+quaternion = Quaternion(0.00673923315, 0.0159836542, 0.23274605, 0.972382843)
+scale = Vector3(1, 1, 0.999999881)
+metadata/unity_id = 22065
+metadata/unity_name = "tail_12"
+
+[node name="tail_13" type="Node3D" parent="Snake/Snake/root/pelvis/tail_01/tail_02/tail_03/tail_04/tail_05/tail_06/tail_07/tail_08/tail_09/tail_10/tail_11/tail_12"]
+position = Vector3(1.52587887e-07, 0.242222399, 5.72204577e-08)
+quaternion = Quaternion(0.0371839777, 0.0211867616, 0.249164641, 0.967515111)
+scale = Vector3(1, 1.00000012, 0.999999881)
+metadata/unity_id = 23835
+metadata/unity_name = "tail_13"
+
+[node name="tail_14" type="Node3D" parent="Snake/Snake/root/pelvis/tail_01/tail_02/tail_03/tail_04/tail_05/tail_06/tail_07/tail_08/tail_09/tail_10/tail_11/tail_12/tail_13"]
+position = Vector3(1.52587887e-07, 0.296031207, 0.010654592)
+quaternion = Quaternion(0.0245880783, -0.00659055775, 0.183016926, 0.982780159)
+scale = Vector3(0.999999881, 1, 0.99999994)
+metadata/unity_id = 13506
+metadata/unity_name = "tail_14"
+
+[node name="tail_15" type="Node3D" parent="Snake/Snake/root/pelvis/tail_01/tail_02/tail_03/tail_04/tail_05/tail_06/tail_07/tail_08/tail_09/tail_10/tail_11/tail_12/tail_13/tail_14"]
+position = Vector3(-1.52587887e-07, 0.282417297, 1.90734859e-08)
+quaternion = Quaternion(-0.173967808, 0.0319832377, 0.227170676, 0.957656443)
+scale = Vector3(0.999999881, 1, 1)
+metadata/unity_id = 22367
+metadata/unity_name = "tail_15"
+
+[node name="tail_16" type="Node3D" parent="Snake/Snake/root/pelvis/tail_01/tail_02/tail_03/tail_04/tail_05/tail_06/tail_07/tail_08/tail_09/tail_10/tail_11/tail_12/tail_13/tail_14/tail_15"]
+position = Vector3(0, 0.274714589, -1.14440915e-07)
+quaternion = Quaternion(-0.186864659, 0.0748504028, 0.0694640353, 0.977063894)
+scale = Vector3(0.999999821, 0.999999821, 0.99999994)
+metadata/unity_id = 9106
+metadata/unity_name = "tail_16"
+
+[node name="tail_17" type="Node3D" parent="Snake/Snake/root/pelvis/tail_01/tail_02/tail_03/tail_04/tail_05/tail_06/tail_07/tail_08/tail_09/tail_10/tail_11/tail_12/tail_13/tail_14/tail_15/tail_16"]
+position = Vector3(0, 0.283583701, 0.0186262596)
+quaternion = Quaternion(-0.153734863, 0.000688190223, 0.00384747074, 0.988104403)
+scale = Vector3(0.99999994, 1.00000012, 1)
+metadata/unity_id = 12755
+metadata/unity_name = "tail_17"
+
+[node name="tail_18" type="Node3D" parent="Snake/Snake/root/pelvis/tail_01/tail_02/tail_03/tail_04/tail_05/tail_06/tail_07/tail_08/tail_09/tail_10/tail_11/tail_12/tail_13/tail_14/tail_15/tail_16/tail_17"]
+position = Vector3(-7.62939436e-08, 0.21699442, -4.57763662e-07)
+quaternion = Quaternion(-0.176317483, -0.015533004, 0.013298572, 0.984120965)
+scale = Vector3(0.99999994, 0.99999994, 0.999999881)
+metadata/unity_id = 25537
+metadata/unity_name = "tail_18"
+
+[node name="Snake_Mesh" type="Node3D" parent="Snake/Snake"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(0.707106829, -0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25428
+metadata/unity_name = "Snake_Mesh"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Snake/Snake/Snake_Mesh"]
+mesh = ExtResource("1")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="OverheadSlot" type="Node3D" parent="Snake"]
+position = Vector3(0, 2, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12889
+metadata/unity_name = "OverheadSlot"
+
+[node name="VFXParent" type="Node3D" parent="Snake"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17166
+metadata/unity_name = "VFXParent"
+
+[node name="VFX_Snake_SkillAttack" type="Node3D" parent="Snake/VFXParent"]
+position = Vector3(-0.147, 0.834999979, -2.32500005)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22742
+metadata/unity_name = "VFX_Snake_SkillAttack"
+
+[node name="root" type="Node3D" parent="Snake/VFXParent/VFX_Snake_SkillAttack"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, -3.72528897e-09, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6157
+metadata/unity_name = "root"
+
+[node name="Splash_02" type="Node3D" parent="Snake/VFXParent/VFX_Snake_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12196
+metadata/unity_name = "Splash_02"
+
+[node name="Impact_01" type="Node3D" parent="Snake/VFXParent/VFX_Snake_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, -3.72528897e-09, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12522
+metadata/unity_name = "Impact_01"
+
+[node name="Splash_01" type="Node3D" parent="Snake/VFXParent/VFX_Snake_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11842
+metadata/unity_name = "Splash_01"
+
+[node name="Spike_01" type="Node3D" parent="Snake/VFXParent/VFX_Snake_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 3.72528897e-09, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17723
+metadata/unity_name = "Spike_01"
+
+[node name="Smoke_01" type="Node3D" parent="Snake/VFXParent/VFX_Snake_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 3.72528897e-09, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24944
+metadata/unity_name = "Smoke_01"
+
+[node name="Smoke_02" type="Node3D" parent="Snake/VFXParent/VFX_Snake_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 3.72528897e-09, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9943
+metadata/unity_name = "Smoke_02"
+
+[node name="Flare_01" type="Node3D" parent="Snake/VFXParent/VFX_Snake_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26009
+metadata/unity_name = "Flare_01"
+
+[node name="Flecks_01" type="Node3D" parent="Snake/VFXParent/VFX_Snake_SkillAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 3.72528897e-09, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7521
+metadata/unity_name = "Flecks_01"
+
+[node name="VFX_Snake_BaseAttack" type="Node3D" parent="Snake/VFXParent"]
+position = Vector3(-0.189999998, 1, -1.91999996)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12614
+metadata/unity_name = "VFX_Snake_BaseAttack"
+
+[node name="root" type="Node3D" parent="Snake/VFXParent/VFX_Snake_BaseAttack"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, -3.72528897e-09, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12737
+metadata/unity_name = "root"
+
+[node name="Splash_02" type="Node3D" parent="Snake/VFXParent/VFX_Snake_BaseAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24036
+metadata/unity_name = "Splash_02"
+
+[node name="Impact_01" type="Node3D" parent="Snake/VFXParent/VFX_Snake_BaseAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, -3.72528897e-09, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21367
+metadata/unity_name = "Impact_01"
+
+[node name="Splash_01" type="Node3D" parent="Snake/VFXParent/VFX_Snake_BaseAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21594
+metadata/unity_name = "Splash_01"

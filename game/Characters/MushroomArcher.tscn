@@ -1,0 +1,951 @@
+[gd_scene format=3]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2939.obj" id="1"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_161.tres" id="2"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2741.obj" id="3"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2750.obj" id="4"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2711.obj" id="5"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2904.obj" id="6"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_162.tres" id="7"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2911.obj" id="8"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2724.obj" id="9"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2796.obj" id="10"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_1060.tres" id="11"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2964.obj" id="12"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2923.obj" id="13"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2874.obj" id="14"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_163.tres" id="15"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2932.obj" id="16"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2769.obj" id="17"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2956.obj" id="18"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_164.tres" id="19"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2889.obj" id="20"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_1061.tres" id="21"]
+
+[node name="MushroomArcher" type="Node3D"]
+
+[node name="MushroomArcher" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6015
+metadata/unity_name = "MushroomArcher"
+
+[node name="MushroomMinion_Archer_Rd" type="Node3D" parent="MushroomArcher"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(0.600000024, 0.600000024, 0.600000024)
+metadata/unity_id = 16289
+metadata/unity_name = "MushroomMinion_Archer_Rd"
+
+[node name="Geometry" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(0.707106829, -0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24027
+metadata/unity_name = "Geometry"
+
+[node name="Armor" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/Geometry"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8697
+metadata/unity_name = "Armor"
+
+[node name="Belt_Mesh" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/Geometry/Armor"]
+position = Vector3(-2.86102289e-08, -0.119069554, -0.792317629)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18716
+metadata/unity_name = "Belt_Mesh"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/Geometry/Armor/Belt_Mesh"]
+mesh = ExtResource("1")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="Gloves_Mesh" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/Geometry/Armor"]
+position = Vector3(-0, -0.0372135006, -0.849980652)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13363
+metadata/unity_name = "Gloves_Mesh"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/Geometry/Armor/Gloves_Mesh"]
+mesh = ExtResource("3")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="Mask_Mesh" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/Geometry/Armor"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7760
+metadata/unity_name = "Mask_Mesh"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/Geometry/Armor/Mask_Mesh"]
+mesh = ExtResource("4")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="Robe_Mesh" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/Geometry/Armor"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17563
+metadata/unity_name = "Robe_Mesh"
+visible = false
+process_mode = 4
+
+[node name="UnityMesh" type="MeshInstance3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/Geometry/Armor/Robe_Mesh"]
+mesh = ExtResource("5")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="Body" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/Geometry"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25736
+metadata/unity_name = "Body"
+
+[node name="Arms_Mesh" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/Geometry/Body"]
+position = Vector3(-0, -0.156729311, -0.876843631)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7807
+metadata/unity_name = "Arms_Mesh"
+visible = false
+process_mode = 4
+
+[node name="UnityMesh" type="MeshInstance3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/Geometry/Body/Arms_Mesh"]
+mesh = ExtResource("6")
+visible = true
+surface_material_override/0 = ExtResource("7")
+
+[node name="Body_Mesh" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/Geometry/Body"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18070
+metadata/unity_name = "Body_Mesh"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/Geometry/Body/Body_Mesh"]
+mesh = ExtResource("8")
+visible = true
+surface_material_override/0 = ExtResource("7")
+
+[node name="Eyes_Mesh" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/Geometry/Body"]
+position = Vector3(3.57627869e-06, -0.182129875, -1.31750917)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26863
+metadata/unity_name = "Eyes_Mesh"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/Geometry/Body/Eyes_Mesh"]
+mesh = ExtResource("9")
+visible = true
+surface_material_override/0 = ExtResource("7")
+
+[node name="Hair" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/Geometry"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16807
+metadata/unity_name = "Hair"
+visible = false
+process_mode = 4
+
+[node name="Backenbards_Mesh" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/Geometry/Hair"]
+position = Vector3(-0, -0.163891613, -1.1874392)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7769
+metadata/unity_name = "Backenbards_Mesh"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/Geometry/Hair/Backenbards_Mesh"]
+mesh = ExtResource("10")
+visible = true
+surface_material_override/0 = ExtResource("11")
+
+[node name="Beard_Mesh" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/Geometry/Hair"]
+position = Vector3(-0, -6.61276703e-17, -1.07994676)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10720
+metadata/unity_name = "Beard_Mesh"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/Geometry/Hair/Beard_Mesh"]
+mesh = ExtResource("12")
+visible = true
+surface_material_override/0 = ExtResource("11")
+
+[node name="Moustache_Mesh" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/Geometry/Hair"]
+position = Vector3(-0, -0.280253917, -1.1518929)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18513
+metadata/unity_name = "Moustache_Mesh"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/Geometry/Hair/Moustache_Mesh"]
+mesh = ExtResource("13")
+visible = true
+surface_material_override/0 = ExtResource("11")
+
+[node name="Hat" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/Geometry"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7151
+metadata/unity_name = "Hat"
+
+[node name="Hat_01" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/Geometry/Hat"]
+position = Vector3(-0.0259230807, -0.186477154, -1.96637261)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24849
+metadata/unity_name = "Hat_01"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/Geometry/Hat/Hat_01"]
+mesh = ExtResource("14")
+visible = true
+surface_material_override/0 = ExtResource("15")
+
+[node name="Hat_02" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/Geometry/Hat"]
+position = Vector3(-0, -6.61276703e-17, -1.07994676)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21020
+metadata/unity_name = "Hat_02"
+visible = false
+process_mode = 4
+
+[node name="UnityMesh" type="MeshInstance3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/Geometry/Hat/Hat_02"]
+mesh = ExtResource("16")
+visible = true
+surface_material_override/0 = ExtResource("15")
+
+[node name="Hat_03" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/Geometry/Hat"]
+position = Vector3(-0.0025824355, -0.186477154, -1.88223016)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10035
+metadata/unity_name = "Hat_03"
+visible = false
+process_mode = 4
+
+[node name="UnityMesh" type="MeshInstance3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/Geometry/Hat/Hat_03"]
+mesh = ExtResource("17")
+visible = true
+surface_material_override/0 = ExtResource("15")
+
+[node name="Weapon_Test" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/Geometry"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22021
+metadata/unity_name = "Weapon_Test"
+
+[node name="Bow" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/Geometry/Weapon_Test"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24924
+metadata/unity_name = "Bow"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/Geometry/Weapon_Test/Bow"]
+mesh = ExtResource("18")
+visible = true
+surface_material_override/0 = ExtResource("19")
+
+[node name="root" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(0.707106829, -0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25487
+metadata/unity_name = "root"
+
+[node name="ik_foot_root" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15894
+metadata/unity_name = "ik_foot_root"
+
+[node name="ik_foot_l" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/ik_foot_root"]
+position = Vector3(-0.275628209, -0.426537991, -0.123187199)
+quaternion = Quaternion(-0.0721198022, -0.713832915, -0.0890911147, 0.690871954)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20295
+metadata/unity_name = "ik_foot_l"
+
+[node name="ik_foot_r" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/ik_foot_root"]
+position = Vector3(0.312429816, 0.183502883, -0.123347737)
+quaternion = Quaternion(-0.661620736, -0.220118418, 0.685994506, -0.207887992)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6984
+metadata/unity_name = "ik_foot_r"
+
+[node name="ik_hand_root" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15310
+metadata/unity_name = "ik_hand_root"
+
+[node name="ik_hand_gun" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/ik_hand_root"]
+position = Vector3(0.304926455, -0.269109577, -0.734724581)
+quaternion = Quaternion(-0.126477659, 0.677484751, -0.461226314, 0.558827519)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10699
+metadata/unity_name = "ik_hand_gun"
+
+[node name="ik_hand_l" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/ik_hand_root/ik_hand_gun"]
+position = Vector3(0.212862462, -0.337610662, -0.15368171)
+quaternion = Quaternion(-0.21481961, -0.00950326491, 0.829871833, 0.514854431)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22906
+metadata/unity_name = "ik_hand_l"
+
+[node name="ik_hand_r" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/ik_hand_root/ik_hand_gun"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19899
+metadata/unity_name = "ik_hand_r"
+
+[node name="pelvis" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root"]
+position = Vector3(0.0800219625, -0.0959185958, -0.650269747)
+quaternion = Quaternion(0.0755435452, -0.672989309, 0.258170485, 0.689004064)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22286
+metadata/unity_name = "pelvis"
+
+[node name="spine_01" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis"]
+position = Vector3(-0.169111788, 0.0215801001, -0)
+quaternion = Quaternion(0.137095511, -0.0586925447, 0.0182669871, 0.988648772)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24555
+metadata/unity_name = "spine_01"
+
+[node name="spine_02" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01"]
+position = Vector3(-0.0942206532, 0.0143305194, -0)
+quaternion = Quaternion(-0, 0, -0.0750069916, 0.997183025)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12053
+metadata/unity_name = "spine_02"
+
+[node name="spine_03" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02"]
+position = Vector3(-0.0511097722, 0.000798550027, 5.99999979e-08)
+quaternion = Quaternion(-0.0238242876, 0.00477167731, -0.088195093, 0.995806873)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24039
+metadata/unity_name = "spine_03"
+
+[node name="clavicle_l" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03"]
+position = Vector3(-0.066217266, -0.0119443703, 0.165027142)
+quaternion = Quaternion(-0.418095976, 0.432136834, -0.178724498, 0.778788209)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10420
+metadata/unity_name = "clavicle_l"
+
+[node name="upperarm_l" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_l"]
+position = Vector3(-0.126569629, 0.00289092981, 1.34299999e-05)
+quaternion = Quaternion(-0.108456939, 0.582569599, 0.662397861, 0.458343595)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13956
+metadata/unity_name = "upperarm_l"
+
+[node name="lowerarm_l" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l"]
+position = Vector3(-0.297050327, 0.000947039982, -0.000873340003)
+quaternion = Quaternion(0.0448515639, -0.0291651003, 0.214615703, 0.975232184)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19892
+metadata/unity_name = "lowerarm_l"
+
+[node name="hand_l" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l"]
+position = Vector3(-0.281997889, 0.000853229954, -0.00118400995)
+quaternion = Quaternion(0.404576719, -0.329915583, 0.041764874, 0.851897359)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15704
+metadata/unity_name = "hand_l"
+
+[node name="index_01_l" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l"]
+position = Vector3(-0.117681809, -0.0044474802, 0.04174117)
+quaternion = Quaternion(-0.0850803107, 0.153990418, -0.249457181, 0.952270687)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15455
+metadata/unity_name = "index_01_l"
+
+[node name="index_02_l" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l"]
+position = Vector3(-0.0582691617, 0.00117003999, -0.000104309998)
+quaternion = Quaternion(-0.00625829119, 0.086975351, -0.285907984, 0.954281271)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21612
+metadata/unity_name = "index_02_l"
+
+[node name="index_03_l" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/index_01_l/index_02_l"]
+position = Vector3(-0.0420846865, -0.00253615994, -0.000574419973)
+quaternion = Quaternion(-0.0193261597, 0.117139436, -0.236882716, 0.964256942)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14862
+metadata/unity_name = "index_03_l"
+
+[node name="middle_01_l" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l"]
+position = Vector3(-0.106130429, 0.00283470005, -0.0153150996)
+quaternion = Quaternion(0.064999558, 0.0296259057, -0.389045954, 0.918444693)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4736
+metadata/unity_name = "middle_01_l"
+
+[node name="middle_02_l" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l"]
+position = Vector3(-0.0694539547, 0.000399169978, -0.00117548998)
+quaternion = Quaternion(0.0108981105, 0.0606985949, -0.286887974, 0.955977082)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25419
+metadata/unity_name = "middle_02_l"
+
+[node name="middle_03_l" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/middle_01_l/middle_02_l"]
+position = Vector3(-0.0479127504, -0.00172557996, 9.38799931e-05)
+quaternion = Quaternion(-0.0202357061, 0.0437571891, -0.215841949, 0.975237429)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21055
+metadata/unity_name = "middle_03_l"
+
+[node name="pinky_01_l" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l"]
+position = Vector3(-0.0905008316, 0.0225722492, -0.0664576441)
+quaternion = Quaternion(0.164582893, -0.138628498, -0.317127913, 0.923647404)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10690
+metadata/unity_name = "pinky_01_l"
+
+[node name="pinky_02_l" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l"]
+position = Vector3(-0.044495739, -0.000406339968, 0.000112779991)
+quaternion = Quaternion(-0.0209359713, -0.00661521358, -0.232222646, 0.972414792)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9959
+metadata/unity_name = "pinky_02_l"
+
+[node name="pinky_03_l" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/pinky_01_l/pinky_02_l"]
+position = Vector3(-0.0380478315, -4.66499987e-05, -0.000551969977)
+quaternion = Quaternion(-0.0197165888, 0.0560205244, -0.164857671, 0.984527767)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6252
+metadata/unity_name = "pinky_03_l"
+
+[node name="thumb_01_l" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l"]
+position = Vector3(-0.00600347994, 0.0169634987, 0.059804529)
+quaternion = Quaternion(-0.54626143, 0.572449088, -0.0714687556, 0.607283175)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15180
+metadata/unity_name = "thumb_01_l"
+
+[node name="thumb_02_l" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l"]
+position = Vector3(-0.0487095304, -0.000922219944, -0.000924109947)
+quaternion = Quaternion(-0.029361343, 0.0133939283, -0.197059795, 0.979860187)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8280
+metadata/unity_name = "thumb_02_l"
+
+[node name="thumb_03_l" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/thumb_01_l/thumb_02_l"]
+position = Vector3(-0.0496653393, -0.000319069979, 0.000500369992)
+quaternion = Quaternion(-0.179494545, -0.181237191, -0.180437356, 0.949935317)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22677
+metadata/unity_name = "thumb_03_l"
+
+[node name="weapon_l" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l"]
+position = Vector3(-0.0948229805, 0.093396984, -0.00160886999)
+quaternion = Quaternion(-0.599572897, -0.508059621, 0.323054165, 0.527279615)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14927
+metadata/unity_name = "weapon_l"
+
+[node name="bow_down" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/weapon_l"]
+position = Vector3(-0.0106999194, 0.718371391, -0.362004697)
+quaternion = Quaternion(0.300705671, -0, -0, 0.953716993)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23036
+metadata/unity_name = "bow_down"
+
+[node name="bow_string" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/weapon_l"]
+position = Vector3(-0.01068886, 1.77999993e-06, -0.335070491)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14716
+metadata/unity_name = "bow_string"
+
+[node name="bow_up" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/weapon_l"]
+position = Vector3(-0.0106850397, -0.715788841, -0.361885905)
+quaternion = Quaternion(-0.300705671, 0, -0, 0.953716993)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20321
+metadata/unity_name = "bow_up"
+
+[node name="weapon_l_socket" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l/hand_l/weapon_l"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0.707106829, -0, 0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24351
+metadata/unity_name = "weapon_l_socket"
+
+[node name="lowerarm_twist_01_l" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l/lowerarm_l"]
+position = Vector3(-0.140000015, -3.99999998e-08, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14996
+metadata/unity_name = "lowerarm_twist_01_l"
+
+[node name="upperarm_twist_01_l" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_l/upperarm_l"]
+position = Vector3(-0.00499999989, -1.99999999e-08, 7.99999995e-08)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14306
+metadata/unity_name = "upperarm_twist_01_l"
+
+[node name="clavicle_r" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03"]
+position = Vector3(-0.066217117, -0.0119436095, -0.165026948)
+quaternion = Quaternion(-0.3768619, -0.404821843, 0.732468009, 0.396969914)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17938
+metadata/unity_name = "clavicle_r"
+
+[node name="upperarm_r" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_r"]
+position = Vector3(0.12656936, -0.00289458991, -2.9599998e-05)
+quaternion = Quaternion(-0.259548694, 0.0258643199, 0.954895794, 0.141914293)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12003
+metadata/unity_name = "upperarm_r"
+
+[node name="lowerarm_r" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r"]
+position = Vector3(0.297050685, -0.000913769938, 0.000890659983)
+quaternion = Quaternion(0.0235096142, -0.124415547, 0.46307072, 0.877230644)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23853
+metadata/unity_name = "lowerarm_r"
+
+[node name="hand_r" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r"]
+position = Vector3(0.281998008, -0.000821039954, 0.00120803993)
+quaternion = Quaternion(0.502274692, -0.240967065, 0.560147643, 0.613098383)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14798
+metadata/unity_name = "hand_r"
+
+[node name="index_01_r" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r"]
+position = Vector3(0.117676273, 0.00446471991, -0.0417551994)
+quaternion = Quaternion(-0.0873605907, 0.156080842, -0.264554203, 0.947638154)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9417
+metadata/unity_name = "index_01_r"
+
+[node name="index_02_r" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r"]
+position = Vector3(0.058269389, -0.00116126996, 9.74299983e-05)
+quaternion = Quaternion(0.110580124, 0.0658044443, -0.409348875, 0.903258145)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17099
+metadata/unity_name = "index_02_r"
+
+[node name="index_03_r" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/index_01_r/index_02_r"]
+position = Vector3(0.0420842394, 0.00254249992, 0.000569309981)
+quaternion = Quaternion(0.0110930521, 0.0901338533, -0.25338763, 0.963092685)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23077
+metadata/unity_name = "index_03_r"
+
+[node name="middle_01_r" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r"]
+position = Vector3(0.106132694, -0.00282402011, 0.0153015489)
+quaternion = Quaternion(0.0702487901, 0.00455969619, -0.327022702, 0.942390859)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26371
+metadata/unity_name = "middle_01_r"
+
+[node name="middle_02_r" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r"]
+position = Vector3(0.0694542676, -0.000393909984, 0.00116363994)
+quaternion = Quaternion(-0.0826940313, 0.0943030566, -0.369313776, 0.920801818)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11791
+metadata/unity_name = "middle_02_r"
+
+[node name="middle_03_r" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/middle_01_r/middle_02_r"]
+position = Vector3(0.0479125977, 0.00172904995, -0.000102539998)
+quaternion = Quaternion(-0.0130681721, 0.0248219762, -0.149388626, 0.988380611)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11677
+metadata/unity_name = "middle_03_r"
+
+[node name="pinky_01_r" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r"]
+position = Vector3(0.0905118957, -0.0225682799, 0.0664440915)
+quaternion = Quaternion(0.0359846577, -0.129939303, -0.190415159, 0.972400606)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9001
+metadata/unity_name = "pinky_01_r"
+
+[node name="pinky_02_r" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r"]
+position = Vector3(0.044495929, 0.000405430008, -0.000121079996)
+quaternion = Quaternion(-0.0106286947, -0.0311184525, -0.097903192, 0.99465251)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17732
+metadata/unity_name = "pinky_02_r"
+
+[node name="pinky_03_r" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/pinky_01_r/pinky_02_r"]
+position = Vector3(0.0380479395, 4.6160003e-05, 0.000544619979)
+quaternion = Quaternion(-0.0507718101, 0.108351566, -0.396806687, 0.910069585)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6257
+metadata/unity_name = "pinky_03_r"
+
+[node name="thumb_01_r" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r"]
+position = Vector3(0.00599826965, -0.0169564094, -0.0598069169)
+quaternion = Quaternion(-0.561879158, 0.484669119, 0.109436601, 0.661370754)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23964
+metadata/unity_name = "thumb_01_r"
+
+[node name="thumb_02_r" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r"]
+position = Vector3(0.048709169, 0.000929409987, 0.000929490023)
+quaternion = Quaternion(-0.0293575916, 0.0133896861, -0.197062418, 0.979859829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9380
+metadata/unity_name = "thumb_02_r"
+
+[node name="thumb_03_r" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/thumb_01_r/thumb_02_r"]
+position = Vector3(0.0496652201, 0.000326000008, -0.000494080014)
+quaternion = Quaternion(-0.0459119231, -0.0161362533, -0.0998150483, 0.993815243)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22289
+metadata/unity_name = "thumb_03_r"
+
+[node name="weapon_r" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r"]
+position = Vector3(0.131769449, -0.152066156, 0.0317359902)
+quaternion = Quaternion(0.2393011, -0.889849901, -0.0158479474, -0.388137966)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15287
+metadata/unity_name = "weapon_r"
+
+[node name="weapon_r_socket" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/weapon_r"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0.707106829, -0, 0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15388
+metadata/unity_name = "weapon_r_socket"
+
+[node name="Arrow_MushroomMinion" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/weapon_r/weapon_r_socket"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19083
+metadata/unity_name = "Arrow_MushroomMinion"
+visible = false
+process_mode = 4
+
+[node name="Geometry" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/weapon_r/weapon_r_socket/Arrow_MushroomMinion"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(0.707106829, -0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26898
+metadata/unity_name = "Geometry"
+
+[node name="Socket" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/weapon_r/weapon_r_socket/Arrow_MushroomMinion/Geometry"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10173
+metadata/unity_name = "Socket"
+
+[node name="Arrow_Long" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/weapon_r/weapon_r_socket/Arrow_MushroomMinion/Geometry/Socket"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14459
+metadata/unity_name = "Arrow_Long"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/weapon_r/weapon_r_socket/Arrow_MushroomMinion/Geometry/Socket/Arrow_Long"]
+mesh = ExtResource("20")
+visible = true
+surface_material_override/0 = ExtResource("21")
+
+[node name="root" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/weapon_r/weapon_r_socket/Arrow_MushroomMinion"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(0.707106829, -0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22571
+metadata/unity_name = "root"
+
+[node name="lowerarm_twist_01_r" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r"]
+position = Vector3(0.14000003, 2.29999998e-07, 1.49999991e-07)
+quaternion = Quaternion(0.117627047, -0, -0, 0.993057847)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13140
+metadata/unity_name = "lowerarm_twist_01_r"
+
+[node name="upperarm_twist_01_r" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r"]
+position = Vector3(0.00500003994, -3.99999998e-08, -0)
+quaternion = Quaternion(0.173235103, -0, -0, 0.984880507)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19680
+metadata/unity_name = "upperarm_twist_01_r"
+
+[node name="neck_01" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03"]
+position = Vector3(-0.112073593, -0.00530698989, -0)
+quaternion = Quaternion(-0.120644502, -0.0448894873, -0.0863315463, 0.987915337)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7990
+metadata/unity_name = "neck_01"
+
+[node name="head" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/neck_01"]
+position = Vector3(-0.183685228, 0.00686412957, -2.99999989e-08)
+quaternion = Quaternion(-0.0677849874, -0.0335044265, -0.0327258259, 0.996600091)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27199
+metadata/unity_name = "head"
+
+[node name="beard_l" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/neck_01/head"]
+position = Vector3(0.19865799, -0.226867095, 0.0480931588)
+quaternion = Quaternion(-0.0202200748, 0.806080222, 0.0533419698, 0.589050531)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9202
+metadata/unity_name = "beard_l"
+
+[node name="beard_m" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/neck_01/head"]
+position = Vector3(0.283640116, -0.195247993, -2.76499995e-05)
+quaternion = Quaternion(6.51399168e-05, -0.000252929196, -0.250838488, 0.968028963)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8586
+metadata/unity_name = "beard_m"
+
+[node name="beard_r" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/neck_01/head"]
+position = Vector3(0.19862853, -0.22687763, -0.0455320589)
+quaternion = Quaternion(-0.80570507, -0.0438743159, 0.590306699, -0.0212707352)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20569
+metadata/unity_name = "beard_r"
+
+[node name="eye_l" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/neck_01/head"]
+position = Vector3(0.0753878802, -0.120363846, 0.0933289304)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16283
+metadata/unity_name = "eye_l"
+
+[node name="eye_r" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/neck_01/head"]
+position = Vector3(0.0753877312, -0.12036369, -0.0933298469)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5185
+metadata/unity_name = "eye_r"
+
+[node name="eyelid_lower_l" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/neck_01/head"]
+position = Vector3(0.150195226, -0.156318083, 0.128760442)
+quaternion = Quaternion(-0.217380911, 0.680530727, -0.107387692, 0.691441476)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10891
+metadata/unity_name = "eyelid_lower_l"
+
+[node name="eyelid_lower_r" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/neck_01/head"]
+position = Vector3(0.150195763, -0.156325147, -0.128777519)
+quaternion = Quaternion(-0.680530488, -0.217380732, 0.691441774, 0.107387878)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12950
+metadata/unity_name = "eyelid_lower_r"
+
+[node name="eyelid_upper_l" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/neck_01/head"]
+position = Vector3(0.0746363103, -0.209081382, 0.13138105)
+quaternion = Quaternion(-0.228773296, 0.591938138, -0.0803127661, 0.768649399)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21284
+metadata/unity_name = "eyelid_upper_l"
+
+[node name="eyelid_upper_r" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/neck_01/head"]
+position = Vector3(0.0745716095, -0.209093809, -0.13140741)
+quaternion = Quaternion(-0.591938019, -0.228772998, 0.768649518, 0.0803129598)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23830
+metadata/unity_name = "eyelid_upper_r"
+
+[node name="hat" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/spine_01/spine_02/spine_03/neck_01/head"]
+position = Vector3(-0.321115643, -0.00794158969, 1.49999991e-07)
+quaternion = Quaternion(-0.00311070075, 0.0183333475, 0.12033613, 0.992559075)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19141
+metadata/unity_name = "hat"
+
+[node name="thigh_l" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis"]
+position = Vector3(0.0309287999, 0.0418229289, 0.223206177)
+quaternion = Quaternion(-0.0522993878, -0.224575609, -0.5081352, 0.829836905)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21266
+metadata/unity_name = "thigh_l"
+
+[node name="calf_l" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/thigh_l"]
+position = Vector3(0.383200914, 0.00128962996, 0.00166774995)
+quaternion = Quaternion(0.0552015826, -0.0300302505, 0.518038094, 0.853046)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24382
+metadata/unity_name = "calf_l"
+
+[node name="calf_twist_01_l" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/thigh_l/calf_l"]
+position = Vector3(0.134770051, -5.99999979e-08, -0)
+quaternion = Quaternion(-0.00280884397, -0.00193344499, 0.00761248404, 0.99996525)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10648
+metadata/unity_name = "calf_twist_01_l"
+
+[node name="foot_l" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/thigh_l/calf_l"]
+position = Vector3(0.288600773, 0.000586009992, 0.000380970014)
+quaternion = Quaternion(-0.243797287, 0.208782077, -0.0691244304, 0.944560647)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18396
+metadata/unity_name = "foot_l"
+
+[node name="ball_l" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/thigh_l/calf_l/foot_l"]
+position = Vector3(0.0929456949, -0.138198614, -0.000425029983)
+quaternion = Quaternion(-0.025462199, 0.0245907214, 0.718182802, 0.694953561)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5379
+metadata/unity_name = "ball_l"
+
+[node name="thigh_twist_01_l" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/thigh_l"]
+position = Vector3(0.200000048, -3.99999998e-08, -0)
+quaternion = Quaternion(0.0474436842, 2.13208259e-05, 0.000491041515, 0.99887383)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14902
+metadata/unity_name = "thigh_twist_01_l"
+
+[node name="thigh_r" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis"]
+position = Vector3(0.0309285689, 0.0418233909, -0.223205984)
+quaternion = Quaternion(-0.0131435571, 0.179593012, 0.944781661, 0.273790598)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20850
+metadata/unity_name = "thigh_r"
+
+[node name="calf_r" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/thigh_r"]
+position = Vector3(-0.383201122, -0.00128811994, -0.00166691002)
+quaternion = Quaternion(0.0531530678, -0.031534113, 0.589524686, 0.80538255)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16349
+metadata/unity_name = "calf_r"
+
+[node name="calf_twist_01_r" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/thigh_r/calf_r"]
+position = Vector3(-0.134769991, 1.99999999e-08, -1.99999999e-08)
+quaternion = Quaternion(-0.00280734035, -0.00193393358, 0.00761248544, 0.99996525)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8548
+metadata/unity_name = "calf_twist_01_r"
+
+[node name="foot_r" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/thigh_r/calf_r"]
+position = Vector3(-0.288600713, -0.000584490015, -0.000384649989)
+quaternion = Quaternion(-0.261415422, 0.167385608, -0.444000959, 0.840539813)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6220
+metadata/unity_name = "foot_r"
+
+[node name="ball_r" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/thigh_r/calf_r/foot_r"]
+position = Vector3(-0.0929449797, 0.138198867, 0.000431019987)
+quaternion = Quaternion(-0.0254296493, 0.024566872, 0.718183696, 0.694954693)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24536
+metadata/unity_name = "ball_r"
+
+[node name="thigh_twist_01_r" type="Node3D" parent="MushroomArcher/MushroomMinion_Archer_Rd/root/pelvis/thigh_r"]
+position = Vector3(-0.199999958, 0, -1.99999999e-08)
+quaternion = Quaternion(0.047445178, 2.18209971e-05, 0.000491017709, 0.99887377)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7766
+metadata/unity_name = "thigh_twist_01_r"
+
+[node name="VFXParent" type="Node3D" parent="MushroomArcher"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15592
+metadata/unity_name = "VFXParent"
+
+[node name="VFX_MushroomArcher_SkillAttack_Base" type="Node3D" parent="MushroomArcher/VFXParent"]
+position = Vector3(0, 0.620000005, -1.5)
+quaternion = Quaternion(0, -1, -0, 0)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18053
+metadata/unity_name = "VFX_MushroomArcher_SkillAttack_Base"
+
+[node name="root" type="Node3D" parent="MushroomArcher/VFXParent/VFX_MushroomArcher_SkillAttack_Base"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17265
+metadata/unity_name = "root"
+
+[node name="SlashWave_01" type="Node3D" parent="MushroomArcher/VFXParent/VFX_MushroomArcher_SkillAttack_Base/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0.707106829, 0, 0.707106829, 0)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23344
+metadata/unity_name = "SlashWave_01"
+
+[node name="Dot_01" type="Node3D" parent="MushroomArcher/VFXParent/VFX_MushroomArcher_SkillAttack_Base/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10296
+metadata/unity_name = "Dot_01"
+
+[node name="Glow_01" type="Node3D" parent="MushroomArcher/VFXParent/VFX_MushroomArcher_SkillAttack_Base/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14507
+metadata/unity_name = "Glow_01"
+
+[node name="Impact_01" type="Node3D" parent="MushroomArcher/VFXParent/VFX_MushroomArcher_SkillAttack_Base/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15993
+metadata/unity_name = "Impact_01"
+
+[node name="Flare_01" type="Node3D" parent="MushroomArcher/VFXParent/VFX_MushroomArcher_SkillAttack_Base/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5876
+metadata/unity_name = "Flare_01"
+
+[node name="Glow_01_19512" type="Node3D" parent="MushroomArcher/VFXParent/VFX_MushroomArcher_SkillAttack_Base/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19512
+metadata/unity_name = "Glow_01"
+
+[node name="Leaf_01" type="Node3D" parent="MushroomArcher/VFXParent/VFX_MushroomArcher_SkillAttack_Base/root/Glow_01_19512"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26492
+metadata/unity_name = "Leaf_01"
+
+[node name="Dust_01" type="Node3D" parent="MushroomArcher/VFXParent/VFX_MushroomArcher_SkillAttack_Base/root/Glow_01_19512"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5071
+metadata/unity_name = "Dust_01"
+
+[node name="Flare_01" type="Node3D" parent="MushroomArcher/VFXParent/VFX_MushroomArcher_SkillAttack_Base/root/Glow_01_19512"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19090
+metadata/unity_name = "Flare_01"
+
+[node name="Wind_01" type="Node3D" parent="MushroomArcher/VFXParent/VFX_MushroomArcher_SkillAttack_Base/root/Glow_01_19512"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0.707106829, -0, 0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5270
+metadata/unity_name = "Wind_01"
+
+[node name="OverheadSlot" type="Node3D" parent="MushroomArcher"]
+position = Vector3(0, 2.5, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26579
+metadata/unity_name = "OverheadSlot"

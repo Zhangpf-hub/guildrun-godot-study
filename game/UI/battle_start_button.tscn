@@ -1,0 +1,428 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://UI/sliced_image.gd" id="SlicedImage"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets2_185.png" id="1"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets2_125.png" id="2"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets2_158.png" id="3"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets2_197.png" id="4"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets2_204.png" id="5"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets2_160.png" id="6"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets2_209.png" id="7"]
+
+[node name="battle_start_buttonUI" type="Control"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="Canvas" type="Control" parent="."]
+mouse_filter = 2
+metadata/unity_id = 40
+anchor_right = 1.0
+anchor_bottom = 1.0
+metadata/reference_resolution = Vector2(1920, 1080)
+metadata/match_width_or_height = 0.0
+metadata/aspect_ratio_threshold = 1.7999999523162842
+metadata/unity_file = "level3"
+
+[node name="Root" type="Control" parent="Canvas"]
+mouse_filter = 2
+metadata/unity_id = 20
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 20
+offset_right = -20
+offset_top = 20
+offset_bottom = -20
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "level3"
+
+[node name="PlacementPhasePanel" type="Control" parent="Canvas/Root"]
+mouse_filter = 2
+metadata/unity_id = 31
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 30
+offset_right = -30
+offset_top = 30
+offset_bottom = -30
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "level3"
+
+[node name="StartBattleButton" type="Control" parent="Canvas/Root/PlacementPhasePanel"]
+mouse_filter = 2
+metadata/unity_id = 45
+anchor_left = 1
+anchor_right = 1
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -512
+offset_right = -272
+offset_top = -229.5
+offset_bottom = -166.5
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "level3"
+
+[node name="HighlightAbility_Back" type="Control" parent="Canvas/Root/PlacementPhasePanel/StartBattleButton"]
+mouse_filter = 2
+metadata/unity_id = 7548
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "level3"
+
+[node name="StartBattleButton" type="Control" parent="Canvas/Root/PlacementPhasePanel/StartBattleButton"]
+mouse_filter = 2
+metadata/unity_id = 4306
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "level3"
+metadata/min_width = -1.0
+metadata/preferred_width = 260.0
+
+[node name="UnityImage" type="Control" parent="Canvas/Root/PlacementPhasePanel/StartBattleButton/StartBattleButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("1")
+border = Vector4(68, 64, 69, 64)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Button_Graphics" type="Control" parent="Canvas/Root/PlacementPhasePanel/StartBattleButton/StartBattleButton"]
+mouse_filter = 2
+metadata/unity_id = 4853
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "level3"
+clip_contents = true
+
+[node name="UnityImage" type="Control" parent="Canvas/Root/PlacementPhasePanel/StartBattleButton/StartBattleButton/Button_Graphics"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("2")
+border = Vector4(6, 6, 6, 6)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="TweenAnimation" type="Control" parent="Canvas/Root/PlacementPhasePanel/StartBattleButton/StartBattleButton/Button_Graphics"]
+mouse_filter = 2
+metadata/unity_id = 2861
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "level3"
+
+[node name="Hover" type="Control" parent="Canvas/Root/PlacementPhasePanel/StartBattleButton/StartBattleButton/Button_Graphics"]
+mouse_filter = 2
+metadata/unity_id = 4434
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "level3"
+
+[node name="UnityImage" type="TextureRect" parent="Canvas/Root/PlacementPhasePanel/StartBattleButton/StartBattleButton/Button_Graphics/Hover"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("3")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Pressed" type="Control" parent="Canvas/Root/PlacementPhasePanel/StartBattleButton/StartBattleButton/Button_Graphics"]
+mouse_filter = 2
+metadata/unity_id = 4287
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "level3"
+
+[node name="UnityImage" type="Control" parent="Canvas/Root/PlacementPhasePanel/StartBattleButton/StartBattleButton/Button_Graphics/Pressed"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("4")
+border = Vector4(6, 6, 6, 6)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="L_Decos" type="Control" parent="Canvas/Root/PlacementPhasePanel/StartBattleButton/StartBattleButton/Button_Graphics"]
+mouse_filter = 2
+metadata/unity_id = 1950
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 324
+offset_top = -32
+offset_bottom = 32
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+metadata/unity_file = "level3"
+
+[node name="UnityImage" type="TextureRect" parent="Canvas/Root/PlacementPhasePanel/StartBattleButton/StartBattleButton/Button_Graphics/L_Decos"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("5")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(0.684000015, 1, 0.92900002, 0.128999993)
+
+[node name="R_Decos" type="Control" parent="Canvas/Root/PlacementPhasePanel/StartBattleButton/StartBattleButton/Button_Graphics"]
+mouse_filter = 2
+metadata/unity_id = 6248
+anchor_left = 1
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 324
+offset_top = -32
+offset_bottom = 32
+rotation = 0
+scale = Vector2(-1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+metadata/unity_file = "level3"
+
+[node name="UnityImage" type="TextureRect" parent="Canvas/Root/PlacementPhasePanel/StartBattleButton/StartBattleButton/Button_Graphics/R_Decos"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("5")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(0.684000015, 1, 0.92900002, 0.128999993)
+
+[node name="Highlight" type="Control" parent="Canvas/Root/PlacementPhasePanel/StartBattleButton/StartBattleButton/Button_Graphics"]
+mouse_filter = 2
+metadata/unity_id = 899
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 5
+offset_right = -4
+offset_top = 4
+offset_bottom = -4
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "level3"
+
+[node name="UnityImage" type="ColorRect" parent="Canvas/Root/PlacementPhasePanel/StartBattleButton/StartBattleButton/Button_Graphics/Highlight"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.655660391, 1, 0.725795746, 0.980392158)
+
+[node name="Disabled" type="Control" parent="Canvas/Root/PlacementPhasePanel/StartBattleButton/StartBattleButton/Button_Graphics"]
+mouse_filter = 2
+metadata/unity_id = 327
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "level3"
+
+[node name="UnityImage" type="TextureRect" parent="Canvas/Root/PlacementPhasePanel/StartBattleButton/StartBattleButton/Button_Graphics/Disabled"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("6")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="TopLayer" type="Control" parent="Canvas/Root/PlacementPhasePanel/StartBattleButton/StartBattleButton/Button_Graphics"]
+mouse_filter = 2
+metadata/unity_id = 4888
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "level3"
+
+[node name="UnityImage" type="Control" parent="Canvas/Root/PlacementPhasePanel/StartBattleButton/StartBattleButton/Button_Graphics/TopLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("7")
+border = Vector4(64, 58, 64, 58)
+pixels_per_unit = 2
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="VFX_Button_Chosen" type="Control" parent="Canvas/Root/PlacementPhasePanel/StartBattleButton/StartBattleButton/Button_Graphics"]
+mouse_filter = 2
+metadata/unity_id = 4574
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(0, 0)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "level3"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+
+[node name="Text (TMP)" type="Control" parent="Canvas/Root/PlacementPhasePanel/StartBattleButton/StartBattleButton"]
+mouse_filter = 2
+metadata/unity_id = 5205
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "level3"
+
+[node name="UnityText" type="Label" parent="Canvas/Root/PlacementPhasePanel/StartBattleButton/StartBattleButton/Text (TMP)"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "FIGHT"
+theme_override_font_sizes/font_size = 32
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnchorWarnText" type="Control" parent="Canvas/Root/PlacementPhasePanel/StartBattleButton/StartBattleButton"]
+mouse_filter = 2
+metadata/unity_id = 9
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -207.660004
+offset_right = 207.660004
+offset_top = -120.459999
+offset_bottom = -42.4000015
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "level3"
+
+[node name="UnityText" type="Label" parent="Canvas/Root/PlacementPhasePanel/StartBattleButton/StartBattleButton/AnchorWarnText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Du musst einen Helden mit dem Riss-Siegel ausrüsten, bevor du in den Kampf ziehst."
+theme_override_font_sizes/font_size = 36
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="HighlightAbility" type="Control" parent="Canvas/Root/PlacementPhasePanel/StartBattleButton"]
+mouse_filter = 2
+metadata/unity_id = 46
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "level3"

@@ -1,0 +1,1244 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://UI/sliced_image.gd" id="SlicedImage"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets3_551.png" id="1"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets3_368.png" id="2"]
+[ext_resource type="Texture2D" path="res://sprites/resources_910.png" id="3"]
+[ext_resource type="Texture2D" path="res://sprites/resources_971.png" id="4"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets3_500.png" id="5"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets3_421.png" id="6"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets3_367.png" id="7"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets3_399.png" id="8"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets3_422.png" id="9"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets3_564.png" id="10"]
+[ext_resource type="Texture2D" path="res://sprites/sharedassets3_356.png" id="11"]
+
+[node name="battle_topUI" type="Control"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="Canvas" type="Control" parent="."]
+mouse_filter = 2
+metadata/unity_id = 11559
+anchor_right = 1.0
+anchor_bottom = 1.0
+metadata/reference_resolution = Vector2(1920, 1080)
+metadata/match_width_or_height = 0.0
+metadata/aspect_ratio_threshold = 1.7999999523162842
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="Root" type="Control" parent="Canvas"]
+mouse_filter = 2
+metadata/unity_id = 3544
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 20
+offset_right = -20
+offset_top = 20
+offset_bottom = -20
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="CoreGameUI" type="Control" parent="Canvas/Root"]
+mouse_filter = 2
+metadata/unity_id = 12234
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+modulate = Color(1, 1, 1, 1.0)
+
+[node name="TopUIPanel" type="Control" parent="Canvas/Root/CoreGameUI"]
+mouse_filter = 2
+metadata/unity_id = 12280
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0
+anchor_bottom = 0
+offset_left = -267.96875
+offset_right = 267.96875
+offset_top = -24
+offset_bottom = 48
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="ChunkUIPanel" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel"]
+mouse_filter = 2
+metadata/unity_id = 8353
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0)
+metadata/unity_file = "sharedassets3.assets"
+metadata/layout_spacing = 0.0
+metadata/layout_padding = Vector4(12, 8, 12, 20)
+
+[node name="TooltipAnchor" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel"]
+mouse_filter = 2
+metadata/unity_id = 10072
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 0
+offset_right = 0
+offset_top = 95.8000031
+offset_bottom = 95.8000031
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+
+[node name="Middle" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel"]
+mouse_filter = 2
+metadata/unity_id = 5837
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -80
+offset_right = 80
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+
+[node name="UnityImage" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/Middle"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("1")
+border = Vector4(325, 0, 325, 32)
+pixels_per_unit = 3.79999995
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Right_RiftStabilizer" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/Middle"]
+mouse_filter = 2
+metadata/unity_id = 6714
+anchor_left = 1
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -80
+offset_right = -80
+offset_top = -32
+offset_bottom = 32
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = 194.0
+metadata/preferred_width = -1.0
+metadata/layout_spacing = 0.0
+metadata/layout_padding = Vector4(64, 0, 68, 4)
+
+[node name="Background" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/Middle/Right_RiftStabilizer"]
+mouse_filter = 2
+metadata/unity_id = 7634
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -2
+offset_bottom = -2
+rotation = 0
+scale = Vector2(-1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+
+[node name="UnityImage" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/Middle/Right_RiftStabilizer/Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("2")
+border = Vector4(351, 0, 49, 40)
+pixels_per_unit = 3.70000005
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="AccumulatedShardsText" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/Middle/Right_RiftStabilizer"]
+mouse_filter = 2
+metadata/unity_id = 15728
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -18
+offset_bottom = 18
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(1, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = 40.0
+metadata/preferred_width = -1.0
+metadata/layout_spacing = 0.0
+metadata/layout_padding = Vector4(0, 0, 0, 0)
+
+[node name="UnityText" type="Label" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/Middle/Right_RiftStabilizer/AccumulatedShardsText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "66"
+theme_override_font_sizes/font_size = 22
+theme_override_colors/font_color = Color(0.952941239, 0.929411829, 0.847058892, 1)
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="StabilizerIcon" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/Middle/Right_RiftStabilizer"]
+mouse_filter = 2
+metadata/unity_id = 11922
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -24
+offset_bottom = 8
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(1, 0.75)
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = 32.0
+
+[node name="UnityImage" type="TextureRect" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/Middle/Right_RiftStabilizer/StabilizerIcon"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("3")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="TooltipRaycastTarget" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/Middle/Right_RiftStabilizer"]
+mouse_filter = 2
+metadata/unity_id = 16350
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -40
+offset_right = 40
+offset_top = -20
+offset_bottom = 20
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+
+[node name="UnityImage" type="ColorRect" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/Middle/Right_RiftStabilizer/TooltipRaycastTarget"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(1, 1, 1, 0)
+
+[node name="TooltipAnchor" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/Middle/Right_RiftStabilizer"]
+mouse_filter = 2
+metadata/unity_id = 2775
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = 8
+offset_bottom = 8
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+
+[node name="Left_Shard" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/Middle"]
+mouse_filter = 2
+metadata/unity_id = 7675
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 80
+offset_right = 80
+offset_top = -32
+offset_bottom = 32
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(1, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = 194.0
+metadata/preferred_width = -1.0
+metadata/layout_spacing = 0.0
+metadata/layout_padding = Vector4(90, 0, 64, 4)
+
+[node name="Background" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/Middle/Left_Shard"]
+mouse_filter = 2
+metadata/unity_id = 16190
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -2
+offset_bottom = -2
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+
+[node name="UnityImage" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/Middle/Left_Shard/Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("2")
+border = Vector4(351, 0, 49, 40)
+pixels_per_unit = 3.70000005
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="ShardIcon" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/Middle/Left_Shard"]
+mouse_filter = 2
+metadata/unity_id = 14901
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 60
+offset_right = 90
+offset_top = -21
+offset_bottom = 13
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+
+[node name="UnityImage" type="TextureRect" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/Middle/Left_Shard/ShardIcon"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("4")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="CurrentGoldAmount" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/Middle/Left_Shard"]
+mouse_filter = 2
+metadata/unity_id = 5237
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -18
+offset_bottom = 18
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = 40.0
+metadata/preferred_width = -1.0
+metadata/layout_spacing = 0.0
+metadata/layout_padding = Vector4(0, 0, 0, 0)
+
+[node name="UnityText" type="Label" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/Middle/Left_Shard/CurrentGoldAmount"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "66"
+theme_override_font_sizes/font_size = 22
+theme_override_colors/font_color = Color(0.952941239, 0.929411829, 0.847058892, 1)
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="TooltipRaycastTarget" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/Middle/Left_Shard"]
+mouse_filter = 2
+metadata/unity_id = 15447
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -40
+offset_right = 40
+offset_top = -20
+offset_bottom = 20
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+
+[node name="UnityImage" type="ColorRect" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/Middle/Left_Shard/TooltipRaycastTarget"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(1, 1, 1, 0)
+
+[node name="TooltipAnchor" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/Middle/Left_Shard"]
+mouse_filter = 2
+metadata/unity_id = 7364
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = 8
+offset_bottom = 8
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+
+[node name="Background" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/Middle"]
+mouse_filter = 2
+metadata/unity_id = 15872
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0)
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+
+[node name="UnityImage" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/Middle/Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("SlicedImage")
+texture = ExtResource("1")
+border = Vector4(325, 0, 325, 32)
+pixels_per_unit = 3.79999995
+draw_center = true
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="HighlightUI_Shard" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/Middle"]
+mouse_filter = 2
+metadata/unity_id = 6098
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -66
+offset_right = 24
+offset_top = -25
+offset_bottom = 17
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+
+[node name="UnityImage" type="ColorRect" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/Middle/HighlightUI_Shard"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.282352954, 0.737254918, 0.566557586, 0.643137276)
+
+[node name="Highlight_Rotating" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/Middle/HighlightUI_Shard"]
+mouse_filter = 2
+metadata/unity_id = 5838
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityImage" type="ColorRect" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/Middle/HighlightUI_Shard/Highlight_Rotating"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.550729811, 0.98113209, 0.730767369, 1)
+
+[node name="HighlightUI_Stabilizer" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/Middle"]
+mouse_filter = 2
+metadata/unity_id = 16651
+anchor_left = 1
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -27
+offset_right = 63
+offset_top = -25
+offset_bottom = 17
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+
+[node name="UnityImage" type="ColorRect" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/Middle/HighlightUI_Stabilizer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.282352954, 0.737254918, 0.566557586, 0.643137276)
+
+[node name="Highlight_Rotating" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/Middle/HighlightUI_Stabilizer"]
+mouse_filter = 2
+metadata/unity_id = 16920
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityImage" type="ColorRect" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/Middle/HighlightUI_Stabilizer/Highlight_Rotating"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.550729811, 0.98113209, 0.730767369, 1)
+
+[node name="HighlightShard" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/Middle"]
+mouse_filter = 2
+metadata/unity_id = 3481
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -21.3000031
+offset_right = -21.3000031
+offset_top = -36
+offset_bottom = 28
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(1, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+
+[node name="HighlightStabilizer" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/Middle"]
+mouse_filter = 2
+metadata/unity_id = 8018
+anchor_left = 1
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 18.5
+offset_right = 18.5
+offset_top = -36
+offset_bottom = 28
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+
+[node name="ActsPanelView" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel"]
+mouse_filter = 2
+metadata/unity_id = 3686
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -27.5
+offset_bottom = 27.5
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = 45.0
+
+[node name="EndlessIndicatorHolder" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/ActsPanelView"]
+mouse_filter = 2
+metadata/unity_id = 3546
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/layout_spacing = 6.0
+metadata/layout_padding = Vector4(0, 0, 0, 0)
+
+[node name="UnityImage" type="ColorRect" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/ActsPanelView/EndlessIndicatorHolder"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(1, 1, 1, 0)
+
+[node name="ActIndicator" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/ActsPanelView/EndlessIndicatorHolder"]
+mouse_filter = 2
+metadata/unity_id = 17257
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -2
+offset_right = 2
+offset_top = -10
+offset_bottom = 10
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityImage" type="ColorRect" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/ActsPanelView/EndlessIndicatorHolder/ActIndicator"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.819607913, 0.815686345, 0.701960802, 1)
+
+[node name="EndlessIndicator" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/ActsPanelView/EndlessIndicatorHolder"]
+mouse_filter = 2
+metadata/unity_id = 7477
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -10
+offset_bottom = 10
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = 20.0
+
+[node name="UnityImage" type="TextureRect" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/ActsPanelView/EndlessIndicatorHolder/EndlessIndicator"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("5")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(0.839215755, 0.831372619, 0.717647076, 1)
+
+[node name="ActText" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/ActsPanelView/EndlessIndicatorHolder"]
+mouse_filter = 2
+metadata/unity_id = 6180
+anchor_left = 0
+anchor_right = 0
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -12.5
+offset_bottom = 12.5
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityText" type="Label" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/ActsPanelView/EndlessIndicatorHolder/ActText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "9"
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.819607913, 0.811764777, 0.698039234, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TimerPanel" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel"]
+mouse_filter = 2
+metadata/unity_id = 3669
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -58
+offset_right = 58
+offset_top = -42
+offset_bottom = 38
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+
+[node name="Background" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/TimerPanel"]
+mouse_filter = 2
+metadata/unity_id = 14839
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+
+[node name="UnityImage" type="TextureRect" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/TimerPanel/Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("6")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="ResolutionPhasePanel" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/TimerPanel"]
+mouse_filter = 2
+metadata/unity_id = 5472
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 28
+offset_right = -28
+offset_top = -27.5
+offset_bottom = 27.5
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="Image" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/TimerPanel/ResolutionPhasePanel"]
+mouse_filter = 2
+metadata/unity_id = 10999
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 0
+offset_right = 20
+offset_top = -10
+offset_bottom = 10
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityImage" type="TextureRect" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/TimerPanel/ResolutionPhasePanel/Image"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("7")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(0.831372619, 0.82745105, 0.713725507, 1)
+
+[node name="TimerText" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/TimerPanel/ResolutionPhasePanel"]
+mouse_filter = 2
+metadata/unity_id = 1874
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 24
+offset_right = 0
+offset_top = -12.5
+offset_bottom = 12.5
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityText" type="Label" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/TimerPanel/ResolutionPhasePanel/TimerText"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "00:00"
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.819607913, 0.811764777, 0.698039234, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HighlightUI_Map" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel"]
+mouse_filter = 2
+metadata/unity_id = 16169
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = 8
+offset_bottom = -18
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+
+[node name="UnityImage" type="ColorRect" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/HighlightUI_Map"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.282352954, 0.737254918, 0.566557586, 0.643137276)
+
+[node name="Highlight_Rotating" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/HighlightUI_Map"]
+mouse_filter = 2
+metadata/unity_id = 16995
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityImage" type="ColorRect" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/HighlightUI_Map/Highlight_Rotating"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.550729811, 0.98113209, 0.730767369, 1)
+
+[node name="Spacer" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel"]
+mouse_filter = 2
+metadata/unity_id = 17636
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 85
+offset_right = 105
+offset_top = 8
+offset_bottom = 38
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = 20.0
+
+[node name="CurrentTitle" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel"]
+mouse_filter = 2
+metadata/unity_id = 11073
+anchor_left = 0
+anchor_right = 1
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -48
+offset_right = 48
+offset_top = -29
+offset_bottom = -4
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 1)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+
+[node name="UnityText" type="Label" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/CurrentTitle"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "ENCOUNTER"
+theme_override_font_sizes/font_size = 1
+theme_override_colors/font_color = Color(0.952941239, 0.929411829, 0.847058892, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FightModeController" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel"]
+mouse_filter = 2
+metadata/unity_id = 601
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -48
+offset_right = 48
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 1)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+
+[node name="FightModeTitle" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/FightModeController"]
+mouse_filter = 2
+metadata/unity_id = 11309
+anchor_left = 0
+anchor_right = 1
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -27
+offset_bottom = -2
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 1)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = -1.0
+
+[node name="UnityText" type="Label" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/FightModeController/FightModeTitle"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "Fight Mode Title"
+theme_override_font_sizes/font_size = 16
+theme_override_colors/font_color = Color(0.952941239, 0.929411829, 0.847058892, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Slider" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/FightModeController"]
+mouse_filter = 2
+metadata/unity_id = 2930
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 1
+anchor_bottom = 1
+offset_left = -135.5
+offset_right = 135.5
+offset_top = 22
+offset_bottom = 42
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="Background" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/FightModeController/Slider"]
+mouse_filter = 2
+metadata/unity_id = 9919
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.25
+anchor_bottom = 0.75
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityImage" type="ColorRect" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/FightModeController/Slider/Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.141176477, 0.149019614, 0.152941182, 1)
+
+[node name="Fill Area" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/FightModeController/Slider"]
+mouse_filter = 2
+metadata/unity_id = 2157
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.25
+anchor_bottom = 0.75
+offset_left = 1
+offset_right = -1
+offset_top = 1
+offset_bottom = -1
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="Fill" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/FightModeController/Slider/Fill Area"]
+mouse_filter = 2
+metadata/unity_id = 8049
+anchor_left = 0
+anchor_right = 0.91900003
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityImage" type="TextureRect" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/FightModeController/Slider/Fill Area/Fill"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("8")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Handle Slide Area" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/FightModeController/Slider"]
+mouse_filter = 2
+metadata/unity_id = 11442
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0
+anchor_bottom = 1
+offset_left = 10
+offset_right = -10
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="Handle" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/FightModeController/Slider/Handle Slide Area"]
+mouse_filter = 2
+metadata/unity_id = 10655
+anchor_left = 0.91900003
+anchor_right = 0.91900003
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -10
+offset_right = 10
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityImage" type="TextureRect" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/FightModeController/Slider/Handle Slide Area/Handle"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("9")
+expand_mode = 1
+stretch_mode = 5
+self_modulate = Color(0.819607854, 0.811764717, 0.698039234, 1)
+
+[node name="Deco" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/FightModeController/Slider"]
+mouse_filter = 2
+metadata/unity_id = 6594
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.25
+anchor_bottom = 0.75
+offset_left = 2
+offset_right = -2
+offset_top = 2
+offset_bottom = -2
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityImage" type="TextureRect" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/FightModeController/Slider/Deco"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("10")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(0.141176477, 0.149019614, 0.152941182, 1)
+
+[node name="ThresholdSlider" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/FightModeController/Slider"]
+mouse_filter = 2
+metadata/unity_id = 5500
+anchor_left = 0
+anchor_right = 1
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -5.19999981
+offset_bottom = 14.8000002
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="Background" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/FightModeController/Slider/ThresholdSlider"]
+mouse_filter = 2
+metadata/unity_id = 6291
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.25
+anchor_bottom = 0.75
+offset_left = 0
+offset_right = 0
+offset_top = -0.000244140625
+offset_bottom = -0.000244140625
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="Fill Area" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/FightModeController/Slider/ThresholdSlider"]
+mouse_filter = 2
+metadata/unity_id = 4264
+anchor_left = 0
+anchor_right = 1
+anchor_top = 0.25
+anchor_bottom = 0.75
+offset_left = 5
+offset_right = -15
+offset_top = -0
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="Fill" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/FightModeController/Slider/ThresholdSlider/Fill Area"]
+mouse_filter = 2
+metadata/unity_id = 965
+anchor_left = 0
+anchor_right = 0.363000005
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -5
+offset_right = 5
+offset_top = -0.000244140625
+offset_bottom = -0.000244140625
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="Handle Slide Area" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/FightModeController/Slider/ThresholdSlider"]
+mouse_filter = 2
+metadata/unity_id = 11277
+anchor_left = 0
+anchor_right = 1
+anchor_top = 1
+anchor_bottom = 1
+offset_left = 0
+offset_right = 0
+offset_top = -20
+offset_bottom = 0
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="Handle" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/FightModeController/Slider/ThresholdSlider/Handle Slide Area"]
+mouse_filter = 2
+metadata/unity_id = 4563
+anchor_left = 0.363000005
+anchor_right = 0.363000005
+anchor_top = 0
+anchor_bottom = 1
+offset_left = -7.5
+offset_right = 7.5
+offset_top = 2
+offset_bottom = -2
+rotation = 0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+metadata/unity_file = "sharedassets3.assets"
+
+[node name="UnityImage" type="TextureRect" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel/FightModeController/Slider/ThresholdSlider/Handle Slide Area/Handle"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("11")
+expand_mode = 1
+stretch_mode = 0
+self_modulate = Color(1, 1, 1, 1)
+
+[node name="Spacer_14724" type="Control" parent="Canvas/Root/CoreGameUI/TopUIPanel/ChunkUIPanel"]
+mouse_filter = 2
+metadata/unity_id = 14724
+anchor_left = 0
+anchor_right = 0
+anchor_top = 0
+anchor_bottom = 0
+offset_left = 146
+offset_right = 166
+offset_top = 8
+offset_bottom = 38
+rotation = -0
+scale = Vector2(1, 1)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+visible = false
+metadata/unity_file = "sharedassets3.assets"
+metadata/min_width = -1.0
+metadata/preferred_width = 20.0

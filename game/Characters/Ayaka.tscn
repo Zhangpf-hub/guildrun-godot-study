@@ -1,0 +1,2942 @@
+[gd_scene format=3]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2826.obj" id="1"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_318.tres" id="2"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2893.obj" id="3"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_322.tres" id="4"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2974.obj" id="5"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2821.obj" id="6"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2795.obj" id="7"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2833.obj" id="8"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_317.tres" id="9"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2895.obj" id="10"]
+
+[node name="Ayaka" type="Node3D"]
+
+[node name="Ayaka" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1.13999999, 1.13999999, 1.13999999)
+metadata/unity_id = 11625
+metadata/unity_name = "Ayaka"
+
+[node name="Ayaka_Model" type="Node3D" parent="Ayaka"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4711
+metadata/unity_name = "Ayaka_Model"
+
+[node name="Armature" type="Node3D" parent="Ayaka/Ayaka_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23924
+metadata/unity_name = "Armature"
+
+[node name="hips" type="Node3D" parent="Ayaka/Ayaka_Model/Armature"]
+position = Vector3(-0.025443973, 0.629813015, 0.0464880727)
+quaternion = Quaternion(-0.0304570943, -0.269427478, 0.0533119291, 0.961061418)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18796
+metadata/unity_name = "hips"
+
+[node name="spine" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips"]
+position = Vector3(-0.00191043119, 0.0999698639, -0.000473224442)
+quaternion = Quaternion(-0.0880824551, -0.0320474803, 0.0144721325, 0.995492339)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14608
+metadata/unity_name = "spine"
+
+[node name="chest" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine"]
+position = Vector3(0.00255126529, 0.0724557415, -0.0256658569)
+quaternion = Quaternion(-0.248697922, -0.0674444661, 0.0490707494, 0.964983225)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8150
+metadata/unity_name = "chest"
+
+[node name="cloak_BA_001" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest"]
+position = Vector3(-0.0608465523, 0.162829831, 0.0721766427)
+quaternion = Quaternion(-0.989015877, 0, 0, -0.147809416)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10178
+metadata/unity_name = "cloak_BA_001"
+
+[node name="cloak_BA_002" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/cloak_BA_001"]
+position = Vector3(-0, 0.164999992, -3.5527136e-17)
+quaternion = Quaternion(-0.0174524058, -0, -0, 0.99984771)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10233
+metadata/unity_name = "cloak_BA_002"
+
+[node name="cloak_B_001" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/cloak_BA_001/cloak_BA_002"]
+position = Vector3(0.0944982022, 0.13524951, -0.00163103139)
+quaternion = Quaternion(0.0156823304, 0.0104816929, -0.341804713, 0.939581692)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24951
+metadata/unity_name = "cloak_B_001"
+
+[node name="cloak_B_002" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/cloak_BA_001/cloak_BA_002/cloak_B_001"]
+position = Vector3(-0, 0.164999992, 1.77635673e-16)
+quaternion = Quaternion(-0.0174357966, 0.000761263364, -0.0436127484, 0.998896122)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19267
+metadata/unity_name = "cloak_B_002"
+
+[node name="cloak_B_003" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/cloak_BA_001/cloak_BA_002/cloak_B_001/cloak_B_002"]
+position = Vector3(2.13162816e-16, 0.164999992, 3.5527136e-17)
+quaternion = Quaternion(-0.0174357966, 0.000761263364, -0.0436127484, 0.998896122)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24592
+metadata/unity_name = "cloak_B_003"
+
+[node name="cloak_B_end" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/cloak_BA_001/cloak_BA_002/cloak_B_001/cloak_B_002/cloak_B_003"]
+position = Vector3(-5.68434176e-16, 0.0850000009, -3.5527136e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8535
+metadata/unity_name = "cloak_B_end"
+
+[node name="cloak_BA_003" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/cloak_BA_001/cloak_BA_002"]
+position = Vector3(-1.7763568e-17, 0.164999992, -7.1054272e-17)
+quaternion = Quaternion(-0.0174524058, -0, -0, 0.99984771)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22192
+metadata/unity_name = "cloak_BA_003"
+
+[node name="cloak_BA_004" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/cloak_BA_001/cloak_BA_002/cloak_BA_003"]
+position = Vector3(-0, 0.164999992, 1.77635673e-16)
+quaternion = Quaternion(-0.0174524058, -0, -0, 0.99984771)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6765
+metadata/unity_name = "cloak_BA_004"
+
+[node name="cloak_BA_005" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/cloak_BA_001/cloak_BA_002/cloak_BA_003/cloak_BA_004"]
+position = Vector3(-0, 0.164999992, -0)
+quaternion = Quaternion(-0.0174524058, -0, -0, 0.99984771)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26755
+metadata/unity_name = "cloak_BA_005"
+
+[node name="cloak_BA_006" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/cloak_BA_001/cloak_BA_002/cloak_BA_003/cloak_BA_004/cloak_BA_005"]
+position = Vector3(8.881784e-18, 0.164999992, -3.5527136e-17)
+quaternion = Quaternion(-0.0174524058, -0, -0, 0.99984771)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19115
+metadata/unity_name = "cloak_BA_006"
+
+[node name="cloak_BA_end" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/cloak_BA_001/cloak_BA_002/cloak_BA_003/cloak_BA_004/cloak_BA_005/cloak_BA_006"]
+position = Vector3(-1.7763568e-17, 0.170000002, 2.48689959e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20318
+metadata/unity_name = "cloak_BA_end"
+
+[node name="neck" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest"]
+position = Vector3(-6.3108871e-32, 0.189999998, 7.1054272e-17)
+quaternion = Quaternion(-0.220468685, 0.023219524, -0.00389801967, 0.975109875)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20523
+metadata/unity_name = "neck"
+
+[node name="head" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck"]
+position = Vector3(8.35647825e-06, 0.0638166368, 0.0028165644)
+quaternion = Quaternion(0.357670903, 0.235888422, 0.114466436, 0.896284401)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19642
+metadata/unity_name = "head"
+
+[node name="hair_root" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(-5.04963123e-29, 0.0724955946, 0.00110150792)
+quaternion = Quaternion(0.00436330959, -0, -0, 0.999990523)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23144
+metadata/unity_name = "hair_root"
+
+[node name="hair_BA" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(1.26248247e-28, -0.0738408193, 0.0315188095)
+quaternion = Quaternion(-0.903447986, -0.0209407657, -0.168045536, -0.393832415)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6471
+metadata/unity_name = "hair_BA"
+
+[node name="hair_BA_end" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_BA"]
+position = Vector3(1.06581408e-16, 0.0575292818, 1.42108544e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6434
+metadata/unity_name = "hair_BA_end"
+
+[node name="hair_bangs_F_1" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(-3.9739168e-19, 0.0249548741, -0.0837318748)
+quaternion = Quaternion(0.0346248709, -0.162897199, 0.964488089, 0.205008268)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13705
+metadata/unity_name = "hair_bangs_F_1"
+
+[node name="hair_bangs_F_2" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_bangs_F_1"]
+position = Vector3(1.42108544e-16, 0.0229999982, -4.97379917e-16)
+quaternion = Quaternion(0.258819073, -0, -0, 0.965925872)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6343
+metadata/unity_name = "hair_bangs_F_2"
+
+[node name="hair_bangs_F_end" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_bangs_F_1/hair_bangs_F_2"]
+position = Vector3(-7.1054272e-17, 0.0229999982, 3.01980666e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19425
+metadata/unity_name = "hair_bangs_F_end"
+
+[node name="hair_bangs_L_1" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(-0.0361846313, 0.0249849316, -0.0695698559)
+quaternion = Quaternion(0.389720291, -0.110265546, 0.873842418, 0.268996388)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20797
+metadata/unity_name = "hair_bangs_L_1"
+
+[node name="hair_bangs_L_2" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_bangs_L_1"]
+position = Vector3(-0, 0.0229999982, 2.84217088e-16)
+quaternion = Quaternion(0.21643962, -0, -0, 0.976296008)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5569
+metadata/unity_name = "hair_bangs_L_2"
+
+[node name="hair_bangs_L_end" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_bangs_L_1/hair_bangs_L_2"]
+position = Vector3(7.1054272e-17, 0.0229999982, -2.6645351e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15408
+metadata/unity_name = "hair_bangs_L_end"
+
+[node name="hair_bangs_R_1" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(0.0361800008, 0.0249849316, -0.0695698559)
+quaternion = Quaternion(-0.377339363, -0.153859586, 0.91097784, -0.0637307316)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7046
+metadata/unity_name = "hair_bangs_R_1"
+
+[node name="hair_bangs_R_2" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_bangs_R_1"]
+position = Vector3(-1.14352968e-16, 0.0229999982, 1.74329827e-07)
+quaternion = Quaternion(0.21643962, -0, -0, 0.976296008)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6198
+metadata/unity_name = "hair_bangs_R_2"
+
+[node name="hair_bangs_R_end" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_bangs_R_1/hair_bangs_R_2"]
+position = Vector3(1.4543921e-16, 0.0229999982, 4.68421348e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21100
+metadata/unity_name = "hair_bangs_R_end"
+
+[node name="hair_BB" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(0.0159159992, -0.0729290545, 0.0291607082)
+quaternion = Quaternion(-0.797498465, -0.183549836, 0.307482094, -0.485551685)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23182
+metadata/unity_name = "hair_BB"
+
+[node name="hair_BB_end" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_BB"]
+position = Vector3(-8.881784e-18, 0.0526702628, -4.26325632e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17376
+metadata/unity_name = "hair_BB_end"
+
+[node name="hair_BC" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(-0.0159159992, -0.0729280561, 0.0292921681)
+quaternion = Quaternion(-0.797418594, 0.183869064, -0.308319598, -0.485030711)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25411
+metadata/unity_name = "hair_BC"
+
+[node name="hair_BC_end" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_BC"]
+position = Vector3(7.99360543e-17, 0.0525838472, -4.26325632e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17375
+metadata/unity_name = "hair_BC_end"
+
+[node name="hair_LA_1" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(-0.0592393391, -0.00831139926, -0.0322421975)
+quaternion = Quaternion(0.647768021, 0.174995109, 0.726999283, 0.145758301)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6887
+metadata/unity_name = "hair_LA_1"
+
+[node name="hair_LA_2" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LA_1"]
+position = Vector3(3.55271347e-16, 0.050999999, -1.86517462e-16)
+quaternion = Quaternion(-0.0305370595, -0.0437102132, 0.0632111579, 0.996574759)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12109
+metadata/unity_name = "hair_LA_2"
+
+[node name="hair_LA_end" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LA_1/hair_LA_2"]
+position = Vector3(-2.84217088e-16, 0.050999999, -1.24344979e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13498
+metadata/unity_name = "hair_LA_end"
+
+[node name="hair_LB_1" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(-0.0447599962, 0.0392716192, -0.0435207114)
+quaternion = Quaternion(0.688298821, -0.0207851958, 0.701957941, 0.181845471)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8499
+metadata/unity_name = "hair_LB_1"
+
+[node name="hair_LB_2" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LB_1"]
+position = Vector3(-0.0134099992, 0.0574599952, 7.1054272e-17)
+quaternion = Quaternion(0.0953610316, 0.163392738, 0.262926161, 0.946086168)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24976
+metadata/unity_name = "hair_LB_2"
+
+[node name="hair_LB_3" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LB_1/hair_LB_2"]
+position = Vector3(1.77635673e-16, 0.0590000004, -4.61852761e-16)
+quaternion = Quaternion(0.159916878, 0.0977973491, -0.0430405475, 0.981330633)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5346
+metadata/unity_name = "hair_LB_3"
+
+[node name="hair_LB_end" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_LB_1/hair_LB_2/hair_LB_3"]
+position = Vector3(4.97379917e-16, 0.0590000004, -1.77635673e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24897
+metadata/unity_name = "hair_LB_end"
+
+[node name="hair_RA_1" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(0.0592365339, -0.00831139926, -0.0322421975)
+quaternion = Quaternion(-0.647768021, 0.174995109, 0.726999283, -0.145758301)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6001
+metadata/unity_name = "hair_RA_1"
+
+[node name="hair_RA_2" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RA_1"]
+position = Vector3(-2.84217088e-16, 0.050999999, -1.46549432e-16)
+quaternion = Quaternion(-0.0305370595, 0.0437102132, -0.0632111579, 0.996574759)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12470
+metadata/unity_name = "hair_RA_2"
+
+[node name="hair_RA_end" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RA_1/hair_RA_2"]
+position = Vector3(-2.13162816e-16, 0.050999999, -1.59872109e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26461
+metadata/unity_name = "hair_RA_end"
+
+[node name="hair_RB_1" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(0.0447571985, 0.0392716192, -0.0435207114)
+quaternion = Quaternion(-0.688298821, -0.0207851958, 0.701957941, -0.181845471)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19933
+metadata/unity_name = "hair_RB_1"
+
+[node name="hair_RB_2" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RB_1"]
+position = Vector3(0.00559791969, 0.0632627904, 0.00160714635)
+quaternion = Quaternion(0.209441394, 0.0192855131, -0.151824698, 0.965770006)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5676
+metadata/unity_name = "hair_RB_2"
+
+[node name="hair_RB_end" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_RB_1/hair_RB_2"]
+position = Vector3(-1.06581408e-16, 0.063000001, -1.24344979e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13021
+metadata/unity_name = "hair_RB_end"
+
+[node name="hair_tail_1" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root"]
+position = Vector3(-3.9739168e-19, 0.0656867325, 0.0597166754)
+quaternion = Quaternion(0.543217301, -0.0602024309, 0.0930380076, 0.83224678)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10047
+metadata/unity_name = "hair_tail_1"
+
+[node name="hair_tailA_1" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_tail_1"]
+position = Vector3(-0, 0.0799999982, -1.84741105e-15)
+quaternion = Quaternion(0.636630654, -0.170964077, 0.180308133, 0.730042338)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10852
+metadata/unity_name = "hair_tailA_1"
+
+[node name="hair_tailA_2" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_tail_1/hair_tailA_1"]
+position = Vector3(7.1054272e-17, 0.0799999982, -8.52651264e-16)
+quaternion = Quaternion(0.361821353, -0.0512206592, 0.00308075175, 0.930834174)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9003
+metadata/unity_name = "hair_tailA_2"
+
+[node name="hair_tailA_3" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_tail_1/hair_tailA_1/hair_tailA_2"]
+position = Vector3(4.26325632e-16, 0.0799999982, 2.93098864e-16)
+quaternion = Quaternion(-0.221404448, -0.093601048, -0.168030992, 0.956025362)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16351
+metadata/unity_name = "hair_tailA_3"
+
+[node name="hair_tailA_4" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_tail_1/hair_tailA_1/hair_tailA_2/hair_tailA_3"]
+position = Vector3(-1.77635673e-16, 0.0799999982, -7.1054272e-17)
+quaternion = Quaternion(-0.516661525, 0.0447730124, 0.110386029, 0.84786272)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9187
+metadata/unity_name = "hair_tailA_4"
+
+[node name="hair_tailA_5" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_tail_1/hair_tailA_1/hair_tailA_2/hair_tailA_3/hair_tailA_4"]
+position = Vector3(3.55271347e-16, 0.0799999982, -0)
+quaternion = Quaternion(-0.497661382, 0.109776117, 0.122348569, 0.851653218)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10731
+metadata/unity_name = "hair_tailA_5"
+
+[node name="hair_tailA_end" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_tail_1/hair_tailA_1/hair_tailA_2/hair_tailA_3/hair_tailA_4/hair_tailA_5"]
+position = Vector3(2.48689959e-16, 0.0799999982, 2.13162816e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23192
+metadata/unity_name = "hair_tailA_end"
+
+[node name="hair_tailB_1" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_tail_1/hair_tailA_1"]
+position = Vector3(-0.0191587321, 0.0850096792, -0.0328459144)
+quaternion = Quaternion(0.18483685, 0.0527917221, 0.0430681705, 0.980404794)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4978
+metadata/unity_name = "hair_tailB_1"
+
+[node name="hair_tailB_2" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_tail_1/hair_tailA_1/hair_tailB_1"]
+position = Vector3(-7.1054272e-17, 0.0971635431, 2.84217088e-16)
+quaternion = Quaternion(0.296928406, -0.02110078, -0.0549289733, 0.953085065)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15715
+metadata/unity_name = "hair_tailB_2"
+
+[node name="hair_tailB_end" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_tail_1/hair_tailA_1/hair_tailB_1/hair_tailB_2"]
+position = Vector3(-0, 0.105452314, -1.42108544e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6624
+metadata/unity_name = "hair_tailB_end"
+
+[node name="hair_tailC_1" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_tail_1"]
+position = Vector3(0.00261353212, 0.0108036408, -0.0558836162)
+quaternion = Quaternion(0.0884200335, -0.0369766764, 0.127625674, 0.987181008)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22874
+metadata/unity_name = "hair_tailC_1"
+
+[node name="hair_tailC_2" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_tail_1/hair_tailC_1"]
+position = Vector3(1.06581408e-16, 0.0698174238, -0)
+quaternion = Quaternion(0.257349312, -0.00730874157, -0.0946139544, 0.96164763)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17428
+metadata/unity_name = "hair_tailC_2"
+
+[node name="hair_tailC_3" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_tail_1/hair_tailC_1/hair_tailC_2"]
+position = Vector3(-0, 0.0647197142, -0)
+quaternion = Quaternion(0.215515316, -0.00242341496, -0.150883466, 0.964770198)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16261
+metadata/unity_name = "hair_tailC_3"
+
+[node name="hair_tailC_end" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_tail_1/hair_tailC_1/hair_tailC_2/hair_tailC_3"]
+position = Vector3(-0, 0.0731784478, -8.52651264e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18659
+metadata/unity_name = "hair_tailC_end"
+
+[node name="hair_tailD_1" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_tail_1"]
+position = Vector3(0.0195307918, -0.00793886837, -0.00947514549)
+quaternion = Quaternion(-0.457929581, -0.250363886, 0.76126349, -0.384832889)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13029
+metadata/unity_name = "hair_tailD_1"
+
+[node name="hair_tailD_2" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_tail_1/hair_tailD_1"]
+position = Vector3(-1.42108544e-16, 0.0446727164, 1.42108544e-16)
+quaternion = Quaternion(0.31170693, 0.0437483266, 0.0135986432, 0.949073255)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6181
+metadata/unity_name = "hair_tailD_2"
+
+[node name="hair_tailD_end" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_tail_1/hair_tailD_1/hair_tailD_2"]
+position = Vector3(-0, 0.0426167399, 5.68434176e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27179
+metadata/unity_name = "hair_tailD_end"
+
+[node name="hair_tailE_1" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_tail_1"]
+position = Vector3(0.0127091808, -0.0111677153, -0.0154879717)
+quaternion = Quaternion(-0.211240962, -0.504172802, 0.813292623, -0.199354336)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9454
+metadata/unity_name = "hair_tailE_1"
+
+[node name="hair_tailE_2" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_tail_1/hair_tailE_1"]
+position = Vector3(-2.84217088e-16, 0.0457624793, -5.68434176e-16)
+quaternion = Quaternion(0.210935101, -0.0235643908, 0.00553311547, 0.977200329)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17956
+metadata/unity_name = "hair_tailE_2"
+
+[node name="hair_tailE_end" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/hair_root/hair_tail_1/hair_tailE_1/hair_tailE_2"]
+position = Vector3(7.1054272e-17, 0.0494588651, 5.68434176e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9600
+metadata/unity_name = "hair_tailE_end"
+
+[node name="head_end" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(1.66193549e-26, 0.150947362, -1.8358648e-14)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18548
+metadata/unity_name = "head_end"
+
+[node name="jaw" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(7.56123166e-29, 0.0213328544, -0.0183882006)
+quaternion = Quaternion(3.04571799e-08, -0.403417408, 0.915016055, 6.90817856e-08)
+scale = Vector3(1, 0.99999994, 0.999999881)
+metadata/unity_id = 16301
+metadata/unity_name = "jaw"
+
+[node name="jaw_end" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head/jaw"]
+position = Vector3(-7.4033316e-16, 0.0666526556, -1.10207719e-08)
+quaternion = Quaternion(-4.49641087e-15, -3.35880799e-08, 6.95769473e-17, 1)
+scale = Vector3(1, 1.00000012, 1.00000012)
+metadata/unity_id = 17456
+metadata/unity_name = "jaw_end"
+
+[node name="Magica Sphere Collider (head)" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck/head"]
+position = Vector3(0, -0.0622818768, 0.0143789183)
+quaternion = Quaternion(-0.113203228, 1.66533467e-16, -5.5511138e-17, 0.993571877)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23990
+metadata/unity_name = "Magica Sphere Collider (head)"
+
+[node name="Magica Sphere Collider (neck)" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/neck"]
+position = Vector3(0.0004781975, 0.00968457758, -0.0420277938)
+quaternion = Quaternion(-1.49011598e-07, -9.55893285e-08, 1.61685122e-07, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21705
+metadata/unity_name = "Magica Sphere Collider (neck)"
+
+[node name="shoulder_L" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest"]
+position = Vector3(-0.0172824841, 0.152940199, 0.00925479177)
+quaternion = Quaternion(0.349026322, -0.705532968, 0.359324038, 0.501288533)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25819
+metadata/unity_name = "shoulder_L"
+
+[node name="upper_arm_L" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/shoulder_L"]
+position = Vector3(-5.28492485e-08, 0.0849981382, -7.00777207e-07)
+quaternion = Quaternion(0.360255927, -4.0427567e-05, -0.0270388164, 0.932461619)
+scale = Vector3(1, 1.00000012, 1.00000012)
+metadata/unity_id = 14846
+metadata/unity_name = "upper_arm_L"
+
+[node name="lower_arm_L" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L"]
+position = Vector3(7.11645844e-05, 0.185524657, 5.04914351e-06)
+quaternion = Quaternion(-0.0171028506, -0.15491946, 0.794377804, 0.587087214)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11279
+metadata/unity_name = "lower_arm_L"
+
+[node name="hand_L" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L"]
+position = Vector3(-6.78764118e-05, 0.197700024, 1.56168699e-05)
+quaternion = Quaternion(-0.146700785, 0.191745609, -0.254012823, 0.936584234)
+scale = Vector3(1, 0.999999881, 0.999999881)
+metadata/unity_id = 5510
+metadata/unity_name = "hand_L"
+
+[node name="hand_L_end" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L"]
+position = Vector3(2.40972149e-05, 0.0896530524, -5.92370452e-06)
+quaternion = Quaternion(-5.52335955e-15, -2.08171913e-17, -1.11022302e-14, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19910
+metadata/unity_name = "hand_L_end"
+
+[node name="Magica Sphere Collider (hand_L)" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L/hand_L"]
+position = Vector3(-0.041595079, -0.000992551562, 0.0275203362)
+quaternion = Quaternion(0.0858694687, 0.18083328, -0.00832614116, 0.979722679)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13403
+metadata/unity_name = "Magica Sphere Collider (hand_L)"
+
+[node name="Magica Capsule Collider (lower_arm_L)" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L/lower_arm_L"]
+position = Vector3(-0.0387459621, -0.00150123239, 0.025559362)
+quaternion = Quaternion(0.00260215928, 0.195118561, 0.00390964653, 0.980768383)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14390
+metadata/unity_name = "Magica Capsule Collider (lower_arm_L)"
+
+[node name="Magica Capsule Collider (upper_arm_L)" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/shoulder_L/upper_arm_L"]
+position = Vector3(-0.0395849496, -0.000801600399, 0.0179004129)
+quaternion = Quaternion(0.0207605343, 0.176364213, 0.00121949601, 0.984105289)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17639
+metadata/unity_name = "Magica Capsule Collider (upper_arm_L)"
+
+[node name="shoulder_R" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest"]
+position = Vector3(0.0172824599, 0.152942374, 0.00925759133)
+quaternion = Quaternion(0.639058173, 0.438628227, -0.302906632, 0.55448854)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6447
+metadata/unity_name = "shoulder_R"
+
+[node name="cloak_001" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/shoulder_R"]
+position = Vector3(8.62146077e-10, -7.62595653e-10, -8.71662476e-09)
+quaternion = Quaternion(0.137905434, 0.709019542, 0.129451632, 0.679349482)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17859
+metadata/unity_name = "cloak_001"
+
+[node name="cloak_002" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/shoulder_R/cloak_001"]
+position = Vector3(0.125462696, 0.0249194466, 0.0280452035)
+quaternion = Quaternion(-0.360148281, 0.145188048, 0.0691141039, 0.918932498)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14580
+metadata/unity_name = "cloak_002"
+
+[node name="cloak_003" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/shoulder_R/cloak_001/cloak_002"]
+position = Vector3(-5.68434176e-16, 0.099999994, -3.37507795e-16)
+quaternion = Quaternion(0.348886698, -0.0140283369, 0.0376476906, 0.936303318)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11503
+metadata/unity_name = "cloak_003"
+
+[node name="cloak_end" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/shoulder_R/cloak_001/cloak_002/cloak_003"]
+position = Vector3(5.68434176e-16, 0.099999994, -0.0350380726)
+quaternion = Quaternion(-0.0523359552, 1.68847803e-19, -1.92993913e-18, 0.99862951)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8938
+metadata/unity_name = "cloak_end"
+
+[node name="upper_arm_R" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/shoulder_R"]
+position = Vector3(-1.95113987e-08, 0.0849993974, -2.81906495e-07)
+quaternion = Quaternion(0.426419258, 4.50189837e-05, -0.0296239499, 0.904040396)
+scale = Vector3(1, 0.99999994, 0.99999994)
+metadata/unity_id = 14759
+metadata/unity_name = "upper_arm_R"
+
+[node name="lower_arm_R" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R"]
+position = Vector3(-6.89792796e-05, 0.185524777, -1.2589936e-05)
+quaternion = Quaternion(0.0264248755, 0.0399685912, -0.133452892, 0.989896238)
+scale = Vector3(1, 0.99999994, 0.99999994)
+metadata/unity_id = 5754
+metadata/unity_name = "lower_arm_R"
+
+[node name="hand_R" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R"]
+position = Vector3(6.78368888e-05, 0.197699755, 1.63098266e-05)
+quaternion = Quaternion(-0.080057174, -0.0994850695, 0.233014882, 0.964052737)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9298
+metadata/unity_name = "hand_R"
+
+[node name="hand_R_end" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R"]
+position = Vector3(-2.39151777e-05, 0.0896530449, -5.35796971e-06)
+quaternion = Quaternion(-6.9388939e-18, -2.08166817e-17, 5.72458747e-17, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27033
+metadata/unity_name = "hand_R_end"
+
+[node name="VFX_Ayaka_SkillAttack_02" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25195
+metadata/unity_name = "VFX_Ayaka_SkillAttack_02"
+
+[node name="root" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Ayaka_SkillAttack_02"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10136
+metadata/unity_name = "root"
+
+[node name="Charge_01" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Ayaka_SkillAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23150
+metadata/unity_name = "Charge_01"
+
+[node name="Center_01" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Ayaka_SkillAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, 1.49011612e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6258
+metadata/unity_name = "Center_01"
+
+[node name="Glow_02" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Ayaka_SkillAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, 1.49011612e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5811
+metadata/unity_name = "Glow_02"
+
+[node name="Flare_01" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Ayaka_SkillAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, 1.49011612e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23414
+metadata/unity_name = "Flare_01"
+
+[node name="Ray_01" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Ayaka_SkillAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, 1.49011612e-08, 1)
+scale = Vector3(2, 2, 2)
+metadata/unity_id = 15380
+metadata/unity_name = "Ray_01"
+
+[node name="Circle_01" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Ayaka_SkillAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, 1.49011612e-08, 1)
+scale = Vector3(1.39999986, 1.4000001, 1.4000001)
+metadata/unity_id = 24239
+metadata/unity_name = "Circle_01"
+
+[node name="Line_01" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Ayaka_SkillAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0.707106829, 0, -7.4505806e-09, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25532
+metadata/unity_name = "Line_01"
+
+[node name="Glow_03" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Ayaka_SkillAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, 1.49011612e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4740
+metadata/unity_name = "Glow_03"
+
+[node name="Flare_02" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R/VFX_Ayaka_SkillAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4828
+metadata/unity_name = "Flare_02"
+
+[node name="Magica Sphere Collider (hand_R)" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R/hand_R"]
+position = Vector3(0.0415868908, -3.63141298e-05, 0.0275133774)
+quaternion = Quaternion(-0.0858667344, 0.180840969, -0.00833283551, -0.979721427)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13922
+metadata/unity_name = "Magica Sphere Collider (hand_R)"
+
+[node name="Magica Capsule Collider (lower_arm_R)" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R/lower_arm_R"]
+position = Vector3(0.0387405939, -0.000545069634, 0.0255546346)
+quaternion = Quaternion(-0.00345222093, 0.195110813, 0.00818265323, -0.980740964)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12828
+metadata/unity_name = "Magica Capsule Collider (lower_arm_R)"
+
+[node name="Magica Capsule Collider (upper_arm_R)" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest/shoulder_R/upper_arm_R"]
+position = Vector3(0.0395849086, 0.000154636815, 0.0179005973)
+quaternion = Quaternion(-0.0207591653, 0.176369488, 0.00121385232, -0.984104335)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18563
+metadata/unity_name = "Magica Capsule Collider (upper_arm_R)"
+
+[node name="Magica Sphere Collider (chest)" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/chest"]
+position = Vector3(0.000478169939, -0.0111798476, -0.0416548997)
+quaternion = Quaternion(-1.93715067e-07, -1.19433246e-08, -7.25787572e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13564
+metadata/unity_name = "Magica Sphere Collider (chest)"
+
+[node name="Magica Sphere Collider (spine)" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine"]
+position = Vector3(0.00047817704, -0.00527376123, -0.0428054705)
+quaternion = Quaternion(9.68575335e-08, -2.49065568e-08, 4.43448336e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21534
+metadata/unity_name = "Magica Sphere Collider (spine)"
+
+[node name="VFX_Ayaka_SkillAttack_01" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10074
+metadata/unity_name = "VFX_Ayaka_SkillAttack_01"
+
+[node name="root" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/VFX_Ayaka_SkillAttack_01"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23352
+metadata/unity_name = "root"
+
+[node name="Line_01" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/VFX_Ayaka_SkillAttack_01/root"]
+position = Vector3(0, 0, 0.00999999978)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12923
+metadata/unity_name = "Line_01"
+
+[node name="Wind_01" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/spine/VFX_Ayaka_SkillAttack_01/root"]
+position = Vector3(0, 0.5, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18738
+metadata/unity_name = "Wind_01"
+
+[node name="upper_leg_L" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips"]
+position = Vector3(-0.0677043572, -0.00642017042, 0.00199170015)
+quaternion = Quaternion(0.0054470594, -0.31029886, 0.851121724, 0.423410952)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13963
+metadata/unity_name = "upper_leg_L"
+
+[node name="loop_L" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_L"]
+position = Vector3(0.0590092465, 0.15351969, -0.0704205185)
+quaternion = Quaternion(-0.0685898066, 0.160293177, -0.281597316, 0.943559527)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14609
+metadata/unity_name = "loop_L"
+
+[node name="loop_L_end" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_L/loop_L"]
+position = Vector3(2.13162816e-16, 0.0399999991, -3.5527136e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23052
+metadata/unity_name = "loop_L_end"
+
+[node name="lower_leg_L" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_L"]
+position = Vector3(-2.20412577e-08, 0.405768305, 3.06868856e-07)
+quaternion = Quaternion(0.430678636, -0.0344064794, 0.0164335538, 0.901699543)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24587
+metadata/unity_name = "lower_leg_L"
+
+[node name="foot_L" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_L/lower_leg_L"]
+position = Vector3(-8.94408458e-08, 0.329999715, 2.14200568e-08)
+quaternion = Quaternion(0.0546157546, 0.000950673828, 0.23070924, 0.971488297)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13495
+metadata/unity_name = "foot_L"
+
+[node name="toes_L" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_L/lower_leg_L/foot_L"]
+position = Vector3(0.001005269, 0.0888389498, -0.0949031264)
+quaternion = Quaternion(-0.749699116, -0.0180112328, 0.0620676503, 0.65861553)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10714
+metadata/unity_name = "toes_L"
+
+[node name="toes_L_end" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_L/lower_leg_L/foot_L/toes_L"]
+position = Vector3(-5.3290704e-17, 0.0387560837, 3.5527136e-17)
+quaternion = Quaternion(-3.05311332e-16, 1.66533454e-16, 2.77555756e-17, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25427
+metadata/unity_name = "toes_L_end"
+
+[node name="Magica Sphere Collider (foot_L)" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_L/lower_leg_L/foot_L"]
+position = Vector3(0.00479807099, -0.00499722362, -0.051303003)
+quaternion = Quaternion(-0.0114575829, 0.0155443558, 0.0533276238, 0.998390377)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24282
+metadata/unity_name = "Magica Sphere Collider (foot_L)"
+
+[node name="shoelaces_L_root" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_L/lower_leg_L"]
+position = Vector3(0.0100002736, 0.139999226, -0.029999923)
+quaternion = Quaternion(-1, -2.65895732e-08, -8.19730428e-16, -3.10818251e-08)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21345
+metadata/unity_name = "shoelaces_L_root"
+
+[node name="hoelaces_LC_1" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_L/lower_leg_L/shoelaces_L_root"]
+position = Vector3(0.000962077815, -0.000786204182, -0.000675307645)
+quaternion = Quaternion(-0.943244815, -0.300959885, -0.011655963, -0.139916539)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13037
+metadata/unity_name = "hoelaces_LC_1"
+
+[node name="hoelaces_LC_2" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_L/lower_leg_L/shoelaces_L_root/hoelaces_LC_1"]
+position = Vector3(-1.06581408e-16, 0.051999744, -3.10862448e-17)
+quaternion = Quaternion(-0.0170051418, -0.0209850371, 0.0995118767, 0.994669735)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5717
+metadata/unity_name = "hoelaces_LC_2"
+
+[node name="hoelaces_LC_end" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_L/lower_leg_L/shoelaces_L_root/hoelaces_LC_1/hoelaces_LC_2"]
+position = Vector3(3.5527136e-17, 0.0520000271, -3.10862448e-17)
+quaternion = Quaternion(-0.883960664, -1.53195947e-06, -0.467561275, 8.66835592e-07)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4840
+metadata/unity_name = "hoelaces_LC_end"
+
+[node name="shoelaces_LA" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_L/lower_leg_L/shoelaces_L_root"]
+position = Vector3(-0.000998482807, 5.48572025e-05, -6.73216755e-06)
+quaternion = Quaternion(-0.819153666, 0.449240565, 0.130271465, -0.331963331)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25980
+metadata/unity_name = "shoelaces_LA"
+
+[node name="shoelaces_LA_end" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_L/lower_leg_L/shoelaces_L_root/shoelaces_LA"]
+position = Vector3(-3.5527136e-17, 0.0549714044, -1.7763568e-17)
+quaternion = Quaternion(-0.866643429, 2.26470911e-06, 0.49892804, 1.53035796e-06)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4985
+metadata/unity_name = "shoelaces_LA_end"
+
+[node name="shoelaces_LB" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_L/lower_leg_L/shoelaces_L_root"]
+position = Vector3(0.00107013748, 0.00140490942, 0.00137112243)
+quaternion = Quaternion(-0.806351721, -0.557719767, -0.0671511665, -0.185030535)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14592
+metadata/unity_name = "shoelaces_LB"
+
+[node name="shoelaces_LB_end" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_L/lower_leg_L/shoelaces_L_root/shoelaces_LB"]
+position = Vector3(-0, 0.0602246411, -3.10862448e-17)
+quaternion = Quaternion(-0.836524367, -1.44298689e-08, -0.547929704, 3.0389208e-06)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27000
+metadata/unity_name = "shoelaces_LB_end"
+
+[node name="Magica Capsule Collider (lower_leg_L)" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_L/lower_leg_L"]
+position = Vector3(0.0135205677, -0.00480806548, -0.0442991033)
+quaternion = Quaternion(-0.0100833457, -0.0394734032, 0.0136264805, 0.999076903)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21491
+metadata/unity_name = "Magica Capsule Collider (lower_leg_L)"
+
+[node name="Magica Sphere Collider (lower_leg_L)" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_L/lower_leg_L"]
+position = Vector3(0.0135205677, -0.00480806548, -0.0442991033)
+quaternion = Quaternion(-0.0100833457, -0.0394734032, 0.0136264805, 0.999076903)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8889
+metadata/unity_name = "Magica Sphere Collider (lower_leg_L)"
+
+[node name="Magica Capsule Collider (upper_leg_L)" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_L"]
+position = Vector3(-0.000478185946, -0.00223948481, -0.0430709682)
+quaternion = Quaternion(-0.0029149719, -0.0678153485, -0.017093908, 0.99754715)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5437
+metadata/unity_name = "Magica Capsule Collider (upper_leg_L)"
+
+[node name="Magica Sphere Collider (upper_leg_L)" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_L"]
+position = Vector3(-0.000478185946, -0.00223948481, -0.0430709682)
+quaternion = Quaternion(-0.0029149719, -0.0678153485, -0.017093908, 0.99754715)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19671
+metadata/unity_name = "Magica Sphere Collider (upper_leg_L)"
+
+[node name="upper_leg_R" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips"]
+position = Vector3(0.066995658, -0.0117045511, -0.00191024796)
+quaternion = Quaternion(0.00898636971, -0.256639272, 0.929392278, -0.265114158)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10807
+metadata/unity_name = "upper_leg_R"
+
+[node name="bag_root" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_R"]
+position = Vector3(-0.0763887465, 0.0104467999, -0.0147058759)
+quaternion = Quaternion(-0.0416541882, -0.0129452655, 0.296495318, 0.954037726)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13216
+metadata/unity_name = "bag_root"
+
+[node name="string_1" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_R/bag_root"]
+position = Vector3(-0.00161550322, 0.0860444903, 0.00752525311)
+quaternion = Quaternion(0.0333271846, -0.0103572961, -0.296594143, 0.95436579)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15558
+metadata/unity_name = "string_1"
+
+[node name="string_2" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_R/bag_root/string_1"]
+position = Vector3(7.1054272e-17, 0.157499999, -3.5527136e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5456
+metadata/unity_name = "string_2"
+
+[node name="string_3" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_R/bag_root/string_1/string_2"]
+position = Vector3(1.42108544e-16, 0.157499999, -1.3322676e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9621
+metadata/unity_name = "string_3"
+
+[node name="string_4" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_R/bag_root/string_1/string_2/string_3"]
+position = Vector3(7.1054272e-17, 0.157499999, -4.440892e-18)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21821
+metadata/unity_name = "string_4"
+
+[node name="string_end" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_R/bag_root/string_1/string_2/string_3/string_4"]
+position = Vector3(1.42108544e-16, 0.157499999, -1.3322676e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25186
+metadata/unity_name = "string_end"
+
+[node name="lower_leg_R" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_R"]
+position = Vector3(7.99360543e-17, 0.405768067, -3.37507795e-16)
+quaternion = Quaternion(0.534937322, 0.00633523846, -0.00401126966, 0.844858527)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20096
+metadata/unity_name = "lower_leg_R"
+
+[node name="foot_R" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_R/lower_leg_R"]
+position = Vector3(-8.88178367e-17, 0.329999983, 1.56319401e-15)
+quaternion = Quaternion(-0.186179712, -0.0172820576, -0.177808717, 0.966137946)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19037
+metadata/unity_name = "foot_R"
+
+[node name="toes_R" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_R/lower_leg_R/foot_R"]
+position = Vector3(-0.00100527273, 0.088839069, -0.0949031413)
+quaternion = Quaternion(-0.738257229, 0.0495743006, -0.103710003, 0.664652467)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20275
+metadata/unity_name = "toes_R"
+
+[node name="toes_R_end" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_R/lower_leg_R/foot_R/toes_R"]
+position = Vector3(-0, 0.0387560166, 5.3290704e-17)
+quaternion = Quaternion(3.88578059e-16, -1.38777878e-16, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10687
+metadata/unity_name = "toes_R_end"
+
+[node name="Magica Sphere Collider (foot_R)" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_R/lower_leg_R/foot_R"]
+position = Vector3(-0.00575315952, -0.00499725342, -0.0513037443)
+quaternion = Quaternion(-0.0114590842, -0.0155463032, -0.0533290468, 0.998390257)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16670
+metadata/unity_name = "Magica Sphere Collider (foot_R)"
+
+[node name="shoelaces_R_root" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_R/lower_leg_R"]
+position = Vector3(-0.00999999978, 0.140000001, -0.0299999993)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24148
+metadata/unity_name = "shoelaces_R_root"
+
+[node name="hoelaces_RC_1" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_R/lower_leg_R/shoelaces_R_root"]
+position = Vector3(-0.000962675025, 0.000785589044, 0.000675356539)
+quaternion = Quaternion(-0.139916122, -0.0116556846, 0.300957322, 0.943245649)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10302
+metadata/unity_name = "hoelaces_RC_1"
+
+[node name="hoelaces_RC_2" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_R/lower_leg_R/shoelaces_R_root/hoelaces_RC_1"]
+position = Vector3(-0, 0.0519999973, -6.21724896e-17)
+quaternion = Quaternion(-0.0170056447, 0.0209848024, -0.0995110571, 0.994669795)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9335
+metadata/unity_name = "hoelaces_RC_2"
+
+[node name="hoelaces_RC_end" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_R/lower_leg_R/shoelaces_R_root/hoelaces_RC_1/hoelaces_RC_2"]
+position = Vector3(-0, 0.0519999973, -0)
+quaternion = Quaternion(-0, 0.467560947, -0, 0.883960843)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9508
+metadata/unity_name = "hoelaces_RC_end"
+
+[node name="shoelaces_RA" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_R/lower_leg_R/shoelaces_R_root"]
+position = Vector3(0.000998450443, -5.52341808e-05, 6.77382513e-06)
+quaternion = Quaternion(-0.331963718, 0.130270511, -0.449237615, 0.819155216)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9027
+metadata/unity_name = "shoelaces_RA"
+
+[node name="shoelaces_RA_end" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_R/lower_leg_R/shoelaces_R_root/shoelaces_RA"]
+position = Vector3(3.5527136e-17, 0.0549713559, -0)
+quaternion = Quaternion(-0, -0.498926193, -0, 0.866644502)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26395
+metadata/unity_name = "shoelaces_RA_end"
+
+[node name="shoelaces_RB" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_R/lower_leg_R/shoelaces_R_root"]
+position = Vector3(-0.00107000116, -0.00140547554, -0.00137103454)
+quaternion = Quaternion(-0.185028717, -0.0671495721, 0.557718456, 0.806353152)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6974
+metadata/unity_name = "shoelaces_RB"
+
+[node name="shoelaces_RB_end" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_R/lower_leg_R/shoelaces_R_root/shoelaces_RB"]
+position = Vector3(-1.42108544e-16, 0.0602255613, -3.99680272e-17)
+quaternion = Quaternion(-0, 0.547929227, -0, 0.836524725)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17917
+metadata/unity_name = "shoelaces_RB_end"
+
+[node name="Magica Capsule Collider (lower_leg_R)" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_R/lower_leg_R"]
+position = Vector3(-0.0144763961, -0.00480812881, -0.0442991741)
+quaternion = Quaternion(-0.0100842239, 0.0394793935, -0.0136277145, 0.999076545)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18524
+metadata/unity_name = "Magica Capsule Collider (lower_leg_R)"
+
+[node name="Magica Sphere Collider (lower_leg_R)" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_R/lower_leg_R"]
+position = Vector3(-0.0144763961, -0.00480812881, -0.0442991741)
+quaternion = Quaternion(-0.0100842239, 0.0394793935, -0.0136277145, 0.999076545)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23677
+metadata/unity_name = "Magica Sphere Collider (lower_leg_R)"
+
+[node name="Magica Capsule Collider (upper_leg_R)" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_R"]
+position = Vector3(-0.000478185713, -0.00223947177, -0.0430709571)
+quaternion = Quaternion(-0.00291515887, 0.0678222105, 0.0170932412, 0.997546732)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7195
+metadata/unity_name = "Magica Capsule Collider (upper_leg_R)"
+
+[node name="Magica Sphere Collider (upper_leg_R)" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips/upper_leg_R"]
+position = Vector3(-0.000478185713, -0.00223947177, -0.0430709571)
+quaternion = Quaternion(-0.00291515887, 0.0678222105, 0.0170932412, 0.997546732)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12888
+metadata/unity_name = "Magica Sphere Collider (upper_leg_R)"
+
+[node name="Magica Sphere Collider (hips)" type="Node3D" parent="Ayaka/Ayaka_Model/Armature/hips"]
+position = Vector3(0.000478184898, 0.00223946688, -0.0430709608)
+quaternion = Quaternion(1.15483999e-07, -3.22285736e-08, 3.93461654e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15409
+metadata/unity_name = "Magica Sphere Collider (hips)"
+
+[node name="Magica Sphere Collider (hips)" type="Node3D" parent="Ayaka/Ayaka_Model/Armature"]
+position = Vector3(0.000478184898, 0.869982243, -0.0281876456)
+quaternion = Quaternion(-0.0261768326, -3.11875681e-08, 4.0176328e-08, 0.999657333)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27029
+metadata/unity_name = "Magica Sphere Collider (hips)"
+
+[node name="Ayaka" type="Node3D" parent="Ayaka/Ayaka_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20809
+metadata/unity_name = "Ayaka"
+
+[node name="Body_Geo" type="Node3D" parent="Ayaka/Ayaka_Model/Ayaka"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12848
+metadata/unity_name = "Body_Geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Ayaka/Ayaka_Model/Ayaka/Body_Geo"]
+mesh = ExtResource("1")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="DualBlade_L_Mesh" type="Node3D" parent="Ayaka/Ayaka_Model/Ayaka"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8295
+metadata/unity_name = "DualBlade_L_Mesh"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Ayaka/Ayaka_Model/Ayaka/DualBlade_L_Mesh"]
+mesh = ExtResource("3")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="DualBlade_R_Mesh" type="Node3D" parent="Ayaka/Ayaka_Model/Ayaka"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15226
+metadata/unity_name = "DualBlade_R_Mesh"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Ayaka/Ayaka_Model/Ayaka/DualBlade_R_Mesh"]
+mesh = ExtResource("5")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="GrapplingHook_Mesh" type="Node3D" parent="Ayaka/Ayaka_Model/Ayaka"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6673
+metadata/unity_name = "GrapplingHook_Mesh"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Ayaka/Ayaka_Model/Ayaka/GrapplingHook_Mesh"]
+mesh = ExtResource("6")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="Shuriken_Mesh" type="Node3D" parent="Ayaka/Ayaka_Model/Ayaka"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16392
+metadata/unity_name = "Shuriken_Mesh"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Ayaka/Ayaka_Model/Ayaka/Shuriken_Mesh"]
+mesh = ExtResource("7")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="DualBlade_L" type="Node3D" parent="Ayaka/Ayaka_Model"]
+position = Vector3(0.0879519284, 0.795619011, -0.416764855)
+quaternion = Quaternion(-0.605113387, 0.40407455, 0.553986013, 0.404550403)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17021
+metadata/unity_name = "DualBlade_L"
+
+[node name="DualBlade_R" type="Node3D" parent="Ayaka/Ayaka_Model"]
+position = Vector3(0.174024746, 0.835089087, 0.350562274)
+quaternion = Quaternion(-0.650655627, -0.330700696, 0.529331684, -0.432541639)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23193
+metadata/unity_name = "DualBlade_R"
+
+[node name="GrapplingHook_CR_Root" type="Node3D" parent="Ayaka/Ayaka_Model"]
+position = Vector3(0, -0.112499997, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(0.00999999978, 0.00999999978, 0.00999999978)
+metadata/unity_id = 10889
+metadata/unity_name = "GrapplingHook_CR_Root"
+
+[node name="GrapplingHook_Rig" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20739
+metadata/unity_name = "GrapplingHook_Rig"
+
+[node name="GrapplingHook" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16565
+metadata/unity_name = "GrapplingHook"
+
+[node name="GrapplingHook_A_001" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook"]
+position = Vector3(-0, 0.00499999989, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22841
+metadata/unity_name = "GrapplingHook_A_001"
+
+[node name="GrapplingHook_A_002" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_A_001"]
+position = Vector3(-0, 0.0175000001, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26228
+metadata/unity_name = "GrapplingHook_A_002"
+
+[node name="GrapplingHook_A_003" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_A_001/GrapplingHook_A_002"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11342
+metadata/unity_name = "GrapplingHook_A_003"
+
+[node name="GrapplingHook_A_004" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_A_001/GrapplingHook_A_002/GrapplingHook_A_003"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6208
+metadata/unity_name = "GrapplingHook_A_004"
+
+[node name="GrapplingHook_A_005" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_A_001/GrapplingHook_A_002/GrapplingHook_A_003/GrapplingHook_A_004"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25538
+metadata/unity_name = "GrapplingHook_A_005"
+
+[node name="GrapplingHook_A_006" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_A_001/GrapplingHook_A_002/GrapplingHook_A_003/GrapplingHook_A_004/GrapplingHook_A_005"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21202
+metadata/unity_name = "GrapplingHook_A_006"
+
+[node name="GrapplingHook_A_007" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_A_001/GrapplingHook_A_002/GrapplingHook_A_003/GrapplingHook_A_004/GrapplingHook_A_005/GrapplingHook_A_006"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11092
+metadata/unity_name = "GrapplingHook_A_007"
+
+[node name="GrapplingHook_A_008" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_A_001/GrapplingHook_A_002/GrapplingHook_A_003/GrapplingHook_A_004/GrapplingHook_A_005/GrapplingHook_A_006/GrapplingHook_A_007"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22395
+metadata/unity_name = "GrapplingHook_A_008"
+
+[node name="GrapplingHook_A_009" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_A_001/GrapplingHook_A_002/GrapplingHook_A_003/GrapplingHook_A_004/GrapplingHook_A_005/GrapplingHook_A_006/GrapplingHook_A_007/GrapplingHook_A_008"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15157
+metadata/unity_name = "GrapplingHook_A_009"
+
+[node name="GrapplingHook_A_010" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_A_001/GrapplingHook_A_002/GrapplingHook_A_003/GrapplingHook_A_004/GrapplingHook_A_005/GrapplingHook_A_006/GrapplingHook_A_007/GrapplingHook_A_008/GrapplingHook_A_009"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8619
+metadata/unity_name = "GrapplingHook_A_010"
+
+[node name="GrapplingHook_A_011" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_A_001/GrapplingHook_A_002/GrapplingHook_A_003/GrapplingHook_A_004/GrapplingHook_A_005/GrapplingHook_A_006/GrapplingHook_A_007/GrapplingHook_A_008/GrapplingHook_A_009/GrapplingHook_A_010"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13552
+metadata/unity_name = "GrapplingHook_A_011"
+
+[node name="GrapplingHook_A_012" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_A_001/GrapplingHook_A_002/GrapplingHook_A_003/GrapplingHook_A_004/GrapplingHook_A_005/GrapplingHook_A_006/GrapplingHook_A_007/GrapplingHook_A_008/GrapplingHook_A_009/GrapplingHook_A_010/GrapplingHook_A_011"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19151
+metadata/unity_name = "GrapplingHook_A_012"
+
+[node name="GrapplingHook_A_013" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_A_001/GrapplingHook_A_002/GrapplingHook_A_003/GrapplingHook_A_004/GrapplingHook_A_005/GrapplingHook_A_006/GrapplingHook_A_007/GrapplingHook_A_008/GrapplingHook_A_009/GrapplingHook_A_010/GrapplingHook_A_011/GrapplingHook_A_012"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10130
+metadata/unity_name = "GrapplingHook_A_013"
+
+[node name="GrapplingHook_A_014" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_A_001/GrapplingHook_A_002/GrapplingHook_A_003/GrapplingHook_A_004/GrapplingHook_A_005/GrapplingHook_A_006/GrapplingHook_A_007/GrapplingHook_A_008/GrapplingHook_A_009/GrapplingHook_A_010/GrapplingHook_A_011/GrapplingHook_A_012/GrapplingHook_A_013"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7861
+metadata/unity_name = "GrapplingHook_A_014"
+
+[node name="GrapplingHook_A_015" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_A_001/GrapplingHook_A_002/GrapplingHook_A_003/GrapplingHook_A_004/GrapplingHook_A_005/GrapplingHook_A_006/GrapplingHook_A_007/GrapplingHook_A_008/GrapplingHook_A_009/GrapplingHook_A_010/GrapplingHook_A_011/GrapplingHook_A_012/GrapplingHook_A_013/GrapplingHook_A_014"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5528
+metadata/unity_name = "GrapplingHook_A_015"
+
+[node name="GrapplingHook_A_016" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_A_001/GrapplingHook_A_002/GrapplingHook_A_003/GrapplingHook_A_004/GrapplingHook_A_005/GrapplingHook_A_006/GrapplingHook_A_007/GrapplingHook_A_008/GrapplingHook_A_009/GrapplingHook_A_010/GrapplingHook_A_011/GrapplingHook_A_012/GrapplingHook_A_013/GrapplingHook_A_014/GrapplingHook_A_015"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25932
+metadata/unity_name = "GrapplingHook_A_016"
+
+[node name="GrapplingHook_A_017" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_A_001/GrapplingHook_A_002/GrapplingHook_A_003/GrapplingHook_A_004/GrapplingHook_A_005/GrapplingHook_A_006/GrapplingHook_A_007/GrapplingHook_A_008/GrapplingHook_A_009/GrapplingHook_A_010/GrapplingHook_A_011/GrapplingHook_A_012/GrapplingHook_A_013/GrapplingHook_A_014/GrapplingHook_A_015/GrapplingHook_A_016"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12305
+metadata/unity_name = "GrapplingHook_A_017"
+
+[node name="GrapplingHook_A_018" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_A_001/GrapplingHook_A_002/GrapplingHook_A_003/GrapplingHook_A_004/GrapplingHook_A_005/GrapplingHook_A_006/GrapplingHook_A_007/GrapplingHook_A_008/GrapplingHook_A_009/GrapplingHook_A_010/GrapplingHook_A_011/GrapplingHook_A_012/GrapplingHook_A_013/GrapplingHook_A_014/GrapplingHook_A_015/GrapplingHook_A_016/GrapplingHook_A_017"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23882
+metadata/unity_name = "GrapplingHook_A_018"
+
+[node name="GrapplingHook_A_019" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_A_001/GrapplingHook_A_002/GrapplingHook_A_003/GrapplingHook_A_004/GrapplingHook_A_005/GrapplingHook_A_006/GrapplingHook_A_007/GrapplingHook_A_008/GrapplingHook_A_009/GrapplingHook_A_010/GrapplingHook_A_011/GrapplingHook_A_012/GrapplingHook_A_013/GrapplingHook_A_014/GrapplingHook_A_015/GrapplingHook_A_016/GrapplingHook_A_017/GrapplingHook_A_018"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4742
+metadata/unity_name = "GrapplingHook_A_019"
+
+[node name="GrapplingHook_A_020" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_A_001/GrapplingHook_A_002/GrapplingHook_A_003/GrapplingHook_A_004/GrapplingHook_A_005/GrapplingHook_A_006/GrapplingHook_A_007/GrapplingHook_A_008/GrapplingHook_A_009/GrapplingHook_A_010/GrapplingHook_A_011/GrapplingHook_A_012/GrapplingHook_A_013/GrapplingHook_A_014/GrapplingHook_A_015/GrapplingHook_A_016/GrapplingHook_A_017/GrapplingHook_A_018/GrapplingHook_A_019"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12335
+metadata/unity_name = "GrapplingHook_A_020"
+
+[node name="GrapplingHook_A_021" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_A_001/GrapplingHook_A_002/GrapplingHook_A_003/GrapplingHook_A_004/GrapplingHook_A_005/GrapplingHook_A_006/GrapplingHook_A_007/GrapplingHook_A_008/GrapplingHook_A_009/GrapplingHook_A_010/GrapplingHook_A_011/GrapplingHook_A_012/GrapplingHook_A_013/GrapplingHook_A_014/GrapplingHook_A_015/GrapplingHook_A_016/GrapplingHook_A_017/GrapplingHook_A_018/GrapplingHook_A_019/GrapplingHook_A_020"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14294
+metadata/unity_name = "GrapplingHook_A_021"
+
+[node name="GrapplingHook_A_022" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_A_001/GrapplingHook_A_002/GrapplingHook_A_003/GrapplingHook_A_004/GrapplingHook_A_005/GrapplingHook_A_006/GrapplingHook_A_007/GrapplingHook_A_008/GrapplingHook_A_009/GrapplingHook_A_010/GrapplingHook_A_011/GrapplingHook_A_012/GrapplingHook_A_013/GrapplingHook_A_014/GrapplingHook_A_015/GrapplingHook_A_016/GrapplingHook_A_017/GrapplingHook_A_018/GrapplingHook_A_019/GrapplingHook_A_020/GrapplingHook_A_021"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21334
+metadata/unity_name = "GrapplingHook_A_022"
+
+[node name="GrapplingHook_A_023" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_A_001/GrapplingHook_A_002/GrapplingHook_A_003/GrapplingHook_A_004/GrapplingHook_A_005/GrapplingHook_A_006/GrapplingHook_A_007/GrapplingHook_A_008/GrapplingHook_A_009/GrapplingHook_A_010/GrapplingHook_A_011/GrapplingHook_A_012/GrapplingHook_A_013/GrapplingHook_A_014/GrapplingHook_A_015/GrapplingHook_A_016/GrapplingHook_A_017/GrapplingHook_A_018/GrapplingHook_A_019/GrapplingHook_A_020/GrapplingHook_A_021/GrapplingHook_A_022"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27052
+metadata/unity_name = "GrapplingHook_A_023"
+
+[node name="GrapplingHook_A_024" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_A_001/GrapplingHook_A_002/GrapplingHook_A_003/GrapplingHook_A_004/GrapplingHook_A_005/GrapplingHook_A_006/GrapplingHook_A_007/GrapplingHook_A_008/GrapplingHook_A_009/GrapplingHook_A_010/GrapplingHook_A_011/GrapplingHook_A_012/GrapplingHook_A_013/GrapplingHook_A_014/GrapplingHook_A_015/GrapplingHook_A_016/GrapplingHook_A_017/GrapplingHook_A_018/GrapplingHook_A_019/GrapplingHook_A_020/GrapplingHook_A_021/GrapplingHook_A_022/GrapplingHook_A_023"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12229
+metadata/unity_name = "GrapplingHook_A_024"
+
+[node name="GrapplingHook_A_end" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_A_001/GrapplingHook_A_002/GrapplingHook_A_003/GrapplingHook_A_004/GrapplingHook_A_005/GrapplingHook_A_006/GrapplingHook_A_007/GrapplingHook_A_008/GrapplingHook_A_009/GrapplingHook_A_010/GrapplingHook_A_011/GrapplingHook_A_012/GrapplingHook_A_013/GrapplingHook_A_014/GrapplingHook_A_015/GrapplingHook_A_016/GrapplingHook_A_017/GrapplingHook_A_018/GrapplingHook_A_019/GrapplingHook_A_020/GrapplingHook_A_021/GrapplingHook_A_022/GrapplingHook_A_023/GrapplingHook_A_024"]
+position = Vector3(-0, 0.339128643, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14557
+metadata/unity_name = "GrapplingHook_A_end"
+
+[node name="GrapplingHook_B_001" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook"]
+position = Vector3(-0, -0.00499999989, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13271
+metadata/unity_name = "GrapplingHook_B_001"
+
+[node name="GrapplingHook_B_002" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001"]
+position = Vector3(-0, -0.0175000001, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26471
+metadata/unity_name = "GrapplingHook_B_002"
+
+[node name="GrapplingHook_B_003" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26214
+metadata/unity_name = "GrapplingHook_B_003"
+
+[node name="GrapplingHook_B_004" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10322
+metadata/unity_name = "GrapplingHook_B_004"
+
+[node name="GrapplingHook_B_005" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18947
+metadata/unity_name = "GrapplingHook_B_005"
+
+[node name="GrapplingHook_B_006" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13567
+metadata/unity_name = "GrapplingHook_B_006"
+
+[node name="GrapplingHook_B_007" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15461
+metadata/unity_name = "GrapplingHook_B_007"
+
+[node name="GrapplingHook_B_008" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8618
+metadata/unity_name = "GrapplingHook_B_008"
+
+[node name="GrapplingHook_B_009" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6622
+metadata/unity_name = "GrapplingHook_B_009"
+
+[node name="GrapplingHook_B_010" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27031
+metadata/unity_name = "GrapplingHook_B_010"
+
+[node name="GrapplingHook_B_011" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11563
+metadata/unity_name = "GrapplingHook_B_011"
+
+[node name="GrapplingHook_B_012" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16114
+metadata/unity_name = "GrapplingHook_B_012"
+
+[node name="GrapplingHook_B_013" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25599
+metadata/unity_name = "GrapplingHook_B_013"
+
+[node name="GrapplingHook_B_014" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18112
+metadata/unity_name = "GrapplingHook_B_014"
+
+[node name="GrapplingHook_B_015" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18867
+metadata/unity_name = "GrapplingHook_B_015"
+
+[node name="GrapplingHook_B_016" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014/GrapplingHook_B_015"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11642
+metadata/unity_name = "GrapplingHook_B_016"
+
+[node name="GrapplingHook_B_017" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014/GrapplingHook_B_015/GrapplingHook_B_016"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25545
+metadata/unity_name = "GrapplingHook_B_017"
+
+[node name="GrapplingHook_B_018" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014/GrapplingHook_B_015/GrapplingHook_B_016/GrapplingHook_B_017"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14753
+metadata/unity_name = "GrapplingHook_B_018"
+
+[node name="GrapplingHook_B_019" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014/GrapplingHook_B_015/GrapplingHook_B_016/GrapplingHook_B_017/GrapplingHook_B_018"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26400
+metadata/unity_name = "GrapplingHook_B_019"
+
+[node name="GrapplingHook_B_020" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014/GrapplingHook_B_015/GrapplingHook_B_016/GrapplingHook_B_017/GrapplingHook_B_018/GrapplingHook_B_019"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19647
+metadata/unity_name = "GrapplingHook_B_020"
+
+[node name="GrapplingHook_B_021" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014/GrapplingHook_B_015/GrapplingHook_B_016/GrapplingHook_B_017/GrapplingHook_B_018/GrapplingHook_B_019/GrapplingHook_B_020"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7734
+metadata/unity_name = "GrapplingHook_B_021"
+
+[node name="GrapplingHook_B_022" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014/GrapplingHook_B_015/GrapplingHook_B_016/GrapplingHook_B_017/GrapplingHook_B_018/GrapplingHook_B_019/GrapplingHook_B_020/GrapplingHook_B_021"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21655
+metadata/unity_name = "GrapplingHook_B_022"
+
+[node name="GrapplingHook_B_023" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014/GrapplingHook_B_015/GrapplingHook_B_016/GrapplingHook_B_017/GrapplingHook_B_018/GrapplingHook_B_019/GrapplingHook_B_020/GrapplingHook_B_021/GrapplingHook_B_022"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7563
+metadata/unity_name = "GrapplingHook_B_023"
+
+[node name="GrapplingHook_B_024" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014/GrapplingHook_B_015/GrapplingHook_B_016/GrapplingHook_B_017/GrapplingHook_B_018/GrapplingHook_B_019/GrapplingHook_B_020/GrapplingHook_B_021/GrapplingHook_B_022/GrapplingHook_B_023"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11204
+metadata/unity_name = "GrapplingHook_B_024"
+
+[node name="GrapplingHook_B_025" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014/GrapplingHook_B_015/GrapplingHook_B_016/GrapplingHook_B_017/GrapplingHook_B_018/GrapplingHook_B_019/GrapplingHook_B_020/GrapplingHook_B_021/GrapplingHook_B_022/GrapplingHook_B_023/GrapplingHook_B_024"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5690
+metadata/unity_name = "GrapplingHook_B_025"
+
+[node name="GrapplingHook_B_026" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014/GrapplingHook_B_015/GrapplingHook_B_016/GrapplingHook_B_017/GrapplingHook_B_018/GrapplingHook_B_019/GrapplingHook_B_020/GrapplingHook_B_021/GrapplingHook_B_022/GrapplingHook_B_023/GrapplingHook_B_024/GrapplingHook_B_025"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8329
+metadata/unity_name = "GrapplingHook_B_026"
+
+[node name="GrapplingHook_B_027" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014/GrapplingHook_B_015/GrapplingHook_B_016/GrapplingHook_B_017/GrapplingHook_B_018/GrapplingHook_B_019/GrapplingHook_B_020/GrapplingHook_B_021/GrapplingHook_B_022/GrapplingHook_B_023/GrapplingHook_B_024/GrapplingHook_B_025/GrapplingHook_B_026"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13628
+metadata/unity_name = "GrapplingHook_B_027"
+
+[node name="GrapplingHook_B_028" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014/GrapplingHook_B_015/GrapplingHook_B_016/GrapplingHook_B_017/GrapplingHook_B_018/GrapplingHook_B_019/GrapplingHook_B_020/GrapplingHook_B_021/GrapplingHook_B_022/GrapplingHook_B_023/GrapplingHook_B_024/GrapplingHook_B_025/GrapplingHook_B_026/GrapplingHook_B_027"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19866
+metadata/unity_name = "GrapplingHook_B_028"
+
+[node name="GrapplingHook_B_029" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014/GrapplingHook_B_015/GrapplingHook_B_016/GrapplingHook_B_017/GrapplingHook_B_018/GrapplingHook_B_019/GrapplingHook_B_020/GrapplingHook_B_021/GrapplingHook_B_022/GrapplingHook_B_023/GrapplingHook_B_024/GrapplingHook_B_025/GrapplingHook_B_026/GrapplingHook_B_027/GrapplingHook_B_028"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18425
+metadata/unity_name = "GrapplingHook_B_029"
+
+[node name="GrapplingHook_B_030" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014/GrapplingHook_B_015/GrapplingHook_B_016/GrapplingHook_B_017/GrapplingHook_B_018/GrapplingHook_B_019/GrapplingHook_B_020/GrapplingHook_B_021/GrapplingHook_B_022/GrapplingHook_B_023/GrapplingHook_B_024/GrapplingHook_B_025/GrapplingHook_B_026/GrapplingHook_B_027/GrapplingHook_B_028/GrapplingHook_B_029"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22977
+metadata/unity_name = "GrapplingHook_B_030"
+
+[node name="GrapplingHook_B_031" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014/GrapplingHook_B_015/GrapplingHook_B_016/GrapplingHook_B_017/GrapplingHook_B_018/GrapplingHook_B_019/GrapplingHook_B_020/GrapplingHook_B_021/GrapplingHook_B_022/GrapplingHook_B_023/GrapplingHook_B_024/GrapplingHook_B_025/GrapplingHook_B_026/GrapplingHook_B_027/GrapplingHook_B_028/GrapplingHook_B_029/GrapplingHook_B_030"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8057
+metadata/unity_name = "GrapplingHook_B_031"
+
+[node name="GrapplingHook_B_032" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014/GrapplingHook_B_015/GrapplingHook_B_016/GrapplingHook_B_017/GrapplingHook_B_018/GrapplingHook_B_019/GrapplingHook_B_020/GrapplingHook_B_021/GrapplingHook_B_022/GrapplingHook_B_023/GrapplingHook_B_024/GrapplingHook_B_025/GrapplingHook_B_026/GrapplingHook_B_027/GrapplingHook_B_028/GrapplingHook_B_029/GrapplingHook_B_030/GrapplingHook_B_031"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19015
+metadata/unity_name = "GrapplingHook_B_032"
+
+[node name="GrapplingHook_B_033" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014/GrapplingHook_B_015/GrapplingHook_B_016/GrapplingHook_B_017/GrapplingHook_B_018/GrapplingHook_B_019/GrapplingHook_B_020/GrapplingHook_B_021/GrapplingHook_B_022/GrapplingHook_B_023/GrapplingHook_B_024/GrapplingHook_B_025/GrapplingHook_B_026/GrapplingHook_B_027/GrapplingHook_B_028/GrapplingHook_B_029/GrapplingHook_B_030/GrapplingHook_B_031/GrapplingHook_B_032"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22876
+metadata/unity_name = "GrapplingHook_B_033"
+
+[node name="GrapplingHook_B_034" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014/GrapplingHook_B_015/GrapplingHook_B_016/GrapplingHook_B_017/GrapplingHook_B_018/GrapplingHook_B_019/GrapplingHook_B_020/GrapplingHook_B_021/GrapplingHook_B_022/GrapplingHook_B_023/GrapplingHook_B_024/GrapplingHook_B_025/GrapplingHook_B_026/GrapplingHook_B_027/GrapplingHook_B_028/GrapplingHook_B_029/GrapplingHook_B_030/GrapplingHook_B_031/GrapplingHook_B_032/GrapplingHook_B_033"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10080
+metadata/unity_name = "GrapplingHook_B_034"
+
+[node name="GrapplingHook_B_035" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014/GrapplingHook_B_015/GrapplingHook_B_016/GrapplingHook_B_017/GrapplingHook_B_018/GrapplingHook_B_019/GrapplingHook_B_020/GrapplingHook_B_021/GrapplingHook_B_022/GrapplingHook_B_023/GrapplingHook_B_024/GrapplingHook_B_025/GrapplingHook_B_026/GrapplingHook_B_027/GrapplingHook_B_028/GrapplingHook_B_029/GrapplingHook_B_030/GrapplingHook_B_031/GrapplingHook_B_032/GrapplingHook_B_033/GrapplingHook_B_034"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6065
+metadata/unity_name = "GrapplingHook_B_035"
+
+[node name="GrapplingHook_B_036" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014/GrapplingHook_B_015/GrapplingHook_B_016/GrapplingHook_B_017/GrapplingHook_B_018/GrapplingHook_B_019/GrapplingHook_B_020/GrapplingHook_B_021/GrapplingHook_B_022/GrapplingHook_B_023/GrapplingHook_B_024/GrapplingHook_B_025/GrapplingHook_B_026/GrapplingHook_B_027/GrapplingHook_B_028/GrapplingHook_B_029/GrapplingHook_B_030/GrapplingHook_B_031/GrapplingHook_B_032/GrapplingHook_B_033/GrapplingHook_B_034/GrapplingHook_B_035"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6715
+metadata/unity_name = "GrapplingHook_B_036"
+
+[node name="GrapplingHook_B_037" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014/GrapplingHook_B_015/GrapplingHook_B_016/GrapplingHook_B_017/GrapplingHook_B_018/GrapplingHook_B_019/GrapplingHook_B_020/GrapplingHook_B_021/GrapplingHook_B_022/GrapplingHook_B_023/GrapplingHook_B_024/GrapplingHook_B_025/GrapplingHook_B_026/GrapplingHook_B_027/GrapplingHook_B_028/GrapplingHook_B_029/GrapplingHook_B_030/GrapplingHook_B_031/GrapplingHook_B_032/GrapplingHook_B_033/GrapplingHook_B_034/GrapplingHook_B_035/GrapplingHook_B_036"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10324
+metadata/unity_name = "GrapplingHook_B_037"
+
+[node name="GrapplingHook_B_038" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014/GrapplingHook_B_015/GrapplingHook_B_016/GrapplingHook_B_017/GrapplingHook_B_018/GrapplingHook_B_019/GrapplingHook_B_020/GrapplingHook_B_021/GrapplingHook_B_022/GrapplingHook_B_023/GrapplingHook_B_024/GrapplingHook_B_025/GrapplingHook_B_026/GrapplingHook_B_027/GrapplingHook_B_028/GrapplingHook_B_029/GrapplingHook_B_030/GrapplingHook_B_031/GrapplingHook_B_032/GrapplingHook_B_033/GrapplingHook_B_034/GrapplingHook_B_035/GrapplingHook_B_036/GrapplingHook_B_037"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22789
+metadata/unity_name = "GrapplingHook_B_038"
+
+[node name="GrapplingHook_B_039" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014/GrapplingHook_B_015/GrapplingHook_B_016/GrapplingHook_B_017/GrapplingHook_B_018/GrapplingHook_B_019/GrapplingHook_B_020/GrapplingHook_B_021/GrapplingHook_B_022/GrapplingHook_B_023/GrapplingHook_B_024/GrapplingHook_B_025/GrapplingHook_B_026/GrapplingHook_B_027/GrapplingHook_B_028/GrapplingHook_B_029/GrapplingHook_B_030/GrapplingHook_B_031/GrapplingHook_B_032/GrapplingHook_B_033/GrapplingHook_B_034/GrapplingHook_B_035/GrapplingHook_B_036/GrapplingHook_B_037/GrapplingHook_B_038"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20073
+metadata/unity_name = "GrapplingHook_B_039"
+
+[node name="GrapplingHook_B_040" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014/GrapplingHook_B_015/GrapplingHook_B_016/GrapplingHook_B_017/GrapplingHook_B_018/GrapplingHook_B_019/GrapplingHook_B_020/GrapplingHook_B_021/GrapplingHook_B_022/GrapplingHook_B_023/GrapplingHook_B_024/GrapplingHook_B_025/GrapplingHook_B_026/GrapplingHook_B_027/GrapplingHook_B_028/GrapplingHook_B_029/GrapplingHook_B_030/GrapplingHook_B_031/GrapplingHook_B_032/GrapplingHook_B_033/GrapplingHook_B_034/GrapplingHook_B_035/GrapplingHook_B_036/GrapplingHook_B_037/GrapplingHook_B_038/GrapplingHook_B_039"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9654
+metadata/unity_name = "GrapplingHook_B_040"
+
+[node name="GrapplingHook_B_041" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014/GrapplingHook_B_015/GrapplingHook_B_016/GrapplingHook_B_017/GrapplingHook_B_018/GrapplingHook_B_019/GrapplingHook_B_020/GrapplingHook_B_021/GrapplingHook_B_022/GrapplingHook_B_023/GrapplingHook_B_024/GrapplingHook_B_025/GrapplingHook_B_026/GrapplingHook_B_027/GrapplingHook_B_028/GrapplingHook_B_029/GrapplingHook_B_030/GrapplingHook_B_031/GrapplingHook_B_032/GrapplingHook_B_033/GrapplingHook_B_034/GrapplingHook_B_035/GrapplingHook_B_036/GrapplingHook_B_037/GrapplingHook_B_038/GrapplingHook_B_039/GrapplingHook_B_040"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14346
+metadata/unity_name = "GrapplingHook_B_041"
+
+[node name="GrapplingHook_B_042" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014/GrapplingHook_B_015/GrapplingHook_B_016/GrapplingHook_B_017/GrapplingHook_B_018/GrapplingHook_B_019/GrapplingHook_B_020/GrapplingHook_B_021/GrapplingHook_B_022/GrapplingHook_B_023/GrapplingHook_B_024/GrapplingHook_B_025/GrapplingHook_B_026/GrapplingHook_B_027/GrapplingHook_B_028/GrapplingHook_B_029/GrapplingHook_B_030/GrapplingHook_B_031/GrapplingHook_B_032/GrapplingHook_B_033/GrapplingHook_B_034/GrapplingHook_B_035/GrapplingHook_B_036/GrapplingHook_B_037/GrapplingHook_B_038/GrapplingHook_B_039/GrapplingHook_B_040/GrapplingHook_B_041"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10571
+metadata/unity_name = "GrapplingHook_B_042"
+
+[node name="GrapplingHook_B_043" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014/GrapplingHook_B_015/GrapplingHook_B_016/GrapplingHook_B_017/GrapplingHook_B_018/GrapplingHook_B_019/GrapplingHook_B_020/GrapplingHook_B_021/GrapplingHook_B_022/GrapplingHook_B_023/GrapplingHook_B_024/GrapplingHook_B_025/GrapplingHook_B_026/GrapplingHook_B_027/GrapplingHook_B_028/GrapplingHook_B_029/GrapplingHook_B_030/GrapplingHook_B_031/GrapplingHook_B_032/GrapplingHook_B_033/GrapplingHook_B_034/GrapplingHook_B_035/GrapplingHook_B_036/GrapplingHook_B_037/GrapplingHook_B_038/GrapplingHook_B_039/GrapplingHook_B_040/GrapplingHook_B_041/GrapplingHook_B_042"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9215
+metadata/unity_name = "GrapplingHook_B_043"
+
+[node name="GrapplingHook_B_044" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014/GrapplingHook_B_015/GrapplingHook_B_016/GrapplingHook_B_017/GrapplingHook_B_018/GrapplingHook_B_019/GrapplingHook_B_020/GrapplingHook_B_021/GrapplingHook_B_022/GrapplingHook_B_023/GrapplingHook_B_024/GrapplingHook_B_025/GrapplingHook_B_026/GrapplingHook_B_027/GrapplingHook_B_028/GrapplingHook_B_029/GrapplingHook_B_030/GrapplingHook_B_031/GrapplingHook_B_032/GrapplingHook_B_033/GrapplingHook_B_034/GrapplingHook_B_035/GrapplingHook_B_036/GrapplingHook_B_037/GrapplingHook_B_038/GrapplingHook_B_039/GrapplingHook_B_040/GrapplingHook_B_041/GrapplingHook_B_042/GrapplingHook_B_043"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21418
+metadata/unity_name = "GrapplingHook_B_044"
+
+[node name="GrapplingHook_B_045" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014/GrapplingHook_B_015/GrapplingHook_B_016/GrapplingHook_B_017/GrapplingHook_B_018/GrapplingHook_B_019/GrapplingHook_B_020/GrapplingHook_B_021/GrapplingHook_B_022/GrapplingHook_B_023/GrapplingHook_B_024/GrapplingHook_B_025/GrapplingHook_B_026/GrapplingHook_B_027/GrapplingHook_B_028/GrapplingHook_B_029/GrapplingHook_B_030/GrapplingHook_B_031/GrapplingHook_B_032/GrapplingHook_B_033/GrapplingHook_B_034/GrapplingHook_B_035/GrapplingHook_B_036/GrapplingHook_B_037/GrapplingHook_B_038/GrapplingHook_B_039/GrapplingHook_B_040/GrapplingHook_B_041/GrapplingHook_B_042/GrapplingHook_B_043/GrapplingHook_B_044"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16934
+metadata/unity_name = "GrapplingHook_B_045"
+
+[node name="GrapplingHook_B_046" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014/GrapplingHook_B_015/GrapplingHook_B_016/GrapplingHook_B_017/GrapplingHook_B_018/GrapplingHook_B_019/GrapplingHook_B_020/GrapplingHook_B_021/GrapplingHook_B_022/GrapplingHook_B_023/GrapplingHook_B_024/GrapplingHook_B_025/GrapplingHook_B_026/GrapplingHook_B_027/GrapplingHook_B_028/GrapplingHook_B_029/GrapplingHook_B_030/GrapplingHook_B_031/GrapplingHook_B_032/GrapplingHook_B_033/GrapplingHook_B_034/GrapplingHook_B_035/GrapplingHook_B_036/GrapplingHook_B_037/GrapplingHook_B_038/GrapplingHook_B_039/GrapplingHook_B_040/GrapplingHook_B_041/GrapplingHook_B_042/GrapplingHook_B_043/GrapplingHook_B_044/GrapplingHook_B_045"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4914
+metadata/unity_name = "GrapplingHook_B_046"
+
+[node name="GrapplingHook_B_047" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014/GrapplingHook_B_015/GrapplingHook_B_016/GrapplingHook_B_017/GrapplingHook_B_018/GrapplingHook_B_019/GrapplingHook_B_020/GrapplingHook_B_021/GrapplingHook_B_022/GrapplingHook_B_023/GrapplingHook_B_024/GrapplingHook_B_025/GrapplingHook_B_026/GrapplingHook_B_027/GrapplingHook_B_028/GrapplingHook_B_029/GrapplingHook_B_030/GrapplingHook_B_031/GrapplingHook_B_032/GrapplingHook_B_033/GrapplingHook_B_034/GrapplingHook_B_035/GrapplingHook_B_036/GrapplingHook_B_037/GrapplingHook_B_038/GrapplingHook_B_039/GrapplingHook_B_040/GrapplingHook_B_041/GrapplingHook_B_042/GrapplingHook_B_043/GrapplingHook_B_044/GrapplingHook_B_045/GrapplingHook_B_046"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17793
+metadata/unity_name = "GrapplingHook_B_047"
+
+[node name="GrapplingHook_B_048" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014/GrapplingHook_B_015/GrapplingHook_B_016/GrapplingHook_B_017/GrapplingHook_B_018/GrapplingHook_B_019/GrapplingHook_B_020/GrapplingHook_B_021/GrapplingHook_B_022/GrapplingHook_B_023/GrapplingHook_B_024/GrapplingHook_B_025/GrapplingHook_B_026/GrapplingHook_B_027/GrapplingHook_B_028/GrapplingHook_B_029/GrapplingHook_B_030/GrapplingHook_B_031/GrapplingHook_B_032/GrapplingHook_B_033/GrapplingHook_B_034/GrapplingHook_B_035/GrapplingHook_B_036/GrapplingHook_B_037/GrapplingHook_B_038/GrapplingHook_B_039/GrapplingHook_B_040/GrapplingHook_B_041/GrapplingHook_B_042/GrapplingHook_B_043/GrapplingHook_B_044/GrapplingHook_B_045/GrapplingHook_B_046/GrapplingHook_B_047"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18668
+metadata/unity_name = "GrapplingHook_B_048"
+
+[node name="GrapplingHook_B_049" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014/GrapplingHook_B_015/GrapplingHook_B_016/GrapplingHook_B_017/GrapplingHook_B_018/GrapplingHook_B_019/GrapplingHook_B_020/GrapplingHook_B_021/GrapplingHook_B_022/GrapplingHook_B_023/GrapplingHook_B_024/GrapplingHook_B_025/GrapplingHook_B_026/GrapplingHook_B_027/GrapplingHook_B_028/GrapplingHook_B_029/GrapplingHook_B_030/GrapplingHook_B_031/GrapplingHook_B_032/GrapplingHook_B_033/GrapplingHook_B_034/GrapplingHook_B_035/GrapplingHook_B_036/GrapplingHook_B_037/GrapplingHook_B_038/GrapplingHook_B_039/GrapplingHook_B_040/GrapplingHook_B_041/GrapplingHook_B_042/GrapplingHook_B_043/GrapplingHook_B_044/GrapplingHook_B_045/GrapplingHook_B_046/GrapplingHook_B_047/GrapplingHook_B_048"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17292
+metadata/unity_name = "GrapplingHook_B_049"
+
+[node name="GrapplingHook_B_end" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook/GrapplingHook_B_001/GrapplingHook_B_002/GrapplingHook_B_003/GrapplingHook_B_004/GrapplingHook_B_005/GrapplingHook_B_006/GrapplingHook_B_007/GrapplingHook_B_008/GrapplingHook_B_009/GrapplingHook_B_010/GrapplingHook_B_011/GrapplingHook_B_012/GrapplingHook_B_013/GrapplingHook_B_014/GrapplingHook_B_015/GrapplingHook_B_016/GrapplingHook_B_017/GrapplingHook_B_018/GrapplingHook_B_019/GrapplingHook_B_020/GrapplingHook_B_021/GrapplingHook_B_022/GrapplingHook_B_023/GrapplingHook_B_024/GrapplingHook_B_025/GrapplingHook_B_026/GrapplingHook_B_027/GrapplingHook_B_028/GrapplingHook_B_029/GrapplingHook_B_030/GrapplingHook_B_031/GrapplingHook_B_032/GrapplingHook_B_033/GrapplingHook_B_034/GrapplingHook_B_035/GrapplingHook_B_036/GrapplingHook_B_037/GrapplingHook_B_038/GrapplingHook_B_039/GrapplingHook_B_040/GrapplingHook_B_041/GrapplingHook_B_042/GrapplingHook_B_043/GrapplingHook_B_044/GrapplingHook_B_045/GrapplingHook_B_046/GrapplingHook_B_047/GrapplingHook_B_048/GrapplingHook_B_049"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21543
+metadata/unity_name = "GrapplingHook_B_end"
+
+[node name="GrapplingHook_Dammy" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24117
+metadata/unity_name = "GrapplingHook_Dammy"
+
+[node name="D_GrapplingHook1" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21465
+metadata/unity_name = "D_GrapplingHook1"
+
+[node name="D_GrapplingHook_A_001" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1"]
+position = Vector3(-0, 0.00499999989, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20596
+metadata/unity_name = "D_GrapplingHook_A_001"
+
+[node name="D_GrapplingHook_A_002" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_A_001"]
+position = Vector3(-0, 0.0175000001, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22740
+metadata/unity_name = "D_GrapplingHook_A_002"
+
+[node name="D_GrapplingHook_A_003" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_A_001/D_GrapplingHook_A_002"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25353
+metadata/unity_name = "D_GrapplingHook_A_003"
+
+[node name="D_GrapplingHook_A_004" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_A_001/D_GrapplingHook_A_002/D_GrapplingHook_A_003"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24363
+metadata/unity_name = "D_GrapplingHook_A_004"
+
+[node name="D_GrapplingHook_A_005" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_A_001/D_GrapplingHook_A_002/D_GrapplingHook_A_003/D_GrapplingHook_A_004"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10192
+metadata/unity_name = "D_GrapplingHook_A_005"
+
+[node name="D_GrapplingHook_A_006" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_A_001/D_GrapplingHook_A_002/D_GrapplingHook_A_003/D_GrapplingHook_A_004/D_GrapplingHook_A_005"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15442
+metadata/unity_name = "D_GrapplingHook_A_006"
+
+[node name="D_GrapplingHook_A_007" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_A_001/D_GrapplingHook_A_002/D_GrapplingHook_A_003/D_GrapplingHook_A_004/D_GrapplingHook_A_005/D_GrapplingHook_A_006"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26676
+metadata/unity_name = "D_GrapplingHook_A_007"
+
+[node name="D_GrapplingHook_A_008" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_A_001/D_GrapplingHook_A_002/D_GrapplingHook_A_003/D_GrapplingHook_A_004/D_GrapplingHook_A_005/D_GrapplingHook_A_006/D_GrapplingHook_A_007"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11042
+metadata/unity_name = "D_GrapplingHook_A_008"
+
+[node name="D_GrapplingHook_A_009" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_A_001/D_GrapplingHook_A_002/D_GrapplingHook_A_003/D_GrapplingHook_A_004/D_GrapplingHook_A_005/D_GrapplingHook_A_006/D_GrapplingHook_A_007/D_GrapplingHook_A_008"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8672
+metadata/unity_name = "D_GrapplingHook_A_009"
+
+[node name="D_GrapplingHook_A_010" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_A_001/D_GrapplingHook_A_002/D_GrapplingHook_A_003/D_GrapplingHook_A_004/D_GrapplingHook_A_005/D_GrapplingHook_A_006/D_GrapplingHook_A_007/D_GrapplingHook_A_008/D_GrapplingHook_A_009"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21193
+metadata/unity_name = "D_GrapplingHook_A_010"
+
+[node name="D_GrapplingHook_A_011" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_A_001/D_GrapplingHook_A_002/D_GrapplingHook_A_003/D_GrapplingHook_A_004/D_GrapplingHook_A_005/D_GrapplingHook_A_006/D_GrapplingHook_A_007/D_GrapplingHook_A_008/D_GrapplingHook_A_009/D_GrapplingHook_A_010"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22506
+metadata/unity_name = "D_GrapplingHook_A_011"
+
+[node name="D_GrapplingHook_A_012" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_A_001/D_GrapplingHook_A_002/D_GrapplingHook_A_003/D_GrapplingHook_A_004/D_GrapplingHook_A_005/D_GrapplingHook_A_006/D_GrapplingHook_A_007/D_GrapplingHook_A_008/D_GrapplingHook_A_009/D_GrapplingHook_A_010/D_GrapplingHook_A_011"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6372
+metadata/unity_name = "D_GrapplingHook_A_012"
+
+[node name="D_GrapplingHook_A_013" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_A_001/D_GrapplingHook_A_002/D_GrapplingHook_A_003/D_GrapplingHook_A_004/D_GrapplingHook_A_005/D_GrapplingHook_A_006/D_GrapplingHook_A_007/D_GrapplingHook_A_008/D_GrapplingHook_A_009/D_GrapplingHook_A_010/D_GrapplingHook_A_011/D_GrapplingHook_A_012"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16596
+metadata/unity_name = "D_GrapplingHook_A_013"
+
+[node name="D_GrapplingHook_A_014" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_A_001/D_GrapplingHook_A_002/D_GrapplingHook_A_003/D_GrapplingHook_A_004/D_GrapplingHook_A_005/D_GrapplingHook_A_006/D_GrapplingHook_A_007/D_GrapplingHook_A_008/D_GrapplingHook_A_009/D_GrapplingHook_A_010/D_GrapplingHook_A_011/D_GrapplingHook_A_012/D_GrapplingHook_A_013"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11542
+metadata/unity_name = "D_GrapplingHook_A_014"
+
+[node name="D_GrapplingHook_A_015" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_A_001/D_GrapplingHook_A_002/D_GrapplingHook_A_003/D_GrapplingHook_A_004/D_GrapplingHook_A_005/D_GrapplingHook_A_006/D_GrapplingHook_A_007/D_GrapplingHook_A_008/D_GrapplingHook_A_009/D_GrapplingHook_A_010/D_GrapplingHook_A_011/D_GrapplingHook_A_012/D_GrapplingHook_A_013/D_GrapplingHook_A_014"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22892
+metadata/unity_name = "D_GrapplingHook_A_015"
+
+[node name="D_GrapplingHook_A_016" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_A_001/D_GrapplingHook_A_002/D_GrapplingHook_A_003/D_GrapplingHook_A_004/D_GrapplingHook_A_005/D_GrapplingHook_A_006/D_GrapplingHook_A_007/D_GrapplingHook_A_008/D_GrapplingHook_A_009/D_GrapplingHook_A_010/D_GrapplingHook_A_011/D_GrapplingHook_A_012/D_GrapplingHook_A_013/D_GrapplingHook_A_014/D_GrapplingHook_A_015"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14375
+metadata/unity_name = "D_GrapplingHook_A_016"
+
+[node name="D_GrapplingHook_A_017" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_A_001/D_GrapplingHook_A_002/D_GrapplingHook_A_003/D_GrapplingHook_A_004/D_GrapplingHook_A_005/D_GrapplingHook_A_006/D_GrapplingHook_A_007/D_GrapplingHook_A_008/D_GrapplingHook_A_009/D_GrapplingHook_A_010/D_GrapplingHook_A_011/D_GrapplingHook_A_012/D_GrapplingHook_A_013/D_GrapplingHook_A_014/D_GrapplingHook_A_015/D_GrapplingHook_A_016"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7492
+metadata/unity_name = "D_GrapplingHook_A_017"
+
+[node name="D_GrapplingHook_A_018" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_A_001/D_GrapplingHook_A_002/D_GrapplingHook_A_003/D_GrapplingHook_A_004/D_GrapplingHook_A_005/D_GrapplingHook_A_006/D_GrapplingHook_A_007/D_GrapplingHook_A_008/D_GrapplingHook_A_009/D_GrapplingHook_A_010/D_GrapplingHook_A_011/D_GrapplingHook_A_012/D_GrapplingHook_A_013/D_GrapplingHook_A_014/D_GrapplingHook_A_015/D_GrapplingHook_A_016/D_GrapplingHook_A_017"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23675
+metadata/unity_name = "D_GrapplingHook_A_018"
+
+[node name="D_GrapplingHook_A_019" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_A_001/D_GrapplingHook_A_002/D_GrapplingHook_A_003/D_GrapplingHook_A_004/D_GrapplingHook_A_005/D_GrapplingHook_A_006/D_GrapplingHook_A_007/D_GrapplingHook_A_008/D_GrapplingHook_A_009/D_GrapplingHook_A_010/D_GrapplingHook_A_011/D_GrapplingHook_A_012/D_GrapplingHook_A_013/D_GrapplingHook_A_014/D_GrapplingHook_A_015/D_GrapplingHook_A_016/D_GrapplingHook_A_017/D_GrapplingHook_A_018"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20818
+metadata/unity_name = "D_GrapplingHook_A_019"
+
+[node name="D_GrapplingHook_A_020" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_A_001/D_GrapplingHook_A_002/D_GrapplingHook_A_003/D_GrapplingHook_A_004/D_GrapplingHook_A_005/D_GrapplingHook_A_006/D_GrapplingHook_A_007/D_GrapplingHook_A_008/D_GrapplingHook_A_009/D_GrapplingHook_A_010/D_GrapplingHook_A_011/D_GrapplingHook_A_012/D_GrapplingHook_A_013/D_GrapplingHook_A_014/D_GrapplingHook_A_015/D_GrapplingHook_A_016/D_GrapplingHook_A_017/D_GrapplingHook_A_018/D_GrapplingHook_A_019"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26830
+metadata/unity_name = "D_GrapplingHook_A_020"
+
+[node name="D_GrapplingHook_A_021" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_A_001/D_GrapplingHook_A_002/D_GrapplingHook_A_003/D_GrapplingHook_A_004/D_GrapplingHook_A_005/D_GrapplingHook_A_006/D_GrapplingHook_A_007/D_GrapplingHook_A_008/D_GrapplingHook_A_009/D_GrapplingHook_A_010/D_GrapplingHook_A_011/D_GrapplingHook_A_012/D_GrapplingHook_A_013/D_GrapplingHook_A_014/D_GrapplingHook_A_015/D_GrapplingHook_A_016/D_GrapplingHook_A_017/D_GrapplingHook_A_018/D_GrapplingHook_A_019/D_GrapplingHook_A_020"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5288
+metadata/unity_name = "D_GrapplingHook_A_021"
+
+[node name="D_GrapplingHook_A_022" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_A_001/D_GrapplingHook_A_002/D_GrapplingHook_A_003/D_GrapplingHook_A_004/D_GrapplingHook_A_005/D_GrapplingHook_A_006/D_GrapplingHook_A_007/D_GrapplingHook_A_008/D_GrapplingHook_A_009/D_GrapplingHook_A_010/D_GrapplingHook_A_011/D_GrapplingHook_A_012/D_GrapplingHook_A_013/D_GrapplingHook_A_014/D_GrapplingHook_A_015/D_GrapplingHook_A_016/D_GrapplingHook_A_017/D_GrapplingHook_A_018/D_GrapplingHook_A_019/D_GrapplingHook_A_020/D_GrapplingHook_A_021"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6774
+metadata/unity_name = "D_GrapplingHook_A_022"
+
+[node name="D_GrapplingHook_A_023" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_A_001/D_GrapplingHook_A_002/D_GrapplingHook_A_003/D_GrapplingHook_A_004/D_GrapplingHook_A_005/D_GrapplingHook_A_006/D_GrapplingHook_A_007/D_GrapplingHook_A_008/D_GrapplingHook_A_009/D_GrapplingHook_A_010/D_GrapplingHook_A_011/D_GrapplingHook_A_012/D_GrapplingHook_A_013/D_GrapplingHook_A_014/D_GrapplingHook_A_015/D_GrapplingHook_A_016/D_GrapplingHook_A_017/D_GrapplingHook_A_018/D_GrapplingHook_A_019/D_GrapplingHook_A_020/D_GrapplingHook_A_021/D_GrapplingHook_A_022"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16061
+metadata/unity_name = "D_GrapplingHook_A_023"
+
+[node name="D_GrapplingHook_A_024" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_A_001/D_GrapplingHook_A_002/D_GrapplingHook_A_003/D_GrapplingHook_A_004/D_GrapplingHook_A_005/D_GrapplingHook_A_006/D_GrapplingHook_A_007/D_GrapplingHook_A_008/D_GrapplingHook_A_009/D_GrapplingHook_A_010/D_GrapplingHook_A_011/D_GrapplingHook_A_012/D_GrapplingHook_A_013/D_GrapplingHook_A_014/D_GrapplingHook_A_015/D_GrapplingHook_A_016/D_GrapplingHook_A_017/D_GrapplingHook_A_018/D_GrapplingHook_A_019/D_GrapplingHook_A_020/D_GrapplingHook_A_021/D_GrapplingHook_A_022/D_GrapplingHook_A_023"]
+position = Vector3(-0, 0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13228
+metadata/unity_name = "D_GrapplingHook_A_024"
+
+[node name="D_GrapplingHook_A_end" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_A_001/D_GrapplingHook_A_002/D_GrapplingHook_A_003/D_GrapplingHook_A_004/D_GrapplingHook_A_005/D_GrapplingHook_A_006/D_GrapplingHook_A_007/D_GrapplingHook_A_008/D_GrapplingHook_A_009/D_GrapplingHook_A_010/D_GrapplingHook_A_011/D_GrapplingHook_A_012/D_GrapplingHook_A_013/D_GrapplingHook_A_014/D_GrapplingHook_A_015/D_GrapplingHook_A_016/D_GrapplingHook_A_017/D_GrapplingHook_A_018/D_GrapplingHook_A_019/D_GrapplingHook_A_020/D_GrapplingHook_A_021/D_GrapplingHook_A_022/D_GrapplingHook_A_023/D_GrapplingHook_A_024"]
+position = Vector3(-0, 0.339128643, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15761
+metadata/unity_name = "D_GrapplingHook_A_end"
+
+[node name="D_GrapplingHook_B_001" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1"]
+position = Vector3(-0, -0.00499999989, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14115
+metadata/unity_name = "D_GrapplingHook_B_001"
+
+[node name="D_GrapplingHook_B_002" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001"]
+position = Vector3(-0, -0.0175000001, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7149
+metadata/unity_name = "D_GrapplingHook_B_002"
+
+[node name="D_GrapplingHook_B_003" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8278
+metadata/unity_name = "D_GrapplingHook_B_003"
+
+[node name="D_GrapplingHook_B_004" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5764
+metadata/unity_name = "D_GrapplingHook_B_004"
+
+[node name="D_GrapplingHook_B_005" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16471
+metadata/unity_name = "D_GrapplingHook_B_005"
+
+[node name="D_GrapplingHook_B_006" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25578
+metadata/unity_name = "D_GrapplingHook_B_006"
+
+[node name="D_GrapplingHook_B_007" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8420
+metadata/unity_name = "D_GrapplingHook_B_007"
+
+[node name="D_GrapplingHook_B_008" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5990
+metadata/unity_name = "D_GrapplingHook_B_008"
+
+[node name="D_GrapplingHook_B_009" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16766
+metadata/unity_name = "D_GrapplingHook_B_009"
+
+[node name="D_GrapplingHook_B_010" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17514
+metadata/unity_name = "D_GrapplingHook_B_010"
+
+[node name="D_GrapplingHook_B_011" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6696
+metadata/unity_name = "D_GrapplingHook_B_011"
+
+[node name="D_GrapplingHook_B_012" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10517
+metadata/unity_name = "D_GrapplingHook_B_012"
+
+[node name="D_GrapplingHook_B_013" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20760
+metadata/unity_name = "D_GrapplingHook_B_013"
+
+[node name="D_GrapplingHook_B_014" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13358
+metadata/unity_name = "D_GrapplingHook_B_014"
+
+[node name="D_GrapplingHook_B_015" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5001
+metadata/unity_name = "D_GrapplingHook_B_015"
+
+[node name="D_GrapplingHook_B_016" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014/D_GrapplingHook_B_015"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13764
+metadata/unity_name = "D_GrapplingHook_B_016"
+
+[node name="D_GrapplingHook_B_017" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014/D_GrapplingHook_B_015/D_GrapplingHook_B_016"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8378
+metadata/unity_name = "D_GrapplingHook_B_017"
+
+[node name="D_GrapplingHook_B_018" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014/D_GrapplingHook_B_015/D_GrapplingHook_B_016/D_GrapplingHook_B_017"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14637
+metadata/unity_name = "D_GrapplingHook_B_018"
+
+[node name="D_GrapplingHook_B_019" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014/D_GrapplingHook_B_015/D_GrapplingHook_B_016/D_GrapplingHook_B_017/D_GrapplingHook_B_018"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20209
+metadata/unity_name = "D_GrapplingHook_B_019"
+
+[node name="D_GrapplingHook_B_020" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014/D_GrapplingHook_B_015/D_GrapplingHook_B_016/D_GrapplingHook_B_017/D_GrapplingHook_B_018/D_GrapplingHook_B_019"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10954
+metadata/unity_name = "D_GrapplingHook_B_020"
+
+[node name="D_GrapplingHook_B_021" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014/D_GrapplingHook_B_015/D_GrapplingHook_B_016/D_GrapplingHook_B_017/D_GrapplingHook_B_018/D_GrapplingHook_B_019/D_GrapplingHook_B_020"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7363
+metadata/unity_name = "D_GrapplingHook_B_021"
+
+[node name="D_GrapplingHook_B_022" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014/D_GrapplingHook_B_015/D_GrapplingHook_B_016/D_GrapplingHook_B_017/D_GrapplingHook_B_018/D_GrapplingHook_B_019/D_GrapplingHook_B_020/D_GrapplingHook_B_021"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7958
+metadata/unity_name = "D_GrapplingHook_B_022"
+
+[node name="D_GrapplingHook_B_023" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014/D_GrapplingHook_B_015/D_GrapplingHook_B_016/D_GrapplingHook_B_017/D_GrapplingHook_B_018/D_GrapplingHook_B_019/D_GrapplingHook_B_020/D_GrapplingHook_B_021/D_GrapplingHook_B_022"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20344
+metadata/unity_name = "D_GrapplingHook_B_023"
+
+[node name="D_GrapplingHook_B_024" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014/D_GrapplingHook_B_015/D_GrapplingHook_B_016/D_GrapplingHook_B_017/D_GrapplingHook_B_018/D_GrapplingHook_B_019/D_GrapplingHook_B_020/D_GrapplingHook_B_021/D_GrapplingHook_B_022/D_GrapplingHook_B_023"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26799
+metadata/unity_name = "D_GrapplingHook_B_024"
+
+[node name="D_GrapplingHook_B_025" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014/D_GrapplingHook_B_015/D_GrapplingHook_B_016/D_GrapplingHook_B_017/D_GrapplingHook_B_018/D_GrapplingHook_B_019/D_GrapplingHook_B_020/D_GrapplingHook_B_021/D_GrapplingHook_B_022/D_GrapplingHook_B_023/D_GrapplingHook_B_024"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22430
+metadata/unity_name = "D_GrapplingHook_B_025"
+
+[node name="D_GrapplingHook_B_026" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014/D_GrapplingHook_B_015/D_GrapplingHook_B_016/D_GrapplingHook_B_017/D_GrapplingHook_B_018/D_GrapplingHook_B_019/D_GrapplingHook_B_020/D_GrapplingHook_B_021/D_GrapplingHook_B_022/D_GrapplingHook_B_023/D_GrapplingHook_B_024/D_GrapplingHook_B_025"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22836
+metadata/unity_name = "D_GrapplingHook_B_026"
+
+[node name="D_GrapplingHook_B_027" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014/D_GrapplingHook_B_015/D_GrapplingHook_B_016/D_GrapplingHook_B_017/D_GrapplingHook_B_018/D_GrapplingHook_B_019/D_GrapplingHook_B_020/D_GrapplingHook_B_021/D_GrapplingHook_B_022/D_GrapplingHook_B_023/D_GrapplingHook_B_024/D_GrapplingHook_B_025/D_GrapplingHook_B_026"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11489
+metadata/unity_name = "D_GrapplingHook_B_027"
+
+[node name="D_GrapplingHook_B_028" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014/D_GrapplingHook_B_015/D_GrapplingHook_B_016/D_GrapplingHook_B_017/D_GrapplingHook_B_018/D_GrapplingHook_B_019/D_GrapplingHook_B_020/D_GrapplingHook_B_021/D_GrapplingHook_B_022/D_GrapplingHook_B_023/D_GrapplingHook_B_024/D_GrapplingHook_B_025/D_GrapplingHook_B_026/D_GrapplingHook_B_027"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18907
+metadata/unity_name = "D_GrapplingHook_B_028"
+
+[node name="D_GrapplingHook_B_029" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014/D_GrapplingHook_B_015/D_GrapplingHook_B_016/D_GrapplingHook_B_017/D_GrapplingHook_B_018/D_GrapplingHook_B_019/D_GrapplingHook_B_020/D_GrapplingHook_B_021/D_GrapplingHook_B_022/D_GrapplingHook_B_023/D_GrapplingHook_B_024/D_GrapplingHook_B_025/D_GrapplingHook_B_026/D_GrapplingHook_B_027/D_GrapplingHook_B_028"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9423
+metadata/unity_name = "D_GrapplingHook_B_029"
+
+[node name="D_GrapplingHook_B_030" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014/D_GrapplingHook_B_015/D_GrapplingHook_B_016/D_GrapplingHook_B_017/D_GrapplingHook_B_018/D_GrapplingHook_B_019/D_GrapplingHook_B_020/D_GrapplingHook_B_021/D_GrapplingHook_B_022/D_GrapplingHook_B_023/D_GrapplingHook_B_024/D_GrapplingHook_B_025/D_GrapplingHook_B_026/D_GrapplingHook_B_027/D_GrapplingHook_B_028/D_GrapplingHook_B_029"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10463
+metadata/unity_name = "D_GrapplingHook_B_030"
+
+[node name="D_GrapplingHook_B_031" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014/D_GrapplingHook_B_015/D_GrapplingHook_B_016/D_GrapplingHook_B_017/D_GrapplingHook_B_018/D_GrapplingHook_B_019/D_GrapplingHook_B_020/D_GrapplingHook_B_021/D_GrapplingHook_B_022/D_GrapplingHook_B_023/D_GrapplingHook_B_024/D_GrapplingHook_B_025/D_GrapplingHook_B_026/D_GrapplingHook_B_027/D_GrapplingHook_B_028/D_GrapplingHook_B_029/D_GrapplingHook_B_030"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10666
+metadata/unity_name = "D_GrapplingHook_B_031"
+
+[node name="D_GrapplingHook_B_032" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014/D_GrapplingHook_B_015/D_GrapplingHook_B_016/D_GrapplingHook_B_017/D_GrapplingHook_B_018/D_GrapplingHook_B_019/D_GrapplingHook_B_020/D_GrapplingHook_B_021/D_GrapplingHook_B_022/D_GrapplingHook_B_023/D_GrapplingHook_B_024/D_GrapplingHook_B_025/D_GrapplingHook_B_026/D_GrapplingHook_B_027/D_GrapplingHook_B_028/D_GrapplingHook_B_029/D_GrapplingHook_B_030/D_GrapplingHook_B_031"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13439
+metadata/unity_name = "D_GrapplingHook_B_032"
+
+[node name="D_GrapplingHook_B_033" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014/D_GrapplingHook_B_015/D_GrapplingHook_B_016/D_GrapplingHook_B_017/D_GrapplingHook_B_018/D_GrapplingHook_B_019/D_GrapplingHook_B_020/D_GrapplingHook_B_021/D_GrapplingHook_B_022/D_GrapplingHook_B_023/D_GrapplingHook_B_024/D_GrapplingHook_B_025/D_GrapplingHook_B_026/D_GrapplingHook_B_027/D_GrapplingHook_B_028/D_GrapplingHook_B_029/D_GrapplingHook_B_030/D_GrapplingHook_B_031/D_GrapplingHook_B_032"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13109
+metadata/unity_name = "D_GrapplingHook_B_033"
+
+[node name="D_GrapplingHook_B_034" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014/D_GrapplingHook_B_015/D_GrapplingHook_B_016/D_GrapplingHook_B_017/D_GrapplingHook_B_018/D_GrapplingHook_B_019/D_GrapplingHook_B_020/D_GrapplingHook_B_021/D_GrapplingHook_B_022/D_GrapplingHook_B_023/D_GrapplingHook_B_024/D_GrapplingHook_B_025/D_GrapplingHook_B_026/D_GrapplingHook_B_027/D_GrapplingHook_B_028/D_GrapplingHook_B_029/D_GrapplingHook_B_030/D_GrapplingHook_B_031/D_GrapplingHook_B_032/D_GrapplingHook_B_033"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20631
+metadata/unity_name = "D_GrapplingHook_B_034"
+
+[node name="D_GrapplingHook_B_035" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014/D_GrapplingHook_B_015/D_GrapplingHook_B_016/D_GrapplingHook_B_017/D_GrapplingHook_B_018/D_GrapplingHook_B_019/D_GrapplingHook_B_020/D_GrapplingHook_B_021/D_GrapplingHook_B_022/D_GrapplingHook_B_023/D_GrapplingHook_B_024/D_GrapplingHook_B_025/D_GrapplingHook_B_026/D_GrapplingHook_B_027/D_GrapplingHook_B_028/D_GrapplingHook_B_029/D_GrapplingHook_B_030/D_GrapplingHook_B_031/D_GrapplingHook_B_032/D_GrapplingHook_B_033/D_GrapplingHook_B_034"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24142
+metadata/unity_name = "D_GrapplingHook_B_035"
+
+[node name="D_GrapplingHook_B_036" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014/D_GrapplingHook_B_015/D_GrapplingHook_B_016/D_GrapplingHook_B_017/D_GrapplingHook_B_018/D_GrapplingHook_B_019/D_GrapplingHook_B_020/D_GrapplingHook_B_021/D_GrapplingHook_B_022/D_GrapplingHook_B_023/D_GrapplingHook_B_024/D_GrapplingHook_B_025/D_GrapplingHook_B_026/D_GrapplingHook_B_027/D_GrapplingHook_B_028/D_GrapplingHook_B_029/D_GrapplingHook_B_030/D_GrapplingHook_B_031/D_GrapplingHook_B_032/D_GrapplingHook_B_033/D_GrapplingHook_B_034/D_GrapplingHook_B_035"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13833
+metadata/unity_name = "D_GrapplingHook_B_036"
+
+[node name="D_GrapplingHook_B_037" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014/D_GrapplingHook_B_015/D_GrapplingHook_B_016/D_GrapplingHook_B_017/D_GrapplingHook_B_018/D_GrapplingHook_B_019/D_GrapplingHook_B_020/D_GrapplingHook_B_021/D_GrapplingHook_B_022/D_GrapplingHook_B_023/D_GrapplingHook_B_024/D_GrapplingHook_B_025/D_GrapplingHook_B_026/D_GrapplingHook_B_027/D_GrapplingHook_B_028/D_GrapplingHook_B_029/D_GrapplingHook_B_030/D_GrapplingHook_B_031/D_GrapplingHook_B_032/D_GrapplingHook_B_033/D_GrapplingHook_B_034/D_GrapplingHook_B_035/D_GrapplingHook_B_036"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26098
+metadata/unity_name = "D_GrapplingHook_B_037"
+
+[node name="D_GrapplingHook_B_038" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014/D_GrapplingHook_B_015/D_GrapplingHook_B_016/D_GrapplingHook_B_017/D_GrapplingHook_B_018/D_GrapplingHook_B_019/D_GrapplingHook_B_020/D_GrapplingHook_B_021/D_GrapplingHook_B_022/D_GrapplingHook_B_023/D_GrapplingHook_B_024/D_GrapplingHook_B_025/D_GrapplingHook_B_026/D_GrapplingHook_B_027/D_GrapplingHook_B_028/D_GrapplingHook_B_029/D_GrapplingHook_B_030/D_GrapplingHook_B_031/D_GrapplingHook_B_032/D_GrapplingHook_B_033/D_GrapplingHook_B_034/D_GrapplingHook_B_035/D_GrapplingHook_B_036/D_GrapplingHook_B_037"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15253
+metadata/unity_name = "D_GrapplingHook_B_038"
+
+[node name="D_GrapplingHook_B_039" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014/D_GrapplingHook_B_015/D_GrapplingHook_B_016/D_GrapplingHook_B_017/D_GrapplingHook_B_018/D_GrapplingHook_B_019/D_GrapplingHook_B_020/D_GrapplingHook_B_021/D_GrapplingHook_B_022/D_GrapplingHook_B_023/D_GrapplingHook_B_024/D_GrapplingHook_B_025/D_GrapplingHook_B_026/D_GrapplingHook_B_027/D_GrapplingHook_B_028/D_GrapplingHook_B_029/D_GrapplingHook_B_030/D_GrapplingHook_B_031/D_GrapplingHook_B_032/D_GrapplingHook_B_033/D_GrapplingHook_B_034/D_GrapplingHook_B_035/D_GrapplingHook_B_036/D_GrapplingHook_B_037/D_GrapplingHook_B_038"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20615
+metadata/unity_name = "D_GrapplingHook_B_039"
+
+[node name="D_GrapplingHook_B_040" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014/D_GrapplingHook_B_015/D_GrapplingHook_B_016/D_GrapplingHook_B_017/D_GrapplingHook_B_018/D_GrapplingHook_B_019/D_GrapplingHook_B_020/D_GrapplingHook_B_021/D_GrapplingHook_B_022/D_GrapplingHook_B_023/D_GrapplingHook_B_024/D_GrapplingHook_B_025/D_GrapplingHook_B_026/D_GrapplingHook_B_027/D_GrapplingHook_B_028/D_GrapplingHook_B_029/D_GrapplingHook_B_030/D_GrapplingHook_B_031/D_GrapplingHook_B_032/D_GrapplingHook_B_033/D_GrapplingHook_B_034/D_GrapplingHook_B_035/D_GrapplingHook_B_036/D_GrapplingHook_B_037/D_GrapplingHook_B_038/D_GrapplingHook_B_039"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12323
+metadata/unity_name = "D_GrapplingHook_B_040"
+
+[node name="D_GrapplingHook_B_041" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014/D_GrapplingHook_B_015/D_GrapplingHook_B_016/D_GrapplingHook_B_017/D_GrapplingHook_B_018/D_GrapplingHook_B_019/D_GrapplingHook_B_020/D_GrapplingHook_B_021/D_GrapplingHook_B_022/D_GrapplingHook_B_023/D_GrapplingHook_B_024/D_GrapplingHook_B_025/D_GrapplingHook_B_026/D_GrapplingHook_B_027/D_GrapplingHook_B_028/D_GrapplingHook_B_029/D_GrapplingHook_B_030/D_GrapplingHook_B_031/D_GrapplingHook_B_032/D_GrapplingHook_B_033/D_GrapplingHook_B_034/D_GrapplingHook_B_035/D_GrapplingHook_B_036/D_GrapplingHook_B_037/D_GrapplingHook_B_038/D_GrapplingHook_B_039/D_GrapplingHook_B_040"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12412
+metadata/unity_name = "D_GrapplingHook_B_041"
+
+[node name="D_GrapplingHook_B_042" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014/D_GrapplingHook_B_015/D_GrapplingHook_B_016/D_GrapplingHook_B_017/D_GrapplingHook_B_018/D_GrapplingHook_B_019/D_GrapplingHook_B_020/D_GrapplingHook_B_021/D_GrapplingHook_B_022/D_GrapplingHook_B_023/D_GrapplingHook_B_024/D_GrapplingHook_B_025/D_GrapplingHook_B_026/D_GrapplingHook_B_027/D_GrapplingHook_B_028/D_GrapplingHook_B_029/D_GrapplingHook_B_030/D_GrapplingHook_B_031/D_GrapplingHook_B_032/D_GrapplingHook_B_033/D_GrapplingHook_B_034/D_GrapplingHook_B_035/D_GrapplingHook_B_036/D_GrapplingHook_B_037/D_GrapplingHook_B_038/D_GrapplingHook_B_039/D_GrapplingHook_B_040/D_GrapplingHook_B_041"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26692
+metadata/unity_name = "D_GrapplingHook_B_042"
+
+[node name="D_GrapplingHook_B_043" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014/D_GrapplingHook_B_015/D_GrapplingHook_B_016/D_GrapplingHook_B_017/D_GrapplingHook_B_018/D_GrapplingHook_B_019/D_GrapplingHook_B_020/D_GrapplingHook_B_021/D_GrapplingHook_B_022/D_GrapplingHook_B_023/D_GrapplingHook_B_024/D_GrapplingHook_B_025/D_GrapplingHook_B_026/D_GrapplingHook_B_027/D_GrapplingHook_B_028/D_GrapplingHook_B_029/D_GrapplingHook_B_030/D_GrapplingHook_B_031/D_GrapplingHook_B_032/D_GrapplingHook_B_033/D_GrapplingHook_B_034/D_GrapplingHook_B_035/D_GrapplingHook_B_036/D_GrapplingHook_B_037/D_GrapplingHook_B_038/D_GrapplingHook_B_039/D_GrapplingHook_B_040/D_GrapplingHook_B_041/D_GrapplingHook_B_042"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12093
+metadata/unity_name = "D_GrapplingHook_B_043"
+
+[node name="D_GrapplingHook_B_044" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014/D_GrapplingHook_B_015/D_GrapplingHook_B_016/D_GrapplingHook_B_017/D_GrapplingHook_B_018/D_GrapplingHook_B_019/D_GrapplingHook_B_020/D_GrapplingHook_B_021/D_GrapplingHook_B_022/D_GrapplingHook_B_023/D_GrapplingHook_B_024/D_GrapplingHook_B_025/D_GrapplingHook_B_026/D_GrapplingHook_B_027/D_GrapplingHook_B_028/D_GrapplingHook_B_029/D_GrapplingHook_B_030/D_GrapplingHook_B_031/D_GrapplingHook_B_032/D_GrapplingHook_B_033/D_GrapplingHook_B_034/D_GrapplingHook_B_035/D_GrapplingHook_B_036/D_GrapplingHook_B_037/D_GrapplingHook_B_038/D_GrapplingHook_B_039/D_GrapplingHook_B_040/D_GrapplingHook_B_041/D_GrapplingHook_B_042/D_GrapplingHook_B_043"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24510
+metadata/unity_name = "D_GrapplingHook_B_044"
+
+[node name="D_GrapplingHook_B_045" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014/D_GrapplingHook_B_015/D_GrapplingHook_B_016/D_GrapplingHook_B_017/D_GrapplingHook_B_018/D_GrapplingHook_B_019/D_GrapplingHook_B_020/D_GrapplingHook_B_021/D_GrapplingHook_B_022/D_GrapplingHook_B_023/D_GrapplingHook_B_024/D_GrapplingHook_B_025/D_GrapplingHook_B_026/D_GrapplingHook_B_027/D_GrapplingHook_B_028/D_GrapplingHook_B_029/D_GrapplingHook_B_030/D_GrapplingHook_B_031/D_GrapplingHook_B_032/D_GrapplingHook_B_033/D_GrapplingHook_B_034/D_GrapplingHook_B_035/D_GrapplingHook_B_036/D_GrapplingHook_B_037/D_GrapplingHook_B_038/D_GrapplingHook_B_039/D_GrapplingHook_B_040/D_GrapplingHook_B_041/D_GrapplingHook_B_042/D_GrapplingHook_B_043/D_GrapplingHook_B_044"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26072
+metadata/unity_name = "D_GrapplingHook_B_045"
+
+[node name="D_GrapplingHook_B_046" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014/D_GrapplingHook_B_015/D_GrapplingHook_B_016/D_GrapplingHook_B_017/D_GrapplingHook_B_018/D_GrapplingHook_B_019/D_GrapplingHook_B_020/D_GrapplingHook_B_021/D_GrapplingHook_B_022/D_GrapplingHook_B_023/D_GrapplingHook_B_024/D_GrapplingHook_B_025/D_GrapplingHook_B_026/D_GrapplingHook_B_027/D_GrapplingHook_B_028/D_GrapplingHook_B_029/D_GrapplingHook_B_030/D_GrapplingHook_B_031/D_GrapplingHook_B_032/D_GrapplingHook_B_033/D_GrapplingHook_B_034/D_GrapplingHook_B_035/D_GrapplingHook_B_036/D_GrapplingHook_B_037/D_GrapplingHook_B_038/D_GrapplingHook_B_039/D_GrapplingHook_B_040/D_GrapplingHook_B_041/D_GrapplingHook_B_042/D_GrapplingHook_B_043/D_GrapplingHook_B_044/D_GrapplingHook_B_045"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8578
+metadata/unity_name = "D_GrapplingHook_B_046"
+
+[node name="D_GrapplingHook_B_047" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014/D_GrapplingHook_B_015/D_GrapplingHook_B_016/D_GrapplingHook_B_017/D_GrapplingHook_B_018/D_GrapplingHook_B_019/D_GrapplingHook_B_020/D_GrapplingHook_B_021/D_GrapplingHook_B_022/D_GrapplingHook_B_023/D_GrapplingHook_B_024/D_GrapplingHook_B_025/D_GrapplingHook_B_026/D_GrapplingHook_B_027/D_GrapplingHook_B_028/D_GrapplingHook_B_029/D_GrapplingHook_B_030/D_GrapplingHook_B_031/D_GrapplingHook_B_032/D_GrapplingHook_B_033/D_GrapplingHook_B_034/D_GrapplingHook_B_035/D_GrapplingHook_B_036/D_GrapplingHook_B_037/D_GrapplingHook_B_038/D_GrapplingHook_B_039/D_GrapplingHook_B_040/D_GrapplingHook_B_041/D_GrapplingHook_B_042/D_GrapplingHook_B_043/D_GrapplingHook_B_044/D_GrapplingHook_B_045/D_GrapplingHook_B_046"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11240
+metadata/unity_name = "D_GrapplingHook_B_047"
+
+[node name="D_GrapplingHook_B_048" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014/D_GrapplingHook_B_015/D_GrapplingHook_B_016/D_GrapplingHook_B_017/D_GrapplingHook_B_018/D_GrapplingHook_B_019/D_GrapplingHook_B_020/D_GrapplingHook_B_021/D_GrapplingHook_B_022/D_GrapplingHook_B_023/D_GrapplingHook_B_024/D_GrapplingHook_B_025/D_GrapplingHook_B_026/D_GrapplingHook_B_027/D_GrapplingHook_B_028/D_GrapplingHook_B_029/D_GrapplingHook_B_030/D_GrapplingHook_B_031/D_GrapplingHook_B_032/D_GrapplingHook_B_033/D_GrapplingHook_B_034/D_GrapplingHook_B_035/D_GrapplingHook_B_036/D_GrapplingHook_B_037/D_GrapplingHook_B_038/D_GrapplingHook_B_039/D_GrapplingHook_B_040/D_GrapplingHook_B_041/D_GrapplingHook_B_042/D_GrapplingHook_B_043/D_GrapplingHook_B_044/D_GrapplingHook_B_045/D_GrapplingHook_B_046/D_GrapplingHook_B_047"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15024
+metadata/unity_name = "D_GrapplingHook_B_048"
+
+[node name="D_GrapplingHook_B_049" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014/D_GrapplingHook_B_015/D_GrapplingHook_B_016/D_GrapplingHook_B_017/D_GrapplingHook_B_018/D_GrapplingHook_B_019/D_GrapplingHook_B_020/D_GrapplingHook_B_021/D_GrapplingHook_B_022/D_GrapplingHook_B_023/D_GrapplingHook_B_024/D_GrapplingHook_B_025/D_GrapplingHook_B_026/D_GrapplingHook_B_027/D_GrapplingHook_B_028/D_GrapplingHook_B_029/D_GrapplingHook_B_030/D_GrapplingHook_B_031/D_GrapplingHook_B_032/D_GrapplingHook_B_033/D_GrapplingHook_B_034/D_GrapplingHook_B_035/D_GrapplingHook_B_036/D_GrapplingHook_B_037/D_GrapplingHook_B_038/D_GrapplingHook_B_039/D_GrapplingHook_B_040/D_GrapplingHook_B_041/D_GrapplingHook_B_042/D_GrapplingHook_B_043/D_GrapplingHook_B_044/D_GrapplingHook_B_045/D_GrapplingHook_B_046/D_GrapplingHook_B_047/D_GrapplingHook_B_048"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19750
+metadata/unity_name = "D_GrapplingHook_B_049"
+
+[node name="D_GrapplingHook_B_end" type="Node3D" parent="Ayaka/Ayaka_Model/GrapplingHook_CR_Root/GrapplingHook_Rig/GrapplingHook_Dammy/D_GrapplingHook1/D_GrapplingHook_B_001/D_GrapplingHook_B_002/D_GrapplingHook_B_003/D_GrapplingHook_B_004/D_GrapplingHook_B_005/D_GrapplingHook_B_006/D_GrapplingHook_B_007/D_GrapplingHook_B_008/D_GrapplingHook_B_009/D_GrapplingHook_B_010/D_GrapplingHook_B_011/D_GrapplingHook_B_012/D_GrapplingHook_B_013/D_GrapplingHook_B_014/D_GrapplingHook_B_015/D_GrapplingHook_B_016/D_GrapplingHook_B_017/D_GrapplingHook_B_018/D_GrapplingHook_B_019/D_GrapplingHook_B_020/D_GrapplingHook_B_021/D_GrapplingHook_B_022/D_GrapplingHook_B_023/D_GrapplingHook_B_024/D_GrapplingHook_B_025/D_GrapplingHook_B_026/D_GrapplingHook_B_027/D_GrapplingHook_B_028/D_GrapplingHook_B_029/D_GrapplingHook_B_030/D_GrapplingHook_B_031/D_GrapplingHook_B_032/D_GrapplingHook_B_033/D_GrapplingHook_B_034/D_GrapplingHook_B_035/D_GrapplingHook_B_036/D_GrapplingHook_B_037/D_GrapplingHook_B_038/D_GrapplingHook_B_039/D_GrapplingHook_B_040/D_GrapplingHook_B_041/D_GrapplingHook_B_042/D_GrapplingHook_B_043/D_GrapplingHook_B_044/D_GrapplingHook_B_045/D_GrapplingHook_B_046/D_GrapplingHook_B_047/D_GrapplingHook_B_048/D_GrapplingHook_B_049"]
+position = Vector3(-0, -0.022499999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17097
+metadata/unity_name = "D_GrapplingHook_B_end"
+
+[node name="Shuriken" type="Node3D" parent="Ayaka/Ayaka_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(0.00999999978, 0.00999999978, 0.00999999978)
+metadata/unity_id = 26781
+metadata/unity_name = "Shuriken"
+
+[node name="VFX_Slot" type="Node3D" parent="Ayaka/Ayaka_Model/Shuriken"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17533
+metadata/unity_name = "VFX_Slot"
+
+[node name="VFX_Ayaka_SkillAttack_04" type="Node3D" parent="Ayaka/Ayaka_Model/Shuriken/VFX_Slot"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0.403746456, -0.0260478817, 0.00248016627, 0.91449672)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18554
+metadata/unity_name = "VFX_Ayaka_SkillAttack_04"
+visible = false
+process_mode = 4
+
+[node name="root" type="Node3D" parent="Ayaka/Ayaka_Model/Shuriken/VFX_Slot/VFX_Ayaka_SkillAttack_04"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11843
+metadata/unity_name = "root"
+
+[node name="Sparkle_01" type="Node3D" parent="Ayaka/Ayaka_Model/Shuriken/VFX_Slot/VFX_Ayaka_SkillAttack_04/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23543
+metadata/unity_name = "Sparkle_01"
+
+[node name="Dust_01" type="Node3D" parent="Ayaka/Ayaka_Model/Shuriken/VFX_Slot/VFX_Ayaka_SkillAttack_04/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21310
+metadata/unity_name = "Dust_01"
+
+[node name="Trail_01" type="Node3D" parent="Ayaka/Ayaka_Model/Shuriken/VFX_Slot/VFX_Ayaka_SkillAttack_04/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10250
+metadata/unity_name = "Trail_01"
+
+[node name="Line_01" type="Node3D" parent="Ayaka/Ayaka_Model/Shuriken/VFX_Slot/VFX_Ayaka_SkillAttack_04/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7713
+metadata/unity_name = "Line_01"
+
+[node name="Shuriken_01" type="Node3D" parent="Ayaka/Ayaka_Model/Shuriken/VFX_Slot/VFX_Ayaka_SkillAttack_04/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23410
+metadata/unity_name = "Shuriken_01"
+
+[node name="Shuriken_02" type="Node3D" parent="Ayaka/Ayaka_Model/Shuriken/VFX_Slot/VFX_Ayaka_SkillAttack_04/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5860
+metadata/unity_name = "Shuriken_02"
+
+[node name="Trail_02" type="Node3D" parent="Ayaka/Ayaka_Model/Shuriken/VFX_Slot/VFX_Ayaka_SkillAttack_04/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9846
+metadata/unity_name = "Trail_02"
+
+[node name="Trail_03" type="Node3D" parent="Ayaka/Ayaka_Model/Shuriken/VFX_Slot/VFX_Ayaka_SkillAttack_04/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17444
+metadata/unity_name = "Trail_03"
+
+[node name="Glow_01" type="Node3D" parent="Ayaka/Ayaka_Model/Shuriken/VFX_Slot/VFX_Ayaka_SkillAttack_04/root"]
+position = Vector3(0, -0, -0)
+quaternion = Quaternion(0, 0, 9.83709381e-09, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16717
+metadata/unity_name = "Glow_01"
+
+[node name="Wave_01" type="Node3D" parent="Ayaka/Ayaka_Model/Shuriken/VFX_Slot/VFX_Ayaka_SkillAttack_04/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6127
+metadata/unity_name = "Wave_01"
+
+[node name="Magica Cloth (loop)" type="Node3D" parent="Ayaka/Ayaka_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23168
+metadata/unity_name = "Magica Cloth (loop)"
+
+[node name="Magica Cloth (bag)" type="Node3D" parent="Ayaka/Ayaka_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13111
+metadata/unity_name = "Magica Cloth (bag)"
+
+[node name="Magica Cloth (cloak_BA)" type="Node3D" parent="Ayaka/Ayaka_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22536
+metadata/unity_name = "Magica Cloth (cloak_BA)"
+
+[node name="Magica Cloth (cloak_001)" type="Node3D" parent="Ayaka/Ayaka_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6498
+metadata/unity_name = "Magica Cloth (cloak_001)"
+
+[node name="Magica Cloth (hair_bangs)" type="Node3D" parent="Ayaka/Ayaka_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25412
+metadata/unity_name = "Magica Cloth (hair_bangs)"
+
+[node name="Magica Cloth (hair_back)" type="Node3D" parent="Ayaka/Ayaka_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12185
+metadata/unity_name = "Magica Cloth (hair_back)"
+
+[node name="Magica Cloth (hair_side)" type="Node3D" parent="Ayaka/Ayaka_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14802
+metadata/unity_name = "Magica Cloth (hair_side)"
+
+[node name="Magica Cloth (hair_tail)" type="Node3D" parent="Ayaka/Ayaka_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5931
+metadata/unity_name = "Magica Cloth (hair_tail)"
+
+[node name="Magica Cloth (hair_tail) (1)" type="Node3D" parent="Ayaka/Ayaka_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9058
+metadata/unity_name = "Magica Cloth (hair_tail) (1)"
+
+[node name="LogDummy" type="Node3D" parent="Ayaka"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15841
+metadata/unity_name = "LogDummy"
+visible = false
+process_mode = 4
+
+[node name="LogDummy" type="Node3D" parent="Ayaka/LogDummy"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27218
+metadata/unity_name = "LogDummy"
+
+[node name="Cloak_GEO" type="Node3D" parent="Ayaka/LogDummy/LogDummy"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26916
+metadata/unity_name = "Cloak_GEO"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Ayaka/LogDummy/LogDummy/Cloak_GEO"]
+mesh = ExtResource("8")
+visible = true
+surface_material_override/0 = ExtResource("9")
+
+[node name="LogDummy_GEO" type="Node3D" parent="Ayaka/LogDummy/LogDummy"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26547
+metadata/unity_name = "LogDummy_GEO"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Ayaka/LogDummy/LogDummy/LogDummy_GEO"]
+mesh = ExtResource("10")
+visible = true
+surface_material_override/0 = ExtResource("9")
+
+[node name="LogDummy_Root" type="Node3D" parent="Ayaka/LogDummy"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25037
+metadata/unity_name = "LogDummy_Root"
+
+[node name="cloak_001" type="Node3D" parent="Ayaka/LogDummy/LogDummy_Root"]
+position = Vector3(0.115834735, 0.727378726, 0.00475971354)
+quaternion = Quaternion(0.719000995, 0.060589131, -0.415555567, 0.553787112)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8666
+metadata/unity_name = "cloak_001"
+
+[node name="cloak_002" type="Node3D" parent="Ayaka/LogDummy/LogDummy_Root/cloak_001"]
+position = Vector3(3.5527136e-17, 0.0749999955, 1.42108544e-16)
+quaternion = Quaternion(0.127522871, 0.219787195, -0.250794232, 0.934095204)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18945
+metadata/unity_name = "cloak_002"
+
+[node name="cloak_end" type="Node3D" parent="Ayaka/LogDummy/LogDummy_Root/cloak_001/cloak_002"]
+position = Vector3(-3.5527136e-17, 0.0749999955, -1.42108544e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26542
+metadata/unity_name = "cloak_end"
+
+[node name="cloak_BA_001" type="Node3D" parent="Ayaka/LogDummy/LogDummy_Root"]
+position = Vector3(-0.102269925, 0.621532798, 0.0467539243)
+quaternion = Quaternion(-0.944942594, 1.46863817e-17, -0.325568169, -0.0329981223)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20449
+metadata/unity_name = "cloak_BA_001"
+
+[node name="cloak_BA_002" type="Node3D" parent="Ayaka/LogDummy/LogDummy_Root/cloak_BA_001"]
+position = Vector3(-6.66133775e-17, 0.14199999, -1.7763568e-17)
+quaternion = Quaternion(0.00872653536, -0, -0, 0.999961913)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7087
+metadata/unity_name = "cloak_BA_002"
+
+[node name="cloak_B_001" type="Node3D" parent="Ayaka/LogDummy/LogDummy_Root/cloak_BA_001/cloak_BA_002"]
+position = Vector3(-0.0691123828, 0.129763126, -9.74981012e-05)
+quaternion = Quaternion(-0.00510067772, 0.012234604, 0.241795585, 0.970236719)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12579
+metadata/unity_name = "cloak_B_001"
+
+[node name="cloak_B_002" type="Node3D" parent="Ayaka/LogDummy/LogDummy_Root/cloak_BA_001/cloak_BA_002/cloak_B_001"]
+position = Vector3(1.06581408e-16, 0.14199999, 2.48689959e-16)
+quaternion = Quaternion(-0.0128174406, 0.00359855918, 0.0958163664, 0.995310009)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11750
+metadata/unity_name = "cloak_B_002"
+
+[node name="cloak_B_003" type="Node3D" parent="Ayaka/LogDummy/LogDummy_Root/cloak_BA_001/cloak_BA_002/cloak_B_001/cloak_B_002"]
+position = Vector3(7.1054272e-17, 0.14199999, -7.1054272e-17)
+quaternion = Quaternion(-0.0171020441, 0.00347945024, 0.113185972, 0.993420541)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13634
+metadata/unity_name = "cloak_B_003"
+
+[node name="cloak_B_end" type="Node3D" parent="Ayaka/LogDummy/LogDummy_Root/cloak_BA_001/cloak_BA_002/cloak_B_001/cloak_B_002/cloak_B_003"]
+position = Vector3(-4.26325632e-16, 0.0879999995, -1.24344979e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18866
+metadata/unity_name = "cloak_B_end"
+
+[node name="cloak_BA_003" type="Node3D" parent="Ayaka/LogDummy/LogDummy_Root/cloak_BA_001/cloak_BA_002"]
+position = Vector3(2.6645352e-17, 0.14199999, -1.24344979e-16)
+quaternion = Quaternion(-0.0174524058, 0, -0, 0.99984771)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22254
+metadata/unity_name = "cloak_BA_003"
+
+[node name="cloak_BA_004" type="Node3D" parent="Ayaka/LogDummy/LogDummy_Root/cloak_BA_001/cloak_BA_002/cloak_BA_003"]
+position = Vector3(1.7763568e-17, 0.14199999, 1.95399251e-16)
+quaternion = Quaternion(-0.0174517427, 0.00015229905, 0.00872520637, 0.999809623)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5150
+metadata/unity_name = "cloak_BA_004"
+
+[node name="cloak_BA_005" type="Node3D" parent="Ayaka/LogDummy/LogDummy_Root/cloak_BA_001/cloak_BA_002/cloak_BA_003/cloak_BA_004"]
+position = Vector3(5.3290704e-17, 0.14199999, -1.42108544e-16)
+quaternion = Quaternion(-0.0174524058, 0, -0, 0.99984771)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6477
+metadata/unity_name = "cloak_BA_005"
+
+[node name="cloak_BA_006" type="Node3D" parent="Ayaka/LogDummy/LogDummy_Root/cloak_BA_001/cloak_BA_002/cloak_BA_003/cloak_BA_004/cloak_BA_005"]
+position = Vector3(5.3290704e-17, 0.14199999, 1.7763568e-17)
+quaternion = Quaternion(-0.0174524058, 0, -0, 0.99984771)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23622
+metadata/unity_name = "cloak_BA_006"
+
+[node name="cloak_BA_end" type="Node3D" parent="Ayaka/LogDummy/LogDummy_Root/cloak_BA_001/cloak_BA_002/cloak_BA_003/cloak_BA_004/cloak_BA_005/cloak_BA_006"]
+position = Vector3(-6.21724896e-17, 0.14199999, 2.13162816e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16918
+metadata/unity_name = "cloak_BA_end"
+
+[node name="LogDummy_end" type="Node3D" parent="Ayaka/LogDummy/LogDummy_Root"]
+position = Vector3(-0, 0.899999976, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11554
+metadata/unity_name = "LogDummy_end"
+
+[node name="OverheadSlot" type="Node3D" parent="Ayaka"]
+position = Vector3(0, 2, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10075
+metadata/unity_name = "OverheadSlot"
+
+[node name="VFXParent" type="Node3D" parent="Ayaka"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22050
+metadata/unity_name = "VFXParent"
+
+[node name="VFX_Ayaka_BasicAttack_01" type="Node3D" parent="Ayaka/VFXParent"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15467
+metadata/unity_name = "VFX_Ayaka_BasicAttack_01"
+
+[node name="root" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_BasicAttack_01"]
+position = Vector3(0, 1.13, -0.159999996)
+quaternion = Quaternion(-0.95152384, 0.180370182, 0.228984594, -0.0981588736)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21815
+metadata/unity_name = "root"
+
+[node name="Slash_01" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_BasicAttack_01/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 1.86264471e-09, -2.98023153e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11085
+metadata/unity_name = "Slash_01"
+
+[node name="Slash_02" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_BasicAttack_01/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 1.86264471e-09, -2.98023153e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7651
+metadata/unity_name = "Slash_02"
+
+[node name="Highlight_01" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_BasicAttack_01/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 1.86264471e-09, -2.98023153e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4845
+metadata/unity_name = "Highlight_01"
+
+[node name="Wind_01" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_BasicAttack_01/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 1.86264471e-09, -2.98023153e-08, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26727
+metadata/unity_name = "Wind_01"
+
+[node name="VFX_Ayaka_BasicAttack_02" type="Node3D" parent="Ayaka/VFXParent"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13042
+metadata/unity_name = "VFX_Ayaka_BasicAttack_02"
+
+[node name="root" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_BasicAttack_02"]
+position = Vector3(0, 0.871999979, -0.413000107)
+quaternion = Quaternion(-0.189377934, 0.868339479, 0.0286109075, 0.457497418)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21720
+metadata/unity_name = "root"
+
+[node name="Slash_01" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_BasicAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6043
+metadata/unity_name = "Slash_01"
+
+[node name="Slash_02" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_BasicAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5249
+metadata/unity_name = "Slash_02"
+
+[node name="Highlight_01" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_BasicAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8669
+metadata/unity_name = "Highlight_01"
+visible = false
+process_mode = 4
+
+[node name="Wind_01" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_BasicAttack_02/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23873
+metadata/unity_name = "Wind_01"
+
+[node name="VFX_Ayaka_SkillAttack_03" type="Node3D" parent="Ayaka/VFXParent"]
+position = Vector3(0.0299999993, 3.48000002, -0.360000014)
+quaternion = Quaternion(0.143856928, -0.103920437, 0.0156175373, 0.984003067)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10701
+metadata/unity_name = "VFX_Ayaka_SkillAttack_03"
+
+[node name="root" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_SkillAttack_03"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12535
+metadata/unity_name = "root"
+
+[node name="Flare_01" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_SkillAttack_03/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25875
+metadata/unity_name = "Flare_01"
+
+[node name="Spike_01" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_SkillAttack_03/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12214
+metadata/unity_name = "Spike_01"
+
+[node name="Circle_01" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_SkillAttack_03/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13710
+metadata/unity_name = "Circle_01"
+
+[node name="Impact_01" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_SkillAttack_03/root"]
+position = Vector3(0, 0, -0.00299982401)
+quaternion = Quaternion(-0.707106829, -0, 0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15486
+metadata/unity_name = "Impact_01"
+
+[node name="Impact_02" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_SkillAttack_03/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0.707106829, -0, 0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12827
+metadata/unity_name = "Impact_02"
+
+[node name="Rings_01" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_SkillAttack_03/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-1, -0, 0, 0)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4805
+metadata/unity_name = "Rings_01"
+
+[node name="Aura_01" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_SkillAttack_03/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25967
+metadata/unity_name = "Aura_01"
+
+[node name="Glow_01" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_SkillAttack_03/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16423
+metadata/unity_name = "Glow_01"
+
+[node name="Flare_02" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_SkillAttack_03/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8643
+metadata/unity_name = "Flare_02"
+
+[node name="ParticlesAB" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_SkillAttack_03/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8645
+metadata/unity_name = "ParticlesAB"
+
+[node name="VFX_Ayaka_SkillAttack_05" type="Node3D" parent="Ayaka/VFXParent"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13678
+metadata/unity_name = "VFX_Ayaka_SkillAttack_05"
+
+[node name="root" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_SkillAttack_05"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9229
+metadata/unity_name = "root"
+
+[node name="Smoke_01" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_SkillAttack_05/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -9.96806304e-10, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22393
+metadata/unity_name = "Smoke_01"
+
+[node name="VFX_Ayaka_Passive_Stealth_Lp" type="Node3D" parent="Ayaka/VFXParent"]
+position = Vector3(0, 0.5, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6525
+metadata/unity_name = "VFX_Ayaka_Passive_Stealth_Lp"
+visible = false
+process_mode = 4
+
+[node name="root" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_Passive_Stealth_Lp"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15633
+metadata/unity_name = "root"
+
+[node name="Smoke_01" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_Passive_Stealth_Lp/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13599
+metadata/unity_name = "Smoke_01"
+
+[node name="Smoke_Blur" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_Passive_Stealth_Lp/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11497
+metadata/unity_name = "Smoke_Blur"
+
+[node name="VFX_Ayaka_Passive_Stealth_LpEnd" type="Node3D" parent="Ayaka/VFXParent"]
+position = Vector3(0, 0.5, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19634
+metadata/unity_name = "VFX_Ayaka_Passive_Stealth_LpEnd"
+visible = false
+process_mode = 4
+
+[node name="root" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_Passive_Stealth_LpEnd"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11850
+metadata/unity_name = "root"
+
+[node name="Par_Smoke" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_Passive_Stealth_LpEnd/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23034
+metadata/unity_name = "Par_Smoke"
+
+[node name="Par_Smoke_6454" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_Passive_Stealth_LpEnd/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6454
+metadata/unity_name = "Par_Smoke"
+
+[node name="VFX_Ayaka_SkillHit" type="Node3D" parent="Ayaka/VFXParent"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16788
+metadata/unity_name = "VFX_Ayaka_SkillHit"
+
+[node name="root" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_SkillHit"]
+position = Vector3(0, 0.5, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16448
+metadata/unity_name = "root"
+
+[node name="CoreWhite_01" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_SkillHit/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -9.96806304e-10, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24683
+metadata/unity_name = "CoreWhite_01"
+
+[node name="Spikes_01" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_SkillHit/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -9.96806304e-10, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12811
+metadata/unity_name = "Spikes_01"
+
+[node name="Circle_01" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_SkillHit/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -9.96806304e-10, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14286
+metadata/unity_name = "Circle_01"
+
+[node name="Spike_01" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_SkillHit/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -9.96806304e-10, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7016
+metadata/unity_name = "Spike_01"
+
+[node name="Slash_01" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_SkillHit/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -9.96806304e-10, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15820
+metadata/unity_name = "Slash_01"
+
+[node name="Muzzle_01" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_SkillHit/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5820
+metadata/unity_name = "Muzzle_01"
+
+[node name="Glow_01" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_SkillHit/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13997
+metadata/unity_name = "Glow_01"
+
+[node name="Impact_01" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_SkillHit/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13064
+metadata/unity_name = "Impact_01"
+
+[node name="Line_01" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_SkillHit/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16905
+metadata/unity_name = "Line_01"
+
+[node name="Line_02" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_SkillHit/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -9.96806304e-10, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19849
+metadata/unity_name = "Line_02"
+
+[node name="Smoke_01" type="Node3D" parent="Ayaka/VFXParent/VFX_Ayaka_SkillHit/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22826
+metadata/unity_name = "Smoke_01"

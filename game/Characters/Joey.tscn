@@ -1,0 +1,991 @@
+[gd_scene format=3]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2822.obj" id="1"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_637.tres" id="2"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2736.obj" id="3"]
+[ext_resource type="StandardMaterial3D" path="res://materials/sharedassets1_641.tres" id="4"]
+[ext_resource type="ArrayMesh" path="res://meshes/sharedassets1_2981.obj" id="5"]
+
+[node name="Joey" type="Node3D"]
+
+[node name="Joey" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1.10000002, 1.10000002, 1.10000002)
+metadata/unity_id = 26391
+metadata/unity_name = "Joey"
+
+[node name="Joey_Model" type="Node3D" parent="Joey"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10536
+metadata/unity_name = "Joey_Model"
+
+[node name="Armature" type="Node3D" parent="Joey/Joey_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6711
+metadata/unity_name = "Armature"
+
+[node name="Hips" type="Node3D" parent="Joey/Joey_Model/Armature"]
+position = Vector3(-0, 1.01999998, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12322
+metadata/unity_name = "Hips"
+
+[node name="Spine" type="Node3D" parent="Joey/Joey_Model/Armature/Hips"]
+position = Vector3(-0, 0.170000002, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19498
+metadata/unity_name = "Spine"
+
+[node name="Chest" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine"]
+position = Vector3(-0, 0.150153771, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21443
+metadata/unity_name = "Chest"
+
+[node name="Mant_Root" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest"]
+position = Vector3(-0, 0.219846219, 0.0299999993)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14088
+metadata/unity_name = "Mant_Root"
+
+[node name="Mant_Back" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root"]
+position = Vector3(-0, 0, 0.140000001)
+quaternion = Quaternion(-0.999048233, 5.85031429e-17, 6.38449761e-17, -0.0436193869)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18732
+metadata/unity_name = "Mant_Back"
+
+[node name="Mant_Back_End" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root/Mant_Back"]
+position = Vector3(-0, 0.109999999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7590
+metadata/unity_name = "Mant_Back_End"
+
+[node name="Mant_Front" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root"]
+position = Vector3(-0, 0, -0.140000001)
+quaternion = Quaternion(0, -0, 1, -6.12323426e-17)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8009
+metadata/unity_name = "Mant_Front"
+
+[node name="Mant_Front_End" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root/Mant_Front"]
+position = Vector3(1.34711144e-17, 0.109999999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14831
+metadata/unity_name = "Mant_Front_End"
+
+[node name="Mant_L" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root"]
+position = Vector3(-0.0199999996, -0.0199999996, -0)
+quaternion = Quaternion(0.477714419, -0.521333814, 0.477714419, 0.521333814)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24959
+metadata/unity_name = "Mant_L"
+
+[node name="Mant_Back1_A_L" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root/Mant_L"]
+position = Vector3(0.140000001, 0.121286474, -0.00946520455)
+quaternion = Quaternion(0.4793455, -0.428395599, -0.4793455, 0.597438693)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18116
+metadata/unity_name = "Mant_Back1_A_L"
+
+[node name="Mant_Back1_B_L" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root/Mant_L/Mant_Back1_A_L"]
+position = Vector3(3.5527136e-17, 0.170000002, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18371
+metadata/unity_name = "Mant_Back1_B_L"
+
+[node name="Mant_Back1_C_L" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root/Mant_L/Mant_Back1_A_L/Mant_Back1_B_L"]
+position = Vector3(2.06089953e-06, 0.25, 1.38306029e-06)
+quaternion = Quaternion(1.8924261e-06, -9.53502294e-12, -5.03851788e-06, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21151
+metadata/unity_name = "Mant_Back1_C_L"
+
+[node name="Mant_Back1_D_L" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root/Mant_L/Mant_Back1_A_L/Mant_Back1_B_L/Mant_Back1_C_L"]
+position = Vector3(2.50484074e-12, 0.299999982, 9.40545385e-13)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17596
+metadata/unity_name = "Mant_Back1_D_L"
+
+[node name="Mant_Back1_E_L" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root/Mant_L/Mant_Back1_A_L/Mant_Back1_B_L/Mant_Back1_C_L/Mant_Back1_D_L"]
+position = Vector3(-2.18699526e-07, 0.25, -3.57426984e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18925
+metadata/unity_name = "Mant_Back1_E_L"
+
+[node name="Mant_Back1_L_End" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root/Mant_L/Mant_Back1_A_L/Mant_Back1_B_L/Mant_Back1_C_L/Mant_Back1_D_L/Mant_Back1_E_L"]
+position = Vector3(-7.97715245e-07, 0.349999994, -1.38229575e-06)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10443
+metadata/unity_name = "Mant_Back1_L_End"
+
+[node name="Mant_Front_L" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root/Mant_L"]
+position = Vector3(-0.129999995, 0.121286474, -0.00946520455)
+quaternion = Quaternion(0.477714419, 0.521333814, 0.477714419, 0.521333814)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13749
+metadata/unity_name = "Mant_Front_L"
+
+[node name="Mant_Front_L_End" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root/Mant_L/Mant_Front_L"]
+position = Vector3(-0, 0.109999999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12699
+metadata/unity_name = "Mant_Front_L_End"
+
+[node name="Mant_L_End" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root/Mant_L"]
+position = Vector3(-0, 0.329999983, -2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6408
+metadata/unity_name = "Mant_L_End"
+
+[node name="Mant_Side1_A_L" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root/Mant_L"]
+position = Vector3(0.0199999996, 0.290639579, 0.00535127148)
+quaternion = Quaternion(0.661005974, 0.0522445142, -0.0462220423, 0.747131348)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15376
+metadata/unity_name = "Mant_Side1_A_L"
+
+[node name="Mant_Side1_B_L" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root/Mant_L/Mant_Side1_A_L"]
+position = Vector3(7.1054272e-17, 0.149999991, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15069
+metadata/unity_name = "Mant_Side1_B_L"
+
+[node name="Mant_Side1_C_L" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root/Mant_L/Mant_Side1_A_L/Mant_Side1_B_L"]
+position = Vector3(6.40093106e-07, 0.25999999, -7.68288189e-08)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7860
+metadata/unity_name = "Mant_Side1_C_L"
+
+[node name="Mant_Side1_D_L" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root/Mant_L/Mant_Side1_A_L/Mant_Side1_B_L/Mant_Side1_C_L"]
+position = Vector3(1.48011122e-06, 0.299999982, -2.14301599e-06)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9309
+metadata/unity_name = "Mant_Side1_D_L"
+
+[node name="Mant_Side1_E_L" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root/Mant_L/Mant_Side1_A_L/Mant_Side1_B_L/Mant_Side1_C_L/Mant_Side1_D_L"]
+position = Vector3(1.87341664e-06, 0.299999982, -1.20844254e-06)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14904
+metadata/unity_name = "Mant_Side1_E_L"
+
+[node name="Mant_Side1_L_End" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root/Mant_L/Mant_Side1_A_L/Mant_Side1_B_L/Mant_Side1_C_L/Mant_Side1_D_L/Mant_Side1_E_L"]
+position = Vector3(1.84801809e-06, 0.370000005, -1.98731709e-06)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25074
+metadata/unity_name = "Mant_Side1_L_End"
+
+[node name="Mant_R" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root"]
+position = Vector3(0.0199999996, -0.0199999996, -0)
+quaternion = Quaternion(0.477714419, 0.521333814, -0.477714419, 0.521333814)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10757
+metadata/unity_name = "Mant_R"
+
+[node name="Mant_Back1_A_R" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root/Mant_R"]
+position = Vector3(-0.140000001, 0.121286474, -0.00946520455)
+quaternion = Quaternion(0.4793455, 0.428395599, 0.4793455, 0.597438693)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17589
+metadata/unity_name = "Mant_Back1_A_R"
+
+[node name="Mant_Back1_B_R" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root/Mant_R/Mant_Back1_A_R"]
+position = Vector3(4.3004286e-07, 0.169997185, -3.23123828e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17336
+metadata/unity_name = "Mant_Back1_B_R"
+
+[node name="Mant_Back1_C_R" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root/Mant_R/Mant_Back1_A_R/Mant_Back1_B_R"]
+position = Vector3(-2.73226169e-06, 0.250003338, 2.10241092e-06)
+quaternion = Quaternion(1.89241814e-06, 9.53497784e-12, 5.03851516e-06, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15860
+metadata/unity_name = "Mant_Back1_C_R"
+
+[node name="Mant_Back1_D_R" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root/Mant_R/Mant_Back1_A_R/Mant_Back1_B_R/Mant_Back1_C_R"]
+position = Vector3(-1.64511889e-07, 0.299999297, -6.54106486e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5092
+metadata/unity_name = "Mant_Back1_D_R"
+
+[node name="Mant_Back1_E_R" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root/Mant_R/Mant_Back1_A_R/Mant_Back1_B_R/Mant_Back1_C_R/Mant_Back1_D_R"]
+position = Vector3(2.71442531e-08, 0.250000596, -3.75849197e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27120
+metadata/unity_name = "Mant_Back1_E_R"
+
+[node name="Mant_Back1_R_End" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root/Mant_R/Mant_Back1_A_R/Mant_Back1_B_R/Mant_Back1_C_R/Mant_Back1_D_R/Mant_Back1_E_R"]
+position = Vector3(1.45630293e-06, 0.349999309, -1.0381533e-06)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4957
+metadata/unity_name = "Mant_Back1_R_End"
+
+[node name="Mant_Front_R" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root/Mant_R"]
+position = Vector3(0.129999995, 0.121286474, -0.00946520455)
+quaternion = Quaternion(0.477714419, -0.521333814, -0.477714419, 0.521333814)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16575
+metadata/unity_name = "Mant_Front_R"
+
+[node name="Mant_Front_R_End" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root/Mant_R/Mant_Front_R"]
+position = Vector3(4.94196343e-07, 0.110001072, -1.06581408e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7699
+metadata/unity_name = "Mant_Front_R_End"
+
+[node name="Mant_R_End" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root/Mant_R"]
+position = Vector3(7.1054272e-17, 0.329999626, 1.36797667e-06)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13810
+metadata/unity_name = "Mant_R_End"
+
+[node name="Mant_Shoulder" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root/Mant_R"]
+position = Vector3(-0.00999999978, 0.149429202, 0.0130733605)
+quaternion = Quaternion(0.0436193869, 4.84272476e-18, -1.10916635e-16, 0.999048233)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26447
+metadata/unity_name = "Mant_Shoulder"
+
+[node name="Mant_Shoulder_End" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root/Mant_R/Mant_Shoulder"]
+position = Vector3(4.440892e-18, 0.209999993, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25066
+metadata/unity_name = "Mant_Shoulder_End"
+
+[node name="Mant_Side1_A_R" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root/Mant_R"]
+position = Vector3(-0.0199999996, 0.290639579, 0.00535127148)
+quaternion = Quaternion(0.661005974, -0.0522445142, 0.0462220423, 0.747131348)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12209
+metadata/unity_name = "Mant_Side1_A_R"
+
+[node name="Mant_Side1_B_R" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root/Mant_R/Mant_Side1_A_R"]
+position = Vector3(1.27526093e-07, 0.150001124, 7.22771347e-07)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19602
+metadata/unity_name = "Mant_Side1_B_R"
+
+[node name="Mant_Side1_C_R" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root/Mant_R/Mant_Side1_A_R/Mant_Side1_B_R"]
+position = Vector3(1.88455118e-07, 0.260003626, -9.24246137e-08)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18791
+metadata/unity_name = "Mant_Side1_C_R"
+
+[node name="Mant_Side1_D_R" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root/Mant_R/Mant_Side1_A_R/Mant_Side1_B_R/Mant_Side1_C_R"]
+position = Vector3(-2.00602835e-06, 0.299995273, -3.11637677e-06)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19250
+metadata/unity_name = "Mant_Side1_D_R"
+
+[node name="Mant_Side1_E_R" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root/Mant_R/Mant_Side1_A_R/Mant_Side1_B_R/Mant_Side1_C_R/Mant_Side1_D_R"]
+position = Vector3(-2.31520858e-06, 0.300000042, -1.08751374e-06)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 6623
+metadata/unity_name = "Mant_Side1_E_R"
+
+[node name="Mant_Side1_R_End" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Mant_Root/Mant_R/Mant_Side1_A_R/Mant_Side1_B_R/Mant_Side1_C_R/Mant_Side1_D_R/Mant_Side1_E_R"]
+position = Vector3(-1.77079846e-06, 0.370000452, -2.13080966e-06)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16562
+metadata/unity_name = "Mant_Side1_R_End"
+
+[node name="Neck" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest"]
+position = Vector3(-0, 0.279846221, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21244
+metadata/unity_name = "Neck"
+
+[node name="Head" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Neck"]
+position = Vector3(-0, 0.119999997, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12970
+metadata/unity_name = "Head"
+
+[node name="Hair_Root" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Neck/Head"]
+position = Vector3(-0, 0.150254786, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15071
+metadata/unity_name = "Hair_Root"
+
+[node name="Hair1" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Neck/Head/Hair_Root"]
+position = Vector3(0.0446195267, -0.0202793721, -0.0399999991)
+quaternion = Quaternion(-0.583263576, -0.0372149348, 0.699143648, -0.411845654)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22978
+metadata/unity_name = "Hair1"
+
+[node name="Hair1_End" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Neck/Head/Hair_Root/Hair1"]
+position = Vector3(-0, 0.0933724418, 2.84217088e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23268
+metadata/unity_name = "Hair1_End"
+
+[node name="Hair2" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Neck/Head/Hair_Root"]
+position = Vector3(-0.0198993757, -0.0149099575, -0.102989659)
+quaternion = Quaternion(0.030294979, -0.127073526, 0.964402437, -0.22991845)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5377
+metadata/unity_name = "Hair2"
+
+[node name="Hair2_End" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Neck/Head/Hair_Root/Hair2"]
+position = Vector3(-7.07060157e-17, 0.101289712, 1.29158355e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5208
+metadata/unity_name = "Hair2_End"
+
+[node name="Hair3" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Neck/Head/Hair_Root"]
+position = Vector3(-0.0345464908, 0.0225964542, -0)
+quaternion = Quaternion(-0.815857351, 0.0854149386, -0.41311726, -0.395493627)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5473
+metadata/unity_name = "Hair3"
+
+[node name="Hair3_End" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Neck/Head/Hair_Root/Hair3"]
+position = Vector3(3.5527136e-17, 0.12178997, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22426
+metadata/unity_name = "Hair3_End"
+
+[node name="Head_End" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Neck/Head"]
+position = Vector3(-0, 0.219999999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9640
+metadata/unity_name = "Head_End"
+
+[node name="Jaw" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Neck/Head"]
+position = Vector3(-0, 0.00715663657, -0.0248287059)
+quaternion = Quaternion(2.58779054e-17, -0.42261827, 0.906307817, -5.54953455e-17)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21163
+metadata/unity_name = "Jaw"
+
+[node name="Jaw_End" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Neck/Head/Jaw"]
+position = Vector3(6.13214134e-18, 0.0815595835, 2.75976668e-17)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27062
+metadata/unity_name = "Jaw_End"
+
+[node name="Shoulder_L" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest"]
+position = Vector3(-0.0399999991, 0.24984622, -0)
+quaternion = Quaternion(-0.596367836, 0.379928201, -0.596367836, -0.379928201)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24385
+metadata/unity_name = "Shoulder_L"
+
+[node name="UpperArm_L" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Shoulder_L"]
+position = Vector3(-0, 0.161554947, -0)
+quaternion = Quaternion(0.366501212, -0, -0, 0.930417597)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20866
+metadata/unity_name = "UpperArm_L"
+
+[node name="LowerArm_L" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L"]
+position = Vector3(-0, 0.25999999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26505
+metadata/unity_name = "LowerArm_L"
+
+[node name="Hand_L" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L"]
+position = Vector3(-0, 0.229999989, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5247
+metadata/unity_name = "Hand_L"
+
+[node name="Hand_L_End" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L"]
+position = Vector3(-0, 0.159999996, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7231
+metadata/unity_name = "Hand_L_End"
+
+[node name="Magica Capsule Collider (LowerArm_L)" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L/LowerArm_L"]
+position = Vector3(0, 0.183446884, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17112
+metadata/unity_name = "Magica Capsule Collider (LowerArm_L)"
+
+[node name="Magica Capsule Collider (UpperArm_L)" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Shoulder_L/UpperArm_L"]
+position = Vector3(0, 0.183446646, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22970
+metadata/unity_name = "Magica Capsule Collider (UpperArm_L)"
+
+[node name="Shoulder_R" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest"]
+position = Vector3(0.0399999991, 0.24984622, -0)
+quaternion = Quaternion(-0.596367836, -0.379928201, 0.596367836, -0.379928201)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16999
+metadata/unity_name = "Shoulder_R"
+
+[node name="UpperArm_R" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Shoulder_R"]
+position = Vector3(-0, 0.161555007, -0)
+quaternion = Quaternion(0.366501212, -0, -0, 0.930417597)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14168
+metadata/unity_name = "UpperArm_R"
+
+[node name="LowerArm_R" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R"]
+position = Vector3(-0, 0.25999999, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19785
+metadata/unity_name = "LowerArm_R"
+
+[node name="Hand_R" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R"]
+position = Vector3(-0, 0.229999989, 8.52651264e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19439
+metadata/unity_name = "Hand_R"
+
+[node name="Hand_R_End" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R"]
+position = Vector3(-0, 0.159999996, -5.68434176e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4922
+metadata/unity_name = "Hand_R_End"
+
+[node name="Magica Capsule Collider (LowerArm_R)" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R/LowerArm_R"]
+position = Vector3(0, 0.183446676, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 9989
+metadata/unity_name = "Magica Capsule Collider (LowerArm_R)"
+
+[node name="Magica Capsule Collider (UpperArm_R)" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest/Shoulder_R/UpperArm_R"]
+position = Vector3(0, 0.183446586, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20713
+metadata/unity_name = "Magica Capsule Collider (UpperArm_R)"
+
+[node name="Magica Capsule Collider (chest)" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine/Chest"]
+position = Vector3(0, -0.0268339515, -0)
+quaternion = Quaternion(-0.0538138188, 0, -0, 0.998551011)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20863
+metadata/unity_name = "Magica Capsule Collider (chest)"
+
+[node name="Magica Capsule Collider (spine)" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/Spine"]
+position = Vector3(0, -0.0712795705, -0)
+quaternion = Quaternion(-0.0292445328, 0, -0, 0.999572277)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5056
+metadata/unity_name = "Magica Capsule Collider (spine)"
+
+[node name="UpperLeg_L" type="Node3D" parent="Joey/Joey_Model/Armature/Hips"]
+position = Vector3(-0.112944178, -0.0215117838, -0)
+quaternion = Quaternion(0.00182601169, 0.0261131842, 0.997222245, 0.0697325766)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17369
+metadata/unity_name = "UpperLeg_L"
+
+[node name="LowerLeg_L" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/UpperLeg_L"]
+position = Vector3(7.1054272e-17, 0.395999968, 8.881784e-18)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14667
+metadata/unity_name = "LowerLeg_L"
+
+[node name="Foot_L" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/UpperLeg_L/LowerLeg_L"]
+position = Vector3(1.06581408e-16, 0.550000012, -8.881784e-18)
+quaternion = Quaternion(-0, -0, 0.0697564706, 0.997564077)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8599
+metadata/unity_name = "Foot_L"
+
+[node name="Toes_L" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/UpperLeg_L/LowerLeg_L/Foot_L"]
+position = Vector3(3.5527136e-17, 3.819167e-16, -0.140000001)
+quaternion = Quaternion(-0.707106829, -8.71576458e-33, 8.71576458e-33, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14399
+metadata/unity_name = "Toes_L"
+
+[node name="Toes_L_End" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/UpperLeg_L/LowerLeg_L/Foot_L/Toes_L"]
+position = Vector3(-0, 0.129999995, 1.55431221e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18291
+metadata/unity_name = "Toes_L_End"
+
+[node name="Magica Capsule Collider (lower_leg_L)" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/UpperLeg_L/LowerLeg_L"]
+position = Vector3(-0.0125255808, 0.303002179, -0.00466439873)
+quaternion = Quaternion(0, 0, 7.34871719e-10, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17075
+metadata/unity_name = "Magica Capsule Collider (lower_leg_L)"
+
+[node name="Magica Capsule Collider (upper_leg_L)" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/UpperLeg_L"]
+position = Vector3(-0.0125255845, 0.189001992, -0.004664395)
+quaternion = Quaternion(0, 0, 7.34871719e-10, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21468
+metadata/unity_name = "Magica Capsule Collider (upper_leg_L)"
+
+[node name="UpperLeg_R" type="Node3D" parent="Joey/Joey_Model/Armature/Hips"]
+position = Vector3(0.112943999, -0.0215119999, -0)
+quaternion = Quaternion(-0.00182601169, 0.0261131842, 0.997222245, -0.0697325766)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17986
+metadata/unity_name = "UpperLeg_R"
+
+[node name="LowerLeg_R" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/UpperLeg_R"]
+position = Vector3(3.5527136e-17, 0.395999968, -8.881784e-18)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17613
+metadata/unity_name = "LowerLeg_R"
+
+[node name="Foot_R" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/UpperLeg_R/LowerLeg_R"]
+position = Vector3(7.1054272e-17, 0.549999774, 8.881784e-18)
+quaternion = Quaternion(-0, 0, -0.0697564706, 0.997564077)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24828
+metadata/unity_name = "Foot_R"
+
+[node name="Toes_R" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/UpperLeg_R/LowerLeg_R/Foot_R"]
+position = Vector3(-7.1054272e-17, 1.02140514e-16, -0.140000001)
+quaternion = Quaternion(-0.707106829, -0, -0, 0.707106829)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21794
+metadata/unity_name = "Toes_R"
+
+[node name="Toes_R_End" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/UpperLeg_R/LowerLeg_R/Foot_R/Toes_R"]
+position = Vector3(-3.5527136e-17, 0.129999995, -2.44249071e-16)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7125
+metadata/unity_name = "Toes_R_End"
+
+[node name="Magica Capsule Collider (lower_leg_R)" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/UpperLeg_R/LowerLeg_R"]
+position = Vector3(0.0125255808, 0.303002179, -0.00466439873)
+quaternion = Quaternion(0, 0, -7.34871719e-10, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23498
+metadata/unity_name = "Magica Capsule Collider (lower_leg_R)"
+
+[node name="Magica Capsule Collider (upper_leg_R)" type="Node3D" parent="Joey/Joey_Model/Armature/Hips/UpperLeg_R"]
+position = Vector3(0.0125255864, 0.189002007, -0.00466439594)
+quaternion = Quaternion(0, 0, -7.34871719e-10, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7388
+metadata/unity_name = "Magica Capsule Collider (upper_leg_R)"
+
+[node name="Magica Capsule Collider (hips)" type="Node3D" parent="Joey/Joey_Model/Armature/Hips"]
+position = Vector3(0, 0.00999999046, -0)
+quaternion = Quaternion(-0.0292445328, 0, -0, 0.999572277)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10531
+metadata/unity_name = "Magica Capsule Collider (hips)"
+
+[node name="Body_Geo" type="Node3D" parent="Joey/Joey_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17154
+metadata/unity_name = "Body_Geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Joey/Joey_Model/Body_Geo"]
+mesh = ExtResource("1")
+visible = true
+surface_material_override/0 = ExtResource("2")
+
+[node name="Cloak_Geo" type="Node3D" parent="Joey/Joey_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7173
+metadata/unity_name = "Cloak_Geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Joey/Joey_Model/Cloak_Geo"]
+mesh = ExtResource("3")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="weapon" type="Node3D" parent="Joey/Joey_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14803
+metadata/unity_name = "weapon"
+
+[node name="VFX_Joey_SkillAttack_02_Charge" type="Node3D" parent="Joey/Joey_Model/weapon"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18221
+metadata/unity_name = "VFX_Joey_SkillAttack_02_Charge"
+visible = false
+process_mode = 4
+
+[node name="Magica Wind Zone" type="Node3D" parent="Joey/Joey_Model/weapon/VFX_Joey_SkillAttack_02_Charge"]
+position = Vector3(0, 0, 0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22172
+metadata/unity_name = "Magica Wind Zone"
+
+[node name="root" type="Node3D" parent="Joey/Joey_Model/weapon/VFX_Joey_SkillAttack_02_Charge"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13275
+metadata/unity_name = "root"
+
+[node name="Lines_01" type="Node3D" parent="Joey/Joey_Model/weapon/VFX_Joey_SkillAttack_02_Charge/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14838
+metadata/unity_name = "Lines_01"
+
+[node name="Glow_01" type="Node3D" parent="Joey/Joey_Model/weapon/VFX_Joey_SkillAttack_02_Charge/root"]
+position = Vector3(-0, -0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19623
+metadata/unity_name = "Glow_01"
+
+[node name="Glow_01_Side" type="Node3D" parent="Joey/Joey_Model/weapon/VFX_Joey_SkillAttack_02_Charge/root"]
+position = Vector3(-0.0299999993, -0.0599999987, -0.200000003)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20371
+metadata/unity_name = "Glow_01_Side"
+
+[node name="Sword_01" type="Node3D" parent="Joey/Joey_Model/weapon/VFX_Joey_SkillAttack_02_Charge/root"]
+position = Vector3(0, -0, -0.800000012)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26728
+metadata/unity_name = "Sword_01"
+
+[node name="Glow_02" type="Node3D" parent="Joey/Joey_Model/weapon/VFX_Joey_SkillAttack_02_Charge/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8136
+metadata/unity_name = "Glow_02"
+
+[node name="==========ChargeEnd" type="Node3D" parent="Joey/Joey_Model/weapon/VFX_Joey_SkillAttack_02_Charge/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -3.72528985e-09, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 12407
+metadata/unity_name = "==========ChargeEnd"
+
+[node name="Glow_03" type="Node3D" parent="Joey/Joey_Model/weapon/VFX_Joey_SkillAttack_02_Charge/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18360
+metadata/unity_name = "Glow_03"
+
+[node name="Glow_04" type="Node3D" parent="Joey/Joey_Model/weapon/VFX_Joey_SkillAttack_02_Charge/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10479
+metadata/unity_name = "Glow_04"
+
+[node name="Glow_03_Side" type="Node3D" parent="Joey/Joey_Model/weapon/VFX_Joey_SkillAttack_02_Charge/root"]
+position = Vector3(-0.0299999993, -0.0599999987, -0.200000003)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 17576
+metadata/unity_name = "Glow_03_Side"
+
+[node name="Glow_03_Side_1" type="Node3D" parent="Joey/Joey_Model/weapon/VFX_Joey_SkillAttack_02_Charge/root"]
+position = Vector3(-0.0299999993, -0.0599999987, -0.200000003)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21317
+metadata/unity_name = "Glow_03_Side_1"
+
+[node name="Flare_01" type="Node3D" parent="Joey/Joey_Model/weapon/VFX_Joey_SkillAttack_02_Charge/root"]
+position = Vector3(-0, -0, -0.216999993)
+quaternion = Quaternion(9.31322464e-10, 0, -3.72528985e-09, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 13081
+metadata/unity_name = "Flare_01"
+
+[node name="Lines_01_16189" type="Node3D" parent="Joey/Joey_Model/weapon/VFX_Joey_SkillAttack_02_Charge/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(9.31322464e-10, 0, -3.72528985e-09, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16189
+metadata/unity_name = "Lines_01"
+
+[node name="Glow_02_14156" type="Node3D" parent="Joey/Joey_Model/weapon/VFX_Joey_SkillAttack_02_Charge/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(9.31322464e-10, 0, -3.72528985e-09, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14156
+metadata/unity_name = "Glow_02"
+
+[node name="Glow_01_5023" type="Node3D" parent="Joey/Joey_Model/weapon/VFX_Joey_SkillAttack_02_Charge/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(9.31322464e-10, 0, -3.72528985e-09, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 5023
+metadata/unity_name = "Glow_01"
+
+[node name="Ring_01" type="Node3D" parent="Joey/Joey_Model/weapon/VFX_Joey_SkillAttack_02_Charge/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(9.31322464e-10, 0, -3.72528985e-09, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16985
+metadata/unity_name = "Ring_01"
+
+[node name="Lines_01_14586" type="Node3D" parent="Joey/Joey_Model/weapon/VFX_Joey_SkillAttack_02_Charge/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(9.31322464e-10, 0, -3.72528985e-09, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 14586
+metadata/unity_name = "Lines_01"
+
+[node name="Weapon_Geo" type="Node3D" parent="Joey/Joey_Model"]
+position = Vector3(-0, 0, -0)
+quaternion = Quaternion(-0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10504
+metadata/unity_name = "Weapon_Geo"
+
+[node name="UnityMesh" type="MeshInstance3D" parent="Joey/Joey_Model/Weapon_Geo"]
+mesh = ExtResource("5")
+visible = true
+surface_material_override/0 = ExtResource("4")
+
+[node name="Magica Cloth (Hair)" type="Node3D" parent="Joey/Joey_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16429
+metadata/unity_name = "Magica Cloth (Hair)"
+
+[node name="Magica Cloth (Mant) (1)" type="Node3D" parent="Joey/Joey_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 4860
+metadata/unity_name = "Magica Cloth (Mant) (1)"
+
+[node name="Magica Cloth (Mant) (2)" type="Node3D" parent="Joey/Joey_Model"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20893
+metadata/unity_name = "Magica Cloth (Mant) (2)"
+
+[node name="OverheadSlot" type="Node3D" parent="Joey"]
+position = Vector3(0, 2, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 20684
+metadata/unity_name = "OverheadSlot"
+
+[node name="VFXParent" type="Node3D" parent="Joey"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 27093
+metadata/unity_name = "VFXParent"
+
+[node name="VFX_Joey_SkillAttack_01" type="Node3D" parent="Joey/VFXParent"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16394
+metadata/unity_name = "VFX_Joey_SkillAttack_01"
+
+[node name="root" type="Node3D" parent="Joey/VFXParent/VFX_Joey_SkillAttack_01"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25627
+metadata/unity_name = "root"
+
+[node name="Glow_01" type="Node3D" parent="Joey/VFXParent/VFX_Joey_SkillAttack_01/root"]
+position = Vector3(0, 1, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22905
+metadata/unity_name = "Glow_01"
+
+[node name="Glow_03" type="Node3D" parent="Joey/VFXParent/VFX_Joey_SkillAttack_01/root"]
+position = Vector3(0, 1, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 7202
+metadata/unity_name = "Glow_03"
+
+[node name="Sphere_01" type="Node3D" parent="Joey/VFXParent/VFX_Joey_SkillAttack_01/root"]
+position = Vector3(0, 0.862999976, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8300
+metadata/unity_name = "Sphere_01"
+
+[node name="Flare_01" type="Node3D" parent="Joey/VFXParent/VFX_Joey_SkillAttack_01/root"]
+position = Vector3(0, 1.00300002, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 22354
+metadata/unity_name = "Flare_01"
+
+[node name="Lines_01" type="Node3D" parent="Joey/VFXParent/VFX_Joey_SkillAttack_01/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 23556
+metadata/unity_name = "Lines_01"
+
+[node name="Gradient_01" type="Node3D" parent="Joey/VFXParent/VFX_Joey_SkillAttack_01/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 18749
+metadata/unity_name = "Gradient_01"
+
+[node name="WaveHeat_01" type="Node3D" parent="Joey/VFXParent/VFX_Joey_SkillAttack_01/root"]
+position = Vector3(0, 1.10000002, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 8464
+metadata/unity_name = "WaveHeat_01"
+
+[node name="========GroundVFX" type="Node3D" parent="Joey/VFXParent/VFX_Joey_SkillAttack_01/root"]
+position = Vector3(0, 0.100000001, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24784
+metadata/unity_name = "========GroundVFX"
+
+[node name="Glow_02" type="Node3D" parent="Joey/VFXParent/VFX_Joey_SkillAttack_01/root/========GroundVFX"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 25488
+metadata/unity_name = "Glow_02"
+
+[node name="Glow_03" type="Node3D" parent="Joey/VFXParent/VFX_Joey_SkillAttack_01/root/========GroundVFX"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16140
+metadata/unity_name = "Glow_03"
+
+[node name="Wave_02" type="Node3D" parent="Joey/VFXParent/VFX_Joey_SkillAttack_01/root/========GroundVFX"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24001
+metadata/unity_name = "Wave_02"
+
+[node name="Wave_01" type="Node3D" parent="Joey/VFXParent/VFX_Joey_SkillAttack_01/root/========GroundVFX"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 21463
+metadata/unity_name = "Wave_01"
+
+[node name="VFX_Joey_SkillAttack_02_Charge_Ground" type="Node3D" parent="Joey/VFXParent"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 26151
+metadata/unity_name = "VFX_Joey_SkillAttack_02_Charge_Ground"
+
+[node name="root" type="Node3D" parent="Joey/VFXParent/VFX_Joey_SkillAttack_02_Charge_Ground"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 15515
+metadata/unity_name = "root"
+
+[node name="Wind_01" type="Node3D" parent="Joey/VFXParent/VFX_Joey_SkillAttack_02_Charge_Ground/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(0, 0, -0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 16843
+metadata/unity_name = "Wind_01"
+
+[node name="Glow_01" type="Node3D" parent="Joey/VFXParent/VFX_Joey_SkillAttack_02_Charge_Ground/root"]
+position = Vector3(0, 0.00999999978, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 11634
+metadata/unity_name = "Glow_01"
+
+[node name="VFX_Joey_BasicAttack" type="Node3D" parent="Joey/VFXParent"]
+position = Vector3(-0.100000001, 0.469999999, -1.89999998)
+quaternion = Quaternion(0.579420805, 0.478175044, 0.54603523, 0.370763659)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 10125
+metadata/unity_name = "VFX_Joey_BasicAttack"
+
+[node name="root" type="Node3D" parent="Joey/VFXParent/VFX_Joey_BasicAttack"]
+position = Vector3(0.959999979, 0, -0)
+quaternion = Quaternion(-1, -0, 0, 0)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19845
+metadata/unity_name = "root"
+
+[node name="Slash_01_Highlight" type="Node3D" parent="Joey/VFXParent/VFX_Joey_BasicAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 24195
+metadata/unity_name = "Slash_01_Highlight"
+
+[node name="Slash_01" type="Node3D" parent="Joey/VFXParent/VFX_Joey_BasicAttack/root"]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+scale = Vector3(1, 1, 1)
+metadata/unity_id = 19137
+metadata/unity_name = "Slash_01"

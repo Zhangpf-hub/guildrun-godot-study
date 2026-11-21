@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://bp43nmh6ux013"
+
+[deps]
+
+files=["res://locale/guildrun.zh_Hans.translation", "res://locale/guildrun.zh_Hant.translation", "res://locale/guildrun.en.translation", "res://locale/guildrun.fr.translation", "res://locale/guildrun.de.translation", "res://locale/guildrun.ja.translation", "res://locale/guildrun.pt_BR.translation", "res://locale/guildrun.ru.translation", "res://locale/guildrun.es.translation"]
+
+source_file="res://locale/guildrun.csv"
+dest_files=["res://locale/guildrun.zh_Hans.translation", "res://locale/guildrun.zh_Hant.translation", "res://locale/guildrun.en.translation", "res://locale/guildrun.fr.translation", "res://locale/guildrun.de.translation", "res://locale/guildrun.ja.translation", "res://locale/guildrun.pt_BR.translation", "res://locale/guildrun.ru.translation", "res://locale/guildrun.es.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true
