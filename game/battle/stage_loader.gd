@@ -68,6 +68,8 @@ var _aoe_radii: Dictionary
 var _aoe_shapes := {}
 var _characters: Dictionary
 var _rigs: Dictionary
+var _ragdolls: Dictionary
+var _has_ragdoll_floor := false
 var _environment_paths: Dictionary
 var encounter: GuildrunEncounter
 var battle_camera: Node
@@ -294,6 +296,7 @@ func _ready() -> void:
 					sound.ui_paths[int(mapping.SfxType)] = mapping.FmodEvent.Path
 	_characters = JSON.parse_string(FileAccess.get_file_as_string("res://Characters/index.json"))
 	_rigs = JSON.parse_string(FileAccess.get_file_as_string("res://Characters/rigs.json"))
+	_ragdolls = JSON.parse_string(FileAccess.get_file_as_string("res://Characters/ragdolls.json"))
 	_index_environments("res://Scenes/Stage_Environment/")
 	for argument in OS.get_cmdline_user_args():
 		if argument.begins_with("--stage="):
@@ -353,7 +356,23 @@ func load_board(id: int) -> bool:
 	board_size = Vector2i(field(stage, "Width"), field(stage, "Height"))
 	grid = GuildrunBattleGrid.new(board_size)
 	_environment = (load(_environment_paths[environment_name]) as PackedScene).instantiate()
+	# Older environment imports marked Unity layer 12 sprites with priority 4.
+	for sprite: Sprite3D in _environment.find_children("UnitySprite", "Sprite3D", true, false):
+		if sprite.render_priority == 4:
+			sprite.render_priority = 24
+	# Blue Cavern inherits the PC pipeline's High filter. The other imported suns override it to Medium.
+	# Compatibility's 13-tap kernel is closer to the original tent filters than its 5-tap kernel.
+	var high_shadow_filter := (environment_name == "Environment_BlueCavern"
+			or RenderingServer.get_current_rendering_method() == "gl_compatibility")
+	RenderingServer.directional_soft_shadow_filter_set_quality(
+			RenderingServer.SHADOW_QUALITY_SOFT_HIGH if high_shadow_filter else RenderingServer.SHADOW_QUALITY_SOFT_MEDIUM)
+	# The imported suns use PC_RPAsset (globalgamemanagers.assets:6665), which sets both biases to zero.
+	for sun: DirectionalLight3D in _environment.find_children("UnityLight", "DirectionalLight3D", true, false):
+		if sun.shadow_enabled:
+			sun.shadow_bias = 0.0
+			sun.shadow_normal_bias = 0.0
 	add_child(_environment)
+	_has_ragdoll_floor = GuildrunCharacterRagdoll.bind_floor(_environment)
 	var volume_path := "res://materials/volumes/%s.tscn" % environment_name
 	if ResourceLoader.exists(volume_path):
 		var volume := (load(volume_path) as PackedScene).instantiate()
@@ -874,6 +893,8 @@ func spawn_unit(stats: Dictionary, cell: Vector2i, facing: int, hero: bool) -> G
 	if _rigs.has(visual_id) and not _rigs[visual_id].is_empty():
 		for binding: Dictionary in _rigs[visual_id]:
 			unit.add_rig(binding)
+		if _has_ragdoll_floor and _ragdolls.rigs.has(visual_id):
+			unit.configure_ragdoll(_ragdolls.rigs[visual_id], _ragdolls.impulse)
 		unit.play_idle()
 	elif _characters.has(visual_id):
 		unit.add_child((load(_characters[visual_id]) as PackedScene).instantiate())

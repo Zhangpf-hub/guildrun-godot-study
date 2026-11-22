@@ -31,6 +31,16 @@ func new_stage() -> Node:
 	return stage
 
 
+func start_fallen_ragdoll(unit: GuildrunBoardUnit) -> PhysicalBoneSimulator3D:
+	var delay := unit._ragdoll_start_delay
+	expect(delay != null, "Fatal damage must schedule the custom death motion")
+	if delay != null:
+		delay.custom_step(0.09)
+	var body := unit._ragdoll
+	expect(body != null and body.is_simulating_physics(), "The fallen hero must enter the physics pose")
+	return body
+
+
 func verify_victory(fallen: bool) -> void:
 	var stage := new_stage()
 	var fight: GuildrunEncounter = stage.encounter
@@ -44,8 +54,10 @@ func verify_victory(fallen: bool) -> void:
 		ally = fight.board_hero(8)
 	fight.start_fight()
 	var defeated_enemies: Array[GuildrunBoardUnit] = []
+	var ally_ragdoll: PhysicalBoneSimulator3D
 	if is_instance_valid(ally):
 		fight._land(ally, ally.max_health * 2)
+		ally_ragdoll = start_fallen_ragdoll(ally)
 	for unit in fight._units:
 		if not unit.is_hero:
 			fight._land(unit, unit.max_health * 2, fight._hero)
@@ -57,14 +69,12 @@ func verify_victory(fallen: bool) -> void:
 	var last_frame := fight._frame
 	var last_time := fight.battle_time_q16
 	var duration := 1.5 if fallen else 1.0
-	var death_motion: StringName
-	if is_instance_valid(ally):
-		death_motion = ally._motion_players.front().assigned_animation
 	fight._physics_process(duration - 0.01)
 	expect(fight.phase == GuildrunEncounter.Phase.FIGHT and fight.last_battle_statistics.is_empty(),
 			"Victory settled before the native countdown ended")
 	if is_instance_valid(ally):
-		expect(ally._motion_players.front().assigned_animation == death_motion, "Fallen hero stood up early")
+		expect(ally_ragdoll != null and ally._ragdoll == ally_ragdoll and ally_ragdoll.is_simulating_physics(),
+				"The fallen hero must keep the ragdoll until revival begins")
 		expect(ally.get_node_or_null("VFX_Char_Resurrect_BattleEnd") == null, "Victory effect started before revival")
 	fight._physics_process(0.01)
 	expect(fight.phase == GuildrunEncounter.Phase.RESULT and fight.last_battle_statistics.get("victory", false),
@@ -93,7 +103,8 @@ func verify_victory(fallen: bool) -> void:
 	hero_stats.pressed.emit()
 	expect(not tracker.visible and view._hero_details.visible, "Hero attribute tab must switch the result panel")
 	if is_instance_valid(ally):
-		expect(ally.defeated and ally.health == 0 and ally._motion_players.front().assigned_animation != death_motion,
+		expect(ally.defeated and ally.health == 0 and ally._ragdoll == null and ally_ragdoll != null
+				and ally_ragdoll.is_queued_for_deletion(),
 				"Victory should restore the hero pose while keeping combat death")
 		verify_revival_effects(ally, false)
 		expect(ally._death_blend_tween == null, "Victory should reset the fallen hero's material animation")
@@ -140,14 +151,15 @@ func verify_defeat(stabilizer: bool) -> void:
 	fight.start_fight()
 	var hero := fight._hero
 	fight._land(hero, hero.max_health * 2)
-	var death_motion: StringName = hero._motion_players.front().assigned_animation
+	var ragdoll := start_fallen_ragdoll(hero)
 	fight._advance_battle_tick(0.0)
 	fight._physics_process(0.99)
 	expect(fight.phase == GuildrunEncounter.Phase.FIGHT, "Defeat with a fatality must hold for one second")
 	fight._physics_process(0.01)
 	expect(fight.phase == GuildrunEncounter.Phase.RESULT and not fight.last_battle_statistics.get("victory", true),
 			"Defeat did not settle at its native deadline")
-	expect(hero.defeated and (hero._motion_players.front().assigned_animation != death_motion) == stabilizer,
+	expect(hero.defeated and ragdoll != null and ragdoll.is_queued_for_deletion() == stabilizer
+			and (hero._ragdoll == null) == stabilizer,
 			"Only a normal defeat with a Stabilizer should restore the hero pose")
 	if stabilizer:
 		verify_revival_effects(hero, true)

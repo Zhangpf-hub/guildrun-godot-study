@@ -40,6 +40,7 @@ uniform vec4 probe_bb;
 uniform vec3 probe_c;
 
 varying vec3 shadow_sample;
+varying vec3 lit_albedo;
 varying vec3 emission_screen_mask;
 varying vec4 highlight_sample;
 varying float highlight_roughness;
@@ -49,6 +50,16 @@ float band(float angle, float border, float blur, float feather) {
 	float end = clamp(border + blur * 0.5, 0.0, 1.0);
 	float width = max(end - start + fwidth(angle) * shade_controls.w, 0.0001);
 	return clamp((angle - start) / width, 0.0, 1.0);
+}
+
+vec3 srgb_to_linear(vec3 color) {
+	return mix(color / 12.92, pow((max(color, vec3(0.0)) + 0.055) / 1.055, vec3(2.4)),
+			greaterThan(color, vec3(0.04045)));
+}
+
+vec3 linear_to_srgb(vec3 color) {
+	return mix(12.92 * color, 1.055 * pow(max(color, vec3(0.0)), vec3(1.0 / 2.4)) - 0.055,
+			greaterThan(color, vec3(0.0031308)));
 }
 
 vec3 inverse_light_probe(vec3 main_direction_world, vec3 main_color) {
@@ -82,6 +93,7 @@ void fragment() {
 		}
 	}
 	ALBEDO = surface.rgb;
+	lit_albedo = OUTPUT_IS_SRGB ? srgb_to_linear(surface.rgb) : surface.rgb;
 	SPECULAR = 0.0;
 	ROUGHNESS = 1.0;
 	vec4 shadow_layer = use_shadow_texture ? texture(shadow_texture, uv) : vec4(0.0);
@@ -101,7 +113,11 @@ void fragment() {
 		float intensity = emission_controls.x * mix(1.0, blink, emission_blink.x) * source.a;
 		EMISSION = mix(source.rgb, source.rgb * surface.rgb, emission_controls.z) * intensity;
 		if (emission_controls.y == 2.0) {
-			emission_screen_mask = vec3(1.0) - clamp(EMISSION, vec3(0.0), vec3(1.0));
+			// Godot scales ambient and diffuse by the linear albedo. Compatibility decodes these outputs.
+			vec3 linear_emission = OUTPUT_IS_SRGB ? srgb_to_linear(EMISSION) : EMISSION;
+			emission_screen_mask = vec3(1.0) - clamp(linear_emission, vec3(0.0), vec3(1.0));
+			vec3 masked_albedo = lit_albedo * emission_screen_mask;
+			ALBEDO = OUTPUT_IS_SRGB ? linear_to_srgb(masked_albedo) : masked_albedo;
 		}
 	}
 }
@@ -109,7 +125,7 @@ void fragment() {
 void light() {
 	vec3 raw_color = LIGHT_COLOR / PI;
 	vec3 color = clamp(raw_color, vec3(light_limits.x), vec3(light_limits.y));
-	vec3 direct = ALBEDO * color;
+	vec3 direct = lit_albedo * color;
 	vec3 surface = direct;
 	if (use_shadow) {
 		float angle = clamp(dot(NORMAL, LIGHT) * 0.5 + 0.5, 0.0, 1.0);
@@ -118,20 +134,20 @@ void light() {
 		float first = mix(1.0, band(first_angle, shade_shape.x, shade_shape.y, 0.0), shade_controls.x);
 		float second = (1.0 - band(second_angle, shade_shape.z, shade_shape.w, 0.0)) * second_color.a;
 		float feather = band(first_angle, shade_shape.x, shade_shape.y, shade_controls.y);
-		vec3 indirect = mix(shadow_sample * shadow_color.rgb, ALBEDO * second_color.rgb, second);
-		indirect *= mix(vec3(1.0), ALBEDO, shade_controls.z);
+		vec3 indirect = mix(shadow_sample * shadow_color.rgb, lit_albedo * second_color.rgb, second);
+		indirect *= mix(vec3(1.0), lit_albedo, shade_controls.z);
 		indirect *= color;
 		if (shadow_environment > 0.0 && LIGHT_IS_DIRECTIONAL) {
 			vec3 probe = inverse_light_probe(mat3(INV_VIEW_MATRIX) * LIGHT, raw_color);
-			indirect = mix(indirect, ALBEDO, clamp(probe * shadow_environment, vec3(0.0), vec3(1.0)));
+			indirect = mix(indirect, lit_albedo, clamp(probe * shadow_environment, vec3(0.0), vec3(1.0)));
 		}
 		indirect = mix(min(indirect, direct), direct, feather * shadow_border_color.rgb);
 		surface = mix(indirect, direct, first);
 	}
 	// Spatial diffuse input is multiplied by the surface albedo after this pass.
-	vec3 relative = surface / max(ALBEDO, vec3(0.00001));
+	vec3 relative = surface / max(lit_albedo, vec3(0.00001));
 	float falloff = LIGHT_IS_DIRECTIONAL ? 1.0 : ATTENUATION;
-	DIFFUSE_LIGHT += relative * falloff * emission_screen_mask;
+	DIFFUSE_LIGHT += relative * falloff;
 	if (use_highlight && (LIGHT_IS_DIRECTIONAL || highlight_additional_lights)) {
 		vec3 halfway = normalize(LIGHT + VIEW);
 		float profile = pow(clamp(dot(NORMAL, halfway), 0.0, 1.0), 1.0 / highlight_roughness);

@@ -72,15 +72,15 @@ func verify() -> void:
 			var outline := mesh.material_overlay as ShaderMaterial
 			check(outline.shader.resource_path == "res://materials/character_outline.gdshader", "PC HeroRender overlay")
 			check(is_equal_approx(float(outline.get_shader_parameter("thickness")), 0.0004), "Source outline thickness")
-			check(outline.render_priority == 2 and outline.next_pass is ShaderMaterial
-					and outline.next_pass.render_priority == 3, "Layer 10 redraws its surface after HeroRender")
+			check(outline.render_priority == 8 and outline.next_pass is ShaderMaterial
+					and outline.next_pass.render_priority == 9, "Layer 10 redraws its surface after HeroRender")
 			outlined += 1
 		check(outlined > 0, "Both teams should have a live outline")
 	var foreground_count: int = 0
 	for sprite: Sprite3D in stage._environment.find_children("*", "Sprite3D", true, false):
-		if sprite.render_priority == 4:
+		if sprite.render_priority == 24:
 			foreground_count += 1
-	check(foreground_count == 5, "The morning forest's five original foreground sprites draw after the characters")
+	check(foreground_count == 5, "The morning forest's five original foreground sprites draw after VFXRender")
 	check(stage.load_board(10601), "Load the dusk demon stage")
 	var demon: GuildrunBoardUnit = stage.grid.occupants.get(Vector2i(3, 4))
 	var torso := demon.find_child("Body_002", true, false) as MeshInstance3D if demon else null
@@ -176,7 +176,47 @@ func verify_gpu() -> void:
 	material.set_shader_parameter("use_emission", true)
 	material.set_shader_parameter("emission_color", Color.RED)
 	await verify_character_pass_order(viewport, quad)
+	await verify_emission_screen(viewport, environment.environment, quad, material, sun)
 	viewport.free()
+
+
+func verify_emission_screen(viewport: SubViewport, environment: Environment, body: MeshInstance3D,
+		material: ShaderMaterial, sun: DirectionalLight3D) -> void:
+	body.material_overlay = null
+	material.set_shader_parameter("cutoff", 0.0)
+	material.set_shader_parameter("tint", Color(0.45, 0.5, 0.55, 1.0))
+	material.set_shader_parameter("emission_color", Color(0.58, 0.46, 0.36, 1.0))
+	material.set_shader_parameter("emission_texture", null)
+	material.set_shader_parameter("emission_controls", Vector3(1, 2, 0))
+	environment.ambient_light_source = Environment.AMBIENT_SOURCE_COLOR
+	environment.ambient_light_color = Color(0.8, 0.7, 0.65)
+	environment.ambient_light_energy = 0.0
+	sun.hide()
+	await RenderingServer.frame_post_draw
+	var emission := viewport.get_texture().get_image().get_pixel(87, 64).srgb_to_linear()
+	environment.ambient_light_energy = 0.75
+	sun.light_energy = 0.35
+	var ambient_red := 0.0
+	for direct in [false, true]:
+		sun.visible = direct
+		material.set_shader_parameter("use_emission", false)
+		await RenderingServer.frame_post_draw
+		var base := viewport.get_texture().get_image().get_pixel(87, 64).srgb_to_linear()
+		if direct:
+			check(base.r > ambient_red + 0.02, "The directional light and highlight contribute to the Screen test")
+		else:
+			ambient_red = base.r
+		material.set_shader_parameter("use_emission", true)
+		await RenderingServer.frame_post_draw
+		var actual := viewport.get_texture().get_image().get_pixel(87, 64)
+		var expected := Color(
+			base.r + (1.0 - base.r) * emission.r,
+			base.g + (1.0 - base.g) * emission.g,
+			base.b + (1.0 - base.b) * emission.b).linear_to_srgb()
+		check(base.r > 0.005 and absf(expected.r - actual.r) < 3.0 / 255.0
+				and absf(expected.g - actual.g) < 3.0 / 255.0
+				and absf(expected.b - actual.b) < 3.0 / 255.0,
+				"Screen emission blends over all light (direct=%s, expected=%s, actual=%s)" % [direct, expected, actual])
 
 
 func verify_character_pass_order(viewport: SubViewport, body: MeshInstance3D) -> void:
@@ -209,10 +249,21 @@ func verify_character_pass_order(viewport: SubViewport, body: MeshInstance3D) ->
 			"HeroRender02 restores the opaque-lit surface over ordinary world translucency")
 	check(early.get_pixelv(cutout).b > 0.25 and early.get_pixelv(cutout).is_equal_approx(late.get_pixelv(cutout)),
 			"HeroRender02 does not fill a cutout hole with the opaque scene")
-	glow_material.render_priority = 4
+	glow_material.render_priority = 16
 	await RenderingServer.frame_post_draw
 	check(viewport.get_texture().get_image().get_pixelv(solid).b > 0.25,
-			"Foreground transparency still covers the character surface")
+			"VFXRender covers the restored character surface")
+	var foreground := glow.duplicate() as MeshInstance3D
+	foreground.position.z = 0.5
+	var foreground_material := glow_material.duplicate() as StandardMaterial3D
+	foreground_material.albedo_color = Color.GREEN
+	foreground_material.render_priority = 24
+	foreground.material_override = foreground_material
+	viewport.add_child(foreground)
+	await RenderingServer.frame_post_draw
+	var front := viewport.get_texture().get_image().get_pixelv(solid)
+	check(front.is_equal_approx(Color.GREEN), "ForegroundRender covers layer 8")
+	foreground.free()
 	glow.free()
 
 

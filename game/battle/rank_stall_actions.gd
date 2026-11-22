@@ -28,7 +28,7 @@ func apply_stall(clock: Dictionary, owner: GuildrunBoardUnit,
 			if stacks > 0:
 				for enemy: GuildrunBoardUnit in targets:
 					if not enemy.defeated and enemy.is_hero != owner.is_hero:
-						encounter._add_elemental_status(enemy, 2 if frost else 1, stacks)
+						encounter._add_elemental_status(enemy, 2 if frost else 1, stacks, owner)
 		283:
 			encounter._rank_growth.grant(owner, int(clock.owner_id), modifier, "Magic", 40)
 		284:

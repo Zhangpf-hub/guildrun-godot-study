@@ -26,6 +26,7 @@ class GlowParticle:
 @export var tint_min: Color = Color.WHITE
 @export var tint_max: Color = Color.WHITE
 @export var alpha_curve: Gradient
+# The ground effect uses a flat BoxEdge shape in the local XZ plane.
 @export var ground_half_extents: Vector2
 @export var emission_direction: Vector3 = Vector3.FORWARD
 # Radius and depth of a zero-angle cone volume.
@@ -97,9 +98,7 @@ func _emit_at(time: float) -> void:
 			particle.origin = particle.quad.basis.orthonormalized() * Vector3(
 					cos(angle) * radius, depth, sin(angle) * radius)
 		else:
-			particle.origin = Vector3(
-					_rng.randf_range(-ground_half_extents.x, ground_half_extents.x), 0.0,
-					_rng.randf_range(-ground_half_extents.y, ground_half_extents.y))
+			particle.origin = _ground_edge_origin()
 		var width := _between(width_range)
 		particle.quad.scale = Vector3(width, _between(height_range) if independent_height else width, 1.0)
 		if emission_cylinder.x <= 0.0:
@@ -107,6 +106,20 @@ func _emit_at(time: float) -> void:
 			particle.quad.set_instance_shader_parameter(&"sprite_pose", Vector4(
 					_between(spin_range), 1.0 / float(atlas_columns), float(start_frame) / float(atlas_columns), 0.0))
 		return
+
+
+func _ground_edge_origin() -> Vector3:
+	var x := _rng.randf_range(-1.0, 1.0)
+	var z := _rng.randf_range(-1.0, 1.0)
+	if ground_half_extents == Vector2.ZERO:
+		return Vector3.ZERO
+	# The three box edge axes are equally likely. Vertical edges collapse to corners.
+	var edge_axis := _rng.randi_range(0, 2)
+	if edge_axis != 0:
+		x = -1.0 if x < 0.0 else 1.0
+	if edge_axis != 1:
+		z = -1.0 if z < 0.0 else 1.0
+	return Vector3(x * ground_half_extents.x, 0.0, z * ground_half_extents.y)
 
 
 func _update_quad(particle: GlowParticle, age: float) -> void:

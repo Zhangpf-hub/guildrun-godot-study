@@ -87,6 +87,24 @@ var _death_blend_tween: Tween
 var _revive_tween: Tween
 var _revive_materials: Dictionary[MeshInstance3D, Material] = {}
 var _death_appearance_speed: float = 1.0
+var _ragdoll_profile: Dictionary
+var _ragdoll_impact: Dictionary
+var _ragdoll: GuildrunCharacterRagdoll
+var _ragdoll_animation_stop: Tween
+var _ragdoll_start_delay: Tween
+var _yuna_skill_effect: Node3D
+var _yuna_charge_effect: Node3D
+var _yuna_wind_mount: BoneAttachment3D
+var _yuna_wind_effect: Node3D
+var _yuna_charge_mount: BoneAttachment3D
+var _yuna_flight_mount: BoneAttachment3D
+var _yuna_release_effect: Node3D
+var _yuna_flight_effect: Node3D
+var _yuna_landing_effect: Node3D
+var effect_scene_clock: Callable
+var _yuna_effects: Array[Node3D] = []
+var _yuna_basic_effects: Array[Node3D] = []
+var _yuna_basic_mount: Node3D
 var _basic_hit_q16: int
 var _basic_duration_q16: int
 var _action_pending := false
@@ -285,6 +303,8 @@ func begin_active_ability(target: GuildrunBoardUnit = null, elapsed_q16: int = 0
 	cast_remaining_q16 = maxi(cast_release_q16, cast_duration_q16)
 	reset_basic_attack()
 	play_state("SkillAttack")
+	if ability_kind == "shadow_strike":
+		_start_yuna_skill_effect()
 	skill_attack_started.emit()
 
 
@@ -307,13 +327,14 @@ func resurrect(restored_health: int) -> void:
 	cast_remaining_q16 = 0
 	cast_release_q16 = -1
 	set_visual_offset(Vector3.ZERO)
+	settle_death_appearance(true)
 	play_idle()
 
 
 func set_visual_offset(offset: Vector3) -> void:
 	var change := transform.basis.inverse() * (offset - visual_offset)
 	for child in get_children():
-		if child is Node3D:
+		if child is Node3D and not child.top_level:
 			child.position += change
 	visual_offset = offset
 
@@ -322,6 +343,15 @@ func add_rig(binding: Dictionary) -> void:
 	var rig := (load(binding.model) as PackedScene).instantiate() as Node3D
 	rig.rotation.y = PI
 	add_child(rig)
+	if ability_kind == "shadow_strike":
+		for skeleton: Skeleton3D in rig.find_children("*", "Skeleton3D", true, false):
+			if skeleton.find_bone(&"hand_R") >= 0:
+				_yuna_basic_mount = Node3D.new()
+				_yuna_basic_mount.name = &"BasicAttackVfxParent"
+				# The particle mesh already converts Unity's forward axis; undo the FBX rig correction.
+				_yuna_basic_mount.rotation.y = -rig.rotation.y
+				skeleton.get_parent().add_child(_yuna_basic_mount)
+				break
 	# FBX import sanitizes node names such as Body.002 to Body_002.
 	var imported_names: Dictionary = {}
 	for source_name: String in binding.meshes:
@@ -368,14 +398,149 @@ func _begin_death_appearance() -> void:
 				.set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
 
 
+func _start_yuna_skill_effect() -> void:
+	_stop_yuna_skill_effect()
+	_yuna_skill_effect = _add_yuna_effect("res://battle/yuna_skill_hit.tscn", self)
+	_yuna_skill_effect.position += basis.inverse() * visual_offset
+	_start_yuna_charge_effect()
+	if not is_instance_valid(_yuna_charge_mount):
+		return
+
+	var skeleton := _yuna_charge_mount.get_skeleton()
+	var character_root := skeleton.get_parent() as Node3D
+	_yuna_wind_mount = skeleton.get_node_or_null("VFX_Ayaka_SkillAttack_01") as BoneAttachment3D
+	if _yuna_wind_mount != null:
+		_yuna_wind_effect = _add_yuna_effect("res://battle/yuna_skill_wind.tscn",
+			_yuna_wind_mount.get_node("VFX_Ayaka_SkillAttack_01"))
+	_yuna_release_effect = _add_yuna_effect("res://battle/yuna_skill_release.tscn", character_root)
+	_yuna_landing_effect = _add_yuna_effect("res://battle/yuna_skill_landing.tscn", character_root)
+	_yuna_flight_mount = skeleton.get_node_or_null("VFX_Slot") as BoneAttachment3D
+	if _yuna_flight_mount != null:
+		_yuna_flight_effect = _add_yuna_effect("res://battle/yuna_skill_flight.tscn",
+			_yuna_flight_mount.get_node("VFX_Slot"))
+
+
+func _add_yuna_effect(path: String, anchor: Node3D) -> Node3D:
+	var effect := _new_yuna_effect(path, anchor)
+	_yuna_effects.append(effect)
+	return effect
+
+
+func _new_yuna_effect(path: String, anchor: Node3D, action_speed: float = 1.0) -> Node3D:
+	var scene := load(path) as PackedScene
+	var effect := scene.instantiate() as Node3D
+	effect.speed_scale = _death_appearance_speed
+	effect.action_speed_scale = action_speed
+	effect.scene_time = effect_scene_clock
+	anchor.add_child(effect)
+	return effect
+
+
+func _start_yuna_charge_effect() -> void:
+	if not is_instance_valid(_yuna_charge_mount):
+		for skeleton: Skeleton3D in find_children("*", "Skeleton3D", true, false):
+			var hand := skeleton.find_bone(&"hand_R")
+			if hand >= 0:
+				_yuna_charge_mount = BoneAttachment3D.new()
+				_yuna_charge_mount.bone_idx = hand
+				skeleton.add_child(_yuna_charge_mount)
+				break
+	if is_instance_valid(_yuna_charge_mount):
+		_yuna_charge_effect = _add_yuna_effect("res://battle/yuna_skill_charge.tscn", _yuna_charge_mount)
+
+
+func _stop_yuna_skill_effect() -> void:
+	for effect: Variant in _yuna_effects:
+		if is_instance_valid(effect):
+			effect.hide()
+			effect.queue_free()
+	_yuna_effects.clear()
+	_yuna_skill_effect = null
+	_yuna_charge_effect = null
+	_yuna_release_effect = null
+	_yuna_flight_effect = null
+	_yuna_landing_effect = null
+	_yuna_wind_effect = null
+
+
+func configure_ragdoll(profile: Dictionary, impact: Dictionary) -> void:
+	_ragdoll_profile = profile
+	_ragdoll_impact = impact
+
+
+func _play_death_motion(attacker: GuildrunBoardUnit, damage: int) -> void:
+	if not _ragdoll_profile.is_empty():
+		var anchor: String = _ragdoll_profile.bodies[0].name
+		for skeleton: Skeleton3D in find_children("*", "Skeleton3D", true, false):
+			if skeleton.find_bone(anchor) < 0:
+				continue
+			var direction := global_basis.z.normalized()
+			if is_instance_valid(attacker):
+				var away := global_position - attacker.global_position
+				away.y = 0.0
+				if not away.is_zero_approx():
+					direction = away.normalized()
+			var fraction := clampf(inverse_lerp(_ragdoll_impact.min_damage, _ragdoll_impact.max_damage, damage), 0.0, 1.0)
+			var impulse := direction * lerpf(_ragdoll_impact.min_force, _ragdoll_impact.max_force, fraction)
+			_queue_ragdoll(skeleton, impulse)
+			return
+	play_state("Die")
+
+
+func _queue_ragdoll(skeleton: Skeleton3D, impulse: Vector3) -> void:
+	# HandleEntityDeath uses four Unity FixedUpdate steps at 50 Hz.
+	_ragdoll_start_delay = create_tween().set_process_mode(Tween.TWEEN_PROCESS_PHYSICS)
+	_ragdoll_start_delay.set_speed_scale(_death_appearance_speed)
+	_ragdoll_start_delay.tween_interval(4.0 / 50.0)
+	_ragdoll_start_delay.tween_callback(_activate_ragdoll.bind(skeleton, impulse))
+
+
+func _activate_ragdoll(skeleton: Skeleton3D, impulse: Vector3) -> void:
+	_ragdoll_start_delay = null
+	if not is_instance_valid(skeleton):
+		return
+	_ragdoll = load("res://battle/character_ragdoll.gd").new()
+	_ragdoll.name = &"DeathRagdoll"
+	GuildrunCharacterRagdoll.restore_missing_leaves(skeleton, _ragdoll_profile)
+	skeleton.add_child(_ragdoll)
+	_ragdoll.start(skeleton, _ragdoll_profile, impulse, _death_appearance_speed)
+	# The current animator continues to drive the non-physics tracks for 0.25 seconds.
+	_ragdoll_animation_stop = create_tween().set_speed_scale(_death_appearance_speed)
+	_ragdoll_animation_stop.tween_interval(0.25)
+	_ragdoll_animation_stop.tween_callback(func() -> void:
+		for player in _motion_players:
+			player.pause()
+	)
+
 func set_death_appearance_speed(multiplier: float) -> void:
 	_death_appearance_speed = multiplier
+	if _ragdoll_start_delay != null:
+		_ragdoll_start_delay.set_speed_scale(multiplier)
+	if is_instance_valid(_ragdoll):
+		_ragdoll.set_speed(multiplier)
+	if _ragdoll_animation_stop != null and _ragdoll_animation_stop.is_valid():
+		_ragdoll_animation_stop.set_speed_scale(multiplier)
+	for effects: Array[Node3D] in [_yuna_effects, _yuna_basic_effects]:
+		for effect: Variant in effects:
+			if is_instance_valid(effect):
+				effect.speed_scale = multiplier
 	if _death_blend_tween != null and _death_blend_tween.is_valid():
 		_death_blend_tween.set_speed_scale(multiplier)
 
 
 func settle_death_appearance(restored: bool) -> void:
 	_cancel_revival_flash()
+	if restored and _ragdoll_start_delay != null:
+		_ragdoll_start_delay.kill()
+		_ragdoll_start_delay = null
+	if restored and is_instance_valid(_ragdoll):
+		if _ragdoll_animation_stop != null and _ragdoll_animation_stop.is_valid():
+			_ragdoll_animation_stop.kill()
+		_ragdoll_animation_stop = null
+		_ragdoll.physical_bones_stop_simulation()
+		_ragdoll.active = false
+		_ragdoll.queue_free()
+		_ragdoll = null
 	if _death_blend_tween != null:
 		_death_blend_tween.kill()
 		_death_blend_tween = null
@@ -416,7 +581,8 @@ func _cancel_revival_flash() -> void:
 
 
 func take_damage(amount: int, source: GuildrunBoardUnit = null,
-		origin := GuildrunBattleStatistics.Origin.OTHER, mitigated := 0, relic := 0) -> void:
+		origin := GuildrunBattleStatistics.Origin.OTHER, mitigated := 0, relic := 0,
+		status_kind := GuildrunBattleStatistics.StatusKind.NONE) -> void:
 	if trial_damage_immune:
 		return
 	var remaining := maxi(0, amount)
@@ -434,6 +600,8 @@ func take_damage(amount: int, source: GuildrunBoardUnit = null,
 		# The native DamageLogEntry records the full post-shield hit, including overkill.
 		battle_statistics.damage(source.get_instance_id() if source else 0, get_instance_id(), origin,
 				remaining, maxi(0, amount) - remaining, mitigated, relic)
+		if not is_hero and status_kind != GuildrunBattleStatistics.StatusKind.NONE:
+			battle_statistics.record_status_damage(status_kind, remaining)
 	set_meta("health", health)
 	if remaining > 0 and health > 0 and passive_id() == 204 and not fury_used and health * 2 <= max_health:
 		fury_used = true
@@ -454,7 +622,13 @@ func take_damage(amount: int, source: GuildrunBoardUnit = null,
 		defeated = true
 		stealth_remaining_q16 = 0
 		_action_pending = false
-		play_state("Die")
+		_stop_yuna_skill_effect()
+		for effect: Variant in _yuna_basic_effects:
+			if is_instance_valid(effect):
+				effect.hide()
+				effect.queue_free()
+		_yuna_basic_effects.clear()
+		_play_death_motion(source, remaining)
 		_begin_death_appearance()
 
 
@@ -533,7 +707,13 @@ func begin_basic_attack(target: GuildrunBoardUnit, speed_multiplier_q16: int) ->
 	_action_pending = true
 	_hit_remaining_q16 = (_basic_hit_q16 << 16) / speed_multiplier_q16
 	_animation_remaining_q16 = (_basic_duration_q16 << 16) / speed_multiplier_q16
-	play_state("BasicAttack", float(speed_multiplier_q16) / GuildrunCombatMath.ONE)
+	var action_speed := float(speed_multiplier_q16) / GuildrunCombatMath.ONE
+	play_state("BasicAttack", action_speed)
+	if is_instance_valid(_yuna_basic_mount):
+		for i in range(_yuna_basic_effects.size() - 1, -1, -1):
+			if not is_instance_valid(_yuna_basic_effects[i]):
+				_yuna_basic_effects.remove_at(i)
+		_yuna_basic_effects.append(_new_yuna_effect("res://battle/yuna_basic_slash.tscn", _yuna_basic_mount, action_speed))
 
 
 func reset_basic_attack() -> void:

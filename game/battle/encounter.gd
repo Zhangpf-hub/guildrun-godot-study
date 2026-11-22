@@ -91,6 +91,7 @@ var combat_seed: int
 var _frame := 0
 var _deaths_this_step: Dictionary[GuildrunBoardUnit, bool] = {}
 var battle_time_q16 := 0
+var _effect_scene_time := Time.get_ticks_usec() / 1000000.0
 var _run_battle_time_q16: int = 0
 var _completed_battles: int = 0
 var _pending_battle_result: Callable
@@ -441,6 +442,7 @@ func _deploy_starter(row: Dictionary) -> void:
 
 func _register(unit: GuildrunBoardUnit) -> void:
 	_units.append(unit)
+	unit.effect_scene_clock = effect_scene_time
 	unit.set_death_appearance_speed(0.0 if _tutorial_paused() else simulation_speed.multiplier())
 	if phase == Phase.FIGHT:
 		_register_battle_statistics(unit)
@@ -468,7 +470,19 @@ func _register(unit: GuildrunBoardUnit) -> void:
 		bar.set_equipment(_stage, first_shop, _equipment_panel, int(unit.stat("Id")._sequentialId))
 
 
+func effect_scene_time() -> float:
+	return _effect_scene_time
+
+
+func _advance_effect_scene_time(delta: float) -> void:
+	if phase != Phase.FIGHT:
+		_effect_scene_time += delta
+	elif not _tutorial_paused():
+		_effect_scene_time += delta * simulation_speed.multiplier()
+
+
 func _process(delta: float) -> void:
+	_advance_effect_scene_time(delta)
 	if _first_tutorial != null:
 		_first_tutorial.advance_time(delta)
 	if _combat_tracker_guide != null:
@@ -923,7 +937,7 @@ func _apply_rank_opening_effects() -> void:
 				if amount > 0:
 					for target in _units:
 						if not target.is_hero and not target.defeated:
-							_add_elemental_status(target, int(rule.status), amount)
+							_add_elemental_status(target, int(rule.status), amount, owner)
 	if first_shop == null:
 		return
 	for owner_id: int in first_shop.roster:
@@ -1086,6 +1100,8 @@ func _step_battle(dt: int, present_result := false) -> void:
 	_planned_moves.clear()
 	_advance_projectiles(dt)
 	_tick_riftstorm(dt)
+	if battle_statistics != null:
+		battle_statistics.settle_status_damage()
 	_deaths_this_step.clear()
 	var enemies_alive := _units.any(func(u: GuildrunBoardUnit): return not u.is_hero and not u.defeated)
 	var survivors := _units.filter(func(u: GuildrunBoardUnit): return u.is_hero and not u.defeated).size()
@@ -1811,9 +1827,9 @@ func _on_attack_action(target: GuildrunBoardUnit, source: GuildrunBoardUnit) -> 
 	source.passive_attacks += 1
 	if source.passive_attacks % 3 == 0:
 		match source.passive_id():
-			114: _add_poison(target, int(source.stat("Crit")) / 33)
-			118: _add_poison(target, 1 + int(source.stat("Crit")) / 50)
-			120: _add_poison(target, 1 + int(source.stat("Crit")) / 33)
+			114: _add_poison(target, int(source.stat("Crit")) / 33, source)
+			118: _add_poison(target, 1 + int(source.stat("Crit")) / 50, source)
+			120: _add_poison(target, 1 + int(source.stat("Crit")) / 33, source)
 	var damage := source.effective_attack_damage()
 	var settings: Dictionary = source.stat("AttackSettings")
 	var speed := int(settings["<ProjectileSpeed>k__BackingField"].RawValue)
@@ -1933,7 +1949,7 @@ func _tick_cast(unit: GuildrunBoardUnit, dt: int) -> void:
 						var data := unit.ability_data
 						var damage := _ability_attack_damage(unit, data._attacks._attacks[0])
 						var poison := int(data._basePoisonPerHead) + int(unit.stat("Attack")) / int(data._poisonPerHeadAttackInterval)
-						_add_poison(victim, unit.hydra_heads * poison)
+						_add_poison(victim, unit.hydra_heads * poison, unit)
 						_land(victim, unit.hydra_heads * damage, unit)
 				"SeraphaelAbilityAction", "AreaOfEffectAction", "SnakeAction", "FloeriaAbilityAction", "GustavAbilityAction", "PimentaAbilityAction":
 					_start_recruit_area(unit)
@@ -1944,7 +1960,7 @@ func _tick_cast(unit: GuildrunBoardUnit, dt: int) -> void:
 					var victim := _farthest_enemy(unit)
 					if victim:
 						var poison := int(unit.ability_data._basePoison) + ((int(unit.stat("Crit")) * int(unit.ability_data._critPoisonScaling.RawValue)) >> 16)
-						_add_poison(victim, poison)
+						_add_poison(victim, poison, unit)
 						victim.stun_remaining_q16 = maxi(victim.stun_remaining_q16, int(unit.ability_data._stunDuration.RawValue))
 				"JosephinaAction":
 					_release_blessing(unit)
@@ -2024,7 +2040,7 @@ func _release_wildfire(unit: GuildrunBoardUnit) -> void:
 			continue
 		if GuildrunBattleGrid.distance(unit.grid_cell, target.grid_cell) <= int(unit.stat("AttackRange")):
 			_queue_shot(unit, target, damage, int(unit.ability_data._projectileSpeed.RawValue))
-			_add_elemental_status(target, 1, burn)
+			_add_elemental_status(target, 1, burn, unit)
 			if unit.passive_id() == 101403:
 				_land(target, target.burn_stacks * 7 * unit.rank, unit)
 
@@ -2034,13 +2050,13 @@ func _apply_fire_opener(unit: GuildrunBoardUnit) -> void:
 	var stacks := 25 + int(unit.stat("Magic")) / 3
 	for enemy in _units:
 		if enemy.is_hero != unit.is_hero and not enemy.defeated and GuildrunBattleGrid.distance(unit.grid_cell, enemy.grid_cell) <= int(unit.stat("AttackRange")):
-			_add_elemental_status(enemy, 1, stacks)
+			_add_elemental_status(enemy, 1, stacks, unit)
 
 
 func _burn_opponents(source: GuildrunBoardUnit, stacks: int) -> void:
 	for target in _units:
 		if target.is_hero != source.is_hero and not target.defeated and stacks > 0:
-			_add_elemental_status(target, 1, stacks)
+			_add_elemental_status(target, 1, stacks, source)
 
 
 func _ability_attack_damage(unit: GuildrunBoardUnit, attack: Dictionary) -> int:
@@ -2176,7 +2192,7 @@ func _release_petrification(unit: GuildrunBoardUnit) -> void:
 		if target.is_hero == unit.is_hero or target.defeated or target.current_target != unit:
 			continue
 		target.stun_remaining_q16 = maxi(target.stun_remaining_q16, int(status._baseStunDuration) << 16)
-		_add_poison(target, int(status._poisonPerStack) * int(unit.ability_progress.get("stone_skin", 0)))
+		_add_poison(target, int(status._poisonPerStack) * int(unit.ability_progress.get("stone_skin", 0)), unit)
 		_land(target, damage, unit)
 
 
@@ -2533,10 +2549,10 @@ func _apply_area_pulse(source: GuildrunBoardUnit, world_to_area: Transform3D, sh
 					"ApplyStatusFromOwnerStatAction":
 						var stat := int(source.stat(GuildrunBoardUnit.STAT_NAMES[int(data.StatType)]))
 						var stacks := int(data.Base) + ((stat / int(data.Increment) * int(data.Multiplier.RawValue)) >> 16)
-						_add_elemental_status(target, int(data.Status), stacks)
+						_add_elemental_status(target, int(data.Status), stacks, source)
 					"ApplyStatusFlatFromStatWithBaseAction":
 						var stat := int(source.stat(GuildrunBoardUnit.STAT_NAMES[int(data.Stat)]))
-						_add_elemental_status(target, int(data.Status), int(data.Base) + stat / int(data.Increment))
+						_add_elemental_status(target, int(data.Status), int(data.Base) + stat / int(data.Increment), source)
 					"DealCritableDamageWithScalingAction":
 						_land_critable(target, _scaled_amount(source, int(data.BaseDamage), data.Scalings), source)
 					"ApplyShieldWithScalingAction":
@@ -2567,7 +2583,7 @@ func _apply_recruit_area(unit: GuildrunBoardUnit, world_to_area: Transform3D) ->
 		if data.has("percent_status"):
 			var status: Dictionary = data.percent_status
 			var stat := int(unit.stat(GuildrunBoardUnit.STAT_NAMES[int(status._statType)]))
-			_add_elemental_status(target, int(status._status), int(status._base) + ((stat * int(status._percent.RawValue)) >> 16))
+			_add_elemental_status(target, int(status._status), int(status._base) + ((stat * int(status._percent.RawValue)) >> 16), unit)
 		_land_critable(target, damage, unit)
 		if target.defeated:
 			continue
@@ -2577,12 +2593,12 @@ func _apply_recruit_area(unit: GuildrunBoardUnit, world_to_area: Transform3D) ->
 			var status: Dictionary = data.flat_status
 			var magnitude := int(unit.stat(GuildrunBoardUnit.STAT_NAMES[int(status.Stat)]))
 			if int(status.Status) == 3:
-				_add_poison(target, int(status.Base) + magnitude / int(status.Increment))
+				_add_poison(target, int(status.Base) + magnitude / int(status.Increment), unit)
 		for status: Dictionary in data.statuses:
 			var magnitude := int(unit.stat(GuildrunBoardUnit.STAT_NAMES[int(status.StatType)]))
 			var stacks := int(status.Base) + (((magnitude / int(status.Increment)) * int(status.Multiplier.RawValue)) >> 16)
 			if int(status.Status) in [1, 2]:
-				_add_elemental_status(target, int(status.Status), stacks)
+				_add_elemental_status(target, int(status.Status), stacks, unit)
 
 
 func _overlaps_area(shapes: Array, center: Vector2, radius: float) -> bool:
@@ -2640,7 +2656,8 @@ func _tick_burn(unit: GuildrunBoardUnit, dt: int) -> void:
 		return
 	unit.burn_remaining_q16 -= dt
 	if unit.burn_remaining_q16 <= 0:
-		unit.take_damage(unit.burn_stacks * _stage.burn_damage_per_stack, null, GuildrunBattleStatistics.Origin.STATUS)
+		unit.take_damage(unit.burn_stacks * _stage.burn_damage_per_stack, null,
+				GuildrunBattleStatistics.Origin.STATUS, 0, 0, GuildrunBattleStatistics.StatusKind.BURN)
 		for owner in _units:
 			if owner.defeated or owner.is_hero == unit.is_hero or owner.passive_id() != 101401:
 				continue
@@ -2655,12 +2672,14 @@ func _tick_burn(unit: GuildrunBoardUnit, dt: int) -> void:
 			_on_defeated(unit)
 
 
-func _add_elemental_status(target: GuildrunBoardUnit, kind: int, stacks: int) -> void:
+func _add_elemental_status(target: GuildrunBoardUnit, kind: int, stacks: int,
+		source: GuildrunBoardUnit = null) -> void:
 	match kind:
 		1:
 			if target.burn_stacks == 0:
 				target.burn_remaining_q16 = _stage.burn_interval_q16
 			target.burn_stacks += stacks
+			_record_status_stacks(source, GuildrunBattleStatistics.StatusKind.BURN, stacks)
 			if not target.is_hero and first_shop != null:
 				first_shop.advance_quest(1021, stacks)
 		2:
@@ -2668,7 +2687,7 @@ func _add_elemental_status(target: GuildrunBoardUnit, kind: int, stacks: int) ->
 				target.frost_remaining_q16 = _stage.frost_interval_q16
 			_set_frost(target, target.frost_stacks + stacks)
 		3:
-			_add_poison(target, stacks)
+			_add_poison(target, stacks, source)
 
 
 @warning_ignore("integer_division")
@@ -2699,7 +2718,7 @@ func _land_auto(target: GuildrunBoardUnit, damage: int, source: GuildrunBoardUni
 	if not target.defeated and DRAGON_ATTACK_STATUS.has(source.passive_id()):
 		var status: Dictionary = DRAGON_ATTACK_STATUS[source.passive_id()]
 		var stacks := int(status.base) + int(source.stat("Magic")) / int(status.magic_per_stack)
-		_add_elemental_status(target, int(status.kind), stacks)
+		_add_elemental_status(target, int(status.kind), stacks, source)
 
 
 func _apply_rank_attack_effects(source: GuildrunBoardUnit, target: GuildrunBoardUnit, defer_defeat: bool) -> void:
@@ -2716,7 +2735,7 @@ func _apply_rank_attack_effects(source: GuildrunBoardUnit, target: GuildrunBoard
 		else:
 			var status: Vector2i = rank_attack_status.attack_status_amount(modifier, attack_speed)
 			if status.y > 0:
-				_add_elemental_status(target, status.x, status.y)
+				_add_elemental_status(target, status.x, status.y, source)
 
 
 func _tick_rank_auras(dt: int) -> void:
@@ -2759,14 +2778,21 @@ func _land_rank_effect(target: GuildrunBoardUnit, damage: int, source: GuildrunB
 		_land(target, damage, source, false, GuildrunBattleStatistics.Origin.OTHER, defer_defeat, simultaneous_defeat)
 
 
-func _add_poison(target: GuildrunBoardUnit, stacks: int) -> void:
+func _add_poison(target: GuildrunBoardUnit, stacks: int, source: GuildrunBoardUnit = null) -> void:
 	if stacks <= 0:
 		return
 	if target.poison_stacks == 0:
 		target.poison_remaining_q16 = _stage.poison_interval_q16
 	target.poison_stacks += stacks
+	_record_status_stacks(source, GuildrunBattleStatistics.StatusKind.POISON, stacks)
 	if not target.is_hero and first_shop != null:
 		first_shop.advance_quest(1018, stacks)
+
+
+func _record_status_stacks(source: GuildrunBoardUnit, kind: GuildrunBattleStatistics.StatusKind,
+		stacks: int) -> void:
+	if source != null and source.battle_statistics != null:
+		source.battle_statistics.record_status_applied(source.get_instance_id(), kind, stacks)
 
 
 func _tick_poison(unit: GuildrunBoardUnit, dt: int) -> void:
@@ -2774,7 +2800,8 @@ func _tick_poison(unit: GuildrunBoardUnit, dt: int) -> void:
 		return
 	unit.poison_remaining_q16 -= dt
 	if unit.poison_remaining_q16 <= 0:
-		unit.take_damage(unit.poison_stacks * _stage.poison_damage_per_stack, null, GuildrunBattleStatistics.Origin.STATUS)
+		unit.take_damage(unit.poison_stacks * _stage.poison_damage_per_stack, null,
+				GuildrunBattleStatistics.Origin.STATUS, 0, 0, GuildrunBattleStatistics.StatusKind.POISON)
 		unit.poison_remaining_q16 += _stage.poison_interval_q16
 		if unit.defeated:
 			_on_defeated(unit)
@@ -2828,7 +2855,9 @@ func _critical_effects(source: GuildrunBoardUnit, target: GuildrunBoardUnit) -> 
 				if source.has_class(4):
 					if target.poison_stacks == 0:
 						target.poison_remaining_q16 = _stage.poison_interval_q16
-					target.poison_stacks += 4 * owner.rank
+					var stacks := 4 * owner.rank
+					target.poison_stacks += stacks
+					_record_status_stacks(owner, GuildrunBattleStatistics.StatusKind.POISON, stacks)
 			102603:
 				if source.has_class(1):
 					target.combat_stats.Defense = int(target.combat_stats.get("Defense", 0)) - (owner.rank + 1)

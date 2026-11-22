@@ -10,9 +10,12 @@ layout(set = 0, binding = 3) uniform sampler2D previous_pass;
 layout(set = 0, binding = 4) uniform sampler2D blue_noise;
 
 layout(push_constant, std430) uniform Settings {
-	mat4 inverse_projection;
+	vec4 inverse_xy; // Diagonal and depth terms for X and Y.
+	vec4 inverse_zw; // Depth and homogeneous terms.
+	vec4 inverse_offset;
 	vec4 projection_xy;
 	vec4 projection_w;
+	vec4 world_to_view; // Camera rotation, without translation.
 	vec4 parameters; // Effective radius, intensity, eye-depth falloff, pass.
 	vec4 noise; // Pixel offset, atlas row and row count.
 } settings;
@@ -24,8 +27,10 @@ const float sample_angle[8] = float[8](0.92968750, 0.76171875, 0.13333330, 0.015
 		0.00000000, 0.10546875, 0.64062500, 0.74609375);
 
 vec3 view_position(vec2 uv, float depth) {
-	vec4 position = settings.inverse_projection * vec4(uv * 2.0 - 1.0, depth, 1.0);
-	return position.xyz / position.w;
+	vec2 xy = (uv * 2.0 - 1.0) * settings.inverse_xy.xy
+			+ depth * settings.inverse_xy.zw + settings.inverse_offset.xy;
+	vec2 zw = depth * settings.inverse_zw.xy + settings.inverse_zw.zw;
+	return vec3(xy, zw.x) / zw.y;
 }
 
 vec2 project_position(vec3 point) {
@@ -35,17 +40,24 @@ vec2 project_position(vec3 point) {
 	return clamp(0.5 + 0.5 * xy / w, vec2(0.0), vec2(1.0));
 }
 
+vec3 rotate_vector(vec3 direction, vec3 rotation, float w) {
+	vec3 tangent = 2.0 * cross(rotation, direction);
+	return direction + w * tangent + cross(rotation, tangent);
+}
+
 vec4 estimate_visibility(vec2 uv, ivec2 size) {
 	float depth = textureLod(camera_depth, uv, 0.0).r;
-	vec3 packed_normal = textureLod(camera_normals, uv, 0.0).rgb;
 	if (depth < 0.00001) {
-		return vec4(0.0, packed_normal);
+		return vec4(0.0, vec3(0.5));
 	}
 	vec3 center = view_position(uv, depth);
 	if (-center.z >= settings.parameters.z) {
-		return vec4(0.0, packed_normal);
+		return vec4(0.0, vec3(0.5));
 	}
-	vec3 normal = normalize(packed_normal * 2.0 - 1.0);
+	vec3 normal = normalize(textureLod(camera_normals, uv, 0.0).rgb * 2.0 - 1.0);
+	vec4 rotation = settings.world_to_view;
+	// The source samples in Unity world axes. The imported world reverses Z.
+	vec3 unity_normal = rotate_vector(normal, -rotation.xyz, rotation.w) * vec3(1.0, 1.0, -1.0);
 	float obscurance = 0.0;
 	float radius = settings.parameters.x;
 	for (int sample_index = 0; sample_index < 8; sample_index++) {
@@ -55,8 +67,9 @@ vec4 estimate_visibility(vec2 uv, ivec2 size) {
 		float random_value = textureLod(blue_noise, noise_uv, 0.0).r;
 		float z = 2.0 * fract(sample_z[sample_index] + random_value) - 1.0;
 		float angle = (sample_angle[sample_index] + random_value) * 628.3185307;
-		vec3 direction = vec3(vec2(cos(angle), sin(angle)) * sqrt(max(0.0, 1.0 - z * z)), z);
-		float side = dot(direction, normal) < 0.0 ? -1.0 : 1.0;
+		vec3 unity_direction = vec3(vec2(cos(angle), sin(angle)) * sqrt(max(0.0, 1.0 - z * z)), z);
+		float side = dot(unity_direction, unity_normal) < 0.0 ? -1.0 : 1.0;
+		vec3 direction = rotate_vector(unity_direction * vec3(1.0, 1.0, -1.0), rotation.xyz, rotation.w);
 		vec3 sample_point = center + direction * (side * radius * mix(0.1, 1.0, fraction * fraction));
 		vec2 sample_uv = project_position(sample_point);
 		float sample_depth = textureLod(camera_depth, sample_uv, 0.0).r;
@@ -71,7 +84,7 @@ vec4 estimate_visibility(vec2 uv, ivec2 size) {
 	}
 	float falloff = 1.0 + center.z / settings.parameters.z;
 	float amount = pow(clamp(obscurance * radius * settings.parameters.y * falloff * falloff / 8.0, 0.0, 1.0), 0.6);
-	return vec4(amount, packed_normal);
+	return vec4(amount, unity_normal * 0.5 + 0.5);
 }
 
 float normal_weight(vec3 center, vec3 neighbor) {

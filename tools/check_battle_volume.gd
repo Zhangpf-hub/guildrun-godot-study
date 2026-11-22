@@ -249,6 +249,8 @@ func verify_shadow_receiver_response() -> void:
 	var camera := Camera3D.new()
 	camera.projection = Camera3D.PROJECTION_ORTHOGONAL
 	camera.size = 4.0
+	# Orthographic cameras use their far plane to fit the directional shadow map.
+	camera.far = 10.0
 	camera.position.y = 4.0
 	camera.rotation.x = -PI / 2.0
 	viewport.add_child(camera)
@@ -277,7 +279,7 @@ func verify_shadow_receiver_response() -> void:
 	sun.rotation.x = -PI / 4.0
 	sun.light_color = Color.CYAN
 	sun.shadow_enabled = true
-	sun.shadow_bias = 0.02
+	sun.shadow_bias = 0.0
 	sun.shadow_normal_bias = 0.0
 	sun.directional_shadow_mode = DirectionalLight3D.SHADOW_ORTHOGONAL
 	sun.directional_shadow_max_distance = 10.0
@@ -401,6 +403,21 @@ func verify() -> void:
 	if ground_quad != null:
 		ground_glow = (ground_quad.mesh as QuadMesh).material as ShaderMaterial
 		expect(ground.get_child_count() == 2 and ground_quad.visible and not ground.is_processing(), "Wrong ground glow burst")
+		var edge_counts := Vector3i.ZERO
+		var half_extents: Vector2 = ground.ground_half_extents
+		for sample in 300:
+			var origin: Vector3 = ground._ground_edge_origin()
+			var on_x_edge := is_equal_approx(absf(origin.x), half_extents.x)
+			var on_z_edge := is_equal_approx(absf(origin.z), half_extents.y)
+			if on_x_edge and on_z_edge:
+				edge_counts.z += 1
+			elif on_x_edge:
+				edge_counts.x += 1
+			elif on_z_edge:
+				edge_counts.y += 1
+		expect(edge_counts.x + edge_counts.y + edge_counts.z == 300
+				and edge_counts.clamp(Vector3i.ONE * 70, Vector3i.ONE * 130) == edge_counts,
+				"Ground glow should emit along the box edges with one third of points at the corners")
 		expect(ground_glow.get_shader_parameter("animated_ground") and ground_glow.get_shader_parameter("additive")
 				and is_equal_approx(ground_glow.get_shader_parameter("alpha_cutoff"), 0.007)
 				and ground_glow.get_shader_parameter("double_opacity") == true
@@ -423,6 +440,8 @@ func verify() -> void:
 		expect(sun.directional_shadow_mode == DirectionalLight3D.SHADOW_ORTHOGONAL
 				and sun.directional_shadow_max_distance == 150.0 and sun.shadow_opacity == 1.0,
 				"Expected the PC single directional shadow map and authored strength")
+		expect(is_zero_approx(sun.shadow_bias) and is_zero_approx(sun.shadow_normal_bias),
+				"Morning scene should inherit both zero biases from the original PC pipeline")
 	var shadow_plane: Node3D = stage._environment.find_child("ShadowPlane", true, false)
 	var receiver := shadow_plane.get_node("UnityMesh") as MeshInstance3D
 	var receiver_material := receiver.get_active_material(0) as ShaderMaterial
@@ -501,6 +520,11 @@ func verify() -> void:
 	expect(not is_instance_valid(morning), "Previous Volume survived scene switch")
 	var evening: CanvasLayer = stage._environment.get_node("BattleVolume")
 	expect(str(evening.get_meta("unity_profiles")).contains("level11:678"), "Wrong evening profile after switch")
+	var evening_suns: Array[Node] = stage._environment.find_children("UnityLight", "DirectionalLight3D", true, false)
+	for sun: DirectionalLight3D in evening_suns:
+		expect(is_zero_approx(sun.shadow_bias) and is_zero_approx(sun.shadow_normal_bias),
+				"Switching environments must apply the directional shadow settings to the new light")
+	expect(evening_suns.size() == 1, "Missing the evening directional light")
 	expect(stage._environment.find_children("UnityGlow*", "MeshInstance3D", true, false).size() == 14,
 			"Evening should retain the crystal emitters from its source scene")
 	var evening_filter: Vector4 = evening.get_meta("bloom_filter", Vector4.ZERO)

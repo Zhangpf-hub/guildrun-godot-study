@@ -99,14 +99,15 @@ func _render_callback(_callback_type: int, render_data: RenderData) -> void:
 	var scene := render_data.get_render_scene_data()
 	var projection := scene.get_view_projection(0)
 	var inverse := projection.inverse()
+	var world_to_view := scene.get_cam_transform().basis.orthonormalized().transposed().get_rotation_quaternion()
 	var noise_rows := maxi(1, _noise_atlas.get_height() >> 8)
 	var parameters := PackedFloat32Array([
-		inverse.x.x, inverse.x.y, inverse.x.z, inverse.x.w,
-		inverse.y.x, inverse.y.y, inverse.y.z, inverse.y.w,
-		inverse.z.x, inverse.z.y, inverse.z.z, inverse.z.w,
-		inverse.w.x, inverse.w.y, inverse.w.z, inverse.w.w,
+		inverse.x.x, inverse.y.y, inverse.z.x, inverse.z.y,
+		inverse.z.z, inverse.z.w, inverse.w.z, inverse.w.w,
+		inverse.w.x, inverse.w.y, 0.0, 0.0,
 		projection.x.x, projection.y.y, projection.z.x, projection.z.y,
 		projection.w.x, projection.w.y, projection.z.w, projection.w.w,
+		world_to_view.x, world_to_view.y, world_to_view.z, world_to_view.w,
 		_sample_settings.x, _sample_settings.y, _sample_settings.z, 0.0,
 		float((_frame * 157) & 255), float((_frame * 67) & 255), float(_frame % noise_rows), float(noise_rows),
 	]).to_byte_array()

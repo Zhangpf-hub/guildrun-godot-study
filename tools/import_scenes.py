@@ -752,9 +752,9 @@ def import_scene(src, index, scene_path, game, prefab=None):
                               f'flip_v = {str(bool(d["m_FlipY"])).lower()}',
                               "modulate = " + vector("Color", *(d["m_Color"][k] for k in "rgba"))])
                 if name.startswith("Environment_"):
-                    # PC ForegroundRender (6673) draws layer 12 after both character passes.
+                    # PC ForegroundRender (6673) follows the character and layer-8 VFX passes.
                     if obj["m_Layer"] == 12:
-                        nodes.append("render_priority = 4")
+                        nodes.append("render_priority = 24")
                     offset = sprite_pivot_offset(sprite, d["m_FlipX"], d["m_FlipY"])
                     if any(abs(coordinate) > 0.0002 for coordinate in offset):
                         nodes.append("offset = " + vector("Vector2", *offset))

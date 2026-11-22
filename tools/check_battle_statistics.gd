@@ -53,14 +53,84 @@ func verify() -> void:
 	stats.damage(101, 201, Stats.Origin.ABILITY, 1, 0, 0)
 	expect(saved.victory and saved.elapsed_q16 == 131072 and saved.units[101].ability == 19,
 			"Previous result is independent of ongoing fight")
+	verify_status_shares()
+	verify_status_ticks()
 	verify_overkill()
 	verify_projectile_crit()
 	verify_first_fight()
 	verify_source_replay()
 	verify_second_battle_source_replay()
 	verify_second_battle_source_replay(true)
-	print("BATTLE_STATISTICS Damage sources, defense segments, support, relics and three native encounter replays")
+	print("BATTLE_STATISTICS Damage sources, status shares, defense segments, support, relics and three native encounter replays")
 	quit(1 if failed else 0)
+
+
+func verify_status_shares() -> void:
+	var stats := Stats.new()
+	stats.register(101, "A", "", true)
+	stats.register(102, "B", "", true)
+	stats.register(201, "Enemy", "", false)
+	stats.record_status_applied(101, Stats.StatusKind.BURN, 1)
+	stats.record_status_damage(Stats.StatusKind.BURN, 300)
+	var initial := stats.snapshot(1 << 16, false)
+	expect(initial.units[101].status == 300, "The sole burn source gets all burn damage")
+	stats.record_status_applied(102, Stats.StatusKind.BURN, 2)
+	stats.record_status_applied(201, Stats.StatusKind.BURN, 100)
+	stats.record_status_applied(101, Stats.StatusKind.POISON, 5)
+	stats.record_status_damage(Stats.StatusKind.POISON, 20)
+	stats.settle_status_damage()
+	stats.settle_status_damage()
+	expect(stats.units[101].status == 119 and stats.units[102].status == 199,
+			"Cumulative burn shares are 99 and 199 after Q16 truncation, with a separate 20 poison damage to A")
+	expect(stats.units[201].status == 0 and initial.units[101].status == 300,
+			"Enemy stacks do not dilute player shares, and earlier snapshots remain independent")
+
+
+func verify_status_ticks() -> void:
+	var stage := (load("res://battle/stage.tscn") as PackedScene).instantiate()
+	root.add_child(stage)
+	var fight: GuildrunEncounter = stage.encounter
+	var turtle: GuildrunBoardUnit = stage.grid.occupants[Vector2i(3, 4)]
+	fight.select_hero(4)
+	fight.start_fight()
+	var hero := fight._hero
+	var log := BattleDamageLog.new()
+	log.attach(fight)
+	var shield := int(stage.burn_damage_per_stack)
+	var enemy_poison := int(stage.poison_damage_per_stack)
+	var burn := 2 * shield
+	var poison := 4 * enemy_poison
+	turtle.gain_shield(shield, 1 << 16)
+	fight._add_elemental_status(turtle, Stats.StatusKind.BURN, 3, hero)
+	fight._add_poison(turtle, 4, hero)
+	fight._add_poison(hero, 1, turtle)
+	turtle.burn_remaining_q16 = fight.BATTLE_STEP_Q16
+	turtle.poison_remaining_q16 = fight.BATTLE_STEP_Q16
+	hero.poison_remaining_q16 = fight.BATTLE_STEP_Q16
+	fight._step_battle(fight.BATTLE_STEP_Q16)
+	var hero_id := hero.get_instance_id()
+	var enemy_id := turtle.get_instance_id()
+	var source_id := int(turtle.get_meta("enemy_id"))
+	const STATUS := Stats.Origin.STATUS
+	expect(log.hits == [[0, 0, 4, STATUS, enemy_poison], [0, 0, source_id, STATUS, burn],
+			[0, 0, source_id, STATUS, poison]], "Each status event retains an empty damage source")
+	expect(log.units[hero_id].status == burn + poison and log.units[hero_id].health_damage == enemy_poison,
+			"Player shares count only the health damage dealt to enemies")
+	expect(log.units[enemy_id].health_damage == burn + poison and log.units[enemy_id].shield_damage == shield,
+			"The status hit counts absorbed shield on the target")
+	var tracker: Control = fight._ui.get_node("BattleTracker")
+	tracker.refresh()
+	var row: Control = tracker.get_node(tracker.PANEL + "/TrackerViewHolder/HeroTrackerView")
+	expect(row.get_node("DamagePanel/Slider_4").visible and row.get_node("DamageNumber/UnityText").text == str(burn + poison),
+			"The live tracker shows the status segment after the fixed step")
+	turtle.health = 1
+	turtle.poison_remaining_q16 = fight.BATTLE_STEP_Q16
+	fight._step_battle(fight.BATTLE_STEP_Q16)
+	expect(turtle.defeated and fight.phase == GuildrunEncounter.Phase.RESULT, "Lethal poison completes the encounter")
+	var final: Dictionary = fight.last_battle_statistics.units.get(hero_id, {})
+	expect(final.get("status") == burn + 2 * poison and log.hits.back() == [0, 0, source_id, STATUS, poison],
+			"The result includes fatal poison overkill with an empty final hit source")
+	stage.free()
 
 
 func verify_overkill() -> void:

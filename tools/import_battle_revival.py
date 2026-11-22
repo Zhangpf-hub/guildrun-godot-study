@@ -1,14 +1,63 @@
-"""Import the demo's victory and Stabilizer particle prefabs from VisualFeedbackSingleton."""
+"""Import the demo's revival prefabs or supported layers of Yuna's action effects."""
 import argparse
 from contextlib import ExitStack
 import math
 from pathlib import Path
+from struct import pack
 
 from import_balancing import BuildLayouts, read_fields
 from import_scenes import Source, material_texture, mesh_asset, particle_range, quote, texture_transform, vector
 
 
 STEPS = 64
+
+# Emission time, age at emission, and Custom1.x from Wave_01 with Unity seed 6457.
+YUNA_FLIGHT_WAVE_BIRTHS = (
+    (0.0, 0.60, 21.281950),
+    (0.0, 0.40, 63.763450),
+    (0.0, 0.20, 74.239500),
+    (0.0, 0.0, 0.733895),
+    (0.0, 0.0, 24.176120),
+    (0.20, 0.0, 56.917670),
+)
+
+# Cone offsets for Glow_01 at seed 6457. The first three are present at activation.
+YUNA_FLIGHT_GLOW_OFFSETS = (
+    (0.07925109, 0.23075590),
+    (0.23951730, 0.15720500),
+    (-0.13826470, 0.16634300),
+    (0.14369510, -0.05710463),
+    (0.16132870, -0.10111850),
+    (0.18601410, 0.12206310),
+    (0.23367090, 0.16966900),
+    (0.12952330, 0.23450650),
+    (0.12129930, 0.14213990),
+    (-0.13144390, -0.18355080),
+    (-0.27470340, 0.07025955),
+    (0.13159680, -0.20246110),
+    (0.10307640, -0.06615592),
+    (0.02067764, 0.03164482),
+    (-0.02070851, 0.10039270),
+    (-0.12683930, -0.24914100),
+)
+
+# Local position, velocity, size, lifetime and roll from Unity seed 3964.
+YUNA_IMPACT_SMOKE_BIRTHS = (
+    (
+        ((-0.1418939, 0.0, 0.4568362), (-0.0336070, 0.2539590, 0.1081998), 1.0391630, 1.9660990, 356.9663),
+        ((-0.4465384, 0.0, 0.0701880), (-0.5738385, 1.3779340, 0.0901974), 2.7247460, 1.9268440, 178.5430),
+        ((0.0209422, 0.0, 0.0114587), (0.0215879, 1.1053160, 0.0118121), 2.8851600, 1.6005120, 294.9198),
+        ((0.0643547, 0.0, -0.1066389), (0.0862366, 1.4368420, -0.1428983), 2.4591570, 1.6244460, 213.0840),
+        ((0.0483610, 0.0, -0.0039756), (0.0629862, 1.3965210, -0.0051778), 3.3108750, 1.8728560, 331.6636),
+    ),
+    (
+        ((0.1020786, 0.0, 0.4299753), (0.0648705, 0.6814122, 0.2732473), 3.4771520, 1.6882570, 343.9323),
+        ((-0.2922704, 0.0, 0.3086982), (-0.1765523, 0.6477182, 0.1864759), 3.2243010, 1.6045380, 358.2908),
+        ((-0.0992735, 0.0, -0.2185507), (-0.1215149, 1.3124830, -0.2675152), 2.1730330, 1.9859220, 216.5896),
+        ((-0.3282863, 0.0, -0.0095944), (-0.4004100, 1.3078250, -0.0117022), 1.1889780, 1.8550690, 260.7342),
+        ((-0.3000292, 0.0, -0.0865027), (-0.4432132, 1.5839690, -0.1277845), 2.7708760, 1.9610500, 324.7446),
+    ),
+)
 
 
 def keyframe_value(keys, time):
@@ -65,25 +114,268 @@ def xyz(point, signs=(1, 1, -1)):
     return vector("Vector3", *(point[k] * sign for k, sign in zip("xyz", signs)))
 
 
-def add_material(src, owner, reader, trail, game, resource, lines):
+def uniform_hierarchy_scale(src, owner, transform):
+    scale = 1.0
+    while True:
+        local = transform["m_LocalScale"]
+        assert all(math.isclose(local["x"], local[axis], rel_tol=1e-6) for axis in "yz")
+        scale *= local["x"]
+        parent = transform["m_Father"]
+        if not parent["m_PathID"]:
+            return scale
+        owner, reader = src.resolve(owner, parent)
+        transform = reader.read_typetree()
+
+
+def profile_literal(profile):
+    values = (str(v).lower() if isinstance(v, bool) else format(v, ".9g") if isinstance(v, (float, int)) else v
+              for v in profile.values())
+    return "{\n" + ",\n".join(f'{quote(key)}: {value}' for key, value in zip(profile, values)) + "\n}"
+
+
+def gradient_at(gradient, progress):
+    def channel_value(channel, count, prefix):
+        keys = [(gradient[f"{prefix}time{i}"] / 65535, gradient[f"key{i}"][channel]) for i in range(count)]
+        for (start, left), (end, right) in zip(keys, keys[1:]):
+            if progress <= end and end > start:
+                return left + (right - left) * max(0.0, (progress - start) / (end - start))
+        return keys[-1][1]
+
+    assert gradient["m_Mode"] == 0
+    return (*(channel_value(channel, gradient["m_NumColorKeys"], "c") for channel in "rgb"),
+            channel_value("a", gradient["m_NumAlphaKeys"], "a"))
+
+
+def sampled_gradient(module, field):
+    gradient = module[field]["maxGradient"]
+    return vector("PackedColorArray", *(v for step in range(STEPS + 1) for v in gradient_at(gradient, step / STEPS)))
+
+
+def burst_profile(data, burst):
+    assert burst["cycleCount"] > 0 and burst["probability"] == 1.0
+    count = sorted(particle_range(burst["countCurve"]))
+    return {"count": vector("Vector2i", *(int(v) for v in count)),
+            "delay": data["startDelay"]["scalar"] + burst["time"],
+            "repeat_count": burst["cycleCount"], "repeat_interval": burst["repeatInterval"]}
+
+
+def impact_smoke_birth_profiles(birth, scale):
+    assert birth["count"] == "Vector2i(5, 5)" and birth["repeat_count"] == len(YUNA_IMPACT_SMOKE_BIRTHS)
+    for cycle, samples in enumerate(YUNA_IMPACT_SMOKE_BIRTHS):
+        delay = birth["delay"] + cycle * birth["repeat_interval"]
+        for origin, velocity, width, lifetime, roll in samples:
+            angle = math.radians(roll)
+            yield {"count": "Vector2i(1, 1)", "repeat_count": 1, "delay": delay,
+                   "width": vector("Vector2", width, width), "lifetime": vector("Vector2", lifetime, lifetime),
+                   "roll": vector("Vector2", angle, angle),
+                   "initial_position": vector("Vector3", origin[0] * scale, origin[1] * scale, -origin[2] * scale),
+                   "initial_velocity": vector("Vector3", velocity[0] * scale, velocity[1] * scale, -velocity[2] * scale)}
+
+
+def linear_material_channel(value):
+    # Unity's non-HDR Color upload uses a power of 2.2 above the sRGB display range.
+    if value > 1.0:
+        return value ** 2.2
+    return value / 12.92 if value <= 0.04045 else ((value + 0.055) / 1.055) ** 2.4
+
+
+def slash_atlas(src, owner, pointer, game):
+    texture_owner, reader = src.resolve(owner, pointer)
+    texture = reader.read()
+    size = texture.m_Width
+    levels = texture.m_MipCount
+    assert texture.m_TextureFormat == 10 and texture.m_ColorSpace == 1  # Unity DXT1 and sRGB.
+    assert size == texture.m_Height and size & (size - 1) == 0 and levels == size.bit_length()
+    payload = texture.get_image_data()
+    # DDS header with a BC1 FourCC and the complete source mip chain.
+    data = bytearray(b"DDS ")
+    data.extend(pack("<7I", 124, 0xA1007, size, size, size * size // 2, 0, levels))
+    data.extend(bytes(44))
+    data.extend(pack("<2I4s5I", 32, 4, b"DXT1", 0, 0, 0, 0, 0))
+    data.extend(pack("<5I", 0x401008, 0, 0, 0, 0))
+    offset = 0
+    for level in range(levels):
+        height = size >> level
+        blocks = max(1, height // 4)
+        rows = min(4, height)
+        # Unity starts at the bottom. Flip block rows and the row selectors inside each block.
+        for block_y in reversed(range(blocks)):
+            for block_x in range(blocks):
+                start = offset + (block_y * blocks + block_x) * 8
+                data.extend(payload[start:start + 4])
+                selectors = payload[start + 4:start + 8]
+                data.extend(selectors[:rows][::-1])
+                data.extend(selectors[rows:])
+        offset += blocks * blocks * 8
+    assert offset == len(payload)
+    relative = f"textures/{Path(texture_owner.name).stem}_{reader.path_id}.dds"
+    destination = game / relative
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    destination.write_bytes(data)
+    return relative
+
+
+def add_material(src, owner, reader, trail, game, resource, lines, skill=False, linearize_vertex_tint=False):
+    # Keep scalar uniforms as float literals, including whole-number values.
     material = reader.read_typetree()
     props = material["m_SavedProperties"]
     floats, maps = dict(props["m_Floats"]), dict(props["m_TexEnvs"])
     colors = dict(props["m_Colors"])
     _, shader = src.resolve(owner, material["m_Shader"])
-    if shader.path_id not in (707, 711, 2989, 2996):
-        raise ValueError(f"Unhandled revival shader {shader.path_id}")
+    atlas_shader = shader.path_id == 3022
+    custom_dissolve = False
+    mixed_dissolve = False
     name = f"Material{reader.path_id}"
+    if shader.path_id in (3008, 3034):
+        path = slash_atlas(src, owner, maps["Main_tex"]["m_Texture"], game)
+        additive = shader.path_id == 3034
+        depth_toggle = "Boolean_7846239A" if additive else "Boolean_BE6D81B9"
+        lines.extend([f'[sub_resource type="ShaderMaterial" id="{name}"]',
+                      'shader = ' + resource("Shader", "materials/yuna_basic_slash.gdshader"),
+                      'shader_parameter/image_texture = ' + resource("Texture2D", path),
+                      f'shader_parameter/additive = {str(additive).lower()}',
+                      f'shader_parameter/depth_fade = {str(bool(floats[depth_toggle])).lower()}'])
+        if additive:
+            intensity = floats["Vector1_ba2f839299ad461eb6b76fbb90d387aa"]
+            lines.append(f"shader_parameter/intensity = {float(intensity)}")
+        lines.append("")
+        return f'SubResource("{name}")', atlas_shader, custom_dissolve
+    if shader.path_id == 3048:
+        assert material["m_ValidKeywords"] == ["_SURFACE_TYPE_TRANSPARENT"]
+        assert floats["_SrcBlend"] == 5 and floats["_DstBlend"] == 1
+        lines.extend([f'[sub_resource type="ShaderMaterial" id="{name}"]',
+                      'shader = ' + resource("Shader", "materials/yuna_distorted_aura.gdshader")])
+        srgb = []
+        for uniform, field in (("image", "_MainTex"), ("mask", "_Mask"), ("warp", "_DistortionTexture"),
+                               ("noise", "_DissolveTexture")):
+            pointer = maps[field]["m_Texture"]
+            path, texture = material_texture(src, owner, pointer, game)
+            lines.append(f"shader_parameter/{uniform}_texture = " + resource("Texture2D", path))
+            srgb.append(float(texture.read().m_ColorSpace == 1))
+        lines.append("shader_parameter/texture_srgb = " + vector("Vector4", *srgb))
+        for prefix, native in (("image", "_MainTex"), ("warp", "_Distortion"), ("noise", "_Dissolve")):
+            for field in ("Speed", "Tiling"):
+                value = colors[f"{native}{field}"]
+                lines.append(f"shader_parameter/{prefix}_{field.lower()} = " + vector("Vector2", value["r"], value["g"]))
+        for field, native in (("warp_amount", "_DistortionAmount"), ("noise_exponent", "_DissolveAmount"),
+                              ("soft_depth", "_SoftParticles"), ("intersection_depth", "_IntersectionDepth")):
+            lines.append(f"shader_parameter/{field} = {float(floats[native])}")
+        for field, native in (("aura_tint", "_Color"), ("intersection_tint", "_IntersectionColor")):
+            lines.append(f"shader_parameter/{field} = " + vector("Vector4", *(colors[native][key] for key in "rgba")))
+        lines.append("")
+        return f'SubResource("{name}")', atlas_shader, custom_dissolve
+    if shader.path_id == 3045:
+        # The unnamed unlit pass blends the front-facing Fresnel rim over the mesh fill.
+        assert reader.path_id == 335 and not material["m_ValidKeywords"]
+        assert all(not maps[field]["m_Texture"]["m_PathID"] for field in ("_MainTex", "_Noise", "_Flow", "_Mask"))
+        assert floats["_Addnoise"] == floats["_Useonlycolor"] == 0 and floats["_Texturesopacity"] == 1
+        tint = colors["_Color"]
+        linear_tint = vector("Vector4", *(linear_material_channel(tint[channel]) for channel in "rgb"), tint["a"])
+        lines.extend([f'[sub_resource type="ShaderMaterial" id="{name}"]',
+                      'shader = ' + resource("Shader", "materials/yuna_shuriken_fresnel.gdshader"),
+                      "shader_parameter/tint = " + linear_tint,
+                      f'shader_parameter/emission_strength = {float(floats["_Emission"])}',
+                      f'shader_parameter/fresnel_scale = {float(floats["_Fresnelscale"])}',
+                      f'shader_parameter/fresnel_power = {float(floats["_Fresnelpower"])}', ""])
+        return f'SubResource("{name}")', atlas_shader, custom_dissolve
+    if shader.path_id == 712:
+        assert reader.path_id == 331
+        assert set(material["m_ValidKeywords"]) == {
+            "_DISSOLVETEXTURERADIAL_ON", "_DISTORTIONENABLED_ON", "_NOISE01RADIAL_ON",
+            "_RAMPENABLED_ON", "_SOFTPARTICLESENABLED_ON"}
+        assert all(not maps[field]["m_Texture"]["m_PathID"] for field in
+                   ("_SecondMask", "_SecondMaskProfile", "_CustomColorMask"))
+        assert floats["_DissolveGlowAmount"] == 0 and floats["_DissolveMaskSteepness"] >= 0
+        lines.extend([f'[sub_resource type="ShaderMaterial" id="{name}"]',
+                      'shader = ' + resource("Shader", "materials/yuna_charge_flare.gdshader")])
+        for uniform, field in (("main_mask", "_MainMask"), ("radial_noise", "_Noise01"),
+                               ("distortion", "_Distortion"), ("distortion_mask", "_DistortionMask"),
+                               ("color_ramp", "_Ramp")):
+            slot = maps[field]
+            assert texture_transform(slot) == "Vector4(1, 1, 0, 0)"
+            path, texture = material_texture(src, owner, slot["m_Texture"], game)
+            assert texture.read().m_ColorSpace == 1
+            lines.append(f"shader_parameter/{uniform} = " + resource("Texture2D", path))
+        for uniform, field in (("distortion_power", "_DistortionPower"), ("noise_bias", "_Noise01Negate"),
+                               ("opacity_power", "_FinalOpacityPower"), ("opacity_exponent", "_FinalOpacityExp"),
+                               ("color_power", "_FinalPower"), ("ramp_bias", "_RampAdd"),
+                               ("ramp_dynamics", "_RampAffectedByDynamics"), ("custom_mask_mix", "_CustomColorMaskSwitch"),
+                               ("fade_distance", "_SoftParticlesDistance")):
+            lines.append(f"shader_parameter/{uniform} = {float(floats[field])}")
+        for uniform, field in (("distortion_scroll", "_DistortionScrollSpeed"), ("noise_scroll", "_Noise01ScrollSpeed")):
+            lines.append(f"shader_parameter/{uniform} = " + vector("Vector2", floats[field + "U"], floats[field + "V"]))
+        lines.extend(["shader_parameter/ramp_tint = " + vector("Color", *(colors["_RampColorTint"][k] for k in "rgba")), ""])
+        return f'SubResource("{name}")', atlas_shader, custom_dissolve
+    if shader.path_id == 3027:
+        assert reader.path_id == 361 and material["m_ValidKeywords"] == ["_RAMPENABLED_ON"]
+        assert all(floats[field] == 1 for field in ("_Emission_VS_Enabled", "_Time_VS_Enabled",
+                   "_Random_Time_Offset", "_Dissolve_Mask_Enabled", "_Dissolve_Mask_Simple",
+                   "_DISSOLVETEXTUREFLIP", "_FinalOpacityPower"))
+        assert all(floats[field] == 0 for field in ("_Dissolve_Use_Flow_Texture", "_Dissolve_Mask_Flip",
+                   "_Dissolve_Simple_Enabled", "_Dissolve_Scroll_Speed", "_Distortion_Mask_Enabled", "_Global_Mask_Enabled",
+                   "_Horizontal_Mask_Enabled", "_Flip_UV_Direction"))
+        assert colors["_Distortion_Scroll_Speed"]["r"] == colors["_Distortion_Scroll_Speed"]["g"] == 0
+        lines.extend([f'[sub_resource type="ShaderMaterial" id="{name}"]',
+                      'shader = ' + resource("Shader", "materials/yuna_flight_wave.gdshader")])
+        for uniform, field in (("main_texture", "_MainTex"), ("flow_texture", "_Flow_Texture_2"),
+                               ("dissolve_texture", "_DissolveTexture"),
+                               ("distortion_normal", "_Distortion_Normal")):
+            slot = maps[field]
+            assert texture_transform(slot) == "Vector4(1, 1, 0, 0)"
+            path, texture = material_texture(src, owner, slot["m_Texture"], game)
+            assert texture.read().m_ColorSpace == int(uniform != "distortion_normal")
+            lines.append(f"shader_parameter/{uniform} = " + resource("Texture2D", path))
+        for uniform, field in (("uv_turns", "_Final_UV_Rotation"), ("final_uv_scale", "_Final_UV_U_Scale"),
+                               ("main_scale", "_Flow_Scale_U"),
+                               ("main_scroll", "_Flow_Scroll_Speed"), ("flow_scale", "_Flow_Texture_2_Scale_U"),
+                               ("flow_scroll", "_Flow_Texture_2_Scroll_Speed"), ("flow_exponent", "_Flow_Curve_Exp"),
+                               ("flow_bias", "_Flow_Texture_2_Negate"), ("distortion_amount", "_Distortion_Amount"),
+                               ("dissolve_distortion", "_Distortion_Dissolve_Amount"),
+                               ("dissolve_steepness", "_Dissolve_Mask_Steepness"),
+                               ("dissolve_softness", "_Dissolve_Smooth_Steepness"),
+                               ("opacity_exponent", "_Final_Opacity_Exp_Reversed")):
+            lines.append(f"shader_parameter/{uniform} = {float(floats[field])}")
+        scale = colors["_Distortion_UV_Scale"]
+        dissolve_scale = colors["_Dissolve_Texture_Scale"]
+        lines.extend(["shader_parameter/distortion_scale = " + vector("Vector2", scale["r"], scale["g"]),
+                      "shader_parameter/dissolve_scale = " + vector("Vector2", dissolve_scale["r"], dissolve_scale["g"]),
+                      "shader_parameter/flow_fade_in = " + vector("Vector2", floats["_Flow_Mask_SS11"], floats["_Flow_Mask_SS12"]),
+                      "shader_parameter/flow_fade_out = " + vector("Vector2", floats["_Flow_Mask_SS21"], floats["_Flow_Mask_SS22"]), ""])
+        return f'SubResource("{name}")', atlas_shader, custom_dissolve
+    ab_shader = shader.path_id == 3031
+    if shader.path_id not in (707, 711, 2989, 2996, 3022, 3031):
+        raise ValueError(f"Unhandled particle shader {shader.path_id}")
+    intensity = 1 + floats["_AddIntensity"] if atlas_shader else floats.get("_ColorIntensity", floats.get("_Emission", 1.0))
     lines.extend([f'[sub_resource type="ShaderMaterial" id="{name}"]',
                   'shader = ' + resource("Shader", "materials/revival_particle.gdshader"),
-                  f'shader_parameter/intensity = {floats.get("_ColorIntensity", floats.get("_Emission", 1.0)):.9g}',
+                  f'shader_parameter/intensity = {float(intensity)}',
                   f'shader_parameter/additive = {str(floats.get("_DstBlend") == 1).lower()}'])
-    if "_DEPTHFADE" in material["m_ValidKeywords"]:
-        lines.append(f'shader_parameter/fade_distance = {floats["_FadeDistance"]:.9g}')
-    image = "_MainTex" if "_MainTex" in maps else "_Mask"
-    use_rgb = shader.path_id == 2989 or bool(floats.get("_UseTexColor"))
+    if ab_shader:
+        # GAP_SG/AB_Unlit uses the transparent forward pass and unconverted particle vertex colors.
+        assert material["m_ValidKeywords"] == ["_SURFACE_TYPE_TRANSPARENT"]
+        assert (floats["_SrcBlend"], floats["_DstBlend"], floats["_ZWrite"]) == (5, 10, 0)
+        assert floats.get("_ColorMode", 0) == floats["_AlphaClip"] == 0
+        if colors["_Color"] != dict.fromkeys("rgba", 1.0):
+            lines.append("shader_parameter/material_tint = " + vector("Vector4", *(colors["_Color"][k] for k in "rgba")))
+        # The forward fragment program multiplies the depth gap by _SoftParticle.
+        # The serialized _SoftParticleFadeParams belongs to a different shader.
+        assert floats["_SoftParticle"] > 0
+        lines.append(f'shader_parameter/fade_distance = {1 / floats["_SoftParticle"]}')
+    elif "_DEPTHFADE" in material["m_ValidKeywords"]:
+        if atlas_shader:
+            scale = floats["_DepthFadeDistance"] / floats["_DepthFadeMax"]
+            lines.append(f"shader_parameter/raw_depth_fade = {float(scale)}")
+        else:
+            lines.append(f'shader_parameter/fade_distance = {float(floats["_FadeDistance"])}')
+    image = "_BaseTexture" if atlas_shader else "_MainTex" if "_MainTex" in maps else "_Mask"
+    use_rgb = atlas_shader or shader.path_id in (2989, 3031) or bool(floats.get("_UseTexColor"))
     lines.append(f"shader_parameter/use_rgb = {str(use_rgb).lower()}")
     bindings = {"image": image, "mask": "_MaskTex"}
+    if skill and not floats.get("_MaskMainTex"):
+        bindings.pop("mask")
+    if atlas_shader:
+        assert set(material["m_ValidKeywords"]) <= {
+            "_SURFACE_TYPE_TRANSPARENT", "_BUILTIN_SURFACE_TYPE_TRANSPARENT", "_DEPTHFADE"}
     if shader.path_id == 2989:
         bindings.update(mask="_Mask", noise="_Noise", flow="_Flow")
         speed = colors["_SpeedMainTexUVNoiseZW"]
@@ -92,46 +384,122 @@ def add_material(src, owner, reader, trail, game, resource, lines):
                       "shader_parameter/image_scroll = " + vector("Vector2", speed["r"], -speed["g"]),
                       "shader_parameter/noise_scroll = " + vector("Vector2", speed["b"], -speed["a"]),
                       "shader_parameter/flow_scroll = " + vector("Vector2", flow["r"], -flow["g"]),
-                      f'shader_parameter/flow_strength = {flow["b"]:.9g}'])
+                      f'shader_parameter/flow_strength = {float(flow["b"])}'])
         if floats["_Usedepth"]:
-            lines.append(f'shader_parameter/fade_distance = {floats["_Depthpower"]:.9g}')
-    if floats.get("_Dissolve"):
+            lines.append(f'shader_parameter/fade_distance = {float(floats["_Depthpower"])}')
+    if skill and floats.get("_Dissolve"):
+        # Impact smoke retains its lifetime stream with the shader's white default mask.
+        smoke_dissolve = owner.name == "sharedassets1.assets" and reader.path_id == 354
+        if maps["_DissolveTex"]["m_Texture"]["m_PathID"] or smoke_dissolve:
+            custom_dissolve = True
+            bindings["noise"] = "_DissolveTex"
+            lines.append("shader_parameter/custom_dissolve = true")
+            if floats.get("_MixDissolve"):
+                mixed_dissolve = True
+                bindings["dissolve_mask"] = "_Dissolve2Tex"
+                lines.append(f'shader_parameter/dissolve_mix = {float(floats["_MixAmount"])}')
+            if floats["_DissolveSmoothness"]:
+                lines.append(f'shader_parameter/custom_dissolve_softness = {float(floats["_DissolveSmoothness"])}')
+        else:
+            # The other untextured dissolve materials still use the existing approximation.
+            assert not maps["_Dissolve2Tex"]["m_Texture"]["m_PathID"] and floats["_DissolveSmoothness"] == 0
+    elif floats.get("_Dissolve"):
         bindings["noise"] = "_DissolveTex"
-        lines.extend([f'shader_parameter/dissolve_amount = {floats["_DissolveAmount"]:.9g}',
-                      f'shader_parameter/dissolve_softness = {floats.get("_DissolveSmoothness", 0.1):.9g}',
+        lines.extend([f'shader_parameter/dissolve_amount = {float(floats["_DissolveAmount"])}',
+                      f'shader_parameter/dissolve_softness = {float(floats.get("_DissolveSmoothness", 0.1))}',
                       "shader_parameter/noise_scroll = " + vector("Vector2", floats.get("_Dissolve_X_Spd", 0),
                                                                  -floats.get("_Dissolve_Y_Spd", 0))])
     if trail:
         lines.append("shader_parameter/vertex_tint = true")
+        if linearize_vertex_tint:
+            lines.append("shader_parameter/linearize_vertex_tint = true")
     for uniform, field in bindings.items():
         slot = maps.get(field)
         if not slot or not slot["m_Texture"]["m_PathID"]:
             continue
         path, texture = material_texture(src, owner, slot["m_Texture"], game)
-        lines.extend([f"shader_parameter/{uniform}_texture = " + resource("Texture2D", path),
-                      f"shader_parameter/{uniform}_uv = " + texture_transform(slot)])
+        if uniform == "dissolve_mask":
+            sampler_settings = texture.read().m_TextureSettings
+            assert sampler_settings.m_WrapU == sampler_settings.m_WrapV == 1
+        uv = texture_transform(slot)
+        sampler = uniform + "_texture"
+        if atlas_shader and uniform == "image":
+            assert uv == "Vector4(1, 1, 0, 0)"
+            tiling, offset, scroll = (colors[k] for k in ("_Tiling", "_InitOffset", "_ScrollSpeed"))
+            assert trail or all(colors["_Offset"][axis] == 0 for axis in "rg")
+            uv = vector("Vector4", tiling["r"], tiling["g"], offset["r"], 1 - tiling["g"] - offset["g"])
+            if scroll["r"] or scroll["g"]:
+                settings = texture.read().m_TextureSettings
+                assert settings.m_WrapU == settings.m_WrapV == 0
+                sampler = "repeating_image_texture"
+                lines.extend(["shader_parameter/scroll_atlas = true",
+                              "shader_parameter/atlas_scroll = " + vector("Vector2", scroll["r"], -scroll["g"])])
+        lines.extend([f"shader_parameter/{sampler} = " + resource("Texture2D", path),
+                      f"shader_parameter/{uniform}_uv = {uv}"])
         if uniform == "image" and texture.read().m_ColorSpace == 1:
             lines.append("shader_parameter/image_is_srgb = true")
+        if uniform == "noise" and custom_dissolve and texture.read().m_ColorSpace == 1:
+            lines.append("shader_parameter/dissolve_is_srgb = true")
+        if mixed_dissolve and uniform in ("mask", "dissolve_mask") and texture.read().m_ColorSpace == 1:
+            lines.append(f"shader_parameter/{uniform}_is_srgb = true")
+    if mixed_dissolve:
+        lines.append("shader_parameter/atlas_mask_uv = true")
     lines.append("")
-    return f'SubResource("{name}")'
+    return f'SubResource("{name}")', atlas_shader, custom_dissolve
 
 
-def particle_profile(data, renderer, mesh, material):
+def particle_profile(data, renderer, mesh, material, atlas_shader, custom_dissolve, skill, scale, effect_duration,
+                     ribbon_only=False, scale_with_action=False, emit_on_enable=False, flare_scale=None, flow_wave=False,
+                     effect_delay=0.0, projectile_contact_time=None, baked_view_billboard=None, presentation_offset=0.0,
+                     baked_smoke_scale=None, baked_flight_glow=False, unity_layer=0, hit_dark_blend=False):
     initial, shape = data["InitialModule"], data["ShapeModule"]
     size, color = data["SizeModule"], data["ColorModule"]
     velocity, trail = data["VelocityModule"], data["TrailModule"]
+    rotation = data["RotationModule"]
     emission = data["EmissionModule"]
-    burst, = emission["m_Bursts"][:emission["m_BurstCount"]]
-    assert burst["cycleCount"] > 0 and burst["probability"] == 1.0 and data["simulationSpeed"] == 1.0
-    count = sorted(particle_range(burst["countCurve"]))
+    distance_rate = emission["rateOverDistance"]["scalar"]
+    bursts = emission["m_Bursts"][:emission["m_BurstCount"]]
+    tracked_ribbon = ribbon_only and data["moveWithTransform"] == 0
+    simulation_speed = data["simulationSpeed"]
+    assert simulation_speed > 0
+    births = [burst_profile(data, burst) for burst in bursts]
+    rate = emission["rateOverTime"]["scalar"]
+    starts_active = skill and emit_on_enable and data["looping"] and rate > 0 and effect_delay > 0
+    if skill and rate > 0:
+        assert emission["rateOverTime"]["minMaxState"] == data["startDelay"]["minMaxState"] == 0
+        assert emission["rateOverDistance"]["scalar"] == 0
+        start = data["startDelay"]["scalar"]
+        length = effect_duration * simulation_speed - start
+        if starts_active:
+            # Play restarts the burst cycle, while the continuous emission clock keeps running.
+            assert start == 0 and not scale_with_action
+            playback = effect_delay * simulation_speed
+            length += playback
+            period = data["lengthInSec"]
+            for birth in births.copy():
+                assert birth["delay"] == 0 and birth["repeat_count"] == 1
+                birth.update(repeat_count=math.ceil(playback / period), repeat_interval=period)
+                births.append({**birth, "delay": playback,
+                               "repeat_count": math.ceil(effect_duration * simulation_speed / period)})
+            if data["prewarm"]:
+                assert not bursts and initial["startLifetime"]["minMaxState"] == 0
+                warm_particles = math.ceil(initial["startLifetime"]["scalar"] * rate - 1e-6)
+                start -= warm_particles / rate
+                length -= start
+        if not data["looping"]:
+            length = min(length, data["lengthInSec"])
+        pulse_count = math.ceil(length * rate - 1e-6) - 1
+        if pulse_count > 0:
+            births.append({"count": "Vector2i(1, 1)", "delay": start + 1 / rate,
+                           "repeat_count": pulse_count, "repeat_interval": 1 / rate})
+    for birth in births:
+        birth["delay"] += presentation_offset * simulation_speed
     profile = {
         "mesh": mesh, "material": material,
-        "count": vector("Vector2i", *(int(v) for v in count)),
-        "delay": data["startDelay"]["scalar"] + burst["time"],
-        "repeat_count": burst["cycleCount"], "repeat_interval": burst["repeatInterval"],
-        "seed": -1 if data["autoRandomSeed"] else data["randomSeed"],
-        "mode": renderer["m_RenderMode"], "alignment": renderer["m_RenderAlignment"],
-        "sorting_offset": renderer["m_SortingFudge"],
+        **(births[0] if births else {}),
+        "seed": -1 if data["autoRandomSeed"] else (data["randomSeed"] & 0xffffffff if skill else data["randomSeed"]),
+        "mode": 5 if ribbon_only else renderer["m_RenderMode"], "alignment": renderer["m_RenderAlignment"],
+        "sorting_offset": renderer["m_SortingFudge"] * (-1 if skill else 1),
         "pivot": xyz(renderer["m_Pivot"]),
         "length_scale": renderer["m_LengthScale"], "velocity_scale": renderer["m_VelocityScale"],
         "size_3d": initial["size3D"],
@@ -145,38 +513,233 @@ def particle_profile(data, renderer, mesh, material):
         "shape_length": shape["length"], "cone_angle": math.radians(shape["angle"]),
         "orbit": vector("Vector2", *sorted(-v for v in particle_range(velocity["orbitalY"]))) if velocity["enabled"] else "Vector2(0, 0)",
     }
+    if simulation_speed != 1.0:
+        profile["simulation_speed"] = simulation_speed
+    if scale_with_action:
+        profile["scale_with_action"] = True
+    if starts_active:
+        profile["start_on_enable"] = True
+        if renderer["m_RenderMode"] == 0 and data["scalingMode"] == 1:
+            profile["local_billboard_scale"] = True
+    if skill and renderer["m_SortingOrder"]:
+        assert renderer["m_SortingLayerID"] == 0
+        profile["render_priority"] = renderer["m_SortingOrder"]
+    # PC_Renderer/VFXRender (6689) repeats layer 8 after the character surface pass.
+    if unity_layer == 8:
+        profile["vfx_redraw"] = True
+    # PC_Renderer/onHitVFX Render (6683) redraws transparent renderers on layer 14.
+    if skill and unity_layer == 14:
+        profile["on_hit_vfx_redraw"] = True
+        if hit_dark_blend:
+            profile["compensate_dark_blend"] = True
+    if skill and not renderer["m_ApplyActiveColorSpace"]:
+        profile["raw_particle_tint"] = True
+    if flare_scale is not None:
+        stream = data["CustomDataModule"]
+        assert data["scalingMode"] == data["moveWithTransform"] == 0 and all(value == 1.0 for value in scale.values())
+        assert stream["enabled"] and stream["vector0_0"]["minMaxState"] == 3
+        assert all(stream[f"vector0_{i}"]["minMaxState"] == 0 for i in (1, 2, 3))
+        assert stream["vector0_2"]["scalar"] == 0 and renderer["m_ApplyActiveColorSpace"]
+        assert all(stream[f"vector1_{i}"]["minMaxState"] == 0 and stream[f"vector1_{i}"]["scalar"] == 0 for i in range(4))
+        profile["flare_offset"] = vector("Vector2", *sorted(particle_range(stream["vector0_0"])))
+        profile["flare_warp_emission"] = vector("Vector2", stream["vector0_1"]["scalar"], stream["vector0_3"]["scalar"])
+        profile["size_scale"] = vector("Vector3", flare_scale, flare_scale, flare_scale)
+    if distance_rate > 0:
+        assert skill and emit_on_enable and not births and rate == 0
+        assert emission["rateOverDistance"]["minMaxState"] == 0
+        assert data["moveWithTransform"] == data["scalingMode"] == 1 and data["looping"]
+        if renderer["m_RenderMode"] == 0:
+            profile["local_billboard_scale"] = True
+        else:
+            assert renderer["m_RenderMode"] == 1 and renderer["m_CameraVelocityScale"] == 0
+            assert initial["startSpeed"]["minMaxState"] == 0 and initial["startSpeed"]["scalar"] == 0
+        profile["distance_rate"] = distance_rate
+    if skill and data["moveWithTransform"] == 0:
+        profile["world_space"] = True
+    if skill and renderer["m_RenderMode"] == 4:
+        if data["scalingMode"] == 1:
+            profile["mesh_local_scale"] = True
+    if skill and velocity["enabled"] and any(velocity[axis]["scalar"] != 0 for axis in "xyz"):
+        assert not velocity["inWorldSpace"] and all(velocity[axis]["minMaxState"] == 0 for axis in "xyz")
+        profile["linear_velocity"] = xyz({axis: velocity[axis]["scalar"] for axis in "xyz"})
+    if (skill and shape["enabled"] and shape["type"] == 0 and shape["alignToDirection"]
+            and (renderer["m_RenderMode"] == 4 or renderer["m_RenderAlignment"] == 2)):
+        profile["align_to_direction"] = True
+    if skill and shape["enabled"] and shape["type"] == 0 and shape["radius"]["value"] > 0:
+        profile["sphere_volume"] = True
+    if skill and shape["enabled"] and shape["type"] == 17:
+        profile["donut_radius"] = shape["donutRadius"]
+    if skill and rotation["enabled"] and not rotation["separateAxes"] and rotation["curve"]["minMaxState"] in (0, 3):
+        profile["spin"] = vector("Vector2", *sorted(particle_range(rotation["curve"])))
+    if skill and color["enabled"]:
+        gradient = color["gradient"]["maxGradient"]
+        if any(gradient[f"key{i}"][channel] != 1.0 for i in range(gradient["m_NumColorKeys"]) for channel in "rgb"):
+            profile["color_gradient"] = sampled_gradient(color, "gradient")
+    if any(value != 1.0 for value in scale.values()):
+        assert data["scalingMode"] == 1 and renderer["m_RenderMode"] == 0
+        profile["size_scale"] = xyz(scale, (1, 1, 1))
     ranges = {"lifetime": "startLifetime", "speed": "startSpeed", "width": "startSize",
               "height": "startSizeY", "depth": "startSizeZ", "pitch": "startRotationX",
               "yaw": "startRotationY", "roll": "startRotation"}
     for field, native in ranges.items():
         limits = particle_range(initial[native])
+        if field == "lifetime" and all(math.isinf(value) for value in limits):
+            # Use the first ground-contact pose in the Godot replay for the anchored projectile mesh.
+            assert emit_on_enable and not data["looping"] and len(births) == len(bursts) == 1
+            assert renderer["m_RenderMode"] == 4 and not size["enabled"] and not color["enabled"]
+            assert data["moveWithTransform"] == 0 and data["scalingMode"] == 1 and not shape["enabled"]
+            assert data["startDelay"]["minMaxState"] == 0 and math.isclose(profile["delay"] / simulation_speed, effect_delay)
+            assert projectile_contact_time is not None and projectile_contact_time >= effect_delay
+            profile["delay"] = (projectile_contact_time - effect_delay) * simulation_speed
+            profile["world_mesh_rotation"] = True
+            limits = [effect_duration * simulation_speed] * 2
+        if skill and field == "lifetime" and initial[native]["minMaxState"] == 1 and len(births) == len(bursts) == 1:
+            curve = initial[native]
+            lifetime = curve["scalar"] * keyframe_value(curve["maxCurve"]["m_Curve"], bursts[0]["time"] / data["lengthInSec"])
+            limits = [lifetime, lifetime]
         if field in ("pitch", "yaw", "roll"):
             limits = [-v if field in ("pitch", "yaw") else v for v in limits]
             if field != "roll" and not initial["rotation3D"]:
                 limits = [0.0, 0.0]
         profile[field] = vector("Vector2", *sorted(limits))
+    if baked_view_billboard is not None:
+        # Match the deterministic first burst measured with Unity BakeMesh.
+        roll, hierarchy_scale = baked_view_billboard
+        assert renderer["m_RenderMode"] == renderer["m_RenderAlignment"] == data["scalingMode"] == 0
+        assert not data["autoRandomSeed"] and not data["looping"] and data["randomSeed"] == 3964
+        assert len(bursts) == 1 and bursts[0]["cycleCount"] == 1 and profile["count"] == "Vector2i(1, 1)"
+        assert initial["startRotation"]["minMaxState"] == 3 and not initial["rotation3D"]
+        profile["roll"] = vector("Vector2", roll, roll)
+        profile["size_scale"] = vector("Vector3", hierarchy_scale, hierarchy_scale, hierarchy_scale)
     tint = initial["startColor"]
     for suffix, key in (("min", "minColor" if tint["minMaxState"] == 2 else "maxColor"), ("max", "maxColor")):
         profile[f"tint_{suffix}"] = vector("Color", *(tint[key][channel] for channel in "rgba"))
+    if starts_active and len(births) > 1:
+        profile["bursts"] = "[" + ", ".join(profile_literal(birth) for birth in births) + "]"
+    elif len(bursts) > 1:
+        assert emission["rateOverTime"]["scalar"] == 0 and data["startDelay"]["minMaxState"] == 0
+        assert initial["startSize"]["minMaxState"] == 1 and not initial["size3D"] and tint["minMaxState"] == 1
+        for birth, burst in zip(births, bursts):
+            assert burst["cycleCount"] == 1
+            progress = burst["time"] / data["lengthInSec"]
+            size_curve = initial["startSize"]
+            width = keyframe_value(size_curve["maxCurve"]["m_Curve"], progress) * size_curve["scalar"]
+            color_at_birth = vector("Color", *gradient_at(tint["maxGradient"], progress))
+            birth.update(width=vector("Vector2", width, width), tint_min=color_at_birth, tint_max=color_at_birth)
+    if len(births) > 1:
+        profile["bursts"] = "[" + ", ".join(profile_literal(birth) for birth in births) + "]"
+    if baked_flight_glow:
+        assert starts_active and data["prewarm"] and not data["autoRandomSeed"] and data["randomSeed"] == 6457
+        assert data["scalingMode"] == 1 and data["moveWithTransform"] == 0 and rate == 5.0
+        assert len(births) == 1 and births[0]["repeat_count"] == len(YUNA_FLIGHT_GLOW_OFFSETS)
+        assert shape["type"] == 4 and math.isclose(shape["radius"]["value"], 0.3, rel_tol=1e-6)
+        assert initial["startSpeed"]["scalar"] == 0 and not velocity["enabled"]
+        glow_births = (dict(delay=(i + 1 - warm_particles) / rate, repeat_count=1,
+                            initial_position=vector("Vector3", x, y, 0), initial_velocity="Vector3(0, 0, 0)")
+                       for i, (x, y) in enumerate(YUNA_FLIGHT_GLOW_OFFSETS))
+        profile["bursts"] = "[" + ", ".join(profile_literal(birth) for birth in glow_births) + "]"
+        profile["interpolate_birth_position"] = True
+    if baked_smoke_scale is not None:
+        assert len(births) == 1 and data["scalingMode"] == 0 and data["moveWithTransform"] == 1
+        assert not data["looping"] and not data["autoRandomSeed"] and data["randomSeed"] == 3964
+        assert shape["type"] == 4 and shape["m_Rotation"] == {"x": -90.0, "y": 0.0, "z": 0.0}
+        profile["size_scale"] = vector("Vector3", baked_smoke_scale, baked_smoke_scale, baked_smoke_scale)
+        smoke_births = impact_smoke_birth_profiles(births[0], baked_smoke_scale)
+        profile["bursts"] = "[" + ", ".join(profile_literal(sample) for sample in smoke_births) + "]"
     x = size["curve"] if size["enabled"] else None
+    radial = velocity["radial"] if velocity["enabled"] else None
+    if skill and not tracked_ribbon and radial is not None and radial["minMaxState"] in (0, 3):
+        radial_range = sorted(particle_range(radial))
+        if any(radial_range):
+            profile["radial_speed"] = vector("Vector2", *radial_range)
+            radial = None
     values = {"size_x_min": samples(x, minimum=True), "size_x": samples(x),
               "size_y": samples(size["y"] if size["separateAxes"] else x),
               "size_z": samples(size["z"] if size["separateAxes"] else x),
               "opacity": opacity(color, "gradient") if color["enabled"] else [1.0],
               "speed_distance": integrated(velocity["speedModifier"] if velocity["enabled"] else None, 1.0),
-              "radial_distance": integrated(velocity["radial"] if velocity["enabled"] else None, 0.0)}
-    if trail["enabled"]:
+              "radial_distance": integrated(radial, 0.0)}
+    noise = data["NoiseModule"]
+    if skill and noise["enabled"]:
+        assert noise["damping"] and noise["octaves"] == 1 and not noise["separateAxes"] and not noise["remapEnabled"]
+        assert noise["scrollSpeed"]["minMaxState"] == noise["positionAmount"]["minMaxState"] == 0
+        assert noise["rotationAmount"]["scalar"] == noise["sizeAmount"]["scalar"] == 0
+        profile["noise_frequency"] = noise["frequency"]
+        profile["noise_scroll"] = noise["scrollSpeed"]["scalar"]
+        displacement = noise["positionAmount"]["scalar"] / noise["frequency"]
+        if distance_rate > 0 and renderer["m_RenderMode"] == 1:
+            values["noise_distance"] = [value * displacement for value in integrated(noise["strength"], 0.0)]
+        else:
+            profile["noise_strength"] = vector("Vector2", *(value * displacement for value in
+                                                           sorted(particle_range(noise["strength"]))))
+    uv = data["UVModule"]
+    if skill and uv["enabled"]:
+        assert uv["mode"] == uv["timeMode"] == uv["animationType"] == uv["flipU"] == uv["flipV"] == 0
+        assert uv["startFrame"]["minMaxState"] == 0 and uv["frameOverTime"]["minMaxState"] in (0, 1)
+        profile.update(atlas_grid=vector("Vector2i", uv["tilesX"], uv["tilesY"]),
+                       atlas_cycles=uv["cycles"], atlas_start=uv["startFrame"]["scalar"])
+        values["atlas_frames"] = samples(uv["frameOverTime"])
+    if atlas_shader:
+        custom = data["CustomDataModule"]
+        if custom["enabled"]:
+            intensity = custom["vector0_0"]
+            constant = intensity["minMaxState"] == 0 or (
+                intensity["minMaxState"] == 1 and intensity["scalar"] == 0.0)
+            assert custom["mode0"] == 1 and constant
+            profile["intensity_offset"] = intensity["scalar"]
+    if custom_dissolve:
+        assert renderer["m_UseCustomVertexStreams"] and renderer["m_VertexStreams"] == [0, 1, 3, 4, 34, 38]
+        custom = data["CustomDataModule"]
+        assert custom["enabled"] and custom["mode1"] == 1 and custom["vector1_2"]["minMaxState"] in (0, 3)
+        values.update(dissolve_value=samples(custom["vector1_0"]), dissolve_scroll_x=samples(custom["vector1_1"]))
+        profile["dissolve_shift_y"] = vector("Vector2", *sorted(particle_range(custom["vector1_2"])))
+    if flow_wave:
+        assert renderer["m_UseCustomVertexStreams"] and renderer["m_VertexStreams"] == [0, 1, 3, 4, 34, 38, 19]
+        stream = data["CustomDataModule"]
+        assert stream["enabled"] and stream["vector0_0"]["minMaxState"] == 3
+        assert all(stream[f"vector1_{i}"]["minMaxState"] == 0 and stream[f"vector1_{i}"]["scalar"] == 0 for i in (0, 2, 3))
+        assert data["prewarm"] and data["looping"] and not data["playOnAwake"] and not data["autoRandomSeed"]
+        assert simulation_speed == 1.0 and data["randomSeed"] == 6457 and data["lengthInSec"] == 1.0
+        assert initial["startLifetime"]["minMaxState"] == 0 and math.isclose(initial["startLifetime"]["scalar"], 0.8, rel_tol=1e-6)
+        assert [birth["delay"] for birth in births] == [0.0, 0.20]
+        warm_births = (dict(delay=delay, initial_age=age, wave_offset=vector("Vector2", offset, offset))
+                       for delay, age, offset in YUNA_FLIGHT_WAVE_BIRTHS)
+        profile["bursts"] = "[" + ", ".join(profile_literal(birth) for birth in warm_births) + "]"
+        values.update(wave_far=samples(stream["vector0_1"]), wave_near=samples(stream["vector0_2"]),
+                      wave_phase=samples(stream["vector1_1"]))
+    if renderer["m_UseCustomVertexStreams"] and renderer["m_VertexStreams"] == [0, 1, 3, 4, 5, 34]:
+        custom = data["CustomDataModule"]
+        assert custom["enabled"] and custom["mode0"] == 1
+        values.update({f"slash_{axis}": samples(custom[f"vector0_{index}"])
+                       for index, axis in enumerate("xyzw")})
+    if skill and rotation["enabled"] and rotation["separateAxes"]:
+        for axis, field, sign in (("x", "x", -1), ("y", "y", -1), ("z", "curve", 1)):
+            values[f"spin_{axis}_distance"] = [v * sign for v in integrated(rotation[field], 0.0)]
+    if ribbon_only:
+        assert trail["mode"] == 0 and trail["ratio"] == 1 and trail["textureMode"] == 0
+        assert not (trail["sizeAffectsWidth"] or trail["sizeAffectsLifetime"] or trail["inheritParticleColor"])
+        profile.update(ribbon_die_with_particle=trail["dieWithParticles"],
+                       ribbon_life_factor=vector("Vector2", *sorted(particle_range(trail["lifetime"]))),
+                       ribbon_color=sampled_gradient(trail, "colorOverTrail"),
+                       ribbon_life_color=sampled_gradient(trail, "colorOverLifetime"))
+        values["ribbon_width"] = samples(trail["widthOverTrail"])
+        if trail["widthOverTrail"]["minMaxState"] in (2, 3):
+            values["ribbon_width_min"] = samples(trail["widthOverTrail"], minimum=True)
+        if tracked_ribbon:
+            assert not velocity["inWorldSpace"] and velocity["radial"]["minMaxState"] == 3
+            profile.update(tracked_ribbon=True,
+                           ribbon_radial_range=vector("Vector2", *sorted(particle_range(velocity["radial"]))))
+    elif trail["enabled"]:
         profile.update(ribbon_lifetime=trail["lifetime"]["scalar"], ribbon_spacing=trail["minVertexDistance"],
                        ribbon_radial_speed=velocity["radial"]["scalar"])
         values.update(ribbon_width=samples(trail["widthOverTrail"]),
                       ribbon_opacity=opacity(trail, "colorOverTrail"))
     profile.update({key: vector("PackedFloat32Array", *curve) for key, curve in values.items()})
-    serialized = (str(v).lower() if isinstance(v, bool) else format(v, ".9g") if isinstance(v, (float, int)) else v
-                  for v in profile.values())
-    return "{\n" + ",\n".join(f'{quote(key)}: {value}' for key, value in zip(profile, serialized)) + "\n}"
+    return profile_literal(profile)
 
 
-def export_prefab(src, owner, reader, layouts, game, name):
+def export_prefab(src, owner, reader, layouts, game, name, particles=None, hold_on_emit=False, emitter_root=None,
+                  motion_trails=(), finish_particles=False, presentation_offset=0.0):
     prefab = read_fields(reader, layouts)
     effect = owner.objects[prefab["m_GameObject"]["m_PathID"]].read()
     external, materials = {}, {}
@@ -189,39 +752,136 @@ def export_prefab(src, owner, reader, layouts, game, name):
 
     nodes.extend([f'[node name="{effect.m_Name}" type="Node3D"]',
                   'script = ' + resource("Script", "battle/revival_effect.gd"),
-                  f'lead_in = {prefab["_delay"]:.9g}', f'duration = {prefab["_duration"]:.9g}',
-                  f'metadata/unity_prefab = {reader.path_id}', ""])
+                  f'lead_in = {float(prefab["_delay"])}', f'duration = {float(prefab["_duration"])}'])
+    if hold_on_emit:
+        nodes.append("hold_world_position_on_emit = true")
+    if finish_particles:
+        assert not prefab["_disableOnRelease"] and not motion_trails
+        nodes.append("finish_particles = true")
+    if particles is not None:
+        root_transform = next(c.component.deref().read_typetree() for c in effect.m_Component
+                              if c.component.deref().type.name == "Transform")
+        if emitter_root is not None:
+            assert all(root_transform["m_LocalPosition"][axis] == root_transform["m_LocalRotation"][axis] == 0
+                       for axis in "xyz")
+            root_transform = owner.objects[emitter_root].read_typetree()
+        position, rotation = root_transform["m_LocalPosition"], root_transform["m_LocalRotation"]
+        if any(position[axis] != 0 for axis in "xyz"):
+            nodes.append("position = " + xyz(position))
+        if any(abs(rotation[axis]) > 1e-7 for axis in "xyz"):
+            nodes.append("quaternion = " + vector("Quaternion", -rotation["x"], -rotation["y"], rotation["z"], rotation["w"]))
+    nodes.extend([f'metadata/unity_prefab = {reader.path_id}', ""])
 
-    def emit(go, parent):
+    def emit(go, offset, is_root=False):
         components = {pointer.type.name: pointer for component in go.m_Component
                       if component.component and (pointer := component.component.deref())}
         transform = components["Transform"].read_typetree()
-        assert transform["m_LocalScale"] == {"x": 1.0, "y": 1.0, "z": 1.0}
+        scale = transform["m_LocalScale"]
+        if transform["m_Children"] or particles is None:
+            assert scale == {"x": 1.0, "y": 1.0, "z": 1.0}
+        position = transform["m_LocalPosition"]
+        if particles is not None and not is_root:
+            position = {axis: offset[axis] + position[axis] for axis in "xyz"}
+        elif particles is not None:
+            position = offset
+        trail = components.get("TrailRenderer")
+        if trail and trail.path_id in motion_trails:
+            renderer = trail.read_typetree()
+            params = renderer["m_Parameters"]
+            assert prefab["_disableOnRelease"] and go.m_IsActive and renderer["m_Enabled"] and renderer["m_Emitting"]
+            assert params["alignment"] == params["textureMode"] == params["numCornerVertices"] == params["numCapVertices"] == 0
+            assert params["textureScale"] == {"x": 1.0, "y": 1.0}
+            assert renderer["m_SortingLayerID"] == 0
+            mat_owner, mat = src.resolve(owner, renderer["m_Materials"][0])
+            material, _, _ = add_material(src, mat_owner, mat, True, game, resource, subresources, skill=True,
+                                          linearize_vertex_tint=bool(renderer["m_ApplyActiveColorSpace"]))
+            width = params["widthCurve"]["m_Curve"]
+            gradient = params["colorGradient"]
+            profile = dict(lifetime=renderer["m_Time"], spacing=renderer["m_MinVertexDistance"],
+                           render_priority=renderer["m_SortingOrder"],
+                           width_multiplier=params["widthMultiplier"],
+                           width=vector("PackedFloat32Array", *(params["widthMultiplier"] * keyframe_value(width, step / STEPS)
+                                                                for step in range(STEPS + 1))),
+                           color=vector("PackedColorArray", *(channel for step in range(STEPS + 1)
+                                                             for channel in gradient_at(gradient, step / STEPS))))
+            mesh = f"MotionTrail{trail.path_id}"
+            subresources.extend([f'[sub_resource type="ImmediateMesh" id="{mesh}"]',
+                                 'resource_local_to_scene = true', ""])
+            nodes.extend([f'[node name="{go.m_Name}" type="Node3D" parent="."]',
+                          "position = " + xyz(position),
+                          f'metadata/unity_trail_renderer = {trail.path_id}',
+                          'metadata/motion_trail = ' + profile_literal(profile), "",
+                          f'[node name="Ribbon" type="MeshInstance3D" parent="{go.m_Name}"]',
+                          "top_level = true", "cast_shadow = 0",
+                          f'mesh = SubResource("{mesh}")', "material_override = " + material, ""])
         if "ParticleSystem" in components:
-            ps = components["ParticleSystem"].read_typetree()
+            particle = components["ParticleSystem"]
+            ps = particle.read_typetree()
             renderer = components["ParticleSystemRenderer"].read_typetree()
-            if renderer["m_Enabled"] and ps["EmissionModule"]["m_BurstCount"]:
+            emission = ps["EmissionModule"]
+            emits = emission["m_BurstCount"] or (particles is not None and
+                    (emission["rateOverTime"]["scalar"] > 0 or emission["rateOverDistance"]["scalar"] > 0))
+            if (renderer["m_Enabled"] and emits
+                    and (particles is None or particle.path_id in particles)):
                 mode = renderer["m_RenderMode"]
                 assert mode in (0, 1, 4, 5)
-                mat_owner, mat = src.resolve(owner, renderer["m_Materials"][-1 if mode == 5 else 0])
+                ribbon_only = particles is not None and mode == 0 and ps["TrailModule"]["enabled"]
+                trail_only = mode == 5 or ribbon_only
+                mat_owner, mat = src.resolve(owner, renderer["m_Materials"][-1 if trail_only else 0])
+                if mat.path_id == 328 and mat_owner.name == "sharedassets1.assets":
+                    assert not renderer["m_ApplyActiveColorSpace"]
                 key = (mat_owner.name, mat.path_id)
                 if key not in materials:
-                    materials[key] = add_material(src, mat_owner, mat, mode == 5, game, resource, subresources)
+                    materials[key] = add_material(src, mat_owner, mat, trail_only, game, resource, subresources,
+                                                  skill=particles is not None)
+                material, atlas_shader, custom_dissolve = materials[key]
                 mesh = resource("ArrayMesh", mesh_asset(src, owner, renderer["m_Mesh"], game)) if mode == 4 else 'SubResource("Quad")'
                 q = transform["m_LocalRotation"]
-                nodes.extend([f'[node name="{go.m_Name}" type="Node3D" parent="{parent}"]',
-                              "position = " + xyz(transform["m_LocalPosition"]),
+                flare_scale = None
+                if mat.path_id == 331 and mat_owner.name == "sharedassets1.assets":
+                    flare_scale = uniform_hierarchy_scale(src, owner, transform)
+                baked_view_billboard = None
+                if particles is not None and particle.path_id in (52380, 54056):
+                    roll_degrees = 204.8808 if particle.path_id == 52380 else 356.9663
+                    baked_view_billboard = (math.radians(roll_degrees), uniform_hierarchy_scale(src, owner, transform))
+                baked_smoke_scale = None
+                if particles is not None and particle.path_id == 54276:
+                    baked_smoke_scale = uniform_hierarchy_scale(src, owner, transform)
+                # Match the frame the animated weapon first reaches the ground in Godot.
+                projectile_contact_time = 2.47 if particle.path_id in (54552, 55301) else None
+                # The dark plume grows from the authored hit event while the flash is delayed.
+                birth_offset = presentation_offset if baked_smoke_scale is None else 0.0
+                profile = particle_profile(ps, renderer, mesh, material, atlas_shader, custom_dissolve,
+                                           skill=particles is not None, scale=scale,
+                                           effect_duration=prefab["_duration"], ribbon_only=ribbon_only,
+                                           scale_with_action=emitter_root is not None and
+                                           particle.path_id in scaled_particles,
+                                           emit_on_enable=ps["playOnAwake"] and bool(prefab.get("_disableOnRelease")),
+                                           flare_scale=flare_scale,
+                                           flow_wave=mat.path_id == 361 and mat_owner.name == "sharedassets1.assets",
+                                           effect_delay=prefab["_delay"], projectile_contact_time=projectile_contact_time,
+                                           baked_view_billboard=baked_view_billboard,
+                                           presentation_offset=birth_offset, baked_smoke_scale=baked_smoke_scale,
+                                           baked_flight_glow=owner.name == "sharedassets1.assets" and particle.path_id == 53628,
+                                           unity_layer=go.m_Layer,
+                                           hit_dark_blend=mat_owner.name == "sharedassets1.assets" and mat.path_id in (337, 354))
+                node_scale = 1.0 if baked_smoke_scale is None else baked_smoke_scale
+                nodes.extend([f'[node name="{go.m_Name}" type="Node3D" parent="."]',
+                              "position = " + xyz(position, (node_scale, node_scale, -node_scale)),
                               "quaternion = " + vector("Quaternion", -q["x"], -q["y"], q["z"], q["w"]),
                               f'metadata/unity_particle = {components["ParticleSystem"].path_id}',
-                              'metadata/particle = ' + particle_profile(ps, renderer, mesh, materials[key]), ""])
+                              'metadata/particle = ' + profile, ""])
         for child in transform["m_Children"]:
-            emit(src.resolve(owner, child)[1].read().m_GameObject.read(), parent)
+            emit(src.resolve(owner, child)[1].read().m_GameObject.read(), position)
 
-    emit(effect, ".")
+    scaled_particles = {p["m_PathID"] for p in prefab.get("_particleSystemsToApplySpeedTo", [])}
+    emission_root = effect if emitter_root is None else owner.objects[emitter_root].read().m_GameObject.read()
+    emit(emission_root, dict.fromkeys("xyz", 0.0), is_root=True)
     header = ["[gd_scene format=3]", ""]
     header += [f'[ext_resource type="{kind}" path="res://{path}" id="{key}"]'
                for (kind, path), key in external.items()]
-    destination = game / "battle" / f"revival_{name}.tscn"
+    scene_name = f"revival_{name}" if particles is None else name
+    destination = game / "battle" / f"{scene_name}.tscn"
     destination.write_text("\n".join(header + [""] + subresources + nodes), encoding="utf-8")
     print(f"{destination.name}: {owner.name}:{reader.path_id} {effect.m_Name}")
 
@@ -243,7 +903,7 @@ def export_flash(src, owner, layouts, game):
     lines.extend(["shader_parameter/rim_profile = " + vector("Vector3", *(floats[k] for k in
                   ("_RimFresnelPower", "_RimBorder", "_RimBlur"))),
                   "shader_parameter/light_limits = " + vector("Vector2", floats["_LightMinLimit"], floats["_LightMaxLimit"]),
-                  f'shader_parameter/antialias_strength = {floats["_AAStrength"]:.9g}',
+                  f'shader_parameter/antialias_strength = {float(floats["_AAStrength"])}',
                   f'metadata/revive_delay = {revive["Delay"]:.9g}',
                   f'metadata/revive_duration = {revive["Duration"]:.9g}',
                   f'metadata/unity_material = "{mat_owner.name}:{material.path_id}"', ""])
@@ -255,6 +915,9 @@ def export_flash(src, owner, layouts, game):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("data", type=Path)
+    effects = parser.add_mutually_exclusive_group()
+    effects.add_argument("--yuna-skill", action="store_true")
+    effects.add_argument("--yuna-basic", action="store_true")
     args = parser.parse_args()
     game = Path(__file__).resolve().parents[1] / "game"
     with ExitStack() as stack:
@@ -266,6 +929,26 @@ def main():
         layouts.load_local_game(str(args.data.parent))
         src.env.typetree_generator = layouts
         owner = src.file("sharedassets1.assets")
+        if args.yuna_basic:
+            export_prefab(src, owner, owner.objects[61495], layouts, game, "yuna_basic_slash",
+                          {52764, 52927, 55087}, emitter_root=29141)
+            return
+        if args.yuna_skill:
+            export_prefab(src, owner, owner.objects[63281], layouts, game, "yuna_skill_wind", {52194, 54405})
+            export_prefab(src, owner, owner.objects[61017], layouts, game, "yuna_skill_charge",
+                          {54326, 51603, 55554, 51547, 50802, 53010, 55433, 53412, 53965},
+                          finish_particles=True)
+            export_prefab(src, owner, owner.objects[62365], layouts, game, "yuna_skill_release",
+                          {53342, 54920, 51506, 52648, 51360, 53505, 53773, 53216, 55213, 51186})
+            export_prefab(src, owner, owner.objects[61696], layouts, game, "yuna_skill_flight",
+                          {53229, 55583, 55253, 53628, 54005, 54552, 55301},
+                          motion_trails={50124})
+            export_prefab(src, owner, owner.objects[63162], layouts, game, "yuna_skill_landing", {52154})
+            # Capture the authored anchor first, then match the burst phase observed in the replay.
+            export_prefab(src, owner, owner.objects[62694], layouts, game, "yuna_skill_hit",
+                          {52380, 54056, 51953, 52598, 54788, 54773, 53683, 55536, 53506, 53953, 54276},
+                          hold_on_emit=True, presentation_offset=0.20)
+            return
         feedback = read_fields(owner.objects[60884], layouts)
         victory, = feedback["<PostCombatVictoryResurrectVfxBlock>k__BackingField"]["<Mappings>k__BackingField"]
         wings, common = feedback["<PostCombatStabilizerResurrectVfxBlock>k__BackingField"]["<Mappings>k__BackingField"]

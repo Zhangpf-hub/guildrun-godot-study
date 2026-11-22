@@ -209,12 +209,19 @@ func verify_gameplay() -> void:
 	expect(fight._hero.is_casting() and fight._hero.mana == int(fight._hero.stat("MaxMana")),
 			"The first casting step completes with its mana bar still full")
 	var elapsed := fight.battle_time_q16
+	var shader_time := fight.effect_scene_time()
 	fight._physics_process(1.0)
 	expect(fight.battle_time_q16 == elapsed, "Mana explanation does not advance the fixed-step battle")
+	fight._advance_effect_scene_time(1.0)
+	expect(is_equal_approx(fight.effect_scene_time(), shader_time), "The paused battle also freezes the shader clock")
 	click()
 	expect(machine.simulation_paused, "First mana caption leaves actual battle paused")
 	click()
 	expect(not machine.simulation_paused and observed == [true, false], "Second mana caption resumes fixed steps")
+	var multiplier: float = fight.simulation_speed.multiplier()
+	fight._advance_effect_scene_time(0.5)
+	expect(is_equal_approx(fight.effect_scene_time(), shader_time + 0.5 * multiplier),
+			"The shader clock resumes at the current battle speed")
 	for tick in 7200:
 		if fight.phase != GuildrunEncounter.Phase.FIGHT:
 			break

@@ -97,6 +97,15 @@ func verify() -> void:
 					return
 				ally.rank = 2
 				fight._land(ally, 100000)
+				if not require(not ally._death_blend_times.is_empty() and ally._death_blend_tween != null,
+						"The fallen ally must have a running material transition"):
+					return
+				ally._death_blend_tween.custom_step(0.75)
+				var tinted := false
+				for mesh: MeshInstance3D in ally._death_blend_times:
+					tinted = tinted or float(mesh.get_instance_shader_parameter(&"death_blend")) > 0.0
+				if not require(tinted, "The fallen ally must have started the death tint"):
+					return
 				var cell := ally.grid_cell
 				var occupant: GuildrunBoardUnit = stage.deploy_hero(3, cell)
 				fight._register(occupant)
@@ -105,6 +114,12 @@ func verify() -> void:
 				fight._tick_cast(hero, delay)
 				if not require(not ally.defeated and ally.health == 125 and ally.total_shield() == 125 and fallen.defeated and stage.grid.occupants[ally.grid_cell] == ally and stage.grid.occupants[cell] == occupant, "Salvation revive rank, HP, shield or occupancy"):
 					return
+				if not require(ally._death_blend_tween == null, "Salvation must cancel the death material transition"):
+					return
+				for mesh: MeshInstance3D in ally._death_blend_times:
+					if not require(is_zero_approx(float(mesh.get_instance_shader_parameter(&"death_blend"))),
+							"Salvation must restore the revived ally's material"):
+						return
 			24:
 				if not require(hero.stat("OmniVamp") == 6 and melee.health == 10000 - melee.damage_after_defense(250) and fight.first_shop.shards == 0, "Devour scaling or nonlethal reward"):
 					return
