@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://b4lgju2h5xcec" path="res://battle/revival_effect.gd" id="1_2k572"]
 [ext_resource type="ArrayMesh" uid="uid://kmjjhv8duxyl" path="res://meshes/sharedassets1_2853.obj" id="2_8xeg4"]
 [ext_resource type="Shader" uid="uid://dxmn2osyrtgva" path="res://materials/yuna_basic_slash.gdshader" id="3_ivadv"]
-[ext_resource type="Texture2D" uid="uid://d3fenbulg2fqp" path="res://textures/sharedassets1_2029.png" id="4_f2s3y"]
+[ext_resource type="Texture2D" path="res://textures/sharedassets1_2029.dds" id="4_f2s3y"]
 [ext_resource type="Shader" uid="uid://brjdjxf2ny1vg" path="res://materials/revival_particle.gdshader" id="5_knhj5"]
 [ext_resource type="Texture2D" uid="uid://bhaupwc8qck7w" path="res://textures/resources_511.png" id="6_msfa2"]
 [ext_resource type="Texture2D" uid="uid://yceydxv7aqyk" path="res://textures/sharedassets1_1740.png" id="7_nmskf"]
@@ -17,7 +17,6 @@ shader_parameter/image_texture = ExtResource("4_f2s3y")
 shader_parameter/image_atlas = Vector4(1, 1, 0, 0)
 shader_parameter/slash_data = Vector4(0, 0, 0, 50)
 shader_parameter/particle_tint = Color(1, 1, 1, 1)
-shader_parameter/image_is_srgb = true
 shader_parameter/additive = false
 shader_parameter/depth_fade = true
 shader_parameter/intensity = 1.0
@@ -72,7 +71,6 @@ shader_parameter/image_texture = ExtResource("4_f2s3y")
 shader_parameter/image_atlas = Vector4(1, 1, 0, 0)
 shader_parameter/slash_data = Vector4(0, 0, 0, 50)
 shader_parameter/particle_tint = Color(1, 1, 1, 1)
-shader_parameter/image_is_srgb = true
 shader_parameter/additive = true
 shader_parameter/depth_fade = true
 shader_parameter/intensity = 1.0
