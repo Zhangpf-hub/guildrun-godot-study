@@ -1,0 +1,23 @@
+{
+  "SkillAttack": [
+    {
+      "scene": "res://battle/character_actions/60901_61896.tscn",
+      "position": [
+        0.0,
+        0.0,
+        -1.1850000321865082
+      ],
+      "rotation": [
+        -0.0,
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ]
+    }
+  ]
+}

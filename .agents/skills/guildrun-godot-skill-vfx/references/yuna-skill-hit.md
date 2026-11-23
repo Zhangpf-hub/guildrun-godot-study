@@ -36,7 +36,8 @@
 - 第 376 步只开关第 8 层重绘，局部画面任一 8 位 RGB 通道改变超过 4 级的像素有 1,547 个（Forward+）和 3,660 个（Compatibility）。第 411 采样帧的普攻红斩与角色重叠处也有变化。与原版对应帧比较，两处采样区的平均亮度误差变化均小于 0.1 级。出手末端仍偏橙，普攻姿势和红斩轮廓仍有差异。见 `build/windows/port-layer8-vfx-redraw-comparison.png`。
 - 同帧开关这次重绘时，第 409 步的 Forward+ 地面采样区亮度误差从 28.25 降至 7.30。Compatibility 的近黑残烟和黑光晕用 `1 - (1 - alpha)^(1/2.2)` 近似线性光的透射，减少两遍 sRGB 混合导致的压黑，同一区域误差从 35.04 降至 7.33。亮部的泛光、峰值范围和动作姿势仍有差异。见 `build/windows/port-yuna-hit-redraw-comparison.png`。
 - 红弧用球面朝向旋转原版网格，出生尺寸和颜色按各批次在发射器中的进度计算。溶解从粒子寿命曲线读取 `Custom2` 的阈值与卷动。Unity 和 Godot 各自生成随机粒子朝向，逐帧轮廓仍有差异。 [Unity 粒子初始朝向](https://docs.unity3d.com/cn/6000.0/ScriptReference/ParticleSystem.ShapeModule.html)
-- `VFX_SG`（`resources.assets:711`）用粒子色与强度控制输出，选取红通道或 RGBA。这个透明变体没有读取材料的 `_Color`，照抄该值会把尖刺额外放亮。烟雾使用白色默认溶解遮罩并读入寿命曲线。白芯的白色默认遮罩仍按截帧近似。
+- `VFX_SG`（`resources.assets:711`）用粒子色与强度控制输出，选取红通道或 RGBA。这个透明变体没有读取材料的 `_Color`，照抄该值会把尖刺额外放亮。烟雾使用白色默认溶解遮罩并读入寿命曲线。白芯材质 `334` 也使用白色默认遮罩。它的片元程序读取 `TEXCOORD1.z`，Unity `BakeMesh` 只在 `TEXCOORD0.z` 烘焙出 `Custom1X=0.3`。实际在 Unity 的 D3D11 中绘制并读回，两个输入均为 0.3。显式添加全零的第二 UV 通道后，`TEXCOORD1.z` 变为 0。用原版片元程序核对时，只有将 0.3 传到它实际读取的分量才恢复可见 Alpha。Godot 普通透明和第 14 层重绘都上传这一值并计算原版遮罩。[Unity 自定义顶点流](https://docs.unity.com/en-us/engine/6000.0/script-reference/unityengine/particlesystemrenderer/setactivevertexstreams)
+- 白芯贴图 `sharedassets1.assets:1237` 和短芒贴图 `:1995` 各保留九级原始 mipmap。BC7 白芯逐级解码并翻转到 RGBA8 DDS，BC3 短芒直接翻转压缩块。两层按原版重复环绕，在最近 mip 级内做双线性采样。Forward+ 由纹理采样器在线性光中过滤。Compatibility 在白芯使用红通道作为透明度时，逐个解码四个源像素，再插值得到线性遮罩。首战第 389 个采样，Compatibility 局部亮芯由 5,196 像素缩至 2,969，原版参考帧为 678。见 `build/windows/port-yuna-impact-core-stream.png`。
 - `UberParticles`（`sharedassets1.assets:3022`）的普通透明变体读取 RGBA 图集，亮度系数为 `1 + _AddIntensity + Custom1X`，`Line_02` 的附加强度为 0.46。用 `UVModule` 驱动 3 × 3 图集。烟雾使用 6 × 6 图集。Unity 的负 `sortingFudge` 对应 Godot 的正 `sorting_offset`。分别核对排序与深度测试。 [Unity 粒子排序](https://docs.unity3d.com/cn/2023.1/Manual/PartSysRendererModule.html) [Godot 视觉实例排序](https://docs.godotengine.org/en/stable/classes/class_visualinstance3d.html#class-visualinstance3d-property-sorting-offset)
 - [角色入口](../../../../game/battle/board_unit.gd) 在 `shadow_strike` 进入 `SkillAttack` 时实例化场景，并同步表现时钟。原版截帧中，命中残烟留在训练龟附近。Godot 先固定挂点，再发射粒子。实机试验显示，若把挂点取样一并延后，白芯会跟随角色绕到训练龟背后。
 - [出手场景](../../../../game/battle/yuna_skill_release.tscn) 由 `SkillAttack_03:62365` 导出。保留 `VFXParent` 下的本地高度与旋转，接入光晕、爆发芒刺、移动圆环和冲击网格。`Aura_01` 使用材质 `328` 的主纹理 Alpha、流动噪声和场景深度生成加色红光。`Rings_01` 的发射器翻转了 180°，本地负 Y 速度沿发射器的旋转轴变换到世界空间。
@@ -65,6 +66,16 @@
 
 预制体延时 0.12 秒，三个发射器再等 0.18 秒，以 1 倍攻速计算，起手后 0.30 秒发射。原版 `BaseParticleSystemVfxComponent.InternalPlay` 用动作速度除预制体延时，并把动作速度应用到列表中的发射器。红斩的三个发射器都在列表里，2 倍攻速下合计等 0.15 秒。先从 `VFXParent` 读取缩放与位置，再读取子节点 `root:29141` 的朝向。转译后的正前方偏移为 `0.413 × 1.14`，Godot 挂点抵消 FBX 导入所需的 180° 旋转。Unity 烘焙确认该粒子先绕 Z 轴再绕 X 轴、最后绕 Y 轴，Godot 采用 `EULER_ORDER_YXZ` 得到相同矩阵。图集以 4 × 8 排列，两层红弧使用第 10 帧，风纹使用第 2 帧，索引从零起算。普攻起手创建场景，粒子出生后固定在世界坐标。 [普攻红斩场景](../../../../game/battle/yuna_basic_slash.tscn)
 
+图集 `sharedassets1.assets:2029` 的 12 级 BC1 mipmap 现全部进入 DDS。导出时翻转压缩块行和块内像素索引，最高分辨率解码结果与 PNG 逐像素一致。线性渲染后端在纹理过滤前解码 sRGB。材质 `336` 的第二张溶解遮罩 `resources.assets:511` 按原版钳制到纹理边缘。第 411 采样帧的红弧局部有 688 个像素的任一 RGB 通道变化超过 4 级，变化集中在轮廓。Forward+ 和 Compatibility 均读回完整的 mipmap。这一帧的普攻动画和发射器同步推进至 0.33325 秒。角色收招姿势和效果的局部位置仍有差异。对照见 `build/windows/port-yuna-basic-slash-mipmaps.png`。 [DDS 文件头](https://learn.microsoft.com/en-us/windows/win32/direct3ddds/dds-header)
+
+原版的战斗事件经 `AnimationHandler.TriggerAnimation` 设置动画触发器和 Animator 速度。悠娜通过覆盖控制器 `4646` 使用 `Character_Controller:3250`。从 `Any State` 进入 `BasicAttack` 或 `SkillAttack` 的固定混合时长均为 0.25 秒。Unity 小样在 1 倍和 2 倍攻速下，实际分别于 0.25 秒和 0.125 秒达到完整权重。Godot 导入两条入场过渡，并使两侧动画轨道和混合时钟使用相同速度。播放速度同时接入战斗倍速和教学暂停。
+
+首战第 304 和第 405 步分别停在技能和普攻的 0.13330 秒。同帧只开关入场混合时，抓钩骨和右手武器骨的局部旋转分别改变 76.81° 和 95.54°。回放第 411 采样帧的动画与发射器仍同步到 0.33325 秒。对照保存在 `build/windows/port-yuna-attack-entry-blend.png`。 [Unity 固定时长过渡](https://docs.unity.com/en-us/engine/6000.0/manual/animation-section/animation-mecanim/animation-animator-controller/animation-state-machines/class-transition) [Godot 混合时钟](https://github.com/godotengine/godot/blob/ed1daf0bf/scene/animation/animation_player.cpp#L267-L285)
+
+原控制器从 `BasicAttack` 和 `SkillAttack` 退回 `Idle` 的标准化时刻分别为 0.91819561 和 0.91846293。用 `sharedassets1.assets:3084` 和 `:3179` 的原始片段长度换算，分别在 1.101835 秒和 3.980006 秒开始，固定混合时长为 0.084834 秒和 0.057076 秒。Godot 的两个 FBX 片段均多出一个 30 fps 末帧，导出器直接将按原始长度换算的时刻写入 `rigs.json`。Unity 小样在普攻 1.105 秒处已经将待机轨道推进约 0.0032 秒。Godot 在 `mixer_applied` 读取动作时钟，并将跨过退场点的时间交给待机轨道。 [导出逻辑](../../../../tools/animation_plan.py) [运行时过渡](../../../../game/battle/board_unit.gd) [Godot 采样信号](https://docs.godotengine.org/en/stable/classes/class_animationmixer.html#class-animationmixer-signal-mixer-applied)
+
+首战回放第 401 个采样时，棋盘已结算技能落格，角色画面仍在技能片段的 3.36584 秒。第 402 个采样收到下一次普攻并从当前姿势混入。战斗定步停止后，普攻在第 435 个采样开始自然收招，待机轨道已推进 0.03122 秒。主动取消的技能仍立即请求待机。原版参考帧 11 和 12 均可见空中姿势，与 Godot 按动作阶段对照。结算等待后半段的过渡通过原版控制器参数与 Unity 小样核对。对照保存在 `build/windows/port-yuna-attack-exit-blend.png`。回归覆盖跨帧余量、二倍速、暂停恢复和新动作打断。 [近战技能回归](../../../../tools/check_melee_abilities.gd)
+
 ## 重跑与验收
 
 除了首战的单次出手，也要完整回放带多名英雄和连续施法的关卡。动画可能把挂点缩到零，使普通粒子、局部尾丝或记录世界出生变换的尾丝得不到有效逆矩阵。绘制前检查实际参与求逆的变换，折叠时跳过网格并保留粒子的寿命推进。种子 491578230 的 10101 完整回放曾记录 326 条矩阵求逆错误，修正 `revival_effect.gd` 后复跑为零。
@@ -82,6 +93,8 @@
 `--yuna-skill` 覆盖六处技能特效场景，`--yuna-basic` 覆盖普攻红斩场景。Godot 编辑器打开时，可将导出放到临时工程目录，导入新增贴图后通过编辑器的 `ResourceLoader` 和 `ResourceSaver` 保存场景。现有复活资源走默认导出路径。
 
 复核烟粒子出生数据时，将 [烘焙脚本](../scripts/ImpactSmokeBirthProbe.cs) 放入一个临时 Unity 项目的 `Assets/Editor`，用 Unity 6000.6.7f1 运行 `-batchmode -nographics -quit -projectPath <临时项目> -executeMethod ImpactSmokeBirthProbe.Measure -logFile <日志路径>`。`SMOKE_BIRTH` 输出两次重播的出生数据，`SMOKE_BAKE` 输出网格宽度和应用层级缩放后的中心位置，`SMOKE_STREAM` 对照粒子的 `Custom2` 和烘焙后的 UV 流。
+
+复核白芯的顶点通道时，使用 Unity 6000.6.7f1 和内置渲染管线创建临时项目。将 [CoreWhiteStreamProbe.cs](../scripts/CoreWhiteStreamProbe.cs) 放入 `Assets/Editor`，将 [CoreStreamPixel.shader](../scripts/CoreStreamPixel.shader) 放入 `Assets`。用 `-batchmode -force-d3d11 -quit -projectPath <临时项目> -executeMethod CoreWhiteStreamProbe.Measure -logFile <日志路径>` 运行，保留 GPU 设备。`CORE_STREAM` 打印烘焙网格的通道列表，`CORE_GPU` 的红、绿、蓝分量依次对应 `TEXCOORD0.z`、`TEXCOORD1.z`、`TEXCOORD1.w`，对照组显式绑定全零的第二 UV 通道。
 
 用同种子回放脚本抓取 Godot 的 819 × 616 画面。需要运行图形渲染器，输出参数为文件名前缀。
 

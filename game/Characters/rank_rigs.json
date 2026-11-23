@@ -1,0 +1,6366 @@
+{
+  "60914": {
+    "1": [
+      {
+        "model": "res://rigs/50077/model.fbx",
+        "clips": {
+          "Archer_Idle": "Ayaka_BattleIdle",
+          "Archer_Move": "Ayaka_MoveLoop",
+          "Archer_BasicAttack": "Ayaka_BasicAttack02",
+          "Archer_Die": "Death",
+          "Archer_SkillAttack": "Ayaka_ActiveAbility_All"
+        },
+        "loop": {
+          "Ayaka_BattleIdle": true,
+          "Ayaka_MoveLoop": true,
+          "Ayaka_BasicAttack02": false,
+          "Death": false,
+          "Ayaka_ActiveAbility_All": false
+        },
+        "meshes": {
+          "Body_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_318.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "DualBlade_L_Mesh": {
+            "surfaces": [
+              "res://materials/sharedassets1_322.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "DualBlade_R_Mesh": {
+            "surfaces": [
+              "res://materials/sharedassets1_322.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.3
+            ]
+          },
+          "GrapplingHook_Mesh": {
+            "surfaces": [
+              "res://materials/sharedassets1_322.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "Shuriken_Mesh": {
+            "surfaces": [
+              "res://materials/sharedassets1_322.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          }
+        },
+        "states": {
+          "Idle": "Ayaka_BattleIdle",
+          "Move": "Ayaka_MoveLoop",
+          "BasicAttack": "Ayaka_BasicAttack02",
+          "Die": "Death",
+          "SkillAttack": "Ayaka_ActiveAbility_All"
+        },
+        "prefab": 11625,
+        "entry_blends": {
+          "BasicAttack": 0.25,
+          "SkillAttack": 0.25
+        },
+        "exit_blends": {
+          "BasicAttack": [
+            1.1018347701165965,
+            0.08483421802520752
+          ],
+          "SkillAttack": [
+            3.98000618512836,
+            0.05707597732543945
+          ]
+        }
+      }
+    ],
+    "2": [
+      {
+        "model": "res://rigs/50053/model.fbx",
+        "clips": {
+          "Archer_Idle": "Ayaka_BattleIdle",
+          "Archer_Move": "Ayaka_MoveLoop",
+          "Archer_BasicAttack": "Ayaka_BasicAttack02",
+          "Archer_Die": "Death",
+          "Archer_SkillAttack": "Ayaka_ActiveAbility_All"
+        },
+        "loop": {
+          "Ayaka_BattleIdle": true,
+          "Ayaka_MoveLoop": true,
+          "Ayaka_BasicAttack02": false,
+          "Death": false,
+          "Ayaka_ActiveAbility_All": false
+        },
+        "meshes": {
+          "Body_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_320.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "DualBlade_L_Mesh": {
+            "surfaces": [
+              "res://materials/sharedassets1_324.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "DualBlade_R_Mesh": {
+            "surfaces": [
+              "res://materials/sharedassets1_324.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.3
+            ]
+          },
+          "GrapplingHook_Mesh": {
+            "surfaces": [
+              "res://materials/sharedassets1_324.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "Shuriken_Mesh": {
+            "surfaces": [
+              "res://materials/sharedassets1_324.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          }
+        },
+        "states": {
+          "Idle": "Ayaka_BattleIdle",
+          "Move": "Ayaka_MoveLoop",
+          "BasicAttack": "Ayaka_BasicAttack02",
+          "Die": "Death",
+          "SkillAttack": "Ayaka_ActiveAbility_All"
+        },
+        "prefab": 14332,
+        "entry_blends": {
+          "BasicAttack": 0.25,
+          "SkillAttack": 0.25
+        },
+        "exit_blends": {
+          "BasicAttack": [
+            1.1018347701165965,
+            0.08483421802520752
+          ],
+          "SkillAttack": [
+            3.98000618512836,
+            0.05707597732543945
+          ]
+        }
+      }
+    ],
+    "3": [
+      {
+        "model": "res://rigs/50044/model.fbx",
+        "clips": {
+          "Archer_Idle": "Ayaka_BattleIdle",
+          "Archer_Move": "Ayaka_MoveLoop",
+          "Archer_BasicAttack": "Ayaka_BasicAttack02",
+          "Archer_Die": "Death",
+          "Archer_SkillAttack": "Ayaka_ActiveAbility_All"
+        },
+        "loop": {
+          "Ayaka_BattleIdle": true,
+          "Ayaka_MoveLoop": true,
+          "Ayaka_BasicAttack02": false,
+          "Death": false,
+          "Ayaka_ActiveAbility_All": false
+        },
+        "meshes": {
+          "Body_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_321.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "DualBlade_L_Mesh": {
+            "surfaces": [
+              "res://materials/sharedassets1_325.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "DualBlade_R_Mesh": {
+            "surfaces": [
+              "res://materials/sharedassets1_325.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.3
+            ]
+          },
+          "GrapplingHook_Mesh": {
+            "surfaces": [
+              "res://materials/sharedassets1_325.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "Shuriken_Mesh": {
+            "surfaces": [
+              "res://materials/sharedassets1_325.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          }
+        },
+        "states": {
+          "Idle": "Ayaka_BattleIdle",
+          "Move": "Ayaka_MoveLoop",
+          "BasicAttack": "Ayaka_BasicAttack02",
+          "Die": "Death",
+          "SkillAttack": "Ayaka_ActiveAbility_All"
+        },
+        "prefab": 15776,
+        "entry_blends": {
+          "BasicAttack": 0.25,
+          "SkillAttack": 0.25
+        },
+        "exit_blends": {
+          "BasicAttack": [
+            1.1018347701165965,
+            0.08483421802520752
+          ],
+          "SkillAttack": [
+            3.98000618512836,
+            0.05707597732543945
+          ]
+        }
+      }
+    ],
+    "4": [
+      {
+        "model": "res://rigs/49998/model.fbx",
+        "clips": {
+          "Archer_Idle": "Ayaka_BattleIdle",
+          "Archer_Move": "Ayaka_MoveLoop",
+          "Archer_BasicAttack": "Ayaka_BasicAttack02",
+          "Archer_Die": "Death",
+          "Archer_SkillAttack": "Ayaka_ActiveAbility_All"
+        },
+        "loop": {
+          "Ayaka_BattleIdle": true,
+          "Ayaka_MoveLoop": true,
+          "Ayaka_BasicAttack02": false,
+          "Death": false,
+          "Ayaka_ActiveAbility_All": false
+        },
+        "meshes": {
+          "Body_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_319.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "DualBlade_L_Mesh": {
+            "surfaces": [
+              "res://materials/sharedassets1_323.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "DualBlade_R_Mesh": {
+            "surfaces": [
+              "res://materials/sharedassets1_323.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "GrapplingHook_Mesh": {
+            "surfaces": [
+              "res://materials/sharedassets1_323.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "Shuriken_Mesh": {
+            "surfaces": [
+              "res://materials/sharedassets1_323.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          }
+        },
+        "states": {
+          "Idle": "Ayaka_BattleIdle",
+          "Move": "Ayaka_MoveLoop",
+          "BasicAttack": "Ayaka_BasicAttack02",
+          "Die": "Death",
+          "SkillAttack": "Ayaka_ActiveAbility_All"
+        },
+        "prefab": 21755,
+        "entry_blends": {
+          "BasicAttack": 0.25,
+          "SkillAttack": 0.25
+        },
+        "exit_blends": {
+          "BasicAttack": [
+            1.1018347701165965,
+            0.08483421802520752
+          ],
+          "SkillAttack": [
+            3.98000618512836,
+            0.05707597732543945
+          ]
+        }
+      }
+    ]
+  },
+  "60915": {
+    "1": [
+      {
+        "model": "res://rigs/50078/model.fbx",
+        "clips": {
+          "Archer_Idle": "Cenk_IdleBattle",
+          "Archer_Move": "Cenk_MoveLoop",
+          "Archer_BasicAttack": "Cenk_BasicAttack01",
+          "Archer_Die": "Death",
+          "Archer_SkillAttack": "Cenk_ActiveAbility"
+        },
+        "loop": {
+          "Cenk_IdleBattle": true,
+          "Cenk_MoveLoop": true,
+          "Cenk_BasicAttack01": false,
+          "Death": false,
+          "Cenk_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_363.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_367.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Cenk_IdleBattle",
+          "Move": "Cenk_MoveLoop",
+          "BasicAttack": "Cenk_BasicAttack01",
+          "Die": "Death",
+          "SkillAttack": "Cenk_ActiveAbility"
+        },
+        "prefab": 13653
+      }
+    ],
+    "2": [
+      {
+        "model": "res://rigs/50106/model.fbx",
+        "clips": {
+          "Archer_Idle": "Cenk_IdleBattle",
+          "Archer_Move": "Cenk_MoveLoop",
+          "Archer_BasicAttack": "Cenk_BasicAttack01",
+          "Archer_Die": "Death",
+          "Archer_SkillAttack": "Cenk_ActiveAbility"
+        },
+        "loop": {
+          "Cenk_IdleBattle": true,
+          "Cenk_MoveLoop": true,
+          "Cenk_BasicAttack01": false,
+          "Death": false,
+          "Cenk_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_365.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_369.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Cenk_IdleBattle",
+          "Move": "Cenk_MoveLoop",
+          "BasicAttack": "Cenk_BasicAttack01",
+          "Die": "Death",
+          "SkillAttack": "Cenk_ActiveAbility"
+        },
+        "prefab": 8800
+      }
+    ],
+    "3": [
+      {
+        "model": "res://rigs/50105/model.fbx",
+        "clips": {
+          "Archer_Idle": "Cenk_IdleBattle",
+          "Archer_Move": "Cenk_MoveLoop",
+          "Archer_BasicAttack": "Cenk_BasicAttack01",
+          "Archer_Die": "Death",
+          "Archer_SkillAttack": "Cenk_ActiveAbility"
+        },
+        "loop": {
+          "Cenk_IdleBattle": true,
+          "Cenk_MoveLoop": true,
+          "Cenk_BasicAttack01": false,
+          "Death": false,
+          "Cenk_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_366.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_370.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Cenk_IdleBattle",
+          "Move": "Cenk_MoveLoop",
+          "BasicAttack": "Cenk_BasicAttack01",
+          "Die": "Death",
+          "SkillAttack": "Cenk_ActiveAbility"
+        },
+        "prefab": 8799
+      }
+    ],
+    "4": [
+      {
+        "model": "res://rigs/50104/model.fbx",
+        "clips": {
+          "Archer_Idle": "Cenk_IdleBattle",
+          "Archer_Move": "Cenk_MoveLoop",
+          "Archer_BasicAttack": "Cenk_BasicAttack01",
+          "Archer_Die": "Death",
+          "Archer_SkillAttack": "Cenk_ActiveAbility"
+        },
+        "loop": {
+          "Cenk_IdleBattle": true,
+          "Cenk_MoveLoop": true,
+          "Cenk_BasicAttack01": false,
+          "Death": false,
+          "Cenk_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_364.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "Weapon_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_368.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          }
+        },
+        "states": {
+          "Idle": "Cenk_IdleBattle",
+          "Move": "Cenk_MoveLoop",
+          "BasicAttack": "Cenk_BasicAttack01",
+          "Die": "Death",
+          "SkillAttack": "Cenk_ActiveAbility"
+        },
+        "prefab": 8798
+      }
+    ]
+  },
+  "60916": {
+    "1": [
+      {
+        "model": "res://rigs/49980/model.fbx",
+        "clips": {
+          "Archer_Idle": "Dragomir_IdleBattle",
+          "Archer_Move": "Dragomir_MoveLoop",
+          "Archer_BasicAttack": "Dragomir_BasicAttack01",
+          "Archer_Die": "Death",
+          "Archer_SkillAttack": "Dragomir_ActiveAbility"
+        },
+        "loop": {
+          "Dragomir_IdleBattle": true,
+          "Dragomir_MoveLoop": true,
+          "Dragomir_BasicAttack01": false,
+          "Death": false,
+          "Dragomir_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_400.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_404.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Dragomir_IdleBattle",
+          "Move": "Dragomir_MoveLoop",
+          "BasicAttack": "Dragomir_BasicAttack01",
+          "Die": "Death",
+          "SkillAttack": "Dragomir_ActiveAbility"
+        },
+        "prefab": 15353
+      }
+    ],
+    "2": [
+      {
+        "model": "res://rigs/50047/model.fbx",
+        "clips": {
+          "Archer_Idle": "Dragomir_IdleBattle",
+          "Archer_Move": "Dragomir_MoveLoop",
+          "Archer_BasicAttack": "Dragomir_BasicAttack01",
+          "Archer_Die": "Death",
+          "Archer_SkillAttack": "Dragomir_ActiveAbility"
+        },
+        "loop": {
+          "Dragomir_IdleBattle": true,
+          "Dragomir_MoveLoop": true,
+          "Dragomir_BasicAttack01": false,
+          "Death": false,
+          "Dragomir_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_397.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_401.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Dragomir_IdleBattle",
+          "Move": "Dragomir_MoveLoop",
+          "BasicAttack": "Dragomir_BasicAttack01",
+          "Die": "Death",
+          "SkillAttack": "Dragomir_ActiveAbility"
+        },
+        "prefab": 23403
+      }
+    ],
+    "3": [
+      {
+        "model": "res://rigs/49982/model.fbx",
+        "clips": {
+          "Archer_Idle": "Dragomir_IdleBattle",
+          "Archer_Move": "Dragomir_MoveLoop",
+          "Archer_BasicAttack": "Dragomir_BasicAttack01",
+          "Archer_Die": "Death",
+          "Archer_SkillAttack": "Dragomir_ActiveAbility"
+        },
+        "loop": {
+          "Dragomir_IdleBattle": true,
+          "Dragomir_MoveLoop": true,
+          "Dragomir_BasicAttack01": false,
+          "Death": false,
+          "Dragomir_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_399.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_403.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Dragomir_IdleBattle",
+          "Move": "Dragomir_MoveLoop",
+          "BasicAttack": "Dragomir_BasicAttack01",
+          "Die": "Death",
+          "SkillAttack": "Dragomir_ActiveAbility"
+        },
+        "prefab": 15355
+      }
+    ],
+    "4": [
+      {
+        "model": "res://rigs/49981/model.fbx",
+        "clips": {
+          "Archer_Idle": "Dragomir_IdleBattle",
+          "Archer_Move": "Dragomir_MoveLoop",
+          "Archer_BasicAttack": "Dragomir_BasicAttack01",
+          "Archer_Die": "Death",
+          "Archer_SkillAttack": "Dragomir_ActiveAbility"
+        },
+        "loop": {
+          "Dragomir_IdleBattle": true,
+          "Dragomir_MoveLoop": true,
+          "Dragomir_BasicAttack01": false,
+          "Death": false,
+          "Dragomir_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_398.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "Weapon_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_402.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          }
+        },
+        "states": {
+          "Idle": "Dragomir_IdleBattle",
+          "Move": "Dragomir_MoveLoop",
+          "BasicAttack": "Dragomir_BasicAttack01",
+          "Die": "Death",
+          "SkillAttack": "Dragomir_ActiveAbility"
+        },
+        "prefab": 15354
+      }
+    ]
+  },
+  "60917": {
+    "1": [
+      {
+        "model": "res://rigs/49988/model.fbx",
+        "clips": {
+          "Archer_Idle": "Fiona_IdleBattle",
+          "Archer_Move": "Fiona_MoveLoop",
+          "Archer_BasicAttack": "Fiona_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Fiona_ActiveAbility"
+        },
+        "loop": {
+          "Fiona_IdleBattle": true,
+          "Fiona_MoveLoop": true,
+          "Fiona_BasicAttack": false,
+          "Fly_Death": false,
+          "Fiona_ActiveAbility": false
+        },
+        "meshes": {
+          "Armor_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_421.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_420.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_421.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Fiona_IdleBattle",
+          "Move": "Fiona_MoveLoop",
+          "BasicAttack": "Fiona_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Fiona_ActiveAbility"
+        },
+        "prefab": 6321
+      }
+    ],
+    "2": [
+      {
+        "model": "res://rigs/49986/model.fbx",
+        "clips": {
+          "Archer_Idle": "Fiona_IdleBattle",
+          "Archer_Move": "Fiona_MoveLoop",
+          "Archer_BasicAttack": "Fiona_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Fiona_ActiveAbility"
+        },
+        "loop": {
+          "Fiona_IdleBattle": true,
+          "Fiona_MoveLoop": true,
+          "Fiona_BasicAttack": false,
+          "Fly_Death": false,
+          "Fiona_ActiveAbility": false
+        },
+        "meshes": {
+          "Armor_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_423.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_420.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_423.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Fiona_IdleBattle",
+          "Move": "Fiona_MoveLoop",
+          "BasicAttack": "Fiona_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Fiona_ActiveAbility"
+        },
+        "prefab": 6601
+      }
+    ],
+    "3": [
+      {
+        "model": "res://rigs/50093/model.fbx",
+        "clips": {
+          "Archer_Idle": "Fiona_IdleBattle",
+          "Archer_Move": "Fiona_MoveLoop",
+          "Archer_BasicAttack": "Fiona_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Fiona_ActiveAbility"
+        },
+        "loop": {
+          "Fiona_IdleBattle": true,
+          "Fiona_MoveLoop": true,
+          "Fiona_BasicAttack": false,
+          "Fly_Death": false,
+          "Fiona_ActiveAbility": false
+        },
+        "meshes": {
+          "Armor_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_424.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_420.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_424.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Fiona_IdleBattle",
+          "Move": "Fiona_MoveLoop",
+          "BasicAttack": "Fiona_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Fiona_ActiveAbility"
+        },
+        "prefab": 25170
+      }
+    ],
+    "4": [
+      {
+        "model": "res://rigs/50031/model.fbx",
+        "clips": {
+          "Archer_Idle": "Fiona_IdleBattle",
+          "Archer_Move": "Fiona_MoveLoop",
+          "Archer_BasicAttack": "Fiona_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Fiona_ActiveAbility"
+        },
+        "loop": {
+          "Fiona_IdleBattle": true,
+          "Fiona_MoveLoop": true,
+          "Fiona_BasicAttack": false,
+          "Fly_Death": false,
+          "Fiona_ActiveAbility": false
+        },
+        "meshes": {
+          "Armor_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_422.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "Body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_420.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_422.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          }
+        },
+        "states": {
+          "Idle": "Fiona_IdleBattle",
+          "Move": "Fiona_MoveLoop",
+          "BasicAttack": "Fiona_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Fiona_ActiveAbility"
+        },
+        "prefab": 10963
+      }
+    ]
+  },
+  "60918": {
+    "1": [
+      {
+        "model": "res://rigs/50008/model.fbx",
+        "clips": {
+          "Archer_Idle": "Floeria_IdleBattle",
+          "Archer_Move": "Floeria_MoveLoop",
+          "Archer_BasicAttack": "Floeria_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Floeria_ActiveAbility"
+        },
+        "loop": {
+          "Floeria_IdleBattle": true,
+          "Floeria_MoveLoop": true,
+          "Floeria_BasicAttack": false,
+          "Fly_Death": false,
+          "Floeria_ActiveAbility": true
+        },
+        "meshes": {
+          "Body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_439.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Flower_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_443.tres"
+            ],
+            "visible": false
+          },
+          "Grass_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_443.tres"
+            ],
+            "visible": false
+          },
+          "Wings_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_440.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Floeria_IdleBattle",
+          "Move": "Floeria_MoveLoop",
+          "BasicAttack": "Floeria_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Floeria_ActiveAbility"
+        },
+        "prefab": 6322
+      }
+    ],
+    "2": [
+      {
+        "model": "res://rigs/50107/model.fbx",
+        "clips": {
+          "Archer_Idle": "Floeria_IdleBattle",
+          "Archer_Move": "Floeria_MoveLoop",
+          "Archer_BasicAttack": "Floeria_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Floeria_ActiveAbility"
+        },
+        "loop": {
+          "Floeria_IdleBattle": true,
+          "Floeria_MoveLoop": true,
+          "Floeria_BasicAttack": false,
+          "Fly_Death": false,
+          "Floeria_ActiveAbility": true
+        },
+        "meshes": {
+          "Body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_439.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Flower_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_443.tres"
+            ],
+            "visible": false
+          },
+          "Grass_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_443.tres"
+            ],
+            "visible": false
+          },
+          "Wings_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_443.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Floeria_IdleBattle",
+          "Move": "Floeria_MoveLoop",
+          "BasicAttack": "Floeria_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Floeria_ActiveAbility"
+        },
+        "prefab": 19578
+      }
+    ],
+    "3": [
+      {
+        "model": "res://rigs/50048/model.fbx",
+        "clips": {
+          "Archer_Idle": "Floeria_IdleBattle",
+          "Archer_Move": "Floeria_MoveLoop",
+          "Archer_BasicAttack": "Floeria_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Floeria_ActiveAbility"
+        },
+        "loop": {
+          "Floeria_IdleBattle": true,
+          "Floeria_MoveLoop": true,
+          "Floeria_BasicAttack": false,
+          "Fly_Death": false,
+          "Floeria_ActiveAbility": true
+        },
+        "meshes": {
+          "Body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_439.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Flower_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_443.tres"
+            ],
+            "visible": false
+          },
+          "Grass_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_443.tres"
+            ],
+            "visible": false
+          },
+          "Wings_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_442.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Floeria_IdleBattle",
+          "Move": "Floeria_MoveLoop",
+          "BasicAttack": "Floeria_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Floeria_ActiveAbility"
+        },
+        "prefab": 23300
+      }
+    ],
+    "4": [
+      {
+        "model": "res://rigs/50021/model.fbx",
+        "clips": {
+          "Archer_Idle": "Floeria_IdleBattle",
+          "Archer_Move": "Floeria_MoveLoop",
+          "Archer_BasicAttack": "Floeria_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Floeria_ActiveAbility"
+        },
+        "loop": {
+          "Floeria_IdleBattle": true,
+          "Floeria_MoveLoop": true,
+          "Floeria_BasicAttack": false,
+          "Fly_Death": false,
+          "Floeria_ActiveAbility": true
+        },
+        "meshes": {
+          "Body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_439.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Flower_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_441.tres",
+              "res://materials/globalgamemanagers_3.tres"
+            ],
+            "visible": false
+          },
+          "Grass_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_441.tres",
+              "res://materials/globalgamemanagers_3.tres"
+            ],
+            "visible": false
+          },
+          "Wings_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_441.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          }
+        },
+        "states": {
+          "Idle": "Floeria_IdleBattle",
+          "Move": "Floeria_MoveLoop",
+          "BasicAttack": "Floeria_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Floeria_ActiveAbility"
+        },
+        "prefab": 9485
+      }
+    ]
+  },
+  "60919": {
+    "1": [
+      {
+        "model": "res://rigs/50000/model.fbx",
+        "clips": {
+          "Archer_Idle": "Funke_IdleBattle",
+          "Archer_Move": "Funke_MoveLoop",
+          "Archer_BasicAttack": "Funke_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Funke_ActiveAbility"
+        },
+        "loop": {
+          "Funke_IdleBattle": true,
+          "Funke_MoveLoop": true,
+          "Funke_BasicAttack": false,
+          "Fly_Death": false,
+          "Funke_ActiveAbility": false
+        },
+        "meshes": {
+          "body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_462.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "weapon_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_463.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Funke_IdleBattle",
+          "Move": "Funke_MoveLoop",
+          "BasicAttack": "Funke_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Funke_ActiveAbility"
+        },
+        "prefab": 20460
+      }
+    ],
+    "2": [
+      {
+        "model": "res://rigs/49999/model.fbx",
+        "clips": {
+          "Archer_Idle": "Funke_IdleBattle",
+          "Archer_Move": "Funke_MoveLoop",
+          "Archer_BasicAttack": "Funke_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Funke_ActiveAbility"
+        },
+        "loop": {
+          "Funke_IdleBattle": true,
+          "Funke_MoveLoop": true,
+          "Funke_BasicAttack": false,
+          "Fly_Death": false,
+          "Funke_ActiveAbility": false
+        },
+        "meshes": {
+          "body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_462.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "weapon_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_465.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Funke_IdleBattle",
+          "Move": "Funke_MoveLoop",
+          "BasicAttack": "Funke_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Funke_ActiveAbility"
+        },
+        "prefab": 20458
+      }
+    ],
+    "3": [
+      {
+        "model": "res://rigs/49974/model.fbx",
+        "clips": {
+          "Archer_Idle": "Funke_IdleBattle",
+          "Archer_Move": "Funke_MoveLoop",
+          "Archer_BasicAttack": "Funke_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Funke_ActiveAbility"
+        },
+        "loop": {
+          "Funke_IdleBattle": true,
+          "Funke_MoveLoop": true,
+          "Funke_BasicAttack": false,
+          "Fly_Death": false,
+          "Funke_ActiveAbility": false
+        },
+        "meshes": {
+          "body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_462.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "weapon_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_466.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Funke_IdleBattle",
+          "Move": "Funke_MoveLoop",
+          "BasicAttack": "Funke_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Funke_ActiveAbility"
+        },
+        "prefab": 17636
+      }
+    ],
+    "4": [
+      {
+        "model": "res://rigs/50081/model.fbx",
+        "clips": {
+          "Archer_Idle": "Funke_IdleBattle",
+          "Archer_Move": "Funke_MoveLoop",
+          "Archer_BasicAttack": "Funke_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Funke_ActiveAbility"
+        },
+        "loop": {
+          "Funke_IdleBattle": true,
+          "Funke_MoveLoop": true,
+          "Funke_BasicAttack": false,
+          "Fly_Death": false,
+          "Funke_ActiveAbility": false
+        },
+        "meshes": {
+          "body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_462.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "weapon_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_464.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          }
+        },
+        "states": {
+          "Idle": "Funke_IdleBattle",
+          "Move": "Funke_MoveLoop",
+          "BasicAttack": "Funke_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Funke_ActiveAbility"
+        },
+        "prefab": 10663
+      }
+    ]
+  },
+  "60920": {
+    "1": [
+      {
+        "model": "res://rigs/50004/model.fbx",
+        "clips": {
+          "Archer_Idle": "Gustav_IdleBattle",
+          "Archer_Move": "Gustav_MoveLoop",
+          "Archer_BasicAttack": "Gustav_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Gustav_ActiveAbility"
+        },
+        "loop": {
+          "Gustav_IdleBattle": true,
+          "Gustav_MoveLoop": true,
+          "Gustav_BasicAttack": false,
+          "Fly_Death": false,
+          "Gustav_ActiveAbility": false
+        },
+        "meshes": {
+          "body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_500.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "cloak_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_504.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "weapon_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_504.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Gustav_IdleBattle",
+          "Move": "Gustav_MoveLoop",
+          "BasicAttack": "Gustav_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Gustav_ActiveAbility"
+        },
+        "prefab": 20462
+      }
+    ],
+    "2": [
+      {
+        "model": "res://rigs/50086/model.fbx",
+        "clips": {
+          "Archer_Idle": "Gustav_IdleBattle",
+          "Archer_Move": "Gustav_MoveLoop",
+          "Archer_BasicAttack": "Gustav_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Gustav_ActiveAbility"
+        },
+        "loop": {
+          "Gustav_IdleBattle": true,
+          "Gustav_MoveLoop": true,
+          "Gustav_BasicAttack": false,
+          "Fly_Death": false,
+          "Gustav_ActiveAbility": false
+        },
+        "meshes": {
+          "body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_502.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "cloak_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_506.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "weapon_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_506.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Gustav_IdleBattle",
+          "Move": "Gustav_MoveLoop",
+          "BasicAttack": "Gustav_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Gustav_ActiveAbility"
+        },
+        "prefab": 10186
+      }
+    ],
+    "3": [
+      {
+        "model": "res://rigs/49990/model.fbx",
+        "clips": {
+          "Archer_Idle": "Gustav_IdleBattle",
+          "Archer_Move": "Gustav_MoveLoop",
+          "Archer_BasicAttack": "Gustav_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Gustav_ActiveAbility"
+        },
+        "loop": {
+          "Gustav_IdleBattle": true,
+          "Gustav_MoveLoop": true,
+          "Gustav_BasicAttack": false,
+          "Fly_Death": false,
+          "Gustav_ActiveAbility": false
+        },
+        "meshes": {
+          "body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_503.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "cloak_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_507.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "weapon_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_507.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Gustav_IdleBattle",
+          "Move": "Gustav_MoveLoop",
+          "BasicAttack": "Gustav_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Gustav_ActiveAbility"
+        },
+        "prefab": 22207
+      }
+    ],
+    "4": [
+      {
+        "model": "res://rigs/50018/model.fbx",
+        "clips": {
+          "Archer_Idle": "Gustav_IdleBattle",
+          "Archer_Move": "Gustav_MoveLoop",
+          "Archer_BasicAttack": "Gustav_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Gustav_ActiveAbility"
+        },
+        "loop": {
+          "Gustav_IdleBattle": true,
+          "Gustav_MoveLoop": true,
+          "Gustav_BasicAttack": false,
+          "Fly_Death": false,
+          "Gustav_ActiveAbility": false
+        },
+        "meshes": {
+          "body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_501.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "cloak_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_505.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "weapon_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_505.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          }
+        },
+        "states": {
+          "Idle": "Gustav_IdleBattle",
+          "Move": "Gustav_MoveLoop",
+          "BasicAttack": "Gustav_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Gustav_ActiveAbility"
+        },
+        "prefab": 17550
+      }
+    ]
+  },
+  "60921": {
+    "1": [
+      {
+        "model": "res://rigs/50098/model.fbx",
+        "clips": {
+          "Archer_Idle": "Hoyoung_IdleBattle",
+          "Archer_Move": "Hoyoung_MoveLoop",
+          "Archer_BasicAttack": "Hoyoung_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Hoyoung_ActiveAbility"
+        },
+        "loop": {
+          "Hoyoung_IdleBattle": true,
+          "Hoyoung_MoveLoop": true,
+          "Hoyoung_BasicAttack": false,
+          "Fly_Death": false,
+          "Hoyoung_ActiveAbility": false
+        },
+        "meshes": {
+          "body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_530.tres",
+              "res://materials/sharedassets1_526.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "weaponB_01_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_530.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Hoyoung_IdleBattle",
+          "Move": "Hoyoung_MoveLoop",
+          "BasicAttack": "Hoyoung_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Hoyoung_ActiveAbility"
+        },
+        "prefab": 4765
+      }
+    ],
+    "2": [
+      {
+        "model": "res://rigs/49964/model.fbx",
+        "clips": {
+          "Archer_Idle": "Hoyoung_IdleBattle",
+          "Archer_Move": "Hoyoung_MoveLoop",
+          "Archer_BasicAttack": "Hoyoung_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Hoyoung_ActiveAbility"
+        },
+        "loop": {
+          "Hoyoung_IdleBattle": true,
+          "Hoyoung_MoveLoop": true,
+          "Hoyoung_BasicAttack": false,
+          "Fly_Death": false,
+          "Hoyoung_ActiveAbility": false
+        },
+        "meshes": {
+          "body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_532.tres",
+              "res://materials/sharedassets1_528.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "weaponB_01_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_532.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Hoyoung_IdleBattle",
+          "Move": "Hoyoung_MoveLoop",
+          "BasicAttack": "Hoyoung_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Hoyoung_ActiveAbility"
+        },
+        "prefab": 23441
+      }
+    ],
+    "3": [
+      {
+        "model": "res://rigs/50061/model.fbx",
+        "clips": {
+          "Archer_Idle": "Hoyoung_IdleBattle",
+          "Archer_Move": "Hoyoung_MoveLoop",
+          "Archer_BasicAttack": "Hoyoung_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Hoyoung_ActiveAbility"
+        },
+        "loop": {
+          "Hoyoung_IdleBattle": true,
+          "Hoyoung_MoveLoop": true,
+          "Hoyoung_BasicAttack": false,
+          "Fly_Death": false,
+          "Hoyoung_ActiveAbility": false
+        },
+        "meshes": {
+          "body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_533.tres",
+              "res://materials/sharedassets1_529.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "weaponB_01_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_533.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Hoyoung_IdleBattle",
+          "Move": "Hoyoung_MoveLoop",
+          "BasicAttack": "Hoyoung_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Hoyoung_ActiveAbility"
+        },
+        "prefab": 15644
+      }
+    ],
+    "4": [
+      {
+        "model": "res://rigs/50037/model.fbx",
+        "clips": {
+          "Archer_Idle": "Hoyoung_IdleBattle",
+          "Archer_Move": "Hoyoung_MoveLoop",
+          "Archer_BasicAttack": "Hoyoung_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Hoyoung_ActiveAbility"
+        },
+        "loop": {
+          "Hoyoung_IdleBattle": true,
+          "Hoyoung_MoveLoop": true,
+          "Hoyoung_BasicAttack": false,
+          "Fly_Death": false,
+          "Hoyoung_ActiveAbility": false
+        },
+        "meshes": {
+          "body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_531.tres",
+              "res://materials/sharedassets1_527.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "weaponB_01_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_531.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          }
+        },
+        "states": {
+          "Idle": "Hoyoung_IdleBattle",
+          "Move": "Hoyoung_MoveLoop",
+          "BasicAttack": "Hoyoung_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Hoyoung_ActiveAbility"
+        },
+        "prefab": 18904
+      }
+    ]
+  },
+  "60922": {
+    "1": [
+      {
+        "model": "res://rigs/50046/model.fbx",
+        "clips": {
+          "Irini_IdleBattle": "Irini_IdleBattle",
+          "Irini_MoveLoop": "Irini_MoveLoop",
+          "Irini_BasicAttack": "Irini_BasicAttack",
+          "Archer_Die": "Archer_Die",
+          "Irini_ActiveAbility": "Irini_ActiveAbility"
+        },
+        "loop": {
+          "Irini_IdleBattle": true,
+          "Irini_MoveLoop": true,
+          "Irini_BasicAttack": false,
+          "Archer_Die": false,
+          "Irini_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_574.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_A_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_578.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Irini_IdleBattle",
+          "Move": "Irini_MoveLoop",
+          "BasicAttack": "Irini_BasicAttack",
+          "Die": "Archer_Die",
+          "SkillAttack": "Irini_ActiveAbility"
+        },
+        "prefab": 23392
+      }
+    ],
+    "2": [
+      {
+        "model": "res://rigs/49970/model.fbx",
+        "clips": {
+          "Irini_IdleBattle": "Irini_IdleBattle",
+          "Irini_MoveLoop": "Irini_MoveLoop",
+          "Irini_BasicAttack": "Irini_BasicAttack",
+          "Archer_Die": "Archer_Die",
+          "Irini_ActiveAbility": "Irini_ActiveAbility"
+        },
+        "loop": {
+          "Irini_IdleBattle": true,
+          "Irini_MoveLoop": true,
+          "Irini_BasicAttack": false,
+          "Archer_Die": false,
+          "Irini_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_571.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_A_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_575.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Irini_IdleBattle",
+          "Move": "Irini_MoveLoop",
+          "BasicAttack": "Irini_BasicAttack",
+          "Die": "Archer_Die",
+          "SkillAttack": "Irini_ActiveAbility"
+        },
+        "prefab": 11091
+      }
+    ],
+    "3": [
+      {
+        "model": "res://rigs/50051/model.fbx",
+        "clips": {
+          "Irini_IdleBattle": "Irini_IdleBattle",
+          "Irini_MoveLoop": "Irini_MoveLoop",
+          "Irini_BasicAttack": "Irini_BasicAttack",
+          "Archer_Die": "Archer_Die",
+          "Irini_ActiveAbility": "Irini_ActiveAbility"
+        },
+        "loop": {
+          "Irini_IdleBattle": true,
+          "Irini_MoveLoop": true,
+          "Irini_BasicAttack": false,
+          "Archer_Die": false,
+          "Irini_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_573.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_A_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_577.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Irini_IdleBattle",
+          "Move": "Irini_MoveLoop",
+          "BasicAttack": "Irini_BasicAttack",
+          "Die": "Archer_Die",
+          "SkillAttack": "Irini_ActiveAbility"
+        },
+        "prefab": 22851
+      }
+    ],
+    "4": [
+      {
+        "model": "res://rigs/50007/model.fbx",
+        "clips": {
+          "Irini_IdleBattle": "Irini_IdleBattle",
+          "Irini_MoveLoop": "Irini_MoveLoop",
+          "Irini_BasicAttack": "Irini_BasicAttack",
+          "Archer_Die": "Archer_Die",
+          "Irini_ActiveAbility": "Irini_ActiveAbility"
+        },
+        "loop": {
+          "Irini_IdleBattle": true,
+          "Irini_MoveLoop": true,
+          "Irini_BasicAttack": false,
+          "Archer_Die": false,
+          "Irini_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_572.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "Weapon_A_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_576.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          }
+        },
+        "states": {
+          "Idle": "Irini_IdleBattle",
+          "Move": "Irini_MoveLoop",
+          "BasicAttack": "Irini_BasicAttack",
+          "Die": "Archer_Die",
+          "SkillAttack": "Irini_ActiveAbility"
+        },
+        "prefab": 6347
+      }
+    ]
+  },
+  "60923": {
+    "1": [
+      {
+        "model": "res://rigs/49963/model.fbx",
+        "clips": {
+          "Archer_Idle": "Javryn_IdleBattle",
+          "Archer_Move": "Javryn_MoveLoop",
+          "Archer_BasicAttack": "Javryn_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Javryn_ActiveAbility"
+        },
+        "loop": {
+          "Javryn_IdleBattle": true,
+          "Javryn_MoveLoop": true,
+          "Javryn_BasicAttack": false,
+          "Fly_Death": false,
+          "Javryn_ActiveAbility": false
+        },
+        "meshes": {
+          "Javryn_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_609.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "allow_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_613.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "bow_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_613.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "quiver_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_613.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Javryn_IdleBattle",
+          "Move": "Javryn_MoveLoop",
+          "BasicAttack": "Javryn_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Javryn_ActiveAbility"
+        },
+        "prefab": 13247
+      },
+      {
+        "model": "res://rigs/49992/model.fbx",
+        "clips": {
+          "BowCurve": "BowCurve"
+        },
+        "loop": {
+          "BowCurve": false
+        },
+        "meshes": {
+          "VFX_Bow": {
+            "surfaces": [
+              "res://materials/sharedassets1_619.tres",
+              "res://materials/sharedassets1_620.tres"
+            ],
+            "visible": true
+          }
+        },
+        "states": {
+          "BowCurve": "BowCurve"
+        },
+        "prefab": 13247,
+        "action_only": true
+      }
+    ],
+    "2": [
+      {
+        "model": "res://rigs/50101/model.fbx",
+        "clips": {
+          "Archer_Idle": "Javryn_IdleBattle",
+          "Archer_Move": "Javryn_MoveLoop",
+          "Archer_BasicAttack": "Javryn_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Javryn_ActiveAbility"
+        },
+        "loop": {
+          "Javryn_IdleBattle": true,
+          "Javryn_MoveLoop": true,
+          "Javryn_BasicAttack": false,
+          "Fly_Death": false,
+          "Javryn_ActiveAbility": false
+        },
+        "meshes": {
+          "Javryn_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_611.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "allow_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_615.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "bow_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_615.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "quiver_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_615.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Javryn_IdleBattle",
+          "Move": "Javryn_MoveLoop",
+          "BasicAttack": "Javryn_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Javryn_ActiveAbility"
+        },
+        "prefab": 16088
+      },
+      {
+        "model": "res://rigs/50090/model.fbx",
+        "clips": {
+          "BowCurve": "BowCurve"
+        },
+        "loop": {
+          "BowCurve": false
+        },
+        "meshes": {
+          "VFX_Bow": {
+            "surfaces": [
+              "res://materials/sharedassets1_619.tres",
+              "res://materials/sharedassets1_620.tres"
+            ],
+            "visible": true
+          }
+        },
+        "states": {
+          "BowCurve": "BowCurve"
+        },
+        "prefab": 16088,
+        "action_only": true
+      }
+    ],
+    "3": [
+      {
+        "model": "res://rigs/49993/model.fbx",
+        "clips": {
+          "Archer_Idle": "Javryn_IdleBattle",
+          "Archer_Move": "Javryn_MoveLoop",
+          "Archer_BasicAttack": "Javryn_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Javryn_ActiveAbility"
+        },
+        "loop": {
+          "Javryn_IdleBattle": true,
+          "Javryn_MoveLoop": true,
+          "Javryn_BasicAttack": false,
+          "Fly_Death": false,
+          "Javryn_ActiveAbility": false
+        },
+        "meshes": {
+          "Javryn_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_612.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "allow_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_616.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "bow_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_616.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "quiver_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_616.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Javryn_IdleBattle",
+          "Move": "Javryn_MoveLoop",
+          "BasicAttack": "Javryn_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Javryn_ActiveAbility"
+        },
+        "prefab": 12601
+      },
+      {
+        "model": "res://rigs/49961/model.fbx",
+        "clips": {
+          "BowCurve": "BowCurve"
+        },
+        "loop": {
+          "BowCurve": false
+        },
+        "meshes": {
+          "VFX_Bow": {
+            "surfaces": [
+              "res://materials/sharedassets1_619.tres",
+              "res://materials/sharedassets1_620.tres"
+            ],
+            "visible": true
+          }
+        },
+        "states": {
+          "BowCurve": "BowCurve"
+        },
+        "prefab": 12601,
+        "action_only": true
+      }
+    ],
+    "4": [
+      {
+        "model": "res://rigs/50001/model.fbx",
+        "clips": {
+          "Archer_Idle": "Javryn_IdleBattle",
+          "Archer_Move": "Javryn_MoveLoop",
+          "Archer_BasicAttack": "Javryn_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Javryn_ActiveAbility"
+        },
+        "loop": {
+          "Javryn_IdleBattle": true,
+          "Javryn_MoveLoop": true,
+          "Javryn_BasicAttack": false,
+          "Fly_Death": false,
+          "Javryn_ActiveAbility": false
+        },
+        "meshes": {
+          "Javryn_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_610.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "allow_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_614.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "bow_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_614.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "quiver_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_614.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          }
+        },
+        "states": {
+          "Idle": "Javryn_IdleBattle",
+          "Move": "Javryn_MoveLoop",
+          "BasicAttack": "Javryn_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Javryn_ActiveAbility"
+        },
+        "prefab": 12840
+      },
+      {
+        "model": "res://rigs/49965/model.fbx",
+        "clips": {
+          "BowCurve": "BowCurve"
+        },
+        "loop": {
+          "BowCurve": false
+        },
+        "meshes": {
+          "VFX_Bow": {
+            "surfaces": [
+              "res://materials/sharedassets1_619.tres",
+              "res://materials/sharedassets1_620.tres"
+            ],
+            "visible": true
+          }
+        },
+        "states": {
+          "BowCurve": "BowCurve"
+        },
+        "prefab": 12840,
+        "action_only": true
+      }
+    ]
+  },
+  "60924": {
+    "1": [
+      {
+        "model": "res://rigs/50040/model.fbx",
+        "clips": {
+          "Archer_Idle": "Joey_IdleBattle",
+          "Archer_Move": "Joey_MoveLoop",
+          "Archer_BasicAttack": "Joey_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Joey_ActiveAbility"
+        },
+        "loop": {
+          "Joey_IdleBattle": true,
+          "Joey_MoveLoop": true,
+          "Joey_BasicAttack": false,
+          "Fly_Death": false,
+          "Joey_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_637.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Cloak_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_641.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_641.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Joey_IdleBattle",
+          "Move": "Joey_MoveLoop",
+          "BasicAttack": "Joey_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Joey_ActiveAbility"
+        },
+        "prefab": 26391
+      }
+    ],
+    "2": [
+      {
+        "model": "res://rigs/50073/model.fbx",
+        "clips": {
+          "Archer_Idle": "Joey_IdleBattle",
+          "Archer_Move": "Joey_MoveLoop",
+          "Archer_BasicAttack": "Joey_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Joey_ActiveAbility"
+        },
+        "loop": {
+          "Joey_IdleBattle": true,
+          "Joey_MoveLoop": true,
+          "Joey_BasicAttack": false,
+          "Fly_Death": false,
+          "Joey_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_639.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Cloak_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_643.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_643.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Joey_IdleBattle",
+          "Move": "Joey_MoveLoop",
+          "BasicAttack": "Joey_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Joey_ActiveAbility"
+        },
+        "prefab": 22175
+      }
+    ],
+    "3": [
+      {
+        "model": "res://rigs/50035/model.fbx",
+        "clips": {
+          "Archer_Idle": "Joey_IdleBattle",
+          "Archer_Move": "Joey_MoveLoop",
+          "Archer_BasicAttack": "Joey_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Joey_ActiveAbility"
+        },
+        "loop": {
+          "Joey_IdleBattle": true,
+          "Joey_MoveLoop": true,
+          "Joey_BasicAttack": false,
+          "Fly_Death": false,
+          "Joey_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_640.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Cloak_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_644.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_644.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Joey_IdleBattle",
+          "Move": "Joey_MoveLoop",
+          "BasicAttack": "Joey_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Joey_ActiveAbility"
+        },
+        "prefab": 5853
+      }
+    ],
+    "4": [
+      {
+        "model": "res://rigs/49984/model.fbx",
+        "clips": {
+          "Archer_Idle": "Joey_IdleBattle",
+          "Archer_Move": "Joey_MoveLoop",
+          "Archer_BasicAttack": "Joey_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Joey_ActiveAbility"
+        },
+        "loop": {
+          "Joey_IdleBattle": true,
+          "Joey_MoveLoop": true,
+          "Joey_BasicAttack": false,
+          "Fly_Death": false,
+          "Joey_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_638.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "Cloak_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_642.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "Weapon_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_642.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          }
+        },
+        "states": {
+          "Idle": "Joey_IdleBattle",
+          "Move": "Joey_MoveLoop",
+          "BasicAttack": "Joey_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Joey_ActiveAbility"
+        },
+        "prefab": 12527
+      }
+    ]
+  },
+  "60925": {
+    "1": [
+      {
+        "model": "res://rigs/50055/model.fbx",
+        "clips": {
+          "Archer_Idle": "Josephina_IdleBattle",
+          "Archer_Move": "Josephina_MoveLoop",
+          "Archer_BasicAttack": "Josephina_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Josephina_ActiveAbility"
+        },
+        "loop": {
+          "Josephina_IdleBattle": true,
+          "Josephina_MoveLoop": true,
+          "Josephina_BasicAttack": false,
+          "Fly_Death": false,
+          "Josephina_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_672.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Head_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_676.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_676.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Josephina_IdleBattle",
+          "Move": "Josephina_MoveLoop",
+          "BasicAttack": "Josephina_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Josephina_ActiveAbility"
+        },
+        "prefab": 6320
+      }
+    ],
+    "2": [
+      {
+        "model": "res://rigs/50102/model.fbx",
+        "clips": {
+          "Archer_Idle": "Josephina_IdleBattle",
+          "Archer_Move": "Josephina_MoveLoop",
+          "Archer_BasicAttack": "Josephina_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Josephina_ActiveAbility"
+        },
+        "loop": {
+          "Josephina_IdleBattle": true,
+          "Josephina_MoveLoop": true,
+          "Josephina_BasicAttack": false,
+          "Fly_Death": false,
+          "Josephina_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_674.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Head_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_678.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_678.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Josephina_IdleBattle",
+          "Move": "Josephina_MoveLoop",
+          "BasicAttack": "Josephina_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Josephina_ActiveAbility"
+        },
+        "prefab": 13529
+      }
+    ],
+    "3": [
+      {
+        "model": "res://rigs/49989/model.fbx",
+        "clips": {
+          "Archer_Idle": "Josephina_IdleBattle",
+          "Archer_Move": "Josephina_MoveLoop",
+          "Archer_BasicAttack": "Josephina_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Josephina_ActiveAbility"
+        },
+        "loop": {
+          "Josephina_IdleBattle": true,
+          "Josephina_MoveLoop": true,
+          "Josephina_BasicAttack": false,
+          "Fly_Death": false,
+          "Josephina_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_675.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Head_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_679.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_679.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Josephina_IdleBattle",
+          "Move": "Josephina_MoveLoop",
+          "BasicAttack": "Josephina_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Josephina_ActiveAbility"
+        },
+        "prefab": 19405
+      }
+    ],
+    "4": [
+      {
+        "model": "res://rigs/49962/model.fbx",
+        "clips": {
+          "Archer_Idle": "Josephina_IdleBattle",
+          "Archer_Move": "Josephina_MoveLoop",
+          "Archer_BasicAttack": "Josephina_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Josephina_ActiveAbility"
+        },
+        "loop": {
+          "Josephina_IdleBattle": true,
+          "Josephina_MoveLoop": true,
+          "Josephina_BasicAttack": false,
+          "Fly_Death": false,
+          "Josephina_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_673.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "Head_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_677.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "Weapon_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_677.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          }
+        },
+        "states": {
+          "Idle": "Josephina_IdleBattle",
+          "Move": "Josephina_MoveLoop",
+          "BasicAttack": "Josephina_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Josephina_ActiveAbility"
+        },
+        "prefab": 16121
+      }
+    ]
+  },
+  "60926": {
+    "1": [
+      {
+        "model": "res://rigs/50059/model.fbx",
+        "clips": {
+          "Archer_Idle": "Logan_IdleBattle",
+          "Archer_Move": "Logan_MoveLoop",
+          "Archer_BasicAttack": "Logan_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Logan_ActiveAbility01"
+        },
+        "loop": {
+          "Logan_IdleBattle": true,
+          "Logan_MoveLoop": true,
+          "Logan_BasicAttack": false,
+          "Fly_Death": false,
+          "Logan_ActiveAbility01": false
+        },
+        "meshes": {
+          "body_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_700.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "weapon_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_704.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Logan_IdleBattle",
+          "Move": "Logan_MoveLoop",
+          "BasicAttack": "Logan_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Logan_ActiveAbility01"
+        },
+        "prefab": 23334
+      }
+    ],
+    "2": [
+      {
+        "model": "res://rigs/50052/model.fbx",
+        "clips": {
+          "Archer_Idle": "Logan_IdleBattle",
+          "Archer_Move": "Logan_MoveLoop",
+          "Archer_BasicAttack": "Logan_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Logan_ActiveAbility01"
+        },
+        "loop": {
+          "Logan_IdleBattle": true,
+          "Logan_MoveLoop": true,
+          "Logan_BasicAttack": false,
+          "Fly_Death": false,
+          "Logan_ActiveAbility01": false
+        },
+        "meshes": {
+          "body_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_697.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "weapon_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_701.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Logan_IdleBattle",
+          "Move": "Logan_MoveLoop",
+          "BasicAttack": "Logan_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Logan_ActiveAbility01"
+        },
+        "prefab": 23402
+      }
+    ],
+    "3": [
+      {
+        "model": "res://rigs/49991/model.fbx",
+        "clips": {
+          "Archer_Idle": "Logan_IdleBattle",
+          "Archer_Move": "Logan_MoveLoop",
+          "Archer_BasicAttack": "Logan_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Logan_ActiveAbility01"
+        },
+        "loop": {
+          "Logan_IdleBattle": true,
+          "Logan_MoveLoop": true,
+          "Logan_BasicAttack": false,
+          "Fly_Death": false,
+          "Logan_ActiveAbility01": false
+        },
+        "meshes": {
+          "body_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_699.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "weapon_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_703.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Logan_IdleBattle",
+          "Move": "Logan_MoveLoop",
+          "BasicAttack": "Logan_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Logan_ActiveAbility01"
+        },
+        "prefab": 15649
+      }
+    ],
+    "4": [
+      {
+        "model": "res://rigs/50038/model.fbx",
+        "clips": {
+          "Archer_Idle": "Logan_IdleBattle",
+          "Archer_Move": "Logan_MoveLoop",
+          "Archer_BasicAttack": "Logan_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Logan_ActiveAbility01"
+        },
+        "loop": {
+          "Logan_IdleBattle": true,
+          "Logan_MoveLoop": true,
+          "Logan_BasicAttack": false,
+          "Fly_Death": false,
+          "Logan_ActiveAbility01": false
+        },
+        "meshes": {
+          "body_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_698.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "weapon_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_702.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          }
+        },
+        "states": {
+          "Idle": "Logan_IdleBattle",
+          "Move": "Logan_MoveLoop",
+          "BasicAttack": "Logan_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Logan_ActiveAbility01"
+        },
+        "prefab": 22674
+      }
+    ]
+  },
+  "60927": {
+    "1": [
+      {
+        "model": "res://rigs/49985/model.fbx",
+        "clips": {
+          "Archer_Idle": "Ming_IdleBattle",
+          "Archer_Move": "Ming_MoveLoop",
+          "Archer_BasicAttack": "Ming_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Ming_ActiveAbility"
+        },
+        "loop": {
+          "Ming_IdleBattle": true,
+          "Ming_MoveLoop": true,
+          "Ming_BasicAttack": false,
+          "Fly_Death": false,
+          "Ming_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_731.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_735.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Ming_IdleBattle",
+          "Move": "Ming_MoveLoop",
+          "BasicAttack": "Ming_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Ming_ActiveAbility"
+        },
+        "prefab": 20859
+      }
+    ],
+    "2": [
+      {
+        "model": "res://rigs/50019/model.fbx",
+        "clips": {
+          "Archer_Idle": "Ming_IdleBattle",
+          "Archer_Move": "Ming_MoveLoop",
+          "Archer_BasicAttack": "Ming_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Ming_ActiveAbility"
+        },
+        "loop": {
+          "Ming_IdleBattle": true,
+          "Ming_MoveLoop": true,
+          "Ming_BasicAttack": false,
+          "Fly_Death": false,
+          "Ming_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_733.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_737.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Ming_IdleBattle",
+          "Move": "Ming_MoveLoop",
+          "BasicAttack": "Ming_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Ming_ActiveAbility"
+        },
+        "prefab": 26430
+      }
+    ],
+    "3": [
+      {
+        "model": "res://rigs/49967/model.fbx",
+        "clips": {
+          "Archer_Idle": "Ming_IdleBattle",
+          "Archer_Move": "Ming_MoveLoop",
+          "Archer_BasicAttack": "Ming_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Ming_ActiveAbility"
+        },
+        "loop": {
+          "Ming_IdleBattle": true,
+          "Ming_MoveLoop": true,
+          "Ming_BasicAttack": false,
+          "Fly_Death": false,
+          "Ming_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_734.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_738.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Ming_IdleBattle",
+          "Move": "Ming_MoveLoop",
+          "BasicAttack": "Ming_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Ming_ActiveAbility"
+        },
+        "prefab": 17357
+      }
+    ],
+    "4": [
+      {
+        "model": "res://rigs/50005/model.fbx",
+        "clips": {
+          "Archer_Idle": "Ming_IdleBattle",
+          "Archer_Move": "Ming_MoveLoop",
+          "Archer_BasicAttack": "Ming_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Ming_ActiveAbility"
+        },
+        "loop": {
+          "Ming_IdleBattle": true,
+          "Ming_MoveLoop": true,
+          "Ming_BasicAttack": false,
+          "Fly_Death": false,
+          "Ming_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_732.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "Weapon_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_736.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          }
+        },
+        "states": {
+          "Idle": "Ming_IdleBattle",
+          "Move": "Ming_MoveLoop",
+          "BasicAttack": "Ming_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Ming_ActiveAbility"
+        },
+        "prefab": 23576
+      }
+    ]
+  },
+  "60928": {
+    "1": [
+      {
+        "model": "res://rigs/50084/model.fbx",
+        "clips": {
+          "Archer_Idle": "Niklas_IdleBattle",
+          "Archer_Move": "Niklas_MoveLoop",
+          "Archer_BasicAttack": "Niklas_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Niklas_ActiveAbility"
+        },
+        "loop": {
+          "Niklas_IdleBattle": true,
+          "Niklas_MoveLoop": true,
+          "Niklas_BasicAttack": false,
+          "Fly_Death": false,
+          "Niklas_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_768.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_A_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_772.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_B_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_772.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_C_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_772.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Niklas_IdleBattle",
+          "Move": "Niklas_MoveLoop",
+          "BasicAttack": "Niklas_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Niklas_ActiveAbility"
+        },
+        "prefab": 11570
+      }
+    ],
+    "2": [
+      {
+        "model": "res://rigs/50036/model.fbx",
+        "clips": {
+          "Archer_Idle": "Niklas_IdleBattle",
+          "Archer_Move": "Niklas_MoveLoop",
+          "Archer_BasicAttack": "Niklas_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Niklas_ActiveAbility"
+        },
+        "loop": {
+          "Niklas_IdleBattle": true,
+          "Niklas_MoveLoop": true,
+          "Niklas_BasicAttack": false,
+          "Fly_Death": false,
+          "Niklas_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_765.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_A_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_769.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_B_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_769.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_C_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_769.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Niklas_IdleBattle",
+          "Move": "Niklas_MoveLoop",
+          "BasicAttack": "Niklas_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Niklas_ActiveAbility"
+        },
+        "prefab": 26150
+      }
+    ],
+    "3": [
+      {
+        "model": "res://rigs/50110/model.fbx",
+        "clips": {
+          "Archer_Idle": "Niklas_IdleBattle",
+          "Archer_Move": "Niklas_MoveLoop",
+          "Archer_BasicAttack": "Niklas_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Niklas_ActiveAbility"
+        },
+        "loop": {
+          "Niklas_IdleBattle": true,
+          "Niklas_MoveLoop": true,
+          "Niklas_BasicAttack": false,
+          "Fly_Death": false,
+          "Niklas_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_767.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_A_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_771.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_B_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_771.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_C_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_771.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Niklas_IdleBattle",
+          "Move": "Niklas_MoveLoop",
+          "BasicAttack": "Niklas_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Niklas_ActiveAbility"
+        },
+        "prefab": 14718
+      }
+    ],
+    "4": [
+      {
+        "model": "res://rigs/49960/model.fbx",
+        "clips": {
+          "Archer_Idle": "Niklas_IdleBattle",
+          "Archer_Move": "Niklas_MoveLoop",
+          "Archer_BasicAttack": "Niklas_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Niklas_ActiveAbility"
+        },
+        "loop": {
+          "Niklas_IdleBattle": true,
+          "Niklas_MoveLoop": true,
+          "Niklas_BasicAttack": false,
+          "Fly_Death": false,
+          "Niklas_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_766.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "Weapon_A_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_770.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "Weapon_B_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_770.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "Weapon_C_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_770.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          }
+        },
+        "states": {
+          "Idle": "Niklas_IdleBattle",
+          "Move": "Niklas_MoveLoop",
+          "BasicAttack": "Niklas_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Niklas_ActiveAbility"
+        },
+        "prefab": 16209
+      }
+    ]
+  },
+  "60929": {
+    "1": [
+      {
+        "model": "res://rigs/50026/model.fbx",
+        "clips": {
+          "Nyxa_IdleBattle": "Nyxa_IdleBattle",
+          "Nyxa_MoveLoop": "Nyxa_MoveLoop",
+          "Nyxa_BasicAttack": "Nyxa_BasicAttack",
+          "Archer_Die": "Archer_Die",
+          "Nyxa_ComboAttack_Cut": "Nyxa_ComboAttack_Cut"
+        },
+        "loop": {
+          "Nyxa_IdleBattle": true,
+          "Nyxa_MoveLoop": true,
+          "Nyxa_BasicAttack": false,
+          "Archer_Die": false,
+          "Nyxa_ComboAttack_Cut": false
+        },
+        "meshes": {
+          "Body_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_786.tres",
+              "res://materials/sharedassets1_786.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_L_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_786.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_R_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_786.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Nyxa_IdleBattle",
+          "Move": "Nyxa_MoveLoop",
+          "BasicAttack": "Nyxa_BasicAttack",
+          "Die": "Archer_Die",
+          "SkillAttack": "Nyxa_ComboAttack_Cut"
+        },
+        "prefab": 15291
+      }
+    ],
+    "2": [
+      {
+        "model": "res://rigs/50063/model.fbx",
+        "clips": {
+          "Nyxa_IdleBattle": "Nyxa_IdleBattle",
+          "Nyxa_MoveLoop": "Nyxa_MoveLoop",
+          "Nyxa_BasicAttack": "Nyxa_BasicAttack",
+          "Archer_Die": "Archer_Die",
+          "Nyxa_ComboAttack_Cut": "Nyxa_ComboAttack_Cut"
+        },
+        "loop": {
+          "Nyxa_IdleBattle": true,
+          "Nyxa_MoveLoop": true,
+          "Nyxa_BasicAttack": false,
+          "Archer_Die": false,
+          "Nyxa_ComboAttack_Cut": false
+        },
+        "meshes": {
+          "Body_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_788.tres",
+              "res://materials/sharedassets1_788.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_L_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_788.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_R_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_788.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Nyxa_IdleBattle",
+          "Move": "Nyxa_MoveLoop",
+          "BasicAttack": "Nyxa_BasicAttack",
+          "Die": "Archer_Die",
+          "SkillAttack": "Nyxa_ComboAttack_Cut"
+        },
+        "prefab": 20425
+      }
+    ],
+    "3": [
+      {
+        "model": "res://rigs/50032/model.fbx",
+        "clips": {
+          "Nyxa_IdleBattle": "Nyxa_IdleBattle",
+          "Nyxa_MoveLoop": "Nyxa_MoveLoop",
+          "Nyxa_BasicAttack": "Nyxa_BasicAttack",
+          "Archer_Die": "Archer_Die",
+          "Nyxa_ComboAttack_Cut": "Nyxa_ComboAttack_Cut"
+        },
+        "loop": {
+          "Nyxa_IdleBattle": true,
+          "Nyxa_MoveLoop": true,
+          "Nyxa_BasicAttack": false,
+          "Archer_Die": false,
+          "Nyxa_ComboAttack_Cut": false
+        },
+        "meshes": {
+          "Body_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_789.tres",
+              "res://materials/sharedassets1_789.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_L_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_789.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_R_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_789.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Nyxa_IdleBattle",
+          "Move": "Nyxa_MoveLoop",
+          "BasicAttack": "Nyxa_BasicAttack",
+          "Die": "Archer_Die",
+          "SkillAttack": "Nyxa_ComboAttack_Cut"
+        },
+        "prefab": 14468
+      }
+    ],
+    "4": [
+      {
+        "model": "res://rigs/50042/model.fbx",
+        "clips": {
+          "Nyxa_IdleBattle": "Nyxa_IdleBattle",
+          "Nyxa_MoveLoop": "Nyxa_MoveLoop",
+          "Nyxa_BasicAttack": "Nyxa_BasicAttack",
+          "Archer_Die": "Archer_Die",
+          "Nyxa_ComboAttack_Cut": "Nyxa_ComboAttack_Cut"
+        },
+        "loop": {
+          "Nyxa_IdleBattle": true,
+          "Nyxa_MoveLoop": true,
+          "Nyxa_BasicAttack": false,
+          "Archer_Die": false,
+          "Nyxa_ComboAttack_Cut": false
+        },
+        "meshes": {
+          "Body_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_787.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "Weapon_L_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_787.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "Weapon_R_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_787.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          }
+        },
+        "states": {
+          "Idle": "Nyxa_IdleBattle",
+          "Move": "Nyxa_MoveLoop",
+          "BasicAttack": "Nyxa_BasicAttack",
+          "Die": "Archer_Die",
+          "SkillAttack": "Nyxa_ComboAttack_Cut"
+        },
+        "prefab": 17366
+      }
+    ]
+  },
+  "60930": {
+    "1": [
+      {
+        "model": "res://rigs/50054/model.fbx",
+        "clips": {
+          "Archer_Idle": "Pimenta_IdleBattle",
+          "Archer_Move": "Pimenta_MoveLoop",
+          "Archer_BasicAttack": "Pimenta_BasicAttack",
+          "Archer_Die": "Death",
+          "Archer_SkillAttack": "Pimenta_ActiveAbility"
+        },
+        "loop": {
+          "Pimenta_IdleBattle": true,
+          "Pimenta_MoveLoop": true,
+          "Pimenta_BasicAttack": false,
+          "Death": false,
+          "Pimenta_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_809.tres",
+              "res://materials/sharedassets1_807.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "Weapon_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_809.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          }
+        },
+        "states": {
+          "Idle": "Pimenta_IdleBattle",
+          "Move": "Pimenta_MoveLoop",
+          "BasicAttack": "Pimenta_BasicAttack",
+          "Die": "Death",
+          "SkillAttack": "Pimenta_ActiveAbility"
+        },
+        "prefab": 14193
+      }
+    ],
+    "2": [
+      {
+        "model": "res://rigs/50064/model.fbx",
+        "board_origin_node": "Pimenta_Gold",
+        "clips": {
+          "Archer_Idle": "Pimenta_IdleBattle",
+          "Archer_Move": "Pimenta_MoveLoop",
+          "Archer_BasicAttack": "Pimenta_BasicAttack",
+          "Archer_Die": "Death",
+          "Archer_SkillAttack": "Pimenta_ActiveAbility"
+        },
+        "loop": {
+          "Pimenta_IdleBattle": true,
+          "Pimenta_MoveLoop": true,
+          "Pimenta_BasicAttack": false,
+          "Death": false,
+          "Pimenta_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_811.tres",
+              "res://materials/sharedassets1_807.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "Weapon_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_811.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          }
+        },
+        "states": {
+          "Idle": "Pimenta_IdleBattle",
+          "Move": "Pimenta_MoveLoop",
+          "BasicAttack": "Pimenta_BasicAttack",
+          "Die": "Death",
+          "SkillAttack": "Pimenta_ActiveAbility"
+        },
+        "prefab": 12663
+      }
+    ],
+    "3": [
+      {
+        "model": "res://rigs/50029/model.fbx",
+        "board_origin_node": "Pimenta_Mythic",
+        "clips": {
+          "Archer_Idle": "Pimenta_IdleBattle",
+          "Archer_Move": "Pimenta_MoveLoop",
+          "Archer_BasicAttack": "Pimenta_BasicAttack",
+          "Archer_Die": "Death",
+          "Archer_SkillAttack": "Pimenta_ActiveAbility"
+        },
+        "loop": {
+          "Pimenta_IdleBattle": true,
+          "Pimenta_MoveLoop": true,
+          "Pimenta_BasicAttack": false,
+          "Death": false,
+          "Pimenta_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_812.tres",
+              "res://materials/sharedassets1_807.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "Weapon_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_811.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          }
+        },
+        "states": {
+          "Idle": "Pimenta_IdleBattle",
+          "Move": "Pimenta_MoveLoop",
+          "BasicAttack": "Pimenta_BasicAttack",
+          "Die": "Death",
+          "SkillAttack": "Pimenta_ActiveAbility"
+        },
+        "prefab": 16415
+      }
+    ],
+    "4": [
+      {
+        "model": "res://rigs/50016/model.fbx",
+        "board_origin_node": "Pimenta_Galaxy",
+        "clips": {
+          "Archer_Idle": "Pimenta_IdleBattle",
+          "Archer_Move": "Pimenta_MoveLoop",
+          "Archer_BasicAttack": "Pimenta_BasicAttack",
+          "Archer_Die": "Death",
+          "Archer_SkillAttack": "Pimenta_ActiveAbility"
+        },
+        "loop": {
+          "Pimenta_IdleBattle": true,
+          "Pimenta_MoveLoop": true,
+          "Pimenta_BasicAttack": false,
+          "Death": false,
+          "Pimenta_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_810.tres",
+              "res://materials/sharedassets1_808.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "Weapon_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_810.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          }
+        },
+        "states": {
+          "Idle": "Pimenta_IdleBattle",
+          "Move": "Pimenta_MoveLoop",
+          "BasicAttack": "Pimenta_BasicAttack",
+          "Die": "Death",
+          "SkillAttack": "Pimenta_ActiveAbility"
+        },
+        "prefab": 17352
+      }
+    ]
+  },
+  "60931": {
+    "1": [
+      {
+        "model": "res://rigs/50056/model.fbx",
+        "clips": {
+          "Archer_Idle": "Ratna_IdleBattle",
+          "Archer_Move": "Ratna_MoveLoop",
+          "Archer_BasicAttack": "Ratna_BasicAttack",
+          "Archer_Die": "Death",
+          "Archer_SkillAttack": "Ratna_ActiveAbility"
+        },
+        "loop": {
+          "Ratna_IdleBattle": true,
+          "Ratna_MoveLoop": true,
+          "Ratna_BasicAttack": false,
+          "Death": false,
+          "Ratna_ActiveAbility": false
+        },
+        "meshes": {
+          "Ratna": {
+            "surfaces": [
+              "res://materials/sharedassets1_828.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Shield_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_829.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_829.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Ratna_IdleBattle",
+          "Move": "Ratna_MoveLoop",
+          "BasicAttack": "Ratna_BasicAttack",
+          "Die": "Death",
+          "SkillAttack": "Ratna_ActiveAbility"
+        },
+        "prefab": 10394
+      }
+    ],
+    "2": [
+      {
+        "model": "res://rigs/50022/model.fbx",
+        "clips": {
+          "Archer_Idle": "Ratna_IdleBattle",
+          "Archer_Move": "Ratna_MoveLoop",
+          "Archer_BasicAttack": "Ratna_BasicAttack",
+          "Archer_Die": "Death",
+          "Archer_SkillAttack": "Ratna_ActiveAbility"
+        },
+        "loop": {
+          "Ratna_IdleBattle": true,
+          "Ratna_MoveLoop": true,
+          "Ratna_BasicAttack": false,
+          "Death": false,
+          "Ratna_ActiveAbility": false
+        },
+        "meshes": {
+          "Ratna": {
+            "surfaces": [
+              "res://materials/sharedassets1_825.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "imported_name": "Ratna2",
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Shield_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_829.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_829.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Ratna_IdleBattle",
+          "Move": "Ratna_MoveLoop",
+          "BasicAttack": "Ratna_BasicAttack",
+          "Die": "Death",
+          "SkillAttack": "Ratna_ActiveAbility"
+        },
+        "prefab": 20461
+      }
+    ],
+    "3": [
+      {
+        "model": "res://rigs/50057/model.fbx",
+        "clips": {
+          "Archer_Idle": "Ratna_IdleBattle",
+          "Archer_Move": "Ratna_MoveLoop",
+          "Archer_BasicAttack": "Ratna_BasicAttack",
+          "Archer_Die": "Death",
+          "Archer_SkillAttack": "Ratna_ActiveAbility"
+        },
+        "loop": {
+          "Ratna_IdleBattle": true,
+          "Ratna_MoveLoop": true,
+          "Ratna_BasicAttack": false,
+          "Death": false,
+          "Ratna_ActiveAbility": false
+        },
+        "meshes": {
+          "Ratna": {
+            "surfaces": [
+              "res://materials/sharedassets1_827.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Shield_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_829.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_829.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Ratna_IdleBattle",
+          "Move": "Ratna_MoveLoop",
+          "BasicAttack": "Ratna_BasicAttack",
+          "Die": "Death",
+          "SkillAttack": "Ratna_ActiveAbility"
+        },
+        "prefab": 10395
+      }
+    ],
+    "4": [
+      {
+        "model": "res://rigs/50058/model.fbx",
+        "clips": {
+          "Archer_Idle": "Ratna_IdleBattle",
+          "Archer_Move": "Ratna_MoveLoop",
+          "Archer_BasicAttack": "Ratna_BasicAttack",
+          "Archer_Die": "Death",
+          "Archer_SkillAttack": "Ratna_ActiveAbility"
+        },
+        "loop": {
+          "Ratna_IdleBattle": true,
+          "Ratna_MoveLoop": true,
+          "Ratna_BasicAttack": false,
+          "Death": false,
+          "Ratna_ActiveAbility": false
+        },
+        "meshes": {
+          "Ratna": {
+            "surfaces": [
+              "res://materials/sharedassets1_826.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "Shield_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_829.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_829.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Ratna_IdleBattle",
+          "Move": "Ratna_MoveLoop",
+          "BasicAttack": "Ratna_BasicAttack",
+          "Die": "Death",
+          "SkillAttack": "Ratna_ActiveAbility"
+        },
+        "prefab": 10396
+      }
+    ]
+  },
+  "60932": {
+    "1": [
+      {
+        "model": "res://rigs/50087/model.fbx",
+        "clips": {
+          "Archer_Idle": "Reyna_IdleBattle",
+          "Archer_Move": "Reyna_MoveLoop",
+          "Archer_BasicAttack": "Reyna_BasicAttack01",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Reyna_ActiveAbility"
+        },
+        "loop": {
+          "Reyna_IdleBattle": true,
+          "Reyna_MoveLoop": true,
+          "Reyna_BasicAttack01": false,
+          "Fly_Death": false,
+          "Reyna_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_860.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_L_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_864.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_R_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_864.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Reyna_IdleBattle",
+          "Move": "Reyna_MoveLoop",
+          "BasicAttack": "Reyna_BasicAttack01",
+          "Die": "Fly_Death",
+          "SkillAttack": "Reyna_ActiveAbility"
+        },
+        "prefab": 20539
+      }
+    ],
+    "2": [
+      {
+        "model": "res://rigs/50080/model.fbx",
+        "clips": {
+          "Archer_Idle": "Reyna_IdleBattle",
+          "Archer_Move": "Reyna_MoveLoop",
+          "Archer_BasicAttack": "Reyna_BasicAttack01",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Reyna_ActiveAbility"
+        },
+        "loop": {
+          "Reyna_IdleBattle": true,
+          "Reyna_MoveLoop": true,
+          "Reyna_BasicAttack01": false,
+          "Fly_Death": false,
+          "Reyna_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_860.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_L_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_861.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_R_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_861.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Reyna_IdleBattle",
+          "Move": "Reyna_MoveLoop",
+          "BasicAttack": "Reyna_BasicAttack01",
+          "Die": "Fly_Death",
+          "SkillAttack": "Reyna_ActiveAbility"
+        },
+        "prefab": 20956
+      }
+    ],
+    "3": [
+      {
+        "model": "res://rigs/50011/model.fbx",
+        "clips": {
+          "Archer_Idle": "Reyna_IdleBattle",
+          "Archer_Move": "Reyna_MoveLoop",
+          "Archer_BasicAttack": "Reyna_BasicAttack01",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Reyna_ActiveAbility"
+        },
+        "loop": {
+          "Reyna_IdleBattle": true,
+          "Reyna_MoveLoop": true,
+          "Reyna_BasicAttack01": false,
+          "Fly_Death": false,
+          "Reyna_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_860.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_L_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_863.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_R_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_863.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Reyna_IdleBattle",
+          "Move": "Reyna_MoveLoop",
+          "BasicAttack": "Reyna_BasicAttack01",
+          "Die": "Fly_Death",
+          "SkillAttack": "Reyna_ActiveAbility"
+        },
+        "prefab": 8264
+      }
+    ],
+    "4": [
+      {
+        "model": "res://rigs/50099/model.fbx",
+        "clips": {
+          "Archer_Idle": "Reyna_IdleBattle",
+          "Archer_Move": "Reyna_MoveLoop",
+          "Archer_BasicAttack": "Reyna_BasicAttack01",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Reyna_ActiveAbility"
+        },
+        "loop": {
+          "Reyna_IdleBattle": true,
+          "Reyna_MoveLoop": true,
+          "Reyna_BasicAttack01": false,
+          "Fly_Death": false,
+          "Reyna_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_860.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_L_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_862.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "Weapon_R_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_862.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          }
+        },
+        "states": {
+          "Idle": "Reyna_IdleBattle",
+          "Move": "Reyna_MoveLoop",
+          "BasicAttack": "Reyna_BasicAttack01",
+          "Die": "Fly_Death",
+          "SkillAttack": "Reyna_ActiveAbility"
+        },
+        "prefab": 18226
+      }
+    ]
+  },
+  "60933": {
+    "1": [
+      {
+        "model": "res://rigs/50041/model.fbx",
+        "clips": {
+          "Archer_Idle": "Rook_IdleBattle",
+          "Archer_Move": "Rook_MoveLoop",
+          "Archer_BasicAttack": "Rook_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Rook_ActiveAbility"
+        },
+        "loop": {
+          "Rook_IdleBattle": true,
+          "Rook_MoveLoop": true,
+          "Rook_BasicAttack": false,
+          "Fly_Death": false,
+          "Rook_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_882.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_880.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          }
+        },
+        "states": {
+          "Idle": "Rook_IdleBattle",
+          "Move": "Rook_MoveLoop",
+          "BasicAttack": "Rook_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Rook_ActiveAbility"
+        },
+        "prefab": 26392
+      }
+    ],
+    "2": [
+      {
+        "model": "res://rigs/50092/model.fbx",
+        "clips": {
+          "Archer_Idle": "Rook_IdleBattle",
+          "Archer_Move": "Rook_MoveLoop",
+          "Archer_BasicAttack": "Rook_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Rook_ActiveAbility"
+        },
+        "loop": {
+          "Rook_IdleBattle": true,
+          "Rook_MoveLoop": true,
+          "Rook_BasicAttack": false,
+          "Fly_Death": false,
+          "Rook_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_882.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_881.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          }
+        },
+        "states": {
+          "Idle": "Rook_IdleBattle",
+          "Move": "Rook_MoveLoop",
+          "BasicAttack": "Rook_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Rook_ActiveAbility"
+        },
+        "prefab": 19238
+      }
+    ],
+    "3": [
+      {
+        "model": "res://rigs/49977/model.fbx",
+        "clips": {
+          "Archer_Idle": "Rook_IdleBattle",
+          "Archer_Move": "Rook_MoveLoop",
+          "Archer_BasicAttack": "Rook_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Rook_ActiveAbility"
+        },
+        "loop": {
+          "Rook_IdleBattle": true,
+          "Rook_MoveLoop": true,
+          "Rook_BasicAttack": false,
+          "Fly_Death": false,
+          "Rook_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_882.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_884.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          }
+        },
+        "states": {
+          "Idle": "Rook_IdleBattle",
+          "Move": "Rook_MoveLoop",
+          "BasicAttack": "Rook_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Rook_ActiveAbility"
+        },
+        "prefab": 14354
+      }
+    ],
+    "4": [
+      {
+        "model": "res://rigs/50027/model.fbx",
+        "clips": {
+          "Archer_Idle": "Rook_IdleBattle",
+          "Archer_Move": "Rook_MoveLoop",
+          "Archer_BasicAttack": "Rook_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Rook_ActiveAbility"
+        },
+        "loop": {
+          "Rook_IdleBattle": true,
+          "Rook_MoveLoop": true,
+          "Rook_BasicAttack": false,
+          "Fly_Death": false,
+          "Rook_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_882.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_883.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          }
+        },
+        "states": {
+          "Idle": "Rook_IdleBattle",
+          "Move": "Rook_MoveLoop",
+          "BasicAttack": "Rook_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Rook_ActiveAbility"
+        },
+        "prefab": 4708
+      }
+    ]
+  },
+  "60934": {
+    "1": [
+      {
+        "model": "res://rigs/50028/model.fbx",
+        "clips": {
+          "Archer_Idle": "Sal_IdleBattle",
+          "Archer_Move": "Sal_MoveLoop",
+          "Archer_BasicAttack": "Sal_BasicAttack",
+          "Archer_Die": "Death",
+          "Archer_SkillAttack": "Sal_ActiveAbility"
+        },
+        "loop": {
+          "Sal_IdleBattle": true,
+          "Sal_MoveLoop": true,
+          "Sal_BasicAttack": false,
+          "Death": false,
+          "Sal_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_902.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Sal_IdleBattle",
+          "Move": "Sal_MoveLoop",
+          "BasicAttack": "Sal_BasicAttack",
+          "Die": "Death",
+          "SkillAttack": "Sal_ActiveAbility"
+        },
+        "prefab": 11090
+      }
+    ],
+    "2": [
+      {
+        "model": "res://rigs/49957/model.fbx",
+        "clips": {
+          "Archer_Idle": "Sal_IdleBattle",
+          "Archer_Move": "Sal_MoveLoop",
+          "Archer_BasicAttack": "Sal_BasicAttack",
+          "Archer_Die": "Death",
+          "Archer_SkillAttack": "Sal_ActiveAbility"
+        },
+        "loop": {
+          "Sal_IdleBattle": true,
+          "Sal_MoveLoop": true,
+          "Sal_BasicAttack": false,
+          "Death": false,
+          "Sal_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_904.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Sal_IdleBattle",
+          "Move": "Sal_MoveLoop",
+          "BasicAttack": "Sal_BasicAttack",
+          "Die": "Death",
+          "SkillAttack": "Sal_ActiveAbility"
+        },
+        "prefab": 10076
+      }
+    ],
+    "3": [
+      {
+        "model": "res://rigs/49958/model.fbx",
+        "clips": {
+          "Archer_Idle": "Sal_IdleBattle",
+          "Archer_Move": "Sal_MoveLoop",
+          "Archer_BasicAttack": "Sal_BasicAttack",
+          "Archer_Die": "Death",
+          "Archer_SkillAttack": "Sal_ActiveAbility"
+        },
+        "loop": {
+          "Sal_IdleBattle": true,
+          "Sal_MoveLoop": true,
+          "Sal_BasicAttack": false,
+          "Death": false,
+          "Sal_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_905.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Sal_IdleBattle",
+          "Move": "Sal_MoveLoop",
+          "BasicAttack": "Sal_BasicAttack",
+          "Die": "Death",
+          "SkillAttack": "Sal_ActiveAbility"
+        },
+        "prefab": 10077
+      }
+    ],
+    "4": [
+      {
+        "model": "res://rigs/49959/model.fbx",
+        "clips": {
+          "Archer_Idle": "Sal_IdleBattle",
+          "Archer_Move": "Sal_MoveLoop",
+          "Archer_BasicAttack": "Sal_BasicAttack",
+          "Archer_Die": "Death",
+          "Archer_SkillAttack": "Sal_ActiveAbility"
+        },
+        "loop": {
+          "Sal_IdleBattle": true,
+          "Sal_MoveLoop": true,
+          "Sal_BasicAttack": false,
+          "Death": false,
+          "Sal_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_903.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          }
+        },
+        "states": {
+          "Idle": "Sal_IdleBattle",
+          "Move": "Sal_MoveLoop",
+          "BasicAttack": "Sal_BasicAttack",
+          "Die": "Death",
+          "SkillAttack": "Sal_ActiveAbility"
+        },
+        "prefab": 10078
+      }
+    ]
+  },
+  "60935": {
+    "1": [
+      {
+        "model": "res://rigs/50083/model.fbx",
+        "clips": {
+          "Archer_Idle": "Selkhera_IdleBattle",
+          "Archer_Move": "Selkhera_MoveLoop",
+          "Archer_BasicAttack": "Selkhera_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Selkhera_ActiveAbility"
+        },
+        "loop": {
+          "Selkhera_IdleBattle": true,
+          "Selkhera_MoveLoop": false,
+          "Selkhera_BasicAttack": false,
+          "Fly_Death": false,
+          "Selkhera_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_932.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "SnakeA_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_936.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "SnakeB_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_936.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "SnakeC_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_936.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "SnakeD_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_936.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "SnakeE_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_936.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Tail_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_936.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_936.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "WeaponB_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_936.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Selkhera_IdleBattle",
+          "Move": "Selkhera_MoveLoop",
+          "BasicAttack": "Selkhera_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Selkhera_ActiveAbility"
+        },
+        "prefab": 22394
+      }
+    ],
+    "2": [
+      {
+        "model": "res://rigs/50034/model.fbx",
+        "clips": {
+          "Archer_Idle": "Selkhera_IdleBattle",
+          "Archer_Move": "Selkhera_MoveLoop",
+          "Archer_BasicAttack": "Selkhera_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Selkhera_ActiveAbility"
+        },
+        "loop": {
+          "Selkhera_IdleBattle": true,
+          "Selkhera_MoveLoop": false,
+          "Selkhera_BasicAttack": false,
+          "Fly_Death": false,
+          "Selkhera_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_929.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "SnakeA_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_933.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "SnakeB_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_933.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "SnakeC_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_933.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "SnakeD_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_933.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "SnakeE_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_933.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Tail_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_933.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_933.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "WeaponB_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_933.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Selkhera_IdleBattle",
+          "Move": "Selkhera_MoveLoop",
+          "BasicAttack": "Selkhera_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Selkhera_ActiveAbility"
+        },
+        "prefab": 14867
+      }
+    ],
+    "3": [
+      {
+        "model": "res://rigs/49987/model.fbx",
+        "clips": {
+          "Archer_Idle": "Selkhera_IdleBattle",
+          "Archer_Move": "Selkhera_MoveLoop",
+          "Archer_BasicAttack": "Selkhera_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Selkhera_ActiveAbility"
+        },
+        "loop": {
+          "Selkhera_IdleBattle": true,
+          "Selkhera_MoveLoop": false,
+          "Selkhera_BasicAttack": false,
+          "Fly_Death": false,
+          "Selkhera_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_931.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "SnakeA_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_935.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "SnakeB_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_935.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "SnakeC_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_935.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "SnakeD_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_935.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "SnakeE_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_935.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Tail_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_935.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_935.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "WeaponB_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_935.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Selkhera_IdleBattle",
+          "Move": "Selkhera_MoveLoop",
+          "BasicAttack": "Selkhera_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Selkhera_ActiveAbility"
+        },
+        "prefab": 7901
+      }
+    ],
+    "4": [
+      {
+        "model": "res://rigs/49956/model.fbx",
+        "clips": {
+          "Archer_Idle": "Selkhera_IdleBattle",
+          "Archer_Move": "Selkhera_MoveLoop",
+          "Archer_BasicAttack": "Selkhera_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Selkhera_ActiveAbility"
+        },
+        "loop": {
+          "Selkhera_IdleBattle": true,
+          "Selkhera_MoveLoop": false,
+          "Selkhera_BasicAttack": false,
+          "Fly_Death": false,
+          "Selkhera_ActiveAbility": false
+        },
+        "meshes": {
+          "Body_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_930.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "SnakeA_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_934.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "SnakeB_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_934.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "SnakeC_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_934.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "SnakeD_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_934.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "SnakeE_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_934.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "Tail_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_934.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "Weapon_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_934.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "WeaponB_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_934.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          }
+        },
+        "states": {
+          "Idle": "Selkhera_IdleBattle",
+          "Move": "Selkhera_MoveLoop",
+          "BasicAttack": "Selkhera_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Selkhera_ActiveAbility"
+        },
+        "prefab": 5432
+      }
+    ]
+  },
+  "60936": {
+    "1": [
+      {
+        "model": "res://rigs/50091/model.fbx",
+        "clips": {
+          "Seraphael_Idle": "Seraphael_Idle",
+          "Seraphael_MoveLoop": "Seraphael_MoveLoop",
+          "Seraphael_BasicAttack": "Seraphael_BasicAttack",
+          "Archer_Die": "Archer_Die",
+          "Seraphael_ActiveAbility": "Seraphael_ActiveAbility",
+          "Seraphael_MoveStart": "Seraphael_MoveStart"
+        },
+        "loop": {
+          "Seraphael_Idle": true,
+          "Seraphael_MoveLoop": true,
+          "Seraphael_BasicAttack": false,
+          "Archer_Die": false,
+          "Seraphael_ActiveAbility": false,
+          "Seraphael_MoveStart": false
+        },
+        "meshes": {
+          "Body_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_954.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_A_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_955.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_B_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_955.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Seraphael_Idle",
+          "Move": "Seraphael_MoveLoop",
+          "BasicAttack": "Seraphael_BasicAttack",
+          "Die": "Archer_Die",
+          "SkillAttack": "Seraphael_ActiveAbility",
+          "MoveStart": "Seraphael_MoveStart"
+        },
+        "prefab": 12352
+      }
+    ],
+    "2": [
+      {
+        "model": "res://rigs/50097/model.fbx",
+        "clips": {
+          "Seraphael_Idle": "Seraphael_Idle",
+          "Seraphael_MoveLoop": "Seraphael_MoveLoop",
+          "Seraphael_BasicAttack": "Seraphael_BasicAttack",
+          "Archer_Die": "Archer_Die",
+          "Seraphael_ActiveAbility": "Seraphael_ActiveAbility",
+          "Seraphael_MoveStart": "Seraphael_MoveStart"
+        },
+        "loop": {
+          "Seraphael_Idle": true,
+          "Seraphael_MoveLoop": true,
+          "Seraphael_BasicAttack": false,
+          "Archer_Die": false,
+          "Seraphael_ActiveAbility": false,
+          "Seraphael_MoveStart": false
+        },
+        "meshes": {
+          "Body_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_954.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_A_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_957.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_B_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_957.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Seraphael_Idle",
+          "Move": "Seraphael_MoveLoop",
+          "BasicAttack": "Seraphael_BasicAttack",
+          "Die": "Archer_Die",
+          "SkillAttack": "Seraphael_ActiveAbility",
+          "MoveStart": "Seraphael_MoveStart"
+        },
+        "prefab": 12593
+      }
+    ],
+    "3": [
+      {
+        "model": "res://rigs/50006/model.fbx",
+        "clips": {
+          "Seraphael_Idle": "Seraphael_Idle",
+          "Seraphael_MoveLoop": "Seraphael_MoveLoop",
+          "Seraphael_BasicAttack": "Seraphael_BasicAttack",
+          "Archer_Die": "Archer_Die",
+          "Seraphael_ActiveAbility": "Seraphael_ActiveAbility",
+          "Seraphael_MoveStart": "Seraphael_MoveStart"
+        },
+        "loop": {
+          "Seraphael_Idle": true,
+          "Seraphael_MoveLoop": true,
+          "Seraphael_BasicAttack": false,
+          "Archer_Die": false,
+          "Seraphael_ActiveAbility": false,
+          "Seraphael_MoveStart": false
+        },
+        "meshes": {
+          "Body_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_954.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_A_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_958.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_B_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_958.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Seraphael_Idle",
+          "Move": "Seraphael_MoveLoop",
+          "BasicAttack": "Seraphael_BasicAttack",
+          "Die": "Archer_Die",
+          "SkillAttack": "Seraphael_ActiveAbility",
+          "MoveStart": "Seraphael_MoveStart"
+        },
+        "prefab": 22766
+      }
+    ],
+    "4": [
+      {
+        "model": "res://rigs/50024/model.fbx",
+        "clips": {
+          "Seraphael_Idle": "Seraphael_Idle",
+          "Seraphael_MoveLoop": "Seraphael_MoveLoop",
+          "Seraphael_BasicAttack": "Seraphael_BasicAttack",
+          "Archer_Die": "Archer_Die",
+          "Seraphael_ActiveAbility": "Seraphael_ActiveAbility",
+          "Seraphael_MoveStart": "Seraphael_MoveStart"
+        },
+        "loop": {
+          "Seraphael_Idle": true,
+          "Seraphael_MoveLoop": true,
+          "Seraphael_BasicAttack": false,
+          "Archer_Die": false,
+          "Seraphael_ActiveAbility": false,
+          "Seraphael_MoveStart": false
+        },
+        "meshes": {
+          "Body_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_954.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_A_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_956.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "Weapon_B_GEO": {
+            "surfaces": [
+              "res://materials/sharedassets1_956.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          }
+        },
+        "states": {
+          "Idle": "Seraphael_Idle",
+          "Move": "Seraphael_MoveLoop",
+          "BasicAttack": "Seraphael_BasicAttack",
+          "Die": "Archer_Die",
+          "SkillAttack": "Seraphael_ActiveAbility",
+          "MoveStart": "Seraphael_MoveStart"
+        },
+        "prefab": 25404
+      }
+    ]
+  },
+  "60937": {
+    "1": [
+      {
+        "model": "res://rigs/49976/model.fbx",
+        "clips": {
+          "Archer_Idle": "Skorn_IdleBattle",
+          "Archer_Move": "Skorn_MoveLoop",
+          "Archer_BasicAttack": "Skorn_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Skorn_ActiveAbility"
+        },
+        "loop": {
+          "Skorn_IdleBattle": true,
+          "Skorn_MoveLoop": true,
+          "Skorn_BasicAttack": false,
+          "Fly_Death": false,
+          "Skorn_ActiveAbility": false
+        },
+        "meshes": {
+          "Skorn_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_991.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Skorn_Weapon_L_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_995.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Skorn_Weapon_R_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_995.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Skorn_IdleBattle",
+          "Move": "Skorn_MoveLoop",
+          "BasicAttack": "Skorn_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Skorn_ActiveAbility"
+        },
+        "prefab": 22282
+      }
+    ],
+    "2": [
+      {
+        "model": "res://rigs/50089/model.fbx",
+        "clips": {
+          "Archer_Idle": "Skorn_IdleBattle",
+          "Archer_Move": "Skorn_MoveLoop",
+          "Archer_BasicAttack": "Skorn_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Skorn_ActiveAbility"
+        },
+        "loop": {
+          "Skorn_IdleBattle": true,
+          "Skorn_MoveLoop": true,
+          "Skorn_BasicAttack": false,
+          "Fly_Death": false,
+          "Skorn_ActiveAbility": false
+        },
+        "meshes": {
+          "Skorn_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_993.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Skorn_Weapon_L_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_997.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Skorn_Weapon_R_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_997.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Skorn_IdleBattle",
+          "Move": "Skorn_MoveLoop",
+          "BasicAttack": "Skorn_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Skorn_ActiveAbility"
+        },
+        "prefab": 6086
+      }
+    ],
+    "3": [
+      {
+        "model": "res://rigs/49972/model.fbx",
+        "clips": {
+          "Archer_Idle": "Skorn_IdleBattle",
+          "Archer_Move": "Skorn_MoveLoop",
+          "Archer_BasicAttack": "Skorn_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Skorn_ActiveAbility"
+        },
+        "loop": {
+          "Skorn_IdleBattle": true,
+          "Skorn_MoveLoop": true,
+          "Skorn_BasicAttack": false,
+          "Fly_Death": false,
+          "Skorn_ActiveAbility": false
+        },
+        "meshes": {
+          "Skorn_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_994.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Skorn_Weapon_L_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_998.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Skorn_Weapon_R_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_998.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Skorn_IdleBattle",
+          "Move": "Skorn_MoveLoop",
+          "BasicAttack": "Skorn_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Skorn_ActiveAbility"
+        },
+        "prefab": 22815
+      }
+    ],
+    "4": [
+      {
+        "model": "res://rigs/50094/model.fbx",
+        "clips": {
+          "Archer_Idle": "Skorn_IdleBattle",
+          "Archer_Move": "Skorn_MoveLoop",
+          "Archer_BasicAttack": "Skorn_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Skorn_ActiveAbility"
+        },
+        "loop": {
+          "Skorn_IdleBattle": true,
+          "Skorn_MoveLoop": true,
+          "Skorn_BasicAttack": false,
+          "Fly_Death": false,
+          "Skorn_ActiveAbility": false
+        },
+        "meshes": {
+          "Skorn_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_992.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "Skorn_Weapon_L_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_996.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "Skorn_Weapon_R_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_996.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          }
+        },
+        "states": {
+          "Idle": "Skorn_IdleBattle",
+          "Move": "Skorn_MoveLoop",
+          "BasicAttack": "Skorn_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Skorn_ActiveAbility"
+        },
+        "prefab": 5134
+      }
+    ]
+  },
+  "60938": {
+    "1": [
+      {
+        "model": "res://rigs/50074/model.fbx",
+        "clips": {
+          "Archer_Idle": "Tilly_IdleBattle",
+          "Archer_Move": "Tilly_MoveLoop",
+          "Archer_BasicAttack": "Tilly_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Tilly_ActiveAbility"
+        },
+        "loop": {
+          "Tilly_IdleBattle": true,
+          "Tilly_MoveLoop": true,
+          "Tilly_BasicAttack": false,
+          "Fly_Death": false,
+          "Tilly_ActiveAbility": false
+        },
+        "meshes": {
+          "Tilly": {
+            "surfaces": [
+              "res://materials/sharedassets1_1024.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "imported_name": "Tilly2",
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_A_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_1025.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_B_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_1025.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Tilly_IdleBattle",
+          "Move": "Tilly_MoveLoop",
+          "BasicAttack": "Tilly_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Tilly_ActiveAbility"
+        },
+        "prefab": 5686
+      }
+    ],
+    "2": [
+      {
+        "model": "res://rigs/50066/model.fbx",
+        "clips": {
+          "Archer_Idle": "Tilly_IdleBattle",
+          "Archer_Move": "Tilly_MoveLoop",
+          "Archer_BasicAttack": "Tilly_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Tilly_ActiveAbility"
+        },
+        "loop": {
+          "Tilly_IdleBattle": true,
+          "Tilly_MoveLoop": true,
+          "Tilly_BasicAttack": false,
+          "Fly_Death": false,
+          "Tilly_ActiveAbility": false
+        },
+        "meshes": {
+          "Tilly": {
+            "surfaces": [
+              "res://materials/sharedassets1_1024.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_A_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_1027.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_B_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_1027.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Tilly_IdleBattle",
+          "Move": "Tilly_MoveLoop",
+          "BasicAttack": "Tilly_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Tilly_ActiveAbility"
+        },
+        "prefab": 6706
+      }
+    ],
+    "3": [
+      {
+        "model": "res://rigs/50009/model.fbx",
+        "clips": {
+          "Archer_Idle": "Tilly_IdleBattle",
+          "Archer_Move": "Tilly_MoveLoop",
+          "Archer_BasicAttack": "Tilly_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Tilly_ActiveAbility"
+        },
+        "loop": {
+          "Tilly_IdleBattle": true,
+          "Tilly_MoveLoop": true,
+          "Tilly_BasicAttack": false,
+          "Fly_Death": false,
+          "Tilly_ActiveAbility": false
+        },
+        "meshes": {
+          "Tilly": {
+            "surfaces": [
+              "res://materials/sharedassets1_1024.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_A_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_1028.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_B_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_1028.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "states": {
+          "Idle": "Tilly_IdleBattle",
+          "Move": "Tilly_MoveLoop",
+          "BasicAttack": "Tilly_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Tilly_ActiveAbility"
+        },
+        "prefab": 25467
+      }
+    ],
+    "4": [
+      {
+        "model": "res://rigs/50049/model.fbx",
+        "clips": {
+          "Archer_Idle": "Tilly_IdleBattle",
+          "Archer_Move": "Tilly_MoveLoop",
+          "Archer_BasicAttack": "Tilly_BasicAttack",
+          "Archer_Die": "Fly_Death",
+          "Archer_SkillAttack": "Tilly_ActiveAbility"
+        },
+        "loop": {
+          "Tilly_IdleBattle": true,
+          "Tilly_MoveLoop": true,
+          "Tilly_BasicAttack": false,
+          "Fly_Death": false,
+          "Tilly_ActiveAbility": false
+        },
+        "meshes": {
+          "Tilly": {
+            "surfaces": [
+              "res://materials/sharedassets1_1024.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true,
+            "death_blend": [
+              0.5,
+              0.5
+            ]
+          },
+          "Weapon_A_Geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_1026.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          },
+          "Weapon_B_geo": {
+            "surfaces": [
+              "res://materials/sharedassets1_1026.tres"
+            ],
+            "visible": true,
+            "outline": true,
+            "redraw_after_outline": true
+          }
+        },
+        "states": {
+          "Idle": "Tilly_IdleBattle",
+          "Move": "Tilly_MoveLoop",
+          "BasicAttack": "Tilly_BasicAttack",
+          "Die": "Fly_Death",
+          "SkillAttack": "Tilly_ActiveAbility"
+        },
+        "prefab": 8670
+      }
+    ]
+  }
+}

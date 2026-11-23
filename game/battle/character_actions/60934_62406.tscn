@@ -1,0 +1,77 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://battle/revival_effect.gd" id="1"]
+[ext_resource type="Shader" path="res://materials/revival_particle.gdshader" id="2"]
+[ext_resource type="Texture2D" path="res://textures/sharedassets1_1678.png" id="3"]
+[ext_resource type="Texture2D" path="res://textures/sharedassets1_1893.png" id="4"]
+
+[sub_resource type="QuadMesh" id="Quad"]
+size = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="Material919"]
+shader = ExtResource("2")
+shader_parameter/intensity = 1.0
+shader_parameter/additive = true
+shader_parameter/use_rgb = true
+shader_parameter/image_texture = ExtResource("3")
+shader_parameter/image_uv = Vector4(1, 1, 0, 0.0199999996)
+shader_parameter/image_is_srgb = true
+shader_parameter/mask_texture = ExtResource("4")
+shader_parameter/mask_uv = Vector4(1, 1, 0, 0)
+
+[node name="VFX_Sal_SkillAttack_Aura_L" type="Node3D"]
+script = ExtResource("1")
+lead_in = 0.0
+duration = 999.0
+finish_particles = true
+metadata/unity_prefab = 62406
+
+[node name="Rainbow" type="Node3D" parent="."]
+position = Vector3(0, 1.5, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+metadata/unity_particle = 51078
+metadata/particle = {
+"mesh": SubResource("Quad"),
+"material": SubResource("Material919"),
+"count": Vector2i(1, 1),
+"delay": 0,
+"repeat_count": 1,
+"repeat_interval": 0.00999999978,
+"seed": 3,
+"mode": 0,
+"alignment": 0,
+"sorting_offset": -3,
+"pivot": Vector3(0, 0, -0),
+"length_scale": 2,
+"velocity_scale": 0,
+"size_3d": false,
+"shape": -1,
+"shape_position": Vector3(0, 0, 0),
+"shape_rotation": Vector3(1.57079633, -0, 0),
+"shape_scale": Vector3(1, 1, 1),
+"radius": 0.200000003,
+"radius_thickness": 1,
+"shape_length": 5,
+"cone_angle": 0.436332313,
+"orbit": Vector2(0, 0),
+"scale_with_action": true,
+"vfx_redraw": true,
+"world_space": true,
+"lifetime": Vector2(3, 3),
+"speed": Vector2(0, 0),
+"width": Vector2(3, 3),
+"height": Vector2(2.3499999, 2.3499999),
+"depth": Vector2(1, 1),
+"pitch": Vector2(-0, -0),
+"yaw": Vector2(-0, -0),
+"roll": Vector2(-1.57079625, -1.57079625),
+"tint_min": Color(1, 1, 1, 0.235294119),
+"tint_max": Color(1, 1, 1, 0.235294119),
+"size_x_min": PackedFloat32Array(1),
+"size_x": PackedFloat32Array(1),
+"size_y": PackedFloat32Array(1),
+"size_z": PackedFloat32Array(1),
+"opacity": PackedFloat32Array(0, 0.0334122222, 0.0668244445, 0.100236667, 0.133648889, 0.167061111, 0.200473333, 0.233885556, 0.267297778, 0.30071, 0.334122222, 0.367534445, 0.400946667, 0.434358889, 0.467771111, 0.501183334, 0.534595556, 0.568007778, 0.60142, 0.634832223, 0.668244445, 0.701656667, 0.735068889, 0.768481112, 0.801893334, 0.835305556, 0.868717778, 0.90213, 0.935542223, 0.968954445, 0.997921026, 0.968570407, 0.939219789, 0.909869171, 0.880518552, 0.851167934, 0.821817315, 0.792466697, 0.763116079, 0.73376546, 0.704414842, 0.675064223, 0.645713605, 0.616362987, 0.587012368, 0.55766175, 0.528311131, 0.498960513, 0.469609895, 0.440259276, 0.410908658, 0.381558039, 0.352207421, 0.322856802, 0.293506184, 0.264155566, 0.234804947, 0.205454329, 0.17610371, 0.146753092, 0.117402474, 0.0880518552, 0.0587012368, 0.0293506184, 0),
+"speed_distance": PackedFloat32Array(0, 1),
+"radial_distance": PackedFloat32Array(0, 0)
+}

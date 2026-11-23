@@ -1,0 +1,21 @@
+{
+  "launch_offset": [
+    0.0,
+    1.0,
+    -0.0
+  ],
+  "forward": [
+    0.0,
+    0.0,
+    -1.0
+  ],
+  "up": [
+    0.0,
+    1.0,
+    -0.0
+  ],
+  "pitch_degrees": -0.0,
+  "match_source_scale": false,
+  "flight": "res://battle/projectiles/7135_flight.tscn",
+  "impact": "res://battle/projectiles/7135_impact.tscn"
+}

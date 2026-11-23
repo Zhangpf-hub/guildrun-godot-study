@@ -28,6 +28,11 @@ var phase := Phase.PICK:
 		var leaving_result := phase == Phase.RESULT
 		if phase == Phase.FIGHT:
 			_pending_battle_result = Callable()
+			for shot in _shots:
+				var effect: Variant = shot.get("effect")
+				if is_instance_valid(effect):
+					effect.hide()
+					effect.queue_free()
 		phase = value
 		if _stage == null or _stage.encounter != self:
 			return
@@ -52,6 +57,11 @@ var _units: Array[GuildrunBoardUnit] = []
 var _planned_moves: Dictionary[GuildrunBoardUnit, Dictionary] = {}
 var _path_forecasts: Dictionary[GuildrunBoardUnit, Vector2i] = {}
 var _shots: Array[Dictionary] = []
+var _specialization_stat_effects: Array[Dictionary] = []
+var _projectile_effects: Node3D
+var _projectile_vfx: Dictionary[int, Dictionary] = {}
+var _projectile_targets: Dictionary = {}
+var _projectile_target_bones: Dictionary = {}
 var _gained_items: Array[int] = []
 var _drags: Array[Dictionary] = []
 var _strike_areas: Array[Dictionary] = []
@@ -115,6 +125,7 @@ var _keyword_clocks: RefCounted = load("res://battle/stall_triggers.gd").new()
 var _rank_aura_timers: Dictionary[GuildrunBoardUnit, int] = {}
 var _rank_vindictive_pending: Array[GuildrunBoardUnit] = []
 var simulation_speed: RefCounted
+var _gm_panel: CanvasLayer
 var _choice_rows: Array
 var _draft: RefCounted
 var _regular_wins := 0
@@ -248,6 +259,11 @@ func setup(stage: Node3D) -> void:
 		_play_founding_comic()
 	elif _first_tutorial != null:
 		_first_tutorial.notify_comics_finished()
+	if OS.is_debug_build():
+		_gm_panel = load("res://battle/gm_panel.gd").new()
+		_gm_panel.name = "BattleGM"
+		_gm_panel.bind(self)
+		add_child(_gm_panel)
 
 
 func _start_first_tutorial() -> void:
@@ -301,6 +317,9 @@ func _update_death_appearance_speed() -> void:
 	var multiplier: float = 0.0 if _tutorial_paused() else simulation_speed.multiplier()
 	for unit: GuildrunBoardUnit in _units:
 		unit.set_death_appearance_speed(multiplier)
+	if is_instance_valid(_projectile_effects):
+		for effect: Node3D in _projectile_effects.get_children():
+			effect.speed_scale = multiplier
 
 
 func _on_tutorial_hero_skill_attack_started() -> void:
@@ -443,6 +462,7 @@ func _deploy_starter(row: Dictionary) -> void:
 func _register(unit: GuildrunBoardUnit) -> void:
 	_units.append(unit)
 	unit.effect_scene_clock = effect_scene_time
+	unit.effect_variable = _action_vfx_variable.bind(unit)
 	unit.set_death_appearance_speed(0.0 if _tutorial_paused() else simulation_speed.multiplier())
 	if phase == Phase.FIGHT:
 		_register_battle_statistics(unit)
@@ -465,6 +485,9 @@ func _register(unit: GuildrunBoardUnit) -> void:
 	var bar: Control = load("res://battle/battle_health_bar.gd").new()
 	_ui.add_child(bar)
 	bar.setup(unit)
+	unit.combat_number.connect(func(amount: int, kind: GuildrunBoardUnit.CombatNumber, critical: bool) -> void:
+		if phase == Phase.FIGHT:
+			bar.show_combat_number(amount, kind, critical, unit.is_hero))
 	_bars[unit] = bar
 	if unit.is_hero:
 		bar.set_equipment(_stage, first_shop, _equipment_panel, int(unit.stat("Id")._sequentialId))
@@ -559,6 +582,8 @@ func _toggle_reserve() -> void:
 
 
 func _input(event: InputEvent) -> void:
+	if is_instance_valid(_gm_panel) and _gm_panel.captures(event):
+		return
 	if _combat_tracker_guide != null and event is InputEventMouseButton and event.pressed:
 		_combat_tracker_guide.consume_mouse_press(event.button_index)
 	if _first_tutorial != null:
@@ -774,6 +799,21 @@ func _deploy_owned(id: int, cell: Vector2i) -> GuildrunBoardUnit:
 			first_shop.specializations.get(id, {}), first_shop.rank_modifiers_for(id))
 	_register(unit)
 	return unit
+
+
+func _action_vfx_variable(key: String, unit: GuildrunBoardUnit) -> Variant:
+	match key:
+		"totalRushTriggers":
+			return total_rush_triggers << 16
+		"totalStallTriggers":
+			return total_stall_triggers << 16
+		"loganTotalAbilityDamageDealt":
+			return int(unit.ability_progress.get("damage", 0)) << 16
+		"salFrostStacks":
+			return unit.permafrost_frost << 16
+		"VFXTriggerCount":
+			return int(unit.combat_stats.get("VFXTriggerCount", 0)) << 16
+	return null
 
 
 func _register_battle_statistics(unit: GuildrunBoardUnit) -> void:
@@ -1043,6 +1083,7 @@ func _step_battle(dt: int, present_result := false) -> void:
 	_deaths_this_step.clear()
 	battle_time_q16 += dt
 	_tick_rank_auras(dt)
+	_tick_specialization_stat_effects(dt)
 	_tick_rank_vindictive_shields()
 	var clock_events: Array[Dictionary] = _keyword_clocks.tick(battle_time_q16, dt)
 	_rank_rush.advance()
@@ -1484,6 +1525,10 @@ func _enter_next_battle(next_trial: Dictionary = {}) -> void:
 	_strike_areas.clear()
 	_path_forecasts.clear()
 	_shots.clear()
+	_specialization_stat_effects.clear()
+	if is_instance_valid(_projectile_effects):
+		_projectile_effects.free()
+		_projectile_effects = null
 	_drags.clear()
 	_frame = 0
 	battle_time_q16 = 0
@@ -1586,6 +1631,10 @@ func _next_free_position(excluded: Array = []) -> Vector2i:
 
 @warning_ignore("integer_division")
 func _tick_unit(unit: GuildrunBoardUnit, dt: int) -> void:
+	if is_instance_valid(_gm_panel) and _gm_panel.lab.manual_casts and _gm_panel.lab.is_test_scene():
+		if unit.is_casting():
+			_tick_cast(unit, dt)
+		return
 	if unit.is_casting() and (unit.ability_kind == "JavrynAction" or (unit.ability_kind == "skorn_taunt" and unit.cast_hit_index > 0)):
 		unit.stun_remaining_q16 = 0
 	if unit.stun_remaining_q16 > 0:
@@ -1614,6 +1663,7 @@ func _tick_unit(unit: GuildrunBoardUnit, dt: int) -> void:
 			else:
 				unit.cast_release_q16 = -1
 				unit.cast_remaining_q16 = 0
+				unit.cancel_cast_visuals()
 				_finish_cast(unit)
 	if unit.moving and not unit.position.is_equal_approx(GuildrunBattleGrid.center(unit.move_destination)):
 		var planned: Dictionary = _planned_moves.get(unit, {})
@@ -1662,7 +1712,7 @@ func _tick_unit(unit: GuildrunBoardUnit, dt: int) -> void:
 	var was_attacking := unit.attack_animation_active()
 	unit.advance_basic_attack(dt)
 	if was_attacking and not unit.attack_animation_active():
-		unit.play_idle()
+		unit.finish_action_motion(&"BasicAttack")
 
 
 func _plan_battle_moves() -> void:
@@ -1857,28 +1907,162 @@ func _on_attack_action(target: GuildrunBoardUnit, source: GuildrunBoardUnit) -> 
 
 
 func _queue_shot(source: GuildrunBoardUnit, target: GuildrunBoardUnit, damage: int, speed_q16: int, cue := "skill_hit") -> void:
-	_shots.append({"source": source, "target": target, "damage": damage, "position": source.position,
-			"speed": GuildrunBattleGrid.to_world_length_q16(speed_q16), "cue": cue})
+	var shot := {"source": source, "target": target, "damage": damage, "position": source.position,
+			"speed": GuildrunBattleGrid.to_world_length_q16(speed_q16), "cue": cue}
+	if source.ability_kind == "wildfire" and cue == "skill_hit":
+		var direction := source.position.direction_to(target.position)
+		var flight_basis := Basis.IDENTITY if direction.is_zero_approx() else Basis.looking_at(direction)
+		shot["effect"] = _play_projectile_effect("res://battle/funke_skill_projectile.tscn",
+				Transform3D(flight_basis, source.position))
+	elif cue == "attack_hit":
+		_prepare_projectile_visual(shot, source, target)
+	_shots.append(shot)
+
+
+func _prepare_projectile_visual(shot: Dictionary, source: GuildrunBoardUnit, target: GuildrunBoardUnit) -> void:
+	if _projectile_vfx.is_empty():
+		_projectile_targets = _read_projectile_json("res://battle/projectiles/target_offsets.json")
+		_projectile_target_bones = _read_projectile_json("res://battle/projectiles/target_bones.json")
+	var prefab: int = _stage.character_projectile(source.stat("VisualConfig"))
+	if not _projectile_vfx.has(prefab):
+		_projectile_vfx[prefab] = _read_projectile_json("res://battle/projectiles/%d.json" % prefab)
+	var visual: Dictionary = _projectile_vfx[prefab]
+	if visual.is_empty():
+		return
+	shot["visual"] = visual
+	shot["launch_offset"] = source.basis.orthonormalized() * _projectile_vector(visual.launch_offset) + source.visual_offset
+	shot["distance_traveled"] = 0.0
+	if bool(visual.match_source_scale):
+		var rigs := source.find_children("*", "Skeleton3D", true, false)
+		var visual_basis := source.basis
+		if not rigs.is_empty():
+			var skeleton: Skeleton3D = rigs[0]
+			visual_basis = source.get_parent_node_3d().global_basis.inverse() * skeleton.global_basis
+		shot["scale"] = visual_basis.get_scale().abs()
+	var target_id := str(int(target.stat("VisualConfig").m_PathID))
+	var bone: String = _projectile_target_bones.get(target_id, "")
+	if not bone.is_empty():
+		for skeleton: Skeleton3D in target.find_children("*", "Skeleton3D", true, false):
+			var index := skeleton.find_bone(bone)
+			if index >= 0:
+				shot["target_skeleton"] = skeleton
+				shot["target_bone"] = index
+				break
+	shot["visual_pose"] = _projectile_visual_pose(shot, source.position, source.position.direction_to(target.position))
+	if visual.has("flight"):
+		var pose: Transform3D = shot.visual_pose
+		var effect := _play_projectile_effect(visual.flight, pose, true)
+		if effect != null:
+			shot["effect"] = effect
+			shot["effect_local"] = pose.affine_inverse() * effect.transform
+
+
+func _read_projectile_json(path: String) -> Dictionary:
+	if not FileAccess.file_exists(path):
+		return {}
+	var data: Variant = JSON.parse_string(FileAccess.get_file_as_string(path))
+	return data if data is Dictionary else {}
+
+
+func _projectile_vector(data: Array) -> Vector3:
+	return Vector3(data[0], data[1], data[2])
+
+
+func _projectile_visual_pose(shot: Dictionary, position: Vector3, direction: Vector3) -> Transform3D:
+	var visual: Dictionary = shot.visual
+	var target: GuildrunBoardUnit = shot.target
+	var target_id := str(int(target.stat("VisualConfig").m_PathID))
+	var socket: Array = _projectile_targets.get(target_id, [0.0, 0.0, 0.0])
+	var destination := target.basis * _projectile_vector(socket) + target.visual_offset
+	var skeleton: Skeleton3D = shot.get("target_skeleton")
+	if is_instance_valid(skeleton):
+		var bone: Transform3D = skeleton.get_bone_global_pose(shot.target_bone)
+		destination = target.get_parent_node_3d().to_local(skeleton.to_global(bone.origin)) - target.position
+	var remaining := position.distance_to(target.position + destination)
+	var traveled: float = shot.distance_traveled
+	var progress := clampf(traveled / maxf(0.000001, traveled + remaining), 0.0, 1.0)
+	var forward := _projectile_vector(visual.forward)
+	var up := _projectile_vector(visual.up)
+	var launch_offset: Vector3 = shot.launch_offset
+	var origin := position + launch_offset.lerp(destination, progress)
+	if visual.has("arc"):
+		var arc: Dictionary = visual.arc
+		var t := clampf((traveled + remaining) / float(arc.distance), 0.0, 1.0)
+		var height := smoothstep(0.0, 1.0, t) * float(arc.height)
+		height += t * (1.0 - t) * (1.0 - t) * float(arc.distance) * float(arc.initial_tangent)
+		origin.y += sin(PI * progress) * height
+	var previous: Transform3D = shot.get("visual_pose", Transform3D.IDENTITY)
+	var alignment := previous.basis
+	if not direction.is_zero_approx():
+		var visual_direction := previous.origin.direction_to(origin) if shot.has("visual_pose") else direction
+		if visual_direction.is_zero_approx() or absf(visual_direction.dot(Vector3.UP)) > 0.999:
+			visual_direction = direction
+		var pitch := deg_to_rad(float(visual.pitch_degrees)) * (1.0 - progress)
+		alignment = Basis.looking_at(visual_direction) * Basis(Vector3.RIGHT, pitch)
+		alignment *= Basis.looking_at(forward, up).inverse()
+		alignment = alignment.scaled_local(shot.get("scale", Vector3.ONE))
+	return Transform3D(alignment, origin)
+
+
+func _play_projectile_effect(path: String, pose: Transform3D, retain_local := false) -> Node3D:
+	var scene := load(path) as PackedScene
+	if scene == null:
+		return null
+	if not is_instance_valid(_projectile_effects):
+		_projectile_effects = Node3D.new()
+		_projectile_effects.name = &"ProjectileEffects"
+		_stage.get_node("Battle/BattleGrid").add_child(_projectile_effects)
+	var effect := scene.instantiate() as Node3D
+	effect.transform = pose * effect.transform if retain_local else pose
+	effect.speed_scale = 0.0 if _tutorial_paused() else simulation_speed.multiplier()
+	effect.scene_time = effect_scene_time
+	_projectile_effects.add_child(effect)
+	return effect
 
 
 func _advance_projectiles(dt: int) -> void:
 	var pending: Array[Dictionary] = []
 	for shot in _shots:
 		var target: GuildrunBoardUnit = shot.target
+		var effect: Variant = shot.get("effect")
 		if not is_instance_valid(target):
+			if is_instance_valid(effect):
+				effect.hide()
+				effect.queue_free()
 			continue
 		var travel_q16 := (int(shot.speed) * dt + 32768) >> 16
 		var position: Vector3 = shot.position
 		position = position.move_toward(target.position, float(travel_q16) / 65536.0)
+		var movement: Vector3 = position - shot.position
+		var direction := movement.normalized()
 		shot.position = position.snappedf(1.0 / 65536.0)
+		if shot.has("visual"):
+			shot.distance_traveled += movement.length()
+			shot["visual_pose"] = _projectile_visual_pose(shot, shot.position, direction)
+			if is_instance_valid(effect):
+				effect.transform = (shot.visual_pose as Transform3D) * (shot.effect_local as Transform3D)
+		elif is_instance_valid(effect):
+			if not direction.is_zero_approx():
+				effect.basis = Basis.looking_at(direction)
+			effect.position = shot.position
 		var delta := Vector3i(((shot.position - target.position) * 65536.0).round())
 		var squared := _squared_q16(delta.x) + _squared_q16(delta.y) + _squared_q16(delta.z)
 		if squared <= _squared_q16(int(target.stat("CircleCollisorRadius").RawValue)):
+			if shot.has("visual"):
+				if shot.visual.has("impact"):
+					_play_projectile_effect(shot.visual.impact, shot.visual_pose, true)
+			elif shot.has("effect"):
+				var impact_basis := Basis.IDENTITY if direction.is_zero_approx() else Basis.looking_at(direction)
+				_play_projectile_effect("res://battle/funke_skill_hit.tscn",
+						Transform3D(impact_basis, position + Vector3.UP))
+			if is_instance_valid(effect):
+				effect.hide()
+				effect.queue_free()
 			if not target.defeated:
 				_stage.sound.play_character(shot.source.base_stats, shot.source.is_hero, shot.cue, target.global_position)
 				if shot.cue == "attack_hit":
 					_resolve_auto_hit(target, shot.damage, shot.source)
-				elif shot.source.ability_kind == "SnipeAbilityAction":
+				elif shot.source.ability_kind in ["SnipeAbilityAction", "IriniSpearThrowAction"]:
 					_land_critable(target, shot.damage, shot.source)
 				elif shot.source.ability_kind == "HoyoungAbilityAction":
 					_land_killshot(shot.source, target, shot.damage)
@@ -1928,6 +2112,7 @@ func _tick_cast(unit: GuildrunBoardUnit, dt: int) -> void:
 				unit.cast_release_q16 = int(unit.ability_data._attacks._attacks[0]["<Delay>k__BackingField"].RawValue)
 				unit.cast_remaining_q16 = maxi(1, unit.cast_remaining_q16 - dt)
 				return
+			var overshoot := -unit.cast_release_q16
 			unit.cast_release_q16 = -1
 			match unit.ability_kind:
 				"ForestGolemAction":
@@ -1975,6 +2160,16 @@ func _tick_cast(unit: GuildrunBoardUnit, dt: int) -> void:
 					unit.permafrost_targets += 1
 					unit.permafrost_damage += int(effect.baseBonusDamage) + ((int(unit.stat("Magic")) * int(effect.magicBonusPercent.RawValue)) >> 16)
 					unit.permafrost_frost += unit.rank * int(effect.frostPerRank)
+				"specialization_stat_effect":
+					_apply_specialization_stat_effect(unit, unit.ability_data)
+				"TillyAction":
+					_release_tilly_action(unit, overshoot)
+				"MingAbilityAction":
+					_release_ming_action(unit)
+				"NyxaAction":
+					_release_nyxa_action(unit)
+				"IriniSpearThrowAction":
+					_release_irini_action(unit)
 				"HoyoungAbilityAction":
 					var target := _farthest_enemy(unit)
 					if target:
@@ -2010,8 +2205,125 @@ func _tick_cast(unit: GuildrunBoardUnit, dt: int) -> void:
 
 
 func _finish_cast(unit: GuildrunBoardUnit) -> void:
+	if unit.ability_kind == "wildfire" and not unit.cast_effect_fired:
+		unit._stop_funke_cast_effects()
 	unit.mana_lock_q16 = int(unit.stat("ManaLockTime").RawValue)
 	unit.play_idle()
+
+
+func _apply_specialization_stat_effect(unit: GuildrunBoardUnit, effect: Dictionary) -> void:
+	var applied: Dictionary[String, int] = {}
+	for modifier: Dictionary in effect.modifiers:
+		var data: Dictionary = modifier.data
+		var stat: String
+		var delta: int
+		if modifier.kind == "ModifyStatPerRankAction":
+			stat = GuildrunBoardUnit.STAT_NAMES[int(data.StatType)]
+			delta = (int(data.Value) + (unit.rank - 1) * int(data.PerRank)) << 16
+		else:
+			stat = GuildrunBoardUnit.STAT_NAMES[int(data.StatTypeTarget)]
+			var source: String = GuildrunBoardUnit.STAT_NAMES[int(data.StatTypeSource)]
+			delta = (unit.stat_q16(source) * int(data.Percent.RawValue)) >> 16
+			if int(data.Max.RawValue) > 0:
+				delta = mini(delta, int(data.Max.RawValue))
+		unit.modify_stat_flat_q16(stat, delta)
+		applied[stat] = applied.get(stat, 0) + delta
+	_specialization_stat_effects.append({"unit": unit, "remaining": int(effect.duration), "applied": applied})
+
+
+func _tick_specialization_stat_effects(dt: int) -> void:
+	for index in range(_specialization_stat_effects.size() - 1, -1, -1):
+		var effect := _specialization_stat_effects[index]
+		effect.remaining -= dt
+		if int(effect.remaining) > 0:
+			continue
+		var unit: GuildrunBoardUnit = effect.unit
+		if is_instance_valid(unit):
+			for stat: String in effect.applied:
+				unit.modify_stat_flat_q16(stat, -int(effect.applied[stat]))
+			unit.health = mini(unit.health, unit.max_health)
+			unit.set_meta("health", unit.health)
+		_specialization_stat_effects.remove_at(index)
+
+
+func _release_tilly_action(unit: GuildrunBoardUnit, overshoot: int) -> void:
+	var data := unit.ability_data
+	var attack: Dictionary = data._attacks._attacks[0]
+	if unit.cast_hit_index == 0:
+		_apply_specialization_stat_effect(unit, data.stat_effect)
+		unit.cast_hit_index = 1
+		unit.cast_release_q16 = maxi(0, int(attack["<Delay>k__BackingField"].RawValue) - int(data.stat_effect.delay) - overshoot)
+		return
+	var damage := _ability_attack_damage(unit, attack)
+	var reach := int(unit.stat("AttackRange"))
+	for enemy in _units:
+		if enemy.is_hero != unit.is_hero and not enemy.defeated:
+			if GuildrunBattleGrid.distance(unit.grid_cell, enemy.grid_cell) <= reach:
+				_land_critable(enemy, damage, unit)
+
+
+func _release_ming_action(unit: GuildrunBoardUnit) -> void:
+	var data := unit.ability_data
+	var damage := _ability_attack_damage(unit, data._attacks._attacks[0])
+	var burn := int(data._burnPerRush) * total_rush_triggers
+	for enemy in _units:
+		if enemy.is_hero != unit.is_hero and not enemy.defeated:
+			if GuildrunBattleGrid.distance(unit.grid_cell, enemy.grid_cell) == 1:
+				_land_critable(enemy, damage, unit)
+				enemy.stun_remaining_q16 = maxi(enemy.stun_remaining_q16, int(data._stunDuration.RawValue))
+				_add_elemental_status(enemy, 1, burn, unit)
+
+
+@warning_ignore("integer_division")
+func _release_nyxa_action(unit: GuildrunBoardUnit) -> void:
+	var target := unit.cast_target
+	if not is_instance_valid(target) or not target.targetable():
+		return
+	var data := unit.ability_data
+	var multiplier := int(data._percentDamage.RawValue)
+	multiplier += (int(unit.stat("AttackSpeed")) << 16) / (100 * int(data._attackSpeedScalingInterval))
+	multiplier += (int(unit.stat("Attack")) << 16) / (100 * int(data._attackAndMagicScalingInterval))
+	multiplier += (int(unit.stat("Magic")) << 16) / (100 * int(data._attackAndMagicScalingInterval))
+	_resolve_auto_hit(target, (unit.effective_attack_damage() * multiplier) >> 16, unit)
+	unit.cast_hit_index += 1
+	if target.defeated:
+		var next := _nearest_enemy(unit, [target])
+		if next == null:
+			unit.cast_remaining_q16 = 0
+			return
+		var cell := unit.grid_cell
+		var closest := 2147483647
+		for direction in 6:
+			var candidate := GuildrunBattleGrid.neighbor(next.grid_cell, direction)
+			if not _grid.contains(candidate) or _grid.occupants.has(candidate):
+				continue
+			var distance := GuildrunBattleGrid.distance(unit.grid_cell, candidate)
+			if distance < closest:
+				cell = candidate
+				closest = distance
+		if cell != unit.grid_cell:
+			_claim_cell(unit, cell)
+			unit.position = GuildrunBattleGrid.center(cell)
+		unit.cast_hit_index = 0
+		unit.cast_target = next
+		unit.face_point(next.position)
+	var attacks: Array = data._attacks._attacks
+	if unit.cast_hit_index < attacks.size():
+		unit.cast_release_q16 = int(attacks[unit.cast_hit_index]["<Delay>k__BackingField"].RawValue)
+	else:
+		unit.cast_remaining_q16 = 0
+
+
+func _release_irini_action(unit: GuildrunBoardUnit) -> void:
+	var target := unit.cast_target
+	if not is_instance_valid(target) or not target.targetable():
+		return
+	var data := unit.ability_data
+	var per_trigger := int(data._baseDamagePerTrigger)
+	per_trigger += (int(unit.stat("AttackSpeed")) * int(data._attackSpeedScalingPercent.RawValue)) >> 16
+	per_trigger += (int(unit.stat("Attack")) * int(data._attackScalingPercent.RawValue)) >> 16
+	per_trigger += (int(unit.stat("Magic")) * int(data._magicScalingPercent.RawValue)) >> 16
+	_queue_shot(unit, target, per_trigger * (total_stall_triggers + total_rush_triggers), int(data._projectileSpeed.RawValue))
 
 
 func _release_snowpiercer(unit: GuildrunBoardUnit) -> void:
@@ -2425,17 +2737,20 @@ func _tick_shadow_strike(unit: GuildrunBoardUnit, dt: int) -> void:
 				if not _grid.occupants.has(unit.shadow_landing) or _grid.occupants[unit.shadow_landing] == unit:
 					_claim_cell(unit, unit.shadow_landing)
 					unit.position = destination
-				_finish_shadow_strike(unit)
+				_finish_shadow_strike(unit, true)
 
 
-func _finish_shadow_strike(unit: GuildrunBoardUnit) -> void:
+func _finish_shadow_strike(unit: GuildrunBoardUnit, completed := false) -> void:
 	unit.set_visual_offset(Vector3.ZERO)
 	unit.shadow_target = null
 	unit.shadow_step = -1
 	unit.cast_release_q16 = -1
 	unit.cast_remaining_q16 = 0
 	unit.mana_lock_q16 = int(unit.stat("ManaLockTime").RawValue)
-	unit.play_idle()
+	if completed:
+		unit.finish_action_motion(&"SkillAttack")
+	else:
+		unit.play_idle()
 
 
 func _land_critable(target: GuildrunBoardUnit, damage: int, source: GuildrunBoardUnit, bonus_crit := 0) -> void:
@@ -2870,7 +3185,8 @@ func _land(target: GuildrunBoardUnit, damage: int, source: GuildrunBoardUnit = n
 		return 0
 	var after_defense := target.damage_after_defense(damage)
 	var unshielded := maxi(0, after_defense - target.total_shield())
-	target.take_damage(after_defense, source, origin, maxi(0, damage - after_defense))
+	target.take_damage(after_defense, source, origin, maxi(0, damage - after_defense), 0,
+			GuildrunBattleStatistics.StatusKind.NONE, critical)
 	if source:
 		source.heal(after_defense * int(source.stat("OmniVamp")) / 100)
 		_rank_rush.damage_dealt(source, unshielded)

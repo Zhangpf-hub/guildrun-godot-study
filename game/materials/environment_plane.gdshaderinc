@@ -1,8 +1,11 @@
+#include "res://materials/bilinear_mip.gdshaderinc"
+
 uniform sampler2D main_texture : source_color, filter_linear, repeat_enable;
 uniform sampler2D main_texture_clamped : source_color, filter_linear, repeat_disable;
 uniform sampler2D main_texture_point_clamped : source_color, filter_nearest, repeat_disable;
 uniform sampler2D main_texture_mipped : source_color, filter_linear_mipmap, repeat_enable;
 uniform int sampler_mode = 0;
+uniform bool nearest_mip = false;
 uniform vec3 tint = vec3(1.0);
 
 vec4 environment_texel(vec2 uv) {
@@ -13,6 +16,9 @@ vec4 environment_texel(vec2 uv) {
 		return texture(main_texture_point_clamped, uv);
 	}
 	if (sampler_mode == 3) {
+		if (nearest_mip) {
+			return sample_bilinear_mip(main_texture_mipped, uv);
+		}
 		return texture(main_texture_mipped, uv);
 	}
 	return texture(main_texture, uv);

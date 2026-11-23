@@ -1,0 +1,44 @@
+{
+  "BasicAttack": [
+    {
+      "scene": "res://battle/character_actions/60909_61862.tscn",
+      "position": [
+        -0.07999999821186066,
+        0.8899999856948853,
+        -1.8200000524520874
+      ],
+      "rotation": [
+        -0.0,
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "SkillAttack": [
+    {
+      "scene": "res://battle/character_actions/60909_62560.tscn",
+      "position": [
+        0.0,
+        1.0,
+        -2.0
+      ],
+      "rotation": [
+        -0.0,
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ]
+}

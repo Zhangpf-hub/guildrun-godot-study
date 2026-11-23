@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://h6f1nw3ssj3a"
+path="res://.godot/imported/battle_damage_text.fnt-c411164084d27dc885f18ae39277ee4a.fontdata"
+
+[deps]
+
+source_file="res://fonts/battle_damage_text.fnt"
+dest_files=["res://.godot/imported/battle_damage_text.fnt-c411164084d27dc885f18ae39277ee4a.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2

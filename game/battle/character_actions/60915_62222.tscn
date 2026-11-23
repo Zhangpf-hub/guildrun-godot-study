@@ -1,0 +1,136 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://battle/revival_effect.gd" id="1"]
+[ext_resource type="Shader" path="res://materials/revival_particle.gdshader" id="2"]
+[ext_resource type="Texture2D" path="res://textures/sharedassets1_1678.png" id="3"]
+[ext_resource type="Texture2D" path="res://textures/sharedassets1_1893.png" id="4"]
+[ext_resource type="Texture2D" path="res://textures/sharedassets1_1324.png" id="5"]
+
+[sub_resource type="QuadMesh" id="Quad"]
+size = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="Material391"]
+shader = ExtResource("2")
+shader_parameter/intensity = 1.0
+shader_parameter/additive = true
+shader_parameter/use_rgb = true
+shader_parameter/image_texture = ExtResource("3")
+shader_parameter/image_uv = Vector4(1, 1, 0, 0.0199999996)
+shader_parameter/image_is_srgb = true
+shader_parameter/mask_texture = ExtResource("4")
+shader_parameter/mask_uv = Vector4(1, 1, 0, 0)
+
+[sub_resource type="ShaderMaterial" id="Material378"]
+shader = ExtResource("2")
+shader_parameter/intensity = 1.0
+shader_parameter/additive = false
+shader_parameter/fade_distance = 1.0
+shader_parameter/use_rgb = false
+shader_parameter/image_texture = ExtResource("5")
+shader_parameter/image_uv = Vector4(1, 1, 0, 0)
+
+[node name="VFX_Cenk_SkillAttack_Aura_L" type="Node3D"]
+script = ExtResource("1")
+lead_in = 0.0
+duration = 999.0
+metadata/unity_prefab = 62222
+
+[node name="Rainbow" type="Node3D" parent="."]
+position = Vector3(0, 2, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+metadata/unity_particle = 51756
+metadata/particle = {
+"mesh": SubResource("Quad"),
+"material": SubResource("Material391"),
+"count": Vector2i(1, 1),
+"delay": 0,
+"repeat_count": 1,
+"repeat_interval": 0.00999999978,
+"seed": -1,
+"mode": 0,
+"alignment": 0,
+"sorting_offset": -3,
+"pivot": Vector3(0, 0, -0),
+"length_scale": 2,
+"velocity_scale": 0,
+"size_3d": false,
+"shape": -1,
+"shape_position": Vector3(0, 0, 0),
+"shape_rotation": Vector3(1.57079633, -0, 0),
+"shape_scale": Vector3(1, 1, 1),
+"radius": 0.200000003,
+"radius_thickness": 1,
+"shape_length": 5,
+"cone_angle": 0.436332313,
+"orbit": Vector2(0, 0),
+"scale_with_action": true,
+"vfx_redraw": true,
+"world_space": true,
+"lifetime": Vector2(3, 3),
+"speed": Vector2(0, 0),
+"width": Vector2(8, 8),
+"height": Vector2(2.3499999, 2.3499999),
+"depth": Vector2(1, 1),
+"pitch": Vector2(-0, -0),
+"yaw": Vector2(-0, -0),
+"roll": Vector2(-1.57079625, -1.57079625),
+"tint_min": Color(1, 1, 1, 0.156862751),
+"tint_max": Color(1, 1, 1, 0.156862751),
+"size_x_min": PackedFloat32Array(1),
+"size_x": PackedFloat32Array(1),
+"size_y": PackedFloat32Array(1),
+"size_z": PackedFloat32Array(1),
+"opacity": PackedFloat32Array(0, 0.0334122222, 0.0668244445, 0.100236667, 0.133648889, 0.167061111, 0.200473333, 0.233885556, 0.267297778, 0.30071, 0.334122222, 0.367534445, 0.400946667, 0.434358889, 0.467771111, 0.501183334, 0.534595556, 0.568007778, 0.60142, 0.634832223, 0.668244445, 0.701656667, 0.735068889, 0.768481112, 0.801893334, 0.835305556, 0.868717778, 0.90213, 0.935542223, 0.968954445, 0.997921026, 0.968570407, 0.939219789, 0.909869171, 0.880518552, 0.851167934, 0.821817315, 0.792466697, 0.763116079, 0.73376546, 0.704414842, 0.675064223, 0.645713605, 0.616362987, 0.587012368, 0.55766175, 0.528311131, 0.498960513, 0.469609895, 0.440259276, 0.410908658, 0.381558039, 0.352207421, 0.322856802, 0.293506184, 0.264155566, 0.234804947, 0.205454329, 0.17610371, 0.146753092, 0.117402474, 0.0880518552, 0.0587012368, 0.0293506184, 0),
+"speed_distance": PackedFloat32Array(0, 1),
+"radial_distance": PackedFloat32Array(0, 0)
+}
+
+[node name="Glow_03" type="Node3D" parent="."]
+position = Vector3(0, 0.100000001, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+metadata/unity_particle = 51095
+metadata/particle = {
+"mesh": SubResource("Quad"),
+"material": SubResource("Material378"),
+"count": Vector2i(1, 1),
+"delay": 0,
+"repeat_count": 1,
+"repeat_interval": 0.00999999978,
+"seed": -1,
+"mode": 2,
+"alignment": 0,
+"sorting_offset": -0,
+"pivot": Vector3(0, 0, -0),
+"length_scale": 2,
+"velocity_scale": 0,
+"size_3d": false,
+"shape": -1,
+"shape_position": Vector3(0, 0, 0),
+"shape_rotation": Vector3(-0, -0, 0),
+"shape_scale": Vector3(1, 1, 1),
+"radius": 0.0500000007,
+"radius_thickness": 1,
+"shape_length": 5,
+"cone_angle": 0.436332313,
+"orbit": Vector2(0, 0),
+"scale_with_action": true,
+"vfx_redraw": true,
+"world_space": true,
+"lifetime": Vector2(2.5, 2.5),
+"speed": Vector2(0, 0),
+"width": Vector2(12, 12),
+"height": Vector2(1, 1),
+"depth": Vector2(1, 1),
+"pitch": Vector2(0, 0),
+"yaw": Vector2(0, 0),
+"roll": Vector2(0, 0),
+"tint_min": Color(0.849056602, 0.75124681, 0.364453554, 0.466666669),
+"tint_max": Color(0.849056602, 0.75124681, 0.364453554, 0.466666669),
+"size_x_min": PackedFloat32Array(1),
+"size_x": PackedFloat32Array(1),
+"size_y": PackedFloat32Array(1),
+"size_z": PackedFloat32Array(1),
+"opacity": PackedFloat32Array(0, 0.0354160542, 0.0708321084, 0.106248163, 0.141664217, 0.177080271, 0.212496325, 0.247912379, 0.283328434, 0.318744488, 0.354160542, 0.389576596, 0.42499265, 0.460408705, 0.495824759, 0.531240813, 0.566656867, 0.602072921, 0.637488976, 0.67290503, 0.708321084, 0.743737138, 0.779153192, 0.814569247, 0.849985301, 0.885401355, 0.920817409, 0.956233463, 0.991649518, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0.998580487, 0.958637268, 0.918694048, 0.878750829, 0.838807609, 0.79886439, 0.75892117, 0.718977951, 0.679034731, 0.639091512, 0.599148292, 0.559205073, 0.519261853, 0.479318634, 0.439375414, 0.399432195, 0.359488975, 0.319545756, 0.279602536, 0.239659317, 0.199716097, 0.159772878, 0.119829658, 0.079886439, 0.0399432195, 0),
+"speed_distance": PackedFloat32Array(0, 1),
+"radial_distance": PackedFloat32Array(0, 0)
+}

@@ -1,0 +1,95 @@
+{
+  "font": [
+    "sharedassets0.assets",
+    37
+  ],
+  "material": [
+    "resources.assets",
+    279
+  ],
+  "point_size": 64,
+  "cap_height": 44.0,
+  "prefab": [
+    "sharedassets3.assets",
+    70541
+  ],
+  "minFontSize": 20,
+  "maxFontSize": 50,
+  "playerMinDamage": 30,
+  "playerMaxDamage": 200,
+  "enemyMinDamage": 30,
+  "enemyMaxDamage": 1000,
+  "positionVariation": 100.0,
+  "jumpPower": 30.0,
+  "popInDuration": 0.15000000596046448,
+  "movementDuration": 0.625,
+  "fadeOutDuration": 0.25,
+  "colors": {
+    "playerTakeDamageColor": [
+      0.9333333373069763,
+      0.3764705955982208,
+      0.007843137718737125,
+      1.0
+    ],
+    "playerCritTakeDamageColor": [
+      0.929411768913269,
+      0.1882352977991104,
+      0.13333334028720856,
+      1.0
+    ],
+    "playerHealColor": [
+      0.12563660740852356,
+      0.8207547068595886,
+      0.09678709506988525,
+      1.0
+    ],
+    "playerShieldColor": [
+      0.5960784554481506,
+      0.6196078658103943,
+      0.6431372761726379,
+      1.0
+    ],
+    "enemyTakeDamageColor": [
+      0.9245283007621765,
+      0.9245283007621765,
+      0.9245283007621765,
+      1.0
+    ],
+    "enemyCritTakeDamageColor": [
+      0.929411768913269,
+      0.1882352977991104,
+      0.13333334028720856,
+      1.0
+    ],
+    "enemyHealColor": [
+      0.125490203499794,
+      0.8196078538894653,
+      0.09803921729326248,
+      1.0
+    ],
+    "enemyShieldColor": [
+      0.5960784554481506,
+      0.6196078658103943,
+      0.6431372761726379,
+      1.0
+    ],
+    "burnDamageColor": [
+      0.886274516582489,
+      0.4156862795352936,
+      0.2980392277240753,
+      1.0
+    ],
+    "poisonDamageColor": [
+      0.2666666805744171,
+      0.6000000238418579,
+      0.10980392247438431,
+      1.0
+    ],
+    "frostDamageColor": [
+      0.5176470875740051,
+      0.7882353067398071,
+      0.9058823585510254,
+      1.0
+    ]
+  }
+}

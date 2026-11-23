@@ -1,0 +1,35 @@
+[gd_resource type="ShaderMaterial" format=3]
+[ext_resource type="Shader" path="res://materials/character_toon.gdshader" id="toon"]
+[ext_resource type="Texture2D" path="res://textures/sharedassets1_1295.png" id="main_texture"]
+[ext_resource type="Texture2D" path="res://textures/sharedassets1_2429.png" id="emission_texture"]
+[ext_resource type="Texture2D" path="res://textures/sharedassets1_1917.png" id="highlight_texture"]
+
+[resource]
+resource_name = "Logan_Weapon_Mat_Mythic"
+shader = ExtResource("toon")
+metadata/unity_shader = "lilToon"
+metadata/unity_material_id = 703
+metadata/unity_reflection = true
+shader_parameter/main_texture = ExtResource("main_texture")
+shader_parameter/main_transform = Vector4(1, 1, 0, 0)
+shader_parameter/tint = Color(1, 1, 1, 1)
+shader_parameter/cutoff = 0.0
+shader_parameter/use_shadow = true
+shader_parameter/shadow_color = Color(0.819999993, 0.75999999, 0.850000024, 1)
+shader_parameter/second_color = Color(0.680000007, 0.659999967, 0.789999962, 0)
+shader_parameter/shadow_border_color = Color(1, 0.0999999717, 0, 1)
+shader_parameter/shade_shape = Vector4(0.689999998, 0, 0.109999999, 0.100000001)
+shader_parameter/shade_controls = Vector4(1, 0, 0, 1)
+shader_parameter/shade_receivers = Vector3(0, 0, 0)
+shader_parameter/light_limits = Vector2(0.0500000007, 1)
+shader_parameter/use_emission = true
+shader_parameter/emission_texture = ExtResource("emission_texture")
+shader_parameter/emission_transform = Vector4(1, 1, 0, 0)
+shader_parameter/emission_color = Color(0.764705896, 0, 0, 1)
+shader_parameter/emission_blink = Vector4(0, 0, 3.14159298, 0)
+shader_parameter/emission_controls = Vector3(1, 1, 0)
+shader_parameter/use_highlight = true
+shader_parameter/highlight_additional_lights = true
+shader_parameter/highlight_texture = ExtResource("highlight_texture")
+shader_parameter/highlight_color = Color(1, 0.976415098, 0.976415098, 0.356999993)
+shader_parameter/highlight_shape = Vector3(0.746999979, 0.0719999969, 0)

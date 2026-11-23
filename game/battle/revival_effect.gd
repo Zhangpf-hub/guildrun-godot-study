@@ -12,8 +12,10 @@ class Particle:
 	var angles: Vector3
 	var point: Vector3
 	var velocity: Vector3
+	var velocity_over_lifetime := Vector3.ZERO
 	var orbit: float
 	var size_mix: float
+	var atlas_mix: float
 	var emission_basis := Basis.IDENTITY
 	var emission_frame: Transform3D
 	var dissolve_shift_y: float
@@ -61,6 +63,7 @@ class MotionTrail:
 var speed_scale := 1.0
 var action_speed_scale := 1.0
 var scene_time: Callable
+var action_mesh_phase: Callable
 var _elapsed := 0.0
 var _activation_time := 0.0
 var _last_particle_end := 0.0
@@ -112,9 +115,11 @@ func _prepare_burst(source: Node3D) -> void:
 		emitter.profile = profile
 		emitter.random = random
 		emitter.position = source.global_position
-		emitter.noise = _make_noise(profile.noise_frequency, random.seed)
+		if profile.has("noise_frequency"):
+			emitter.noise = _make_noise(profile.noise_frequency, random.seed)
 		_distance_emitters.append(emitter)
-		return
+		if not profile.has("count"):
+			return
 	var position_noise: FastNoiseLite
 	if profile.has("noise_strength"):
 		position_noise = _make_noise(profile.noise_frequency, random.seed)
@@ -155,11 +160,14 @@ func _prepare_particle(source: Node3D, profile: Dictionary, random: RandomNumber
 	var width := _value(random, profile.width)
 	particle.size = Vector3(width, _value(random, profile.height), _value(random, profile.depth)) if profile.size_3d else Vector3.ONE * width
 	var size_scale: Vector3 = profile.get("size_scale", Vector3.ONE)
-	particle.size *= size_scale
+	var presentation_scale: float = profile.get("presentation_scale", 1.0)
+	particle.size *= size_scale * presentation_scale
 	particle.angles = Vector3(_value(random, profile.pitch), _value(random, profile.yaw), _value(random, profile.roll))
 	particle.tint = profile.tint_min.lerp(profile.tint_max, random.randf())
 	particle.orbit = _value(random, profile.orbit)
 	particle.size_mix = random.randf()
+	if profile.has("atlas_frames_min"):
+		particle.atlas_mix = random.randf()
 	if profile.has("dissolve_shift_y"):
 		particle.dissolve_shift_y = _value(random, profile.dissolve_shift_y)
 	if profile.has("flare_offset"):
@@ -168,6 +176,10 @@ func _prepare_particle(source: Node3D, profile: Dictionary, random: RandomNumber
 	if profile.has("wave_offset"):
 		particle.wave_offset = _value(random, profile.wave_offset)
 	_prepare_origin(particle, random)
+	if profile.has("linear_velocity_ranges"):
+		var ranges: Array = profile.linear_velocity_ranges
+		particle.velocity_over_lifetime = Vector3(_value(random, ranges[0]),
+			_value(random, ranges[1]), _value(random, ranges[2]))
 	if profile.has("spin"):
 		particle.spin = _value(random, profile.spin)
 	if profile.has("radial_speed"):
@@ -232,9 +244,12 @@ func _start_particle(particle: Particle, previous_elapsed: float) -> void:
 	particle.draw.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
 	particle.draw.sorting_offset = profile.sorting_offset
 	particle.source.add_child(particle.draw)
-	if profile.has("linear_velocity"):
-		var velocity: Vector3 = profile.linear_velocity
-		if profile.get("mesh_local_scale", false):
+	if profile.has("linear_velocity") or profile.has("linear_velocity_ranges"):
+		var velocity: Vector3 = profile.get("linear_velocity", particle.velocity_over_lifetime)
+		if profile.get("world_linear_velocity", false):
+			# World-simulated particles keep this emission frame for their lifetime.
+			velocity = particle.source.global_basis.inverse() * velocity
+		elif profile.get("mesh_local_scale", false):
 			velocity /= particle.source.global_basis.get_scale()
 		particle.velocity += velocity
 	if profile.get("world_space", false):
@@ -310,6 +325,8 @@ func _process(delta: float) -> void:
 	if _elapsed >= maxf(_activation_time + duration, _last_particle_end):
 		queue_free()
 		return
+	if action_mesh_phase.is_valid() and _elapsed >= _activation_time:
+		action_mesh_phase.call(_elapsed - _activation_time)
 	var camera := get_viewport().get_camera_3d()
 	if camera == null:
 		_remember_birth_positions()
@@ -365,21 +382,30 @@ func _update_particle_material(particle: Particle, material: ShaderMaterial, fra
 	else:
 		material.set_shader_parameter(&"particle_tint", uniform_tint)
 	material.set_shader_parameter(&"particle_age", fraction)
+	if profile.has("intensity_curve"):
+		var base: float = profile.material.get_shader_parameter(&"intensity")
+		material.set_shader_parameter(&"intensity", base + _sample(profile.intensity_curve, fraction))
 	if profile.has("flare_offset"):
 		material.set_shader_parameter(&"flare_time", _elapsed)
 	if profile.has("wave_offset"):
 		material.set_shader_parameter(&"wave_stream", Vector4(particle.wave_offset,
 			_sample(profile.wave_far, fraction), _sample(profile.wave_near, fraction), _sample(profile.wave_phase, fraction)))
 	if profile.has("dissolve_value"):
+		var shift_y := particle.dissolve_shift_y
+		if profile.has("dissolve_scroll_y"):
+			shift_y = _sample(profile.dissolve_scroll_y, fraction)
 		material.set_shader_parameter(&"dissolve_data", Vector3(_sample(profile.dissolve_value, fraction),
-			_sample(profile.dissolve_scroll_x, fraction), -particle.dissolve_shift_y))
+			_sample(profile.dissolve_scroll_x, fraction), -shift_y))
 	if profile.has("slash_x"):
 		material.set_shader_parameter(&"slash_data", Vector4(_sample(profile.slash_x, fraction),
 			_sample(profile.slash_y, fraction), _sample(profile.slash_z, fraction), _sample(profile.slash_w, fraction)))
 	if profile.has("atlas_grid"):
 		var grid: Vector2i = profile.atlas_grid
 		var frames := grid.x * grid.y
-		var phase := fposmod(_sample(profile.atlas_frames, fraction) * profile.atlas_cycles + profile.atlas_start, 1.0)
+		var frame_progress := _sample(profile.atlas_frames, fraction)
+		if profile.has("atlas_frames_min"):
+			frame_progress = lerpf(_sample(profile.atlas_frames_min, fraction), frame_progress, particle.atlas_mix)
+		var phase := fposmod(frame_progress * profile.atlas_cycles + profile.atlas_start, 1.0)
 		var frame := mini(int(phase * frames), frames - 1)
 		@warning_ignore("integer_division")
 		var row := frame / grid.x
@@ -453,7 +479,19 @@ func _draw_particle(particle: Particle, camera: Camera3D, age: float, fraction: 
 		orientation = source_frame.basis.inverse() * orientation
 	elif profile.get("mesh_local_scale", false):
 		orientation = source_frame.basis.inverse() * source_frame.basis.orthonormalized() * orientation
-	if profile.mode != 4 and profile.alignment != 2:
+	if profile.mode == 2:
+		# Unity horizontal billboards have a world-up normal.
+		var horizontal := Basis(Vector3.RIGHT, Vector3.FORWARD, Vector3.UP)
+		orientation = source_frame.basis.inverse() * horizontal * Basis(Vector3.BACK, -angles.z)
+	elif profile.mode == 3:
+		# Unity vertical billboards face the camera in yaw while keeping world up.
+		var forward := camera.global_position - source_frame * point
+		forward.y = 0.0
+		var vertical := Basis.IDENTITY
+		if not forward.is_zero_approx():
+			vertical = Basis.looking_at(forward.normalized(), Vector3.UP, true)
+		orientation = source_frame.basis.inverse() * vertical * Basis(Vector3.BACK, -angles.z)
+	elif profile.mode != 4 and profile.alignment != 2:
 		var view_basis := camera.global_basis.orthonormalized()
 		if profile.alignment == 3:
 			var forward := (camera.global_position - source_frame * point).normalized()
@@ -483,7 +521,15 @@ func _point_at(particle: Particle, age: float) -> Vector3:
 	var distance_to_center := offset.length()
 	if distance_to_center > 0.0:
 		offset *= maxf(0.0, distance_to_center + radial) / distance_to_center
-	return profile.shape_position + offset.rotated(Vector3.UP, particle.orbit * age) + particle.velocity * distance
+	var position: Vector3 = profile.shape_position + offset.rotated(Vector3.UP, particle.orbit * age) + particle.velocity * distance
+	if profile.has("velocity_x_distance"):
+		var displacement := Vector3(_sample(profile.velocity_x_distance, fraction),
+			_sample(profile.velocity_y_distance, fraction), _sample(profile.velocity_z_distance, fraction)) * particle.lifetime
+		if profile.get("mesh_local_scale", false):
+			var source_basis := particle.emission_frame.basis if particle.draw.top_level else particle.source.global_basis
+			displacement /= source_basis.get_scale()
+		position += displacement
+	return position
 
 
 func _draw_ribbon(particle: Particle, camera: Camera3D, age: float, lifetime: float) -> void:

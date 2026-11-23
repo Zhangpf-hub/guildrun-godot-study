@@ -1510,6 +1510,20 @@
         "BasicAttack": "Ayaka_BasicAttack02",
         "Die": "Death",
         "SkillAttack": "Ayaka_ActiveAbility_All"
+      },
+      "entry_blends": {
+        "BasicAttack": 0.25,
+        "SkillAttack": 0.25
+      },
+      "exit_blends": {
+        "BasicAttack": [
+          1.1018347701165965,
+          0.08483421802520752
+        ],
+        "SkillAttack": [
+          3.98000618512836,
+          0.05707597732543945
+        ]
       }
     }
   ],
@@ -2043,6 +2057,7 @@
     },
     {
       "model": "res://rigs/49992/model.fbx",
+      "action_only": true,
       "clips": {
         "BowCurve": "BowCurve"
       },
@@ -2506,6 +2521,7 @@
           "visible": true,
           "outline": true,
           "redraw_after_outline": true,
+          "imported_name": "Ratna2",
           "death_blend": [
             0.5,
             0.5
@@ -2989,6 +3005,7 @@
           "visible": true,
           "outline": true,
           "redraw_after_outline": true,
+          "imported_name": "Tilly2",
           "death_blend": [
             0.5,
             0.5

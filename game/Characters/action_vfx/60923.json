@@ -1,0 +1,46 @@
+{
+  "SkillAttack": [
+    {
+      "scene": "res://battle/character_actions/60923_63192.tscn",
+      "animation": "BowCurve",
+      "position": [0.0, 1.24200002, -0.58319998],
+      "rotation": [0.45451945, 0.54167527, -0.45451945, 0.54167527],
+      "scale": [1.08000004, 1.08000004, 1.08000004]
+    }
+  ],
+  "ranks": {
+    "2": {
+      "SkillAttack": [
+        {
+          "scene": "res://battle/character_actions/60923_63192.tscn",
+          "animation": "BowCurve",
+          "position": [0.0, 1.35699991, -0.637199927],
+          "rotation": [0.45451945, 0.54167527, -0.45451945, 0.54167527],
+          "scale": [1.17999995, 1.17999995, 1.17999995]
+        }
+      ]
+    },
+    "3": {
+      "SkillAttack": [
+        {
+          "scene": "res://battle/character_actions/60923_63192.tscn",
+          "animation": "BowCurve",
+          "position": [0.0, 1.47199994, -0.691199936],
+          "rotation": [0.45451945, 0.54167527, -0.45451945, 0.54167527],
+          "scale": [1.27999997, 1.27999997, 1.27999997]
+        }
+      ]
+    },
+    "4": {
+      "SkillAttack": [
+        {
+          "scene": "res://battle/character_actions/60923_63192.tscn",
+          "animation": "BowCurve",
+          "position": [0.0, 1.58699996, -0.745199945],
+          "rotation": [0.45451945, 0.54167527, -0.45451945, 0.54167527],
+          "scale": [1.38, 1.38, 1.38]
+        }
+      ]
+    }
+  }
+}

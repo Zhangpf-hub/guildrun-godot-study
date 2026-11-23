@@ -1,0 +1,47 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://h1hy6lrounyh"]
+
+[ext_resource type="Shader" uid="uid://ddxwfrslg7esr" path="res://materials/character_toon.gdshader" id="1_gxa3w"]
+[ext_resource type="Texture2D" uid="uid://dpn02c6gbunkx" path="res://textures/sharedassets1_1758.png" id="2_4gt1v"]
+[ext_resource type="Texture2D" uid="uid://b2k3llk8ol3vj" path="res://textures/sharedassets1_2436.png" id="3_tnr8y"]
+[ext_resource type="Texture2D" uid="uid://tmlminqke2dq" path="res://textures/sharedassets1_2484.png" id="4_rp42x"]
+
+[resource]
+resource_name = "Dragomir_Weapon_Mat_Silver"
+render_priority = 0
+shader = ExtResource("1_gxa3w")
+shader_parameter/main_texture = ExtResource("4_rp42x")
+shader_parameter/emission_texture = ExtResource("2_4gt1v")
+shader_parameter/highlight_texture = ExtResource("3_tnr8y")
+shader_parameter/main_transform = Vector4(1, 1, 0, 0)
+shader_parameter/emission_transform = Vector4(1, 1, 0, 0)
+shader_parameter/tint = Color(1, 1, 1, 1)
+shader_parameter/death_tint = Color(0.3764706, 0.3764706, 0.3764706, 0)
+shader_parameter/cutoff = 0.0
+shader_parameter/use_shadow = true
+shader_parameter/use_shadow_texture = false
+shader_parameter/shadow_color = Color(0.82, 0.76, 0.85, 1)
+shader_parameter/second_color = Color(0.68, 0.65999997, 0.78999996, 0)
+shader_parameter/shadow_border_color = Color(1, 0.09999997, 0, 1)
+shader_parameter/shade_shape = Vector4(0.69, 0, 0.11, 0.1)
+shader_parameter/shade_controls = Vector4(1, 0, 0, 1)
+shader_parameter/shade_receivers = Vector3(0, 0, 0)
+shader_parameter/light_limits = Vector2(0.05, 1)
+shader_parameter/use_emission = true
+shader_parameter/emission_color = Color(0.8679245, 0.020469915, 0.020469915, 1)
+shader_parameter/emission_blink = Vector4(0, 0, 3.141593, 0)
+shader_parameter/emission_controls = Vector3(1, 1, 0)
+shader_parameter/use_highlight = true
+shader_parameter/highlight_additional_lights = true
+shader_parameter/highlight_color = Color(1, 0.9764151, 0.9764151, 0.357)
+shader_parameter/highlight_shape = Vector3(0.747, 0.072, 0)
+shader_parameter/shadow_environment = 0.0
+shader_parameter/probe_ar = Vector4(0, 0, 0, 0)
+shader_parameter/probe_ag = Vector4(0, 0, 0, 0)
+shader_parameter/probe_ab = Vector4(0, 0, 0, 0)
+shader_parameter/probe_br = Vector4(0, 0, 0, 0)
+shader_parameter/probe_bg = Vector4(0, 0, 0, 0)
+shader_parameter/probe_bb = Vector4(0, 0, 0, 0)
+shader_parameter/probe_c = Vector3(0, 0, 0)
+metadata/unity_shader = "lilToon"
+metadata/unity_material_id = 404
+metadata/unity_reflection = true

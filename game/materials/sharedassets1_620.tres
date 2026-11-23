@@ -1,10 +1,36 @@
-[gd_resource type="StandardMaterial3D" format=3]
-[ext_resource type="Texture2D" path="res://textures/sharedassets1_1642.png" id="1"]
+[gd_resource type="ShaderMaterial" format=3]
+
+[ext_resource type="Shader" path="res://materials/javryn_bow_trail.gdshader" id="1"]
+[ext_resource type="Texture2D" path="res://textures/sharedassets1_1642.png" id="2"]
+[ext_resource type="Texture2D" path="res://textures/sharedassets1_2568.png" id="3"]
+[ext_resource type="Texture2D" path="res://textures/sharedassets1_1215.png" id="4"]
+
+[sub_resource type="ShaderMaterial" id="Layer8"]
+render_priority = 10
+shader = ExtResource("1")
+shader_parameter/main_texture = ExtResource("2")
+shader_parameter/warp_texture = ExtResource("3")
+shader_parameter/dissolve_texture = ExtResource("4")
+shader_parameter/tint = Color(0.250425398, 0.733340502, 1.12957835, 1)
+shader_parameter/intensity = 1.0
+shader_parameter/warp_speed = Vector2(0.289999992, -0.25)
+shader_parameter/warp_strength = 0.0399999991
+shader_parameter/dissolve_speed = Vector2(0.100000001, -0.5)
+shader_parameter/dissolve_threshold = 0.800000012
+metadata/unity_renderer_feature = "globalgamemanagers.assets:6689"
 
 [resource]
 resource_name = "VFX_Mat_Javryn_Bow_01"
-albedo_texture = ExtResource("1")
-transparency = 1
-cull_mode = 2
-albedo_color = Color(0.250425398, 0.733340502, 1.12957835, 1)
+next_pass = SubResource("Layer8")
+shader = ExtResource("1")
+shader_parameter/main_texture = ExtResource("2")
+shader_parameter/warp_texture = ExtResource("3")
+shader_parameter/dissolve_texture = ExtResource("4")
+shader_parameter/tint = Color(0.250425398, 0.733340502, 1.12957835, 1)
+shader_parameter/intensity = 1.0
+shader_parameter/warp_speed = Vector2(0.289999992, -0.25)
+shader_parameter/warp_strength = 0.0399999991
+shader_parameter/dissolve_speed = Vector2(0.100000001, -0.5)
+shader_parameter/dissolve_threshold = 0.800000012
 metadata/unity_shader = "Shader Graphs/VFXTrail_SG"
+metadata/unity_material_id = 620

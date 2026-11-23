@@ -2,11 +2,11 @@
 import argparse
 from contextlib import ExitStack
 import math
+import traceback
 from pathlib import Path
-from struct import pack
 
 from import_balancing import BuildLayouts, read_fields
-from import_scenes import Source, material_texture, mesh_asset, particle_range, quote, texture_transform, vector
+from import_scenes import Source, material_texture, mesh_asset, particle_range, quote, source_mip_texture, texture_transform, vector
 
 
 STEPS = 64
@@ -186,33 +186,7 @@ def slash_atlas(src, owner, pointer, game):
     levels = texture.m_MipCount
     assert texture.m_TextureFormat == 10 and texture.m_ColorSpace == 1  # Unity DXT1 and sRGB.
     assert size == texture.m_Height and size & (size - 1) == 0 and levels == size.bit_length()
-    payload = texture.get_image_data()
-    # DDS header with a BC1 FourCC and the complete source mip chain.
-    data = bytearray(b"DDS ")
-    data.extend(pack("<7I", 124, 0xA1007, size, size, size * size // 2, 0, levels))
-    data.extend(bytes(44))
-    data.extend(pack("<2I4s5I", 32, 4, b"DXT1", 0, 0, 0, 0, 0))
-    data.extend(pack("<5I", 0x401008, 0, 0, 0, 0))
-    offset = 0
-    for level in range(levels):
-        height = size >> level
-        blocks = max(1, height // 4)
-        rows = min(4, height)
-        # Unity starts at the bottom. Flip block rows and the row selectors inside each block.
-        for block_y in reversed(range(blocks)):
-            for block_x in range(blocks):
-                start = offset + (block_y * blocks + block_x) * 8
-                data.extend(payload[start:start + 4])
-                selectors = payload[start + 4:start + 8]
-                data.extend(selectors[:rows][::-1])
-                data.extend(selectors[rows:])
-        offset += blocks * blocks * 8
-    assert offset == len(payload)
-    relative = f"textures/{Path(texture_owner.name).stem}_{reader.path_id}.dds"
-    destination = game / relative
-    destination.parent.mkdir(parents=True, exist_ok=True)
-    destination.write_bytes(data)
-    return relative
+    return source_mip_texture(texture_owner, reader.path_id, texture, game)
 
 
 def add_material(src, owner, reader, trail, game, resource, lines, skill=False, linearize_vertex_tint=False):
@@ -226,6 +200,28 @@ def add_material(src, owner, reader, trail, game, resource, lines, skill=False, 
     custom_dissolve = False
     mixed_dissolve = False
     name = f"Material{reader.path_id}"
+    if shader.path_id in (723, 743, 748, 762):
+        # Approximate the Sine VFX surface using the shipped noise, mask and color ramp.
+        image, ramp = {723: ("_MainTex", "_RampFire"), 743: ("_Mask", "_Ramp"),
+                       748: ("_NoiseTest", "_Ramp"), 762: ("_MainTex", "_RampSmoke")}[shader.path_id]
+        lines.extend([f'[sub_resource type="ShaderMaterial" id="{name}"]',
+                      'shader = ' + resource("Shader", "materials/revival_particle.gdshader"),
+                      'shader_parameter/use_ramp = true',
+                      'shader_parameter/use_rgb = true',
+                      f'shader_parameter/intensity = {float(floats.get("_FinalPower", floats.get("_FirePower", 1.0)))}'])
+        for uniform, field in (("image", image), ("ramp", ramp)):
+            path, _ = material_texture(src, owner, maps[field]["m_Texture"], game)
+            lines.append(f"shader_parameter/{uniform}_texture = " + resource("Texture2D", path))
+        if shader.path_id in (723, 762):
+            lines.extend(["shader_parameter/opacity_from_red = true",
+                          "shader_parameter/age_sheet_rows = 4.0",
+                          f'shader_parameter/opacity_gain = {float(floats["_OpacityBoost"])}'])
+        if shader.path_id == 748:
+            lines.append(f'shader_parameter/edge_power = {float(floats["_OpacityPower"])}')
+        if shader.path_id == 743:
+            lines.append("shader_parameter/rim_power = 2.0")
+        lines.append("")
+        return f'SubResource("{name}")', atlas_shader, custom_dissolve
     if shader.path_id in (3008, 3034):
         path = slash_atlas(src, owner, maps["Main_tex"]["m_Texture"], game)
         additive = shader.path_id == 3034
@@ -249,6 +245,9 @@ def add_material(src, owner, reader, trail, game, resource, lines, skill=False, 
         for uniform, field in (("image", "_MainTex"), ("mask", "_Mask"), ("warp", "_DistortionTexture"),
                                ("noise", "_DissolveTexture")):
             pointer = maps[field]["m_Texture"]
+            if not pointer["m_PathID"]:
+                srgb.append(0.0)
+                continue
             path, texture = material_texture(src, owner, pointer, game)
             lines.append(f"shader_parameter/{uniform}_texture = " + resource("Texture2D", path))
             srgb.append(float(texture.read().m_ColorSpace == 1))
@@ -343,7 +342,8 @@ def add_material(src, owner, reader, trail, game, resource, lines, skill=False, 
                       "shader_parameter/flow_fade_out = " + vector("Vector2", floats["_Flow_Mask_SS21"], floats["_Flow_Mask_SS22"]), ""])
         return f'SubResource("{name}")', atlas_shader, custom_dissolve
     ab_shader = shader.path_id == 3031
-    if shader.path_id not in (707, 711, 2989, 2996, 3022, 3031):
+    # Funke's aura uses the same texture inputs but a different distortion graph.
+    if shader.path_id not in (707, 711, 2989, 2996, 3007, 3022, 3031):
         raise ValueError(f"Unhandled particle shader {shader.path_id}")
     intensity = 1 + floats["_AddIntensity"] if atlas_shader else floats.get("_ColorIntensity", floats.get("_Emission", 1.0))
     lines.extend([f'[sub_resource type="ShaderMaterial" id="{name}"]',
@@ -368,14 +368,19 @@ def add_material(src, owner, reader, trail, game, resource, lines, skill=False, 
         else:
             lines.append(f'shader_parameter/fade_distance = {float(floats["_FadeDistance"])}')
     image = "_BaseTexture" if atlas_shader else "_MainTex" if "_MainTex" in maps else "_Mask"
-    use_rgb = atlas_shader or shader.path_id in (2989, 3031) or bool(floats.get("_UseTexColor"))
+    use_rgb = atlas_shader or shader.path_id in (2989, 3007, 3031) or bool(floats.get("_UseTexColor"))
     lines.append(f"shader_parameter/use_rgb = {str(use_rgb).lower()}")
     bindings = {"image": image, "mask": "_MaskTex"}
     if skill and not floats.get("_MaskMainTex"):
         bindings.pop("mask")
     if atlas_shader:
         assert set(material["m_ValidKeywords"]) <= {
-            "_SURFACE_TYPE_TRANSPARENT", "_BUILTIN_SURFACE_TYPE_TRANSPARENT", "_DEPTHFADE"}
+            "_SURFACE_TYPE_TRANSPARENT", "_BUILTIN_SURFACE_TYPE_TRANSPARENT", "_DEPTHFADE",
+            "_EDGEFADE", "_LUT", "_USEMASK"}
+        if "_USEMASK" in material["m_ValidKeywords"]:
+            bindings["mask"] = "_MaskTexture"
+        if "_LUT" in material["m_ValidKeywords"]:
+            bindings["ramp"] = "_RampTexture"
     if shader.path_id == 2989:
         bindings.update(mask="_Mask", noise="_Noise", flow="_Flow")
         speed = colors["_SpeedMainTexUVNoiseZW"]
@@ -387,10 +392,10 @@ def add_material(src, owner, reader, trail, game, resource, lines, skill=False, 
                       f'shader_parameter/flow_strength = {float(flow["b"])}'])
         if floats["_Usedepth"]:
             lines.append(f'shader_parameter/fade_distance = {float(floats["_Depthpower"])}')
-    if skill and floats.get("_Dissolve"):
-        # Impact smoke retains its lifetime stream with the shader's white default mask.
-        smoke_dissolve = owner.name == "sharedassets1.assets" and reader.path_id == 354
-        if maps["_DissolveTex"]["m_Texture"]["m_PathID"] or smoke_dissolve:
+    lifetime_dissolve = owner.name == "sharedassets1.assets" and reader.path_id in (498, 499)
+    if skill and floats.get("_Dissolve") and not lifetime_dissolve:
+        white_default_dissolve = owner.name == "sharedassets1.assets" and reader.path_id in (334, 354)
+        if maps["_DissolveTex"]["m_Texture"]["m_PathID"] or white_default_dissolve:
             custom_dissolve = True
             bindings["noise"] = "_DissolveTex"
             lines.append("shader_parameter/custom_dissolve = true")
@@ -398,14 +403,14 @@ def add_material(src, owner, reader, trail, game, resource, lines, skill=False, 
                 mixed_dissolve = True
                 bindings["dissolve_mask"] = "_Dissolve2Tex"
                 lines.append(f'shader_parameter/dissolve_mix = {float(floats["_MixAmount"])}')
-            if floats["_DissolveSmoothness"]:
+            if floats.get("_DissolveSmoothness"):
                 lines.append(f'shader_parameter/custom_dissolve_softness = {float(floats["_DissolveSmoothness"])}')
         else:
             # The other untextured dissolve materials still use the existing approximation.
             assert not maps["_Dissolve2Tex"]["m_Texture"]["m_PathID"] and floats["_DissolveSmoothness"] == 0
     elif floats.get("_Dissolve"):
         bindings["noise"] = "_DissolveTex"
-        lines.extend([f'shader_parameter/dissolve_amount = {float(floats["_DissolveAmount"])}',
+        lines.extend([f'shader_parameter/dissolve_amount = {float(floats.get("_DissolveAmount", 1.0))}',
                       f'shader_parameter/dissolve_softness = {float(floats.get("_DissolveSmoothness", 0.1))}',
                       "shader_parameter/noise_scroll = " + vector("Vector2", floats.get("_Dissolve_X_Spd", 0),
                                                                  -floats.get("_Dissolve_Y_Spd", 0))])
@@ -417,12 +422,32 @@ def add_material(src, owner, reader, trail, game, resource, lines, skill=False, 
         slot = maps.get(field)
         if not slot or not slot["m_Texture"]["m_PathID"]:
             continue
+        impact_mips = (skill and uniform == "image" and owner.name == "sharedassets1.assets"
+                       and reader.path_id in (334, 356))
+        if impact_mips:
+            texture_owner, texture = src.resolve(owner, slot["m_Texture"])
+            image = texture.read()
+            sampler = image.m_TextureSettings
+            assert sampler.m_FilterMode == 1 and sampler.m_WrapU == sampler.m_WrapV == 0
+            assert sampler.m_Aniso == 1 and sampler.m_MipBias == 0
+            assert image.m_MipCount == max(image.m_Width, image.m_Height).bit_length()
+            path = source_mip_texture(texture_owner, texture.path_id, image, game)
+            lines.extend(["shader_parameter/source_mip_image = " + resource("Texture2D", path),
+                          "shader_parameter/image_uv = " + texture_transform(slot),
+                          "shader_parameter/use_source_mip_image = true"])
+            continue
         path, texture = material_texture(src, owner, slot["m_Texture"], game)
-        if uniform == "dissolve_mask":
-            sampler_settings = texture.read().m_TextureSettings
-            assert sampler_settings.m_WrapU == sampler_settings.m_WrapV == 1
         uv = texture_transform(slot)
         sampler = uniform + "_texture"
+        if uniform == "dissolve_mask":
+            sampler_settings = texture.read().m_TextureSettings
+            if sampler_settings.m_WrapU == sampler_settings.m_WrapV == 0:
+                sampler = "repeating_dissolve_mask_texture"
+                lines.append("shader_parameter/repeat_dissolve_mask = true")
+            else:
+                assert sampler_settings.m_WrapU == sampler_settings.m_WrapV == 1
+        if uniform == "ramp":
+            lines.append("shader_parameter/use_ramp = true")
         if atlas_shader and uniform == "image":
             assert uv == "Vector4(1, 1, 0, 0)"
             tiling, offset, scroll = (colors[k] for k in ("_Tiling", "_InitOffset", "_ScrollSpeed"))
@@ -451,7 +476,8 @@ def add_material(src, owner, reader, trail, game, resource, lines, skill=False, 
 def particle_profile(data, renderer, mesh, material, atlas_shader, custom_dissolve, skill, scale, effect_duration,
                      ribbon_only=False, scale_with_action=False, emit_on_enable=False, flare_scale=None, flow_wave=False,
                      effect_delay=0.0, projectile_contact_time=None, baked_view_billboard=None, presentation_offset=0.0,
-                     baked_smoke_scale=None, baked_flight_glow=False, unity_layer=0, hit_dark_blend=False):
+                     baked_smoke_scale=None, baked_flight_glow=False, unity_layer=0, hit_dark_blend=False,
+                     projectile=False, presentation_scale=1.0):
     initial, shape = data["InitialModule"], data["ShapeModule"]
     size, color = data["SizeModule"], data["ColorModule"]
     velocity, trail = data["VelocityModule"], data["TrailModule"]
@@ -466,8 +492,7 @@ def particle_profile(data, renderer, mesh, material, atlas_shader, custom_dissol
     rate = emission["rateOverTime"]["scalar"]
     starts_active = skill and emit_on_enable and data["looping"] and rate > 0 and effect_delay > 0
     if skill and rate > 0:
-        assert emission["rateOverTime"]["minMaxState"] == data["startDelay"]["minMaxState"] == 0
-        assert emission["rateOverDistance"]["scalar"] == 0
+        assert emission["rateOverTime"]["minMaxState"] in (0, 1) and data["startDelay"]["minMaxState"] == 0
         start = data["startDelay"]["scalar"]
         length = effect_duration * simulation_speed - start
         if starts_active:
@@ -488,10 +513,24 @@ def particle_profile(data, renderer, mesh, material, atlas_shader, custom_dissol
                 length -= start
         if not data["looping"]:
             length = min(length, data["lengthInSec"])
-        pulse_count = math.ceil(length * rate - 1e-6) - 1
-        if pulse_count > 0:
-            births.append({"count": "Vector2i(1, 1)", "delay": start + 1 / rate,
-                           "repeat_count": pulse_count, "repeat_interval": 1 / rate})
+        if emission["rateOverTime"]["minMaxState"] == 0:
+            pulse_count = math.ceil(length * rate - 1e-6) - 1
+            if pulse_count > 0:
+                births.append({"count": "Vector2i(1, 1)", "delay": start + 1 / rate,
+                               "repeat_count": pulse_count, "repeat_interval": 1 / rate})
+        else:
+            curve = emission["rateOverTime"]["maxCurve"]["m_Curve"]
+            accumulated = 0.0
+            steps = math.ceil(length * 240)
+            for step in range(steps):
+                before = accumulated
+                dt = length / steps
+                progress = (step + 0.5) * dt / data["lengthInSec"]
+                accumulated += rate * max(0, keyframe_value(curve, progress)) * dt
+                for pulse in range(math.floor(before) + 1, math.floor(accumulated) + 1):
+                    time = (step + (pulse - before) / (accumulated - before)) * dt
+                    births.append({"count": "Vector2i(1, 1)", "delay": start + time,
+                                   "repeat_count": 1, "repeat_interval": 0.0})
     for birth in births:
         birth["delay"] += presentation_offset * simulation_speed
     profile = {
@@ -515,6 +554,8 @@ def particle_profile(data, renderer, mesh, material, atlas_shader, custom_dissol
     }
     if simulation_speed != 1.0:
         profile["simulation_speed"] = simulation_speed
+    if presentation_scale != 1.0:
+        profile["presentation_scale"] = presentation_scale
     if scale_with_action:
         profile["scale_with_action"] = True
     if starts_active:
@@ -545,7 +586,7 @@ def particle_profile(data, renderer, mesh, material, atlas_shader, custom_dissol
         profile["flare_warp_emission"] = vector("Vector2", stream["vector0_1"]["scalar"], stream["vector0_3"]["scalar"])
         profile["size_scale"] = vector("Vector3", flare_scale, flare_scale, flare_scale)
     if distance_rate > 0:
-        assert skill and emit_on_enable and not births and rate == 0
+        assert skill and emit_on_enable
         assert emission["rateOverDistance"]["minMaxState"] == 0
         assert data["moveWithTransform"] == data["scalingMode"] == 1 and data["looping"]
         if renderer["m_RenderMode"] == 0:
@@ -554,14 +595,30 @@ def particle_profile(data, renderer, mesh, material, atlas_shader, custom_dissol
             assert renderer["m_RenderMode"] == 1 and renderer["m_CameraVelocityScale"] == 0
             assert initial["startSpeed"]["minMaxState"] == 0 and initial["startSpeed"]["scalar"] == 0
         profile["distance_rate"] = distance_rate
-    if skill and data["moveWithTransform"] == 0:
+    infinite_projectile = projectile and math.isinf(initial["startLifetime"]["scalar"])
+    if skill and data["moveWithTransform"] == 0 and not infinite_projectile:
         profile["world_space"] = True
     if skill and renderer["m_RenderMode"] == 4:
         if data["scalingMode"] == 1:
             profile["mesh_local_scale"] = True
+    linear_curves = None
     if skill and velocity["enabled"] and any(velocity[axis]["scalar"] != 0 for axis in "xyz"):
-        assert not velocity["inWorldSpace"] and all(velocity[axis]["minMaxState"] == 0 for axis in "xyz")
-        profile["linear_velocity"] = xyz({axis: velocity[axis]["scalar"] for axis in "xyz"})
+        states = {velocity[axis]["minMaxState"] for axis in "xyz"}
+        if velocity["inWorldSpace"]:
+            if not profile.get("world_space") or profile.get("local_billboard_scale") or not states <= {0, 3}:
+                raise ValueError("World velocity requires fixed world simulation and constant axis ranges")
+            profile["world_linear_velocity"] = True
+        if states == {0}:
+            profile["linear_velocity"] = xyz({axis: velocity[axis]["scalar"] for axis in "xyz"})
+        elif states <= {0, 3}:
+            profile["linear_velocity_ranges"] = "[" + ", ".join(
+                vector("Vector2", *sorted(sign * value for value in particle_range(velocity[axis])))
+                for axis, sign in zip("xyz", (1, 1, -1))) + "]"
+        elif states <= {0, 1}:
+            assert velocity["speedModifier"]["minMaxState"] in (0, 1)
+            linear_curves = {axis: velocity[axis] for axis in "xyz"}
+        else:
+            raise ValueError(f"Unsupported velocity curve modes {sorted(states)}")
     if (skill and shape["enabled"] and shape["type"] == 0 and shape["alignToDirection"]
             and (renderer["m_RenderMode"] == 4 or renderer["m_RenderAlignment"] == 2)):
         profile["align_to_direction"] = True
@@ -576,14 +633,16 @@ def particle_profile(data, renderer, mesh, material, atlas_shader, custom_dissol
         if any(gradient[f"key{i}"][channel] != 1.0 for i in range(gradient["m_NumColorKeys"]) for channel in "rgb"):
             profile["color_gradient"] = sampled_gradient(color, "gradient")
     if any(value != 1.0 for value in scale.values()):
-        assert data["scalingMode"] == 1 and renderer["m_RenderMode"] == 0
+        assert data["scalingMode"] in (0, 1) and renderer["m_RenderMode"] in (0, 2, 3)
         profile["size_scale"] = xyz(scale, (1, 1, 1))
     ranges = {"lifetime": "startLifetime", "speed": "startSpeed", "width": "startSize",
               "height": "startSizeY", "depth": "startSizeZ", "pitch": "startRotationX",
               "yaw": "startRotationY", "roll": "startRotation"}
     for field, native in ranges.items():
         limits = particle_range(initial[native])
-        if field == "lifetime" and all(math.isinf(value) for value in limits):
+        if field == "lifetime" and infinite_projectile:
+            limits = [effect_duration * simulation_speed] * 2
+        elif field == "lifetime" and all(math.isinf(value) for value in limits):
             # Use the first ground-contact pose in the Godot replay for the anchored projectile mesh.
             assert emit_on_enable and not data["looping"] and len(births) == len(bursts) == 1
             assert renderer["m_RenderMode"] == 4 and not size["enabled"] and not color["enabled"]
@@ -618,14 +677,18 @@ def particle_profile(data, renderer, mesh, material, atlas_shader, custom_dissol
         profile["bursts"] = "[" + ", ".join(profile_literal(birth) for birth in births) + "]"
     elif len(bursts) > 1:
         assert emission["rateOverTime"]["scalar"] == 0 and data["startDelay"]["minMaxState"] == 0
-        assert initial["startSize"]["minMaxState"] == 1 and not initial["size3D"] and tint["minMaxState"] == 1
-        for birth, burst in zip(births, bursts):
-            assert burst["cycleCount"] == 1
-            progress = burst["time"] / data["lengthInSec"]
-            size_curve = initial["startSize"]
-            width = keyframe_value(size_curve["maxCurve"]["m_Curve"], progress) * size_curve["scalar"]
-            color_at_birth = vector("Color", *gradient_at(tint["maxGradient"], progress))
-            birth.update(width=vector("Vector2", width, width), tint_min=color_at_birth, tint_max=color_at_birth)
+        if initial["startSize"]["minMaxState"] == 1 and not initial["size3D"] and tint["minMaxState"] == 1:
+            for birth, burst in zip(births, bursts):
+                assert burst["cycleCount"] == 1
+                progress = burst["time"] / data["lengthInSec"]
+                size_curve = initial["startSize"]
+                width = keyframe_value(size_curve["maxCurve"]["m_Curve"], progress) * size_curve["scalar"]
+                color_at_birth = vector("Color", *gradient_at(tint["maxGradient"], progress))
+                birth.update(width=vector("Vector2", width, width), tint_min=color_at_birth, tint_max=color_at_birth)
+        else:
+            size_fields = ("startSize", "startSizeY", "startSizeZ") if initial["size3D"] else ("startSize",)
+            assert all(initial[field]["minMaxState"] in (0, 3) for field in size_fields)
+            assert tint["minMaxState"] in (0, 2)
     if len(births) > 1:
         profile["bursts"] = "[" + ", ".join(profile_literal(birth) for birth in births) + "]"
     if baked_flight_glow:
@@ -675,24 +738,38 @@ def particle_profile(data, renderer, mesh, material, atlas_shader, custom_dissol
     uv = data["UVModule"]
     if skill and uv["enabled"]:
         assert uv["mode"] == uv["timeMode"] == uv["animationType"] == uv["flipU"] == uv["flipV"] == 0
-        assert uv["startFrame"]["minMaxState"] == 0 and uv["frameOverTime"]["minMaxState"] in (0, 1)
+        assert uv["startFrame"]["minMaxState"] == 0 and uv["frameOverTime"]["minMaxState"] in (0, 1, 3)
         profile.update(atlas_grid=vector("Vector2i", uv["tilesX"], uv["tilesY"]),
                        atlas_cycles=uv["cycles"], atlas_start=uv["startFrame"]["scalar"])
         values["atlas_frames"] = samples(uv["frameOverTime"])
+        if uv["frameOverTime"]["minMaxState"] == 3:
+            values["atlas_frames_min"] = samples(uv["frameOverTime"], minimum=True)
     if atlas_shader:
         custom = data["CustomDataModule"]
-        if custom["enabled"]:
+        if custom["enabled"] and custom["mode0"] == 1:
             intensity = custom["vector0_0"]
             constant = intensity["minMaxState"] == 0 or (
                 intensity["minMaxState"] == 1 and intensity["scalar"] == 0.0)
-            assert custom["mode0"] == 1 and constant
-            profile["intensity_offset"] = intensity["scalar"]
+            if constant:
+                profile["intensity_offset"] = intensity["scalar"]
+            elif intensity["minMaxState"] == 1:
+                values["intensity_curve"] = samples(intensity)
     if custom_dissolve:
-        assert renderer["m_UseCustomVertexStreams"] and renderer["m_VertexStreams"] == [0, 1, 3, 4, 34, 38]
+        assert renderer["m_UseCustomVertexStreams"]
         custom = data["CustomDataModule"]
-        assert custom["enabled"] and custom["mode1"] == 1 and custom["vector1_2"]["minMaxState"] in (0, 3)
-        values.update(dissolve_value=samples(custom["vector1_0"]), dissolve_scroll_x=samples(custom["vector1_1"]))
-        profile["dissolve_shift_y"] = vector("Vector2", *sorted(particle_range(custom["vector1_2"])))
+        assert custom["enabled"]
+        if renderer["m_VertexStreams"] == [0, 1, 3, 4, 31]:
+            # D3D11 aliases missing TEXCOORD1 to TEXCOORD0 for the white core mesh.
+            assert custom["mode0"] == 1 and custom["vector0_0"]["minMaxState"] == 0
+            values.update(dissolve_value=[custom["vector0_0"]["scalar"]], dissolve_scroll_x=[0.0])
+        else:
+            assert renderer["m_VertexStreams"] == [0, 1, 3, 4, 34, 38]
+            assert custom["mode1"] == 1 and custom["vector1_2"]["minMaxState"] in (0, 1, 3)
+            values.update(dissolve_value=samples(custom["vector1_0"]), dissolve_scroll_x=samples(custom["vector1_1"]))
+            if custom["vector1_2"]["minMaxState"] == 1:
+                values["dissolve_scroll_y"] = samples(custom["vector1_2"])
+            else:
+                profile["dissolve_shift_y"] = vector("Vector2", *sorted(particle_range(custom["vector1_2"])))
     if flow_wave:
         assert renderer["m_UseCustomVertexStreams"] and renderer["m_VertexStreams"] == [0, 1, 3, 4, 34, 38, 19]
         stream = data["CustomDataModule"]
@@ -715,6 +792,16 @@ def particle_profile(data, renderer, mesh, material, atlas_shader, custom_dissol
     if skill and rotation["enabled"] and rotation["separateAxes"]:
         for axis, field, sign in (("x", "x", -1), ("y", "y", -1), ("z", "curve", 1)):
             values[f"spin_{axis}_distance"] = [v * sign for v in integrated(rotation[field], 0.0)]
+    if linear_curves is not None:
+        multiplier = samples(velocity["speedModifier"])
+        for axis, sign in zip("xyz", (1, 1, -1)):
+            speed = samples(linear_curves[axis])
+            seconds = [sign * speed[min(i, len(speed) - 1)] * multiplier[min(i, len(multiplier) - 1)]
+                       for i in range(STEPS + 1)]
+            displacement = [0.0]
+            for left, right in zip(seconds, seconds[1:]):
+                displacement.append(displacement[-1] + (left + right) / (2 * STEPS))
+            values[f"velocity_{axis}_distance"] = displacement
     if ribbon_only:
         assert trail["mode"] == 0 and trail["ratio"] == 1 and trail["textureMode"] == 0
         assert not (trail["sizeAffectsWidth"] or trail["sizeAffectsLifetime"] or trail["inheritParticleColor"])
@@ -739,16 +826,26 @@ def particle_profile(data, renderer, mesh, material, atlas_shader, custom_dissol
 
 
 def export_prefab(src, owner, reader, layouts, game, name, particles=None, hold_on_emit=False, emitter_root=None,
-                  motion_trails=(), finish_particles=False, presentation_offset=0.0):
-    prefab = read_fields(reader, layouts)
+                  motion_trails=(), finish_particles=False, presentation_offset=0.0, projectile=False,
+                  presentation_scales=None, flat_emitters=None, layer_errors=None, output_group=None):
+    prefab = ({"m_GameObject": {"m_PathID": reader.path_id}, "_delay": 0.0, "_duration": 5.0,
+               "_disableOnRelease": True} if projectile else read_fields(reader, layouts))
     effect = owner.objects[prefab["m_GameObject"]["m_PathID"]].read()
     external, materials = {}, {}
     subresources = ['[sub_resource type="QuadMesh" id="Quad"]', 'size = Vector2(1, 1)', ""]
     nodes = []
+    used_node_names = set()
+    presentation_scales = presentation_scales or {}
 
     def resource(kind, path):
         key = external.setdefault((kind, path), str(len(external) + 1))
         return f'ExtResource("{key}")'
+
+    def emitter_name(name, path_id):
+        if name in used_node_names:
+            name = f"{name}_{path_id}"
+        used_node_names.add(name)
+        return name
 
     nodes.extend([f'[node name="{effect.m_Name}" type="Node3D"]',
                   'script = ' + resource("Script", "battle/revival_effect.gd"),
@@ -758,7 +855,7 @@ def export_prefab(src, owner, reader, layouts, game, name, particles=None, hold_
     if finish_particles:
         assert not prefab["_disableOnRelease"] and not motion_trails
         nodes.append("finish_particles = true")
-    if particles is not None:
+    if particles is not None and not projectile and flat_emitters is None:
         root_transform = next(c.component.deref().read_typetree() for c in effect.m_Component
                               if c.component.deref().type.name == "Transform")
         if emitter_root is not None:
@@ -773,11 +870,13 @@ def export_prefab(src, owner, reader, layouts, game, name, particles=None, hold_
     nodes.extend([f'metadata/unity_prefab = {reader.path_id}', ""])
 
     def emit(go, offset, is_root=False):
+        if projectile and not go.m_IsActive:
+            return
         components = {pointer.type.name: pointer for component in go.m_Component
                       if component.component and (pointer := component.component.deref())}
         transform = components["Transform"].read_typetree()
         scale = transform["m_LocalScale"]
-        if transform["m_Children"] or particles is None:
+        if flat_emitters is None and (transform["m_Children"] or particles is None):
             assert scale == {"x": 1.0, "y": 1.0, "z": 1.0}
         position = transform["m_LocalPosition"]
         if particles is not None and not is_root:
@@ -807,73 +906,96 @@ def export_prefab(src, owner, reader, layouts, game, name, particles=None, hold_
             mesh = f"MotionTrail{trail.path_id}"
             subresources.extend([f'[sub_resource type="ImmediateMesh" id="{mesh}"]',
                                  'resource_local_to_scene = true', ""])
-            nodes.extend([f'[node name="{go.m_Name}" type="Node3D" parent="."]',
+            trail_name = emitter_name(go.m_Name, trail.path_id)
+            nodes.extend([f'[node name="{trail_name}" type="Node3D" parent="."]',
                           "position = " + xyz(position),
                           f'metadata/unity_trail_renderer = {trail.path_id}',
                           'metadata/motion_trail = ' + profile_literal(profile), "",
-                          f'[node name="Ribbon" type="MeshInstance3D" parent="{go.m_Name}"]',
+                          f'[node name="Ribbon" type="MeshInstance3D" parent="{trail_name}"]',
                           "top_level = true", "cast_shadow = 0",
                           f'mesh = SubResource("{mesh}")', "material_override = " + material, ""])
-        if "ParticleSystem" in components:
-            particle = components["ParticleSystem"]
-            ps = particle.read_typetree()
-            renderer = components["ParticleSystemRenderer"].read_typetree()
-            emission = ps["EmissionModule"]
-            emits = emission["m_BurstCount"] or (particles is not None and
-                    (emission["rateOverTime"]["scalar"] > 0 or emission["rateOverDistance"]["scalar"] > 0))
-            if (renderer["m_Enabled"] and emits
-                    and (particles is None or particle.path_id in particles)):
-                mode = renderer["m_RenderMode"]
-                assert mode in (0, 1, 4, 5)
-                ribbon_only = particles is not None and mode == 0 and ps["TrailModule"]["enabled"]
-                trail_only = mode == 5 or ribbon_only
-                mat_owner, mat = src.resolve(owner, renderer["m_Materials"][-1 if trail_only else 0])
-                if mat.path_id == 328 and mat_owner.name == "sharedassets1.assets":
-                    assert not renderer["m_ApplyActiveColorSpace"]
-                key = (mat_owner.name, mat.path_id)
-                if key not in materials:
-                    materials[key] = add_material(src, mat_owner, mat, trail_only, game, resource, subresources,
-                                                  skill=particles is not None)
-                material, atlas_shader, custom_dissolve = materials[key]
-                mesh = resource("ArrayMesh", mesh_asset(src, owner, renderer["m_Mesh"], game)) if mode == 4 else 'SubResource("Quad")'
-                q = transform["m_LocalRotation"]
-                flare_scale = None
-                if mat.path_id == 331 and mat_owner.name == "sharedassets1.assets":
-                    flare_scale = uniform_hierarchy_scale(src, owner, transform)
-                baked_view_billboard = None
-                if particles is not None and particle.path_id in (52380, 54056):
-                    roll_degrees = 204.8808 if particle.path_id == 52380 else 356.9663
-                    baked_view_billboard = (math.radians(roll_degrees), uniform_hierarchy_scale(src, owner, transform))
-                baked_smoke_scale = None
-                if particles is not None and particle.path_id == 54276:
-                    baked_smoke_scale = uniform_hierarchy_scale(src, owner, transform)
-                # Match the frame the animated weapon first reaches the ground in Godot.
-                projectile_contact_time = 2.47 if particle.path_id in (54552, 55301) else None
-                # The dark plume grows from the authored hit event while the flash is delayed.
-                birth_offset = presentation_offset if baked_smoke_scale is None else 0.0
-                profile = particle_profile(ps, renderer, mesh, material, atlas_shader, custom_dissolve,
-                                           skill=particles is not None, scale=scale,
-                                           effect_duration=prefab["_duration"], ribbon_only=ribbon_only,
-                                           scale_with_action=emitter_root is not None and
-                                           particle.path_id in scaled_particles,
-                                           emit_on_enable=ps["playOnAwake"] and bool(prefab.get("_disableOnRelease")),
-                                           flare_scale=flare_scale,
-                                           flow_wave=mat.path_id == 361 and mat_owner.name == "sharedassets1.assets",
-                                           effect_delay=prefab["_delay"], projectile_contact_time=projectile_contact_time,
-                                           baked_view_billboard=baked_view_billboard,
-                                           presentation_offset=birth_offset, baked_smoke_scale=baked_smoke_scale,
-                                           baked_flight_glow=owner.name == "sharedassets1.assets" and particle.path_id == 53628,
-                                           unity_layer=go.m_Layer,
-                                           hit_dark_blend=mat_owner.name == "sharedassets1.assets" and mat.path_id in (337, 354))
-                node_scale = 1.0 if baked_smoke_scale is None else baked_smoke_scale
-                nodes.extend([f'[node name="{go.m_Name}" type="Node3D" parent="."]',
-                              "position = " + xyz(position, (node_scale, node_scale, -node_scale)),
-                              "quaternion = " + vector("Quaternion", -q["x"], -q["y"], q["z"], q["w"]),
-                              f'metadata/unity_particle = {components["ParticleSystem"].path_id}',
-                              'metadata/particle = ' + profile, ""])
+        particle = components.get("ParticleSystem")
+        if particle and (particles is None or particle.path_id in particles):
+            if layer_errors is None:
+                emit_particle(particle, components, go, transform, scale, position)
+            else:
+                # A failed layer can allocate resources before its profile rejects a Unity feature.
+                subresource_length, node_length = len(subresources), len(nodes)
+                ext_before, materials_before = external.copy(), materials.copy()
+                try:
+                    emit_particle(particle, components, go, transform, scale, position)
+                except (AssertionError, KeyError, ValueError, NotImplementedError) as error:
+                    line = traceback.extract_tb(error.__traceback__)[-1]
+                    layer_errors[particle.path_id] = (f"{type(error).__name__}: {error}" if str(error) else
+                                                       f"{line.name}: {line.line or 'unsupported source fields'}")
+                    del subresources[subresource_length:]
+                    del nodes[node_length:]
+                    external.clear()
+                    external.update(ext_before)
+                    materials.clear()
+                    materials.update(materials_before)
         for child in transform["m_Children"]:
             emit(src.resolve(owner, child)[1].read().m_GameObject.read(), position)
 
+    def emit_particle(particle, components, go, transform, scale, position):
+        ps = particle.read_typetree()
+        renderer = components["ParticleSystemRenderer"].read_typetree()
+        emission = ps["EmissionModule"]
+        emits = emission["m_BurstCount"] or (particles is not None and
+                (emission["rateOverTime"]["scalar"] > 0 or emission["rateOverDistance"]["scalar"] > 0))
+        if renderer["m_Enabled"] and emits:
+            mode = renderer["m_RenderMode"]
+            assert mode in ((0, 1, 2, 3, 4, 5) if flat_emitters is not None else (0, 1, 4, 5))
+            ribbon_only = particles is not None and mode == 0 and ps["TrailModule"]["enabled"]
+            trail_only = mode == 5 or ribbon_only
+            mat_owner, mat = src.resolve(owner, renderer["m_Materials"][-1 if trail_only else 0])
+            if mat.path_id == 328 and mat_owner.name == "sharedassets1.assets":
+                assert not renderer["m_ApplyActiveColorSpace"]
+            key = (mat_owner.name, mat.path_id)
+            if key not in materials:
+                materials[key] = add_material(src, mat_owner, mat, trail_only, game, resource, subresources,
+                                              skill=particles is not None)
+            material, atlas_shader, custom_dissolve = materials[key]
+            mesh = resource("ArrayMesh", mesh_asset(src, owner, renderer["m_Mesh"], game)) if mode == 4 else 'SubResource("Quad")'
+            q = transform["m_LocalRotation"]
+            if flat_emitters is not None:
+                position, q, scale = flat_emitters[particle.path_id]
+            flare_scale = None
+            if mat.path_id == 331 and mat_owner.name == "sharedassets1.assets":
+                flare_scale = uniform_hierarchy_scale(src, owner, transform)
+            baked_view_billboard = None
+            if particles is not None and particle.path_id in (52380, 54056):
+                roll_degrees = 204.8808 if particle.path_id == 52380 else 356.9663
+                baked_view_billboard = (math.radians(roll_degrees), uniform_hierarchy_scale(src, owner, transform))
+            baked_smoke_scale = None
+            if particles is not None and particle.path_id == 54276:
+                baked_smoke_scale = uniform_hierarchy_scale(src, owner, transform)
+            # Match the frame the animated weapon first reaches the ground in Godot.
+            projectile_contact_time = 2.47 if particle.path_id in (54552, 55301) else None
+            # The dark plume grows from the authored hit event while the flash is delayed.
+            birth_offset = presentation_offset if baked_smoke_scale is None else 0.0
+            profile = particle_profile(ps, renderer, mesh, material, atlas_shader, custom_dissolve,
+                                       skill=particles is not None, scale=scale,
+                                       effect_duration=prefab["_duration"], ribbon_only=ribbon_only,
+                                       scale_with_action=(emitter_root is not None or flat_emitters is not None) and
+                                       particle.path_id in scaled_particles,
+                                       emit_on_enable=ps["playOnAwake"] and bool(prefab.get("_disableOnRelease")),
+                                       flare_scale=flare_scale,
+                                       flow_wave=mat.path_id == 361 and mat_owner.name == "sharedassets1.assets",
+                                       effect_delay=prefab["_delay"], projectile_contact_time=projectile_contact_time,
+                                       baked_view_billboard=baked_view_billboard,
+                                       presentation_offset=birth_offset, baked_smoke_scale=baked_smoke_scale,
+                                       baked_flight_glow=owner.name == "sharedassets1.assets" and particle.path_id == 53628,
+                                       unity_layer=go.m_Layer,
+                                       hit_dark_blend=mat_owner.name == "sharedassets1.assets" and mat.path_id in (337, 354),
+                                       projectile=projectile,
+                                       presentation_scale=presentation_scales.get(particle.path_id, 1.0))
+            node_scale = 1.0 if baked_smoke_scale is None else baked_smoke_scale
+            nodes.extend([f'[node name="{emitter_name(go.m_Name, particle.path_id)}" type="Node3D" parent="."]',
+                          "position = " + xyz(position, (node_scale, node_scale, -node_scale)),
+                          "quaternion = " + vector("Quaternion", -q["x"], -q["y"], q["z"], q["w"]),
+                          f'metadata/unity_particle = {components["ParticleSystem"].path_id}',
+                          'metadata/particle = ' + profile, ""])
     scaled_particles = {p["m_PathID"] for p in prefab.get("_particleSystemsToApplySpeedTo", [])}
     emission_root = effect if emitter_root is None else owner.objects[emitter_root].read().m_GameObject.read()
     emit(emission_root, dict.fromkeys("xyz", 0.0), is_root=True)
@@ -881,9 +1003,12 @@ def export_prefab(src, owner, reader, layouts, game, name, particles=None, hold_
     header += [f'[ext_resource type="{kind}" path="res://{path}" id="{key}"]'
                for (kind, path), key in external.items()]
     scene_name = f"revival_{name}" if particles is None else name
-    destination = game / "battle" / f"{scene_name}.tscn"
+    folder = game / "battle" if output_group is None else game / "battle" / output_group
+    folder.mkdir(parents=True, exist_ok=True)
+    destination = folder / f"{scene_name}.tscn"
     destination.write_text("\n".join(header + [""] + subresources + nodes), encoding="utf-8")
     print(f"{destination.name}: {owner.name}:{reader.path_id} {effect.m_Name}")
+    return destination
 
 
 def export_flash(src, owner, layouts, game):
@@ -915,11 +1040,15 @@ def export_flash(src, owner, layouts, game):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("data", type=Path)
+    parser.add_argument("--output", type=Path, help="Godot project or staging directory")
     effects = parser.add_mutually_exclusive_group()
     effects.add_argument("--yuna-skill", action="store_true")
     effects.add_argument("--yuna-basic", action="store_true")
+    effects.add_argument("--funke-skill", action="store_true")
     args = parser.parse_args()
-    game = Path(__file__).resolve().parents[1] / "game"
+    game = args.output or Path(__file__).resolve().parents[1] / "game"
+    for folder in ("battle", "materials", "meshes", "textures"):
+        (game / folder).mkdir(parents=True, exist_ok=True)
     with ExitStack() as stack:
         src = Source(args.data, stack)
         src.file("globalgamemanagers.assets")
@@ -929,6 +1058,20 @@ def main():
         layouts.load_local_game(str(args.data.parent))
         src.env.typetree_generator = layouts
         owner = src.file("sharedassets1.assets")
+        if args.funke_skill:
+            export_prefab(src, owner, owner.objects[63105], layouts, game, "funke_skill_charge",
+                          {51926, 54363, 52226, 54668, 54871, 50862, 53288})
+            export_prefab(src, owner, owner.objects[63387], layouts, game, "funke_skill_release",
+                          {51661, 52296, 53122, 54702, 52384, 51470, 54554, 54694, 54255, 51571})
+            export_prefab(src, owner, owner.objects[7148], layouts, game, "funke_skill_projectile",
+                          {51124, 52309, 52356, 52718, 51514, 53056, 52909, 54510}, projectile=True)
+            export_prefab(src, owner, owner.objects[63109], layouts, game, "funke_skill_hit",
+                          {54575, 51328, 55474, 54194, 51527, 54318, 51246, 52590, 53726, 52818, 54327, 55316,
+                           52655, 53295, 53411, 55302},
+                          # The approximate shaders cover more pixels than the native passes.
+                          presentation_scales={51246: 0.75, 52655: 0.65, 54194: 0.6, 51527: 0.65,
+                                               53295: 0.7, 53411: 0.65, 55302: 0.7, 55474: 0.75})
+            return
         if args.yuna_basic:
             export_prefab(src, owner, owner.objects[61495], layouts, game, "yuna_basic_slash",
                           {52764, 52927, 55087}, emitter_root=29141)

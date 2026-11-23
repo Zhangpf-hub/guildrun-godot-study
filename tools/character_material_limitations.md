@@ -25,5 +25,5 @@
 待补分支
 
 - 原版对合成后高于 1 的 HDR 分量设有保底，Godot 的材质通道仍使用线性 Screen 系数近似这些分量。
-- 角色弓的 `sharedassets1_619`（`GAP_SG/FresnelShader`）和 `sharedassets1_620`（`Shader Graphs/VFXTrail_SG`）使用其他独立着色程序，沿用原有 Godot 材质。
+- Javryn 的技能弓使用 `sharedassets1_619` 的 Fresnel 加法发光和 `sharedassets1_620` 的透明拖尾，按原版透明通道的 DXBC 移植。弓在技能 63192 的 0.734 秒起播点播放 `BowCurve`。两个渲染后端已验证待机、起播和中断，原版同阶段的雾与 HDR 掩模还需要画面对照。
 - Unity 的颜色空间转换、纹理采样器状态、URP 主光源与环境 SH 的总体合成、额外光源和投影阴影仍需逐项核对。当前没有对这些效果做像素级同一性声明。

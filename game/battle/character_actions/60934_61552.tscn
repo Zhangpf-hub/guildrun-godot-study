@@ -1,0 +1,85 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://battle/revival_effect.gd" id="1"]
+[ext_resource type="Shader" path="res://materials/revival_particle.gdshader" id="2"]
+[ext_resource type="Texture2D" path="res://textures/sharedassets1_1324.png" id="3"]
+
+[sub_resource type="QuadMesh" id="Quad"]
+size = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="Material915"]
+shader = ExtResource("2")
+shader_parameter/intensity = 1.5
+shader_parameter/additive = true
+shader_parameter/fade_distance = 0.20000000298023224
+shader_parameter/use_rgb = false
+shader_parameter/image_texture = ExtResource("3")
+shader_parameter/image_uv = Vector4(1, 1, 0, 0)
+
+[node name="VFX_Sal_SkillAttack_Aura_M" type="Node3D"]
+script = ExtResource("1")
+lead_in = 0.0
+duration = 999.0
+finish_particles = true
+metadata/unity_prefab = 61552
+
+[node name="GroundGlow" type="Node3D" parent="."]
+position = Vector3(0, 0, -0)
+quaternion = Quaternion(-0, -0, 0, 1)
+metadata/unity_particle = 51376
+metadata/particle = {
+"mesh": SubResource("Quad"),
+"material": SubResource("Material915"),
+"count": Vector2i(1, 1),
+"delay": 0,
+"repeat_count": 1,
+"repeat_interval": 0.00999999978,
+"seed": 2,
+"mode": 2,
+"alignment": 0,
+"sorting_offset": -1,
+"pivot": Vector3(0, 0, -0),
+"length_scale": 2,
+"velocity_scale": 0,
+"size_3d": false,
+"shape": -1,
+"shape_position": Vector3(0, 0, 0),
+"shape_rotation": Vector3(1.57079633, -0, 0),
+"shape_scale": Vector3(1, 1, 1),
+"radius": 0.200000003,
+"radius_thickness": 1,
+"shape_length": 5,
+"cone_angle": 0.436332313,
+"orbit": Vector2(0, 0),
+"scale_with_action": true,
+"vfx_redraw": true,
+"world_space": true,
+"lifetime": Vector2(3, 3.29999995),
+"speed": Vector2(0, 0),
+"width": Vector2(8, 8),
+"height": Vector2(7, 7),
+"depth": Vector2(1, 1),
+"pitch": Vector2(0, 0),
+"yaw": Vector2(0, 0),
+"roll": Vector2(0, 0),
+"tint_min": Color(0.141731948, 0.298182219, 0.46226418, 0.219607845),
+"tint_max": Color(0.141731948, 0.298182219, 0.46226418, 0.219607845),
+"bursts": [{
+"count": Vector2i(1, 1),
+"delay": 0,
+"repeat_count": 1,
+"repeat_interval": 0.00999999978
+}, {
+"count": Vector2i(1, 1),
+"delay": 0.333333333,
+"repeat_count": 2996,
+"repeat_interval": 0.333333333
+}],
+"size_x_min": PackedFloat32Array(0, 0.10776639, 0.208299769, 0.301791981, 0.388434866, 0.468420269, 0.541940031, 0.609185995, 0.670350004, 0.725623899, 0.775199523, 0.819268719, 0.858023329, 0.891655196, 0.920356162, 0.944318069, 0.96373276, 0.978792078, 0.989687865, 0.996611963, 0.999756215, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"size_x": PackedFloat32Array(0, 0.10776639, 0.208299769, 0.301791981, 0.388434866, 0.468420269, 0.541940031, 0.609185995, 0.670350004, 0.725623899, 0.775199523, 0.819268719, 0.858023329, 0.891655196, 0.920356162, 0.944318069, 0.96373276, 0.978792078, 0.989687865, 0.996611963, 0.999756215, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"size_y": PackedFloat32Array(0, 0.10776639, 0.208299769, 0.301791981, 0.388434866, 0.468420269, 0.541940031, 0.609185995, 0.670350004, 0.725623899, 0.775199523, 0.819268719, 0.858023329, 0.891655196, 0.920356162, 0.944318069, 0.96373276, 0.978792078, 0.989687865, 0.996611963, 0.999756215, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"size_z": PackedFloat32Array(0, 0.10776639, 0.208299769, 0.301791981, 0.388434866, 0.468420269, 0.541940031, 0.609185995, 0.670350004, 0.725623899, 0.775199523, 0.819268719, 0.858023329, 0.891655196, 0.920356162, 0.944318069, 0.96373276, 0.978792078, 0.989687865, 0.996611963, 0.999756215, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"opacity": PackedFloat32Array(0, 0.242191196, 0.484382391, 0.726573587, 0.968764782, 0.985451549, 0.968748981, 0.952046412, 0.935343843, 0.918641275, 0.901938706, 0.885236137, 0.868533569, 0.851831, 0.835128432, 0.818425863, 0.801723294, 0.785020726, 0.768318157, 0.751615588, 0.73491302, 0.718210451, 0.701507882, 0.684805314, 0.668102745, 0.651400177, 0.634697608, 0.617995039, 0.601292471, 0.584589902, 0.567887333, 0.551184765, 0.534482196, 0.517779628, 0.501077059, 0.48437449, 0.467671922, 0.450969353, 0.434266784, 0.417564216, 0.400861647, 0.384159078, 0.36745651, 0.350753941, 0.334051373, 0.317348804, 0.300646235, 0.283943667, 0.267241098, 0.250538529, 0.233835961, 0.217133392, 0.200430824, 0.183728255, 0.167025686, 0.150323118, 0.133620549, 0.11691798, 0.100215412, 0.0835128432, 0.0668102745, 0.0501077059, 0.0334051373, 0.0167025686, 0),
+"speed_distance": PackedFloat32Array(0, 1),
+"radial_distance": PackedFloat32Array(0, 0)
+}

@@ -1,6 +1,19 @@
-[gd_resource type="StandardMaterial3D" format=3]
+[gd_resource type="ShaderMaterial" format=3]
+
+[ext_resource type="Shader" path="res://materials/javryn_bow_fresnel.gdshader" id="1"]
+
+[sub_resource type="ShaderMaterial" id="Layer8"]
+render_priority = 10
+shader = ExtResource("1")
+shader_parameter/tint = Color(0.576427639, 1.18089271, 1.6740092, 1)
+shader_parameter/fresnel_power = 0.409999996
+metadata/unity_renderer_feature = "globalgamemanagers.assets:6689"
 
 [resource]
 resource_name = "VFX_Mat_Javryn_Bow_00"
-albedo_color = Color(0.576427639, 1.18089271, 1.6740092, 1)
+next_pass = SubResource("Layer8")
+shader = ExtResource("1")
+shader_parameter/tint = Color(0.576427639, 1.18089271, 1.6740092, 1)
+shader_parameter/fresnel_power = 0.409999996
 metadata/unity_shader = "GAP_SG/FresnelShader"
+metadata/unity_material_id = 619

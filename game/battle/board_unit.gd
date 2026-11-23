@@ -6,6 +6,9 @@ extends Node3D
 signal basic_attack_action(target: GuildrunBoardUnit)
 signal fury_triggered
 signal shield_gained(amount: int)
+signal combat_number(amount: int, kind: CombatNumber, critical: bool)
+
+enum CombatNumber { DAMAGE, HEAL, SHIELD, BURN, FROST, POISON }
 signal skill_attack_started
 
 const STAT_NAMES := {1: "MaxHealth", 2: "MaxMana", 3: "MoveSpeed", 4: "Defense", 5: "BaseAttackDamage",
@@ -82,6 +85,8 @@ var defeated := false
 var trial_damage_immune := false
 var _motion_players: Array[AnimationPlayer] = []
 var _state_clips: Array[Dictionary] = []
+var _motion_action_speed := 1.0
+var _motion_self_returns: Dictionary[StringName, bool] = {}
 var _death_blend_times: Dictionary[MeshInstance3D, Vector2] = {}
 var _death_blend_tween: Tween
 var _revive_tween: Tween
@@ -102,9 +107,13 @@ var _yuna_release_effect: Node3D
 var _yuna_flight_effect: Node3D
 var _yuna_landing_effect: Node3D
 var effect_scene_clock: Callable
+var effect_variable: Callable
+var _action_vfx: Node
 var _yuna_effects: Array[Node3D] = []
 var _yuna_basic_effects: Array[Node3D] = []
 var _yuna_basic_mount: Node3D
+var _funke_hand_mount: BoneAttachment3D
+var _funke_cast_effects: Array[Node3D] = []
 var _basic_hit_q16: int
 var _basic_duration_q16: int
 var _action_pending := false
@@ -234,6 +243,7 @@ func gain_shield(amount: int, duration: int, source: GuildrunBoardUnit = null) -
 	if battle_statistics != null:
 		battle_statistics.support(source.get_instance_id() if source else get_instance_id(), 0, amount)
 	shield_gained.emit(amount)
+	combat_number.emit(amount, CombatNumber.SHIELD, false)
 	if passive_id() == 102601:
 		# KaiHeroicAction grants a separate ten-second shield then grants the attack bonus.
 		var factor := 39322 + ((int(stat("Attack")) / 4 / 100) << 16)
@@ -243,6 +253,7 @@ func gain_shield(amount: int, duration: int, source: GuildrunBoardUnit = null) -
 			if battle_statistics != null:
 				battle_statistics.support(get_instance_id(), 0, bonus)
 			shield_gained.emit(bonus)
+			combat_number.emit(bonus, CombatNumber.SHIELD, false)
 		combat_stats.Attack = int(combat_stats.get("Attack", 0)) + 9 + 6 * (rank - 1)
 
 
@@ -280,8 +291,12 @@ func begin_active_ability(target: GuildrunBoardUnit = null, elapsed_q16: int = 0
 		"wildfire":
 			var attack: Dictionary = ability_data._attacks._attacks[0]
 			cast_release_q16 = int(attack["<Delay>k__BackingField"].RawValue)
-		"MeleeAbilityAction", "SnipeAbilityAction", "SkeletonSmashAction", "ReynaAction", "DragomirAction", "RatnaAbilityAction", "LoganAbilityAction", "HydraAction", "ForestGolemAction", "HoyoungAbilityAction", "NiklasAction", "JavrynAction":
+		"MeleeAbilityAction", "SnipeAbilityAction", "SkeletonSmashAction", "ReynaAction", "DragomirAction", "RatnaAbilityAction", "LoganAbilityAction", "HydraAction", "ForestGolemAction", "HoyoungAbilityAction", "NiklasAction", "JavrynAction", "IriniSpearThrowAction", "NyxaAction", "MingAbilityAction":
 			cast_release_q16 = int(ability_data._attacks._attacks[0]["<Delay>k__BackingField"].RawValue)
+		"TillyAction":
+			cast_release_q16 = int(ability_data.stat_effect.delay)
+		"specialization_stat_effect":
+			cast_release_q16 = int(ability_data.delay)
 		"slime_strike":
 			slime_cleansed = false
 			cast_release_q16 = int(ability_data.cleanse._delay.RawValue)
@@ -305,6 +320,8 @@ func begin_active_ability(target: GuildrunBoardUnit = null, elapsed_q16: int = 0
 	play_state("SkillAttack")
 	if ability_kind == "shadow_strike":
 		_start_yuna_skill_effect()
+	elif ability_kind == "wildfire":
+		_start_funke_cast_effects()
 	skill_attack_started.emit()
 
 
@@ -318,6 +335,8 @@ func gain_stealth(duration_q16: int) -> void:
 
 
 func resurrect(restored_health: int) -> void:
+	if is_instance_valid(_action_vfx):
+		_action_vfx.stop(&"Die")
 	defeated = false
 	health = restored_health
 	set_meta("health", health)
@@ -342,6 +361,13 @@ func set_visual_offset(offset: Vector3) -> void:
 func add_rig(binding: Dictionary) -> void:
 	var rig := (load(binding.model) as PackedScene).instantiate() as Node3D
 	rig.rotation.y = PI
+	if binding.has("board_origin_node"):
+		var model_root := rig.get_node(binding.board_origin_node) as Node3D
+		# Spawning replaces the authored prefab translation with the board cell.
+		rig.position -= rig.basis * model_root.position
+	if bool(binding.get("action_only", false)):
+		rig.hide()
+		rig.set_meta("action_only", true)
 	add_child(rig)
 	if ability_kind == "shadow_strike":
 		for skeleton: Skeleton3D in rig.find_children("*", "Skeleton3D", true, false):
@@ -352,10 +378,12 @@ func add_rig(binding: Dictionary) -> void:
 				_yuna_basic_mount.rotation.y = -rig.rotation.y
 				skeleton.get_parent().add_child(_yuna_basic_mount)
 				break
-	# FBX import sanitizes node names such as Body.002 to Body_002.
+	# FBX import sanitizes node names and adds suffixes to duplicate names.
 	var imported_names: Dictionary = {}
 	for source_name: String in binding.meshes:
-		imported_names[source_name.validate_node_name()] = binding.meshes[source_name]
+		var appearance: Dictionary = binding.meshes[source_name]
+		var imported_name: String = appearance.get("imported_name", source_name.validate_node_name())
+		imported_names[imported_name] = appearance
 	for mesh: MeshInstance3D in rig.find_children("*", "MeshInstance3D", true, false):
 		var mesh_name := str(mesh.name)
 		var appearance: Dictionary = binding.meshes.get(mesh_name, imported_names.get(mesh_name, {}))
@@ -376,13 +404,49 @@ func add_rig(binding: Dictionary) -> void:
 	for player: AnimationPlayer in rig.find_children("*", "AnimationPlayer", true, false):
 		_motion_players.append(player)
 		_state_clips.append(binding.states)
+		var entry_blends: Dictionary = binding.get("entry_blends", {})
+		for state: String in entry_blends:
+			var destination: StringName = binding.states[state]
+			if player.has_animation(destination):
+				for source: String in player.get_animation_list():
+					player.set_blend_time(source, destination, float(entry_blends[state]))
+		var idle: StringName = binding.states.get("Idle", &"")
+		var exit_blends: Dictionary = binding.get("exit_blends", {})
+		if not exit_blends.is_empty() and player.has_animation(idle):
+			var exits: Dictionary[StringName, Vector2] = {}
+			for state: String in exit_blends:
+				var action: StringName = binding.states[state]
+				if player.has_animation(action):
+					var timing: Array = exit_blends[state]
+					exits[action] = Vector2(timing[0], timing[1])
+					_motion_self_returns[state] = true
+			if not exits.is_empty():
+				player.mixer_applied.connect(_on_motion_sampled.bind(player, idle, exits))
 		for clip: String in binding.loop:
-			if binding.loop[clip] and player.has_animation(clip):
-				player.get_animation(clip).loop_mode = Animation.LOOP_LINEAR
+			if player.has_animation(clip):
+				player.get_animation(clip).loop_mode = Animation.LOOP_LINEAR if binding.loop[clip] else Animation.LOOP_NONE
 
 
 func play_idle() -> void:
 	play_state("Idle")
+
+
+func finish_action_motion(state: StringName) -> void:
+	if not _motion_self_returns.has(state):
+		play_idle()
+
+
+func _on_motion_sampled(player: AnimationPlayer, idle: StringName, exits: Dictionary[StringName, Vector2]) -> void:
+	var action := player.assigned_animation
+	if player.speed_scale <= 0.0 or not exits.has(action):
+		return
+	var timing := exits[action]
+	var overrun := player.current_animation_position - timing.x
+	if overrun >= 0.0:
+		# Reuse the portion of the sample after the exit time for the new state.
+		player.seek(timing.x)
+		player.play(idle, timing.y)
+		player.advance(overrun / player.speed_scale)
 
 
 func _begin_death_appearance() -> void:
@@ -421,12 +485,12 @@ func _start_yuna_skill_effect() -> void:
 
 
 func _add_yuna_effect(path: String, anchor: Node3D) -> Node3D:
-	var effect := _new_yuna_effect(path, anchor)
+	var effect := _new_particle_effect(path, anchor)
 	_yuna_effects.append(effect)
 	return effect
 
 
-func _new_yuna_effect(path: String, anchor: Node3D, action_speed: float = 1.0) -> Node3D:
+func _new_particle_effect(path: String, anchor: Node3D, action_speed: float = 1.0) -> Node3D:
 	var scene := load(path) as PackedScene
 	var effect := scene.instantiate() as Node3D
 	effect.speed_scale = _death_appearance_speed
@@ -436,15 +500,21 @@ func _new_yuna_effect(path: String, anchor: Node3D, action_speed: float = 1.0) -
 	return effect
 
 
+func _create_skill_hand_mount() -> BoneAttachment3D:
+	for skeleton: Skeleton3D in find_children("*", "Skeleton3D", true, false):
+		var hand := skeleton.find_bone(&"hand_R")
+		if hand >= 0:
+			var mount := BoneAttachment3D.new()
+			mount.name = &"SkillHandMount"
+			mount.bone_idx = hand
+			skeleton.add_child(mount)
+			return mount
+	return null
+
+
 func _start_yuna_charge_effect() -> void:
 	if not is_instance_valid(_yuna_charge_mount):
-		for skeleton: Skeleton3D in find_children("*", "Skeleton3D", true, false):
-			var hand := skeleton.find_bone(&"hand_R")
-			if hand >= 0:
-				_yuna_charge_mount = BoneAttachment3D.new()
-				_yuna_charge_mount.bone_idx = hand
-				skeleton.add_child(_yuna_charge_mount)
-				break
+		_yuna_charge_mount = _create_skill_hand_mount()
 	if is_instance_valid(_yuna_charge_mount):
 		_yuna_charge_effect = _add_yuna_effect("res://battle/yuna_skill_charge.tscn", _yuna_charge_mount)
 
@@ -463,12 +533,33 @@ func _stop_yuna_skill_effect() -> void:
 	_yuna_wind_effect = null
 
 
+func _start_funke_cast_effects() -> void:
+	_stop_funke_cast_effects()
+	if not is_instance_valid(_funke_hand_mount):
+		_funke_hand_mount = _create_skill_hand_mount()
+	if is_instance_valid(_funke_hand_mount):
+		_funke_cast_effects.append(_new_particle_effect("res://battle/funke_skill_charge.tscn", _funke_hand_mount))
+		_funke_cast_effects.append(_new_particle_effect("res://battle/funke_skill_release.tscn", _funke_hand_mount))
+
+
+func _stop_funke_cast_effects() -> void:
+	for effect: Node3D in _funke_cast_effects:
+		if is_instance_valid(effect):
+			effect.hide()
+			effect.queue_free()
+	_funke_cast_effects.clear()
+
+
 func configure_ragdoll(profile: Dictionary, impact: Dictionary) -> void:
 	_ragdoll_profile = profile
 	_ragdoll_impact = impact
 
 
 func _play_death_motion(attacker: GuildrunBoardUnit, damage: int) -> void:
+	if is_instance_valid(_action_vfx):
+		_action_vfx.stop(&"BasicAttack")
+		_action_vfx.stop(&"SkillAttack")
+		_action_vfx.play(&"Die", 1.0, _death_appearance_speed)
 	if not _ragdoll_profile.is_empty():
 		var anchor: String = _ragdoll_profile.bodies[0].name
 		for skeleton: Skeleton3D in find_children("*", "Skeleton3D", true, false):
@@ -514,13 +605,17 @@ func _activate_ragdoll(skeleton: Skeleton3D, impulse: Vector3) -> void:
 
 func set_death_appearance_speed(multiplier: float) -> void:
 	_death_appearance_speed = multiplier
+	if is_instance_valid(_action_vfx):
+		_action_vfx.set_speed(multiplier)
+	for player in _motion_players:
+		player.speed_scale = multiplier * _motion_action_speed
 	if _ragdoll_start_delay != null:
 		_ragdoll_start_delay.set_speed_scale(multiplier)
 	if is_instance_valid(_ragdoll):
 		_ragdoll.set_speed(multiplier)
 	if _ragdoll_animation_stop != null and _ragdoll_animation_stop.is_valid():
 		_ragdoll_animation_stop.set_speed_scale(multiplier)
-	for effects: Array[Node3D] in [_yuna_effects, _yuna_basic_effects]:
+	for effects: Array[Node3D] in [_yuna_effects, _yuna_basic_effects, _funke_cast_effects]:
 		for effect: Variant in effects:
 			if is_instance_valid(effect):
 				effect.speed_scale = multiplier
@@ -582,7 +677,7 @@ func _cancel_revival_flash() -> void:
 
 func take_damage(amount: int, source: GuildrunBoardUnit = null,
 		origin := GuildrunBattleStatistics.Origin.OTHER, mitigated := 0, relic := 0,
-		status_kind := GuildrunBattleStatistics.StatusKind.NONE) -> void:
+		status_kind := GuildrunBattleStatistics.StatusKind.NONE, critical := false) -> void:
 	if trial_damage_immune:
 		return
 	var remaining := maxi(0, amount)
@@ -596,10 +691,21 @@ func take_damage(amount: int, source: GuildrunBoardUnit = null,
 			shields.remove_at(i)
 	var health_after_hit := health - remaining
 	health = maxi(0, health_after_hit)
+	var absorbed := maxi(0, amount) - remaining
+	if absorbed > 0 or remaining > 0:
+		var kind := CombatNumber.SHIELD if absorbed > 0 else CombatNumber.DAMAGE
+		match status_kind:
+			GuildrunBattleStatistics.StatusKind.BURN:
+				kind = CombatNumber.BURN
+			GuildrunBattleStatistics.StatusKind.FROST:
+				kind = CombatNumber.FROST
+			GuildrunBattleStatistics.StatusKind.POISON:
+				kind = CombatNumber.POISON
+		combat_number.emit(-absorbed if absorbed > 0 else -remaining, kind, critical)
 	if battle_statistics != null:
 		# The native DamageLogEntry records the full post-shield hit, including overkill.
 		battle_statistics.damage(source.get_instance_id() if source else 0, get_instance_id(), origin,
-				remaining, maxi(0, amount) - remaining, mitigated, relic)
+				remaining, absorbed, mitigated, relic)
 		if not is_hero and status_kind != GuildrunBattleStatistics.StatusKind.NONE:
 			battle_statistics.record_status_damage(status_kind, remaining)
 	set_meta("health", health)
@@ -623,6 +729,7 @@ func take_damage(amount: int, source: GuildrunBoardUnit = null,
 		stealth_remaining_q16 = 0
 		_action_pending = false
 		_stop_yuna_skill_effect()
+		_stop_funke_cast_effects()
 		for effect: Variant in _yuna_basic_effects:
 			if is_instance_valid(effect):
 				effect.hide()
@@ -644,6 +751,8 @@ func heal(amount: int, source: GuildrunBoardUnit = null) -> void:
 		var restored := mini(max_health - health, amount)
 		health = mini(max_health, health + amount)
 		set_meta("health", health)
+		if restored > 0:
+			combat_number.emit(restored, CombatNumber.HEAL, false)
 		if battle_statistics != null and restored > 0:
 			battle_statistics.support(source.get_instance_id() if source else get_instance_id(), restored, 0)
 
@@ -681,14 +790,30 @@ func attack_animation_active() -> bool:
 	return _animation_remaining_q16 > 0
 
 
+func configure_action_vfx(visual_id: String) -> void:
+	var script: GDScript = load("res://battle/character_action_vfx.gd")
+	var actions: Dictionary = script.bindings(visual_id)
+	if actions.is_empty():
+		return
+	_action_vfx = script.new()
+	_action_vfx.setup(self, actions)
+	add_child(_action_vfx)
+
+
 func play_state(state: StringName, speed: float = 1.0) -> void:
+	_motion_action_speed = speed
+	if is_instance_valid(_action_vfx) and state != &"Die":
+		_action_vfx.play(state, speed, _death_appearance_speed)
 	for i in _motion_players.size():
 		var clip: StringName = _state_clips[i].get(state, &"")
 		if clip != &"":
-			var replay := _motion_players[i].current_animation == clip
-			_motion_players[i].play(clip, -1.0, speed)
+			var player := _motion_players[i]
+			var replay := player.current_animation == clip
+			# Animator.speed advances both clips and the transition clock.
+			player.speed_scale = speed * _death_appearance_speed
+			player.play(clip)
 			if replay:
-				_motion_players[i].seek(0.0, true)
+				player.seek(0.0, true)
 
 
 func configure_attack(timings: Array) -> void:
@@ -713,7 +838,12 @@ func begin_basic_attack(target: GuildrunBoardUnit, speed_multiplier_q16: int) ->
 		for i in range(_yuna_basic_effects.size() - 1, -1, -1):
 			if not is_instance_valid(_yuna_basic_effects[i]):
 				_yuna_basic_effects.remove_at(i)
-		_yuna_basic_effects.append(_new_yuna_effect("res://battle/yuna_basic_slash.tscn", _yuna_basic_mount, action_speed))
+		_yuna_basic_effects.append(_new_particle_effect("res://battle/yuna_basic_slash.tscn", _yuna_basic_mount, action_speed))
+
+
+func cancel_cast_visuals() -> void:
+	if is_instance_valid(_action_vfx):
+		_action_vfx.stop(&"SkillAttack")
 
 
 func reset_basic_attack() -> void:

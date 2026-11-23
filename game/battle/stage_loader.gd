@@ -53,6 +53,7 @@ var _enemy_scalings := {}
 var _enemies: Dictionary
 var _heroes: Dictionary
 var _small_portraits := {}
+var _projectile_visual_ids: Dictionary[int, int] = {}
 var items: Dictionary
 var resale_prices := {}
 var _super_shop_resale_prices := {}
@@ -68,6 +69,7 @@ var _aoe_radii: Dictionary
 var _aoe_shapes := {}
 var _characters: Dictionary
 var _rigs: Dictionary
+var _rank_rigs: Dictionary
 var _ragdolls: Dictionary
 var _has_ragdoll_floor := false
 var _environment_paths: Dictionary
@@ -207,6 +209,10 @@ func _ready() -> void:
 						var lizard: Dictionary = sequence.MeleeAbilityAction.duplicate()
 						lizard.jump = sequence.LizardInFrontOfTargetAbilityAction
 						_abilities[ability_id] = {"kind": "lizard_strike", "data": lizard}
+					elif sequence.keys() == ["EffectAbilityAction", "TillyAction"]:
+						var data: Dictionary = sequence.TillyAction.duplicate()
+						data.stat_effect = _read_specialization_stat_effect(sequence.EffectAbilityAction, references)
+						_abilities[ability_id] = {"kind": "TillyAction", "data": data}
 					elif sequence.keys() == ["DelayAbilityAction", "HookFurthestEnemyAbilityAction", "MeleeAbilityAction"]:
 						var hook: Dictionary = sequence.MeleeAbilityAction.duplicate()
 						hook._delay = sequence.DelayAbilityAction._delay
@@ -227,7 +233,10 @@ func _ready() -> void:
 							data.stall_since = 15 << 16 if ability_id == 22 else int(field(row, "StallDuration").RawValue)
 							_abilities[ability_id] = {"kind": action.type["class"], "data": data}
 						"EffectAbilityAction":
-							if ability_id in [5, 23]:
+							if ability_id == 18:
+								var effect := _read_specialization_stat_effect(action.data, references)
+								_abilities[ability_id] = {"kind": "specialization_stat_effect", "data": effect}
+							elif ability_id in [5, 23]:
 								var block: Dictionary = action.data._effectBlocks[0]
 								var effect: Dictionary = references[field(block, "Effects")[0].rid].data
 								var data := {"delay": int(field(block, "Delay").RawValue)}
@@ -257,7 +266,7 @@ func _ready() -> void:
 							var data: Dictionary = action.data.duplicate()
 							data.stall_duration = int(field(row, "StallDuration").RawValue)
 							_abilities[ability_id] = {"kind": action.type["class"], "data": data}
-						"MeleeAbilityAction", "SnipeAbilityAction", "SkeletonSmashAction", "ReynaAction", "DragomirAction", "RatnaAbilityAction", "SpiderEnsnareAction", "HydraAction", "ForestGolemAction", "FionaAction", "HoyoungAbilityAction", "NiklasAction", "JavrynAction":
+						"MeleeAbilityAction", "SnipeAbilityAction", "SkeletonSmashAction", "ReynaAction", "DragomirAction", "RatnaAbilityAction", "SpiderEnsnareAction", "HydraAction", "ForestGolemAction", "FionaAction", "HoyoungAbilityAction", "NiklasAction", "JavrynAction", "IriniSpearThrowAction", "NyxaAction", "MingAbilityAction":
 							_abilities[ability_id] = {"kind": action.type["class"], "data": action.data}
 						"FunkeAbilityAction":
 							_abilities[ability_id] = {"kind": "wildfire", "data": action.data}
@@ -287,6 +296,7 @@ func _ready() -> void:
 						shapes.append({"polygon": polygon})
 			_aoe_shapes[int(record.id)] = shapes
 		elif record.type == "CharacterVisualConfig":
+			_projectile_visual_ids[int(record.id)] = int(record.fields.ProjectilePrefab.m_PathID)
 			_small_portraits[int(record.id)] = "res://sprites/sharedassets1_%d.png" % int(record.fields.SmallPortraitSprite.m_PathID)
 			_animation_timings[str(int(record.id))] = record.fields.AnimationSettings
 			sound.visual_audio[int(record.id)] = record.fields.AudioSettings
@@ -296,6 +306,11 @@ func _ready() -> void:
 					sound.ui_paths[int(mapping.SfxType)] = mapping.FmodEvent.Path
 	_characters = JSON.parse_string(FileAccess.get_file_as_string("res://Characters/index.json"))
 	_rigs = JSON.parse_string(FileAccess.get_file_as_string("res://Characters/rigs.json"))
+	var rank_rig_path := "res://Characters/rank_rigs.json"
+	if FileAccess.file_exists(rank_rig_path):
+		var variants: Variant = JSON.parse_string(FileAccess.get_file_as_string(rank_rig_path))
+		if variants is Dictionary:
+			_rank_rigs = variants
 	_ragdolls = JSON.parse_string(FileAccess.get_file_as_string("res://Characters/ragdolls.json"))
 	_index_environments("res://Scenes/Stage_Environment/")
 	for argument in OS.get_cmdline_user_args():
@@ -748,6 +763,10 @@ func hero_portrait(id: int) -> Texture2D:
 	return character_portrait(field(_heroes[id], "VisualConfig"))
 
 
+func character_projectile(visual: Dictionary) -> int:
+	return _projectile_visual_ids.get(int(visual.m_PathID), 0)
+
+
 func character_portrait(visual: Dictionary) -> Texture2D:
 	var path: String = _small_portraits.get(int(visual.m_PathID), "")
 	return load(path) if not path.is_empty() and ResourceLoader.exists(path, "Texture2D") else null
@@ -767,8 +786,7 @@ const FLAT_RANK_MODIFIER_STATS := {
 func deploy_hero(id: int, cell: Vector2i, modifiers: Array = [], equipment: Array = [], relics: Array = [], rank: int = 1, specialization: Dictionary = {}, earned_rank_modifiers: Dictionary = {}) -> GuildrunBoardUnit:
 	if not _heroes.has(id) or not grid.contains(cell) or grid.occupants.has(cell):
 		return null
-	var unit := spawn_unit(hero_stats(id, modifiers, equipment, relics, rank, specialization, earned_rank_modifiers), cell, 0, true)
-	unit.rank = rank
+	var unit := spawn_unit(hero_stats(id, modifiers, equipment, relics, rank, specialization, earned_rank_modifiers), cell, 0, true, rank)
 	for earned_rank in range(3, mini(rank, 4) + 1):
 		var modifier := int(earned_rank_modifiers.get(earned_rank, earned_rank_modifiers.get(str(earned_rank), -1)))
 		if modifier > 0:
@@ -861,8 +879,37 @@ func _add_stat(stats: Dictionary, stat_id: int, amount: int) -> void:
 		stats[key] = int(current) + amount
 
 
-func spawn_unit(stats: Dictionary, cell: Vector2i, facing: int, hero: bool) -> GuildrunBoardUnit:
+func _read_specialization_stat_effect(action: Dictionary, references: Dictionary) -> Dictionary:
+	var block: Dictionary = action._effectBlocks[0]
+	var effect: Dictionary = references[str(field(block, "Effects")[0].rid)].data
+	var modifiers: Array[Dictionary] = []
+	for pointer: Dictionary in effect._actions:
+		var step: Dictionary = references[str(pointer.rid)]
+		modifiers.append({"kind": step.type["class"], "data": step.data})
+	return {"delay": int(field(block, "Delay").RawValue), "duration": int(field(block, "Duration").RawValue), "modifiers": modifiers}
+
+
+func configure_active_ability(unit: GuildrunBoardUnit, ability_id: int) -> void:
+	var ability: Dictionary = _abilities.get(ability_id, {})
+	unit.ability_kind = ability.get("kind", "")
+	unit.ability_data = ability.get("data", {})
+	unit.active_stall_q16 = int(_active_stall_durations.get(ability_id, 0)) if not ability.is_empty() else 0
+	unit.area_shapes = []
+	unit.strike_radius = 0.0
+	if ability.is_empty():
+		return
+	if unit.ability_kind in ["LoganAbilityAction", "SeraphaelAbilityAction", "SnakeAction", "RookAction"] or ability.data.has("area_pulse"):
+		unit.area_shapes = _aoe_shapes[int(ability.data._regularAoeEntry.m_PathID)]
+	if unit.ability_kind == "AreaOfEffectAction":
+		unit.area_shapes = _aoe_shapes[int(ability.data._aoeEntry.m_PathID)]
+	if unit.ability_kind == "resolute_strike":
+		var shape: Dictionary = ability.data._protectorAoeEntry if unit.passive_id() == 102602 else ability.data._regularAoeEntry
+		unit.strike_radius = float(_aoe_radii[int(shape.m_PathID)]) / 65536.0
+
+
+func spawn_unit(stats: Dictionary, cell: Vector2i, facing: int, hero: bool, rank: int = 1) -> GuildrunBoardUnit:
 	var unit := GuildrunBoardUnit.new()
+	unit.rank = rank
 	var id := int(field(stats, "Id")._sequentialId)
 	unit.is_hero = hero
 	unit.name = "%s_%s_%s_%s" % ["Hero" if hero else "Enemy", id, cell.x, cell.y]
@@ -878,20 +925,12 @@ func spawn_unit(stats: Dictionary, cell: Vector2i, facing: int, hero: bool) -> G
 		unit.configure_attack(settings._animationTimings)
 		if bool(field(settings, "HasFixedDuration")):
 			unit.cast_duration_q16 = int(field(settings, "FixedDuration").RawValue)
-	var ability: Dictionary = _abilities.get(int(stats._activeAbilityID), {})
-	if not ability.is_empty() and (not hero or bool(field(stats, "StartWithActiveAbility"))):
-		unit.ability_kind = ability.kind
-		unit.active_stall_q16 = int(_active_stall_durations.get(int(stats._activeAbilityID), 0))
-		unit.ability_data = ability.data
-		if unit.ability_kind in ["LoganAbilityAction", "SeraphaelAbilityAction", "SnakeAction", "RookAction"] or ability.data.has("area_pulse"):
-			unit.area_shapes = _aoe_shapes[int(ability.data._regularAoeEntry.m_PathID)]
-		if unit.ability_kind == "AreaOfEffectAction":
-			unit.area_shapes = _aoe_shapes[int(ability.data._aoeEntry.m_PathID)]
-		if unit.ability_kind == "resolute_strike":
-			var shape: Dictionary = ability.data._protectorAoeEntry if unit.passive_id() == 102602 else ability.data._regularAoeEntry
-			unit.strike_radius = float(_aoe_radii[int(shape.m_PathID)]) / 65536.0
-	if _rigs.has(visual_id) and not _rigs[visual_id].is_empty():
-		for binding: Dictionary in _rigs[visual_id]:
+	if not hero or bool(field(stats, "StartWithActiveAbility")):
+		configure_active_ability(unit, int(stats._activeAbilityID))
+	var variants: Dictionary = _rank_rigs.get(visual_id, {}) if hero else {}
+	var bindings: Array = variants.get(str(rank), _rigs.get(visual_id, []))
+	if not bindings.is_empty():
+		for binding: Dictionary in bindings:
 			unit.add_rig(binding)
 		if _has_ragdoll_floor and _ragdolls.rigs.has(visual_id):
 			unit.configure_ragdoll(_ragdolls.rigs[visual_id], _ragdolls.impulse)
@@ -900,4 +939,5 @@ func spawn_unit(stats: Dictionary, cell: Vector2i, facing: int, hero: bool) -> G
 		unit.add_child((load(_characters[visual_id]) as PackedScene).instantiate())
 	else:
 		push_warning("Missing character visual %s for unit %s" % [visual_id, id])
+	unit.configure_action_vfx(visual_id)
 	return unit

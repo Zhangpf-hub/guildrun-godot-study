@@ -1,0 +1,125 @@
+[gd_scene format=3 uid="uid://bp4ktmmfsb6mu"]
+
+[ext_resource type="Script" uid="uid://b4lgju2h5xcec" path="res://battle/revival_effect.gd" id="1_k3ibv"]
+[ext_resource type="Shader" uid="uid://brjdjxf2ny1vg" path="res://materials/revival_particle.gdshader" id="2_mbk84"]
+[ext_resource type="Texture2D" uid="uid://danfhkdcqnqfc" path="res://textures/resources_453.png" id="3_6lfac"]
+
+[sub_resource type="QuadMesh" id="Quad"]
+
+[sub_resource type="ShaderMaterial" id="Material108"]
+render_priority = 0
+shader = ExtResource("2_mbk84")
+shader_parameter/image_texture = ExtResource("3_6lfac")
+shader_parameter/image_uv = Vector4(1, 1, 0, 0)
+shader_parameter/image_atlas = Vector4(1, 1, 0, 0)
+shader_parameter/mask_uv = Vector4(1, 1, 0, 0)
+shader_parameter/noise_uv = Vector4(1, 1, 0, 0)
+shader_parameter/dissolve_mask_uv = Vector4(1, 1, 0, 0)
+shader_parameter/flow_uv = Vector4(1, 1, 0, 0)
+shader_parameter/noise_scroll = Vector2(0, 0)
+shader_parameter/flow_scroll = Vector2(0, 0)
+shader_parameter/image_scroll = Vector2(0, 0)
+shader_parameter/scroll_atlas = false
+shader_parameter/atlas_scroll = Vector2(0, 0)
+shader_parameter/atlas_time = 0.0
+shader_parameter/flow_strength = 0.0
+shader_parameter/flow_graph = false
+shader_parameter/image_is_srgb = true
+shader_parameter/use_source_mip_image = false
+shader_parameter/use_rgb = false
+shader_parameter/use_ramp = false
+shader_parameter/opacity_from_red = false
+shader_parameter/opacity_gain = 1.0
+shader_parameter/age_sheet_rows = 1.0
+shader_parameter/additive = false
+shader_parameter/intensity = 1.0
+shader_parameter/edge_power = 0.0
+shader_parameter/rim_power = 0.0
+shader_parameter/fade_distance = 0.5
+shader_parameter/raw_depth_fade = 0.0
+shader_parameter/custom_dissolve = false
+shader_parameter/custom_dissolve_softness = 0.0
+shader_parameter/dissolve_is_srgb = false
+shader_parameter/dissolve_mask_is_srgb = false
+shader_parameter/repeat_dissolve_mask = false
+shader_parameter/mask_is_srgb = false
+shader_parameter/atlas_mask_uv = false
+shader_parameter/dissolve_mix = 0.0
+shader_parameter/dissolve_data = Vector3(0, 0, 0)
+shader_parameter/dissolve_amount = 0.0
+shader_parameter/dissolve_softness = 0.1
+shader_parameter/vertex_tint = false
+shader_parameter/linearize_vertex_tint = false
+shader_parameter/on_hit_vfx_redraw = false
+shader_parameter/compensate_dark_blend = false
+shader_parameter/particle_tint = Color(1, 1, 1, 1)
+shader_parameter/material_tint = Vector4(1, 1, 1, 1)
+shader_parameter/particle_age = 0.0
+
+[node name="Dragon_Frost_Projectile" type="Node3D"]
+script = ExtResource("1_k3ibv")
+lead_in = 0.0
+duration = 5.0
+metadata/unity_prefab = 23200
+
+[node name="Glow_01" type="Node3D" parent="."]
+position = Vector3(0, 1, 0)
+quaternion = Quaternion(0, 0, 0, 1)
+metadata/unity_particle = 55191
+metadata/particle = {
+"alignment": 0,
+"bursts": [{
+"count": Vector2i(1, 1),
+"delay": 0,
+"repeat_count": 1,
+"repeat_interval": 0.00999999978
+}, {
+"count": Vector2i(1, 1),
+"delay": 0.333333333,
+"repeat_count": 7,
+"repeat_interval": 0.333333333
+}],
+"cone_angle": 0.436332313,
+"count": Vector2i(1, 1),
+"delay": 0,
+"depth": Vector2(1, 1),
+"height": Vector2(1, 1),
+"length_scale": 2,
+"lifetime": Vector2(1.01, 1.01),
+"material": SubResource("Material108"),
+"mesh": SubResource("Quad"),
+"mode": 0,
+"opacity": PackedFloat32Array(0, 0.063244045, 0.12648809, 0.18973215, 0.25297618, 0.31622022, 0.3794643, 0.44270834, 0.50595236, 0.5691964, 0.63244045, 0.69568455, 0.7589286, 0.82217264, 0.8854167, 0.94866073, 0.99609375, 0.9753418, 0.95458984, 0.9338379, 0.91308594, 0.892334, 0.87158203, 0.8508301, 0.8300781, 0.8093262, 0.7885742, 0.76782227, 0.7470703, 0.72631836, 0.7055664, 0.68481445, 0.6640625, 0.64331055, 0.6225586, 0.60180664, 0.5810547, 0.56030273, 0.5395508, 0.5187988, 0.49804688, 0.47729492, 0.45654297, 0.43579102, 0.41503906, 0.3942871, 0.37353516, 0.3527832, 0.33203125, 0.3112793, 0.29052734, 0.2697754, 0.24902344, 0.22827148, 0.20751953, 0.18676758, 0.16601563, 0.14526367, 0.12451172, 0.103759766, 0.08300781, 0.06225586, 0.041503906, 0.020751953, 0),
+"orbit": Vector2(0, 0),
+"pitch": Vector2(0, 0),
+"pivot": Vector3(0, 0, 0),
+"radial_distance": PackedFloat32Array(0, 0),
+"radius": 1,
+"radius_thickness": 1,
+"raw_particle_tint": true,
+"repeat_count": 1,
+"repeat_interval": 0.00999999978,
+"roll": Vector2(0, 0),
+"seed": -1,
+"shape": -1,
+"shape_length": 5,
+"shape_position": Vector3(0, 0, 0),
+"shape_rotation": Vector3(0, 0, 0),
+"shape_scale": Vector3(1, 1, 1),
+"simulation_speed": 0.5,
+"size_3d": false,
+"size_x": PackedFloat32Array(1),
+"size_x_min": PackedFloat32Array(1),
+"size_y": PackedFloat32Array(1),
+"size_z": PackedFloat32Array(1),
+"sorting_offset": 0,
+"speed": Vector2(0, 0),
+"speed_distance": PackedFloat32Array(0, 1),
+"tint_max": Color(0.08810965, 0.2415305, 0.33962262, 0.18431373),
+"tint_min": Color(0.08810965, 0.2415305, 0.33962262, 0.18431373),
+"velocity_scale": 0,
+"vfx_redraw": true,
+"width": Vector2(2.5, 2.5),
+"world_space": true,
+"yaw": Vector2(0, 0)
+}

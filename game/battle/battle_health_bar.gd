@@ -12,6 +12,7 @@ var _text: Label
 var _mana_panel: Control
 var _mana_fill: ColorRect
 var _equipment_rows: Control
+var _damage_text: Control
 var _equipment_nodes: Dictionary[int, Control] = {}
 var _socket: Vector3
 var _has_socket := false
@@ -37,6 +38,9 @@ func setup(unit: GuildrunBoardUnit) -> void:
 	if _has_socket:
 		_socket = Vector3(slot.position[0], slot.position[1], slot.position[2])
 	var bar: Control = scene.get_node("HealthBar")
+	_damage_text = load("res://battle/battle_damage_text.gd").new()
+	bar.get_node("DamageTextHolder").add_child(_damage_text)
+	_damage_text.set_anchors_and_offsets_preset(Control.PRESET_CENTER)
 	if unit.is_hero:
 		_equipment_nodes = ITEM_VIEW.index_controls(bar.get_node("TopBar"))
 		_equipment_rows = _equipment_nodes[int(_settings.equipment_parent)]
@@ -132,7 +136,14 @@ func _bind_equipment_hit(slot: Control, panel: GuildrunEquipmentPanel, hero_id: 
 			panel.can_drop_item.bind(hero_id), panel.drop_item.bind(hero_id))
 
 
+func show_combat_number(amount: int, kind: GuildrunBoardUnit.CombatNumber, critical: bool, player: bool) -> void:
+	if _has_socket:
+		_damage_text.show_number(amount, kind, critical, player)
+
+
 func update_unit(unit: GuildrunBoardUnit, camera: Camera3D, show_bar: bool, preparation: bool, delta: float) -> void:
+	_damage_text.advance(delta)
+	_damage_text.visible = not preparation
 	if unit.defeated:
 		_death_elapsed += delta
 	else:

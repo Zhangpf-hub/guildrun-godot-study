@@ -1,0 +1,47 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://bwixnxl547oj0"]
+
+[ext_resource type="Shader" uid="uid://ucukr7mmtvw5" path="res://materials/character_galaxy.gdshader" id="1_xwnnq"]
+[ext_resource type="Texture2D" uid="uid://djewtkuvksjbp" path="res://textures/sharedassets1_1483.png" id="2_2u5r4"]
+[ext_resource type="Texture2D" uid="uid://cx3nglfg77rnn" path="res://textures/sharedassets1_2208.png" id="3_33egl"]
+[ext_resource type="Cubemap" uid="uid://c53rvka0sj5nr" path="res://textures/sharedassets1_3234_cube.dds" id="4_ykxou"]
+[ext_resource type="Texture2D" uid="uid://drpqtgc4axawa" path="res://textures/sharedassets1_1539.png" id="5_0dy4m"]
+[ext_resource type="Cubemap" uid="uid://bl7h023ji6iti" path="res://textures/sharedassets1_3235_cube.dds" id="6_5qck3"]
+[ext_resource type="Texture2D" uid="uid://dttd1bkchjaob" path="res://textures/sharedassets1_1936.png" id="7_2u5r4"]
+
+[resource]
+resource_name = "Javryn_Weapon_Mat_Galaxy"
+render_priority = 0
+shader = ExtResource("1_xwnnq")
+shader_parameter/diffuse_map = ExtResource("2_2u5r4")
+shader_parameter/emissive_map = ExtResource("3_33egl")
+shader_parameter/specular_map = ExtResource("3_33egl")
+shader_parameter/galaxy_mask = ExtResource("5_0dy4m")
+shader_parameter/toon_ramp = ExtResource("7_2u5r4")
+shader_parameter/galaxy_map = ExtResource("4_ykxou")
+shader_parameter/star_map = ExtResource("6_5qck3")
+shader_parameter/main_color = Color(0.754717, 0.754717, 0.754717, 1)
+shader_parameter/emissive_color = Color(0.9007816, 1.7637237, 2.145682, 1)
+shader_parameter/specular_color = Color(1, 1, 1, 0.003921569)
+shader_parameter/ambient_color = Color(0.2, 0.08627452, 0.1014552, 0.003921569)
+shader_parameter/shadow_color = Color(0.9075713, 0.759434, 1, 1)
+shader_parameter/galaxy_color = Color(0.011342882, 0.014123792, 0.267188, 1)
+shader_parameter/fresnel_color = Color(0, 0.71692425, 1.3041189, 0)
+shader_parameter/star_color = Color(0.89073956, 0.89073956, 0.89073956, 1)
+shader_parameter/galaxy_offset = Vector3(0, -0.86, 0.54)
+shader_parameter/star_offset = Vector3(0, 0, 0)
+shader_parameter/distortion_speed = Vector2(0.2, 0.5)
+shader_parameter/fresnel_noise_speed = Vector2(1.79, 0.1)
+shader_parameter/shadow_amount = 0.5
+shader_parameter/glossiness = 0.0
+shader_parameter/desaturate = 0.0
+shader_parameter/fresnel_exponent = 4.87
+shader_parameter/fresnel_intensity = 1.01
+shader_parameter/distortion_amount = 0.2
+shader_parameter/distortion_scale = 0.2
+shader_parameter/twirl_strength = 0.0
+shader_parameter/fresnel_noise_scale = 1.0
+shader_parameter/fresnel_noise_power = 0.1
+shader_parameter/use_emissive = true
+shader_parameter/use_gloss = false
+metadata/unity_shader = "Shader Graphs/Toon_Galaxy_SG"
+metadata/unity_material_id = 614

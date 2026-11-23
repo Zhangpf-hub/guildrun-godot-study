@@ -167,13 +167,14 @@ func check_yuuna(stage: Node3D) -> bool:
 	if not check_yuuna_throw_effects(yuuna):
 		return false
 	var smoke := effect.get_node("Smoke_01")
+	var core := effect.get_node("CoreWhite_01")
 	effect._process(1.32)
 	if effect.get_node("Spikes_01").get_child_count() != 0 or smoke.get_child_count() != 0:
 		return false
 	if not is_equal_approx(effect.duration, 3.0):
 		return false
 	effect._process(0.01)
-	if not effect.top_level or effect.get_node("CoreWhite_01").get_child_count() != 0 or smoke.get_child_count() != 5:
+	if not effect.top_level or core.get_child_count() != 0 or smoke.get_child_count() != 5:
 		return false
 	var first_smoke := smoke.get_child(0) as MeshInstance3D
 	var smoke_material := first_smoke.material_override as ShaderMaterial
@@ -190,7 +191,7 @@ func check_yuuna(stage: Node3D) -> bool:
 	var impact_anchor: Vector3 = effect.global_position
 	yuuna.set_visual_offset(Vector3.RIGHT)
 	effect._process(0.025)
-	if smoke.get_child_count() != 10 or effect.get_node("CoreWhite_01").get_child_count() != 0:
+	if smoke.get_child_count() != 10 or core.get_child_count() != 0:
 		return false
 	effect._process(0.075)
 	if not effect.global_position.is_equal_approx(impact_anchor):
@@ -198,8 +199,25 @@ func check_yuuna(stage: Node3D) -> bool:
 	yuuna.set_visual_offset(Vector3.ZERO)
 	if effect.get_node("Spikes_01").get_child_count() != 1 or effect.get_node("Glow_01").get_child_count() != 1:
 		return false
-	if effect.get_node("CoreWhite_01").get_child_count() != 1 or smoke.get_child_count() != 10:
+	if core.get_child_count() != 1 or smoke.get_child_count() != 10:
 		return false
+	var core_material := (core.get_child(0) as MeshInstance3D).material_override as ShaderMaterial
+	var core_redraw := core_material.next_pass as ShaderMaterial
+	var core_dissolve: Vector3 = core_material.get_shader_parameter(&"dissolve_data")
+	if (not core_material.get_shader_parameter(&"custom_dissolve") or not is_equal_approx(core_dissolve.x, 0.3)
+			or core_redraw == null or core_redraw.get_shader_parameter(&"dissolve_data") != core_dissolve):
+		printerr("Yuuna's impact white core lost the dissolve input read by the original renderer.")
+		return false
+	for layer: Node in [core, effect.get_node("Spikes_01")]:
+		var material := (layer.get_child(0) as MeshInstance3D).material_override as ShaderMaterial
+		var redraw := material.next_pass as ShaderMaterial
+		var texture := material.get_shader_parameter(&"source_mip_image") as Texture2D
+		if (texture == null or texture.get_image().get_mipmap_count() != 8
+				or not material.get_shader_parameter(&"use_source_mip_image") or redraw == null
+				or redraw.get_shader_parameter(&"source_mip_image") != texture
+				or not redraw.get_shader_parameter(&"use_source_mip_image")):
+			printerr("Yuuna's impact layer lost its authored mip chain: %s" % layer.name)
+			return false
 	if not is_equal_approx(smoke.position.y, 0.57):
 		return false
 	var core_rolls := {"CoreWhite_01": deg_to_rad(204.8808), "Spikes_01": deg_to_rad(356.9663)}
@@ -280,13 +298,53 @@ func check_yuuna(stage: Node3D) -> bool:
 			and stage.grid.occupants.get(landing) == yuuna and not stage.grid.occupants.has(start)
 			and yuuna.position.is_equal_approx(GuildrunBattleGrid.center(landing))
 			and check_yuuna_landing_smoke(yuuna) and check_yuuna_distance_sparks(yuuna)
-			and check_yuuna_basic_slash(yuuna, turtle))
+			and check_yuuna_basic_slash(yuuna, turtle) and check_yuuna_motion_exits(yuuna))
+
+
+func check_yuuna_motion_exits(yuuna: GuildrunBoardUnit) -> bool:
+	var player := yuuna._motion_players.front() as AnimationPlayer
+	for state: StringName in [&"BasicAttack", &"SkillAttack"]:
+		yuuna.play_idle()
+		yuuna.play_state(state, 2.0)
+		var action := player.current_animation
+		var exit_time := 1.10183477 if state == &"BasicAttack" else 3.98000618
+		player.advance((exit_time - 0.002) / 2.0)
+		yuuna.finish_action_motion(state)
+		if player.current_animation != action:
+			return false
+		yuuna.set_death_appearance_speed(0.0)
+		player.advance(0.01)
+		if player.current_animation != action:
+			return false
+		yuuna.set_death_appearance_speed(1.0)
+		player.advance(0.002)
+		if player.current_animation != &"Ayaka_BattleIdle" or not is_equal_approx(player.get_playing_speed(), 2.0):
+			return false
+		if absf(player.current_animation_position - 0.002) > 0.0001:
+			return false
+	yuuna.play_state(&"SkillAttack")
+	player.advance(3.95)
+	yuuna.play_state(&"BasicAttack")
+	player.advance(0.1)
+	if player.current_animation != &"Ayaka_BasicAttack02":
+		return false
+	player.advance(1.2)
+	return player.current_animation == &"Ayaka_BattleIdle"
 
 
 func check_yuuna_basic_slash(yuuna: GuildrunBoardUnit, target: GuildrunBoardUnit) -> bool:
 	yuuna.face_point(target.global_position)
 	yuuna.set_death_appearance_speed(0.0)
 	yuuna.begin_basic_attack(target, GuildrunCombatMath.ONE)
+	var motion := yuuna._motion_players.front() as AnimationPlayer
+	if (not is_equal_approx(motion.get_blend_time(&"Ayaka_BattleIdle", &"Ayaka_BasicAttack02"), 0.25)
+			or not is_equal_approx(motion.get_blend_time(&"Ayaka_BasicAttack02", &"Ayaka_BasicAttack02"), 0.25)
+			or not is_equal_approx(motion.get_blend_time(&"Ayaka_BasicAttack02", &"Ayaka_ActiveAbility_All"), 0.25)
+			or not is_zero_approx(motion.get_playing_speed())):
+		return false
+	motion.advance(0.05)
+	if not is_zero_approx(motion.current_animation_position):
+		return false
 	if yuuna._yuna_basic_effects.is_empty():
 		return false
 	var normal: Node3D = yuuna._yuna_basic_effects.back()
@@ -330,6 +388,15 @@ func check_yuuna_basic_slash(yuuna: GuildrunBoardUnit, target: GuildrunBoardUnit
 	if not slash.global_position.is_equal_approx(emission_position):
 		return false
 	yuuna.begin_basic_attack(target, 2 * GuildrunCombatMath.ONE)
+	if not is_equal_approx(motion.speed_scale, 2.0) or not is_equal_approx(motion.get_playing_speed(), 2.0):
+		return false
+	yuuna.set_death_appearance_speed(1.6)
+	if not is_equal_approx(motion.get_playing_speed(), 3.2):
+		return false
+	motion.advance(0.025)
+	if not is_equal_approx(motion.current_animation_position, 0.08):
+		return false
+	yuuna.set_death_appearance_speed(1.0)
 	var fast: Node3D = yuuna._yuna_basic_effects.back()
 	fast._process(0.149)
 	if fast.get_node("Slash_01").get_child_count() != 0:

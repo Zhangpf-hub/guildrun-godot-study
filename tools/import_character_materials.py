@@ -17,7 +17,7 @@ def extract(data, game):
             asset, identifier = Path(path).stem.rsplit("_", 1)
             file = source.file(asset + ".assets")
             material_asset(source, file, {"m_FileID": 0, "m_PathID": int(identifier)}, game, character=True)
-        print(f"{len(source.shader_materials)} toon materials across {len(paths)} visible rig bindings")
+        print(f"{len(source.shader_materials)} shader materials across {len(paths)} rig bindings")
 
 
 if __name__ == "__main__":

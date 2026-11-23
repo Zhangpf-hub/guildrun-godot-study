@@ -6,10 +6,13 @@ import json
 import math
 from pathlib import Path
 import re
+from struct import pack
 
 import UnityPy
 from UnityPy.streams import EndianBinaryReader
 from UnityPy.helpers.MeshHelper import MeshHandler
+from PIL import Image
+from texture2ddecoder import decode_bc7
 
 
 def quote(value):
@@ -115,14 +118,106 @@ def mesh_asset(src, scene, pointer, game):
     return path
 
 
-def material_texture(src, owner, pointer, game):
+def material_texture(src, owner, pointer, game, preserve_mips=False):
     owner, texture = src.resolve(owner, pointer)
+    if preserve_mips:
+        image = texture.read()
+        width, height = image.m_Width, image.m_Height
+        if (image.m_MipCount > 1 and image.m_ColorSpace == 1 and image.m_TextureFormat in (10, 12)
+                and width & (width - 1) == 0 and height & (height - 1) == 0):
+            return source_mip_texture(owner, texture.path_id, image, game), texture
     path = f"textures/{Path(owner.name).stem}_{texture.path_id}.png"
     dest = game / path
     if not dest.exists():
         dest.parent.mkdir(parents=True, exist_ok=True)
         texture.read().image.save(dest)
     return path, texture
+
+
+def source_cubemap(src, owner, pointer, game):
+    file, reader = src.resolve(owner, pointer)
+    path = f"textures/{Path(file.name).stem}_{reader.path_id}_cube.dds"
+    destination = game / path
+    if destination.is_file():
+        return path
+    texture = reader.read()
+    width, height = texture.m_Width, texture.m_Height
+    assert reader.type.name == "Cubemap" and texture.m_ImageCount == 6 and texture.m_MipCount == 1
+    assert width == height and texture.m_TextureFormat in (10, 25)
+    fourcc = b"DXT1" if texture.m_TextureFormat == 10 else b"DX10"
+    face_size = max(1, width // 4) ** 2 * (8 if fourcc == b"DXT1" else 16)
+    pixels = texture.get_image_data()
+    assert len(pixels) == face_size * 6
+    header = b"DDS " + pack("<7I", 124, 0x81007, height, width, face_size, 0, 1) + bytes(44)
+    header += pack("<2I4s5I", 32, 4, fourcc, 0, 0, 0, 0, 0)
+    header += pack("<5I", 0x1008, 0xFE00, 0, 0, 0)
+    if fourcc == b"DX10":
+        # Six authored D3D cube faces, in +X/-X/+Y/-Y/+Z/-Z sampling order.
+        header += pack("<5I", 99 if texture.m_ColorSpace == 1 else 98, 3, 4, 1, 0)
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    destination.write_bytes(header + pixels)
+    return path
+
+
+def source_mip_texture(owner, path_id, texture, game):
+    width, height = texture.m_Width, texture.m_Height
+    levels = texture.m_MipCount
+    # Power-of-two BC1 and BC3 images can be flipped without recompressing.
+    assert width > 0 and width & (width - 1) == 0
+    assert height > 0 and height & (height - 1) == 0
+    assert 1 < levels <= max(width, height).bit_length() and texture.m_ColorSpace == 1
+    fourcc, block_size = {10: (b"DXT1", 8), 12: (b"DXT5", 16), 25: (None, 16)}[texture.m_TextureFormat]
+    top_size = max(1, width // 4) * max(1, height // 4) * block_size
+    data = bytearray(b"DDS ")
+    flags, pitch = (0xA1007, top_size) if fourcc else (0x2100F, width * 4)
+    data.extend(pack("<7I", 124, flags, height, width, pitch, 0, levels))
+    data.extend(bytes(44))
+    if fourcc:
+        data.extend(pack("<2I4s5I", 32, 4, fourcc, 0, 0, 0, 0, 0))
+    else:
+        data.extend(pack("<8I", 32, 0x41, 0, 32, 0xFF, 0xFF00, 0xFF0000, 0xFF000000))
+    data.extend(pack("<5I", 0x401008, 0, 0, 0, 0))
+    payload = texture.get_image_data()
+    offset = 0
+    for level in range(levels):
+        mip_width = max(1, width >> level)
+        mip_height = max(1, height >> level)
+        columns = max(1, mip_width // 4)
+        block_rows = max(1, mip_height // 4)
+        level_size = columns * block_rows * block_size
+        if not fourcc:
+            # BC7 partitions are not a row-selector reversal. Preserve the decoded texels as RGBA8.
+            pixels = decode_bc7(payload[offset:offset + level_size], mip_width, mip_height)
+            image = Image.frombytes("RGBA", (mip_width, mip_height), pixels, "raw", "BGRA")
+            data.extend(image.transpose(Image.Transpose.FLIP_TOP_BOTTOM).tobytes())
+            offset += level_size
+            continue
+        visible_rows = min(4, mip_height)
+        for block_y in reversed(range(block_rows)):
+            start = offset + block_y * columns * block_size
+            for block_x in range(columns):
+                pos = start + block_x * block_size
+                if fourcc == b"DXT5":
+                    # BC3 uses four 12-bit rows of alpha selectors after its two endpoints.
+                    alpha = int.from_bytes(payload[pos + 2:pos + 8], "little")
+                    flipped = alpha >> (visible_rows * 12) << (visible_rows * 12)
+                    for row in range(visible_rows):
+                        selectors = (alpha >> (row * 12)) & 0xFFF
+                        flipped |= selectors << ((visible_rows - 1 - row) * 12)
+                    data.extend(payload[pos:pos + 2])
+                    data.extend(flipped.to_bytes(6, "little"))
+                    pos += 8
+                data.extend(payload[pos:pos + 4])
+                rows = payload[pos + 4:pos + 8]
+                data.extend(rows[:visible_rows][::-1])
+                data.extend(rows[visible_rows:])
+        offset += level_size
+    assert offset == len(payload)
+    relative = f"textures/{Path(owner.name).stem}_{path_id}.dds"
+    destination = game / relative
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    destination.write_bytes(data)
+    return relative
 
 
 def texture_transform(row):
@@ -425,6 +520,52 @@ def write_character_toon(src, file, material_id, data, shader_name, game, destin
     destination.write_text("\n".join(header + [""] + settings) + "\n", encoding="utf-8")
 
 
+def write_character_galaxy(src, file, material_id, data, game, destination):
+    props = data["m_SavedProperties"]
+    maps, floats, colors = (dict(props[f"m_{name}"]) for name in ("TexEnvs", "Floats", "Colors"))
+    header = ['[gd_resource type="ShaderMaterial" format=3]', "",
+              '[ext_resource type="Shader" path="res://materials/character_galaxy.gdshader" id="shader"]']
+    settings = ["[resource]", f'resource_name = {quote(data["m_Name"])}', 'shader = ExtResource("shader")',
+                'metadata/unity_shader = "Shader Graphs/Toon_Galaxy_SG"',
+                f"metadata/unity_material_id = {material_id}"]
+    for uniform, source in (("diffuse_map", "_DiffuseMap"), ("emissive_map", "_EmissiveMap"),
+                            ("specular_map", "_SpecularMap"), ("shadow_map", "_ShadowColorMap"),
+                            ("galaxy_mask", "_GalaxyMask"), ("toon_ramp", "_ToonRamp"),
+                            ("galaxy_map", "_Galaxy"), ("star_map", "_Stars")):
+        pointer = maps[source]["m_Texture"]
+        if not pointer["m_PathID"]:
+            continue
+        if source in ("_Galaxy", "_Stars"):
+            path = source_cubemap(src, file, pointer, game)
+            resource_type = "Cubemap"
+        else:
+            path, _ = material_texture(src, file, pointer, game)
+            resource_type = "Texture2D"
+        header.append(f'[ext_resource type="{resource_type}" path="res://{path}" id="{uniform}"]')
+        settings.append(f'shader_parameter/{uniform} = ExtResource("{uniform}")')
+    for uniform, source in (("main_color", "_MainColor"), ("emissive_color", "_EmissiveColor"),
+                            ("specular_color", "_SpecularColor"), ("ambient_color", "_AmbientColor"),
+                            ("shadow_color", "_ShadowColor"), ("galaxy_color", "_GalaxyColor"),
+                            ("fresnel_color", "_FresnelColor"), ("star_color", "_StarColor")):
+        settings.append(f"shader_parameter/{uniform} = " + vector("Color", *(colors[source][k] for k in "rgba")))
+    for uniform, source, channels in (("galaxy_offset", "_GalaxyOffset", "rgb"),
+                                       ("star_offset", "_StarOffset", "rgb"),
+                                       ("distortion_speed", "_DistortionSpeed", "rg"),
+                                       ("fresnel_noise_speed", "_FresnelNoiseSpeed", "rg")):
+        settings.append(f"shader_parameter/{uniform} = " +
+                        vector(f"Vector{len(channels)}", *(colors[source][k] for k in channels)))
+    for uniform, source in (("shadow_amount", "_ShadowAmount"), ("glossiness", "_Glosiness"),
+                            ("desaturate", "_Desaturate"), ("fresnel_exponent", "_Fresnel"),
+                            ("fresnel_intensity", "_FresnelPower"), ("distortion_amount", "_DistortionAmount"),
+                            ("distortion_scale", "_DistortionScale"), ("twirl_strength", "_DistortionTwirlStrength"),
+                            ("fresnel_noise_scale", "_FresnelNoiseScale"), ("fresnel_noise_power", "_FresnelNoisePower")):
+        settings.append(f"shader_parameter/{uniform} = {float(floats[source])}")
+    settings.extend(f"shader_parameter/{uniform} = {str(bool(floats[source])).lower()}"
+                    for uniform, source in (("use_emissive", "_UseEmissive"), ("use_gloss", "_Glossy")))
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    destination.write_text("\n".join(header + [""] + settings) + "\n", encoding="utf-8")
+
+
 def write_crystal_shine(src, file, data, shader_name, game, destination):
     props = data["m_SavedProperties"]
     textures = dict(props["m_TexEnvs"])
@@ -456,6 +597,12 @@ def material_asset(src, scene, pointer, game, character=False):
     path = f"materials/{key}.tres"
     dest = game / path
     if path in src.materials:
+        return path
+    # The Javryn bow slots have translated Shader Graph materials maintained in the project.
+    if key in ("sharedassets1_619", "sharedassets1_620") and dest.is_file():
+        src.materials.add(path)
+        src.shader_materials.add(path)
+        src.non_casting_materials.add(path)
         return path
     data = reader.read_typetree()
     shader_name = ""
@@ -491,13 +638,19 @@ def material_asset(src, scene, pointer, game, character=False):
         src.materials.add(path)
         src.shader_materials.add(path)
         return path
+    if character and shader_name == "Shader Graphs/Toon_Galaxy_SG":
+        write_character_galaxy(src, file, reader.path_id, data, game, dest)
+        src.materials.add(path)
+        src.shader_materials.add(path)
+        return path
     textures = dict(props["m_TexEnvs"])
     main = next((textures[k] for k in ("_BaseMap", "_BaseColorMap", "_MainTex")
                  if k in textures and textures[k]["m_Texture"]["m_PathID"]), None)
     header = ['[gd_resource type="StandardMaterial3D" format=3]']
     settings = ["[resource]", f'resource_name = {quote(data["m_Name"])}']
     if main:
-        texpath, tex = material_texture(src, file, main["m_Texture"], game)
+        texpath, tex = material_texture(src, file, main["m_Texture"], game,
+                                       preserve_mips=shader_name == "Shader Graphs/EnvironmentPlane_SG")
         header.append(f'[ext_resource type="Texture2D" path="res://{texpath}" id="1"]')
         settings.append('albedo_texture = ExtResource("1")')
         if shader_name not in ("lilToon", "Hidden/lilToonOutline"):
@@ -532,6 +685,8 @@ def material_asset(src, scene, pointer, game, character=False):
             settings.append(f'shader_parameter/{texture_parameter} = ExtResource("1")')
         if sampler_mode:
             settings.append(f'shader_parameter/sampler_mode = {sampler_mode}')
+        if sampler_mode == 3 and sampler.m_FilterMode == 1:
+            settings.append('shader_parameter/nearest_mip = true')
         if "_ALPHATEST_ON" in keywords:
             settings.append(f'shader_parameter/alpha_threshold = {floats["_AlphaClipping"]:.9g}')
         src.shader_materials.add(path)

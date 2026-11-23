@@ -35,6 +35,20 @@ func check_material(id: String, variant: String, tint: Vector3, threshold := -1.
 		expect(is_equal_approx(float(material.get_shader_parameter("alpha_threshold")), threshold), "Wrong cutoff for %s" % id)
 
 
+func check_source_mips() -> void:
+	var bindings := {"10_4": "10_26", "10_7": "10_17", "11_4": "11_7", "12_4": "12_14"}
+	for id: String in bindings:
+		var material := load("res://materials/sharedassets%s.tres" % id) as ShaderMaterial
+		var texture := material.get_shader_parameter("main_texture_mipped") as Texture2D
+		var path := "res://textures/sharedassets%s.dds" % bindings[id]
+		expect(texture != null and texture.resource_path == path, "Missing original forest mip texture for %s" % id)
+		expect(material.get_shader_parameter("nearest_mip") == true, "Wrong Unity mip filter for %s" % id)
+		if texture != null:
+			var image := texture.get_image()
+			expect(image.get_format() == Image.FORMAT_DXT5 and image.get_mipmap_count() == 12,
+					"Expected all 13 BC3 levels for %s" % id)
+
+
 func check_scene(path: String) -> void:
 	var scene := (load(path) as PackedScene).instantiate()
 	var translated_nodes := 0
@@ -94,6 +108,7 @@ func verify() -> void:
 	check_material("20_2", "transparent", Vector3(3.02806234, 2.78255153, 2.55671310), -1.0, 2)
 	check_material("18_5", "transparent", Vector3(0.66274512, 0.62745100, 0.73725491), -1.0, 1)
 	check_material("19_2", "cutout", Vector3(0.66397995, 0.62824845, 0.73584902), 0.5, 0, false)
+	check_source_mips()
 	check_scene(DUSK)
 	check_scene(TRIAL_DUSK)
 	await check_gates()

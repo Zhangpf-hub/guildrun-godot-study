@@ -144,6 +144,9 @@ func verify_overkill() -> void:
 	turtle.health = 7
 	turtle.gain_shield(12, 1 << 16)
 	fight._land(turtle, 37, hero)
+	var numbers: Control = fight._bars[turtle]._damage_text
+	expect(numbers._popups.size() == 2 and numbers._popups[0].text == "+12" and numbers._popups[1].text == "12",
+			"Shield gain and shield absorption display separate values")
 	var stats := fight.battle_statistics
 	var dealt := stats.units[hero.get_instance_id()]
 	var taken := stats.units[turtle.get_instance_id()]
@@ -163,6 +166,7 @@ func verify_source_replay() -> void:
 	var hero := fight._hero
 	fight.start_fight()
 	expect(fight.combat_seed == 500813409, "Native tutorial seed")
+	var numbers: Control = fight._bars[turtle]._damage_text
 	var log := BattleDamageLog.new()
 	log.attach(fight)
 	var cast_steps: Array[int] = []
@@ -180,6 +184,7 @@ func verify_source_replay() -> void:
 	]
 	for step in range(1, 410):
 		log.step = step
+		numbers.advance(fight.BATTLE_STEP_SECONDS)
 		fight._step_battle(fight.BATTLE_STEP_Q16, true)
 		match step:
 			1:
@@ -194,11 +199,18 @@ func verify_source_replay() -> void:
 						"Turtle starts its attack when Yuna enters range")
 			374:
 				expect(turtle.health == 0 and turtle.targetable(), "Turtle stays in combat at exactly zero HP")
+				expect(numbers._popups.size() == 2 and numbers._popups[0].text == "150"
+						and numbers._popups[1].text == "150" and numbers._popups[0].icon == null,
+						"Both shuriken hits display their own ordinary damage numbers")
 			401:
 				expect(hero.grid_cell == Vector2i(4, 4) and not hero.is_casting(), "Native Shadow Strike landing")
 	expect(cast_steps == [301] and log.hits == native_hits, "Complete native first-fight hit order: %s" % [log.hits])
 	expect(turtle.defeated and hero.health == 779 and fight.battle_time_q16 == 893256
 			and fight._pending_battle_result.is_valid(), "Native battle resolves at step 409")
+	expect(numbers._popups.size() == 1 and numbers._popups[0].text == "80" and numbers._popups[0].icon != null,
+			"Fatal critical hit displays the original critical icon")
+	numbers.advance(0.626)
+	expect(numbers._popups.is_empty(), "Combat numbers expire without another simulation tick")
 	stage.free()
 
 

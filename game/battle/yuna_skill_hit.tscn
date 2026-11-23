@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://b4lgju2h5xcec" path="res://battle/revival_effect.gd" id="1_3du3p"]
 [ext_resource type="Shader" uid="uid://brjdjxf2ny1vg" path="res://materials/revival_particle.gdshader" id="2_3j5fi"]
-[ext_resource type="Texture2D" uid="uid://dlld01gtcyg3q" path="res://textures/sharedassets1_1995.png" id="3_leskh"]
-[ext_resource type="Texture2D" uid="uid://bv8fs7lkegtm6" path="res://textures/sharedassets1_1237.png" id="3_mq32d"]
+[ext_resource type="Texture2D" path="res://textures/sharedassets1_1995.dds" id="3_leskh"]
+[ext_resource type="Texture2D" path="res://textures/sharedassets1_1237.dds" id="3_mq32d"]
 [ext_resource type="Texture2D" uid="uid://djfploxpn2nt5" path="res://textures/sharedassets1_2204.png" id="4_mq32d"]
 [ext_resource type="Texture2D" uid="uid://n4kcv0xebtyb" path="res://textures/sharedassets1_2413.png" id="5_64pib"]
 [ext_resource type="Texture2D" uid="uid://dfpd1oh2x171m" path="res://textures/sharedassets1_2544.png" id="5_yvffh"]
@@ -17,7 +17,7 @@
 [sub_resource type="ShaderMaterial" id="Material334"]
 render_priority = 0
 shader = ExtResource("2_3j5fi")
-shader_parameter/image_texture = ExtResource("3_mq32d")
+shader_parameter/source_mip_image = ExtResource("3_mq32d")
 shader_parameter/image_uv = Vector4(1, 1, 0, 0)
 shader_parameter/image_atlas = Vector4(1, 1, 0, 0)
 shader_parameter/mask_uv = Vector4(1, 1, 0, 0)
@@ -32,13 +32,13 @@ shader_parameter/atlas_scroll = Vector2(0, 0)
 shader_parameter/atlas_time = 0.0
 shader_parameter/flow_strength = 0.0
 shader_parameter/flow_graph = false
-shader_parameter/image_is_srgb = true
+shader_parameter/use_source_mip_image = true
 shader_parameter/use_rgb = false
 shader_parameter/additive = false
 shader_parameter/intensity = 5.0
 shader_parameter/fade_distance = 0.5
 shader_parameter/raw_depth_fade = 0.0
-shader_parameter/custom_dissolve = false
+shader_parameter/custom_dissolve = true
 shader_parameter/custom_dissolve_softness = 0.0
 shader_parameter/dissolve_is_srgb = false
 shader_parameter/dissolve_mask_is_srgb = false
@@ -59,7 +59,7 @@ shader_parameter/particle_age = 0.0
 [sub_resource type="ShaderMaterial" id="Material356"]
 render_priority = 0
 shader = ExtResource("2_3j5fi")
-shader_parameter/image_texture = ExtResource("3_leskh")
+shader_parameter/source_mip_image = ExtResource("3_leskh")
 shader_parameter/image_uv = Vector4(1, 1, 0, 0)
 shader_parameter/image_atlas = Vector4(1, 1, 0, 0)
 shader_parameter/mask_uv = Vector4(1, 1, 0, 0)
@@ -74,7 +74,7 @@ shader_parameter/atlas_scroll = Vector2(0, 0)
 shader_parameter/atlas_time = 0.0
 shader_parameter/flow_strength = 0.0
 shader_parameter/flow_graph = false
-shader_parameter/image_is_srgb = true
+shader_parameter/use_source_mip_image = true
 shader_parameter/use_rgb = true
 shader_parameter/additive = false
 shader_parameter/intensity = 2.0
@@ -509,7 +509,9 @@ metadata/particle = {
 "tint_min": Color(0.8867924, 0.6399964, 0.6399964, 1),
 "velocity_scale": 0,
 "width": Vector2(8, 8),
-"yaw": Vector2(0, 0)
+"yaw": Vector2(0, 0),
+"dissolve_value": PackedFloat32Array(0.300000012),
+"dissolve_scroll_x": PackedFloat32Array(0)
 }
 
 [node name="Spikes_01" type="Node3D" parent="." unique_id=1920670908]

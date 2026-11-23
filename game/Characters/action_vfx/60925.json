@@ -1,0 +1,94 @@
+{
+  "SkillAttack": [
+    {
+      "scene": "res://battle/character_actions/60925_61522.tscn",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "rotation": [
+        -0.0,
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "ranks": {
+    "2": {
+      "SkillAttack": [
+        {
+          "scene": "res://battle/character_actions/60925_61737.tscn",
+          "position": [
+            0.0,
+            0.0,
+            -0.0
+          ],
+          "rotation": [
+            -0.0,
+            -0.0,
+            0.0,
+            1.0
+          ],
+          "scale": [
+            1.100000023841858,
+            1.100000023841858,
+            1.100000023841858
+          ]
+        }
+      ]
+    },
+    "3": {
+      "SkillAttack": [
+        {
+          "scene": "res://battle/character_actions/60925_62308.tscn",
+          "position": [
+            0.0,
+            0.0,
+            -0.0
+          ],
+          "rotation": [
+            -0.0,
+            -0.0,
+            0.0,
+            1.0
+          ],
+          "scale": [
+            1.2000000476837158,
+            1.2000000476837158,
+            1.2000000476837158
+          ]
+        }
+      ]
+    },
+    "4": {
+      "SkillAttack": [
+        {
+          "scene": "res://battle/character_actions/60925_62596.tscn",
+          "position": [
+            0.0,
+            0.0,
+            -0.0
+          ],
+          "rotation": [
+            -0.0,
+            -0.0,
+            0.0,
+            1.0
+          ],
+          "scale": [
+            1.2999999523162842,
+            1.2999999523162842,
+            1.2999999523162842
+          ]
+        }
+      ]
+    }
+  }
+}

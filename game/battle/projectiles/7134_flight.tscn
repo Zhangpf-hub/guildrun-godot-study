@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://bu0ihp062ymne"]
+
+[ext_resource type="Script" uid="uid://b4lgju2h5xcec" path="res://battle/revival_effect.gd" id="1_0gawl"]
+[ext_resource type="Shader" uid="uid://brjdjxf2ny1vg" path="res://materials/revival_particle.gdshader" id="2_qeg7p"]
+[ext_resource type="Texture2D" uid="uid://dhb2p4xfjtmpu" path="res://textures/sharedassets1_1716.png" id="3_iyjmm"]
+[ext_resource type="Texture2D" uid="uid://2jbvjfwym6" path="res://textures/resources_544.png" id="4_ccj1g"]
+
+[sub_resource type="ImmediateMesh" id="AraMesh61773"]
+resource_local_to_scene = true
+
+[sub_resource type="ShaderMaterial" id="AraMaterial61773"]
+render_priority = 0
+shader = ExtResource("2_qeg7p")
+shader_parameter/image_texture = ExtResource("3_iyjmm")
+shader_parameter/noise_texture = ExtResource("4_ccj1g")
+shader_parameter/image_uv = Vector4(1, 1, 0, 0)
+shader_parameter/image_atlas = Vector4(1, 1, 0, 0)
+shader_parameter/mask_uv = Vector4(1, 1, 0, 0)
+shader_parameter/noise_uv = Vector4(1, 1, 0, 0)
+shader_parameter/dissolve_mask_uv = Vector4(1, 1, 0, 0)
+shader_parameter/flow_uv = Vector4(1, 1, 0, 0)
+shader_parameter/noise_scroll = Vector2(0, 0)
+shader_parameter/flow_scroll = Vector2(0, 0)
+shader_parameter/image_scroll = Vector2(0, 0)
+shader_parameter/scroll_atlas = false
+shader_parameter/atlas_scroll = Vector2(0, 0)
+shader_parameter/atlas_time = 0.0
+shader_parameter/flow_strength = 0.0
+shader_parameter/flow_graph = false
+shader_parameter/image_is_srgb = true
+shader_parameter/use_source_mip_image = false
+shader_parameter/use_rgb = false
+shader_parameter/use_ramp = false
+shader_parameter/opacity_from_red = false
+shader_parameter/opacity_gain = 1.0
+shader_parameter/age_sheet_rows = 1.0
+shader_parameter/additive = false
+shader_parameter/intensity = 1.0
+shader_parameter/edge_power = 0.0
+shader_parameter/rim_power = 0.0
+shader_parameter/fade_distance = 0.0
+shader_parameter/raw_depth_fade = 0.0
+shader_parameter/custom_dissolve = true
+shader_parameter/custom_dissolve_softness = 0.0
+shader_parameter/dissolve_is_srgb = false
+shader_parameter/dissolve_mask_is_srgb = false
+shader_parameter/repeat_dissolve_mask = false
+shader_parameter/mask_is_srgb = false
+shader_parameter/atlas_mask_uv = false
+shader_parameter/dissolve_mix = 0.0
+shader_parameter/dissolve_data = Vector3(0, 0, 0)
+shader_parameter/dissolve_amount = 0.0
+shader_parameter/dissolve_softness = 0.1
+shader_parameter/vertex_tint = true
+shader_parameter/linearize_vertex_tint = false
+shader_parameter/on_hit_vfx_redraw = false
+shader_parameter/compensate_dark_blend = false
+shader_parameter/particle_tint = Color(1, 1, 1, 1)
+shader_parameter/material_tint = Vector4(1, 1, 1, 1)
+shader_parameter/particle_age = 0.0
+
+[node name="Javryn_BasicAttack_Projectile" type="Node3D"]
+script = ExtResource("1_0gawl")
+lead_in = 0.0
+duration = 5.0
+metadata/unity_prefab = 7134
+
+[node name="AraTrail61773" type="Node3D" parent="."]
+position = Vector3(0, 0, 0.429)
+metadata/unity_ara_trail = 61773
+metadata/motion_trail = {
+"color": PackedColorArray(0.05297678, 0.09986974, 0.13440621, 0, 0.051731516, 0.09861151, 0.13275133, 0.17864347, 0.05048625, 0.09735329, 0.13109644, 0.35728693, 0.04924099, 0.096095055, 0.12944156, 0.5359304, 0.047995728, 0.09483683, 0.12778667, 0.71457386, 0.046750464, 0.09357861, 0.12613179, 0.8932173, 0.0455052, 0.092320375, 0.124476895, 0.9875159, 0.04425994, 0.09106215, 0.12282201, 0.956481, 0.043014675, 0.08980392, 0.12116712, 0.92544603, 0.04176941, 0.088545695, 0.11951223, 0.8944111, 0.040524147, 0.08728746, 0.117857344, 0.86337614, 0.039278887, 0.08602924, 0.11620246, 0.83234113, 0.038033623, 0.08477101, 0.11454757, 0.8013062, 0.03678836, 0.08351278, 0.11289269, 0.77027124, 0.035543095, 0.08225455, 0.1112378, 0.7392363, 0.034297835, 0.08099633, 0.10958291, 0.70820135, 0.03305257, 0.0797381, 0.10792802, 0.6771664, 0.031807307, 0.07847987, 0.10627314, 0.6461314, 0.030562045, 0.07722165, 0.10461825, 0.61509645, 0.029316781, 0.075963415, 0.102963366, 0.5840615, 0.028071519, 0.07470519, 0.10130847, 0.55302656, 0.026826255, 0.07344696, 0.09965359, 0.5219916, 0.025580993, 0.072188735, 0.0979987, 0.49095666, 0.024335729, 0.0709305, 0.096343815, 0.4599217, 0.023090467, 0.06967228, 0.09468893, 0.4387171, 0.021845203, 0.06841405, 0.093034044, 0.42774916, 0.02059994, 0.06715582, 0.09137915, 0.41678125, 0.019354677, 0.0658976, 0.089724265, 0.4058133, 0.018109415, 0.06463937, 0.08806938, 0.39484537, 0.01686415, 0.06338114, 0.08641449, 0.38387746, 0.015618888, 0.06212291, 0.08475961, 0.37290952, 0.014373625, 0.060864687, 0.08310472, 0.3619416, 0.013128362, 0.05960646, 0.08144983, 0.35097367, 0.011883099, 0.05834823, 0.07979494, 0.34000576, 0.010637836, 0.057090003, 0.07814006, 0.32903782, 0.009392573, 0.055831775, 0.07648517, 0.31806988, 0.0081473095, 0.054573547, 0.074830286, 0.30710196, 0.0069020465, 0.05331532, 0.0731754, 0.29613402, 0.0056567835, 0.05205709, 0.07152051, 0.2851661, 0.0044115204, 0.050798863, 0.06986562, 0.27419817, 0.0031662574, 0.049540635, 0.068210736, 0.26323026, 0.0019209943, 0.048282407, 0.06655585, 0.25226232, 0.0006757312, 0.047024183, 0.064900964, 0.2412944, 0, 0.046341415, 0.06400295, 0.23032647, 0, 0.046341415, 0.06400295, 0.21935855, 0, 0.046341415, 0.06400295, 0.20839062, 0, 0.046341415, 0.06400295, 0.19742268, 0, 0.046341415, 0.06400295, 0.18645476, 0, 0.046341415, 0.06400295, 0.17548683, 0, 0.046341415, 0.06400295, 0.16451891, 0, 0.046341415, 0.06400295, 0.15355098, 0, 0.046341415, 0.06400295, 0.14258306, 0, 0.046341415, 0.06400295, 0.13161513, 0, 0.046341415, 0.06400295, 0.1206472, 0, 0.046341415, 0.06400295, 0.109679274, 0, 0.046341415, 0.06400295, 0.09871134, 0, 0.046341415, 0.06400295, 0.08774342, 0, 0.046341415, 0.06400295, 0.07677549, 0, 0.046341415, 0.06400295, 0.065807566, 0, 0.046341415, 0.06400295, 0.054839637, 0, 0.046341415, 0.06400295, 0.04387171, 0, 0.046341415, 0.06400295, 0.032903783, 0, 0.046341415, 0.06400295, 0.021935854, 0, 0.046341415, 0.06400295, 0.010967927, 0, 0.046341415, 0.06400295, 0),
+"lifetime": 0.300000012,
+"spacing": 0.0250000004,
+"width": PackedFloat32Array(0.11364136, 0.11422137, 0.11484984, 0.11552561, 0.11624751, 0.117014386, 0.11782507, 0.11867839, 0.1195732, 0.12050832, 0.121482596, 0.12249487, 0.12354397, 0.12462873, 0.125748, 0.12690061, 0.12808539, 0.12930119, 0.13054685, 0.13182119, 0.13312306, 0.13445127, 0.1358047, 0.13718216, 0.1385825, 0.14000453, 0.14144713, 0.1429091, 0.14438929, 0.14588654, 0.1473997, 0.14892757, 0.15046902, 0.15202287, 0.15358797, 0.15516314, 0.15674722, 0.15833907, 0.1599375, 0.16154137, 0.16314949, 0.16476072, 0.1663739, 0.16798784, 0.16960138, 0.17121339, 0.17282268, 0.17442809, 0.17602846, 0.17762263, 0.17920944, 0.18078771, 0.1823563, 0.18391404, 0.18545975, 0.18699227, 0.18851046, 0.19001314, 0.19149914, 0.19296733, 0.19441651, 0.19584553, 0.19725323, 0.19863844, 0.2),
+"width_multiplier": 0.200000003
+}
+
+[node name="Ribbon" type="MeshInstance3D" parent="AraTrail61773"]
+top_level = true
+cast_shadow = 0
+mesh = SubResource("AraMesh61773")
+material_override = SubResource("AraMaterial61773")

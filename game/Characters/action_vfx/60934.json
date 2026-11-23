@@ -1,0 +1,270 @@
+{
+  "scaling": {
+    "SkillAttack": [
+      {
+        "key": "salFrostStacks",
+        "tiers": [
+          {
+            "comparison": 0,
+            "value": 655360,
+            "effects": [
+              {
+                "scene": "res://battle/character_actions/60934_63149.tscn",
+                "position": [
+                  0.12210000091195106,
+                  0.0,
+                  0.17759999831914897
+                ],
+                "rotation": [
+                  -0.0,
+                  -0.0,
+                  0.0,
+                  1.0
+                ],
+                "scale": [
+                  1.1100000143051147,
+                  1.1100000143051147,
+                  1.1100000143051147
+                ]
+              }
+            ]
+          },
+          {
+            "comparison": 0,
+            "value": 327680,
+            "effects": [
+              {
+                "scene": "res://battle/character_actions/60934_61662.tscn",
+                "position": [
+                  0.12210000091195106,
+                  0.0,
+                  0.17759999831914897
+                ],
+                "rotation": [
+                  -0.0,
+                  -0.0,
+                  0.0,
+                  1.0
+                ],
+                "scale": [
+                  1.1100000143051147,
+                  1.1100000143051147,
+                  1.1100000143051147
+                ]
+              }
+            ]
+          },
+          {
+            "comparison": 0,
+            "value": 65536,
+            "effects": []
+          }
+        ],
+        "default": []
+      }
+    ]
+  },
+  "ranks": {
+    "2": {
+      "scaling": {
+        "SkillAttack": [
+          {
+            "key": "salFrostStacks",
+            "tiers": [
+              {
+                "comparison": 0,
+                "value": 655360,
+                "effects": [
+                  {
+                    "scene": "res://battle/character_actions/60934_62405.tscn",
+                    "position": [
+                      0.13310000347495077,
+                      0.0,
+                      0.19360000177621828
+                    ],
+                    "rotation": [
+                      -0.0,
+                      -0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "scale": [
+                      1.2100000381469727,
+                      1.2100000381469727,
+                      1.2100000381469727
+                    ]
+                  }
+                ]
+              },
+              {
+                "comparison": 0,
+                "value": 327680,
+                "effects": [
+                  {
+                    "scene": "res://battle/character_actions/60934_61551.tscn",
+                    "position": [
+                      0.13310000347495077,
+                      0.0,
+                      0.19360000177621828
+                    ],
+                    "rotation": [
+                      -0.0,
+                      -0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "scale": [
+                      1.2100000381469727,
+                      1.2100000381469727,
+                      1.2100000381469727
+                    ]
+                  }
+                ]
+              },
+              {
+                "comparison": 0,
+                "value": 65536,
+                "effects": []
+              }
+            ],
+            "default": []
+          }
+        ]
+      }
+    },
+    "3": {
+      "scaling": {
+        "SkillAttack": [
+          {
+            "key": "salFrostStacks",
+            "tiers": [
+              {
+                "comparison": 0,
+                "value": 655360,
+                "effects": [
+                  {
+                    "scene": "res://battle/character_actions/60934_62406.tscn",
+                    "position": [
+                      0.1440999929249287,
+                      0.0,
+                      0.2095999861598017
+                    ],
+                    "rotation": [
+                      -0.0,
+                      -0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "scale": [
+                      1.309999942779541,
+                      1.309999942779541,
+                      1.309999942779541
+                    ]
+                  }
+                ]
+              },
+              {
+                "comparison": 0,
+                "value": 327680,
+                "effects": [
+                  {
+                    "scene": "res://battle/character_actions/60934_61552.tscn",
+                    "position": [
+                      0.1440999929249287,
+                      0.0,
+                      0.2095999861598017
+                    ],
+                    "rotation": [
+                      -0.0,
+                      -0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "scale": [
+                      1.309999942779541,
+                      1.309999942779541,
+                      1.309999942779541
+                    ]
+                  }
+                ]
+              },
+              {
+                "comparison": 0,
+                "value": 65536,
+                "effects": []
+              }
+            ],
+            "default": []
+          }
+        ]
+      }
+    },
+    "4": {
+      "scaling": {
+        "SkillAttack": [
+          {
+            "key": "salFrostStacks",
+            "tiers": [
+              {
+                "comparison": 0,
+                "value": 655360,
+                "effects": [
+                  {
+                    "scene": "res://battle/character_actions/60934_62407.tscn",
+                    "position": [
+                      0.15509998237490663,
+                      0.0,
+                      0.2255999705433851
+                    ],
+                    "rotation": [
+                      -0.0,
+                      -0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "scale": [
+                      1.4099998474121094,
+                      1.4099998474121094,
+                      1.4099998474121094
+                    ]
+                  }
+                ]
+              },
+              {
+                "comparison": 0,
+                "value": 327680,
+                "effects": [
+                  {
+                    "scene": "res://battle/character_actions/60934_61553.tscn",
+                    "position": [
+                      0.15509998237490663,
+                      0.0,
+                      0.2255999705433851
+                    ],
+                    "rotation": [
+                      -0.0,
+                      -0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "scale": [
+                      1.4099998474121094,
+                      1.4099998474121094,
+                      1.4099998474121094
+                    ]
+                  }
+                ]
+              },
+              {
+                "comparison": 0,
+                "value": 65536,
+                "effects": []
+              }
+            ],
+            "default": []
+          }
+        ]
+      }
+    }
+  }
+}

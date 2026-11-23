@@ -1,0 +1,318 @@
+[gd_scene format=3 uid="uid://2xwvg0fvh80g"]
+
+[ext_resource type="Script" uid="uid://b4lgju2h5xcec" path="res://battle/revival_effect.gd" id="1_1ns8b"]
+[ext_resource type="Shader" uid="uid://brjdjxf2ny1vg" path="res://materials/revival_particle.gdshader" id="2_qtpyl"]
+[ext_resource type="Texture2D" uid="uid://6jsqvfsudxo5" path="res://textures/sharedassets1_1602.png" id="3_pgo8g"]
+[ext_resource type="Texture2D" uid="uid://u1u8hxmgk7y5" path="res://textures/sharedassets1_2245.png" id="4_ltdc3"]
+[ext_resource type="Texture2D" uid="uid://bw160hh2gfiml" path="res://textures/sharedassets1_1324.png" id="5_rmv4l"]
+[ext_resource type="Texture2D" uid="uid://n4kcv0xebtyb" path="res://textures/sharedassets1_2413.png" id="6_hql7a"]
+
+[sub_resource type="QuadMesh" id="Quad"]
+
+[sub_resource type="ShaderMaterial" id="Material633"]
+render_priority = 0
+shader = ExtResource("2_qtpyl")
+shader_parameter/image_texture = ExtResource("3_pgo8g")
+shader_parameter/ramp_texture = ExtResource("4_ltdc3")
+shader_parameter/image_uv = Vector4(1, 1, 0, 0)
+shader_parameter/image_atlas = Vector4(1, 1, 0, 0)
+shader_parameter/mask_uv = Vector4(1, 1, 0, 0)
+shader_parameter/noise_uv = Vector4(1, 1, 0, 0)
+shader_parameter/dissolve_mask_uv = Vector4(1, 1, 0, 0)
+shader_parameter/flow_uv = Vector4(1, 1, 0, 0)
+shader_parameter/noise_scroll = Vector2(0, 0)
+shader_parameter/flow_scroll = Vector2(0, 0)
+shader_parameter/image_scroll = Vector2(0, 0)
+shader_parameter/scroll_atlas = false
+shader_parameter/atlas_scroll = Vector2(0, 0)
+shader_parameter/atlas_time = 0.0
+shader_parameter/flow_strength = 0.0
+shader_parameter/flow_graph = false
+shader_parameter/image_is_srgb = true
+shader_parameter/use_source_mip_image = false
+shader_parameter/use_rgb = true
+shader_parameter/use_ramp = true
+shader_parameter/opacity_from_red = false
+shader_parameter/opacity_gain = 1.0
+shader_parameter/age_sheet_rows = 1.0
+shader_parameter/additive = true
+shader_parameter/intensity = 2.0
+shader_parameter/edge_power = 0.0
+shader_parameter/rim_power = 0.0
+shader_parameter/fade_distance = 0.0
+shader_parameter/raw_depth_fade = 0.0
+shader_parameter/custom_dissolve = false
+shader_parameter/custom_dissolve_softness = 0.0
+shader_parameter/dissolve_is_srgb = false
+shader_parameter/dissolve_mask_is_srgb = false
+shader_parameter/repeat_dissolve_mask = false
+shader_parameter/mask_is_srgb = false
+shader_parameter/atlas_mask_uv = false
+shader_parameter/dissolve_mix = 0.0
+shader_parameter/dissolve_data = Vector3(0, 0, 0)
+shader_parameter/dissolve_amount = 0.0
+shader_parameter/dissolve_softness = 0.1
+shader_parameter/vertex_tint = false
+shader_parameter/linearize_vertex_tint = false
+shader_parameter/on_hit_vfx_redraw = false
+shader_parameter/compensate_dark_blend = false
+shader_parameter/particle_tint = Color(1, 1, 1, 1)
+shader_parameter/material_tint = Vector4(1, 1, 1, 1)
+shader_parameter/particle_age = 0.0
+
+[sub_resource type="ShaderMaterial" id="Material623"]
+render_priority = 0
+shader = ExtResource("2_qtpyl")
+shader_parameter/image_texture = ExtResource("5_rmv4l")
+shader_parameter/image_uv = Vector4(1, 1, 0, 0)
+shader_parameter/image_atlas = Vector4(1, 1, 0, 0)
+shader_parameter/mask_uv = Vector4(1, 1, 0, 0)
+shader_parameter/noise_uv = Vector4(1, 1, 0, 0)
+shader_parameter/dissolve_mask_uv = Vector4(1, 1, 0, 0)
+shader_parameter/flow_uv = Vector4(1, 1, 0, 0)
+shader_parameter/noise_scroll = Vector2(0, 0)
+shader_parameter/flow_scroll = Vector2(0, 0)
+shader_parameter/image_scroll = Vector2(0, 0)
+shader_parameter/scroll_atlas = false
+shader_parameter/atlas_scroll = Vector2(0, 0)
+shader_parameter/atlas_time = 0.0
+shader_parameter/flow_strength = 0.0
+shader_parameter/flow_graph = false
+shader_parameter/image_is_srgb = false
+shader_parameter/use_source_mip_image = false
+shader_parameter/use_rgb = false
+shader_parameter/use_ramp = false
+shader_parameter/opacity_from_red = false
+shader_parameter/opacity_gain = 1.0
+shader_parameter/age_sheet_rows = 1.0
+shader_parameter/additive = false
+shader_parameter/intensity = 1.5
+shader_parameter/edge_power = 0.0
+shader_parameter/rim_power = 0.0
+shader_parameter/fade_distance = 1.0
+shader_parameter/raw_depth_fade = 0.0
+shader_parameter/custom_dissolve = false
+shader_parameter/custom_dissolve_softness = 0.0
+shader_parameter/dissolve_is_srgb = false
+shader_parameter/dissolve_mask_is_srgb = false
+shader_parameter/repeat_dissolve_mask = false
+shader_parameter/mask_is_srgb = false
+shader_parameter/atlas_mask_uv = false
+shader_parameter/dissolve_mix = 0.0
+shader_parameter/dissolve_data = Vector3(0, 0, 0)
+shader_parameter/dissolve_amount = 0.0
+shader_parameter/dissolve_softness = 0.1
+shader_parameter/vertex_tint = false
+shader_parameter/linearize_vertex_tint = false
+shader_parameter/on_hit_vfx_redraw = false
+shader_parameter/compensate_dark_blend = false
+shader_parameter/particle_tint = Color(1, 1, 1, 1)
+shader_parameter/material_tint = Vector4(1, 1, 1, 1)
+shader_parameter/particle_age = 0.0
+
+[sub_resource type="ShaderMaterial" id="Material629"]
+render_priority = 0
+shader = ExtResource("2_qtpyl")
+shader_parameter/image_texture = ExtResource("6_hql7a")
+shader_parameter/image_uv = Vector4(1, 1, 0, 0)
+shader_parameter/image_atlas = Vector4(1, 1, 0, 0)
+shader_parameter/mask_uv = Vector4(1, 1, 0, 0)
+shader_parameter/noise_uv = Vector4(1, 1, 0, 0)
+shader_parameter/dissolve_mask_uv = Vector4(1, 1, 0, 0)
+shader_parameter/flow_uv = Vector4(1, 1, 0, 0)
+shader_parameter/noise_scroll = Vector2(0, 0)
+shader_parameter/flow_scroll = Vector2(0, 0)
+shader_parameter/image_scroll = Vector2(0, 0)
+shader_parameter/scroll_atlas = false
+shader_parameter/atlas_scroll = Vector2(0, 0)
+shader_parameter/atlas_time = 0.0
+shader_parameter/flow_strength = 0.0
+shader_parameter/flow_graph = false
+shader_parameter/image_is_srgb = true
+shader_parameter/use_source_mip_image = false
+shader_parameter/use_rgb = true
+shader_parameter/use_ramp = false
+shader_parameter/opacity_from_red = false
+shader_parameter/opacity_gain = 1.0
+shader_parameter/age_sheet_rows = 1.0
+shader_parameter/additive = false
+shader_parameter/intensity = 2.0
+shader_parameter/edge_power = 0.0
+shader_parameter/rim_power = 0.0
+shader_parameter/fade_distance = 0.0
+shader_parameter/raw_depth_fade = 0.0
+shader_parameter/custom_dissolve = false
+shader_parameter/custom_dissolve_softness = 0.0
+shader_parameter/dissolve_is_srgb = false
+shader_parameter/dissolve_mask_is_srgb = false
+shader_parameter/repeat_dissolve_mask = false
+shader_parameter/mask_is_srgb = false
+shader_parameter/atlas_mask_uv = false
+shader_parameter/dissolve_mix = 0.0
+shader_parameter/dissolve_data = Vector3(0, 0, 0)
+shader_parameter/dissolve_amount = 0.0
+shader_parameter/dissolve_softness = 0.1
+shader_parameter/vertex_tint = false
+shader_parameter/linearize_vertex_tint = false
+shader_parameter/on_hit_vfx_redraw = false
+shader_parameter/compensate_dark_blend = false
+shader_parameter/particle_tint = Color(1, 1, 1, 1)
+shader_parameter/material_tint = Vector4(1, 1, 1, 1)
+shader_parameter/particle_age = 0.0
+
+[node name="VFX_Javryn_BasicHit" type="Node3D"]
+script = ExtResource("1_1ns8b")
+lead_in = 0.0
+duration = 2.0
+metadata/unity_prefab = 61631
+
+[node name="Flare_01" type="Node3D" parent="."]
+position = Vector3(0, 0, 0)
+quaternion = Quaternion(0, 0, 0, 1)
+metadata/unity_particle = 51782
+metadata/particle = {
+"alignment": 0,
+"cone_angle": 0.436332313,
+"count": Vector2i(1, 1),
+"delay": 0,
+"depth": Vector2(5, 5),
+"height": Vector2(3, 3),
+"intensity_offset": 0,
+"length_scale": 2,
+"lifetime": Vector2(0.35, 0.35),
+"material": SubResource("Material633"),
+"mesh": SubResource("Quad"),
+"mode": 0,
+"on_hit_vfx_redraw": true,
+"opacity": PackedFloat32Array(1),
+"orbit": Vector2(0, 0),
+"pitch": Vector2(0, 0),
+"pivot": Vector3(0, 0, 0),
+"radial_distance": PackedFloat32Array(0, 0),
+"radius": 1,
+"radius_thickness": 1,
+"repeat_count": 1,
+"repeat_interval": 0.00999999978,
+"roll": Vector2(0, 2.0943952),
+"seed": 2202,
+"shape": -1,
+"shape_length": 5,
+"shape_position": Vector3(0, 0, 0),
+"shape_rotation": Vector3(0, 0, 0),
+"shape_scale": Vector3(1, 1, 1),
+"size_3d": false,
+"size_x": PackedFloat32Array(1, 0.99975586, 0.99902344, 0.99780273, 0.99609375, 0.9938965, 0.99121094, 0.9880371, 0.984375, 0.9802246, 0.97558594, 0.970459, 0.96484375, 0.95874023, 0.95214844, 0.94506836, 0.9375, 0.92944336, 0.92089844, 0.91186523, 0.90234375, 0.892334, 0.88183594, 0.8708496, 0.859375, 0.8474121, 0.83496094, 0.8220215, 0.80859375, 0.79467773, 0.78027344, 0.76538086, 0.75, 0.73413086, 0.71777344, 0.70092773, 0.68359375, 0.6657715, 0.64746094, 0.6286621, 0.609375, 0.5895996, 0.56933594, 0.548584, 0.52734375, 0.50561523, 0.48339844, 0.46069336, 0.4375, 0.41381836, 0.38964844, 0.36499023, 0.33984375, 0.31420898, 0.28808594, 0.2614746, 0.234375, 0.20678711, 0.17871094, 0.15014648, 0.12109375, 0.091552734, 0.061523438, 0.03100586, 0),
+"size_x_min": PackedFloat32Array(1, 0.99975586, 0.99902344, 0.99780273, 0.99609375, 0.9938965, 0.99121094, 0.9880371, 0.984375, 0.9802246, 0.97558594, 0.970459, 0.96484375, 0.95874023, 0.95214844, 0.94506836, 0.9375, 0.92944336, 0.92089844, 0.91186523, 0.90234375, 0.892334, 0.88183594, 0.8708496, 0.859375, 0.8474121, 0.83496094, 0.8220215, 0.80859375, 0.79467773, 0.78027344, 0.76538086, 0.75, 0.73413086, 0.71777344, 0.70092773, 0.68359375, 0.6657715, 0.64746094, 0.6286621, 0.609375, 0.5895996, 0.56933594, 0.548584, 0.52734375, 0.50561523, 0.48339844, 0.46069336, 0.4375, 0.41381836, 0.38964844, 0.36499023, 0.33984375, 0.31420898, 0.28808594, 0.2614746, 0.234375, 0.20678711, 0.17871094, 0.15014648, 0.12109375, 0.091552734, 0.061523438, 0.03100586, 0),
+"size_y": PackedFloat32Array(1, 0.99975586, 0.99902344, 0.99780273, 0.99609375, 0.9938965, 0.99121094, 0.9880371, 0.984375, 0.9802246, 0.97558594, 0.970459, 0.96484375, 0.95874023, 0.95214844, 0.94506836, 0.9375, 0.92944336, 0.92089844, 0.91186523, 0.90234375, 0.892334, 0.88183594, 0.8708496, 0.859375, 0.8474121, 0.83496094, 0.8220215, 0.80859375, 0.79467773, 0.78027344, 0.76538086, 0.75, 0.73413086, 0.71777344, 0.70092773, 0.68359375, 0.6657715, 0.64746094, 0.6286621, 0.609375, 0.5895996, 0.56933594, 0.548584, 0.52734375, 0.50561523, 0.48339844, 0.46069336, 0.4375, 0.41381836, 0.38964844, 0.36499023, 0.33984375, 0.31420898, 0.28808594, 0.2614746, 0.234375, 0.20678711, 0.17871094, 0.15014648, 0.12109375, 0.091552734, 0.061523438, 0.03100586, 0),
+"size_z": PackedFloat32Array(1, 0.99975586, 0.99902344, 0.99780273, 0.99609375, 0.9938965, 0.99121094, 0.9880371, 0.984375, 0.9802246, 0.97558594, 0.970459, 0.96484375, 0.95874023, 0.95214844, 0.94506836, 0.9375, 0.92944336, 0.92089844, 0.91186523, 0.90234375, 0.892334, 0.88183594, 0.8708496, 0.859375, 0.8474121, 0.83496094, 0.8220215, 0.80859375, 0.79467773, 0.78027344, 0.76538086, 0.75, 0.73413086, 0.71777344, 0.70092773, 0.68359375, 0.6657715, 0.64746094, 0.6286621, 0.609375, 0.5895996, 0.56933594, 0.548584, 0.52734375, 0.50561523, 0.48339844, 0.46069336, 0.4375, 0.41381836, 0.38964844, 0.36499023, 0.33984375, 0.31420898, 0.28808594, 0.2614746, 0.234375, 0.20678711, 0.17871094, 0.15014648, 0.12109375, 0.091552734, 0.061523438, 0.03100586, 0),
+"sorting_offset": 1,
+"speed": Vector2(0, 0),
+"speed_distance": PackedFloat32Array(0, 1),
+"tint_max": Color(0.3177287, 0.4564919, 0.6415094, 1),
+"tint_min": Color(0.3177287, 0.4564919, 0.6415094, 1),
+"velocity_scale": 0,
+"width": Vector2(5, 5),
+"yaw": Vector2(0, 0)
+}
+
+[node name="Glow_01" type="Node3D" parent="."]
+position = Vector3(0, 0, 0)
+quaternion = Quaternion(0, 0, 0, 1)
+metadata/unity_particle = 51144
+metadata/particle = {
+"alignment": 0,
+"cone_angle": 0.436332313,
+"count": Vector2i(1, 1),
+"delay": 0,
+"depth": Vector2(1, 1),
+"height": Vector2(1, 1),
+"length_scale": 2,
+"lifetime": Vector2(0.6, 0.6),
+"material": SubResource("Material623"),
+"mesh": SubResource("Quad"),
+"mode": 0,
+"on_hit_vfx_redraw": true,
+"opacity": PackedFloat32Array(1, 0.984375, 0.96875, 0.953125, 0.9375, 0.921875, 0.90625, 0.890625, 0.875, 0.859375, 0.84375, 0.828125, 0.8125, 0.796875, 0.78125, 0.765625, 0.75, 0.734375, 0.71875, 0.703125, 0.6875, 0.671875, 0.65625, 0.640625, 0.625, 0.609375, 0.59375, 0.578125, 0.5625, 0.546875, 0.53125, 0.515625, 0.5, 0.484375, 0.46875, 0.453125, 0.4375, 0.421875, 0.40625, 0.390625, 0.375, 0.359375, 0.34375, 0.328125, 0.3125, 0.296875, 0.28125, 0.265625, 0.25, 0.234375, 0.21875, 0.203125, 0.1875, 0.171875, 0.15625, 0.140625, 0.125, 0.109375, 0.09375, 0.078125, 0.0625, 0.046875, 0.03125, 0.015625, 0),
+"orbit": Vector2(0, 0),
+"pitch": Vector2(0, 0),
+"pivot": Vector3(0, 0, 0),
+"radial_distance": PackedFloat32Array(0, 0),
+"radius": 1,
+"radius_thickness": 1,
+"repeat_count": 1,
+"repeat_interval": 0.00999999978,
+"roll": Vector2(0, 0),
+"seed": 2202,
+"shape": -1,
+"shape_length": 5,
+"shape_position": Vector3(0, 0, 0),
+"shape_rotation": Vector3(0, 0, 0),
+"shape_scale": Vector3(1, 1, 1),
+"size_3d": false,
+"size_x": PackedFloat32Array(1),
+"size_x_min": PackedFloat32Array(1),
+"size_y": PackedFloat32Array(1),
+"size_z": PackedFloat32Array(1),
+"sorting_offset": -1,
+"speed": Vector2(0, 0),
+"speed_distance": PackedFloat32Array(0, 1),
+"tint_max": Color(0.019607853, 0.19004005, 0.48235294, 0.29803923),
+"tint_min": Color(0.019607853, 0.19004005, 0.48235294, 0.29803923),
+"velocity_scale": 0,
+"width": Vector2(3, 3),
+"yaw": Vector2(0, 0)
+}
+
+[node name="Spikes_01" type="Node3D" parent="."]
+position = Vector3(0, 0, 0)
+quaternion = Quaternion(0, 0, 0, 1)
+metadata/unity_particle = 54528
+metadata/particle = {
+"alignment": 0,
+"atlas_cycles": 1,
+"atlas_frames": PackedFloat32Array(0, 0.015623437, 0.031246874, 0.04687031, 0.06249375, 0.078117184, 0.09374062, 0.10936406, 0.1249875, 0.14061093, 0.15623437, 0.1718578, 0.18748125, 0.20310469, 0.21872813, 0.23435156, 0.249975, 0.26559845, 0.28122187, 0.29684532, 0.31246874, 0.3280922, 0.3437156, 0.35933906, 0.3749625, 0.39058593, 0.40620938, 0.4218328, 0.43745625, 0.45307967, 0.46870312, 0.48432654, 0.49995, 0.51557344, 0.5311969, 0.5468203, 0.56244373, 0.5780672, 0.59369063, 0.609314, 0.6249375, 0.6405609, 0.6561844, 0.6718078, 0.6874312, 0.70305467, 0.7186781, 0.73430157, 0.749925, 0.7655484, 0.78117186, 0.7967953, 0.81241876, 0.82804215, 0.8436656, 0.85928905, 0.8749125, 0.89053595, 0.90615934, 0.9217828, 0.93740624, 0.9530297, 0.9686531, 0.98427653, 0.9999),
+"atlas_grid": Vector2i(3, 3),
+"atlas_start": 0,
+"color_gradient": PackedColorArray(1, 1, 1, 1, 0.9897567, 0.9900742, 0.9932193, 1, 0.9795134, 0.9801484, 0.9864387, 1, 0.9692701, 0.9702226, 0.979658, 1, 0.9590268, 0.96029675, 0.9728774, 1, 0.94878346, 0.95037097, 0.9660967, 1, 0.93854016, 0.9404452, 0.959316, 1, 0.92829686, 0.93051934, 0.9525354, 1, 0.91805357, 0.92059356, 0.9457547, 1, 0.9078103, 0.9106677, 0.9389741, 1, 0.897567, 0.90074193, 0.9321934, 1, 0.8873237, 0.89081615, 0.9254127, 1, 0.8770804, 0.8808903, 0.9186321, 1, 0.8668371, 0.8709645, 0.9118514, 1, 0.8565938, 0.86103874, 0.9050708, 1, 0.84635043, 0.8511129, 0.8982901, 1, 0.83610713, 0.8411871, 0.8915095, 1, 0.82586384, 0.8312613, 0.8847288, 1, 0.81562054, 0.8213355, 0.8779481, 1, 0.80537724, 0.8114097, 0.8711675, 1, 0.79513395, 0.80148387, 0.8643868, 1, 0.78489065, 0.7915581, 0.8576062, 1, 0.77464736, 0.78163224, 0.8508255, 1, 0.76440406, 0.77170646, 0.8440448, 1, 0.75416076, 0.7617807, 0.8372642, 1, 0.7439174, 0.75185484, 0.8304835, 1, 0.7336741, 0.74192905, 0.8237029, 1, 0.7234308, 0.7320032, 0.8169222, 1, 0.7131875, 0.7220774, 0.8101415, 1, 0.7029442, 0.71215165, 0.8033609, 1, 0.6927009, 0.7022258, 0.7965802, 1, 0.6824576, 0.6923, 0.7897996, 1, 0.6722143, 0.6823742, 0.7830189, 1, 0.66197103, 0.6724484, 0.7762382, 1, 0.65172774, 0.6625226, 0.7694576, 1, 0.6414844, 0.6525968, 0.7626769, 1, 0.6312411, 0.642671, 0.7558963, 1, 0.6209978, 0.6327452, 0.7491156, 1, 0.6107545, 0.62281936, 0.7423349, 1, 0.6005112, 0.6128936, 0.7355543, 1, 0.5902679, 0.60296774, 0.7287736, 1, 0.5800246, 0.59304196, 0.72199297, 1, 0.5697813, 0.5831162, 0.7152123, 1, 0.559538, 0.57319033, 0.7084316, 1, 0.5492947, 0.56326455, 0.701651, 1, 0.53905135, 0.5533387, 0.6948703, 1, 0.52880806, 0.5434129, 0.68808967, 1, 0.51856476, 0.53348714, 0.681309, 1, 0.50832146, 0.5235613, 0.67452836, 1, 0.49807817, 0.5136355, 0.6677477, 1, 0.48783487, 0.5037097, 0.660967, 1, 0.47759157, 0.4937839, 0.65418637, 1, 0.46734825, 0.48385808, 0.6474057, 1, 0.45710495, 0.4739323, 0.64062506, 1, 0.44686165, 0.46400648, 0.6338444, 1, 0.43661836, 0.45408067, 0.6270637, 1, 0.42637506, 0.44415486, 0.62028307, 1, 0.41613173, 0.43422905, 0.6135024, 1, 0.40588844, 0.42430326, 0.60672176, 1, 0.39564514, 0.41437745, 0.5999411, 1, 0.38540184, 0.40445164, 0.5931604, 1, 0.37515855, 0.39452583, 0.58637977, 1, 0.36491522, 0.38460004, 0.5795991, 1, 0.35467193, 0.37467423, 0.57281846, 1, 0.34442863, 0.36474842, 0.5660378, 1),
+"cone_angle": 0.436332313,
+"count": Vector2i(2, 4),
+"delay": 0,
+"depth": Vector2(1, 1),
+"height": Vector2(2, 3),
+"intensity_offset": 0,
+"length_scale": 2,
+"lifetime": Vector2(0.2, 0.3),
+"material": SubResource("Material629"),
+"mesh": SubResource("Quad"),
+"mode": 0,
+"on_hit_vfx_redraw": true,
+"opacity": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"orbit": Vector2(0, 0),
+"pitch": Vector2(0, 0),
+"pivot": Vector3(0.4, 0, 0),
+"radial_distance": PackedFloat32Array(0, 0),
+"radius": 1,
+"radius_thickness": 1,
+"repeat_count": 1,
+"repeat_interval": 0.00999999978,
+"roll": Vector2(0, 6.283185),
+"seed": 2202,
+"shape": -1,
+"shape_length": 5,
+"shape_position": Vector3(0, 0, 0),
+"shape_rotation": Vector3(0, 0, 0),
+"shape_scale": Vector3(1, 1, 1),
+"size_3d": true,
+"size_x": PackedFloat32Array(0.36923218, 0.3999704, 0.4296964, 0.45842707, 0.48617926, 0.51297, 0.538816, 0.5637343, 0.58774173, 0.6108553, 0.63309175, 0.6544681, 0.67500126, 0.6947081, 0.7136055, 0.7317104, 0.74903965, 0.7656102, 0.78143895, 0.79654276, 0.8109386, 0.8246433, 0.8376738, 0.850047, 0.8617798, 0.8728891, 0.8833918, 0.8933048, 0.90264505, 0.9114294, 0.91967475, 0.927398, 0.9346161, 0.9413459, 0.9476043, 0.95340824, 0.9587746, 0.9637203, 0.96826226, 0.9724173, 0.97620237, 0.9796344, 0.98273027, 0.98550683, 0.9879811, 0.9901699, 0.9920901, 0.9937587, 0.9951925, 0.9964085, 0.9974235, 0.99825454, 0.9989184, 0.999432, 0.9998123, 1.0000762, 1.0002404, 1.0003221, 1.0003381, 1.0003052, 1.0002404, 1.0001606, 1.0000826, 1.0000235, 1),
+"size_x_min": PackedFloat32Array(0.36923218, 0.3999704, 0.4296964, 0.45842707, 0.48617926, 0.51297, 0.538816, 0.5637343, 0.58774173, 0.6108553, 0.63309175, 0.6544681, 0.67500126, 0.6947081, 0.7136055, 0.7317104, 0.74903965, 0.7656102, 0.78143895, 0.79654276, 0.8109386, 0.8246433, 0.8376738, 0.850047, 0.8617798, 0.8728891, 0.8833918, 0.8933048, 0.90264505, 0.9114294, 0.91967475, 0.927398, 0.9346161, 0.9413459, 0.9476043, 0.95340824, 0.9587746, 0.9637203, 0.96826226, 0.9724173, 0.97620237, 0.9796344, 0.98273027, 0.98550683, 0.9879811, 0.9901699, 0.9920901, 0.9937587, 0.9951925, 0.9964085, 0.9974235, 0.99825454, 0.9989184, 0.999432, 0.9998123, 1.0000762, 1.0002404, 1.0003221, 1.0003381, 1.0003052, 1.0002404, 1.0001606, 1.0000826, 1.0000235, 1),
+"size_y": PackedFloat32Array(0.5846157, 0.5754811, 0.56634647, 0.5572118, 0.5480772, 0.5389426, 0.529808, 0.52067333, 0.51153874, 0.50240415, 0.4932695, 0.48413488, 0.47500026, 0.46586564, 0.45673102, 0.4475964, 0.43846178, 0.42932716, 0.42019254, 0.41105792, 0.4019233, 0.39278868, 0.38365406, 0.37451944, 0.36538482, 0.3562502, 0.34711558, 0.33798096, 0.32884634, 0.31971171, 0.3105771, 0.30144247, 0.29230785, 0.28317323, 0.2740386, 0.264904, 0.25576937, 0.24663475, 0.23750013, 0.22836551, 0.21923089, 0.21009627, 0.20096165, 0.19182703, 0.18269241, 0.17355779, 0.16442317, 0.15528855, 0.14615393, 0.1370193, 0.12788469, 0.118750066, 0.109615445, 0.100480825, 0.091346204, 0.082211584, 0.07307696, 0.06394234, 0.054807723, 0.045673102, 0.03653848, 0.027403861, 0.01826924, 0.00913462, 0),
+"size_z": PackedFloat32Array(0, 0.015625, 0.03125, 0.046875, 0.0625, 0.078125, 0.09375, 0.109375, 0.125, 0.140625, 0.15625, 0.171875, 0.1875, 0.203125, 0.21875, 0.234375, 0.25, 0.265625, 0.28125, 0.296875, 0.3125, 0.328125, 0.34375, 0.359375, 0.375, 0.390625, 0.40625, 0.421875, 0.4375, 0.453125, 0.46875, 0.484375, 0.5, 0.515625, 0.53125, 0.546875, 0.5625, 0.578125, 0.59375, 0.609375, 0.625, 0.640625, 0.65625, 0.671875, 0.6875, 0.703125, 0.71875, 0.734375, 0.75, 0.765625, 0.78125, 0.796875, 0.8125, 0.828125, 0.84375, 0.859375, 0.875, 0.890625, 0.90625, 0.921875, 0.9375, 0.953125, 0.96875, 0.984375, 1),
+"sorting_offset": 0,
+"speed": Vector2(0, 0),
+"speed_distance": PackedFloat32Array(0, 1),
+"tint_max": Color(0.4745098, 0.6566894, 0.7529412, 1),
+"tint_min": Color(0.4745098, 0.6566894, 0.7529412, 1),
+"velocity_scale": 0,
+"width": Vector2(1, 1.5),
+"yaw": Vector2(0, 0)
+}
